@@ -22,3 +22,15 @@ run_browse_query <- function(query_string) {
   query_results_list <- do.call(c, query_results_list) # Fix up list formatting
   return(query_results_list)
 }
+
+clean_species_property <- function(species_property) {
+  # 
+  # Input:
+  # Output: 
+  species_property <- species_property %>% unlist
+  species_property_vector <- vector()
+  data_items <- species_property %>% .[names(.) == "dataitem.item"]
+  species_property_vector[1] <- paste(data_items, sep="", collapse=";") 
+  names(species_property_vector) <- species_property['property']
+  return(species_property_vector)
+}
