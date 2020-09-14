@@ -15,3 +15,7 @@ for (carex_species in carex_species_checklist) {
   collapsed_species_data <- lapply(species_data_list, clean_species_property) %>% unlist
   carex_species_data[[carex_species]] <- collapsed_species_data
 }
+
+carex_species_data_frame <- bind_rows(carex_species_data)
+rownames(carex_species_data_frame) <- carex_species_checklist
+write.csv(carex_species_data_frame, file = "data/carex_species_data_frame.csv")
