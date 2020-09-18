@@ -1,4 +1,4 @@
-browse_subject_query_url <- function(query_string) {
+browsebysubject_query_url <- function(query_string) {
   # Concatenate a query_string with the http API browse by subject module URL
   # for the FNA Semantic MediaWiki instance
   base_url <- "http://dev.semanticfna.org/w/api.php?action=browsebysubject&subject="
@@ -6,7 +6,7 @@ browse_subject_query_url <- function(query_string) {
   return(url)
 }
 
-run_browse_query <- function(query_string) {
+run_browsebysubject_query <- function(query_string) {
   # Run a query against the Semantic MediaWiki http api URL and obtain results back in R
   # This function is VERY conserved. It was taken from the run_ask_query function in the fna-query GitHub repo
   # TODO: merge this function with the existing function to be multi-purpose
@@ -25,7 +25,7 @@ run_browse_query <- function(query_string) {
   return(query_results_list)
 }
 
-clean_species_property <- function(species_property) {
+collapse_query_results_list <- function(property_list) {
   # This function is used to clean up the data returned by the browsebysubject API via the WikipediR query function call
   # The data returned is highly nested, using lists as the main data structure
   # This function is used to flatten the hierarchical list nesting and retrieve only what is useful: property name and value
@@ -36,10 +36,10 @@ clean_species_property <- function(species_property) {
   # are more than one value for a property, they are concatenated with ";"). The names of the vector are the 
   # property names
   # ------
-  species_property <- species_property %>% unlist
-  species_property_vector <- vector()
-  data_items <- species_property %>% .[names(.) == "dataitem.item"]
-  species_property_vector[1] <- paste(data_items, sep="", collapse=";") 
-  names(species_property_vector) <- species_property['property']
-  return(species_property_vector)
+  property_list <- property_list %>% unlist
+  property_list_vector <- vector()
+  data_items <- property_list %>% .[names(.) == "dataitem.item"]
+  property_list_vector[1] <- paste(data_items, sep="", collapse=";") 
+  names(property_list_vector) <- property_list['property']
+  return(property_list_vector)
 }

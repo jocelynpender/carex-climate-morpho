@@ -11,8 +11,8 @@ carex_species_checklist <- ask_query_titles('[[Category:Carex]][[Taxon rank::spe
 
 carex_species_data <- list()
 for (carex_species in carex_species_checklist) {
-  species_data_list <- run_browse_query(carex_species) # pull all property data for each carex species
-  collapsed_species_data <- lapply(species_data_list, clean_species_property) %>% unlist
+  species_data_list <- run_browsebysubject_query(carex_species) # pull all property data for each carex species
+  collapsed_species_data <- lapply(species_data_list, collapse_query_results_list) %>% unlist
   carex_species_data[[carex_species]] <- collapsed_species_data
 }
 
