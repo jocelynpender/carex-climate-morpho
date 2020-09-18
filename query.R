@@ -1,5 +1,5 @@
 browse_subject_query_url <- function(query_string) {
-  # Concatenate a query_string with the http API ask query module URL
+  # Concatenate a query_string with the http API browse by subject module URL
   # for the FNA Semantic MediaWiki instance
   base_url <- "http://dev.semanticfna.org/w/api.php?action=browsebysubject&subject="
   url <- paste(base_url, query_string, sep = "")
@@ -8,6 +8,8 @@ browse_subject_query_url <- function(query_string) {
 
 run_browse_query <- function(query_string) {
   # Run a query against the Semantic MediaWiki http api URL and obtain results back in R
+  # This function is VERY conserved. It was taken from the run_ask_query function in the fna-query GitHub repo
+  # TODO: merge this function with the existing function to be multi-purpose
   query_offset = 0
   query_results_list <- list() # Need to initialize the list, then add to it in the loop
   while (!is.null(query_offset) == TRUE) { # While there continues to be an offset...
@@ -24,9 +26,16 @@ run_browse_query <- function(query_string) {
 }
 
 clean_species_property <- function(species_property) {
-  # 
-  # Input:
-  # Output: 
+  # This function is used to clean up the data returned by the browsebysubject API via the WikipediR query function call
+  # The data returned is highly nested, using lists as the main data structure
+  # This function is used to flatten the hierarchical list nesting and retrieve only what is useful: property name and value
+  # ------
+  # Input: List of length 2, with $property = property name and $dataitem = List of 1 (containing a List of 2, with type & property value)
+  # The input is one "list item" from the returned result set query_results_list
+  # Output: A vector with names. Each value in the vector is a concatenated set of property values (i.e., if there
+  # are more than one value for a property, they are concatenated with ";"). The names of the vector are the 
+  # property names
+  # ------
   species_property <- species_property %>% unlist
   species_property_vector <- vector()
   data_items <- species_property %>% .[names(.) == "dataitem.item"]
