@@ -7,9 +7,8 @@ carex_species_data_frame <- read_csv(file = "data/carex_species_data_frame.csv",
                                      col_types = NULL)
 carex_species_data_frame <- rename(carex_species_data_frame, species_name = X1)
 
-# extract and collapse data corresponding to multiple properties
-
 collapse_extract_properties <- function(variable_name, list_property_names) {
+  # extract and collapse data corresponding to multiple properties
   variable_tibble <- carex_species_data_frame %>% unite(variable_name, 
                                                         all_of(list_property_names), 
                                                         na.rm = TRUE, remove = FALSE
@@ -38,14 +37,32 @@ culm_height <- collapse_extract_properties("culm_height", culm_height_props)
 # Stopped at Carex davisii
 
 # Maximum inflorescence length
-# TODO: Carex davisii infloresences 10-25 mm is missing from property list
+# TODO: Carex davisii infloresences 10-25 mm is missing from property list, Carex_xerantica 1.5–5 cm × 5–10 mm; Carex_venusta, 5–100 mm
+# Q: Do we include spike within inflorescence data? E.g., Carex basiantha, Carex virescens
 inflorescence_length_props <- c("Inflorescence_some_measurement", "Inflorescence_atypical_length", "Inflorescence_length")
 inflorescence_length <- collapse_extract_properties("inflorescence_length", inflorescence_length_props)
 
 # Maximum inflorescence width
-# Q: Do we include spike within inflorescence data? I think not. 
+# Q: Do we include spike within inflorescence data?
 # E.g. Spike width, Spike some measurement
+inflorescence_width_props <- c("Inflorescence_atypical_width", "Inflorescence_width")
+inflorescence_width <- collapse_extract_properties("inflorescence_width", inflorescence_width_props)
+# TODO/Q: Do we want to include the atypical measurements? Likely only if they are atypical on the top end.
+# Take the highest number regardless.
 
 # Inflorescence complexity (max branch order)
+inflorescence_complexity_props <- c()
+inflorescence_complexity <- collapse_extract_properties("inflorescence_complexity", inflorescence_complexity_props)
+
 # Maximum fruit length
+# TODO: Achene data from Carex_abrupta not appearing in properties
+# Achene_atypical_some_measurement, Achene_size, Achene_some_measurement
+fruit_length_props <- c("Achene_atypical_length", "Achene_length")
+fruit_length <- collapse_extract_properties("fruit_length", fruit_length_props)
+
 # Maximum fruit width
+fruit_width_props <- c("Achene_atypical_width", "Achene_width")
+fruit_width <- collapse_extract_properties("fruit_width", fruit_width_props)
+
+# TODO: use boxplots to identify outliers and manually verify data.
+# TODO: Compare the dataset derived here with my MSc dataset
