@@ -13,7 +13,124 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>落叶松薹草 luo ye song tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome slender. Culms 20–60 cm tall, slender, trigonous, scabrous above, clothed at base with pale brown bladeless sheaths. Leaves shorter than culm, blades linear, 1.5–2 mm wide, flat, scabrous. Involucral bracts glumelike. Spicate inflorescence oblong or oblong-ovate, 1.8–2.7 cm; spikes 6–10, androgynous or mixed gynaecandrous, rarely female, ovate or oblong-ovate, 5–7 mm. Female glumes oblong-ovate, margins pale hyaline, apex acute. Utricles pale ferruginous-yellow, slightly greenish above, longer than glume, ovate-lanceolate, plano-convex, (5–)5.5–6.5 mm, subleathery, sparsely verruculose and hirsute above adaxially, 5–10-veined abaxially, 3–5-veined adaxially, base subrounded, sessile, upper margins narrowly serrate winged, apex gradually attenuate into a conic long beak, orifice 2-toothed. Stigmas 2.</description>
+  <description>
+    <statement id="1652.txt-0">
+      <text>Rhizome slender.</text>
+      <structure id="o19433" name="rhizome">
+        <character name="size" value="slender" />
+      </structure>
+    </statement>
+    <statement id="1652.txt-1">
+      <text>Culms 20–60 cm tall, slender, trigonous, scabrous above, clothed at base with pale brown bladeless sheaths.</text>
+      <structure id="o19434" name="culm">
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="60" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="trigonous" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o19435" name="base" />
+      <relation id="r3681" name="clothed at" from="o19434" to="o19435" negation="false" />
+      <structure id="o19436" name="sheath" constraint="bladeless">
+        <character name="coloration" value="brown" modifier="pale" />
+      </structure>
+      <relation id="r3682" name="with" from="o19435" to="o19436" negation="false" />
+    </statement>
+    <statement id="1652.txt-2">
+      <text>Leaves shorter than culm, blades linear, 1.5–2 mm wide, flat, scabrous.</text>
+      <structure id="o19437" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o19438" />
+      </structure>
+      <structure id="o19438" name="culm" />
+      <structure id="o19439" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1652.txt-3">
+      <text>Involucral bracts glumelike.</text>
+      <structure id="o19440" name="bract" constraint="involucral">
+        <character name="feature" value="glumelike" />
+      </structure>
+    </statement>
+    <statement id="1652.txt-4">
+      <text>Spicate inflorescence oblong or oblong-ovate, 1.8–2.7 cm;</text>
+      <structure id="o19441" name="inflorescence" constraint="spicate">
+        <character name="shape" value="oblong" />
+        <character name="shape" value="oblong-ovate" />
+        <character char_type="range_value" name="size" from="1.8" from_unit="cm" to="2.7" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1652.txt-5">
+      <text>spikes 6–10, androgynous or mixed gynaecandrous, rarely female, ovate or oblong-ovate, 5–7 mm.</text>
+      <structure id="o19442" name="spike">
+        <character char_type="range_value" name="count" from="6" to="10" />
+        <character name="feature" value="androgynous" />
+        <character name="feature" value="mixed" modifier="gynaecandrous" />
+        <character name="reproduction" value="female" modifier="rarely" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="oblong-ovate" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="7" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1652.txt-6">
+      <text>Female glumes oblong-ovate, margins pale hyaline, apex acute.</text>
+      <structure id="o19443" name="glume" constraint="female">
+        <character name="shape" value="oblong-ovate" />
+      </structure>
+      <structure id="o19444" name="margin">
+        <character name="coloration" value="hyaline" modifier="pale" />
+      </structure>
+      <structure id="o19445" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1652.txt-7">
+      <text>Utricles pale ferruginous-yellow, slightly greenish above, longer than glume, ovate-lanceolate, planoconvex, (5– )5.5–6.5 mm, subleathery, sparsely verruculose and hirsute above adaxially, 5–10-veined abaxially, 3–5-veined adaxially, base subrounded, sessile, upper margins narrowly serrate winged, apex gradually attenuate into a conic long beak, orifice 2-toothed.</text>
+      <structure id="o19446" name="utricle">
+        <character name="coloration" value="pale ferruginous-yellow" />
+        <character name="coloration" value="greenish" modifier="slightly" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o19447" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="atypical_size" from="5" to="5.5" from_unit="mm" to_unit="mm" to_inclusive="false" />
+        <character char_type="range_value" name="size" from="5.5" from_unit="mm" to="6.5" to_unit="mm" />
+        <character name="external_texture" value="hirsute" constraint="above adaxially" constraintid="o19448" />
+        <character name="architecture_or_feature" value="5-10-veined" modifier="abaxially" />
+        <character name="architecture_or_feature" value="3-5-veined" modifier="adaxially" />
+      </structure>
+      <structure id="o19447" name="glume" />
+      <structure id="o19448" name="adaxially" />
+      <structure id="o19449" name="base">
+        <character name="arrangement" value="subrounded" />
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+      <structure id="o19450" name="margin" constraint="upper">
+        <character name="shape" value="serrate" modifier="narrowly" />
+        <character name="architecture" value="winged" />
+      </structure>
+      <structure id="o19451" name="apex">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into beak" constraintid="o19452" />
+      </structure>
+      <structure id="o19452" name="beak">
+        <character name="shape" value="conic" />
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o19453" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1652.txt-8">
+      <text>Stigmas 2.</text>
+      <structure id="o19454" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Sparse forests; ca. 1300 m. S Jilin (Changbai Shan).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

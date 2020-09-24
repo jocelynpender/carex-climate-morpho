@@ -14,7 +14,37 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>大果亲族薹草 da guo qin zu tai cao</variety_name>
   </TaxonIdentification>
-  <description>Leaf blades ca. 1.5 mm wide. Female glumes oblong-lanceolate, ca. 1.5 mm. Utricles 3–4 mm, beak ca. 1/3 length of utricle. Fl. and fr. Aug–Sep.</description>
+  <description>
+    <statement id="1577.txt-0">
+      <text>Leaf blades ca. 1.5 mm wide.</text>
+      <structure id="o17567" name="blade" constraint="leaf">
+        <character name="width" value="1.5" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1577.txt-1">
+      <text>Female glumes oblong-lanceolate, ca. 1.5 mm.</text>
+      <structure id="o17568" name="glume" constraint="female">
+        <character name="shape" value="oblong-lanceolate" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1577.txt-2">
+      <text>Utricles 3–4 mm, beak ca. 1/3 length of utricle.</text>
+      <structure id="o17569" name="utricle">
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="4" to_unit="mm" />
+      </structure>
+      <structure id="o17571" name="utricle" />
+      <relation id="r3369" name="may_be_the_same" from="o17569" to="o17571" negation="false" />
+    </statement>
+    <statement id="1577.txt-3">
+      <text>Fl. and fr. Aug–Sep.</text>
+      <structure id="o17570" name="beak">
+        <character name="length" value="1/3" constraint="of utricle" constraintid="o17571" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Mountain slopes, ditch sides, rock crevices, grasslands; 1300–1800 m. Chongqing (Chengkou).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

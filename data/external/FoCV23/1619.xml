@@ -13,7 +13,126 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>云 亿薹草 yun yi tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, woody. Culms densely tufted, 20–40 cm tall, slender, trigonous, scabrous, clothed at base with bladeless sheaths. Basal leaves shorter to slightly longer than culm, scabrid on margin. Inflorescence 1-spiked, terminal, androgynous, narrowly cylindric, 2–2.5 cm; male part shorter than female part, 6–11-flowered; female part loosely 9–14-flowered. Female glumes pale green, obovate, 4–4.5 mm, costa green, apex acuminate. Utricles pale green, erect to obliquely patent, slightly longer than glume, obovoid, compressed trigonous, 5–6 mm, herbaceous, glabrous, abaxially distinctly many veined, apex abruptly constricted into a short beak ca. 1.5 mm, orifice slightly bidentate. Nutlet broadly obovoid, trigonous or quadrangular, ca. 2.5 mm, lateral surface excavated, base stipitate; stigmas 3. Fl. and fr. Apr–May.</description>
+  <description>
+    <statement id="1619.txt-0">
+      <text>Rhizome short, woody.</text>
+      <structure id="o18657" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="internal_texture" value="woody" />
+      </structure>
+    </statement>
+    <statement id="1619.txt-1">
+      <text>Culms densely tufted, 20–40 cm tall, slender, trigonous, scabrous, clothed at base with bladeless sheaths.</text>
+      <structure id="o18658" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="40" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="trigonous" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o18659" name="base" />
+      <relation id="r3554" name="clothed at" from="o18658" to="o18659" negation="false" />
+      <structure id="o18660" name="sheath" constraint="bladeless" />
+      <relation id="r3555" name="with" from="o18659" to="o18660" negation="false" />
+    </statement>
+    <statement id="1619.txt-2">
+      <text>Basal leaves shorter to slightly longer than culm, scabrid on margin.</text>
+      <structure id="o18661" name="leaf" constraint="basal">
+        <character name="relief" value="scabrid" constraint="on margin" constraintid="o18663" />
+      </structure>
+      <structure id="o18662" name="culm" />
+      <structure id="o18663" name="margin" />
+    </statement>
+    <statement id="1619.txt-3">
+      <text>Inflorescence 1-spiked, terminal, androgynous, narrowly cylindric, 2–2.5 cm;</text>
+    </statement>
+    <statement id="1619.txt-4">
+      <text>male part shorter than female part, 6–11-flowered;</text>
+    </statement>
+    <statement id="1619.txt-5">
+      <text>female part loosely 9–14-flowered.</text>
+      <structure id="o18664" name="inflorescence">
+        <character name="position" value="terminal" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="cylindric" modifier="narrowly" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="2.5" to_unit="cm" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="height_or_length" value="shorter than female part" />
+        <character name="architecture" value="6-11-flowered" />
+        <character name="reproduction" value="female" />
+        <character name="architecture" value="9-14-flowered" modifier="loosely" />
+      </structure>
+    </statement>
+    <statement id="1619.txt-6">
+      <text>Female glumes pale green, obovate, 4–4.5 mm, costa green, apex acuminate.</text>
+      <structure id="o18665" name="glume" constraint="female">
+        <character name="coloration" value="green" modifier="pale" />
+        <character name="shape" value="obovate" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="4.5" to_unit="mm" />
+      </structure>
+      <structure id="o18666" name="costa">
+        <character name="coloration" value="green" />
+      </structure>
+      <structure id="o18667" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1619.txt-7">
+      <text>Utricles pale green, erect to obliquely patent, slightly longer than glume, obovoid, compressed trigonous, 5–6 mm, herbaceous, glabrous, abaxially distinctly many veined, apex abruptly constricted into a short beak ca. 1.5 mm, orifice slightly bidentate.</text>
+      <structure id="o18668" name="utricle">
+        <character name="coloration" value="green" modifier="pale" />
+        <character char_type="range_value" name="orientation" from="erect" to="obliquely patent" />
+        <character name="orientation" value="erect" />
+        <character name="orientation" value="patent" modifier="obliquely" />
+        <character name="length" value="longer" modifier="slightly" constraint="than glume" constraintid="o18669" />
+        <character name="shape" value="obovoid" />
+        <character name="shape" value="compressed trigonous" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="6" to_unit="mm" />
+        <character name="external_texture_or_feature_or_internal_texture" value="herbaceous" />
+        <character name="external_texture" value="glabrous" />
+        <character name="count" value="many" modifier="abaxially distinctly" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o18669" name="glume" />
+      <structure id="o18670" name="apex">
+        <character name="size" value="constricted" modifier="abruptly" constraint="into beak" constraintid="o18671" />
+      </structure>
+      <structure id="o18671" name="beak">
+        <character name="height_or_length" value="short" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+      <structure id="o18672" name="orifice">
+        <character name="shape" value="bidentate" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1619.txt-8">
+      <text>Nutlet broadly obovoid, trigonous or quadrangular, ca. 2.5 mm, lateral surface excavated, base stipitate;</text>
+      <structure id="o18673" name="nutlet">
+        <character name="shape" value="obovoid" modifier="broadly" />
+        <character name="shape" value="trigonous" />
+        <character name="shape" value="trigonous" modifier="quadrangular" />
+        <character name="size" value="2.5" unit="mm" />
+      </structure>
+      <structure id="o18674" name="surface" constraint="lateral">
+        <character name="architecture" value="excavated" />
+      </structure>
+      <structure id="o18675" name="base">
+        <character name="architecture" value="stipitate" />
+      </structure>
+    </statement>
+    <statement id="1619.txt-9">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1619.txt-10">
+      <text>Fl. and fr. Apr–May.</text>
+      <structure id="o18676" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Cryptomeria forests; ca. 1000 m. E Zhejiang (Tiantai).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -17,7 +17,50 @@
       <other_info>not Honckeny (1792), nor R. Brown (1823).</other_info>
     </place_of_publication>
   </TaxonIdentification>
-  <description>Culms 25–35 cm tall. Leaves longer or slightly shorter than culm. Male spikes 2–4, congregated at top of culm, cylindric, 0.5–2.5 cm; remaining spikes bisexual, androgynous, oblong-cylindric or narrowly oblong, 2–3 cm. Utricles 2.5–3 mm.</description>
+  <description>
+    <statement id="1094.txt-0">
+      <text>Culms 25–35 cm tall.</text>
+      <structure id="o3013" name="culm">
+        <character char_type="range_value" name="size" from="25" from_unit="cm" to="35" to_unit="cm" />
+        <character name="height" value="tall" />
+      </structure>
+    </statement>
+    <statement id="1094.txt-1">
+      <text>Leaves longer or slightly shorter than culm.</text>
+      <structure id="o3014" name="leaf" />
+      <structure id="o3015" name="culm" />
+    </statement>
+    <statement id="1094.txt-2">
+      <text>Male spikes 2–4, congregated at top of culm, cylindric, 0.5–2.5 cm;</text>
+      <structure id="o3016" name="spike" constraint="male">
+        <character char_type="range_value" name="count" from="2" to="4" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="0.5" from_unit="cm" to="2.5" to_unit="cm" />
+      </structure>
+      <structure id="o3017" name="top" />
+      <relation id="r606" name="congregated at" from="o3016" to="o3017" negation="false" />
+      <structure id="o3018" name="culm" />
+      <relation id="r607" name="part_of" from="o3017" to="o3018" negation="false" />
+    </statement>
+    <statement id="1094.txt-3">
+      <text>remaining spikes bisexual, androgynous, oblong-cylindric or narrowly oblong, 2–3 cm.</text>
+      <structure id="o3019" name="spike" constraint="remaining">
+        <character name="reproduction" value="bisexual" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="oblong-cylindric" />
+        <character name="shape" value="oblong" modifier="narrowly" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="3" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1094.txt-4">
+      <text>Utricles 2.5–3 mm.</text>
+      <structure id="o3020" name="utricle">
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Wet places at riversides, forests on mountain slopes, grasslands; 2700–4100 m. Xizang, Yunnan [Bhutan, India, Nepal].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

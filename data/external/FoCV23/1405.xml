@@ -13,8 +13,167 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>富宁薹草 fu ning tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, woody. Culms lateral, up to 40 cm tall, compressed trigonous, smooth, clothed at base with dark brown sheaths disintegrating into fibers. Leaves surpassing culm, blades broadly linear, 7–9 mm wide, base plicate and flattened distally, adaxial surface and upper margins scabrous, apex acuminate. Involucral bracts leaflike, almost sheathless. Spike 1, female, cylindric, ca. 5.5 × 1 mm, pedunculate. Female glumes yellow-white, lanceolate, 6–8 mm, green 3-veined costa excurrent into a long awn. Utricles green, longer than glume, obliquely patent, ovate (excluding beak), 7–7.5 mm (including beak), membranous, sparsely pubescent, conspicuously many veined, apex abruptly contracted into a long beak, orifice 2-toothed. Nutlets pale castaneous, tightly enveloped, trigonous ovate, ca. 4 mm, constricted on angles at middle, faces concave at base, base very shortly stipitate, apex abruptly contracted into a cylindric beak ca. 1.5 mm, orifice inflated; style persistent, base not thickened; stigmas 3. Fr. Apr.</description>
+  <description>
+    <statement id="1405.txt-0">
+      <text>Rhizome short, woody.</text>
+      <structure id="o12349" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="internal_texture" value="woody" />
+      </structure>
+    </statement>
+    <statement id="1405.txt-1">
+      <text>Culms lateral, up to 40 cm tall, compressed trigonous, smooth, clothed at base with dark brown sheaths disintegrating into fibers.</text>
+      <structure id="o12350" name="culm">
+        <character name="position" value="lateral" />
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="40" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="compressed trigonous" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o12351" name="base" />
+      <relation id="r2324" name="clothed at" from="o12350" to="o12351" negation="false" />
+      <structure id="o12352" name="sheath">
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o12353" />
+      </structure>
+      <relation id="r2325" name="with" from="o12351" to="o12352" negation="false" />
+      <structure id="o12353" name="fiber" />
+    </statement>
+    <statement id="1405.txt-2">
+      <text>Leaves surpassing culm, blades broadly linear, 7–9 mm wide, base plicate and flattened distally, adaxial surface and upper margins scabrous, apex acuminate.</text>
+      <structure id="o12354" name="leaf" />
+      <structure id="o12355" name="culm" />
+      <relation id="r2326" name="surpassing" from="o12354" to="o12355" negation="false" />
+      <structure id="o12356" name="blade">
+        <character name="arrangement_or_shape" value="linear" modifier="broadly" />
+        <character char_type="range_value" name="width" from="7" from_unit="mm" to="9" to_unit="mm" />
+      </structure>
+      <structure id="o12357" name="base">
+        <character name="architecture_or_arrangement_or_shape_or_vernation" value="plicate" />
+        <character name="shape" value="flattened" modifier="distally" />
+      </structure>
+      <structure id="o12358" name="surface" constraint="adaxial">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o12359" name="margin" constraint="upper">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o12360" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1405.txt-3">
+      <text>Involucral bracts leaflike, almost sheathless.</text>
+      <structure id="o12361" name="bract" constraint="involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="feature" value="sheathless" modifier="almost" />
+      </structure>
+    </statement>
+    <statement id="1405.txt-4">
+      <text>Spike 1, female, cylindric, ca. 5.5 × 1 mm, pedunculate.</text>
+      <structure id="o12362" name="spike">
+        <character name="count" value="1" />
+        <character name="reproduction" value="female" />
+        <character name="shape" value="cylindric" />
+        <character name="length" value="5.5" unit="mm" />
+        <character name="width" value="1" unit="mm" />
+        <character name="architecture" value="pedunculate" />
+      </structure>
+    </statement>
+    <statement id="1405.txt-5">
+      <text>Female glumes yellow-white, lanceolate, 6–8 mm, green 3-veined costa excurrent into a long awn.</text>
+      <structure id="o12363" name="glume" constraint="female">
+        <character name="coloration" value="yellow-white" />
+        <character name="shape" value="lanceolate" />
+        <character char_type="range_value" name="size" from="6" from_unit="mm" to="8" to_unit="mm" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="3-veined" />
+        <character name="architecture" value="excurrent" constraint="into awn" constraintid="o12365" />
+      </structure>
+      <structure id="o12364" name="costa" />
+      <structure id="o12365" name="awn">
+        <character name="length" value="long" />
+      </structure>
+    </statement>
+    <statement id="1405.txt-6">
+      <text>Utricles green, longer than glume, obliquely patent, ovate (excluding beak ), 7–7.5 mm (including beak ), membranous, sparsely pubescent, conspicuously many veined, apex abruptly contracted into a long beak, orifice 2-toothed.</text>
+      <structure id="o12366" name="utricle">
+        <character name="coloration" value="green" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o12367" />
+        <character name="orientation" value="patent" modifier="obliquely" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="7" from_unit="mm" to="7.5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="count" value="many" modifier="conspicuously" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o12367" name="glume" />
+      <structure id="o12368" name="beak" in_brackets="true" />
+      <relation id="r2327" name="excluding" from="o12366" to="o12368" negation="false" in_brackets="true" />
+      <structure id="o12369" name="beak" in_brackets="true" />
+      <relation id="r2328" name="including" from="o12366" to="o12369" negation="false" in_brackets="true" />
+      <structure id="o12370" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o12371" />
+      </structure>
+      <structure id="o12371" name="beak">
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o12372" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+      <relation id="r2329" name="may_be_the_same" from="o12368" to="o12369" negation="false" />
+      <relation id="r2330" name="may_be_the_same" from="o12368" to="o12371" negation="false" />
+      <relation id="r2331" name="may_be_the_same" from="o12369" to="o12371" negation="false" />
+    </statement>
+    <statement id="1405.txt-7">
+      <text>Nutlets pale castaneous, tightly enveloped, trigonous ovate, ca. 4 mm, constricted on angles at middle, faces concave at base, base very shortly stipitate, apex abruptly contracted into a cylindric beak ca. 1.5 mm, orifice inflated;</text>
+      <structure id="o12373" name="nutlet">
+        <character name="coloration" value="castaneous" modifier="pale" />
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="trigonous ovate" />
+        <character name="size" value="4" unit="mm" />
+        <character name="size" value="constricted" constraint="on angles" constraintid="o12374" />
+        <character name="shape" value="concave" constraint="at base" constraintid="o12375" />
+      </structure>
+      <structure id="o12374" name="angle" constraint="at middle" />
+      <structure id="o12375" name="base" />
+      <structure id="o12376" name="base">
+        <character name="architecture" value="stipitate" modifier="very shortly" />
+      </structure>
+      <structure id="o12377" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o12378" />
+      </structure>
+      <structure id="o12378" name="beak">
+        <character name="shape" value="cylindric" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+      <structure id="o12379" name="orifice">
+        <character name="shape" value="inflated" />
+      </structure>
+      <relation id="r2332" name="may_be_the_same" from="o12375" to="o12376" negation="false" />
+    </statement>
+    <statement id="1405.txt-8">
+      <text>style persistent, base not thickened;</text>
+      <structure id="o12380" name="style">
+        <character name="duration" value="persistent" />
+      </structure>
+      <structure id="o12381" name="base">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1405.txt-9">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1405.txt-10">
+      <text>Fr. Apr.</text>
+      <structure id="o12382" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Dense forests; ca. 1100 m. SE Yunnan.</distribution>
   <discussion>No male spike was described. This is unusual because in Carex sect. Rhomboidales no unispicate species should exist. This species requires further study.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

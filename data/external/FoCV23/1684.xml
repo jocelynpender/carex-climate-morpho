@@ -29,7 +29,37 @@
     <variety_name>remotispicula</variety_name>
     <variety_authority>(Hayata) Ohwi.</variety_authority>
   </TaxonIdentification>
-  <description>Leaves: membranous side of leaf sheaths at mouth not projected forming a tonguelike appendage. Utricles several veined abaxially, hardly veined adaxially. Fl. and fr. Jun–Jul.</description>
+  <description>
+    <statement id="1684.txt-0">
+      <text>Leaves:</text>
+    </statement>
+    <statement id="1684.txt-1">
+      <text>membranous side of leaf sheaths at mouth not projected forming a tonguelike appendage.</text>
+      <structure id="o20187" name="leaf">
+        <character name="feature" value="membranous" constraint="of leaf sheaths" constraintid="o20188" />
+      </structure>
+      <structure id="o20188" name="sheath" constraint="leaf" />
+      <structure id="o20189" name="mouth" />
+      <relation id="r3788" name="at" from="o20188" to="o20189" negation="false" />
+      <structure id="o20190" name="appendage">
+        <character name="feature" value="tonguelike" />
+      </structure>
+      <relation id="r3789" name="projected" from="o20187" to="o20190" negation="true" />
+    </statement>
+    <statement id="1684.txt-2">
+      <text>Utricles several veined abaxially, hardly veined adaxially.</text>
+    </statement>
+    <statement id="1684.txt-3">
+      <text>Fl. and fr. Jun–Jul.</text>
+      <structure id="o20191" name="utricle">
+        <character name="count" value="several" />
+        <character name="architecture_or_feature" value="veined" modifier="abaxially" />
+        <character name="architecture_or_feature" value="veined" modifier="hardly;adaxially" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Grasslands and thickets at high elevations. Gansu, Guangxi, Guizhou, Hubei, Hunan, Shaanxi, Shanxi, Sichuan, Taiwan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

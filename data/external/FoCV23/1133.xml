@@ -9,7 +9,29 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>灰帽薹草 ( 原变种) hui mao tai cao (yuan bian zhong)</variety_name>
   </TaxonIdentification>
-  <description>Male spike 1–1.7 cm, ca. 1 mm thick, linear. Female glume usually mucronate at apex. Fl. and fr. Apr–May.</description>
+  <description>
+    <statement id="1133.txt-0">
+      <text>Male spike 1–1.7 cm, ca. 1 mm thick, linear.</text>
+      <structure id="o4250" name="spike" constraint="male">
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="1.7" to_unit="cm" />
+        <character name="size" value="1" unit="mm" />
+        <character name="width" value="thick" />
+        <character name="arrangement_or_shape" value="linear" />
+      </structure>
+    </statement>
+    <statement id="1133.txt-1">
+      <text>Female glume usually mucronate at apex.</text>
+      <structure id="o4252" name="apex" />
+    </statement>
+    <statement id="1133.txt-2">
+      <text>Fl. and fr. Apr–May.</text>
+      <structure id="o4251" name="glume" constraint="female">
+        <character name="shape" value="mucronate" modifier="usually" constraint="at apex" constraintid="o4252" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Sandy slopes, bamboo forests. Anhui, Jiangsu, Zhejiang [Japan, Korea].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

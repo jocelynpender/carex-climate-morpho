@@ -13,7 +13,152 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>翼果薹草 yi guo tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, indurate. Plant wholly ferruginous puncticulate. Culms tufted, flattened, smooth, clothed with pinkish ferruginous bladeless sheaths at base. Leaves shorter or longer than culm, blades linear, 2–3 mm wide, flat, margins ± involute, scabrous, apex acuminate; membranous side of leaf sheath ferruginous. Lower involucral bracts leaflike, much surpassing inflorescence, sheathless, upper involucral bracts setaceous. Spicate inflorescence dense, pyramidal-cylindric, 2.5–8 × 1–1.8 mm; spikes numerous, androgynous, ovate, 5–8 mm. Female glumes ferruginous-yellow, ferruginous spotted, ovate to oblong-elliptic, 2–4 × ca. 1.5 mm, apex acute, shortly awned. Utricles ferruginous spotted, longer than glume, suberect, ovate or broadly ovate, plano-convex, 2.5–4 mm, membranous, many veined on both faces, densely ferruginous puncticulate above, margins from middle to apex with broad serrulate wings, apex gradually contracted into a beak, orifice 2-toothed. Nutlets pale brown, loosely enveloped, ovate or elliptic, plano-convex, ca. 1 mm, smooth, lustrous; stigmas 2. Fl. and fr. Jun–Aug. 2n = 108.</description>
+  <description>
+    <statement id="1630.txt-0">
+      <text>Rhizome short, indurate.</text>
+      <structure id="o18914" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="external_texture" value="indurate" />
+      </structure>
+    </statement>
+    <statement id="1630.txt-1">
+      <text>Plant wholly ferruginous puncticulate.</text>
+      <structure id="o18915" name="whole_organism">
+        <character name="pattern" value="puncticulate" />
+        <character name="life_style" value="plant" />
+      </structure>
+    </statement>
+    <statement id="1630.txt-2">
+      <text>Culms tufted, flattened, smooth, clothed with pinkish ferruginous bladeless sheaths at base.</text>
+      <structure id="o18916" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character name="shape" value="flattened" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o18917" name="sheath" constraint="bladeless">
+        <character name="coloration" value="pinkish" />
+      </structure>
+      <relation id="r3599" name="clothed with" from="o18916" to="o18917" negation="false" />
+      <structure id="o18918" name="base" />
+      <relation id="r3600" name="at" from="o18917" to="o18918" negation="false" />
+    </statement>
+    <statement id="1630.txt-3">
+      <text>Leaves shorter or longer than culm, blades linear, 2–3 mm wide, flat, margins ± involute, scabrous, apex acuminate;</text>
+      <structure id="o18919" name="leaf" />
+      <structure id="o18920" name="culm" />
+      <structure id="o18921" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o18922" name="margin">
+        <character name="shape_or_vernation" value="involute" modifier="more or less" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1630.txt-4">
+      <text>membranous side of leaf sheath ferruginous.</text>
+      <structure id="o18923" name="apex">
+        <character name="shape" value="acuminate" />
+        <character name="feature" value="membranous" constraint="of leaf sheath" constraintid="o18924" />
+      </structure>
+      <structure id="o18924" name="sheath" constraint="leaf" />
+    </statement>
+    <statement id="1630.txt-5">
+      <text>Lower involucral bracts leaflike, much surpassing inflorescence, sheathless, upper involucral bracts setaceous.</text>
+      <structure id="o18925" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="feature" value="sheathless" />
+      </structure>
+      <structure id="o18926" name="inflorescence" />
+      <relation id="r3601" name="surpassing" from="o18925" to="o18926" negation="false" modifier="much" />
+      <structure id="o18927" name="bract" constraint="upper involucral">
+        <character name="feature_or_shape" value="setaceous" />
+      </structure>
+    </statement>
+    <statement id="1630.txt-6">
+      <text>Spicate inflorescence dense, pyramidal-cylindric, 2.5–8 × 1–1.8 mm;</text>
+      <structure id="o18928" name="inflorescence" constraint="spicate">
+        <character name="density" value="dense" />
+        <character name="shape" value="pyramidal-cylindric" />
+        <character char_type="range_value" name="length" from="2.5" from_unit="mm" to="8" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="1.8" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1630.txt-7">
+      <text>spikes numerous, androgynous, ovate, 5–8 mm.</text>
+      <structure id="o18929" name="spike">
+        <character name="count" value="numerous" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="8" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1630.txt-8">
+      <text>Female glumes ferruginous-yellow, ferruginous spotted, ovate to oblong-elliptic, 2–4 × ca. 1.5 mm, apex acute, shortly awned.</text>
+      <structure id="o18930" name="glume" constraint="female">
+        <character name="coloration" value="ferruginous-yellow" />
+        <character name="pattern" value="spotted" />
+        <character char_type="range_value" name="shape" from="ovate" to="oblong-elliptic" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="oblong-elliptic" />
+        <character char_type="range_value" name="length" from="2" from_unit="mm" to="4" to_unit="mm" />
+        <character name="width" value="1.5" unit="mm" />
+      </structure>
+      <structure id="o18931" name="apex">
+        <character name="shape" value="acute" />
+        <character name="shape" value="awned" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1630.txt-9">
+      <text>Utricles ferruginous spotted, longer than glume, suberect, ovate or broadly ovate, planoconvex, 2.5–4 mm, membranous, many veined on both faces, densely ferruginous puncticulate above, margins from middle to apex with broad serrulate wings, apex gradually contracted into a beak, orifice 2-toothed.</text>
+      <structure id="o18932" name="utricle">
+        <character name="pattern" value="spotted" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o18933" />
+        <character name="orientation" value="suberect" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="4" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" constraint="on faces" constraintid="o18934" />
+        <character name="pattern" value="puncticulate" />
+      </structure>
+      <structure id="o18933" name="glume" />
+      <structure id="o18934" name="face" />
+    </statement>
+    <statement id="1630.txt-10">
+      <text>Nutlets pale brown, loosely enveloped, ovate or elliptic, planoconvex, ca. 1 mm, smooth, lustrous;</text>
+      <structure id="o18935" name="nutlet">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="elliptic" />
+        <character name="shape" value="planoconvex" />
+        <character name="size" value="1" unit="mm" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="reflectance" value="lustrous" />
+      </structure>
+    </statement>
+    <statement id="1630.txt-11">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1630.txt-12">
+      <text>Fl. and fr. Jun–Aug.</text>
+      <structure id="o18936" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+    <statement id="1630.txt-13">
+      <text>2n = 108.</text>
+      <structure name="chromosome" id="o18937">
+        <character name="count" value="108" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Wet places along ponds and riversides, grasslands; (below 100–)100–1700 m. Anhui, Gansu, Hebei, Heilongjiang, Henan, Jiangsu, Jilin, Liaoning, Nei Mongol, Shaanxi, Shandong, Shanxi [Japan, Korea, Russia (Far East)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

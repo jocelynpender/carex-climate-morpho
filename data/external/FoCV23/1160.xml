@@ -32,7 +32,38 @@
     <variety_name>minor</variety_name>
     <variety_authority>Boeckeler.</variety_authority>
   </TaxonIdentification>
-  <description>Culms not winged. Leaves equaling or longer than culm, 0.4–1 cm wide. Spikes 1–3. Female glumes 2–3 mm.</description>
+  <description>
+    <statement id="1160.txt-0">
+      <text>Culms not winged.</text>
+      <structure id="o5093" name="culm">
+        <character name="architecture" value="winged" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1160.txt-1">
+      <text>Leaves equaling or longer than culm, 0.4–1 cm wide.</text>
+      <structure id="o5094" name="leaf">
+        <character char_type="range_value" name="width" from="0.4" from_unit="cm" to="1" to_unit="cm" />
+      </structure>
+      <structure id="o5095" name="culm">
+        <character name="length" value="longer" />
+      </structure>
+      <relation id="r1019" name="equaling" from="o5094" to="o5095" negation="false" />
+    </statement>
+    <statement id="1160.txt-2">
+      <text>Spikes 1–3.</text>
+      <structure id="o5096" name="spike">
+        <character char_type="range_value" name="count" from="1" to="3" />
+      </structure>
+    </statement>
+    <statement id="1160.txt-3">
+      <text>Female glumes 2–3 mm.</text>
+      <structure id="o5097" name="glume" constraint="female">
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="3" to_unit="mm" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Quercus, coniferous, and evergreen broad-leaved forests, thickets or grasslands on riversides; 1000–3400 m. SW Sichuan, Yunnan [Cambodia, India, Indonesia, Laos, Nepal, Thailand, Vietnam].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

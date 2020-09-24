@@ -13,8 +13,138 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>丽江薹草 li jiang tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, woody. Culms densely tufted, 25–60 cm tall, trigonous, smooth. Leaves basal, almost equaling or longer than culm, blades linear, ca. 2 mm wide, flat, scabrous above, rigid, with brown-green sheaths, lowest sheath bladeless. Lowest involucral bract leaflike, longer than inflorescence. Spikes 4–7, androgynous, linear-cylindric, 3–4 cm, upper ones usually binate, lower ones single, rarely branched at base, with long peduncles. Female glumes reddish, ovate-oblong, 1-veined costa excurrent into a mucro. Utricles yellowish green, longer than glume, elliptic, obtusely trigonous, 3–4 mm, glabrous, many veined, base contracted, apex gradually narrowed into a beak of medium length, orifice truncate, hyaline. Nutlets loosely enveloped, trigonous, ca. 1.5 mm; style base thickened; stigmas 3. Fl. and fr. May–Jul.</description>
+  <description>
+    <statement id="1233.txt-0">
+      <text>Rhizome short, woody.</text>
+      <structure id="o7172" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="internal_texture" value="woody" />
+      </structure>
+    </statement>
+    <statement id="1233.txt-1">
+      <text>Culms densely tufted, 25–60 cm tall, trigonous, smooth.</text>
+      <structure id="o7173" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character char_type="range_value" name="size" from="25" from_unit="cm" to="60" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+    </statement>
+    <statement id="1233.txt-2">
+      <text>Leaves basal, almost equaling or longer than culm, blades linear, ca. 2 mm wide, flat, scabrous above, rigid, with brown-green sheaths, lowest sheath bladeless.</text>
+      <structure id="o7174" name="leaf">
+        <character name="position" value="basal" />
+        <character name="width" value="2" unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture_or_relief" value="scabrous" />
+        <character name="internal_texture" value="rigid" />
+      </structure>
+      <structure id="o7175" name="blade" constraint="culm">
+        <character name="length" value="longer" />
+        <character name="arrangement_or_shape" value="linear" />
+      </structure>
+      <relation id="r1292" name="equaling" from="o7174" to="o7175" negation="false" modifier="almost" />
+      <structure id="o7176" name="sheath">
+        <character name="coloration" value="brown-green" />
+      </structure>
+      <relation id="r1293" name="with" from="o7174" to="o7176" negation="false" />
+      <structure id="o7177" name="sheath">
+        <character name="feature" value="lowest" />
+      </structure>
+      <relation id="r1294" name="may_be_the_same" from="o7176" to="o7177" negation="false" />
+    </statement>
+    <statement id="1233.txt-3">
+      <text>Lowest involucral bract leaflike, longer than inflorescence.</text>
+      <structure id="o7178" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="architecture" value="leaflike" />
+        <character name="length" value="longer" constraint="than inflorescence" constraintid="o7179" />
+      </structure>
+      <structure id="o7179" name="inflorescence" />
+    </statement>
+    <statement id="1233.txt-4">
+      <text>Spikes 4–7, androgynous, linear-cylindric, 3–4 cm, upper ones usually binate, lower ones single, rarely branched at base, with long peduncles.</text>
+      <structure id="o7180" name="spike">
+        <character char_type="range_value" name="count" from="4" to="7" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="linear-cylindric" />
+        <character char_type="range_value" name="size" from="3" from_unit="cm" to="4" to_unit="cm" />
+        <character name="position" value="upper" />
+        <character name="count" value="binate" modifier="usually" />
+        <character name="position" value="lower" />
+        <character name="count" value="single" />
+        <character name="architecture" value="branched" modifier="rarely" constraint="at base" constraintid="o7181" />
+      </structure>
+      <structure id="o7181" name="base" />
+      <structure id="o7182" name="peduncle">
+        <character name="length" value="long" />
+      </structure>
+      <relation id="r1295" name="with" from="o7180" to="o7182" negation="false" />
+    </statement>
+    <statement id="1233.txt-5">
+      <text>Female glumes reddish, ovate-oblong, 1-veined costa excurrent into a mucro.</text>
+      <structure id="o7183" name="glume" constraint="female">
+        <character name="coloration" value="reddish" />
+        <character name="shape" value="ovate-oblong" />
+        <character name="architecture_or_feature" value="1-veined" />
+        <character name="architecture" value="excurrent" constraint="into mucro" constraintid="o7185" />
+      </structure>
+      <structure id="o7184" name="costa" />
+      <structure id="o7185" name="mucro" />
+    </statement>
+    <statement id="1233.txt-6">
+      <text>Utricles yellowish green, longer than glume, elliptic, obtusely trigonous, 3–4 mm, glabrous, many veined, base contracted, apex gradually narrowed into a beak of medium length, orifice truncate, hyaline.</text>
+      <structure id="o7186" name="utricle">
+        <character name="coloration" value="green" modifier="yellowish" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o7187" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="external_texture" value="glabrous" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o7187" name="glume" />
+      <structure id="o7188" name="base">
+        <character name="size" value="contracted" />
+      </structure>
+      <structure id="o7189" name="apex">
+        <character name="shape" value="narrowed" modifier="gradually" constraint="into beak" constraintid="o7190" />
+      </structure>
+      <structure id="o7190" name="beak" constraint="of medium length" />
+      <structure id="o7191" name="orifice">
+        <character name="shape" value="truncate" />
+        <character name="coloration" value="hyaline" />
+      </structure>
+    </statement>
+    <statement id="1233.txt-7">
+      <text>Nutlets loosely enveloped, trigonous, ca. 1.5 mm;</text>
+      <structure id="o7192" name="nutlet">
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1233.txt-8">
+      <text>style base thickened;</text>
+      <structure id="o7193" name="base" constraint="style">
+        <character name="width" value="thickened" />
+      </structure>
+    </statement>
+    <statement id="1233.txt-9">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1233.txt-10">
+      <text>Fl. and fr. May–Jul.</text>
+      <structure id="o7194" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Grassy slopes, moist places along streams, forest margins; 1900–3800 m. SW Sichuan, NW Yunnan.</distribution>
   <discussion>The following variety could not be treated here because no material was seen by the present authors: Carex dielsiana var. pallidior Handel-Mazzetti (Symb. Sin. 7: 1267. 1936), described from Sichuan.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

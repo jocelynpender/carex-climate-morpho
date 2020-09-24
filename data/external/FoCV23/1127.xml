@@ -14,7 +14,29 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>坚硬薹草 jian ying tai cao</variety_name>
   </TaxonIdentification>
-  <description>Male spike 5–6 cm, with peduncle 3.5–5 cm; female spike (15–)30–35 × ca. 2 mm, loosely flowered.</description>
+  <description>
+    <statement id="1127.txt-0">
+      <text>Male spike 5–6 cm, with peduncle 3.5–5 cm;</text>
+      <structure id="o4097" name="spike" constraint="male">
+        <character char_type="range_value" name="size" from="5" from_unit="cm" to="6" to_unit="cm" />
+      </structure>
+      <structure id="o4098" name="peduncle">
+        <character char_type="range_value" name="size" from="3.5" from_unit="cm" to="5" to_unit="cm" />
+      </structure>
+      <relation id="r854" name="with" from="o4097" to="o4098" negation="false" />
+    </statement>
+    <statement id="1127.txt-1">
+      <text>female spike (15– )30–35 × ca. 2 mm, loosely flowered.</text>
+      <structure id="o4099" name="spike" constraint="female">
+        <character char_type="range_value" name="atypical_length" from="15" to="30" from_unit="mm" to_unit="mm" to_inclusive="false" />
+        <character char_type="range_value" name="length" from="30" from_unit="mm" to="35" to_unit="mm" />
+        <character name="width" value="2" unit="mm" />
+        <character name="architecture" value="flowered" modifier="loosely" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Bogs. Fujian, Hunan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -13,7 +13,150 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>中海薹草 zhong hai taic ao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms 40–70 cm tall, 1.5–2 mm thick, trigonous, scabrous above, clothed at base with light brown bladeless sheaths. Leaves shorter than culm, blades linear, 2–3 mm wide, flat, margins scabrous. Basal involucral bracts leaflike, shorter than inflorescence, sheathless, remaining bracts setaceous. Spikes 3–5; terminal spike male, occasionally some becoming androgynous bearing several male flowers at apex, cylindric, 20–40 × 4–5 mm, densely many flowered, subsessile. Female glumes blackish purple, oblong or ovate-lanceolate, 3.5–4 × 0.8–1 mm, with light midrib, apex acuminate. Utricles blackish purple, lower part light brown, shorter than glume, oblong, ca. 3 × 1.2 mm, base very shortly stipitate, apex gradually narrowed to a short beak ca. 0.3 mm, orifice entire. Nutlets yellow-brown, slightly loosely enveloped, obovate, ca. 1.5 × 1 mm; style base not thickened; stigmas 2. Fl. and fr. Jul–Aug.</description>
+  <description>
+    <statement id="1512.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o15841" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1512.txt-1">
+      <text>Culms 40–70 cm tall, 1.5–2 mm thick, trigonous, scabrous above, clothed at base with light brown bladeless sheaths.</text>
+      <structure id="o15842" name="culm">
+        <character char_type="range_value" name="size" from="40" from_unit="cm" to="70" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+        <character name="width" value="thick" />
+        <character name="shape" value="trigonous" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o15843" name="base" />
+      <relation id="r3019" name="clothed at" from="o15842" to="o15843" negation="false" />
+      <structure id="o15844" name="sheath" constraint="bladeless">
+        <character name="coloration" value="brown" modifier="light" />
+      </structure>
+      <relation id="r3020" name="with" from="o15843" to="o15844" negation="false" />
+    </statement>
+    <statement id="1512.txt-2">
+      <text>Leaves shorter than culm, blades linear, 2–3 mm wide, flat, margins scabrous.</text>
+      <structure id="o15845" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o15846" />
+      </structure>
+      <structure id="o15846" name="culm" />
+      <structure id="o15847" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o15848" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1512.txt-3">
+      <text>Basal involucral bracts leaflike, shorter than inflorescence, sheathless, remaining bracts setaceous.</text>
+      <structure id="o15849" name="bract" constraint="basal involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o15850" />
+        <character name="feature" value="sheathless" />
+      </structure>
+      <structure id="o15850" name="inflorescence" />
+      <structure id="o15851" name="bract" constraint="remaining">
+        <character name="feature_or_shape" value="setaceous" />
+      </structure>
+    </statement>
+    <statement id="1512.txt-4">
+      <text>Spikes 3–5;</text>
+      <structure id="o15852" name="spike">
+        <character char_type="range_value" name="count" from="3" to="5" />
+      </structure>
+    </statement>
+    <statement id="1512.txt-5">
+      <text>terminal spike male, occasionally some becoming androgynous bearing several male flowers at apex, cylindric, 20–40 × 4–5 mm, densely many flowered, subsessile.</text>
+      <structure id="o15853" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="feature_or_reproduction" value="androgynous" modifier="becoming" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="length" from="20" from_unit="mm" to="40" to_unit="mm" />
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="5" to_unit="mm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+        <character name="architecture" value="subsessile" />
+      </structure>
+      <structure id="o15854" name="flower" constraint="several male" />
+      <relation id="r3021" name="bearing" from="o15853" to="o15854" negation="false" />
+      <structure id="o15855" name="apex" />
+      <relation id="r3022" name="at" from="o15854" to="o15855" negation="false" />
+    </statement>
+    <statement id="1512.txt-6">
+      <text>Female glumes blackish purple, oblong or ovate-lanceolate, 3.5–4 × 0.8–1 mm, with light midrib, apex acuminate.</text>
+      <structure id="o15856" name="glume" constraint="female">
+        <character name="coloration" value="purple" modifier="blackish" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character char_type="range_value" name="length" from="3.5" from_unit="mm" to="4" to_unit="mm" />
+        <character char_type="range_value" name="width" from="0.8" from_unit="mm" to="1" to_unit="mm" />
+      </structure>
+      <structure id="o15857" name="midrib">
+        <character name="coloration" value="light" />
+      </structure>
+      <relation id="r3023" name="with" from="o15856" to="o15857" negation="false" />
+      <structure id="o15858" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1512.txt-7">
+      <text>Utricles blackish purple, lower part light brown, shorter than glume, oblong, ca. 3 × 1.2 mm, base very shortly stipitate, apex gradually narrowed to a short beak ca. 0.3 mm, orifice entire.</text>
+      <structure id="o15859" name="utricle">
+        <character name="coloration" value="purple" modifier="blackish" />
+        <character name="position" value="lower" />
+        <character name="coloration" value="brown" modifier="light" />
+        <character name="height_or_length" value="shorter" constraint="than glume" constraintid="o15860" />
+        <character name="shape" value="oblong" />
+        <character name="length" value="3" unit="mm" />
+        <character name="width" value="1.2" unit="mm" />
+      </structure>
+      <structure id="o15860" name="glume" />
+      <structure id="o15861" name="base">
+        <character name="architecture" value="stipitate" modifier="very shortly" />
+      </structure>
+      <structure id="o15862" name="apex" />
+      <structure id="o15863" name="beak">
+        <character name="height_or_length" value="short" />
+        <character name="size" value="0.3" unit="mm" />
+      </structure>
+      <relation id="r3024" name="narrowed to" from="o15862" to="o15863" negation="false" modifier="gradually" />
+      <structure id="o15864" name="orifice">
+        <character name="shape" value="entire" />
+      </structure>
+    </statement>
+    <statement id="1512.txt-8">
+      <text>Nutlets yellow-brown, slightly loosely enveloped, obovate, ca. 1.5 × 1 mm;</text>
+      <structure id="o15865" name="nutlet">
+        <character name="coloration" value="yellow-brown" />
+        <character name="feature" value="enveloped" modifier="slightly loosely" />
+        <character name="shape" value="obovate" />
+        <character name="length" value="1.5" unit="mm" />
+        <character name="width" value="1" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1512.txt-9">
+      <text>style base not thickened;</text>
+      <structure id="o15866" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1512.txt-10">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1512.txt-11">
+      <text>Fl. and fr. Jul–Aug.</text>
+      <structure id="o15867" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● In water; ca. 2400 m. N Xinjiang (Qinghe: Zhonghaizi).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

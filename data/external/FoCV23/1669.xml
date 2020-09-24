@@ -13,7 +13,115 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>萨嘎薹草 sa ga tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms densely tufted, ca. 2 cm tall, trigonous, smooth. Leaves longer or shorter than culm, blades needlelike, less than ca. 1 mm wide. Involucral bracts glumelike, broadly obovate, sheathless, awned at apex. Inflorescence capitate, broadly elliptic or ovate, 6–8 mm; spikes 2 or 3, androgynous, elliptic, 5–6 mm. Female glumes pale brown, lanceolate, ca. 4.5 mm, membranous, 1-veined. Utricles subequaling glume, lanceolate, membranous, base cuneate, apex gradually attenuate into a slightly scabrous beak, orifice 2-toothed. Nutlets broadly oblong, compressed trigonous, ca. 2 mm, base shortly stipitate; stigmas 2. Fl. and fr. Aug.</description>
+  <description>
+    <statement id="1669.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o19831" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1669.txt-1">
+      <text>Culms densely tufted, ca. 2 cm tall, trigonous, smooth.</text>
+      <structure id="o19832" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character name="size" value="2" unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+    </statement>
+    <statement id="1669.txt-2">
+      <text>Leaves longer or shorter than culm, blades needlelike, less than ca. 1 mm wide.</text>
+      <structure id="o19833" name="leaf" />
+      <structure id="o19834" name="culm" />
+      <structure id="o19835" name="blade">
+        <character name="architecture_or_shape" value="needlelike" />
+        <character name="size" value="1" unit="mm" modifier="less than" constraint="wide" />
+      </structure>
+    </statement>
+    <statement id="1669.txt-3">
+      <text>Involucral bracts glumelike, broadly obovate, sheathless, awned at apex.</text>
+      <structure id="o19836" name="bract" constraint="involucral">
+        <character name="feature" value="glumelike" />
+        <character name="shape" value="obovate" modifier="broadly" />
+        <character name="feature" value="sheathless" />
+        <character name="shape" value="awned" constraint="at apex" constraintid="o19837" />
+      </structure>
+      <structure id="o19837" name="apex" />
+    </statement>
+    <statement id="1669.txt-4">
+      <text>Inflorescence capitate, broadly elliptic or ovate, 6–8 mm;</text>
+      <structure id="o19838" name="inflorescence">
+        <character name="shape" value="capitate" />
+        <character name="shape" value="elliptic" modifier="broadly" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="6" from_unit="mm" to="8" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1669.txt-5">
+      <text>spikes 2 or 3, androgynous, elliptic, 5–6 mm.</text>
+      <structure id="o19839" name="spike">
+        <character name="count" value="2" />
+        <character name="count" value="3" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="6" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1669.txt-6">
+      <text>Female glumes pale brown, lanceolate, ca. 4.5 mm, membranous, 1-veined.</text>
+      <structure id="o19840" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="shape" value="lanceolate" />
+        <character name="size" value="4.5" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+    </statement>
+    <statement id="1669.txt-7">
+      <text>Utricles subequaling glume, lanceolate, membranous, base cuneate, apex gradually attenuate into a slightly scabrous beak, orifice 2-toothed.</text>
+      <structure id="o19841" name="utricle">
+        <character name="shape" value="lanceolate" />
+        <character name="feature" value="membranous" />
+      </structure>
+      <structure id="o19842" name="glume" />
+      <relation id="r3735" name="subequaling" from="o19841" to="o19842" negation="false" />
+      <structure id="o19843" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+      </structure>
+      <structure id="o19844" name="apex">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into beak" constraintid="o19845" />
+      </structure>
+      <structure id="o19845" name="beak">
+        <character name="external_texture_or_relief" value="scabrous" modifier="slightly" />
+      </structure>
+      <structure id="o19846" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1669.txt-8">
+      <text>Nutlets broadly oblong, compressed trigonous, ca. 2 mm, base shortly stipitate;</text>
+      <structure id="o19847" name="nutlet">
+        <character name="shape" value="oblong" modifier="broadly" />
+        <character name="shape" value="compressed trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+      <structure id="o19848" name="base">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1669.txt-9">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1669.txt-10">
+      <text>Fl. and fr. Aug.</text>
+      <structure id="o19849" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Meadows; ca. 5000 m. Xizang (Saga).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

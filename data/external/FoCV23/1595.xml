@@ -9,7 +9,34 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>长穗柄薹草 ( 原变种) chang sui bing tai cao (yuan bian zhong)</variety_name>
   </TaxonIdentification>
-  <description>Culms 40–70 cm tall. Lower spikes with slender peduncle, upper spikes with short peduncle. Fl. and fr. Jun–Aug.</description>
+  <description>
+    <statement id="1595.txt-0">
+      <text>Culms 40–70 cm tall.</text>
+      <structure id="o18146" name="culm">
+        <character char_type="range_value" name="size" from="40" from_unit="cm" to="70" to_unit="cm" />
+        <character name="height" value="tall" />
+      </structure>
+    </statement>
+    <statement id="1595.txt-1">
+      <text>Lower spikes with slender peduncle, upper spikes with short peduncle.</text>
+      <structure id="o18147" name="spike" constraint="lower" />
+      <structure id="o18148" name="peduncle">
+        <character name="size" value="slender" />
+      </structure>
+      <relation id="r3461" name="with" from="o18147" to="o18148" negation="false" />
+      <structure id="o18150" name="peduncle">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r3462" name="with" from="o18149" to="o18150" negation="false" />
+      <relation id="r3463" name="may_be_the_same" from="o18148" to="o18150" negation="false" />
+    </statement>
+    <statement id="1595.txt-2">
+      <text>Fl. and fr. Jun–Aug.</text>
+      <structure id="o18149" name="spike" constraint="upper" />
+    </statement>
+  </description>
   <distribution>Grasslands on mountain slopes, riversides; 1200–1300 m. Hubei, Sichuan, Yunnan [India, Indonesia, Nepal].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

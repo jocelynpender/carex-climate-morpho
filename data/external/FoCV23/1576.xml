@@ -14,7 +14,37 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>宽叶亲族薹草 kuan ye qin zu tai cao</variety_name>
   </TaxonIdentification>
-  <description>Leaf blades ca. 4.5 mm wide. Female glumes broadly ovate, ca. 1 mm. Utricles ca. 3 mm, beak ca. 1/3 length of utricle. Fl. and fr. Aug–Oct.</description>
+  <description>
+    <statement id="1576.txt-0">
+      <text>Leaf blades ca. 4.5 mm wide.</text>
+      <structure id="o17562" name="blade" constraint="leaf">
+        <character name="width" value="4.5" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1576.txt-1">
+      <text>Female glumes broadly ovate, ca. 1 mm.</text>
+      <structure id="o17563" name="glume" constraint="female">
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="size" value="1" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1576.txt-2">
+      <text>Utricles ca. 3 mm, beak ca. 1/3 length of utricle.</text>
+      <structure id="o17564" name="utricle">
+        <character name="size" value="3" unit="mm" />
+      </structure>
+      <structure id="o17566" name="utricle" />
+      <relation id="r3368" name="may_be_the_same" from="o17564" to="o17566" negation="false" />
+    </statement>
+    <statement id="1576.txt-3">
+      <text>Fl. and fr. Aug–Oct.</text>
+      <structure id="o17565" name="beak">
+        <character name="length" value="1/3" constraint="of utricle" constraintid="o17566" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Mountain slopes, ditch sides, rock crevices; 1300–2000 m. Chongqing (Chengkou), Guizhou, Shaanxi, Xizang (Bomi), Yunnan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

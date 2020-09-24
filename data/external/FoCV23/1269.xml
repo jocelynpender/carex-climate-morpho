@@ -13,7 +13,147 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>日东薹草 ri dong tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome woody, oblique. Culms tufted, 70–80 cm tall, slender, basal sheaths dark brown, bladeless. Leaves shorter than culm, blades linear, 2–3 mm wide, flat, scabrous. Involucral bracts reduced to shortly bladed, long sheathing. Spikes 4, distant, cylindric, 3.5–4 × 0.3–0.4 cm; terminal spike male; lateral spikes female, slightly densely many flowered, with peduncles 15–21 cm, pendent. Female glumes brown, oblong, 3.2–3.5 mm, green 3-veined costa excurrent into a mucro. Utricles longer than glume, obovate-oblong, trigonous, 4.2–4.5 mm, hirsute, nerveless except for 2 costas on edges, base gradually attenuate into a short stipe, apex abruptly contracted into a brown long beak, orifice white hyaline, 2-toothed. Nutlets obovate-oblong, ca. 2 mm; style base slightly thickened; stigmas 3. Fl. and fr. Sep.</description>
+  <description>
+    <statement id="1269.txt-0">
+      <text>Rhizome woody, oblique.</text>
+      <structure id="o8258" name="rhizome">
+        <character name="internal_texture" value="woody" />
+        <character name="orientation_or_shape" value="oblique" />
+      </structure>
+    </statement>
+    <statement id="1269.txt-1">
+      <text>Culms tufted, 70–80 cm tall, slender, basal sheaths dark brown, bladeless.</text>
+      <structure id="o8259" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="70" from_unit="cm" to="80" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+      </structure>
+      <structure id="o8260" name="sheath" constraint="basal">
+        <character name="coloration" value="brown" modifier="dark" />
+      </structure>
+    </statement>
+    <statement id="1269.txt-2">
+      <text>Leaves shorter than culm, blades linear, 2–3 mm wide, flat, scabrous.</text>
+      <structure id="o8261" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o8262" />
+      </structure>
+      <structure id="o8262" name="culm" />
+      <structure id="o8263" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1269.txt-3">
+      <text>Involucral bracts reduced to shortly bladed, long sheathing.</text>
+      <structure id="o8264" name="bract" constraint="involucral">
+        <character name="size" value="reduced" />
+        <character name="architecture_or_feature_or_shape" value="sheathing" />
+      </structure>
+    </statement>
+    <statement id="1269.txt-4">
+      <text>Spikes 4, distant, cylindric, 3.5–4 × 0.3–0.4 cm;</text>
+      <structure id="o8265" name="spike">
+        <character name="count" value="4" />
+        <character name="arrangement" value="distant" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="length" from="3.5" from_unit="cm" to="4" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.3" from_unit="cm" to="0.4" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1269.txt-5">
+      <text>terminal spike male;</text>
+      <structure id="o8266" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+      </structure>
+    </statement>
+    <statement id="1269.txt-6">
+      <text>lateral spikes female, slightly densely many flowered, with peduncles 15–21 cm, pendent.</text>
+      <structure id="o8267" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="count" value="many" modifier="slightly densely" />
+        <character name="architecture" value="flowered" />
+        <character name="orientation" value="pendent" />
+      </structure>
+      <structure id="o8268" name="peduncle">
+        <character char_type="range_value" name="size" from="15" from_unit="cm" to="21" to_unit="cm" />
+      </structure>
+      <relation id="r1516" name="with" from="o8267" to="o8268" negation="false" />
+    </statement>
+    <statement id="1269.txt-7">
+      <text>Female glumes brown, oblong, 3.2–3.5 mm, green 3-veined costa excurrent into a mucro.</text>
+      <structure id="o8269" name="glume" constraint="female">
+        <character name="coloration" value="brown" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="3.2" from_unit="mm" to="3.5" to_unit="mm" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="3-veined" />
+        <character name="architecture" value="excurrent" constraint="into mucro" constraintid="o8271" />
+      </structure>
+      <structure id="o8270" name="costa" />
+      <structure id="o8271" name="mucro" />
+    </statement>
+    <statement id="1269.txt-8">
+      <text>Utricles longer than glume, obovate-oblong, trigonous, 4.2–4.5 mm, hirsute, nerveless except for 2 costas on edges, base gradually attenuate into a short stipe, apex abruptly contracted into a brown long beak, orifice white hyaline, 2-toothed.</text>
+      <structure id="o8272" name="utricle">
+        <character name="length" value="longer" constraint="than glume" constraintid="o8273" />
+        <character name="shape" value="obovate-oblong" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="4.2" from_unit="mm" to="4.5" to_unit="mm" />
+        <character name="external_texture" value="hirsute" />
+        <character name="feature" value="nerveless" constraint="except-for costas" constraintid="o8274" />
+      </structure>
+      <structure id="o8273" name="glume" />
+      <structure id="o8274" name="costa">
+        <character name="count" value="2" />
+      </structure>
+      <structure id="o8275" name="edge" />
+      <relation id="r1517" name="on" from="o8274" to="o8275" negation="false" />
+      <structure id="o8276" name="base">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into stipe" constraintid="o8277" />
+      </structure>
+      <structure id="o8277" name="stipe">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o8278" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o8279" />
+      </structure>
+      <structure id="o8279" name="beak">
+        <character name="coloration" value="brown" />
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o8280" name="orifice">
+        <character name="coloration" value="hyaline" modifier="white" />
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1269.txt-9">
+      <text>Nutlets obovate-oblong, ca. 2 mm;</text>
+      <structure id="o8281" name="nutlet">
+        <character name="shape" value="obovate-oblong" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1269.txt-10">
+      <text>style base slightly thickened;</text>
+      <structure id="o8282" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1269.txt-11">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1269.txt-12">
+      <text>Fl. and fr. Sep.</text>
+      <structure id="o8283" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Alpine meadows in thickets; 3000–4000 m. Xizang.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

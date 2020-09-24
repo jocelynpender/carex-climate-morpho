@@ -9,7 +9,30 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>点囊薹草 ( 原变种) dian nang tai cao (yuan bian zhong)</variety_name>
   </TaxonIdentification>
-  <description>Involucral bracts longer than inflorescence. Utricles ca. 2.5 mm. Stigmas ca. 1/2 length of utricle.</description>
+  <description>
+    <statement id="1537.txt-0">
+      <text>Involucral bracts longer than inflorescence.</text>
+      <structure id="o16460" name="bract" constraint="involucral">
+        <character name="length" value="longer" constraint="than inflorescence" constraintid="o16461" />
+      </structure>
+      <structure id="o16461" name="inflorescence" />
+    </statement>
+    <statement id="1537.txt-1">
+      <text>Utricles ca. 2.5 mm.</text>
+      <structure id="o16462" name="utricle">
+        <character name="size" value="2.5" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1537.txt-2">
+      <text>Stigmas ca. 1/2 length of utricle.</text>
+      <structure id="o16463" name="stigma">
+        <character name="length" value="1/2" constraint="of utricle" constraintid="o16464" />
+      </structure>
+      <structure id="o16464" name="utricle" />
+    </statement>
+  </description>
   <distribution>Grassland slopes, wet places in forests; 2000–3900 m. Guangdong, Xizang, Yunnan [India].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -13,7 +13,169 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>硬果薹草 ying guo tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome obliquely ascending. Culms tufted, 30–60 cm tall, medium thick, triquetrous, smooth, clothed with bladeless brown-red sheaths at base. Leaves shorter than culm, blades 3–6 mm wide, flat, distinctly 2-veined laterally, lower sheaths usually brown-red. Involucral bracts leaflike, shorter than culm, long sheathed. Spikes 6 or 7; terminal spike male, linear, ca. 4 cm; lateral spikes female, narrowly cylindric, 2.5–7 cm, densely many flowered, uppermost 2 contiguous at top of culm, subsessile, lower ones slightly remote, with very short peduncle. Female glumes pale, lanceolate, ca. 2 mm, membranous, greenish 1-veined, apex acuminate, with a short awn. Utricles brown-green, obliquely patent, longer than glume, elliptic, obtusely trigonous, 2–2.8 mm, membranous, inconspicuously 5-veined, hispidulous on veins, base cuneate, apex abruptly contracted into a ± long beak, orifice obliquely truncate or later emarginate. Nutlets yellowish, rather tightly enveloped, subelliptic, trigonous, ca. 1 mm, verrucose; style base thickened; stigmas 3, rather short. Fl. and fr. May–Jun.</description>
+  <description>
+    <statement id="1332.txt-0">
+      <text>Rhizome obliquely ascending.</text>
+      <structure id="o10188" name="rhizome">
+        <character name="orientation" value="ascending" modifier="obliquely" />
+      </structure>
+    </statement>
+    <statement id="1332.txt-1">
+      <text>Culms tufted, 30–60 cm tall, medium thick, triquetrous, smooth, clothed with bladeless brown-red sheaths at base.</text>
+      <structure id="o10189" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="60" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="width" value="thick" />
+        <character name="shape" value="triquetrous" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o10190" name="sheath">
+        <character name="coloration" value="brown-red" />
+      </structure>
+      <relation id="r1883" name="clothed with" from="o10189" to="o10190" negation="false" />
+      <structure id="o10191" name="base" />
+      <relation id="r1884" name="at" from="o10190" to="o10191" negation="false" />
+    </statement>
+    <statement id="1332.txt-2">
+      <text>Leaves shorter than culm, blades 3–6 mm wide, flat, distinctly 2-veined laterally, lower sheaths usually brown-red.</text>
+      <structure id="o10192" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o10193" />
+      </structure>
+      <structure id="o10193" name="culm" />
+      <structure id="o10194" name="blade">
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="6" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="architecture_or_feature" value="2-veined" modifier="distinctly;laterally" />
+      </structure>
+      <structure id="o10195" name="sheath" constraint="lower">
+        <character name="coloration" value="brown-red" modifier="usually" />
+      </structure>
+    </statement>
+    <statement id="1332.txt-3">
+      <text>Involucral bracts leaflike, shorter than culm, long sheathed.</text>
+      <structure id="o10196" name="bract" constraint="involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o10197" />
+        <character name="architecture_or_feature" value="sheathed" />
+      </structure>
+      <structure id="o10197" name="culm" />
+    </statement>
+    <statement id="1332.txt-4">
+      <text>Spikes 6 or 7;</text>
+      <structure id="o10198" name="spike">
+        <character name="count" value="6" />
+        <character name="count" value="7" />
+      </structure>
+    </statement>
+    <statement id="1332.txt-5">
+      <text>terminal spike male, linear, ca. 4 cm;</text>
+      <structure id="o10199" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character name="size" value="4" unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1332.txt-6">
+      <text>lateral spikes female, narrowly cylindric, 2.5–7 cm, densely many flowered, uppermost 2 contiguous at top of culm, subsessile, lower ones slightly remote, with very short peduncle.</text>
+      <structure id="o10200" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="cylindric" modifier="narrowly" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="cm" to="7" to_unit="cm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+        <character name="position" value="uppermost" />
+        <character name="count" value="2" />
+        <character name="arrangement" value="contiguous" constraint="at top" constraintid="o10201" />
+        <character name="architecture" value="subsessile" />
+        <character name="position" value="lower" />
+        <character name="arrangement" value="remote" modifier="slightly" />
+      </structure>
+      <structure id="o10201" name="top" />
+      <structure id="o10202" name="culm" />
+      <relation id="r1885" name="part_of" from="o10201" to="o10202" negation="false" />
+      <structure id="o10203" name="peduncle">
+        <character name="height_or_length" value="short" modifier="very" />
+      </structure>
+      <relation id="r1886" name="with" from="o10200" to="o10203" negation="false" />
+    </statement>
+    <statement id="1332.txt-7">
+      <text>Female glumes pale, lanceolate, ca. 2 mm, membranous, greenish 1-veined, apex acuminate, with a short awn.</text>
+      <structure id="o10204" name="glume" constraint="female">
+        <character name="coloration" value="pale" />
+        <character name="shape" value="lanceolate" />
+        <character name="size" value="2" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="coloration" value="greenish" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o10205" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+      <structure id="o10206" name="awn">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r1887" name="with" from="o10205" to="o10206" negation="false" />
+    </statement>
+    <statement id="1332.txt-8">
+      <text>Utricles brown-green, obliquely patent, longer than glume, elliptic, obtusely trigonous, 2–2.8 mm, membranous, inconspicuously 5-veined, hispidulous on veins, base cuneate, apex abruptly contracted into a ± long beak, orifice obliquely truncate or later emarginate.</text>
+      <structure id="o10207" name="utricle">
+        <character name="coloration" value="brown-green" />
+        <character name="orientation" value="patent" modifier="obliquely" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o10208" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="2.8" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="5-veined" modifier="inconspicuously" />
+        <character name="external_texture" value="hispidulous" constraint="on veins" constraintid="o10209" />
+      </structure>
+      <structure id="o10208" name="glume" />
+      <structure id="o10209" name="vein" />
+      <structure id="o10210" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+      </structure>
+      <structure id="o10211" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o10212" />
+      </structure>
+      <structure id="o10212" name="beak">
+        <character name="length" value="long" modifier="more or less" />
+      </structure>
+      <structure id="o10213" name="orifice">
+        <character name="shape" value="truncate" modifier="obliquely" />
+        <character name="shape" value="later" modifier="emarginate" />
+      </structure>
+    </statement>
+    <statement id="1332.txt-9">
+      <text>Nutlets yellowish, rather tightly enveloped, subelliptic, trigonous, ca. 1 mm, verrucose;</text>
+      <structure id="o10214" name="nutlet">
+        <character name="coloration" value="yellowish" />
+        <character name="feature" value="enveloped" modifier="rather tightly" />
+        <character name="shape" value="subelliptic" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="1" unit="mm" />
+        <character name="relief" value="verrucose" />
+      </structure>
+    </statement>
+    <statement id="1332.txt-10">
+      <text>style base thickened;</text>
+      <structure id="o10215" name="base" constraint="style">
+        <character name="width" value="thickened" />
+      </structure>
+    </statement>
+    <statement id="1332.txt-11">
+      <text>stigmas 3, rather short.</text>
+    </statement>
+    <statement id="1332.txt-12">
+      <text>Fl. and fr. May–Jun.</text>
+      <structure id="o10216" name="stigma">
+        <character name="count" value="3" />
+        <character name="height_or_length" value="short" modifier="rather" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Forests; 900–1700 m. Anhui, Hunan, Sichuan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

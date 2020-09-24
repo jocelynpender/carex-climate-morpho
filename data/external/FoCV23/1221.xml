@@ -23,7 +23,33 @@
       <place_in_publication>13: 244. 1914 [ “ciliato-marginata” ] .</place_in_publication>
     </place_of_publication>
   </TaxonIdentification>
-  <description>Leaf blades ciliate and sparsely pilose on both surfaces. Terminal spike usually male. Utricle pilose. Fl. and fr. Apr–May.</description>
+  <description>
+    <statement id="1221.txt-0">
+      <text>Leaf blades ciliate and sparsely pilose on both surfaces.</text>
+      <structure id="o6843" name="blade" constraint="leaf">
+        <character name="architecture_or_shape" value="ciliate" />
+        <character name="external_texture" value="pilose" modifier="sparsely" constraint="on surfaces" constraintid="o6844" />
+      </structure>
+      <structure id="o6844" name="surface" />
+    </statement>
+    <statement id="1221.txt-1">
+      <text>Terminal spike usually male.</text>
+      <structure id="o6845" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" modifier="usually" />
+      </structure>
+    </statement>
+    <statement id="1221.txt-2">
+      <text>Utricle pilose.</text>
+    </statement>
+    <statement id="1221.txt-3">
+      <text>Fl. and fr. Apr–May.</text>
+      <structure id="o6846" name="utricle">
+        <character name="external_texture" value="pilose" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Rather dry grasslands, forest margins. Anhui, Jiangsu, Liaoning, Zhejiang [Japan, Korea].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

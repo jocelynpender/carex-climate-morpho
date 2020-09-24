@@ -13,8 +13,137 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>沙地薹草 sha di tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome creeping, with stolons. Culms 15–40 cm tall, smooth, clothed at base with reddish brown bladeless and blade-bearing sheaths. Leaves shorter than culm, blades linear, 2–3.5 mm wide, stiff, weakly involute. Lower involucral bracts shorter than inflorescence. Spikes 2–5, upper spikes approximate, lower 1 or 2 distant; terminal spike gynaecandrous, sometimes male, clavate, 2–2.5 × 0.8–1 cm; remaining spikes female, ovate to ovate-oblong, 1.5–2 × 0.8–1 cm; peduncles 1–2 cm. Female glumes ferruginous with a pale midrib, ovate, margins white hyaline, apex acute. Utricles yellow-green, broader than but as long as or shorter than glume, ovate, trigonous, 4–5(–6) mm, smooth, 3–5-veined, base broadly cuneate, stipitate, apex abruptly contracted into a smooth, deeply 2-lobed beak. Fr. Jun–Jul.</description>
+  <description>
+    <statement id="1053.txt-0">
+      <text>Rhizome creeping, with stolons.</text>
+      <structure id="o1818" name="rhizome">
+        <character name="habit" value="creeping" />
+      </structure>
+      <structure id="o1819" name="stolon" />
+      <relation id="r400" name="with" from="o1818" to="o1819" negation="false" />
+    </statement>
+    <statement id="1053.txt-1">
+      <text>Culms 15–40 cm tall, smooth, clothed at base with reddish brown bladeless and blade-bearing sheaths.</text>
+      <structure id="o1820" name="culm">
+        <character char_type="range_value" name="size" from="15" from_unit="cm" to="40" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o1821" name="base" />
+      <relation id="r401" name="clothed at" from="o1820" to="o1821" negation="false" />
+      <structure id="o1822" name="sheath">
+        <character name="coloration" value="brown" modifier="reddish" />
+      </structure>
+      <relation id="r402" name="with" from="o1821" to="o1822" negation="false" />
+    </statement>
+    <statement id="1053.txt-2">
+      <text>Leaves shorter than culm, blades linear, 2–3.5 mm wide, stiff, weakly involute.</text>
+      <structure id="o1823" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o1824" />
+      </structure>
+      <structure id="o1824" name="culm" />
+      <structure id="o1825" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3.5" to_unit="mm" />
+        <character name="external_texture" value="stiff" />
+        <character name="shape_or_vernation" value="involute" modifier="weakly" />
+      </structure>
+    </statement>
+    <statement id="1053.txt-3">
+      <text>Lower involucral bracts shorter than inflorescence.</text>
+      <structure id="o1826" name="bract" constraint="lower involucral">
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o1827" />
+      </structure>
+      <structure id="o1827" name="inflorescence" />
+    </statement>
+    <statement id="1053.txt-4">
+      <text>Spikes 2–5, upper spikes approximate, lower 1 or 2 distant;</text>
+      <structure id="o1828" name="spike">
+        <character char_type="range_value" name="count" from="2" to="5" />
+      </structure>
+      <structure id="o1829" name="spike" constraint="upper">
+        <character name="feature" value="approximate" />
+        <character name="position" value="lower" />
+        <character name="count" value="1" />
+        <character name="count" value="2" />
+        <character name="arrangement" value="distant" />
+      </structure>
+    </statement>
+    <statement id="1053.txt-5">
+      <text>terminal spike gynaecandrous, sometimes male, clavate, 2–2.5 × 0.8–1 cm;</text>
+      <structure id="o1830" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+        <character name="feature_or_reproduction" value="male" modifier="sometimes" />
+        <character name="shape" value="clavate" />
+        <character char_type="range_value" name="length" from="2" from_unit="cm" to="2.5" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.8" from_unit="cm" to="1" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1053.txt-6">
+      <text>remaining spikes female, ovate to ovate-oblong, 1.5–2 × 0.8–1 cm;</text>
+      <structure id="o1831" name="spike" constraint="remaining">
+        <character name="reproduction" value="female" />
+        <character char_type="range_value" name="shape" from="ovate" to="ovate-oblong" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="ovate-oblong" />
+        <character char_type="range_value" name="length" from="1.5" from_unit="cm" to="2" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.8" from_unit="cm" to="1" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1053.txt-7">
+      <text>peduncles 1–2 cm.</text>
+      <structure id="o1832" name="peduncle">
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="2" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1053.txt-8">
+      <text>Female glumes ferruginous with a pale midrib, ovate, margins white hyaline, apex acute.</text>
+      <structure id="o1833" name="glume" constraint="female">
+        <character name="shape" value="ovate" />
+      </structure>
+      <structure id="o1834" name="midrib">
+        <character name="coloration" value="pale" />
+      </structure>
+      <relation id="r403" name="with" from="o1833" to="o1834" negation="false" />
+      <structure id="o1835" name="margin">
+        <character name="coloration" value="hyaline" modifier="white" />
+      </structure>
+      <structure id="o1836" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1053.txt-9">
+      <text>Utricles yellow-green, broader than but as long as or shorter than glume, ovate, trigonous, 4–5 (–6 )mm, smooth, 3–5-veined, base broadly cuneate, stipitate, apex abruptly contracted into a smooth, deeply 2-lobed beak.</text>
+      <structure id="o1837" name="utricle">
+        <character name="coloration" value="yellow-green" />
+        <character name="height_or_length" value="shorter" constraint="than glume" constraintid="o1838" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="atypical_size" from="5" to="6" from_unit="mm" to_unit="mm" from_inclusive="false" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="5" to_unit="mm" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="architecture_or_feature" value="3-5-veined" />
+      </structure>
+      <structure id="o1838" name="glume" />
+      <structure id="o1839" name="base">
+        <character name="arrangement_or_shape" value="cuneate" modifier="broadly" />
+        <character name="architecture" value="stipitate" />
+      </structure>
+      <structure id="o1841" name="beak">
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="shape" value="2-lobed" modifier="deeply" />
+      </structure>
+    </statement>
+    <statement id="1053.txt-10">
+      <text>Fr. Jun–Jul.</text>
+      <structure id="o1840" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o1841" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Sands on hillsides. Xinjiang [Mongolia, Russia (E Siberia); C Asia].</distribution>
   <discussion>No specimens have been seen by the present authors.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

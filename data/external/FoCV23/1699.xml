@@ -13,7 +13,155 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>间 穗薹草 jian sui tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome slender and creeping. Culms loosely tufted, 15–25 cm tall, slender, trigonous above, clothed at base with pale brown bladeless sheaths. Leaves shorter than culm, blades linear, 1–2 mm wide, flat, margins scabrous. Involucral bracts glumelike. Inflorescence with upper 2 spikes approximate, lowermost 2 distant by at least 1 cm; spikes 3 or 4, gynaecandrous, ovate, 3–5 × 2–5 mm, few flowered. Female glumes pale, broadly ovate or ovate, ca. 2 mm, membranous, with green midrib. Utricles pale green-brown, longer than glume, oblong or ovate, plano-convex, 2.5–3 mm, subleathery, many veined on both faces, base rounded, spongy, shortly stipitate, apex nearly beakless, orifice entire or emarginate. Nutlets tightly enveloped, broadly elliptic, ca. 1.5 × 1.2 mm, subrounded at both ends; style base not thickened; stigmas 2. Fr. May. 2n = 54.</description>
+  <description>
+    <statement id="1699.txt-0">
+      <text>Rhizome slender and creeping.</text>
+      <structure id="o20496" name="rhizome">
+        <character name="size" value="slender" />
+        <character name="habit" value="creeping" />
+      </structure>
+    </statement>
+    <statement id="1699.txt-1">
+      <text>Culms loosely tufted, 15–25 cm tall, slender, trigonous above, clothed at base with pale brown bladeless sheaths.</text>
+      <structure id="o20497" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="loosely" />
+        <character char_type="range_value" name="size" from="15" from_unit="cm" to="25" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="trigonous" />
+      </structure>
+      <structure id="o20498" name="base" />
+      <relation id="r3828" name="clothed at" from="o20497" to="o20498" negation="false" />
+      <structure id="o20499" name="sheath" constraint="bladeless">
+        <character name="coloration" value="brown" modifier="pale" />
+      </structure>
+      <relation id="r3829" name="with" from="o20498" to="o20499" negation="false" />
+    </statement>
+    <statement id="1699.txt-2">
+      <text>Leaves shorter than culm, blades linear, 1–2 mm wide, flat, margins scabrous.</text>
+      <structure id="o20500" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o20501" />
+      </structure>
+      <structure id="o20501" name="culm" />
+      <structure id="o20502" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="2" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o20503" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1699.txt-3">
+      <text>Involucral bracts glumelike.</text>
+      <structure id="o20504" name="bract" constraint="involucral">
+        <character name="feature" value="glumelike" />
+      </structure>
+    </statement>
+    <statement id="1699.txt-4">
+      <text>Inflorescence with upper 2 spikes approximate, lowermost 2 distant by at least 1 cm;</text>
+      <structure id="o20505" name="inflorescence">
+        <character name="feature" value="lowermost" />
+        <character name="count" value="2" />
+        <character name="arrangement" value="distant" />
+        <character name="-least" value="1" unit="cm" />
+      </structure>
+      <structure id="o20506" name="spike">
+        <character name="position" value="upper" />
+        <character name="count" value="2" />
+        <character name="feature" value="approximate" />
+      </structure>
+      <relation id="r3830" name="with" from="o20505" to="o20506" negation="false" />
+    </statement>
+    <statement id="1699.txt-5">
+      <text>spikes 3 or 4, gynaecandrous, ovate, 3–5 × 2–5 mm, few flowered.</text>
+      <structure id="o20507" name="spike">
+        <character name="count" value="3" />
+        <character name="count" value="4" />
+        <character name="feature" value="gynaecandrous" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="length" from="3" from_unit="mm" to="5" to_unit="mm" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="5" to_unit="mm" />
+        <character name="count" value="few" />
+        <character name="architecture" value="flowered" />
+      </structure>
+    </statement>
+    <statement id="1699.txt-6">
+      <text>Female glumes pale, broadly ovate or ovate, ca. 2 mm, membranous, with green midrib.</text>
+      <structure id="o20508" name="glume" constraint="female">
+        <character name="coloration" value="pale" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="shape" value="ovate" />
+        <character name="size" value="2" unit="mm" />
+        <character name="feature" value="membranous" />
+      </structure>
+      <structure id="o20509" name="midrib">
+        <character name="coloration" value="green" />
+      </structure>
+      <relation id="r3831" name="with" from="o20508" to="o20509" negation="false" />
+    </statement>
+    <statement id="1699.txt-7">
+      <text>Utricles pale green-brown, longer than glume, oblong or ovate, planoconvex, 2.5–3 mm, subleathery, many veined on both faces, base rounded, spongy, shortly stipitate, apex nearly beakless, orifice entire or emarginate.</text>
+      <structure id="o20510" name="utricle">
+        <character name="coloration" value="green-brown" modifier="pale" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o20511" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" constraint="on faces" constraintid="o20512" />
+      </structure>
+      <structure id="o20511" name="glume" />
+      <structure id="o20512" name="face" />
+      <structure id="o20513" name="base">
+        <character name="shape" value="rounded" />
+        <character name="internal_texture" value="spongy" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o20514" name="apex">
+        <character name="architecture" value="beakless" modifier="nearly" />
+      </structure>
+      <structure id="o20515" name="orifice">
+        <character name="shape" value="entire" />
+        <character name="shape" value="emarginate" />
+      </structure>
+    </statement>
+    <statement id="1699.txt-8">
+      <text>Nutlets tightly enveloped, broadly elliptic, ca. 1.5 × 1.2 mm, subrounded at both ends;</text>
+      <structure id="o20516" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="arrangement_or_shape" value="elliptic" modifier="broadly" />
+        <character name="length" value="1.5" unit="mm" />
+        <character name="width" value="1.2" unit="mm" />
+        <character name="arrangement" value="subrounded" constraint="at ends" constraintid="o20517" />
+      </structure>
+      <structure id="o20517" name="end" />
+    </statement>
+    <statement id="1699.txt-9">
+      <text>style base not thickened;</text>
+      <structure id="o20518" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1699.txt-10">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1699.txt-11">
+      <text>Fr. May.</text>
+    </statement>
+    <statement id="1699.txt-12">
+      <text>2n = 54.</text>
+      <structure id="o20519" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+      <structure name="chromosome" id="o20520">
+        <character name="count" value="54" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forests. Heilongjiang [Japan, Kazakhstan, Korea, N Mongolia, Russia (Far East, Siberia); EC and N Europe, North America].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

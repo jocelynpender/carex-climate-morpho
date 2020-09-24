@@ -13,7 +13,157 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>高黎贡山薹草 gao li gong shan tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, 40–60 cm tall, slender, acutely trigonous, clothed at base with brown bladeless sheaths. Leaves short or longer than culm, blades linear, 3–5 mm wide, flat. Lowest involucral bract leaflike, surpassing inflorescence, sheathless, remaining bracts setaceous. Spikes 4 or 5, gynaecandrous, oblong or oblong-cylindric, 15–30 × 5–6 mm, densely many flowered, upper 3 or 4 approximate, lowest one distant, with long and slender peduncle, pendent. Female glumes dark purple, lanceolate, 2.8–3 mm, green 3-veined costa excurrent into a scabrous long awn. Utricles yellow-green, longer than glume, long ovate, 3–3.5 mm, membranous, biconvex, subpapillose, nerveless except for 2 costas on edges, base subrounded, shortly stipitate, emarginate, apex abruptly contracted into a short beak, orifice entire. Nutlet obovate or subglobose, 1.8–1.9 mm; style curved, base not thickened; stigmas 2. Fl. and fr. Jul.</description>
+  <description>
+    <statement id="1551.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o16821" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1551.txt-1">
+      <text>Culms tufted, 40–60 cm tall, slender, acutely trigonous, clothed at base with brown bladeless sheaths.</text>
+      <structure id="o16822" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="40" from_unit="cm" to="60" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+      </structure>
+      <structure id="o16823" name="base" />
+      <relation id="r3208" name="clothed at" from="o16822" to="o16823" negation="false" />
+      <structure id="o16824" name="sheath" constraint="bladeless">
+        <character name="coloration" value="brown" />
+      </structure>
+      <relation id="r3209" name="with" from="o16823" to="o16824" negation="false" />
+    </statement>
+    <statement id="1551.txt-2">
+      <text>Leaves short or longer than culm, blades linear, 3–5 mm wide, flat.</text>
+      <structure id="o16825" name="leaf" />
+      <structure id="o16826" name="culm" />
+      <structure id="o16827" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="5" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+    </statement>
+    <statement id="1551.txt-3">
+      <text>Lowest involucral bract leaflike, surpassing inflorescence, sheathless, remaining bracts setaceous.</text>
+      <structure id="o16828" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="architecture" value="leaflike" />
+        <character name="feature" value="sheathless" />
+      </structure>
+      <structure id="o16829" name="inflorescence" />
+      <relation id="r3210" name="surpassing" from="o16828" to="o16829" negation="false" />
+      <structure id="o16830" name="bract" constraint="remaining">
+        <character name="feature_or_shape" value="setaceous" />
+      </structure>
+    </statement>
+    <statement id="1551.txt-4">
+      <text>Spikes 4 or 5, gynaecandrous, oblong or oblong-cylindric, 15–30 × 5–6 mm, densely many flowered, upper 3 or 4 approximate, lowest one distant, with long and slender peduncle, pendent.</text>
+      <structure id="o16831" name="spike">
+        <character name="count" value="4" />
+        <character name="count" value="5" />
+        <character name="feature" value="gynaecandrous" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="oblong-cylindric" />
+        <character char_type="range_value" name="length" from="15" from_unit="mm" to="30" to_unit="mm" />
+        <character char_type="range_value" name="width" from="5" from_unit="mm" to="6" to_unit="mm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+      <structure id="o16832" name="upper">
+        <character name="count" value="3" />
+        <character name="count" value="4" />
+        <character name="feature" value="approximate" />
+        <character name="feature" value="lowest" />
+        <character name="arrangement" value="distant" />
+        <character name="orientation" value="pendent" />
+      </structure>
+      <structure id="o16833" name="peduncle">
+        <character name="length" value="long" />
+        <character name="size" value="slender" />
+      </structure>
+      <relation id="r3211" name="with" from="o16832" to="o16833" negation="false" />
+    </statement>
+    <statement id="1551.txt-5">
+      <text>Female glumes dark purple, lanceolate, 2.8–3 mm, green 3-veined costa excurrent into a scabrous long awn.</text>
+      <structure id="o16834" name="glume" constraint="female">
+        <character name="coloration" value="purple" modifier="dark" />
+        <character name="shape" value="lanceolate" />
+        <character char_type="range_value" name="size" from="2.8" from_unit="mm" to="3" to_unit="mm" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="3-veined" />
+        <character name="architecture" value="excurrent" constraint="into awn" constraintid="o16836" />
+      </structure>
+      <structure id="o16835" name="costa" />
+      <structure id="o16836" name="awn">
+        <character name="external_texture_or_relief" value="scabrous" />
+        <character name="length" value="long" />
+      </structure>
+    </statement>
+    <statement id="1551.txt-6">
+      <text>Utricles yellow-green, longer than glume, long ovate, 3–3.5 mm, membranous, biconvex, subpapillose, nerveless except for 2 costas on edges, base subrounded, shortly stipitate, emarginate, apex abruptly contracted into a short beak, orifice entire.</text>
+      <structure id="o16837" name="utricle">
+        <character name="coloration" value="yellow-green" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o16838" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="3.5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="shape" value="biconvex" />
+        <character name="feature" value="subpapillose" />
+        <character name="feature" value="nerveless" constraint="except-for costas" constraintid="o16839" />
+      </structure>
+      <structure id="o16838" name="glume" />
+      <structure id="o16839" name="costa">
+        <character name="count" value="2" />
+      </structure>
+      <structure id="o16840" name="edge" />
+      <relation id="r3212" name="on" from="o16839" to="o16840" negation="false" />
+      <structure id="o16841" name="base">
+        <character name="arrangement" value="subrounded" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+        <character name="shape" value="emarginate" />
+      </structure>
+      <structure id="o16842" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o16843" />
+      </structure>
+      <structure id="o16843" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o16844" name="orifice">
+        <character name="shape" value="entire" />
+      </structure>
+    </statement>
+    <statement id="1551.txt-7">
+      <text>Nutlet obovate or subglobose, 1.8–1.9 mm;</text>
+      <structure id="o16845" name="nutlet">
+        <character name="shape" value="obovate" />
+        <character name="shape" value="subglobose" />
+        <character char_type="range_value" name="size" from="1.8" from_unit="mm" to="1.9" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1551.txt-8">
+      <text>style curved, base not thickened;</text>
+      <structure id="o16846" name="style">
+        <character name="course_or_orientation" value="curved" />
+      </structure>
+      <structure id="o16847" name="base">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1551.txt-9">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1551.txt-10">
+      <text>Fl. and fr. Jul.</text>
+      <structure id="o16848" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Thicket slopes; 3000–3600 m. NW Yunnan (Gaoligong Shan).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

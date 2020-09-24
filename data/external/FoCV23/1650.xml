@@ -13,7 +13,138 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>帽儿山薹草 mao er shan tai cao</species_name>
   </TaxonIdentification>
-  <description>Plants gray-green. Rhizome very long. Culms 30–50 cm tall, acutely trigonous, scabrous, clothed with dark purple bladeless sheaths at base. Leaves equaling or longer than culm, blades linear, 2.5–5 mm wide, flat, scabrous. Involucral bracts glumelike. Spicate inflorescence cylindric, 3.5–4.5 cm; spikes 8–14, ovate or oblong, 5–10 mm, male spike in middle, upper and lower spikes androgynous or spikes entirely androgynous (rarely lowest female). Female glumes pale brown, oblong-ovate, greenish costa 1-veined. Utricles pale yellowish brown-green, longer than glume, obovate-oblong, plano-convex, 5–5.5 mm, distally verruculose and sparsely hirsute on both faces, abaxially 7–9-veined, adaxially faintly veined or nerveless, base cuneate, shortly stipitate, upper margins narrowly serrate winged, apex gradually attenuate into a long beak, orifice 2-toothed. Stigmas 2. Fr. Jun.</description>
+  <description>
+    <statement id="1650.txt-0">
+      <text>Plants gray-green.</text>
+      <structure id="o19381" name="whole_organism">
+        <character name="coloration" value="gray-green" />
+        <character name="life_style" value="plant" />
+      </structure>
+    </statement>
+    <statement id="1650.txt-1">
+      <text>Rhizome very long.</text>
+      <structure id="o19382" name="rhizome">
+        <character name="character" value="length" modifier="very" />
+      </structure>
+    </statement>
+    <statement id="1650.txt-2">
+      <text>Culms 30–50 cm tall, acutely trigonous, scabrous, clothed with dark purple bladeless sheaths at base.</text>
+      <structure id="o19383" name="culm">
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="50" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o19384" name="sheath" constraint="bladeless">
+        <character name="coloration" value="purple" modifier="dark" />
+      </structure>
+      <relation id="r3672" name="clothed with" from="o19383" to="o19384" negation="false" />
+      <structure id="o19385" name="base" />
+      <relation id="r3673" name="at" from="o19384" to="o19385" negation="false" />
+    </statement>
+    <statement id="1650.txt-3">
+      <text>Leaves equaling or longer than culm, blades linear, 2.5–5 mm wide, flat, scabrous.</text>
+      <structure id="o19386" name="leaf" />
+      <structure id="o19387" name="culm">
+        <character name="length" value="longer" />
+      </structure>
+      <relation id="r3674" name="equaling" from="o19386" to="o19387" negation="false" />
+      <structure id="o19388" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2.5" from_unit="mm" to="5" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1650.txt-4">
+      <text>Involucral bracts glumelike.</text>
+      <structure id="o19389" name="bract" constraint="involucral">
+        <character name="feature" value="glumelike" />
+      </structure>
+    </statement>
+    <statement id="1650.txt-5">
+      <text>Spicate inflorescence cylindric, 3.5–4.5 cm;</text>
+      <structure id="o19390" name="inflorescence" constraint="spicate">
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="3.5" from_unit="cm" to="4.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1650.txt-6">
+      <text>spikes 8–14, ovate or oblong, 5–10 mm, male spike in middle, upper and lower spikes androgynous or spikes entirely androgynous (rarely lowest female ).</text>
+      <structure id="o19391" name="spike">
+        <character char_type="range_value" name="count" from="8" to="14" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="10" to_unit="mm" />
+      </structure>
+      <structure id="o19392" name="spike" constraint="male;in middle">
+        <character name="position" value="upper" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="feature_or_reproduction" value="spikes" />
+        <character name="feature_or_reproduction" value="androgynous" modifier="entirely" />
+        <character name="feature" value="lowest" modifier="rarely" in_brackets="true" />
+        <character name="reproduction" value="female" in_brackets="true" />
+      </structure>
+      <structure id="o19393" name="spike" constraint="lower" />
+      <structure id="o19394" name="spike" />
+      <relation id="r3675" name="may_be_the_same" from="o19391" to="o19394" negation="false" />
+    </statement>
+    <statement id="1650.txt-7">
+      <text>Female glumes pale brown, oblong-ovate, greenish costa 1-veined.</text>
+      <structure id="o19395" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="shape" value="oblong-ovate" />
+      </structure>
+      <structure id="o19396" name="costa">
+        <character name="coloration" value="greenish" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+    </statement>
+    <statement id="1650.txt-8">
+      <text>Utricles pale yellowish brown-green, longer than glume, obovate-oblong, planoconvex, 5–5.5 mm, distally verruculose and sparsely hirsute on both faces, abaxially 7–9-veined, adaxially faintly veined or nerveless, base cuneate, shortly stipitate, upper margins narrowly serrate winged, apex gradually attenuate into a long beak, orifice 2-toothed.</text>
+      <structure id="o19397" name="utricle">
+        <character name="coloration" value="brown-green" modifier="pale-c-yellowish" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o19398" />
+        <character name="shape" value="obovate-oblong" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="5.5" to_unit="mm" />
+        <character name="external_texture" value="hirsute" modifier="sparsely" constraint="on faces" constraintid="o19399" />
+        <character name="architecture_or_feature" value="7-9-veined" modifier="abaxially" />
+        <character name="feature" value="veined" modifier="adaxially faintly" />
+        <character name="feature" value="nerveless" />
+      </structure>
+      <structure id="o19398" name="glume" />
+      <structure id="o19399" name="face" />
+      <structure id="o19400" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o19401" name="margin" constraint="upper">
+        <character name="shape" value="serrate" modifier="narrowly" />
+        <character name="architecture" value="winged" />
+      </structure>
+      <structure id="o19402" name="apex">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into beak" constraintid="o19403" />
+      </structure>
+      <structure id="o19403" name="beak">
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o19404" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1650.txt-9">
+      <text>Stigmas 2.</text>
+    </statement>
+    <statement id="1650.txt-10">
+      <text>Fr. Jun.</text>
+      <structure id="o19405" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Meadows in forests. Heilongjiang.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

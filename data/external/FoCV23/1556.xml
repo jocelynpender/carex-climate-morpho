@@ -13,7 +13,171 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>瓦屋薹草 wa wu tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms up to ca. 50 cm tall, ca. 2 mm thick, acutely trigonous, smooth, clothed with purple-red sheaths at base. Leaves shorter than culm, blades linear, 5–6 mm wide, flat, margins scabrous. Upper involucral bracts setaceous, lower leaflike, sheathless. Spikes 8; upper 3 spikes male, occasionally with a few female flowers at base, linear, 20–60 × 1.5–2 mm, sessile or with very short peduncles; remaining spikes female, linear-cylindric, 70–85 × ca. 3 mm, slightly densely flowered, lowest spike sometimes branched, with peduncle ca. 1 cm. Female glumes yellowish brown, broadly ovate, 1.8–2 mm, green 3-veined costa excurrent into a mucro. Utricles brown, ferruginous flecked, longer than glume, ovate, 2.2–2.5 mm, veined, apex abruptly contracted into a short beak, orifice entire. Nutlets stramineous, tightly enveloped, broadly ovoid, plano-convex, ca. 1.5 mm, base shortly stipitate, apex abruptly contracted into a short beak; style base not thickened; stigmas 2. Fl. and fr. Jun–Jul.</description>
+  <description>
+    <statement id="1556.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o16955" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1556.txt-1">
+      <text>Culms up to ca. 50 cm tall, ca. 2 mm thick, acutely trigonous, smooth, clothed with purple-red sheaths at base.</text>
+      <structure id="o16956" name="culm">
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="50" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="2" unit="mm" />
+        <character name="width" value="thick" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o16957" name="sheath">
+        <character name="coloration" value="purple-red" />
+      </structure>
+      <relation id="r3236" name="clothed with" from="o16956" to="o16957" negation="false" />
+      <structure id="o16958" name="base" />
+      <relation id="r3237" name="at" from="o16957" to="o16958" negation="false" />
+    </statement>
+    <statement id="1556.txt-2">
+      <text>Leaves shorter than culm, blades linear, 5–6 mm wide, flat, margins scabrous.</text>
+      <structure id="o16959" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o16960" />
+      </structure>
+      <structure id="o16960" name="culm" />
+      <structure id="o16961" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="5" from_unit="mm" to="6" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o16962" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1556.txt-3">
+      <text>Upper involucral bracts setaceous, lower leaflike, sheathless.</text>
+      <structure id="o16963" name="bract" constraint="upper involucral">
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="position" value="lower" />
+        <character name="architecture" value="leaflike" />
+        <character name="feature" value="sheathless" />
+      </structure>
+    </statement>
+    <statement id="1556.txt-4">
+      <text>Spikes 8;</text>
+      <structure id="o16964" name="spike">
+        <character name="count" value="8" />
+      </structure>
+    </statement>
+    <statement id="1556.txt-5">
+      <text>upper 3 spikes male, occasionally with a few female flowers at base, linear, 20–60 × 1.5–2 mm, sessile or with very short peduncles;</text>
+      <structure id="o16965" name="spike">
+        <character name="position" value="upper" />
+        <character name="count" value="3" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="length" from="20" from_unit="mm" to="60" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+        <character name="architecture_or_feature" value="sessile" />
+        <character name="architecture_or_feature" value="with very short peduncles" />
+      </structure>
+      <structure id="o16966" name="flower" constraint="female">
+        <character name="count" value="few" />
+      </structure>
+      <relation id="r3238" name="with" from="o16965" to="o16966" negation="false" modifier="occasionally" />
+      <structure id="o16967" name="base" />
+      <relation id="r3239" name="at" from="o16966" to="o16967" negation="false" />
+      <structure id="o16968" name="peduncle">
+        <character name="height_or_length" value="short" modifier="very" />
+      </structure>
+      <relation id="r3240" name="with" from="o16965" to="o16968" negation="false" />
+    </statement>
+    <statement id="1556.txt-6">
+      <text>remaining spikes female, linear-cylindric, 70–85 × ca. 3 mm, slightly densely flowered, lowest spike sometimes branched, with peduncle ca. 1 cm.</text>
+      <structure id="o16969" name="spike" constraint="remaining">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="linear-cylindric" />
+        <character char_type="range_value" name="length" from="70" from_unit="mm" to="85" to_unit="mm" />
+        <character name="width" value="3" unit="mm" />
+        <character name="architecture" value="flowered" modifier="slightly densely" />
+      </structure>
+      <structure id="o16970" name="spike">
+        <character name="feature" value="lowest" />
+        <character name="architecture" value="branched" modifier="sometimes" />
+      </structure>
+      <structure id="o16971" name="peduncle">
+        <character name="size" value="1" unit="cm" />
+      </structure>
+      <relation id="r3241" name="with" from="o16970" to="o16971" negation="false" />
+    </statement>
+    <statement id="1556.txt-7">
+      <text>Female glumes yellowish brown, broadly ovate, 1.8–2 mm, green 3-veined costa excurrent into a mucro.</text>
+      <structure id="o16972" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="yellowish" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character char_type="range_value" name="size" from="1.8" from_unit="mm" to="2" to_unit="mm" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="3-veined" />
+        <character name="architecture" value="excurrent" constraint="into mucro" constraintid="o16974" />
+      </structure>
+      <structure id="o16973" name="costa" />
+      <structure id="o16974" name="mucro" />
+    </statement>
+    <statement id="1556.txt-8">
+      <text>Utricles brown, ferruginous flecked, longer than glume, ovate, 2.2–2.5 mm, veined, apex abruptly contracted into a short beak, orifice entire.</text>
+      <structure id="o16975" name="utricle">
+        <character name="coloration" value="brown" />
+        <character name="feature" value="flecked" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o16976" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="2.2" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o16976" name="glume" />
+      <structure id="o16977" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o16978" />
+      </structure>
+      <structure id="o16978" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o16979" name="orifice">
+        <character name="shape" value="entire" />
+      </structure>
+    </statement>
+    <statement id="1556.txt-9">
+      <text>Nutlets stramineous, tightly enveloped, broadly ovoid, planoconvex, ca. 1.5 mm, base shortly stipitate, apex abruptly contracted into a short beak;</text>
+      <structure id="o16980" name="nutlet">
+        <character name="coloration" value="stramineous" />
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="ovoid" modifier="broadly" />
+        <character name="shape" value="planoconvex" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+      <structure id="o16981" name="apex">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o16982" />
+      </structure>
+      <relation id="r3242" name="base" from="o16980" to="o16981" negation="false" />
+      <structure id="o16982" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1556.txt-10">
+      <text>style base not thickened;</text>
+      <structure id="o16983" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1556.txt-11">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1556.txt-12">
+      <text>Fl. and fr. Jun–Jul.</text>
+      <structure id="o16984" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● C Sichuan (Hongya: Wawu Shan).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

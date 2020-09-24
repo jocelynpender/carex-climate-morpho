@@ -13,7 +13,169 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>隐穗薹草 yin sui tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome long, woody, covered with dark brown fibrous remnants of basal sheaths. Flowering culms arising from axils of leaves, 12–30 cm tall, compressed trigonous, scapelike, flaccid. Leaves longer than culm, blades 6–15 mm wide, flat, smooth, leathery, margins scabrid. Involucral bracts bristlelike, sheathed, sheath 5–15 mm. Spikes 6–10, nearly all (at least terminal one) androgynous, oblong or cylindric, 8–25 mm, loosely flowered; male part short, 3–5 mm; peduncle 7–25 mm, slender. Female glumes pale brown to yellow-green, ovate-oblong, ca. 2.2 mm, costa green, apex acute or mucronate. Utricles yellow-green, longer than glume, oblong-rhombic to obovate-fusiform, obscurely trigonous, 4–5 mm, membranous, densely puberulent above and ciliate on margins, many veined, base cuneate, with a stipe ca. 1 mm, apex attenuate into a short beak, orifice minutely 2-toothed. Nutlets trigonous, rhombic, 2.5–3 mm, faces excavated in both upper and lower parts, angles constricted at middle; style base persistent, bent; stigmas 3. Fl. winter, fr. next spring.</description>
+  <description>
+    <statement id="1103.txt-0">
+      <text>Rhizome long, woody, covered with dark brown fibrous remnants of basal sheaths.</text>
+      <structure id="o3344" name="rhizome">
+        <character name="internal_texture" value="woody" />
+      </structure>
+      <structure id="o3345" name="remnant">
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="internal_texture" value="fibrous" />
+      </structure>
+      <relation id="r702" name="covered with" from="o3344" to="o3345" negation="false" />
+      <structure id="o3346" name="sheath" constraint="basal" />
+      <relation id="r703" name="part_of" from="o3345" to="o3346" negation="false" />
+    </statement>
+    <statement id="1103.txt-1">
+      <text>Flowering culms arising from axils of leaves, 12–30 cm tall, compressed trigonous, scapelike, flaccid.</text>
+      <structure id="o3347" name="culm" constraint="flowering">
+        <character name="orientation" value="arising" constraint="from axils" constraintid="o3348" />
+        <character char_type="range_value" name="size" from="12" from_unit="cm" to="30" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="compressed trigonous" />
+        <character name="architecture_or_shape" value="scapelike" />
+        <character name="internal_texture" value="flaccid" />
+      </structure>
+      <structure id="o3348" name="axil" />
+      <structure id="o3349" name="leaf" />
+      <relation id="r704" name="part_of" from="o3348" to="o3349" negation="false" />
+    </statement>
+    <statement id="1103.txt-2">
+      <text>Leaves longer than culm, blades 6–15 mm wide, flat, smooth, leathery, margins scabrid.</text>
+      <structure id="o3350" name="leaf">
+        <character name="length" value="longer" constraint="than culm" constraintid="o3351" />
+      </structure>
+      <structure id="o3351" name="culm" />
+      <structure id="o3352" name="blade">
+        <character char_type="range_value" name="width" from="6" from_unit="mm" to="15" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="external_texture_or_feature" value="leathery" />
+      </structure>
+      <structure id="o3353" name="margin">
+        <character name="relief" value="scabrid" />
+      </structure>
+    </statement>
+    <statement id="1103.txt-3">
+      <text>Involucral bracts bristlelike, sheathed, sheath 5–15 mm.</text>
+      <structure id="o3354" name="bract" constraint="involucral">
+        <character name="architecture" value="bristlelike" />
+        <character name="architecture_or_feature" value="sheathed" />
+      </structure>
+      <structure id="o3355" name="sheath">
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="15" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1103.txt-4">
+      <text>Spikes 6–10, nearly all (at least terminal one )androgynous, oblong or cylindric, 8–25 mm, loosely flowered;</text>
+    </statement>
+    <statement id="1103.txt-5">
+      <text>male part short, 3–5 mm;</text>
+      <structure id="o3356" name="spike">
+        <character char_type="range_value" name="count" from="6" to="10" />
+        <character name="position" value="terminal" modifier="at-least" in_brackets="true" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="8" from_unit="mm" to="25" to_unit="mm" />
+        <character name="architecture" value="flowered" modifier="loosely" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="height_or_length" value="short" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="5" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1103.txt-6">
+      <text>peduncle 7–25 mm, slender.</text>
+      <structure id="o3357" name="peduncle">
+        <character char_type="range_value" name="size" from="7" from_unit="mm" to="25" to_unit="mm" />
+        <character name="size" value="slender" />
+      </structure>
+    </statement>
+    <statement id="1103.txt-7">
+      <text>Female glumes pale brown to yellow-green, ovate-oblong, ca. 2.2 mm, costa green, apex acute or mucronate.</text>
+      <structure id="o3358" name="glume" constraint="female">
+        <character char_type="range_value" name="coloration" from="pale brown" to="yellow-green" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="coloration" value="yellow-green" />
+        <character name="shape" value="ovate-oblong" />
+        <character name="size" value="2.2" unit="mm" />
+      </structure>
+      <structure id="o3359" name="costa">
+        <character name="coloration" value="green" />
+      </structure>
+      <structure id="o3360" name="apex">
+        <character name="shape" value="acute" />
+        <character name="shape" value="mucronate" />
+      </structure>
+    </statement>
+    <statement id="1103.txt-8">
+      <text>Utricles yellow-green, longer than glume, oblong-rhombic to obovate-fusiform, obscurely trigonous, 4–5 mm, membranous, densely puberulent above and ciliate on margins, many veined, base cuneate, with a stipe ca. 1 mm, apex attenuate into a short beak, orifice minutely 2-toothed.</text>
+      <structure id="o3361" name="utricle">
+        <character name="coloration" value="yellow-green" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o3362" />
+        <character char_type="range_value" name="shape" from="oblong-rhombic" to="obovate-fusiform" />
+        <character name="shape" value="oblong-rhombic" />
+        <character name="shape" value="obovate-fusiform" />
+        <character name="shape" value="trigonous" modifier="obscurely" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="external_texture" value="puberulent" modifier="densely" constraint="above and ciliate on margins" constraintid="o3363" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o3362" name="glume" />
+      <structure id="o3363" name="margin" />
+      <structure id="o3364" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+      </structure>
+      <structure id="o3365" name="stipe">
+        <character name="size" value="1" unit="mm" />
+      </structure>
+      <relation id="r705" name="with" from="o3364" to="o3365" negation="false" />
+      <structure id="o3366" name="apex">
+        <character name="shape" value="attenuate" constraint="into beak" constraintid="o3367" />
+      </structure>
+      <structure id="o3367" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o3368" name="orifice">
+        <character name="shape" value="2-toothed" modifier="minutely" />
+      </structure>
+    </statement>
+    <statement id="1103.txt-9">
+      <text>Nutlets trigonous, rhombic, 2.5–3 mm, faces excavated in both upper and lower parts, angles constricted at middle;</text>
+      <structure id="o3369" name="nutlet">
+        <character name="shape" value="trigonous" />
+        <character name="shape" value="rhombic" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character name="architecture" value="excavated" constraint="in parts" constraintid="o3370" />
+        <character name="size" value="constricted" modifier="at middle" />
+      </structure>
+      <structure id="o3370" name="part" constraint="lower">
+        <character name="position" value="upper" />
+      </structure>
+    </statement>
+    <statement id="1103.txt-10">
+      <text>style base persistent, bent;</text>
+      <structure id="o3371" name="base" constraint="style">
+        <character name="duration" value="persistent" />
+        <character name="shape" value="bent" />
+      </structure>
+    </statement>
+    <statement id="1103.txt-11">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1103.txt-12">
+      <text>Fl. winter, fr. next spring.</text>
+      <structure id="o3372" name="stigma">
+        <character name="count" value="3" />
+        <character name="season" value="winter" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Wet places in dense forests; 100–1200 m. Fujian, Guangdong, Guangxi, Hainan, Taiwan [Indonesia, Malaysia, Philippines, Thailand, Vietnam; Australia].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -13,7 +13,175 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>德钦薹草 de qin tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome slightly elongate, ligneous. Culms 65–80 cm, slender, obtusely trigonous, smooth, clothed with sheaths at base eventually disintegrating and fiberlike. Leaves 1/4–1/2 height of culms, blades 2–3 mm wide, subrigid, scabrous on both surfaces and margins; sheaths long, brownish yellow, outer sheaths usually later splitting. Lower involucral bracts leaflike, long sheathed, upper involucral bract blades awn-shaped, shortly sheathed. Spikes 4 or 5, uppermost 1 or 2 spikes remote, space up to 20 cm; terminal spike male, clavate, 2–2.5 cm; peduncles slender, most up to 10 cm. Female glumes brown, oblong or narrowly oblong, 3–4 mm, membranous, 1-veined, apex acute, mucronate or aristate. Utricles green-brown, suberect, longer than glume, narrowly oblong, plano-convex, ca. 4.5 mm, membranous, distinctly 2-veined laterally, hispidulous on veins, base attenuate, shortly stipitate, apex gradually narrowed to a long beak, beak scabrous on margins, orifice 2-toothed. Nutlets tightly enveloped, oblong, trigonous, ca. 2 mm, base estipitate; style persistent, base not thickened; stigmas 3. Fl. and fr. Jun–Jul.</description>
+  <description>
+    <statement id="1327.txt-0">
+      <text>Rhizome slightly elongate, ligneous.</text>
+      <structure id="o10017" name="rhizome">
+        <character name="shape" value="elongate" modifier="slightly" />
+        <character name="external_texture" value="ligneous" />
+      </structure>
+    </statement>
+    <statement id="1327.txt-1">
+      <text>Culms 65–80 cm, slender, obtusely trigonous, smooth, clothed with sheaths at base eventually disintegrating and fiberlike.</text>
+      <structure id="o10018" name="culm">
+        <character char_type="range_value" name="size" from="65" from_unit="cm" to="80" to_unit="cm" />
+        <character name="size" value="slender" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="feature" value="fiberlike" />
+      </structure>
+      <structure id="o10019" name="sheath" />
+      <relation id="r1856" name="clothed with" from="o10018" to="o10019" negation="false" />
+      <structure id="o10020" name="base">
+        <character name="dehiscence" value="disintegrating" modifier="eventually" />
+      </structure>
+      <relation id="r1857" name="at" from="o10019" to="o10020" negation="false" />
+    </statement>
+    <statement id="1327.txt-2">
+      <text>Leaves 1/4–1/2 height of culms, blades 2–3 mm wide, subrigid, scabrous on both surfaces and margins;</text>
+      <structure id="o10021" name="leaf">
+        <character char_type="range_value" name="height" from="1/4" to="1/2" constraint="of culms" constraintid="o10022" />
+      </structure>
+      <structure id="o10022" name="culm" />
+      <structure id="o10023" name="blade">
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="feature" value="subrigid" />
+        <character name="external_texture_or_relief" value="scabrous" constraint="on margins" constraintid="o10024" />
+      </structure>
+      <structure id="o10024" name="margin" />
+    </statement>
+    <statement id="1327.txt-3">
+      <text>sheaths long, brownish yellow, outer sheaths usually later splitting.</text>
+      <structure id="o10025" name="sheath">
+        <character name="coloration" value="yellow" modifier="brownish" />
+      </structure>
+      <structure id="o10026" name="sheath" constraint="outer">
+        <character name="behaviour_or_dehiscence" value="splitting" modifier="usually later" />
+      </structure>
+    </statement>
+    <statement id="1327.txt-4">
+      <text>Lower involucral bracts leaflike, long sheathed, upper involucral bract blades awn-shaped, shortly sheathed.</text>
+      <structure id="o10027" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="architecture_or_feature" value="sheathed" />
+      </structure>
+      <structure id="o10028" name="blade" constraint="upper involucral bract">
+        <character name="shape" value="awn-shaped" />
+        <character name="architecture_or_feature" value="sheathed" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1327.txt-5">
+      <text>Spikes 4 or 5, uppermost 1 or 2 spikes remote, space up to 20 cm;</text>
+      <structure id="o10029" name="spike">
+        <character name="count" value="4" />
+        <character name="count" value="5" />
+      </structure>
+      <structure id="o10030" name="spike">
+        <character name="position" value="uppermost" />
+        <character name="count" value="1" />
+        <character name="count" value="2" />
+        <character name="arrangement" value="remote" />
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="20" to_unit="cm" />
+      </structure>
+      <relation id="r1858" name="may_be_the_same" from="o10029" to="o10030" negation="false" />
+    </statement>
+    <statement id="1327.txt-6">
+      <text>terminal spike male, clavate, 2–2.5 cm;</text>
+      <structure id="o10031" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="clavate" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="2.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1327.txt-7">
+      <text>peduncles slender, most up to 10 cm.</text>
+      <structure id="o10032" name="peduncle">
+        <character name="size" value="slender" />
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="10" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1327.txt-8">
+      <text>Female glumes brown, oblong or narrowly oblong, 3–4 mm, membranous, 1-veined, apex acute, mucronate or aristate.</text>
+      <structure id="o10033" name="glume" constraint="female">
+        <character name="coloration" value="brown" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="oblong" modifier="narrowly" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o10034" name="apex">
+        <character name="shape" value="acute" />
+        <character name="shape" value="mucronate" />
+        <character name="shape" value="aristate" />
+      </structure>
+    </statement>
+    <statement id="1327.txt-9">
+      <text>Utricles green-brown, suberect, longer than glume, narrowly oblong, planoconvex, ca. 4.5 mm, membranous, distinctly 2-veined laterally, hispidulous on veins, base attenuate, shortly stipitate, apex gradually narrowed to a long beak, beak scabrous on margins, orifice 2-toothed.</text>
+      <structure id="o10035" name="utricle">
+        <character name="coloration" value="green-brown" />
+        <character name="orientation" value="suberect" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o10036" />
+        <character name="shape" value="oblong" modifier="narrowly" />
+        <character name="shape" value="planoconvex" />
+        <character name="size" value="4.5" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="2-veined" modifier="distinctly;laterally" />
+        <character name="external_texture" value="hispidulous" constraint="on veins" constraintid="o10037" />
+      </structure>
+      <structure id="o10036" name="glume" />
+      <structure id="o10037" name="vein" />
+      <structure id="o10038" name="base">
+        <character name="shape" value="attenuate" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o10039" name="apex" />
+      <structure id="o10040" name="beak">
+        <character name="length" value="long" />
+      </structure>
+      <relation id="r1859" name="narrowed to" from="o10039" to="o10040" negation="false" modifier="gradually" />
+      <structure id="o10041" name="beak">
+        <character name="external_texture_or_relief" value="scabrous" constraint="on margins" constraintid="o10042" />
+      </structure>
+      <structure id="o10042" name="margin" />
+      <structure id="o10043" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+      <relation id="r1860" name="may_be_the_same" from="o10040" to="o10041" negation="false" />
+    </statement>
+    <statement id="1327.txt-10">
+      <text>Nutlets tightly enveloped, oblong, trigonous, ca. 2 mm, base estipitate;</text>
+      <structure id="o10044" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+      <structure id="o10045" name="base">
+        <character name="feature" value="estipitate" />
+      </structure>
+    </statement>
+    <statement id="1327.txt-11">
+      <text>style persistent, base not thickened;</text>
+      <structure id="o10046" name="style">
+        <character name="duration" value="persistent" />
+      </structure>
+      <structure id="o10047" name="base">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1327.txt-12">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1327.txt-13">
+      <text>Fl. and fr. Jun–Jul.</text>
+      <structure id="o10048" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Forests; 2900–3300 m. NW Yunnan (Dêqên).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

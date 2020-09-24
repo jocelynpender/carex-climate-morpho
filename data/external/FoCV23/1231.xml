@@ -13,7 +13,126 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>波密薹草 bo mi tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms 40–50 cm tall, densely tufted, compressed cylindric, smooth, clothed at base with castaneous sheaths. Leaves basal, shorter than culm, blade linear, 2–3 mm wide, flat, margins scabrous. Lower involucral bracts leaflike. Spikes linear, 1–4 cm, 4–7 each arising from involucral bract axil, usually female, only one spike gynaecandrous; peduncles unequal. Female glumes pale castaneous, elliptic, ca. 2 mm, 1-veined, narrowly white hyaline margined. Utricles slightly longer than glume, ca. 2.3 mm, base shortly stipitate, apex abruptly contracted into a long beak, 0.8–1 mm. Nutlets tightly enveloped, elliptic, trigonous; style short; stigmas 3. Fl. and fr. Jul–Aug.</description>
+  <description>
+    <statement id="1231.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o7122" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1231.txt-1">
+      <text>Culms 40–50 cm tall, densely tufted, compressed cylindric, smooth, clothed at base with castaneous sheaths.</text>
+      <structure id="o7123" name="culm">
+        <character char_type="range_value" name="size" from="40" from_unit="cm" to="50" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character name="shape" value="compressed cylindric" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o7124" name="base" />
+      <relation id="r1285" name="clothed at" from="o7123" to="o7124" negation="false" />
+      <structure id="o7125" name="sheath">
+        <character name="coloration" value="castaneous" />
+      </structure>
+      <relation id="r1286" name="with" from="o7124" to="o7125" negation="false" />
+    </statement>
+    <statement id="1231.txt-2">
+      <text>Leaves basal, shorter than culm, blade linear, 2–3 mm wide, flat, margins scabrous.</text>
+      <structure id="o7126" name="leaf">
+        <character name="position" value="basal" />
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o7127" />
+      </structure>
+      <structure id="o7127" name="culm" />
+      <structure id="o7128" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o7129" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1231.txt-3">
+      <text>Lower involucral bracts leaflike.</text>
+      <structure id="o7130" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+      </structure>
+    </statement>
+    <statement id="1231.txt-4">
+      <text>Spikes linear, 1–4 cm, 4–7 each arising from involucral bract axil, usually female, only one spike gynaecandrous;</text>
+      <structure id="o7131" name="spike">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="4" to_unit="cm" />
+        <character char_type="range_value" name="count" from="4" to="7" />
+        <character name="orientation" value="arising" modifier="each" constraint="from bract axil" constraintid="o7132" />
+        <character name="reproduction" value="female" modifier="usually" />
+        <character name="feature" value="gynaecandrous" />
+      </structure>
+      <structure id="o7132" name="axil" constraint="involucral bract" />
+      <structure id="o7133" name="spike" />
+      <relation id="r1287" name="may_be_the_same" from="o7131" to="o7133" negation="false" />
+    </statement>
+    <statement id="1231.txt-5">
+      <text>peduncles unequal.</text>
+      <structure id="o7134" name="peduncle">
+        <character name="size" value="unequal" />
+      </structure>
+    </statement>
+    <statement id="1231.txt-6">
+      <text>Female glumes pale castaneous, elliptic, ca. 2 mm, 1-veined, narrowly white hyaline margined.</text>
+      <structure id="o7135" name="glume" constraint="female">
+        <character name="coloration" value="castaneous" modifier="pale" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="size" value="2" unit="mm" />
+        <character name="architecture_or_feature" value="1-veined" />
+        <character name="coloration" value="hyaline" modifier="narrowly;white" />
+        <character name="feature" value="margined" />
+      </structure>
+    </statement>
+    <statement id="1231.txt-7">
+      <text>Utricles slightly longer than glume, ca. 2.3 mm, base shortly stipitate, apex abruptly contracted into a long beak, 0.8–1 mm.</text>
+      <structure id="o7136" name="utricle">
+        <character name="length" value="longer" modifier="slightly" constraint="than glume" constraintid="o7137" />
+        <character name="size" value="2.3" unit="mm" />
+      </structure>
+      <structure id="o7137" name="glume" />
+      <structure id="o7138" name="base">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o7139" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o7140" />
+        <character char_type="range_value" name="size" from="0.8" from_unit="mm" to="1" to_unit="mm" />
+      </structure>
+      <structure id="o7140" name="beak">
+        <character name="length" value="long" />
+      </structure>
+    </statement>
+    <statement id="1231.txt-8">
+      <text>Nutlets tightly enveloped, elliptic, trigonous;</text>
+      <structure id="o7141" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="trigonous" />
+      </structure>
+    </statement>
+    <statement id="1231.txt-9">
+      <text>style short;</text>
+      <structure id="o7142" name="style">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1231.txt-10">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1231.txt-11">
+      <text>Fl. and fr. Jul–Aug.</text>
+      <structure id="o7143" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Ditch sides in forests, moist places; 2100–2800 m. SE Xizang (Mêdog).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

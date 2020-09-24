@@ -13,7 +13,142 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>胶东薹草 jiao dong tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome creeping, elongate, 50–100 cm, dark brown, clothed with sheaths disintegrating into fibers. Culms 15–20 cm tall, trigonous, scabrous above, clothed with brown bladeless sheaths at base. Leaves shorter than culm, blades linear, 2–3 mm wide, margins scabrous, apex acuminate. Involucral bracts glumelike. Spicate inflorescence oblong or cylindric, ca. 2 cm; spikes 6–10, androgynous, sometimes female spikes at base and male spikes at middle, ovate, ca. 5 mm. Female glumes chestnut-brown, oblong, ca. 4 mm, margins pale hyaline, apex acuminate. Utricles pale green, ferruginous above, equaling or slightly shorter than glume, plano-convex, 3.5–4 mm, many veined on both faces, base contracted, upper margins serrulate winged, apex gradually narrowed into a ferruginous, obliquely truncate, long beak 2-toothed abaxially. Nutlets oblong, ca. 1.8 mm; style base slightly thickened; stigmas 2. Fl. and fr. May.</description>
+  <description>
+    <statement id="1657.txt-0">
+      <text>Rhizome creeping, elongate, 50–100 cm, dark brown, clothed with sheaths disintegrating into fibers.</text>
+      <structure id="o19562" name="rhizome">
+        <character name="habit" value="creeping" />
+        <character name="shape" value="elongate" />
+        <character char_type="range_value" name="size" from="50" from_unit="cm" to="100" to_unit="cm" />
+        <character name="coloration" value="brown" modifier="dark" />
+      </structure>
+      <structure id="o19563" name="sheath">
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o19564" />
+      </structure>
+      <relation id="r3698" name="clothed with" from="o19562" to="o19563" negation="false" />
+      <structure id="o19564" name="fiber" />
+    </statement>
+    <statement id="1657.txt-1">
+      <text>Culms 15–20 cm tall, trigonous, scabrous above, clothed with brown bladeless sheaths at base.</text>
+      <structure id="o19565" name="culm">
+        <character char_type="range_value" name="size" from="15" from_unit="cm" to="20" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o19566" name="sheath" constraint="bladeless">
+        <character name="coloration" value="brown" />
+      </structure>
+      <relation id="r3699" name="clothed with" from="o19565" to="o19566" negation="false" />
+      <structure id="o19567" name="base" />
+      <relation id="r3700" name="at" from="o19566" to="o19567" negation="false" />
+    </statement>
+    <statement id="1657.txt-2">
+      <text>Leaves shorter than culm, blades linear, 2–3 mm wide, margins scabrous, apex acuminate.</text>
+      <structure id="o19568" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o19569" />
+      </structure>
+      <structure id="o19569" name="culm" />
+      <structure id="o19570" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+      </structure>
+      <structure id="o19571" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o19572" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1657.txt-3">
+      <text>Involucral bracts glumelike.</text>
+      <structure id="o19573" name="bract" constraint="involucral">
+        <character name="feature" value="glumelike" />
+      </structure>
+    </statement>
+    <statement id="1657.txt-4">
+      <text>Spicate inflorescence oblong or cylindric, ca. 2 cm;</text>
+      <structure id="o19574" name="inflorescence" constraint="spicate">
+        <character name="shape" value="oblong" />
+        <character name="shape" value="cylindric" />
+        <character name="size" value="2" unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1657.txt-5">
+      <text>spikes 6–10, androgynous, sometimes female spikes at base and male spikes at middle, ovate, ca. 5 mm.</text>
+      <structure id="o19575" name="spike">
+        <character char_type="range_value" name="count" from="6" to="10" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="ovate" />
+        <character name="size" value="5" unit="mm" />
+      </structure>
+      <structure id="o19576" name="spike" constraint="sometimes female" />
+      <structure id="o19577" name="base" />
+      <structure id="o19578" name="spike" constraint="male;at middle" />
+      <relation id="r3701" name="at" from="o19575" to="o19577" negation="false" />
+      <relation id="r3702" name="at" from="o19575" to="o19578" negation="false" />
+    </statement>
+    <statement id="1657.txt-6">
+      <text>Female glumes chestnut-brown, oblong, ca. 4 mm, margins pale hyaline, apex acuminate.</text>
+      <structure id="o19579" name="glume" constraint="female">
+        <character name="coloration" value="chestnut-brown" />
+        <character name="shape" value="oblong" />
+        <character name="size" value="4" unit="mm" />
+      </structure>
+      <structure id="o19580" name="margin">
+        <character name="coloration" value="hyaline" modifier="pale" />
+      </structure>
+      <structure id="o19581" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1657.txt-7">
+      <text>Utricles pale green, ferruginous above, equaling or slightly shorter than glume, planoconvex, 3.5–4 mm, many veined on both faces, base contracted, upper margins serrulate winged, apex gradually narrowed into a ferruginous, obliquely truncate, long beak 2-toothed abaxially.</text>
+      <structure id="o19582" name="utricle">
+        <character name="coloration" value="green" modifier="pale" />
+      </structure>
+      <structure id="o19583" name="base">
+        <character name="size" value="contracted" />
+      </structure>
+      <relation id="r3703" name="equaling or slightly   shorter than glume , planoconvex , 3.5-4 mm , many veined   on" from="o19582" to="o19583" negation="false" />
+      <structure id="o19584" name="margin" constraint="upper">
+        <character name="shape" value="serrulate" />
+        <character name="architecture" value="winged" />
+      </structure>
+      <structure id="o19585" name="apex">
+        <character name="shape" value="narrowed" modifier="gradually" constraint="into beak" constraintid="o19586" />
+      </structure>
+      <structure id="o19586" name="beak">
+        <character name="shape" value="truncate" modifier="obliquely" />
+        <character name="length" value="long" />
+        <character name="shape" value="2-toothed" modifier="abaxially" />
+      </structure>
+    </statement>
+    <statement id="1657.txt-8">
+      <text>Nutlets oblong, ca. 1.8 mm;</text>
+      <structure id="o19587" name="nutlet">
+        <character name="shape" value="oblong" />
+        <character name="size" value="1.8" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1657.txt-9">
+      <text>style base slightly thickened;</text>
+      <structure id="o19588" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1657.txt-10">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1657.txt-11">
+      <text>Fl. and fr. May.</text>
+      <structure id="o19589" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Sandy coastal beaches. E Shandong (Muping).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

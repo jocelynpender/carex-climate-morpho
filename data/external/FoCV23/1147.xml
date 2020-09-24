@@ -121,7 +121,168 @@
     <variety_name>koreana</variety_name>
     <variety_authority>Nakai.</variety_authority>
   </TaxonIdentification>
-  <description>Rhizome short or stoloniferous. Culms tufted, 15–50 cm tall, slender, compressed trigonous, smooth or slightly scabrid. Basal sheaths pale yellow-brown to rusty brown. Leaves shorter or longer than culm, blades 2–3(–4) mm wide, flat, margins scabrid. Involucral bracts sheathed, sheath 5–18 mm, lower ones leafy, upper ones bristlelike, shorter than or equaling inflorescence. Spikes 2–4, spaced; terminal spike male, narrowly cylindric, 15–20 mm; lateral spikes female, sometimes with male flowers at apex, oblong-cylindric or narrowly cylindric, 10–30 × 2–3 mm, loosely flowered, peduncles enclosed in involucral bract sheath or slightly exserted. Female glumes pale or pale brown, obovate, green costa 1–3-veined, excurrent into a mucro, apex truncate. Utricles pale yellow-green, longer than or nearly equaling glume, ovate-elliptic, obtusely trigonous, ca. 3 mm, densely puberulent, slightly many veined, base attenuate into a short stipe, apex attenuate into a conic beak, orifice 2-toothed. Nutlet gray-black at maturity, tightly enveloped, ovate, trigonous, ca. 1.5 mm, base shortly stipitate, apex discoid-annulate; stigmas 3. Fl. and fr. May–Jun.</description>
+  <description>
+    <statement id="1147.txt-0">
+      <text>Rhizome short or stoloniferous.</text>
+      <structure id="o4642" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="architecture" value="stoloniferous" />
+      </structure>
+    </statement>
+    <statement id="1147.txt-1">
+      <text>Culms tufted, 15–50 cm tall, slender, compressed trigonous, smooth or slightly scabrid.</text>
+      <structure id="o4643" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="15" from_unit="cm" to="50" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="compressed trigonous" />
+        <character name="relief" value="smooth" />
+        <character name="relief" value="scabrid" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1147.txt-2">
+      <text>Basal sheaths pale yellow-brown to rusty brown.</text>
+      <structure id="o4644" name="sheath" constraint="basal">
+        <character char_type="range_value" name="coloration" from="pale yellow-brown" to="rusty brown" />
+        <character name="coloration" value="yellow-brown" modifier="pale" />
+        <character name="coloration" value="brown" modifier="rusty" />
+      </structure>
+    </statement>
+    <statement id="1147.txt-3">
+      <text>Leaves shorter or longer than culm, blades 2–3 (–4 )mm wide, flat, margins scabrid.</text>
+      <structure id="o4645" name="leaf" />
+      <structure id="o4646" name="culm" />
+      <structure id="o4647" name="blade">
+        <character char_type="range_value" name="width" from="3" to="4" from_unit="mm" to_unit="mm" from_inclusive="false" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o4648" name="margin">
+        <character name="relief" value="scabrid" />
+      </structure>
+    </statement>
+    <statement id="1147.txt-4">
+      <text>Involucral bracts sheathed, sheath 5–18 mm, lower ones leafy, upper ones bristlelike, shorter than or equaling inflorescence.</text>
+      <structure id="o4649" name="bract" constraint="involucral">
+        <character name="architecture_or_feature" value="sheathed" />
+      </structure>
+      <structure id="o4650" name="sheath">
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="18" to_unit="mm" />
+        <character name="position" value="lower" />
+        <character name="architecture" value="leafy" />
+        <character name="position" value="upper" />
+        <character name="architecture" value="bristlelike" />
+        <character name="height_or_length" value="shorter" constraint="than or equaling inflorescence" constraintid="o4651" />
+      </structure>
+      <structure id="o4651" name="inflorescence" />
+    </statement>
+    <statement id="1147.txt-5">
+      <text>Spikes 2–4, spaced;</text>
+      <structure id="o4652" name="spike">
+        <character char_type="range_value" name="count" from="2" to="4" />
+        <character name="arrangement" value="spaced" />
+      </structure>
+    </statement>
+    <statement id="1147.txt-6">
+      <text>terminal spike male, narrowly cylindric, 15–20 mm;</text>
+      <structure id="o4653" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="cylindric" modifier="narrowly" />
+        <character char_type="range_value" name="size" from="15" from_unit="mm" to="20" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1147.txt-7">
+      <text>lateral spikes female, sometimes with male flowers at apex, oblong-cylindric or narrowly cylindric, 10–30 × 2–3 mm, loosely flowered, peduncles enclosed in involucral bract sheath or slightly exserted.</text>
+      <structure id="o4654" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="oblong-cylindric" />
+        <character name="shape" value="cylindric" modifier="narrowly" />
+        <character char_type="range_value" name="length" from="10" from_unit="mm" to="30" to_unit="mm" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="architecture" value="flowered" modifier="loosely" />
+      </structure>
+      <structure id="o4655" name="flower" constraint="male" />
+      <relation id="r945" name="with" from="o4654" to="o4655" negation="false" modifier="sometimes" />
+      <structure id="o4656" name="apex" />
+      <relation id="r946" name="at" from="o4655" to="o4656" negation="false" />
+      <structure id="o4657" name="peduncle">
+        <character name="position" value="enclosed" constraint="in bract sheath" constraintid="o4658" />
+        <character name="position" value="exserted" modifier="slightly" />
+      </structure>
+      <structure id="o4658" name="sheath" constraint="involucral bract" />
+    </statement>
+    <statement id="1147.txt-8">
+      <text>Female glumes pale or pale brown, obovate, green costa 1–3-veined, excurrent into a mucro, apex truncate.</text>
+      <structure id="o4659" name="glume" constraint="female">
+        <character name="coloration" value="pale" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="shape" value="obovate" />
+      </structure>
+      <structure id="o4660" name="costa">
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="1-3-veined" />
+        <character name="architecture" value="excurrent" constraint="into mucro" constraintid="o4661" />
+      </structure>
+      <structure id="o4661" name="mucro" />
+      <structure id="o4662" name="apex">
+        <character name="shape" value="truncate" />
+      </structure>
+    </statement>
+    <statement id="1147.txt-9">
+      <text>Utricles pale yellow-green, longer than or nearly equaling glume, ovate-elliptic, obtusely trigonous, ca. 3 mm, densely puberulent, slightly many veined, base attenuate into a short stipe, apex attenuate into a conic beak, orifice 2-toothed.</text>
+      <structure id="o4663" name="utricle">
+        <character name="coloration" value="yellow-green" modifier="pale" />
+        <character name="length" value="longer" constraint="than or nearly equaling glume" constraintid="o4664" />
+        <character name="arrangement_or_shape" value="ovate-elliptic" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character name="size" value="3" unit="mm" />
+        <character name="external_texture" value="puberulent" modifier="densely" />
+        <character name="count" value="many" modifier="slightly" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o4664" name="glume" />
+      <structure id="o4665" name="base">
+        <character name="shape" value="attenuate" constraint="into stipe" constraintid="o4666" />
+      </structure>
+      <structure id="o4666" name="stipe">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o4667" name="apex">
+        <character name="shape" value="attenuate" constraint="into beak" constraintid="o4668" />
+      </structure>
+      <structure id="o4668" name="beak">
+        <character name="shape" value="conic" />
+      </structure>
+      <structure id="o4669" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1147.txt-10">
+      <text>Nutlet gray-black at maturity, tightly enveloped, ovate, trigonous, ca. 1.5 mm, base shortly stipitate, apex discoid-annulate;</text>
+      <structure id="o4670" name="nutlet">
+        <character name="coloration" value="gray-black" />
+        <character name="maturity , tightly enveloped , ovate , trigonous ," value="1.5" unit="mm" />
+      </structure>
+      <structure id="o4671" name="base">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o4672" name="apex">
+        <character name="architecture" value="discoid-annulate" />
+      </structure>
+    </statement>
+    <statement id="1147.txt-11">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1147.txt-12">
+      <text>Fl. and fr. May–Jun.</text>
+      <structure id="o4673" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forests on mountain slopes, waysides; 400–1400 m. Anhui, Hebei, Liaoning, Shandong [Japan].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

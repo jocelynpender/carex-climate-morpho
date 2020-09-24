@@ -13,7 +13,170 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>阳朔薹草 yang shuo tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome woody, rigid. Culms 20–40 cm tall, glabrous, clothed at base with dark brown sheaths disintegrating into fibers. Leaves surpassing culm, blades linear, 7–10 mm wide, apex acuminate. Involucral bracts shortly bladed, long sheathing. Spikes 3 or 4, distant; terminal spike male, cylindric, 3–4.5 × 0.3–0.4 cm, long pedunculate; lateral spikes androgynous, male part ca. 1/3 length of female part, cylindric, 2.5–4.3 cm, densely flowered; peduncles smooth. Female glumes red-brown, ovate-lanceolate, margins pale hyaline, green 3-veined costa excurrent into a mucro. Utricles dark green, longer than glume, obliquely patent, elliptic, 5–6 mm, membranous, slender, glabrous, many veined, base truncate, apex abruptly contracted into a scabrous long beak, orifice 2-toothed. Nutlets pale brown, loosely enveloped, rhomboid, trigonous, 2.5–3 mm, not constricted on angles, faces concave at base, base curved stipitate, apex abruptly contracted into a curved beak ca. 1 mm; style base slightly thickened; stigmas 3.</description>
+  <description>
+    <statement id="1390.txt-0">
+      <text>Rhizome woody, rigid.</text>
+      <structure id="o11988" name="rhizome">
+        <character name="internal_texture" value="woody" />
+        <character name="internal_texture" value="rigid" />
+      </structure>
+    </statement>
+    <statement id="1390.txt-1">
+      <text>Culms 20–40 cm tall, glabrous, clothed at base with dark brown sheaths disintegrating into fibers.</text>
+      <structure id="o11989" name="culm">
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="40" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="external_texture" value="glabrous" />
+      </structure>
+      <structure id="o11990" name="base" />
+      <relation id="r2251" name="clothed at" from="o11989" to="o11990" negation="false" />
+      <structure id="o11991" name="sheath">
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o11992" />
+      </structure>
+      <relation id="r2252" name="with" from="o11990" to="o11991" negation="false" />
+      <structure id="o11992" name="fiber" />
+    </statement>
+    <statement id="1390.txt-2">
+      <text>Leaves surpassing culm, blades linear, 7–10 mm wide, apex acuminate.</text>
+      <structure id="o11993" name="leaf" />
+      <structure id="o11994" name="culm" />
+      <relation id="r2253" name="surpassing" from="o11993" to="o11994" negation="false" />
+      <structure id="o11995" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="7" from_unit="mm" to="10" to_unit="mm" />
+      </structure>
+      <structure id="o11996" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1390.txt-3">
+      <text>Involucral bracts shortly bladed, long sheathing.</text>
+      <structure id="o11997" name="bract" constraint="involucral">
+        <character name="architecture_or_feature_or_shape" value="sheathing" />
+      </structure>
+    </statement>
+    <statement id="1390.txt-4">
+      <text>Spikes 3 or 4, distant;</text>
+      <structure id="o11998" name="spike">
+        <character name="count" value="3" />
+        <character name="count" value="4" />
+        <character name="arrangement" value="distant" />
+      </structure>
+    </statement>
+    <statement id="1390.txt-5">
+      <text>terminal spike male, cylindric, 3–4.5 × 0.3–0.4 cm, long pedunculate;</text>
+      <structure id="o11999" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="length" from="3" from_unit="cm" to="4.5" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.3" from_unit="cm" to="0.4" to_unit="cm" />
+        <character name="architecture" value="pedunculate" />
+      </structure>
+    </statement>
+    <statement id="1390.txt-6">
+      <text>lateral spikes androgynous, male part ca. 1/3 length of female part, cylindric, 2.5–4.3 cm, densely flowered;</text>
+      <structure id="o12000" name="spike" constraint="lateral">
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="length" value="1/3" constraint="of part" constraintid="o12001" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="cm" to="4.3" to_unit="cm" />
+        <character name="architecture" value="flowered" modifier="densely" />
+      </structure>
+      <structure id="o12001" name="part" constraint="female" />
+    </statement>
+    <statement id="1390.txt-7">
+      <text>peduncles smooth.</text>
+      <structure id="o12002" name="peduncle">
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+    </statement>
+    <statement id="1390.txt-8">
+      <text>Female glumes red-brown, ovate-lanceolate, margins pale hyaline, green 3-veined costa excurrent into a mucro.</text>
+      <structure id="o12003" name="glume" constraint="female">
+        <character name="coloration" value="red-brown" />
+        <character name="shape" value="ovate-lanceolate" />
+      </structure>
+      <structure id="o12004" name="margin">
+        <character name="coloration" value="hyaline" modifier="pale" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="3-veined" />
+        <character name="architecture" value="excurrent" constraint="into mucro" constraintid="o12006" />
+      </structure>
+      <structure id="o12005" name="costa" />
+      <structure id="o12006" name="mucro" />
+    </statement>
+    <statement id="1390.txt-9">
+      <text>Utricles dark green, longer than glume, obliquely patent, elliptic, 5–6 mm, membranous, slender, glabrous, many veined, base truncate, apex abruptly contracted into a scabrous long beak, orifice 2-toothed.</text>
+      <structure id="o12007" name="utricle">
+        <character name="coloration" value="green" modifier="dark" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o12008" />
+        <character name="orientation" value="patent" modifier="obliquely" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="6" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="size" value="slender" />
+        <character name="external_texture" value="glabrous" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o12008" name="glume" />
+      <structure id="o12009" name="base">
+        <character name="shape" value="truncate" />
+      </structure>
+      <structure id="o12010" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o12011" />
+      </structure>
+      <structure id="o12011" name="beak">
+        <character name="external_texture_or_relief" value="scabrous" />
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o12012" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1390.txt-10">
+      <text>Nutlets pale brown, loosely enveloped, rhomboid, trigonous, 2.5–3 mm, not constricted on angles, faces concave at base, base curved stipitate, apex abruptly contracted into a curved beak ca. 1 mm;</text>
+      <structure id="o12013" name="nutlet">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="rhomboid" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character name="size" value="constricted" modifier="not" constraint="on angles" constraintid="o12014" />
+        <character name="shape" value="concave" constraint="at base" constraintid="o12015" />
+      </structure>
+      <structure id="o12014" name="angle" />
+      <structure id="o12015" name="base" />
+      <structure id="o12016" name="base">
+        <character name="course_or_orientation" value="curved" />
+        <character name="architecture" value="stipitate" />
+      </structure>
+      <structure id="o12017" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o12018" />
+      </structure>
+      <structure id="o12018" name="beak">
+        <character name="course_or_orientation" value="curved" />
+        <character name="size" value="1" unit="mm" />
+      </structure>
+      <relation id="r2254" name="may_be_the_same" from="o12015" to="o12016" negation="false" />
+    </statement>
+    <statement id="1390.txt-11">
+      <text>style base slightly thickened;</text>
+      <structure id="o12019" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1390.txt-12">
+      <text>stigmas 3.</text>
+      <structure id="o12020" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● E Guangxi (Yangshuo).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

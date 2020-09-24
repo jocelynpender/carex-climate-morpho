@@ -45,7 +45,38 @@
     <subspecies_name>stenophylloides</subspecies_name>
     <subspecies_authority>(V. I. Kreczetowicz) T. V. Egorova.</subspecies_authority>
   </TaxonIdentification>
-  <description>Leaf blades flat. Inflorescence brownish. Female glumes brown-castaneous, usually shorter than utricles, rarely as long, with narrower hyaline margins, apex acute.</description>
+  <description>
+    <statement id="1664.txt-0">
+      <text>Leaf blades flat.</text>
+      <structure id="o19738" name="blade" constraint="leaf">
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+    </statement>
+    <statement id="1664.txt-1">
+      <text>Inflorescence brownish.</text>
+      <structure id="o19739" name="inflorescence">
+        <character name="coloration" value="brownish" />
+      </structure>
+    </statement>
+    <statement id="1664.txt-2">
+      <text>Female glumes brown-castaneous, usually shorter than utricles, rarely as long, with narrower hyaline margins, apex acute.</text>
+      <structure id="o19740" name="glume" constraint="female">
+        <character name="coloration" value="brown-castaneous" />
+        <character name="height_or_length" value="shorter" modifier="usually" constraint="than utricles" constraintid="o19741" />
+      </structure>
+      <structure id="o19741" name="utricle" />
+      <structure id="o19742" name="margin">
+        <character name="width" value="narrower" />
+        <character name="coloration" value="hyaline" />
+      </structure>
+      <relation id="r3726" name="with" from="o19740" to="o19742" negation="false" />
+      <structure id="o19743" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Meadows, rocky and sandy areas on riverbanks. Gansu, Nei Mongol, Shaanxi, Xinjiang, Xizang [Afghanistan, Kazakhstan, Korea, Kyrgyzstan, Mongolia, Pakistan, Tajikistan, Turkmenistan, Uzbekistan; SW Asia].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

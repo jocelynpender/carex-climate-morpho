@@ -13,8 +13,149 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>细花薹草 xi hua tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, with short stolons. Culms loosely tufted, 20–50 cm tall, slender, trigonous, slightly stiff, smooth or subsmooth. Leaves shorter than culm, blades linear, 1–1.5 mm wide, flat or involute, slightly scabrous. Involucral bracts glumelike. Spikes 2–4, gynaecandrous, globose, 3–4 mm, few flowered, disposed in a capitate or spicate inflorescence. Female glumes pale yellow, ovate, 2–2.5 mm, with pale brown midrib, margins hyaline. Utricles yellowish green, subequaling glume, ovate or elliptic, plano-convex, 2–2.5 × ca. 1.1 mm, subleathery, minutely white tuberculate, brown-purple 5–9-veined on both faces, base rounded, nearly estipitate, apex beakless, orifice emarginate. Nutlets tightly enveloped, elliptic or broadly elliptic, biconvex, ca. 1.2 mm, base rounded to cuneate; style base not thickened; stigmas 2. Fl. and fr. Jul. 2n = 58.</description>
+  <description>
+    <statement id="1700.txt-0">
+      <text>Rhizome short, with short stolons.</text>
+      <structure id="o20586" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o20587" name="stolon">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r3852" name="with" from="o20586" to="o20587" negation="false" />
+    </statement>
+    <statement id="1700.txt-1">
+      <text>Culms loosely tufted, 20–50 cm tall, slender, trigonous, slightly stiff, smooth or subsmooth.</text>
+      <structure id="o20588" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="loosely" />
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="50" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="trigonous" />
+        <character name="external_texture" value="stiff" modifier="slightly" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="feature" value="subsmooth" />
+      </structure>
+    </statement>
+    <statement id="1700.txt-2">
+      <text>Leaves shorter than culm, blades linear, 1–1.5 mm wide, flat or involute, slightly scabrous.</text>
+      <structure id="o20589" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o20590" />
+      </structure>
+      <structure id="o20590" name="culm" />
+      <structure id="o20591" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="1.5" to_unit="mm" />
+        <character name="shape" value="flat" />
+        <character name="shape" value="involute" />
+        <character name="external_texture_or_relief" value="scabrous" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1700.txt-3">
+      <text>Involucral bracts glumelike.</text>
+      <structure id="o20592" name="bract" constraint="involucral">
+        <character name="feature" value="glumelike" />
+      </structure>
+    </statement>
+    <statement id="1700.txt-4">
+      <text>Spikes 2–4, gynaecandrous, globose, 3–4 mm, few flowered, disposed in a capitate or spicate inflorescence.</text>
+      <structure id="o20593" name="spike">
+        <character char_type="range_value" name="count" from="2" to="4" />
+        <character name="feature" value="gynaecandrous" />
+        <character name="shape" value="globose" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="count" value="few" />
+        <character name="architecture" value="flowered" />
+        <character name="arrangement" value="disposed" constraint="in inflorescence" constraintid="o20594" />
+      </structure>
+      <structure id="o20594" name="inflorescence">
+        <character name="architecture" value="capitate" />
+        <character name="architecture" value="spicate" />
+      </structure>
+    </statement>
+    <statement id="1700.txt-5">
+      <text>Female glumes pale yellow, ovate, 2–2.5 mm, with pale brown midrib, margins hyaline.</text>
+      <structure id="o20595" name="glume" constraint="female">
+        <character name="coloration" value="yellow" modifier="pale" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="2.5" to_unit="mm" />
+      </structure>
+      <structure id="o20596" name="midrib">
+        <character name="coloration" value="brown" modifier="pale" />
+      </structure>
+      <relation id="r3853" name="with" from="o20595" to="o20596" negation="false" />
+      <structure id="o20597" name="margin">
+        <character name="coloration" value="hyaline" />
+      </structure>
+    </statement>
+    <statement id="1700.txt-6">
+      <text>Utricles yellowish green, subequaling glume, ovate or elliptic, planoconvex, 2–2.5 × ca. 1.1 mm, subleathery, minutely white tuberculate, brown-purple 5–9-veined on both faces, base rounded, nearly estipitate, apex beakless, orifice emarginate.</text>
+      <structure id="o20598" name="utricle">
+        <character name="coloration" value="green" modifier="yellowish" />
+      </structure>
+      <structure id="o20599" name="glume">
+        <character name="shape" value="ovate" />
+        <character name="shape" value="elliptic" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="length" from="2" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="width" value="1.1" unit="mm" />
+        <character name="coloration" value="white" modifier="minutely" />
+        <character name="relief" value="tuberculate" />
+        <character name="coloration" value="brown-purple" />
+        <character name="architecture_or_feature" value="5-9-veined" constraint="on faces" constraintid="o20600" />
+      </structure>
+      <structure id="o20600" name="face" />
+      <structure id="o20601" name="base">
+        <character name="shape" value="rounded" />
+        <character name="feature" value="estipitate" modifier="nearly" />
+      </structure>
+      <structure id="o20602" name="apex">
+        <character name="architecture" value="beakless" />
+      </structure>
+      <structure id="o20603" name="orifice">
+        <character name="shape" value="emarginate" />
+      </structure>
+    </statement>
+    <statement id="1700.txt-7">
+      <text>Nutlets tightly enveloped, elliptic or broadly elliptic, biconvex, ca. 1.2 mm, base rounded to cuneate;</text>
+      <structure id="o20604" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="arrangement_or_shape" value="elliptic" modifier="broadly" />
+        <character name="shape" value="biconvex" />
+        <character name="size" value="1.2" unit="mm" />
+      </structure>
+      <structure id="o20605" name="base">
+        <character char_type="range_value" name="shape" from="rounded" to="cuneate" />
+        <character name="shape" value="rounded" />
+        <character name="shape" value="cuneate" />
+      </structure>
+    </statement>
+    <statement id="1700.txt-8">
+      <text>style base not thickened;</text>
+      <structure id="o20606" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1700.txt-9">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1700.txt-10">
+      <text>Fl. and fr. Jul.</text>
+      <structure id="o20607" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+    <statement id="1700.txt-11">
+      <text>2n = 58.</text>
+      <structure name="chromosome" id="o20608">
+        <character name="count" value="58" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Swamps; ca. 900 m. Jilin, Nei Mongol [Japan, Korea, N Mongolia, Russia (Far East, Siberia); Europe, North America].</distribution>
   <key_heading>Taxa incertae sedis</key_heading>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

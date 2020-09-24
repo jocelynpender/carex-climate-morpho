@@ -22,7 +22,24 @@
     <variety_name>duriuscula</variety_name>
     <variety_authority>(C. A. Meyer) Trautvetter.</variety_authority>
   </TaxonIdentification>
-  <description>Leaf blades linear-involute. Female glumes ferruginous-brown, white hyaline on margins.</description>
+  <description>
+    <statement id="1662.txt-0">
+      <text>Leaf blades linear-involute.</text>
+      <structure id="o19728" name="blade" constraint="leaf">
+        <character name="shape_or_vernation" value="linear-involute" />
+      </structure>
+    </statement>
+    <statement id="1662.txt-1">
+      <text>Female glumes ferruginous-brown, white hyaline on margins.</text>
+      <structure id="o19729" name="glume" constraint="female">
+        <character name="coloration" value="ferruginous-brown" />
+        <character name="coloration" value="hyaline" modifier="white" constraint="on margins" constraintid="o19730" />
+      </structure>
+      <structure id="o19730" name="margin" />
+    </statement>
+  </description>
   <distribution>Grasslands, slopes, wet places on riverbanks, roadsides; 200–700 m. Gansu, Heilongjiang, Jilin, Liaoning, Nei Mongol [Kazakhstan, Korea, E Mongolia, New Guinea, Russia (Far East, Siberia); North America].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

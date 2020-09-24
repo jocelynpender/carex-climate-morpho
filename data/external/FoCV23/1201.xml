@@ -20,8 +20,39 @@
     <species_name>longi</species_name>
     <species_authority>squamata Meinshausen ex Komarov.</species_authority>
   </TaxonIdentification>
-  <description>Culms 10–35 cm tall. Female spikes loosely or slightly densely 5–10-flowered. Female glumes lanceolate or obovate-lanceolate. Utricles 2-veined laterally and convexly several veined.</description>
+  <description>
+    <statement id="1201.txt-0">
+      <text>Culms 10–35 cm tall.</text>
+      <structure id="o6407" name="culm">
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="35" to_unit="cm" />
+        <character name="height" value="tall" />
+      </structure>
+    </statement>
+    <statement id="1201.txt-1">
+      <text>Female spikes loosely or slightly densely 5–10-flowered.</text>
+      <structure id="o6408" name="spike" constraint="female">
+        <character name="architecture" value="5-10-flowered" modifier="loosely~or~slightly densely" />
+      </structure>
+    </statement>
+    <statement id="1201.txt-2">
+      <text>Female glumes lanceolate or obovate-lanceolate.</text>
+      <structure id="o6409" name="glume" constraint="female">
+        <character name="shape" value="lanceolate" />
+        <character name="shape" value="obovate-lanceolate" />
+      </structure>
+    </statement>
+    <statement id="1201.txt-3">
+      <text>Utricles 2-veined laterally and convexly several veined.</text>
+      <structure id="o6410" name="utricle">
+        <character name="architecture_or_feature" value="2-veined" modifier="laterally" />
+        <character name="count" value="several" modifier="convexly" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forests, grasslands at forest margins, dry grasslands on sunny slopes; 100–2300 m. Anhui, Gansu, Guizhou, Hebei, Heilongjiang, Henan, Jiangsu, Jiangxi, Jilin, Liaoning, Nei Mongol, Shaanxi, Shandong, Shanxi, Sichuan, Yunnan, Zhejiang [Japan, Korea, Mongolia, Russia (Far East, E Siberia)].</distribution>
   <discussion>The culms and leaves are used for making paper, and the young plants are used as animal feed.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

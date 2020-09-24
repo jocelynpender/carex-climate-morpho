@@ -20,7 +20,145 @@
     <variety_name>cremostachys</variety_name>
     <variety_authority>(Franchet) Kükenthal.</variety_authority>
   </TaxonIdentification>
-  <description>Rhizome short. Culms up to ca. 90 cm tall, acutely trigonous, smooth, clothed at base with dark purple-red bladeless sheaths disintegrating into reticulate fibers. Leaves subequaling culm, blades linear, 4–6 mm wide, upper shortly sheathing. Involucral bracts leaflike, very long, surpassing inflorescence, sheathless. Spikes 7–12, cylindric, 6–10 cm, densely many flowered, upper 1 or 2 spikes gynaecandrous, remaining spikes female, lower spikes with long peduncles, others subsessile. Female glumes pale red or pale brown, lanceolate, ca. 4 × 1 mm, ferruginous glandular, green 3-veined costa excurrent into a long awn. Utricles yellow-green, much shorter than glume, ovate, 2.5–3 mm, papery, ferruginous glandular, apex abruptly contracted into a short beak, orifice shortly 2-toothed. Nutlets castaneous, slightly loosely enveloped, ovate, biconvex, ca. 1.8 mm; style base not thickened; stigmas 2.</description>
+  <description>
+    <statement id="1552.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o16849" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1552.txt-1">
+      <text>Culms up to ca. 90 cm tall, acutely trigonous, smooth, clothed at base with dark purple-red bladeless sheaths disintegrating into reticulate fibers.</text>
+      <structure id="o16850" name="culm">
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="90" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o16851" name="base" />
+      <relation id="r3213" name="clothed at" from="o16850" to="o16851" negation="false" />
+      <structure id="o16852" name="sheath" constraint="bladeless">
+        <character name="coloration" value="purple-red" modifier="dark" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o16853" />
+      </structure>
+      <relation id="r3214" name="with" from="o16851" to="o16852" negation="false" />
+      <structure id="o16853" name="fiber">
+        <character name="architecture_or_pattern_or_relief" value="reticulate" />
+      </structure>
+    </statement>
+    <statement id="1552.txt-2">
+      <text>Leaves subequaling culm, blades linear, 4–6 mm wide, upper shortly sheathing.</text>
+      <structure id="o16854" name="leaf" />
+      <structure id="o16855" name="culm" />
+      <relation id="r3215" name="subequaling" from="o16854" to="o16855" negation="false" />
+      <structure id="o16856" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="6" to_unit="mm" />
+        <character name="position" value="upper" modifier="shortly" />
+        <character name="architecture_or_feature_or_shape" value="sheathing" />
+      </structure>
+    </statement>
+    <statement id="1552.txt-3">
+      <text>Involucral bracts leaflike, very long, surpassing inflorescence, sheathless.</text>
+      <structure id="o16857" name="bract" constraint="involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="character" value="length" modifier="very" />
+        <character name="feature" value="sheathless" />
+      </structure>
+      <structure id="o16858" name="inflorescence" />
+      <relation id="r3216" name="surpassing" from="o16857" to="o16858" negation="false" />
+    </statement>
+    <statement id="1552.txt-4">
+      <text>Spikes 7–12, cylindric, 6–10 cm, densely many flowered, upper 1 or 2 spikes gynaecandrous, remaining spikes female, lower spikes with long peduncles, others subsessile.</text>
+      <structure id="o16859" name="spike">
+        <character char_type="range_value" name="count" from="7" to="12" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="6" from_unit="cm" to="10" to_unit="cm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+      <structure id="o16860" name="spike">
+        <character name="position" value="upper" />
+        <character name="count" value="1" />
+        <character name="count" value="2" />
+        <character name="feature" value="gynaecandrous" />
+      </structure>
+      <structure id="o16861" name="spike" constraint="remaining">
+        <character name="reproduction" value="female" />
+      </structure>
+      <structure id="o16862" name="spike" constraint="lower">
+        <character name="architecture" value="subsessile" />
+      </structure>
+      <structure id="o16863" name="peduncle">
+        <character name="length" value="long" />
+      </structure>
+      <relation id="r3217" name="with" from="o16862" to="o16863" negation="false" />
+      <relation id="r3218" name="may_be_the_same" from="o16859" to="o16860" negation="false" />
+    </statement>
+    <statement id="1552.txt-5">
+      <text>Female glumes pale red or pale brown, lanceolate, ca. 4 × 1 mm, ferruginous glandular, green 3-veined costa excurrent into a long awn.</text>
+      <structure id="o16864" name="glume" constraint="female">
+        <character name="coloration" value="red" modifier="pale" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="shape" value="lanceolate" />
+        <character name="length" value="4" unit="mm" />
+        <character name="width" value="1" unit="mm" />
+        <character name="architecture_or_exudation" value="glandular" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="3-veined" />
+        <character name="architecture" value="excurrent" constraint="into awn" constraintid="o16866" />
+      </structure>
+      <structure id="o16865" name="costa" />
+      <structure id="o16866" name="awn">
+        <character name="length" value="long" />
+      </structure>
+    </statement>
+    <statement id="1552.txt-6">
+      <text>Utricles yellow-green, much shorter than glume, ovate, 2.5–3 mm, papery, ferruginous glandular, apex abruptly contracted into a short beak, orifice shortly 2-toothed.</text>
+      <structure id="o16867" name="utricle">
+        <character name="coloration" value="yellow-green" />
+        <character name="height_or_length" value="shorter" modifier="much" constraint="than glume" constraintid="o16868" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character name="feature_or_internal_texture" value="papery" />
+        <character name="architecture_or_exudation" value="glandular" />
+      </structure>
+      <structure id="o16868" name="glume" />
+      <structure id="o16869" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o16870" />
+      </structure>
+      <structure id="o16870" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o16871" name="orifice">
+        <character name="shape" value="2-toothed" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1552.txt-7">
+      <text>Nutlets castaneous, slightly loosely enveloped, ovate, biconvex, ca. 1.8 mm;</text>
+      <structure id="o16872" name="nutlet">
+        <character name="coloration" value="castaneous" />
+        <character name="feature" value="enveloped" modifier="slightly loosely" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="biconvex" />
+        <character name="size" value="1.8" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1552.txt-8">
+      <text>style base not thickened;</text>
+      <structure id="o16873" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1552.txt-9">
+      <text>stigmas 2.</text>
+      <structure id="o16874" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Forests in valleys, shady and moist places; 3000–3300 m. W Sichuan, NW Yunnan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

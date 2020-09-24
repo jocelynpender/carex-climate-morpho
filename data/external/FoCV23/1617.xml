@@ -13,7 +13,148 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>根足薹草 gen zu tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome thick, elongate, covered with fibrous, brown remains of leaf sheath. Culms 30–60 cm tall, soft, trigonous, scabrid on angles. Leaves herbaceous, soft, shorter than culm, blades 2–4 mm wide, flat, margins scabrid. Inflorescence 1-spiked, terminal, androgynous, erect, linear-cylindric, 40–70 × 2–3 mm, bractless; male part very short, 3–5-flowered; female part loosely flowered, sometimes lowermost 2 flowers 1–2 cm apart from each other. Female glumes pale brown laterally, ovate-lanceolate to oblong-lanceolate, 4–5 mm, green costa 3-veined, apex acute to mucronate, or lower glumes shortly awned. Utricles longer than glume, erect, lanceolate, trigonous, ca. 6 mm (including beak), herbaceous, glabrous, abaxially distinctly slenderly many veined, apex abruptly contracted into a subcylindric beak 2–3 mm, orifice distinctly shortly 2-toothed, teeth acute. Nutlet obovate, ca. 2.5 mm, crowned with slightly recurved beak; stigmas 3.</description>
+  <description>
+    <statement id="1617.txt-0">
+      <text>Rhizome thick, elongate, covered with fibrous, brown remains of leaf sheath.</text>
+      <structure id="o18614" name="rhizome">
+        <character name="width" value="thick" />
+        <character name="shape" value="elongate" />
+      </structure>
+      <structure id="o18615" name="remain">
+        <character name="internal_texture" value="fibrous" />
+        <character name="coloration" value="brown" />
+      </structure>
+      <relation id="r3548" name="covered with" from="o18614" to="o18615" negation="false" />
+      <structure id="o18616" name="sheath" constraint="leaf" />
+      <relation id="r3549" name="part_of" from="o18615" to="o18616" negation="false" />
+    </statement>
+    <statement id="1617.txt-1">
+      <text>Culms 30–60 cm tall, soft, trigonous, scabrid on angles.</text>
+      <structure id="o18617" name="culm">
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="60" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="external_texture" value="soft" />
+        <character name="shape" value="trigonous" />
+        <character name="relief" value="scabrid" constraint="on angles" constraintid="o18618" />
+      </structure>
+      <structure id="o18618" name="angle" />
+    </statement>
+    <statement id="1617.txt-2">
+      <text>Leaves herbaceous, soft, shorter than culm, blades 2–4 mm wide, flat, margins scabrid.</text>
+      <structure id="o18619" name="leaf">
+        <character name="external_texture_or_feature_or_internal_texture" value="herbaceous" />
+        <character name="external_texture" value="soft" />
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o18620" />
+      </structure>
+      <structure id="o18620" name="culm" />
+      <structure id="o18621" name="blade">
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o18622" name="margin">
+        <character name="relief" value="scabrid" />
+      </structure>
+    </statement>
+    <statement id="1617.txt-3">
+      <text>Inflorescence 1-spiked, terminal, androgynous, erect, linear-cylindric, 40–70 × 2–3 mm, bractless;</text>
+    </statement>
+    <statement id="1617.txt-4">
+      <text>male part very short, 3–5-flowered;</text>
+    </statement>
+    <statement id="1617.txt-5">
+      <text>female part loosely flowered, sometimes lowermost 2 flowers 1–2 cm apart from each other.</text>
+      <structure id="o18623" name="inflorescence">
+        <character name="position" value="terminal" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="orientation" value="erect" />
+        <character name="shape" value="linear-cylindric" />
+        <character char_type="range_value" name="length" from="40" from_unit="mm" to="70" to_unit="mm" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="architecture" value="bractless" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="height_or_length" value="short" modifier="very" />
+        <character name="architecture" value="3-5-flowered" />
+        <character name="reproduction" value="female" />
+        <character name="architecture" value="flowered" modifier="loosely" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="2" to_unit="cm" />
+      </structure>
+      <structure id="o18624" name="flower">
+        <character name="feature" value="lowermost" modifier="sometimes" />
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+    <statement id="1617.txt-6">
+      <text>Female glumes pale brown laterally, ovate-lanceolate to oblong-lanceolate, 4–5 mm, green costa 3-veined, apex acute to mucronate, or lower glumes shortly awned.</text>
+      <structure id="o18625" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="laterally;pale" />
+        <character char_type="range_value" name="shape" from="ovate-lanceolate" to="oblong-lanceolate" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character name="shape" value="oblong-lanceolate" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="5" to_unit="mm" />
+      </structure>
+      <structure id="o18626" name="costa">
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o18627" name="apex">
+        <character char_type="range_value" name="shape" from="acute" to="mucronate" />
+        <character name="shape" value="acute" />
+        <character name="shape" value="mucronate" />
+        <character name="shape" value="awned" modifier="shortly" />
+      </structure>
+      <structure id="o18628" name="glume" constraint="lower" />
+    </statement>
+    <statement id="1617.txt-7">
+      <text>Utricles longer than glume, erect, lanceolate, trigonous, ca. 6 mm (including beak ), herbaceous, glabrous, abaxially distinctly slenderly many veined, apex abruptly contracted into a subcylindric beak 2–3 mm, orifice distinctly shortly 2-toothed, teeth acute.</text>
+      <structure id="o18629" name="utricle">
+        <character name="length" value="longer" constraint="than glume" constraintid="o18630" />
+        <character name="orientation" value="erect" />
+        <character name="shape" value="lanceolate" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="6" unit="mm" />
+        <character name="external_texture_or_feature_or_internal_texture" value="herbaceous" />
+        <character name="external_texture" value="glabrous" />
+        <character name="count" value="many" modifier="abaxially distinctly slenderly" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o18630" name="glume" />
+      <structure id="o18631" name="beak" in_brackets="true" />
+      <relation id="r3550" name="including" from="o18629" to="o18631" negation="false" in_brackets="true" />
+      <structure id="o18632" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o18633" />
+      </structure>
+      <structure id="o18633" name="beak">
+        <character name="shape" value="subcylindric" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="3" to_unit="mm" />
+      </structure>
+      <structure id="o18634" name="orifice">
+        <character name="shape" value="2-toothed" modifier="distinctly shortly" />
+      </structure>
+      <structure id="o18635" name="tooth">
+        <character name="shape" value="acute" />
+      </structure>
+      <relation id="r3551" name="may_be_the_same" from="o18631" to="o18633" negation="false" />
+    </statement>
+    <statement id="1617.txt-8">
+      <text>Nutlet obovate, ca. 2.5 mm, crowned with slightly recurved beak;</text>
+      <structure id="o18636" name="nutlet">
+        <character name="shape" value="obovate" />
+        <character name="size" value="2.5" unit="mm" />
+        <character name="feature" value="crowned" constraint="with beak" constraintid="o18637" />
+      </structure>
+      <structure id="o18637" name="beak">
+        <character name="orientation" value="recurved" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1617.txt-9">
+      <text>stigmas 3.</text>
+      <structure id="o18638" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Wet places along waysides. Anhui [Japan].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

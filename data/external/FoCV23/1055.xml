@@ -13,7 +13,146 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>黑鳞薹草 hei lin tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms 10–20 cm tall, trigonous, firm, erect, scabrous above, clothed at base with pale brown bladeless sheaths. Leaves shorter than culm, ca. 1/2 length of culm, blades 2–4 mm wide, flat, apex acuminate. Lowest involucral bract setaceous, sheathless. Spikes 3 or 4, disposed in a capitate inflorescence; terminal spike gynaecandrous, oblong, 8–10 mm; lateral spikes female, globose or ovate to oblong, 5–10 cm. Female glumes blackish brown, ovate, 1-veined, margins narrowly white hyaline, apex subacute. Utricles ferruginous-brown, longer than glume, oblong-obovate or oblong-elliptic, trigonous, ca. 3 mm, membranous, nerveless, base cuneate, apex gradually tapering into a beak, orifice 2-toothed and white hyaline. Nutlets loosely enveloped, subovate, trigonous, ca. 1.5 mm; stigmas 3. Fl. and fr. Jul–Aug.</description>
+  <description>
+    <statement id="1055.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o1866" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1055.txt-1">
+      <text>Culms 10–20 cm tall, trigonous, firm, erect, scabrous above, clothed at base with pale brown bladeless sheaths.</text>
+      <structure id="o1867" name="culm">
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="20" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="internal_texture" value="firm" />
+        <character name="orientation" value="erect" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o1868" name="base" />
+      <relation id="r408" name="clothed at" from="o1867" to="o1868" negation="false" />
+      <structure id="o1869" name="sheath" constraint="bladeless">
+        <character name="coloration" value="brown" modifier="pale" />
+      </structure>
+      <relation id="r409" name="with" from="o1868" to="o1869" negation="false" />
+    </statement>
+    <statement id="1055.txt-2">
+      <text>Leaves shorter than culm, ca. 1/2 length of culm, blades 2–4 mm wide, flat, apex acuminate.</text>
+      <structure id="o1870" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o1871" />
+        <character name="length" value="1/2" constraint="of culm" constraintid="o1872" />
+      </structure>
+      <structure id="o1871" name="culm" />
+      <structure id="o1872" name="culm" />
+      <structure id="o1873" name="blade">
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o1874" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+      <relation id="r410" name="may_be_the_same" from="o1871" to="o1872" negation="false" />
+    </statement>
+    <statement id="1055.txt-3">
+      <text>Lowest involucral bract setaceous, sheathless.</text>
+      <structure id="o1875" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="feature" value="sheathless" />
+      </structure>
+    </statement>
+    <statement id="1055.txt-4">
+      <text>Spikes 3 or 4, disposed in a capitate inflorescence;</text>
+      <structure id="o1876" name="spike">
+        <character name="count" value="3" />
+        <character name="count" value="4" />
+        <character name="arrangement" value="disposed" constraint="in inflorescence" constraintid="o1877" />
+      </structure>
+      <structure id="o1877" name="inflorescence">
+        <character name="architecture_or_shape" value="capitate" />
+      </structure>
+    </statement>
+    <statement id="1055.txt-5">
+      <text>terminal spike gynaecandrous, oblong, 8–10 mm;</text>
+      <structure id="o1878" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="8" from_unit="mm" to="10" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1055.txt-6">
+      <text>lateral spikes female, globose or ovate to oblong, 5–10 cm.</text>
+      <structure id="o1879" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character char_type="range_value" name="shape" from="globose" to="oblong" />
+        <character char_type="range_value" name="shape" from="ovate" to="oblong" />
+        <character name="shape" value="globose" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="5" from_unit="cm" to="10" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1055.txt-7">
+      <text>Female glumes blackish brown, ovate, 1-veined, margins narrowly white hyaline, apex subacute.</text>
+      <structure id="o1880" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="blackish" />
+        <character name="shape" value="ovate" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o1881" name="margin">
+        <character name="coloration" value="hyaline" modifier="narrowly;white" />
+      </structure>
+      <structure id="o1882" name="apex">
+        <character name="shape" value="subacute" />
+      </structure>
+    </statement>
+    <statement id="1055.txt-8">
+      <text>Utricles ferruginous-brown, longer than glume, oblong-obovate or oblong-elliptic, trigonous, ca. 3 mm, membranous, nerveless, base cuneate, apex gradually tapering into a beak, orifice 2-toothed and white hyaline.</text>
+      <structure id="o1883" name="utricle">
+        <character name="coloration" value="ferruginous-brown" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o1884" />
+        <character name="shape" value="oblong-obovate" />
+        <character name="shape" value="oblong-elliptic" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="3" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="feature" value="nerveless" />
+      </structure>
+      <structure id="o1884" name="glume" />
+      <structure id="o1885" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+      </structure>
+      <structure id="o1886" name="apex">
+        <character name="shape" value="tapering" modifier="gradually" constraint="into beak" constraintid="o1887" />
+      </structure>
+      <structure id="o1887" name="beak" />
+      <structure id="o1888" name="orifice">
+        <character name="shape" value="2-toothed" />
+        <character name="coloration" value="hyaline" modifier="white" />
+      </structure>
+    </statement>
+    <statement id="1055.txt-9">
+      <text>Nutlets loosely enveloped, subovate, trigonous, ca. 1.5 mm;</text>
+      <structure id="o1889" name="nutlet">
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="feature" value="subovate" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1055.txt-10">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1055.txt-11">
+      <text>Fl. and fr. Jul–Aug.</text>
+      <structure id="o1890" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Wet places; 1800–2400 m. Xinjiang [N Mongolia, Russia (Far East, Siberia); C Asia].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

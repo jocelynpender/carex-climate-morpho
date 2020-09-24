@@ -13,7 +13,206 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>玉龙薹草 yu long tai cao</species_name>
   </TaxonIdentification>
-  <description>Plants perennial. Culms densely tufted, up to 50 cm, trigonous, tenuous, glabrous. Leaves shorter than culms, flat or margins involute, 1–2 mm wide, basal persistent leaf sheaths dark brown. Involucral bracts leafy, shorter than inflorescence, long sheathed. Spikes 5 or 6, bisexual, androgynous, single, distant, linear-cylindric, 30–40 × 3–4 mm, terminal one with 1(or 2) branches, male part much longer than female part, branched spikes arising from cladoprophylls with a developed female flower inside; male part of lateral spikes much shorter and with only few flowers, female part with dense numerous flowers; peduncles of spikes tenuous, lowest one up to 20 cm, upper ones shorter; male glumes purplish brown, oblong-lanceolate, 4–4.5 mm, membranous, apex acuminate; female glumes purplish brown laterally, green at middle, oblong, 3.5–4 mm, papery, 3-veined, scabrid on veins, margins narrowly hyaline, apex rounded, apiculate. Utricles yellowish green, obovate-lanceolate, compressed trigonous, 3.5–4 mm, papery, pubescent, with 2 raised lateral veins and no fine veins abaxially, base attenuate into a short stipe, apex contracted into a short excurved beak, orifice truncate. Nutlet obovate-oblong, 2.2–2.5 mm, sessile, apex not apiculate; style base slightly thickened; stigmas 3. Rachilla ca. 0.3 mm, flat.</description>
+  <description>
+    <statement id="992.txt-0">
+      <text>Plants perennial.</text>
+      <structure id="o45386" name="whole_organism" constraint="plants">
+        <character name="life_style" value="plants perennial" />
+      </structure>
+    </statement>
+    <statement id="992.txt-1">
+      <text>Culms densely tufted, up to 50 cm, trigonous, tenuous, glabrous.</text>
+      <structure id="o45387" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="50" to_unit="cm" />
+        <character name="shape" value="trigonous" />
+        <character name="feature" value="tenuous" />
+        <character name="external_texture" value="glabrous" />
+      </structure>
+    </statement>
+    <statement id="992.txt-2">
+      <text>Leaves shorter than culms, flat or margins involute, 1–2 mm wide, basal persistent leaf sheaths dark brown.</text>
+      <structure id="o45388" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culms" constraintid="o45389" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="prominence_or_shape" value="margins" />
+        <character name="shape_or_vernation" value="involute" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="2" to_unit="mm" />
+      </structure>
+      <structure id="o45389" name="culm" />
+      <structure id="o45390" name="margin" />
+      <structure id="o45391" name="sheath" constraint="basal persistent leaf">
+        <character name="coloration" value="brown" modifier="dark" />
+      </structure>
+    </statement>
+    <statement id="992.txt-3">
+      <text>Involucral bracts leafy, shorter than inflorescence, long sheathed.</text>
+      <structure id="o45392" name="bract" constraint="involucral">
+        <character name="architecture" value="leafy" />
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o45393" />
+        <character name="architecture_or_feature" value="sheathed" />
+      </structure>
+      <structure id="o45393" name="inflorescence" />
+    </statement>
+    <statement id="992.txt-4">
+      <text>Spikes 5 or 6, bisexual, androgynous, single, distant, linear-cylindric, 30–40 × 3–4 mm, terminal one with 1 (or 2 )branches, male part much longer than female part, branched spikes arising from cladoprophylls with a developed female flower inside;</text>
+      <structure id="o45394" name="spike">
+        <character name="count" value="5" />
+        <character name="count" value="6" />
+        <character name="reproduction" value="bisexual" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="count" value="single" />
+        <character name="arrangement" value="distant" />
+        <character name="shape" value="linear-cylindric" />
+        <character char_type="range_value" name="length" from="30" from_unit="mm" to="40" to_unit="mm" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="position" value="terminal" constraint="with branches" constraintid="o45395" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="length" value="longer than female part" modifier="much" />
+      </structure>
+      <structure id="o45395" name="branch">
+        <character name="count" value="1" />
+        <character name="count" value="2" in_brackets="true" />
+      </structure>
+      <structure id="o45397" name="cladoprophyll" />
+      <structure id="o45398" name="inside" constraint="female flower">
+        <character name="development" value="developed" />
+      </structure>
+      <relation id="r9324" name="with" from="o45397" to="o45398" negation="false" />
+      <relation id="r9325" name="may_be_the_same" from="o45394" to="o45396" negation="false" />
+    </statement>
+    <statement id="992.txt-5">
+      <text>male part of lateral spikes much shorter and with only few flowers, female part with dense numerous flowers;</text>
+      <structure id="o45396" name="spike">
+        <character name="architecture" value="branched" />
+        <character name="orientation" value="arising" constraint="from cladoprophylls" constraintid="o45397" />
+        <character name="feature_or_reproduction" value="male" constraint="of spikes" constraintid="o45399" />
+        <character name="reproduction" value="female" constraint="with flowers" constraintid="o45401" />
+      </structure>
+      <structure id="o45399" name="spike" constraint="lateral">
+        <character name="height_or_length" value="shorter" modifier="much" />
+      </structure>
+      <structure id="o45400" name="flower">
+        <character name="count" value="few" modifier="only" />
+      </structure>
+      <relation id="r9326" name="with" from="o45396" to="o45400" negation="false" />
+      <structure id="o45401" name="flower">
+        <character name="density" value="dense" />
+        <character name="count" value="numerous" />
+      </structure>
+      <relation id="r9327" name="may_be_the_same" from="o45400" to="o45401" negation="false" />
+    </statement>
+    <statement id="992.txt-6">
+      <text>peduncles of spikes tenuous, lowest one up to 20 cm, upper ones shorter;</text>
+      <structure id="o45402" name="peduncle">
+        <character name="feature" value="tenuous" />
+      </structure>
+      <structure id="o45403" name="spike" />
+      <relation id="r9328" name="part_of" from="o45402" to="o45403" negation="false" />
+      <structure id="o45404" name="lowest">
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="20" to_unit="cm" />
+        <character name="position" value="upper" />
+        <character name="height_or_length" value="shorter" />
+      </structure>
+    </statement>
+    <statement id="992.txt-7">
+      <text>male glumes purplish brown, oblong-lanceolate, 4–4.5 mm, membranous, apex acuminate;</text>
+      <structure id="o45405" name="glume" constraint="male">
+        <character name="coloration" value="brown" modifier="purplish" />
+        <character name="shape" value="oblong-lanceolate" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="4.5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+      </structure>
+      <structure id="o45406" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="992.txt-8">
+      <text>female glumes purplish brown laterally, green at middle, oblong, 3.5–4 mm, papery, 3-veined, scabrid on veins, margins narrowly hyaline, apex rounded, apiculate.</text>
+      <structure id="o45407" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="laterally;purplish" />
+        <character name="coloration" value="green" modifier="at middle" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="3.5" from_unit="mm" to="4" to_unit="mm" />
+        <character name="feature_or_internal_texture" value="papery" />
+        <character name="architecture_or_feature" value="3-veined" />
+        <character name="relief" value="scabrid" constraint="on veins" constraintid="o45408" />
+      </structure>
+      <structure id="o45408" name="vein" />
+      <structure id="o45409" name="margin">
+        <character name="coloration" value="hyaline" modifier="narrowly" />
+      </structure>
+      <structure id="o45410" name="apex">
+        <character name="shape" value="rounded" />
+        <character name="shape" value="apiculate" />
+      </structure>
+    </statement>
+    <statement id="992.txt-9">
+      <text>Utricles yellowish green, obovate-lanceolate, compressed trigonous, 3.5–4 mm, papery, pubescent, with 2 raised lateral veins and no fine veins abaxially, base attenuate into a short stipe, apex contracted into a short excurved beak, orifice truncate.</text>
+      <structure id="o45411" name="utricle">
+        <character name="coloration" value="green" modifier="yellowish" />
+        <character name="shape" value="obovate-lanceolate" />
+        <character name="shape" value="compressed trigonous" />
+        <character char_type="range_value" name="size" from="3.5" from_unit="mm" to="4" to_unit="mm" />
+        <character name="feature_or_internal_texture" value="papery" />
+        <character name="size" value="2" modifier="with" />
+      </structure>
+      <structure id="o45412" name="vein" constraint="lateral" />
+      <structure id="o45413" name="vein">
+        <character name="width" value="fine" />
+      </structure>
+      <relation id="r9329" name="raised" from="o45411" to="o45412" negation="false" />
+      <relation id="r9330" name="raised" from="o45411" to="o45413" negation="true" />
+      <structure id="o45414" name="base">
+        <character name="shape" value="attenuate" constraint="into stipe" constraintid="o45415" />
+      </structure>
+      <structure id="o45415" name="stipe">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o45416" name="apex">
+        <character name="size" value="contracted" constraint="into beak" constraintid="o45417" />
+      </structure>
+      <structure id="o45417" name="beak">
+        <character name="height_or_length" value="short" />
+        <character name="feature" value="excurved" />
+      </structure>
+      <structure id="o45418" name="orifice">
+        <character name="shape" value="truncate" />
+      </structure>
+    </statement>
+    <statement id="992.txt-10">
+      <text>Nutlet obovate-oblong, 2.2–2.5 mm, sessile, apex not apiculate;</text>
+      <structure id="o45419" name="nutlet">
+        <character name="shape" value="obovate-oblong" />
+        <character char_type="range_value" name="size" from="2.2" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+      <structure id="o45420" name="apex">
+        <character name="shape" value="apiculate" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="992.txt-11">
+      <text>style base slightly thickened;</text>
+      <structure id="o45421" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="992.txt-12">
+      <text>stigmas 3.</text>
+      <structure id="o45422" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+    <statement id="992.txt-13">
+      <text>Rachilla ca. 0.3 mm, flat.</text>
+      <structure id="o45423" name="rachilla">
+        <character name="size" value="0.3" unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Alpine meadows and scree; 3900–4300 m. NW Yunnan (Lijiang).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

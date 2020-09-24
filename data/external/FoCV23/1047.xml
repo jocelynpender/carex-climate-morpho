@@ -36,7 +36,155 @@
     <species_name>soyaeensis</species_name>
     <species_authority>Kükenthal.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome shortly stoloniferous. Culms tufted, 30–50 cm tall, trigonous, slender, slightly scabrous, clothed at base with purple-brown bladeless sheaths disintegrating into fibers. Leaves green, slightly shorter than or equaling culm, blades 2–3 mm wide, soft. Lowest involucral bract leafy, sheathing, remaining ones setaceous. Spikes 3–5, ± distant; terminal spike male, cylindric, 1–1.7 cm; lateral spikes female, rarely few with male flowers at base, cylindric, 1.5–3.5 cm; lowest spike with short peduncle, others subsessile. Female glumes dark sanguineous or purple-red, pale green at middle, oblong, 2–2.8 mm, apex acuminate or obtuse. Utricles pale gray-green or yellow-green, longer than glume, ovate-lanceolate or oblong-lanceolate, obtusely trigonous, ca. 3 mm, finely many veined, base cuneate, apex gradually narrowed into a beak, orifice emarginate. Nutlets elliptic, trigonous, ca. 2 mm; style slender, base not thickened; stigmas 3.</description>
+  <description>
+    <statement id="1047.txt-0">
+      <text>Rhizome shortly stoloniferous.</text>
+      <structure id="o1623" name="rhizome">
+        <character name="architecture" value="stoloniferous" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1047.txt-1">
+      <text>Culms tufted, 30–50 cm tall, trigonous, slender, slightly scabrous, clothed at base with purple-brown bladeless sheaths disintegrating into fibers.</text>
+      <structure id="o1624" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="50" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="slender" />
+        <character name="external_texture_or_relief" value="scabrous" modifier="slightly" />
+      </structure>
+      <structure id="o1625" name="base" />
+      <relation id="r368" name="clothed at" from="o1624" to="o1625" negation="false" />
+      <structure id="o1626" name="sheath" constraint="bladeless">
+        <character name="coloration" value="purple-brown" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o1627" />
+      </structure>
+      <relation id="r369" name="with" from="o1625" to="o1626" negation="false" />
+      <structure id="o1627" name="fiber" />
+    </statement>
+    <statement id="1047.txt-2">
+      <text>Leaves green, slightly shorter than or equaling culm, blades 2–3 mm wide, soft.</text>
+      <structure id="o1628" name="leaf">
+        <character name="coloration" value="green" />
+        <character name="height_or_length" value="shorter" modifier="slightly" constraint="than or equaling culm" constraintid="o1629" />
+      </structure>
+      <structure id="o1629" name="culm" />
+      <structure id="o1630" name="blade">
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="external_texture" value="soft" />
+      </structure>
+    </statement>
+    <statement id="1047.txt-3">
+      <text>Lowest involucral bract leafy, sheathing, remaining ones setaceous.</text>
+      <structure id="o1631" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="architecture" value="leafy" />
+        <character name="architecture_or_feature_or_shape" value="sheathing" />
+        <character name="feature_or_shape" value="setaceous" modifier="ones" />
+      </structure>
+    </statement>
+    <statement id="1047.txt-4">
+      <text>Spikes 3–5, ± distant;</text>
+      <structure id="o1632" name="spike">
+        <character char_type="range_value" name="count" from="3" to="5" />
+        <character name="arrangement" value="distant" modifier="more or less" />
+      </structure>
+    </statement>
+    <statement id="1047.txt-5">
+      <text>terminal spike male, cylindric, 1–1.7 cm;</text>
+      <structure id="o1633" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="1.7" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1047.txt-6">
+      <text>lateral spikes female, rarely few with male flowers at base, cylindric, 1.5–3.5 cm;</text>
+      <structure id="o1634" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="count" value="few" modifier="rarely" constraint="with flowers" constraintid="o1635" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="cm" to="3.5" to_unit="cm" />
+      </structure>
+      <structure id="o1635" name="flower" constraint="male" />
+      <structure id="o1636" name="base" />
+      <relation id="r370" name="at" from="o1635" to="o1636" negation="false" />
+    </statement>
+    <statement id="1047.txt-7">
+      <text>lowest spike with short peduncle, others subsessile.</text>
+      <structure id="o1637" name="spike">
+        <character name="feature" value="lowest" />
+        <character name="architecture" value="subsessile" />
+      </structure>
+      <structure id="o1638" name="peduncle">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r371" name="with" from="o1637" to="o1638" negation="false" />
+    </statement>
+    <statement id="1047.txt-8">
+      <text>Female glumes dark sanguineous or purple-red, pale green at middle, oblong, 2–2.8 mm, apex acuminate or obtuse.</text>
+      <structure id="o1639" name="glume" constraint="female">
+        <character name="coloration" value="dark sanguineous or purple-red" />
+        <character name="coloration" value="green" modifier="pale;at middle" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="2.8" to_unit="mm" />
+      </structure>
+      <structure id="o1640" name="apex">
+        <character name="shape" value="acuminate" />
+        <character name="shape" value="obtuse" />
+      </structure>
+    </statement>
+    <statement id="1047.txt-9">
+      <text>Utricles pale gray-green or yellow-green, longer than glume, ovate-lanceolate or oblong-lanceolate, obtusely trigonous, ca. 3 mm, finely many veined, base cuneate, apex gradually narrowed into a beak, orifice emarginate.</text>
+      <structure id="o1641" name="utricle">
+        <character name="coloration" value="gray-green" modifier="pale" />
+        <character name="coloration" value="yellow-green" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o1642" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character name="shape" value="oblong-lanceolate" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character name="size" value="3" unit="mm" />
+        <character name="count" value="many" modifier="finely" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o1642" name="glume" />
+      <structure id="o1643" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+      </structure>
+      <structure id="o1644" name="apex">
+        <character name="shape" value="narrowed" modifier="gradually" constraint="into beak" constraintid="o1645" />
+      </structure>
+      <structure id="o1645" name="beak" />
+      <structure id="o1646" name="orifice">
+        <character name="shape" value="emarginate" />
+      </structure>
+    </statement>
+    <statement id="1047.txt-10">
+      <text>Nutlets elliptic, trigonous, ca. 2 mm;</text>
+      <structure id="o1647" name="nutlet">
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1047.txt-11">
+      <text>style slender, base not thickened;</text>
+      <structure id="o1648" name="style">
+        <character name="size" value="slender" />
+      </structure>
+      <structure id="o1649" name="base">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1047.txt-12">
+      <text>stigmas 3.</text>
+      <structure id="o1650" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forests, riversides, sandy wet places. Hebei, Heilongjiang, Jilin, Liaoning [Japan, Russia (Far East)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

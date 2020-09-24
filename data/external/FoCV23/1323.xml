@@ -27,7 +27,42 @@
     <species_name>remotiflora</species_name>
     <species_authority>Hayata.</species_authority>
   </TaxonIdentification>
-  <description>Culms 40–80 cm tall. Leaves slightly shorter than or equaling culm. Male spike 2–5.5 cm; female spikes 5–10 cm. Utricles 6–7 mm.</description>
+  <description>
+    <statement id="1323.txt-0">
+      <text>Culms 40–80 cm tall.</text>
+      <structure id="o9940" name="culm">
+        <character char_type="range_value" name="size" from="40" from_unit="cm" to="80" to_unit="cm" />
+        <character name="height" value="tall" />
+      </structure>
+    </statement>
+    <statement id="1323.txt-1">
+      <text>Leaves slightly shorter than or equaling culm.</text>
+      <structure id="o9941" name="leaf">
+        <character name="height_or_length" value="shorter" modifier="slightly" constraint="than or equaling culm" constraintid="o9942" />
+      </structure>
+      <structure id="o9942" name="culm" />
+    </statement>
+    <statement id="1323.txt-2">
+      <text>Male spike 2–5.5 cm;</text>
+      <structure id="o9943" name="spike" constraint="male">
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="5.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1323.txt-3">
+      <text>female spikes 5–10 cm.</text>
+      <structure id="o9944" name="spike" constraint="female">
+        <character char_type="range_value" name="size" from="5" from_unit="cm" to="10" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1323.txt-4">
+      <text>Utricles 6–7 mm.</text>
+      <structure id="o9945" name="utricle">
+        <character char_type="range_value" name="size" from="6" from_unit="mm" to="7" to_unit="mm" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forests, streamsides, roadsides; 2100–2600 m. S Gansu (Xiaolong Shan), Sichuan, Taiwan, Yunnan [NE India (Darjeeling, Sikkim), Indonesia (Sumatra), New Guinea].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

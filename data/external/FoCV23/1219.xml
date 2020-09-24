@@ -13,7 +13,186 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>宽叶薹草 kuan ye tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome elongate. Flowering culms and vegetative culms spaced; flowering culms clothed by bladeless sheaths at base, pale brown, without leaves. Leaf blades of vegetative culms oblong-lanceolate, 10–20 × 1–2.5 cm, sometimes with white stripes, midvein and 2 lateral veins rather distinct, sometimes ciliate, glabrous adaxially, sparsely pilose on veins abaxially or on both surfaces. Flowering culms up to 30 cm tall; involucral bract sheaths inflated above and spathelike, 2–2.5 cm, with blade 5–10 mm. Spikes 3–6(–10), single or binate at each node, androgynous, or terminal spike usually male, linear-cylindric, 1.5–3 cm, loosely flowered; peduncles 2–6 cm, usually exserted. Female glumes elliptic-oblong to lanceolate-oblong, 4–5 mm, hyaline-membranous laterally, sparsely rusty punctate, green costa 3-veined, apex obtuse. Utricles obovate or elliptic, trigonous, 3–4 mm, glabrous or pilose, slenderly and prominently many veined, base attenuate into a very short stipe, apex contracted into a short beak or beakless, orifice truncate. Nutlet tightly enveloped, elliptic, trigonous, ca. 2 mm; style persistent, base not thickened, slightly exserted from utricle; stigmas 3. Fl. and fr. Apr–May.</description>
+  <description>
+    <statement id="1219.txt-0">
+      <text>Rhizome elongate.</text>
+      <structure id="o6749" name="rhizome">
+        <character name="shape" value="elongate" />
+      </structure>
+    </statement>
+    <statement id="1219.txt-1">
+      <text>Flowering culms and vegetative culms spaced;</text>
+      <structure id="o6750" name="culm" constraint="flowering">
+        <character name="arrangement" value="spaced" />
+      </structure>
+      <structure id="o6751" name="culm">
+        <character name="reproduction" value="vegetative" />
+        <character name="arrangement" value="spaced" />
+      </structure>
+    </statement>
+    <statement id="1219.txt-2">
+      <text>flowering culms clothed by bladeless sheaths at base, pale brown, without leaves.</text>
+      <structure id="o6752" name="culm" constraint="flowering">
+        <character name="coloration" value="brown" modifier="pale" />
+      </structure>
+      <structure id="o6753" name="sheath" constraint="bladeless" />
+      <relation id="r1200" name="clothed by" from="o6752" to="o6753" negation="false" />
+      <structure id="o6754" name="base" />
+      <relation id="r1201" name="at" from="o6753" to="o6754" negation="false" />
+      <structure id="o6755" name="leaf" />
+      <relation id="r1202" name="without" from="o6752" to="o6755" negation="false" />
+    </statement>
+    <statement id="1219.txt-3">
+      <text>Leaf blades of vegetative culms oblong-lanceolate, 10–20 × 1–2.5 cm, sometimes with white stripes, midvein and 2 lateral veins rather distinct, sometimes ciliate, glabrous adaxially, sparsely pilose on veins abaxially or on both surfaces.</text>
+      <structure id="o6756" name="blade" constraint="leaf">
+        <character name="shape" value="oblong-lanceolate" />
+        <character char_type="range_value" name="length" from="10" from_unit="cm" to="20" to_unit="cm" />
+        <character char_type="range_value" name="width" from="1" from_unit="cm" to="2.5" to_unit="cm" />
+        <character name="architecture_or_shape" value="ciliate" modifier="sometimes" />
+        <character name="external_texture" value="glabrous" modifier="adaxially" />
+        <character name="external_texture" value="pilose" modifier="sparsely" constraint="on veins" constraintid="o6761" />
+      </structure>
+      <structure id="o6757" name="culm">
+        <character name="reproduction" value="vegetative" />
+      </structure>
+      <relation id="r1203" name="part_of" from="o6756" to="o6757" negation="false" />
+      <structure id="o6758" name="stripe">
+        <character name="coloration" value="white" />
+        <character name="fusion" value="distinct" modifier="rather" />
+      </structure>
+      <structure id="o6759" name="midvein">
+        <character name="coloration" value="white" />
+        <character name="fusion" value="distinct" modifier="rather" />
+      </structure>
+      <structure id="o6760" name="vein" constraint="lateral">
+        <character name="count" value="2" />
+        <character name="coloration" value="white" />
+        <character name="fusion" value="distinct" modifier="rather" />
+      </structure>
+      <relation id="r1204" name="with" from="o6756" to="o6758" negation="false" modifier="sometimes" />
+      <relation id="r1205" name="with" from="o6756" to="o6759" negation="false" modifier="sometimes" />
+      <relation id="r1206" name="with" from="o6756" to="o6760" negation="false" modifier="sometimes" />
+      <structure id="o6761" name="vein" />
+      <structure id="o6762" name="surface" />
+      <relation id="r1207" name="on" from="o6756" to="o6762" negation="false" modifier="abaxially" />
+    </statement>
+    <statement id="1219.txt-4">
+      <text>Flowering culms up to 30 cm tall;</text>
+      <structure id="o6763" name="culm" constraint="flowering">
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="30" to_unit="cm" />
+        <character name="height" value="tall" />
+      </structure>
+    </statement>
+    <statement id="1219.txt-5">
+      <text>involucral bract sheaths inflated above and spathelike, 2–2.5 cm, with blade 5–10 mm.</text>
+      <structure id="o6764" name="sheath" constraint="involucral bract">
+        <character name="shape" value="inflated" modifier="above and spathelike, 2-2.5 cm ," constraint="with blade" constraintid="o6765" />
+      </structure>
+      <structure id="o6765" name="blade">
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="10" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1219.txt-6">
+      <text>Spikes 3–6 (–10 ), single or binate at each node, androgynous, or terminal spike usually male, linear-cylindric, 1.5–3 cm, loosely flowered;</text>
+      <structure id="o6766" name="spike">
+        <character char_type="range_value" name="atypical_count" from="6" to="10" from_inclusive="false" />
+        <character char_type="range_value" name="count" from="3" to="6" />
+        <character name="count" value="single" />
+        <character name="count" value="binate" constraint="at node" constraintid="o6767" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="feature_or_reproduction" value="male" modifier="usually" />
+        <character name="shape" value="linear-cylindric" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="cm" to="3" to_unit="cm" />
+        <character name="architecture" value="flowered" modifier="loosely" />
+      </structure>
+      <structure id="o6767" name="node" constraint="each" />
+      <structure id="o6768" name="spike" constraint="terminal" />
+    </statement>
+    <statement id="1219.txt-7">
+      <text>peduncles 2–6 cm, usually exserted.</text>
+      <structure id="o6769" name="peduncle">
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="6" to_unit="cm" />
+        <character name="position" value="exserted" modifier="usually" />
+      </structure>
+    </statement>
+    <statement id="1219.txt-8">
+      <text>Female glumes elliptic-oblong to lanceolate-oblong, 4–5 mm, hyaline-membranous laterally, sparsely rusty punctate, green costa 3-veined, apex obtuse.</text>
+      <structure id="o6770" name="glume" constraint="female">
+        <character char_type="range_value" name="shape" from="elliptic-oblong" to="lanceolate-oblong" />
+        <character name="shape" value="elliptic-oblong" />
+        <character name="shape" value="lanceolate-oblong" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="5" to_unit="mm" />
+        <character name="feature" value="hyaline-membranous" modifier="laterally" />
+        <character name="coloration" value="rusty" modifier="sparsely" />
+        <character name="pattern" value="punctate" />
+      </structure>
+      <structure id="o6771" name="costa">
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o6772" name="apex">
+        <character name="shape" value="obtuse" />
+      </structure>
+    </statement>
+    <statement id="1219.txt-9">
+      <text>Utricles obovate or elliptic, trigonous, 3–4 mm, glabrous or pilose, slenderly and prominently many veined, base attenuate into a very short stipe, apex contracted into a short beak or beakless, orifice truncate.</text>
+      <structure id="o6773" name="utricle">
+        <character name="shape" value="obovate" />
+        <character name="shape" value="elliptic" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="external_texture" value="glabrous" />
+        <character name="external_texture" value="pilose" />
+        <character name="count" value="many" modifier="slenderly prominently" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o6774" name="base">
+        <character name="shape" value="attenuate" constraint="into stipe" constraintid="o6775" />
+      </structure>
+      <structure id="o6775" name="stipe">
+        <character name="height_or_length" value="short" modifier="very" />
+      </structure>
+      <structure id="o6776" name="apex">
+        <character name="size" value="contracted" constraint="into beak" constraintid="o6777" />
+        <character name="architecture" value="beakless" />
+      </structure>
+      <structure id="o6777" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o6778" name="orifice">
+        <character name="shape" value="truncate" />
+      </structure>
+    </statement>
+    <statement id="1219.txt-10">
+      <text>Nutlet tightly enveloped, elliptic, trigonous, ca. 2 mm;</text>
+      <structure id="o6779" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1219.txt-11">
+      <text>style persistent, base not thickened, slightly exserted from utricle;</text>
+      <structure id="o6780" name="style">
+        <character name="duration" value="persistent" />
+      </structure>
+      <structure id="o6781" name="base">
+        <character name="width" value="thickened" modifier="not" />
+        <character name="position" value="exserted" modifier="slightly" constraint="from utricle" constraintid="o6782" />
+      </structure>
+      <structure id="o6782" name="utricle" />
+    </statement>
+    <statement id="1219.txt-12">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1219.txt-13">
+      <text>Fl. and fr. Apr–May.</text>
+      <structure id="o6783" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Needle-leaved and broad-leaved mixed forests and forest margins or broad-leaved forests, rather dry grasslands; 1000–2000 m. Anhui, Hebei, Heilongjiang, Jiangsu, Jiangxi, Jilin, Liaoning, Shaanxi, Shandong, Shanxi, Zhejiang [Japan, Korea, Russia (Far East)].</distribution>
   <key>
     <key_statement>
@@ -29,3 +208,5 @@
   </key>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

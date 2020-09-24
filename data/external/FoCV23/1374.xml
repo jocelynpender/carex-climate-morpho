@@ -13,7 +13,161 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>青岛薹草 qing dao tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome thick, obliquely ascending. Culms 30–40 cm tall, slender, trigonous, clothed at base with dark brown sheaths disintegrating into parallel fibers. Leaves longer than culm, blades linear, 3–5 mm wide, leathery. Involucral bracts shortly bladed, shorter than subtending spike, sheathing 2.5–4 cm. Spikes 2 or 3; terminal spike male, cylindric, ca. 40 × 7 mm; lateral spikes female, with few male flowers at apex, distant, cylindric, 4–5 × ca. 0.8 cm, densely flowered; peduncles 3–5 cm. Female glumes brown, elliptic-lanceolate, 8–10 mm, 3-veined costa excurrent into a scabrous awn ca. 5 mm, apex truncate or emarginate. Utricles obovate-elliptic, trigonous, 5–6 mm, glabrous, faces concave at base, apex abruptly contracted into a scabrous beak ca. 3 mm, orifice deeply 2-lobed. Nutlets obovate, trigonous, 2–2.5 mm, faces concave at base; style slender, base curved; stigmas 3.</description>
+  <description>
+    <statement id="1374.txt-0">
+      <text>Rhizome thick, obliquely ascending.</text>
+      <structure id="o11570" name="rhizome">
+        <character name="width" value="thick" />
+        <character name="orientation" value="ascending" modifier="obliquely" />
+      </structure>
+    </statement>
+    <statement id="1374.txt-1">
+      <text>Culms 30–40 cm tall, slender, trigonous, clothed at base with dark brown sheaths disintegrating into parallel fibers.</text>
+      <structure id="o11571" name="culm">
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="40" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="trigonous" />
+      </structure>
+      <structure id="o11572" name="base" />
+      <relation id="r2157" name="clothed at" from="o11571" to="o11572" negation="false" />
+      <structure id="o11573" name="sheath">
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o11574" />
+      </structure>
+      <relation id="r2158" name="with" from="o11572" to="o11573" negation="false" />
+      <structure id="o11574" name="fiber">
+        <character name="arrangement" value="parallel" />
+      </structure>
+    </statement>
+    <statement id="1374.txt-2">
+      <text>Leaves longer than culm, blades linear, 3–5 mm wide, leathery.</text>
+      <structure id="o11575" name="leaf">
+        <character name="length" value="longer" constraint="than culm" constraintid="o11576" />
+      </structure>
+      <structure id="o11576" name="culm" />
+      <structure id="o11577" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="5" to_unit="mm" />
+        <character name="external_texture_or_feature" value="leathery" />
+      </structure>
+    </statement>
+    <statement id="1374.txt-3">
+      <text>Involucral bracts shortly bladed, shorter than subtending spike, sheathing 2.5–4 cm.</text>
+      <structure id="o11578" name="bract" constraint="involucral">
+        <character name="height_or_length" value="shorter" constraint="than subtending spike" constraintid="o11579" />
+        <character name="architecture_or_feature_or_shape" value="sheathing" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="cm" to="4" to_unit="cm" />
+      </structure>
+      <structure id="o11579" name="spike" constraint="subtending" />
+    </statement>
+    <statement id="1374.txt-4">
+      <text>Spikes 2 or 3;</text>
+      <structure id="o11580" name="spike">
+        <character name="count" value="2" />
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+    <statement id="1374.txt-5">
+      <text>terminal spike male, cylindric, ca. 40 × 7 mm;</text>
+      <structure id="o11581" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="cylindric" />
+        <character name="length" value="40" unit="mm" />
+        <character name="width" value="7" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1374.txt-6">
+      <text>lateral spikes female, with few male flowers at apex, distant, cylindric, 4–5 × ca. 0.8 cm, densely flowered;</text>
+      <structure id="o11582" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="arrangement" value="distant" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="length" from="4" from_unit="cm" to="5" to_unit="cm" />
+        <character name="width" value="0.8" unit="cm" />
+        <character name="architecture" value="flowered" modifier="densely" />
+      </structure>
+      <structure id="o11583" name="flower" constraint="male">
+        <character name="count" value="few" />
+      </structure>
+      <relation id="r2159" name="with" from="o11582" to="o11583" negation="false" />
+      <structure id="o11584" name="apex" />
+      <relation id="r2160" name="at" from="o11583" to="o11584" negation="false" />
+    </statement>
+    <statement id="1374.txt-7">
+      <text>peduncles 3–5 cm.</text>
+      <structure id="o11585" name="peduncle">
+        <character char_type="range_value" name="size" from="3" from_unit="cm" to="5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1374.txt-8">
+      <text>Female glumes brown, elliptic-lanceolate, 8–10 mm, 3-veined costa excurrent into a scabrous awn ca. 5 mm, apex truncate or emarginate.</text>
+      <structure id="o11586" name="glume" constraint="female">
+        <character name="coloration" value="brown" />
+        <character name="shape" value="elliptic-lanceolate" />
+        <character char_type="range_value" name="size" from="8" from_unit="mm" to="10" to_unit="mm" />
+        <character name="architecture_or_feature" value="3-veined" />
+        <character name="architecture" value="excurrent" constraint="into awn" constraintid="o11588" />
+      </structure>
+      <structure id="o11587" name="costa" />
+      <structure id="o11588" name="awn">
+        <character name="external_texture_or_relief" value="scabrous" />
+        <character name="size" value="5" unit="mm" />
+      </structure>
+      <structure id="o11589" name="apex">
+        <character name="shape" value="truncate" />
+        <character name="shape" value="emarginate" />
+      </structure>
+    </statement>
+    <statement id="1374.txt-9">
+      <text>Utricles obovate-elliptic, trigonous, 5–6 mm, glabrous, faces concave at base, apex abruptly contracted into a scabrous beak ca. 3 mm, orifice deeply 2-lobed.</text>
+      <structure id="o11590" name="utricle">
+        <character name="arrangement_or_shape" value="obovate-elliptic" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="6" to_unit="mm" />
+        <character name="external_texture" value="glabrous" />
+        <character name="shape" value="concave" constraint="at base" constraintid="o11591" />
+      </structure>
+      <structure id="o11591" name="base" />
+      <structure id="o11592" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o11593" />
+      </structure>
+      <structure id="o11593" name="beak">
+        <character name="external_texture_or_relief" value="scabrous" />
+        <character name="size" value="3" unit="mm" />
+      </structure>
+      <structure id="o11594" name="orifice">
+        <character name="shape" value="2-lobed" modifier="deeply" />
+      </structure>
+    </statement>
+    <statement id="1374.txt-10">
+      <text>Nutlets obovate, trigonous, 2–2.5 mm, faces concave at base;</text>
+      <structure id="o11595" name="nutlet">
+        <character name="shape" value="obovate" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="shape" value="concave" constraint="at base" constraintid="o11596" />
+      </structure>
+      <structure id="o11596" name="base" />
+    </statement>
+    <statement id="1374.txt-11">
+      <text>style slender, base curved;</text>
+      <structure id="o11597" name="style">
+        <character name="size" value="slender" />
+      </structure>
+      <structure id="o11598" name="base">
+        <character name="course_or_orientation" value="curved" />
+      </structure>
+    </statement>
+    <statement id="1374.txt-12">
+      <text>stigmas 3.</text>
+      <structure id="o11599" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Shandong (Qingdao).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

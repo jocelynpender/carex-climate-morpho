@@ -14,7 +14,165 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>书带薹草 shu dai tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, stout, indurate. Culms tufted, 25–50 cm tall, slender, trigonous, smooth, clothed at base with brown or pale brown bladeless sheaths disintegrating into fibers. Leaves shorter or longer than culm, blades linear, 2–3 mm wide, flat, soft; membranous side of leaf sheaths at mouth projected forming a tonguelike appendage or not. Lower involucral bracts leaflike, surpassing inflorescence. Spikes 5–10, gynaecandrous, oblong, 5–15 × 3–4 mm, upper spikes approximate, lower ones remote. Female glumes pale, oblong, 2.5–3 mm, green 3-veined costa excurrent into a scabrous short awn, apex acute. Utricles green or green-yellow, longer than glume, lanceolate or ovate-lanceolate, 3–4 mm, conspicuously veined on both faces, many veined abaxially and hardly veined adaxially, or nerveless, base cuneate, shortly stipitate, upper half of margins narrowly scabrous winged, apex gradually attenuate into a long beak, orifice 2-toothed. Nutlets tightly enveloped, plano-convex, 1.5–2 mm, base contracted and shortly stipitate, apex subrounded; style base thickened; stigmas 2. Fl. and fr. May–Aug.</description>
+  <description>
+    <statement id="1681.txt-0">
+      <text>Rhizome short, stout, indurate.</text>
+      <structure id="o20145" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="fragility" value="stout" />
+        <character name="external_texture" value="indurate" />
+      </structure>
+    </statement>
+    <statement id="1681.txt-1">
+      <text>Culms tufted, 25–50 cm tall, slender, trigonous, smooth, clothed at base with brown or pale brown bladeless sheaths disintegrating into fibers.</text>
+      <structure id="o20146" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="25" from_unit="cm" to="50" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="trigonous" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o20147" name="base" />
+      <relation id="r3778" name="clothed at" from="o20146" to="o20147" negation="false" />
+      <structure id="o20148" name="sheath" constraint="bladeless">
+        <character name="coloration" value="brown" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o20149" />
+      </structure>
+      <relation id="r3779" name="with" from="o20147" to="o20148" negation="false" />
+      <structure id="o20149" name="fiber" />
+    </statement>
+    <statement id="1681.txt-2">
+      <text>Leaves shorter or longer than culm, blades linear, 2–3 mm wide, flat, soft;</text>
+      <structure id="o20150" name="leaf" />
+      <structure id="o20151" name="culm" />
+    </statement>
+    <statement id="1681.txt-3">
+      <text>membranous side of leaf sheaths at mouth projected forming a tonguelike appendage or not.</text>
+      <structure id="o20152" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture" value="soft" />
+        <character name="feature" value="membranous" constraint="of leaf sheaths" constraintid="o20153" />
+      </structure>
+      <structure id="o20153" name="sheath" constraint="leaf" />
+      <structure id="o20154" name="mouth" />
+      <relation id="r3780" name="at" from="o20153" to="o20154" negation="false" />
+      <structure id="o20155" name="appendage">
+        <character name="feature" value="tonguelike" />
+      </structure>
+      <relation id="r3781" name="projected" from="o20152" to="o20155" negation="false" />
+    </statement>
+    <statement id="1681.txt-4">
+      <text>Lower involucral bracts leaflike, surpassing inflorescence.</text>
+      <structure id="o20156" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+      </structure>
+      <structure id="o20157" name="inflorescence" />
+      <relation id="r3782" name="surpassing" from="o20156" to="o20157" negation="false" />
+    </statement>
+    <statement id="1681.txt-5">
+      <text>Spikes 5–10, gynaecandrous, oblong, 5–15 × 3–4 mm, upper spikes approximate, lower ones remote.</text>
+      <structure id="o20158" name="spike">
+        <character char_type="range_value" name="count" from="5" to="10" />
+        <character name="feature" value="gynaecandrous" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="length" from="5" from_unit="mm" to="15" to_unit="mm" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="4" to_unit="mm" />
+      </structure>
+      <structure id="o20159" name="spike" constraint="upper">
+        <character name="feature" value="approximate" />
+        <character name="position" value="lower" />
+        <character name="arrangement" value="remote" />
+      </structure>
+    </statement>
+    <statement id="1681.txt-6">
+      <text>Female glumes pale, oblong, 2.5–3 mm, green 3-veined costa excurrent into a scabrous short awn, apex acute.</text>
+      <structure id="o20160" name="glume" constraint="female">
+        <character name="coloration" value="pale" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="3-veined" />
+        <character name="architecture" value="excurrent" constraint="into awn" constraintid="o20162" />
+      </structure>
+      <structure id="o20161" name="costa" />
+      <structure id="o20162" name="awn">
+        <character name="external_texture_or_relief" value="scabrous" />
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o20163" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1681.txt-7">
+      <text>Utricles green or green-yellow, longer than glume, lanceolate or ovate-lanceolate, 3–4 mm, conspicuously veined on both faces, many veined abaxially and hardly veined adaxially, or nerveless, base cuneate, shortly stipitate, upper half of margins narrowly scabrous winged, apex gradually attenuate into a long beak, orifice 2-toothed.</text>
+      <structure id="o20164" name="utricle">
+        <character name="coloration" value="green" />
+        <character name="coloration" value="green-yellow" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o20165" />
+        <character name="shape" value="lanceolate" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="architecture_or_feature" value="veined" modifier="conspicuously" constraint="on faces" constraintid="o20166" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" modifier="abaxially" />
+        <character name="architecture_or_feature" value="veined" modifier="hardly;adaxially" />
+        <character name="feature" value="nerveless" />
+      </structure>
+      <structure id="o20165" name="glume" />
+      <structure id="o20166" name="face" />
+      <structure id="o20167" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+        <character name="position" value="upper" constraint="of margins" constraintid="o20168" />
+        <character name="architecture" value="winged" />
+      </structure>
+      <structure id="o20168" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" modifier="narrowly" />
+      </structure>
+      <structure id="o20169" name="apex">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into beak" constraintid="o20170" />
+      </structure>
+      <structure id="o20170" name="beak">
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o20171" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1681.txt-8">
+      <text>Nutlets tightly enveloped, planoconvex, 1.5–2 mm, base contracted and shortly stipitate, apex subrounded;</text>
+      <structure id="o20172" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+      </structure>
+      <structure id="o20173" name="apex">
+        <character name="size" value="contracted" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+        <character name="arrangement" value="subrounded" />
+      </structure>
+      <relation id="r3783" name="base" from="o20172" to="o20173" negation="false" />
+    </statement>
+    <statement id="1681.txt-9">
+      <text>style base thickened;</text>
+      <structure id="o20174" name="base" constraint="style">
+        <character name="width" value="thickened" />
+      </structure>
+    </statement>
+    <statement id="1681.txt-10">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1681.txt-11">
+      <text>Fl. and fr. May–Aug.</text>
+      <structure id="o20175" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forests, wet grasslands, swamps, grasslands and thickets at high elevations. Anhui, Gansu, Guangxi, Guizhou, Henan, Hubei, Hunan, Jiangsu, Shaanxi, Shanxi, Sichuan, Taiwan, Yunnan, Zhejiang [Bhutan, India, Indonesia, Japan, Nepal, Sri Lanka].</distribution>
   <key>
     <key_statement>
@@ -40,3 +198,5 @@
   </key>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -28,9 +28,161 @@
     <subspecies_name>heteroclita</subspecies_name>
     <subspecies_authority>(Franchet) T. Koyama.</subspecies_authority>
   </TaxonIdentification>
-  <description>Rhizome slender, ca. 1 mm thick, covered with red-brown scales. Culms tufted, 5–20 cm tall, filiform, scabrid above. Leaves many, radical, elongate after anthesis, longer than culms, blades 2–3 mm wide, flattish, soft; sheaths sanguineous-purple or dusky-brown, split into reticulate fibers. Inflorescence 1-spiked, terminal, androgynous; male part linear to linear-oblong, 1–1.5 mm thick, several flowered; female part 1–2 cm, loosely bearing 3–8 flowers. Female glumes pale laterally, stained with sanguineous brown on upper half or 1/3, oblong to obovate-oblong, ca. 3.5 mm, membranous, greenish costa 1- or obscurely 3-veined, base clasping rachilla, apex obtuse to subtruncate. Utricles pale greenish to pale yellowish, slightly longer than glumes, erect-patent to patent, obovate-oblong to obovate-elliptic, trigonous, 3.5–4 mm, thinly herbaceous to membranous, sparsely hirsute on upper half, nerveless except 2 costas, base gradually tapering into short stipe, apex abruptly contracted into short, recurved, conic beak, orifice not toothed. Nutlet tightly enveloped, obovate-oblong, trigonous, 2–2.5 mm; stigmas 3.</description>
+  <description>
+    <statement id="1615.txt-0">
+      <text>Rhizome slender, ca. 1 mm thick, covered with red-brown scales.</text>
+      <structure id="o18583" name="rhizome">
+        <character name="size" value="slender" />
+        <character name="size" value="1" unit="mm" />
+        <character name="width" value="thick" />
+      </structure>
+      <structure id="o18584" name="scale">
+        <character name="coloration" value="red-brown" />
+      </structure>
+      <relation id="r3544" name="covered with" from="o18583" to="o18584" negation="false" />
+    </statement>
+    <statement id="1615.txt-1">
+      <text>Culms tufted, 5–20 cm tall, filiform, scabrid above.</text>
+      <structure id="o18585" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="5" from_unit="cm" to="20" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="filiform" />
+        <character name="relief" value="scabrid" />
+      </structure>
+    </statement>
+    <statement id="1615.txt-2">
+      <text>Leaves many, radical, elongate after anthesis, longer than culms, blades 2–3 mm wide, flattish, soft;</text>
+      <structure id="o18586" name="leaf">
+        <character name="count" value="many" />
+        <character name="position" value="radical" />
+        <character name="shape" value="elongate" constraint="after anthesis" constraintid="o18587" />
+        <character name="length" value="longer" constraint="than culms" constraintid="o18588" />
+      </structure>
+      <structure id="o18587" name="anthesis" />
+      <structure id="o18588" name="culm" />
+      <structure id="o18589" name="blade">
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="external_texture" value="soft" />
+      </structure>
+    </statement>
+    <statement id="1615.txt-3">
+      <text>sheaths sanguineous-purple or dusky-brown, split into reticulate fibers.</text>
+      <structure id="o18590" name="sheath">
+        <character name="coloration" value="sanguineous-purple" />
+        <character name="coloration" value="dusky-brown" />
+      </structure>
+      <structure id="o18591" name="fiber">
+        <character name="architecture_or_pattern_or_relief" value="reticulate" />
+      </structure>
+      <relation id="r3545" name="split into" from="o18590" to="o18591" negation="false" />
+    </statement>
+    <statement id="1615.txt-4">
+      <text>Inflorescence 1-spiked, terminal, androgynous;</text>
+    </statement>
+    <statement id="1615.txt-5">
+      <text>male part linear to linear-oblong, 1–1.5 mm thick, several flowered;</text>
+    </statement>
+    <statement id="1615.txt-6">
+      <text>female part 1–2 cm, loosely bearing 3–8 flowers.</text>
+      <structure id="o18592" name="inflorescence">
+        <character name="position" value="terminal" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="feature_or_reproduction" value="male" />
+        <character char_type="range_value" name="shape" from="linear" to="linear-oblong" />
+        <character name="shape" value="linear" />
+        <character name="shape" value="linear-oblong" />
+        <character char_type="range_value" name="size" from="1" from_unit="mm" to="1.5" to_unit="mm" />
+        <character name="width" value="thick" />
+        <character name="count" value="several" />
+        <character name="architecture" value="flowered" />
+        <character name="reproduction" value="female" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="2" to_unit="cm" />
+      </structure>
+      <structure id="o18593" name="flower">
+        <character char_type="range_value" name="count" from="3" to="8" />
+      </structure>
+      <relation id="r3546" name="bearing" from="o18592" to="o18593" negation="false" modifier="loosely" />
+    </statement>
+    <statement id="1615.txt-7">
+      <text>Female glumes pale laterally, stained with sanguineous brown on upper half or 1/3, oblong to obovate-oblong, ca. 3.5 mm, membranous, greenish costa 1- or obscurely 3-veined, base clasping rachilla, apex obtuse to subtruncate.</text>
+      <structure id="o18594" name="glume" constraint="female">
+        <character name="coloration" value="pale" modifier="laterally;oblong to obovate-oblong, 3.5 mm, membranous, greenish costa 1-or-obscurely" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o18595" name="base" />
+      <structure id="o18596" name="rachilla" />
+      <relation id="r3547" name="clasping" from="o18595" to="o18596" negation="false" />
+      <structure id="o18597" name="apex">
+        <character char_type="range_value" name="shape" from="obtuse" to="subtruncate" />
+        <character name="shape" value="obtuse" />
+        <character name="shape" value="subtruncate" />
+      </structure>
+    </statement>
+    <statement id="1615.txt-8">
+      <text>Utricles pale greenish to pale yellowish, slightly longer than glumes, erect-patent to patent, obovate-oblong to obovate-elliptic, trigonous, 3.5–4 mm, thinly herbaceous to membranous, sparsely hirsute on upper half, nerveless except 2 costas, base gradually tapering into short stipe, apex abruptly contracted into short, recurved, conic beak, orifice not toothed.</text>
+      <structure id="o18598" name="utricle">
+        <character char_type="range_value" name="coloration" from="pale greenish" to="pale yellowish" />
+        <character name="coloration" value="greenish" modifier="pale" />
+        <character name="coloration" value="yellowish" modifier="pale" />
+        <character name="length" value="longer" modifier="slightly" constraint="than glumes" constraintid="o18599" />
+        <character char_type="range_value" name="orientation" from="erect-patent" to="patent" />
+        <character name="orientation" value="erect-patent" />
+        <character name="orientation" value="patent" />
+        <character char_type="range_value" name="shape" from="obovate-oblong" to="obovate-elliptic" />
+        <character name="shape" value="obovate-oblong" />
+        <character name="shape" value="obovate-elliptic" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="3.5" from_unit="mm" to="4" to_unit="mm" />
+        <character char_type="range_value" name="feature" from="thinly herbaceous" to="membranous" />
+        <character name="feature" value="herbaceous" modifier="thinly" />
+        <character name="feature" value="membranous" />
+        <character name="external_texture" value="hirsute" modifier="sparsely" constraint="on half" constraintid="o18600" />
+        <character name="feature" value="nerveless" constraint="except costas" constraintid="o18601" />
+      </structure>
+      <structure id="o18599" name="glume" />
+      <structure id="o18600" name="half" constraint="upper" />
+      <structure id="o18601" name="costa">
+        <character name="count" value="2" />
+      </structure>
+      <structure id="o18602" name="base">
+        <character name="shape" value="tapering" modifier="gradually" constraint="into stipe" constraintid="o18603" />
+      </structure>
+      <structure id="o18603" name="stipe">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o18604" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o18605" />
+      </structure>
+      <structure id="o18605" name="beak">
+        <character name="height_or_length" value="short" />
+        <character name="orientation" value="recurved" />
+        <character name="shape" value="conic" />
+      </structure>
+      <structure id="o18606" name="orifice">
+        <character name="shape" value="toothed" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1615.txt-9">
+      <text>Nutlet tightly enveloped, obovate-oblong, trigonous, 2–2.5 mm;</text>
+      <structure id="o18607" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="obovate-oblong" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="2.5" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1615.txt-10">
+      <text>stigmas 3.</text>
+      <structure id="o18608" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Grasslands, forest margins. Taiwan [Japan].</distribution>
   <discussion>No specimens have been seen by the present authors. The description is based mainly on Fl. Taiwan (ed. 2, 5: 215. 2000).</discussion>
   <discussion>Carex grallatoria var. grallatoria, with plants dioecious, is endemic to Japan.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

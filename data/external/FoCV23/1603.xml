@@ -13,7 +13,144 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>北薹草 bei tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome elongate, creeping. Culms loosely tufted, with purple-red sheaths at base, 10–20 cm tall, trigonous, often scabrid above. Leaves shorter than culm, blades flat or involute, 1–1.5 mm wide. Inflorescence 1-spiked, terminal, androgynous; male part linear-cylindric, 5–8 mm; female part 3–8-flowered, subspherical at maturity. Female glumes pale brown, broadly ovate, ca. 3 mm, 3-veined, margins broadly membranous, apex acute. Utricles chestnut-colored to dark brown, broadly ovate, convex abaxially, with 2 shallow grooves at slightly flat adaxial side, ca. 3 mm, leathery, faintly veined, apex abruptly contracted into a short beak, orifice membranous, obliquely truncate. Nutlet loosely enveloped, elliptic, trigonous, ca. 2 mm, with a linear rachilla or rarely a not fully developed utricle at base; rachilla as long as nutlet; stigmas 3. Fr. Aug.</description>
+  <description>
+    <statement id="1603.txt-0">
+      <text>Rhizome elongate, creeping.</text>
+      <structure id="o18351" name="rhizome">
+        <character name="shape" value="elongate" />
+        <character name="habit" value="creeping" />
+      </structure>
+    </statement>
+    <statement id="1603.txt-1">
+      <text>Culms loosely tufted, with purple-red sheaths at base, 10–20 cm tall, trigonous, often scabrid above.</text>
+      <structure id="o18352" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="loosely" />
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="20" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="relief" value="scabrid" modifier="often" />
+      </structure>
+      <structure id="o18353" name="sheath">
+        <character name="coloration" value="purple-red" />
+      </structure>
+      <relation id="r3510" name="with" from="o18352" to="o18353" negation="false" />
+      <structure id="o18354" name="base" />
+      <relation id="r3511" name="at" from="o18353" to="o18354" negation="false" />
+    </statement>
+    <statement id="1603.txt-2">
+      <text>Leaves shorter than culm, blades flat or involute, 1–1.5 mm wide.</text>
+      <structure id="o18355" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o18356" />
+      </structure>
+      <structure id="o18356" name="culm" />
+      <structure id="o18357" name="blade">
+        <character name="shape" value="flat" />
+        <character name="shape" value="involute" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="1.5" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1603.txt-3">
+      <text>Inflorescence 1-spiked, terminal, androgynous;</text>
+    </statement>
+    <statement id="1603.txt-4">
+      <text>male part linear-cylindric, 5–8 mm;</text>
+    </statement>
+    <statement id="1603.txt-5">
+      <text>female part 3–8-flowered, subspherical at maturity.</text>
+      <structure id="o18358" name="inflorescence">
+        <character name="position" value="terminal" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="linear-cylindric" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="8" to_unit="mm" />
+        <character name="reproduction" value="female" />
+        <character name="architecture" value="3-8-flowered" />
+        <character name="shape" value="subspherical" modifier="at maturity" />
+      </structure>
+    </statement>
+    <statement id="1603.txt-6">
+      <text>Female glumes pale brown, broadly ovate, ca. 3 mm, 3-veined, margins broadly membranous, apex acute.</text>
+      <structure id="o18359" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="size" value="3" unit="mm" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o18360" name="margin">
+        <character name="feature" value="membranous" modifier="broadly" />
+      </structure>
+      <structure id="o18361" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1603.txt-7">
+      <text>Utricles chestnut-colored to dark brown, broadly ovate, convex abaxially, with 2 shallow grooves at slightly flat adaxial side, ca. 3 mm, leathery, faintly veined, apex abruptly contracted into a short beak, orifice membranous, obliquely truncate.</text>
+      <structure id="o18362" name="utricle">
+        <character char_type="range_value" name="coloration" from="chestnut-colored" to="dark brown" />
+        <character name="coloration" value="chestnut-colored" />
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="shape" value="convex" modifier="abaxially" />
+        <character name="size" value="3" unit="mm" />
+        <character name="external_texture_or_feature" value="leathery" />
+        <character name="architecture_or_feature" value="veined" modifier="faintly" />
+      </structure>
+      <structure id="o18363" name="groove">
+        <character name="count" value="2" />
+        <character name="depth" value="shallow" />
+      </structure>
+      <relation id="r3512" name="with" from="o18362" to="o18363" negation="false" />
+      <structure id="o18364" name="side" constraint="adaxial">
+        <character name="prominence_or_shape" value="flat" modifier="slightly" />
+      </structure>
+      <relation id="r3513" name="at" from="o18363" to="o18364" negation="false" />
+      <structure id="o18365" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o18366" />
+      </structure>
+      <structure id="o18366" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o18367" name="orifice">
+        <character name="feature" value="membranous" />
+        <character name="shape" value="truncate" modifier="obliquely" />
+      </structure>
+    </statement>
+    <statement id="1603.txt-8">
+      <text>Nutlet loosely enveloped, elliptic, trigonous, ca. 2 mm, with a linear rachilla or rarely a not fully developed utricle at base;</text>
+      <structure id="o18368" name="nutlet">
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+      <structure id="o18369" name="rachilla" constraint="linear">
+        <character name="type" value="not fully developed utricle" modifier="rarely" />
+      </structure>
+      <relation id="r3514" name="with" from="o18368" to="o18369" negation="false" />
+      <structure id="o18370" name="utricle">
+        <character name="development" value="developed" modifier="rarely not fully" />
+      </structure>
+      <structure id="o18371" name="base" />
+      <relation id="r3515" name="at" from="o18368" to="o18371" negation="false" />
+    </statement>
+    <statement id="1603.txt-9">
+      <text>rachilla as long as nutlet;</text>
+      <structure id="o18372" name="rachilla" />
+      <structure id="o18373" name="nutlet" />
+      <relation id="r3516" name="as-long-as" from="o18372" to="o18373" negation="false" />
+    </statement>
+    <statement id="1603.txt-10">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1603.txt-11">
+      <text>Fr. Aug.</text>
+      <structure id="o18374" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forests, forest margins; ca. 2500 m (in Xinjiang). Heilongjiang, Jilin, Xinjiang [Kazakhstan, Mongolia, Russia; SW Asia (Caucasus), C and N Europe, North America].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

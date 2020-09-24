@@ -18,7 +18,137 @@
     <species_name>yungningensis</species_name>
     <species_authority>Handel-Mazzetti &amp; Küke nthal.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome short, indurate. Culms tufted, 10–70 cm tall, trigonous, erect, stiff, clothed with brown-reddish sheaths at base. Lower involucral bracts leaflike, much surpassing inflorescence. Spicate inflorescence long cylindric or ovate-elliptic, 1.5–3.5 × 0.8–1.3 cm, dense at apex, lower 1 or 2 usually distant; spikes numerous, androgynous, ovate, 5–7 mm. Female glumes pale, light green at middle, ovate-lanceolate, 2.5–3 × 1.2–1.5 mm, membranous, apex acuminate, awned. Utricles pale green, longer than glume, ovate-lanceolate or oblong-elliptic, plano-convex, 3–3.5 × ca. 1.5 mm, membranous, glabrous, many veined on both faces, margins from middle to apex with narrow serrulate wings, apex gradually narrowed into a medium-sized beak, orifice 2-toothed. Nutlets pale brown, loosely enveloped, ovate or suborbicular, plano-convex, 1.3–1.5 mm, lustrous; stigmas 2. Fl. and fr. Jun–Sep.</description>
+  <description>
+    <statement id="1631.txt-0">
+      <text>Rhizome short, indurate.</text>
+      <structure id="o18938" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="external_texture" value="indurate" />
+      </structure>
+    </statement>
+    <statement id="1631.txt-1">
+      <text>Culms tufted, 10–70 cm tall, trigonous, erect, stiff, clothed with brown-reddish sheaths at base.</text>
+      <structure id="o18939" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="70" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="orientation" value="erect" />
+        <character name="external_texture" value="stiff" />
+      </structure>
+      <structure id="o18940" name="sheath">
+        <character name="coloration" value="brown-reddish" />
+      </structure>
+      <relation id="r3602" name="clothed with" from="o18939" to="o18940" negation="false" />
+      <structure id="o18941" name="base" />
+      <relation id="r3603" name="at" from="o18940" to="o18941" negation="false" />
+    </statement>
+    <statement id="1631.txt-2">
+      <text>Lower involucral bracts leaflike, much surpassing inflorescence.</text>
+      <structure id="o18942" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+      </structure>
+      <structure id="o18943" name="inflorescence" />
+      <relation id="r3604" name="surpassing" from="o18942" to="o18943" negation="false" modifier="much" />
+    </statement>
+    <statement id="1631.txt-3">
+      <text>Spicate inflorescence long cylindric or ovate-elliptic, 1.5–3.5 × 0.8–1.3 cm, dense at apex, lower 1 or 2 usually distant;</text>
+      <structure id="o18944" name="inflorescence" constraint="spicate">
+        <character name="shape" value="long" modifier="cylindric" />
+        <character name="shape" value="ovate-elliptic" />
+        <character char_type="range_value" name="length" from="1.5" from_unit="cm" to="3.5" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.8" from_unit="cm" to="1.3" to_unit="cm" />
+        <character name="density" value="dense" constraint="at apex" constraintid="o18945" />
+      </structure>
+      <structure id="o18945" name="apex" />
+      <structure id="o18946" name="lower">
+        <character name="count" value="1" />
+        <character name="count" value="2" />
+        <character name="arrangement" value="distant" modifier="usually" />
+      </structure>
+    </statement>
+    <statement id="1631.txt-4">
+      <text>spikes numerous, androgynous, ovate, 5–7 mm.</text>
+      <structure id="o18947" name="spike">
+        <character name="count" value="numerous" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="7" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1631.txt-5">
+      <text>Female glumes pale, light green at middle, ovate-lanceolate, 2.5–3 × 1.2–1.5 mm, membranous, apex acuminate, awned.</text>
+      <structure id="o18948" name="glume" constraint="female">
+        <character name="coloration" value="pale" />
+        <character name="coloration" value="green" modifier="light;at middle" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character char_type="range_value" name="length" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.2" from_unit="mm" to="1.5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+      </structure>
+      <structure id="o18949" name="apex">
+        <character name="shape" value="acuminate" />
+        <character name="shape" value="awned" />
+      </structure>
+    </statement>
+    <statement id="1631.txt-6">
+      <text>Utricles pale green, longer than glume, ovate-lanceolate or oblong-elliptic, planoconvex, 3–3.5 × ca. 1.5 mm, membranous, glabrous, many veined on both faces, margins from middle to apex with narrow serrulate wings, apex gradually narrowed into a medium-sized beak, orifice 2-toothed.</text>
+      <structure id="o18950" name="utricle">
+        <character name="coloration" value="green" modifier="pale" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o18951" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character name="shape" value="oblong-elliptic" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="length" from="3" from_unit="mm" to="3.5" to_unit="mm" />
+        <character name="width" value="1.5" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="external_texture" value="glabrous" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" constraint="on faces" constraintid="o18952" />
+      </structure>
+      <structure id="o18951" name="glume" />
+      <structure id="o18952" name="face" />
+      <structure id="o18953" name="margin" constraint="from middle" />
+      <structure id="o18954" name="apex" />
+      <relation id="r3605" name="to" from="o18953" to="o18954" negation="false" />
+      <structure id="o18955" name="wing">
+        <character name="width" value="narrow" />
+        <character name="shape" value="serrulate" />
+      </structure>
+      <relation id="r3606" name="with" from="o18954" to="o18955" negation="false" />
+      <structure id="o18956" name="apex">
+        <character name="shape" value="narrowed" modifier="gradually" constraint="into beak" constraintid="o18957" />
+      </structure>
+      <structure id="o18957" name="beak" />
+      <structure id="o18958" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+      <relation id="r3607" name="may_be_the_same" from="o18954" to="o18956" negation="false" />
+    </statement>
+    <statement id="1631.txt-7">
+      <text>Nutlets pale brown, loosely enveloped, ovate or suborbicular, planoconvex, 1.3–1.5 mm, lustrous;</text>
+      <structure id="o18959" name="nutlet">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="suborbicular" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="size" from="1.3" from_unit="mm" to="1.5" to_unit="mm" />
+        <character name="reflectance" value="lustrous" />
+      </structure>
+    </statement>
+    <statement id="1631.txt-8">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1631.txt-9">
+      <text>Fl. and fr. Jun–Sep.</text>
+      <structure id="o18960" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Wet places in forests and streamsides along valleys; 1300–3200 m. Guizhou, Sichuan, Xizang, Yunnan [India, Myanmar].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

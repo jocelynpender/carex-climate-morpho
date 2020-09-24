@@ -14,7 +14,195 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>麻根薹草 ma gen tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome robust, ligneous, clothed with old sheaths, usually splitting into fibers. Culms densely tufted, 25–90 cm tall, triquetrous, slightly slender, smooth at lower part, upward slightly scabrous. Leaves basal, nearly equaling culm, blades 3–4 mm wide, flat, smooth on both surfaces, margins scabrous; sheaths long. Lower involucral bracts leaflike, upper blades setaceous, shorter than subtending spike; sheaths short, not up to 1 cm. Spikes 5–7; upper 2 or 3 spikes male, narrowly oblong, subsessile; lower 3 or 4 spikes female, remote, cylindric, 2–3.5 cm, loosely many flowered, peduncles slender, ± pendulous. Female glumes stramineous or brownish yellow, lanceolate-ovate, 3.5–5 mm (including arista), membranous, green 1–3-veined, scabrous on upper part of costa and margins of arista, apex acuminate and aristate, arista short or slightly long. Utricles green-yellow, obliquely patent, equaling or slightly longer than glume, elliptic or obovate-elliptic, inflated trigonous, 4–4.5 mm, papery, glabrous, shiny, nerveless, base broadly cuneate, apex abruptly contracted into a medium-sized to long beak, orifice 2-toothed. Nutlets loosely enveloped, obovate or broadly obovate, trigonous, ca. 2.5 mm, sessile, apex mucronate; stigmas 3. Fl. and fr. May–Jun.</description>
+  <description>
+    <statement id="1311.txt-0">
+      <text>Rhizome robust, ligneous, clothed with old sheaths, usually splitting into fibers.</text>
+      <structure id="o9537" name="rhizome">
+        <character name="fragility" value="robust" />
+        <character name="external_texture" value="ligneous" />
+        <character name="behaviour_or_dehiscence" value="splitting" modifier="usually" constraint="into fibers" constraintid="o9539" />
+      </structure>
+      <structure id="o9538" name="sheath">
+        <character name="life_stage" value="old" />
+      </structure>
+      <relation id="r1760" name="clothed with" from="o9537" to="o9538" negation="false" />
+      <structure id="o9539" name="fiber" />
+    </statement>
+    <statement id="1311.txt-1">
+      <text>Culms densely tufted, 25–90 cm tall, triquetrous, slightly slender, smooth at lower part, upward slightly scabrous.</text>
+      <structure id="o9540" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character char_type="range_value" name="size" from="25" from_unit="cm" to="90" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="triquetrous" />
+        <character name="size" value="slender" modifier="slightly" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" constraint="at part" constraintid="o9541" />
+      </structure>
+      <structure id="o9541" name="part" constraint="lower" />
+    </statement>
+    <statement id="1311.txt-2">
+      <text>Leaves basal, nearly equaling culm, blades 3–4 mm wide, flat, smooth on both surfaces, margins scabrous;</text>
+      <structure id="o9542" name="leaf">
+        <character name="position" value="basal" />
+      </structure>
+      <structure id="o9543" name="culm" />
+      <relation id="r1761" name="equaling" from="o9542" to="o9543" negation="false" modifier="nearly" />
+      <structure id="o9544" name="blade">
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" constraint="on surfaces" constraintid="o9545" />
+      </structure>
+      <structure id="o9545" name="surface" />
+      <structure id="o9546" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1311.txt-3">
+      <text>sheaths long.</text>
+      <structure id="o9547" name="sheath" />
+    </statement>
+    <statement id="1311.txt-4">
+      <text>Lower involucral bracts leaflike, upper blades setaceous, shorter than subtending spike;</text>
+      <structure id="o9548" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+      </structure>
+      <structure id="o9549" name="blade" constraint="upper">
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="height_or_length" value="shorter" constraint="than subtending spike" constraintid="o9550" />
+      </structure>
+      <structure id="o9550" name="spike" constraint="subtending" />
+    </statement>
+    <statement id="1311.txt-5">
+      <text>sheaths short, not up to 1 cm.</text>
+      <structure id="o9551" name="sheath">
+        <character name="height_or_length" value="short" />
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="1" to_unit="cm" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1311.txt-6">
+      <text>Spikes 5–7;</text>
+      <structure id="o9552" name="spike">
+        <character char_type="range_value" name="count" from="5" to="7" />
+      </structure>
+    </statement>
+    <statement id="1311.txt-7">
+      <text>upper 2 or 3 spikes male, narrowly oblong, subsessile;</text>
+      <structure id="o9553" name="spike">
+        <character name="position" value="upper" />
+        <character name="count" value="2" />
+        <character name="count" value="3" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="oblong" modifier="narrowly" />
+        <character name="architecture" value="subsessile" />
+      </structure>
+    </statement>
+    <statement id="1311.txt-8">
+      <text>lower 3 or 4 spikes female, remote, cylindric, 2–3.5 cm, loosely many flowered, peduncles slender, ± pendulous.</text>
+      <structure id="o9554" name="spike">
+        <character name="position" value="lower" />
+        <character name="count" value="3" />
+        <character name="count" value="4" />
+        <character name="reproduction" value="female" />
+        <character name="arrangement" value="remote" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="3.5" to_unit="cm" />
+        <character name="count" value="many" modifier="loosely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+      <structure id="o9555" name="peduncle">
+        <character name="size" value="slender" />
+        <character name="orientation" value="pendulous" modifier="more or less" />
+      </structure>
+    </statement>
+    <statement id="1311.txt-9">
+      <text>Female glumes stramineous or brownish yellow, lanceolate-ovate, 3.5–5 mm (including arista ), membranous, green 1–3-veined, scabrous on upper part of costa and margins of arista, apex acuminate and aristate, arista short or slightly long.</text>
+      <structure id="o9556" name="glume" constraint="female">
+        <character name="coloration" value="stramineous" />
+        <character name="coloration" value="yellow" modifier="brownish" />
+        <character name="shape" value="lanceolate-ovate" />
+        <character char_type="range_value" name="size" from="3.5" from_unit="mm" to="5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="1-3-veined" />
+        <character name="external_texture_or_relief" value="scabrous" constraint="on part" constraintid="o9558" />
+      </structure>
+      <structure id="o9557" name="arista" in_brackets="true" />
+      <relation id="r1762" name="including" from="o9556" to="o9557" negation="false" in_brackets="true" />
+      <structure id="o9558" name="part" constraint="upper" />
+      <structure id="o9559" name="costa" />
+      <structure id="o9560" name="margin" />
+      <relation id="r1763" name="part_of" from="o9558" to="o9559" negation="false" />
+      <relation id="r1764" name="part_of" from="o9558" to="o9560" negation="false" />
+      <structure id="o9561" name="arista" />
+      <relation id="r1765" name="part_of" from="o9558" to="o9561" negation="false" />
+      <structure id="o9562" name="apex">
+        <character name="shape" value="acuminate" />
+        <character name="shape" value="aristate" />
+      </structure>
+      <structure id="o9563" name="arista">
+        <character name="length" value="short" />
+        <character name="length" value="long" modifier="slightly" />
+      </structure>
+      <relation id="r1766" name="may_be_the_same" from="o9557" to="o9561" negation="false" />
+      <relation id="r1767" name="may_be_the_same" from="o9557" to="o9563" negation="false" />
+      <relation id="r1768" name="may_be_the_same" from="o9561" to="o9563" negation="false" />
+    </statement>
+    <statement id="1311.txt-10">
+      <text>Utricles green-yellow, obliquely patent, equaling or slightly longer than glume, elliptic or obovate-elliptic, inflated trigonous, 4–4.5 mm, papery, glabrous, shiny, nerveless, base broadly cuneate, apex abruptly contracted into a medium-sized to long beak, orifice 2-toothed.</text>
+      <structure id="o9564" name="utricle">
+        <character name="coloration" value="green-yellow" />
+        <character name="orientation" value="patent" modifier="obliquely" />
+      </structure>
+      <structure id="o9565" name="base">
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="arrangement_or_shape" value="obovate-elliptic" />
+        <character name="shape" value="inflated" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="count" from="4" to="4.5" />
+        <character name="feature_or_internal_texture" value="papery" />
+        <character name="external_texture" value="glabrous" />
+        <character name="reflectance" value="shiny" />
+        <character name="feature" value="nerveless" />
+        <character name="length" value="longer" modifier="slightly" />
+        <character name="arrangement_or_shape" value="cuneate" modifier="broadly" />
+      </structure>
+      <relation id="r1769" name="equaling" from="o9564" to="o9565" negation="false" />
+      <structure id="o9566" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into medium-sized to beak" constraintid="o9567" />
+      </structure>
+      <structure id="o9567" name="beak">
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o9568" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1311.txt-11">
+      <text>Nutlets loosely enveloped, obovate or broadly obovate, trigonous, ca. 2.5 mm, sessile, apex mucronate;</text>
+      <structure id="o9569" name="nutlet">
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="obovate" />
+        <character name="shape" value="obovate" modifier="broadly" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2.5" unit="mm" />
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+      <structure id="o9570" name="apex">
+        <character name="shape" value="mucronate" />
+      </structure>
+    </statement>
+    <statement id="1311.txt-12">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1311.txt-13">
+      <text>Fl. and fr. May–Jun.</text>
+      <structure id="o9571" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Mountain slopes, forests, meadows, wet places by watersides; 200–1700 m. Hebei, Heilongjiang, Jilin, Nei Mongol [Japan, Korea, Mongolia, Russia].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

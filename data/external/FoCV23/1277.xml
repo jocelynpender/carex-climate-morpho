@@ -9,8 +9,36 @@
   <TaxonIdentification Status="SYNONYM">
     <subspecies_name>茶色薹草 ( 原亚种) cha se tai cao (yuan ya zhong)</subspecies_name>
   </TaxonIdentification>
-  <description>Leaves rather narrow, 1.5–3 mm wide. Male spike 2–4 cm; female spikes 1–3 cm. Female glumes dark brown.</description>
+  <description>
+    <statement id="1277.txt-0">
+      <text>Leaves rather narrow, 1.5–3 mm wide.</text>
+      <structure id="o8453" name="leaf">
+        <character name="width" value="narrow" modifier="rather" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="3" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1277.txt-1">
+      <text>Male spike 2–4 cm;</text>
+      <structure id="o8454" name="spike" constraint="male">
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="4" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1277.txt-2">
+      <text>female spikes 1–3 cm.</text>
+      <structure id="o8455" name="spike" constraint="female">
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="3" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1277.txt-3">
+      <text>Female glumes dark brown.</text>
+      <structure id="o8456" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="dark" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Sandy or rocky slopes in montane regions. Taiwan.</distribution>
   <discussion>No specimens have been seen by the present authors.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

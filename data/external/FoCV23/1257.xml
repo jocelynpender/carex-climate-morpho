@@ -13,7 +13,139 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>钝鳞薹草 dun lin tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms densely tufted, 25–35 cm tall, smooth, clothed at base with brown sheaths disintegrating into reticulate fibers. Leaves shorter than culm, blades linear, ca. 2.5 mm wide, flat, apex acute. Lower involucral bracts leaflike, shorter than or subequaling inflorescence, long sheathing. Spikes 4 or 5; terminal spike male, oblong, 1.2–1.5 cm; lateral spikes female, oblong, 1.5–2 cm, loosely flowered, lower ones pedunculate. Female glumes dark castaneous with purple, elliptic, ca. 2.5 mm, glabrous or hispid on midrib adaxially. Utricles longer than glume, narrowly elliptic or lanceolate, compressed trigonous, 2.5–3 mm, base very shortly stipitate, margins ciliate, apex gradually narrowed into a beak. Nutlets loosely enveloped, elliptic; style base not thickened; stigmas 3. Fl. and fr. Aug.</description>
+  <description>
+    <statement id="1257.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o7870" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1257.txt-1">
+      <text>Culms densely tufted, 25–35 cm tall, smooth, clothed at base with brown sheaths disintegrating into reticulate fibers.</text>
+      <structure id="o7871" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character char_type="range_value" name="size" from="25" from_unit="cm" to="35" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o7872" name="base" />
+      <relation id="r1443" name="clothed at" from="o7871" to="o7872" negation="false" />
+      <structure id="o7873" name="sheath">
+        <character name="coloration" value="brown" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o7874" />
+      </structure>
+      <relation id="r1444" name="with" from="o7872" to="o7873" negation="false" />
+      <structure id="o7874" name="fiber">
+        <character name="architecture_or_pattern_or_relief" value="reticulate" />
+      </structure>
+    </statement>
+    <statement id="1257.txt-2">
+      <text>Leaves shorter than culm, blades linear, ca. 2.5 mm wide, flat, apex acute.</text>
+      <structure id="o7875" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o7876" />
+      </structure>
+      <structure id="o7876" name="culm" />
+      <structure id="o7877" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character name="width" value="2.5" unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o7878" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1257.txt-3">
+      <text>Lower involucral bracts leaflike, shorter than or subequaling inflorescence, long sheathing.</text>
+      <structure id="o7879" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="height_or_length" value="shorter" constraint="than or subequaling inflorescence" constraintid="o7880" />
+        <character name="architecture_or_feature_or_shape" value="sheathing" />
+      </structure>
+      <structure id="o7880" name="inflorescence" />
+    </statement>
+    <statement id="1257.txt-4">
+      <text>Spikes 4 or 5;</text>
+      <structure id="o7881" name="spike">
+        <character name="count" value="4" />
+        <character name="count" value="5" />
+      </structure>
+    </statement>
+    <statement id="1257.txt-5">
+      <text>terminal spike male, oblong, 1.2–1.5 cm;</text>
+      <structure id="o7882" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="1.2" from_unit="cm" to="1.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1257.txt-6">
+      <text>lateral spikes female, oblong, 1.5–2 cm, loosely flowered, lower ones pedunculate.</text>
+      <structure id="o7883" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="cm" to="2" to_unit="cm" />
+        <character name="architecture" value="flowered" modifier="loosely" />
+        <character name="position" value="lower" />
+        <character name="architecture" value="pedunculate" />
+      </structure>
+    </statement>
+    <statement id="1257.txt-7">
+      <text>Female glumes dark castaneous with purple, elliptic, ca. 2.5 mm, glabrous or hispid on midrib adaxially.</text>
+      <structure id="o7884" name="glume" constraint="female">
+        <character name="coloration" value="castaneous with purple" modifier="dark" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="size" value="2.5" unit="mm" />
+        <character name="external_texture" value="glabrous" />
+        <character name="external_texture" value="hispid" constraint="on midrib" constraintid="o7885" />
+      </structure>
+      <structure id="o7885" name="midrib" />
+    </statement>
+    <statement id="1257.txt-8">
+      <text>Utricles longer than glume, narrowly elliptic or lanceolate, compressed trigonous, 2.5–3 mm, base very shortly stipitate, margins ciliate, apex gradually narrowed into a beak.</text>
+      <structure id="o7886" name="utricle">
+        <character name="length" value="longer" constraint="than glume" constraintid="o7887" />
+        <character name="shape" value="elliptic" modifier="narrowly" />
+        <character name="shape" value="lanceolate" />
+        <character name="shape" value="compressed trigonous" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+      </structure>
+      <structure id="o7887" name="glume" />
+      <structure id="o7888" name="base">
+        <character name="architecture" value="stipitate" modifier="very shortly" />
+      </structure>
+      <structure id="o7889" name="margin">
+        <character name="architecture_or_shape" value="ciliate" />
+      </structure>
+      <structure id="o7890" name="apex">
+        <character name="shape" value="narrowed" modifier="gradually" constraint="into beak" constraintid="o7891" />
+      </structure>
+      <structure id="o7891" name="beak" />
+    </statement>
+    <statement id="1257.txt-9">
+      <text>Nutlets loosely enveloped, elliptic;</text>
+      <structure id="o7892" name="nutlet">
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="arrangement_or_shape" value="elliptic" />
+      </structure>
+    </statement>
+    <statement id="1257.txt-10">
+      <text>style base not thickened;</text>
+      <structure id="o7893" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1257.txt-11">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1257.txt-12">
+      <text>Fl. and fr. Aug.</text>
+      <structure id="o7894" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Gravelly slopes, thickets; 4000–5000 m. Xizang [India (Sikkim), Nepal].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

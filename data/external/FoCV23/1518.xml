@@ -18,8 +18,138 @@
     <species_name>phaeopoda</species_name>
     <species_authority>Ohwi.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome short, without stolons. Culms densely tufted, 30–60 cm tall, erect, trigonous, scabrous above. Leaves many, 6–13 mm wide, basal sheaths rusty brown or somewhat purplish brown. Involucral bracts leaflike, much surpassing inflorescence, sheathless at base. Spikes 5–7, subfastigiate, sessile or pedunculate; terminal spike male, or with a few female flowers, linear, 4–8 cm; lateral spikes female, cylindric, rarely with a few male flowers, 5–9 × 0.4–0.5 cm, densely many flowered. Female glumes pale and flecked with dark purple-brown, ovate or elliptic, ca. 2 mm, greenish 1-veined costa excurrent into a mucro at truncate apex. Utricles light brownish green, suberect, ovate, biconvex, 2.2–2.5 mm, nerveless, base shortly stipitate, apical beak rather short, truncate. Nutlets loosely enveloped, broadly obovoid, biconvex, ca. 1.5 mm, contracted at both ends; stigmas 2.</description>
+  <description>
+    <statement id="1518.txt-0">
+      <text>Rhizome short, without stolons.</text>
+      <structure id="o15956" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o15957" name="stolon" />
+      <relation id="r3043" name="without" from="o15956" to="o15957" negation="false" />
+    </statement>
+    <statement id="1518.txt-1">
+      <text>Culms densely tufted, 30–60 cm tall, erect, trigonous, scabrous above.</text>
+      <structure id="o15958" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="60" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="orientation" value="erect" />
+        <character name="shape" value="trigonous" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1518.txt-2">
+      <text>Leaves many, 6–13 mm wide, basal sheaths rusty brown or somewhat purplish brown.</text>
+      <structure id="o15959" name="leaf">
+        <character name="count" value="many" />
+        <character char_type="range_value" name="width" from="6" from_unit="mm" to="13" to_unit="mm" />
+      </structure>
+      <structure id="o15960" name="sheath" constraint="basal">
+        <character name="coloration" value="brown" modifier="rusty" />
+        <character name="coloration" value="brown" modifier="somewhat;purplish" />
+      </structure>
+    </statement>
+    <statement id="1518.txt-3">
+      <text>Involucral bracts leaflike, much surpassing inflorescence, sheathless at base.</text>
+      <structure id="o15961" name="bract" constraint="involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="feature" value="sheathless" constraint="at base" constraintid="o15963" />
+      </structure>
+      <structure id="o15962" name="inflorescence" />
+      <relation id="r3044" name="surpassing" from="o15961" to="o15962" negation="false" modifier="much" />
+      <structure id="o15963" name="base" />
+    </statement>
+    <statement id="1518.txt-4">
+      <text>Spikes 5–7, subfastigiate, sessile or pedunculate;</text>
+      <structure id="o15964" name="spike">
+        <character char_type="range_value" name="count" from="5" to="7" />
+        <character name="feature" value="subfastigiate" />
+        <character name="architecture" value="sessile" />
+        <character name="architecture" value="pedunculate" />
+      </structure>
+    </statement>
+    <statement id="1518.txt-5">
+      <text>terminal spike male, or with a few female flowers, linear, 4–8 cm;</text>
+      <structure id="o15965" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="size" from="4" from_unit="cm" to="8" to_unit="cm" />
+      </structure>
+      <structure id="o15966" name="flower" constraint="female">
+        <character name="count" value="few" />
+      </structure>
+      <relation id="r3045" name="with" from="o15965" to="o15966" negation="false" />
+    </statement>
+    <statement id="1518.txt-6">
+      <text>lateral spikes female, cylindric, rarely with a few male flowers, 5–9 × 0.4–0.5 cm, densely many flowered.</text>
+      <structure id="o15967" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="length" from="5" from_unit="cm" to="9" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.4" from_unit="cm" to="0.5" to_unit="cm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+      <structure id="o15968" name="flower" constraint="male">
+        <character name="count" value="few" />
+      </structure>
+      <relation id="r3046" name="with" from="o15967" to="o15968" negation="false" modifier="rarely" />
+    </statement>
+    <statement id="1518.txt-7">
+      <text>Female glumes pale and flecked with dark purple-brown, ovate or elliptic, ca. 2 mm, greenish 1-veined costa excurrent into a mucro at truncate apex.</text>
+      <structure id="o15969" name="glume" constraint="female">
+        <character name="coloration" value="pale" />
+        <character name="feature" value="flecked" />
+        <character name="dark-c-purple-brown , shapshape~list~ovate~~elliptic ," value="2" unit="mm" />
+        <character name="coloration" value="greenish" />
+        <character name="architecture_or_feature" value="1-veined" />
+        <character name="architecture" value="excurrent" constraint="into mucro" constraintid="o15971" />
+      </structure>
+      <structure id="o15970" name="costa" />
+      <structure id="o15971" name="mucro" />
+      <structure id="o15972" name="apex">
+        <character name="shape" value="truncate" />
+      </structure>
+      <relation id="r3047" name="at" from="o15971" to="o15972" negation="false" />
+    </statement>
+    <statement id="1518.txt-8">
+      <text>Utricles light brownish green, suberect, ovate, biconvex, 2.2–2.5 mm, nerveless, base shortly stipitate, apical beak rather short, truncate.</text>
+      <structure id="o15973" name="utricle">
+        <character name="coloration" value="green" modifier="light-c-brownish" />
+        <character name="orientation" value="suberect" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="biconvex" />
+        <character char_type="range_value" name="size" from="2.2" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="feature" value="nerveless" />
+        <character name="shape" value="truncate" />
+      </structure>
+      <structure id="o15974" name="beak" constraint="apical">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+        <character name="height_or_length" value="short" modifier="rather" />
+      </structure>
+      <relation id="r3048" name="base" from="o15973" to="o15974" negation="false" />
+    </statement>
+    <statement id="1518.txt-9">
+      <text>Nutlets loosely enveloped, broadly obovoid, biconvex, ca. 1.5 mm, contracted at both ends;</text>
+      <structure id="o15975" name="nutlet">
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="obovoid" modifier="broadly" />
+        <character name="shape" value="biconvex" />
+        <character name="size" value="1.5" unit="mm" />
+        <character name="size" value="contracted" constraint="at ends" constraintid="o15976" />
+      </structure>
+      <structure id="o15976" name="end" />
+    </statement>
+    <statement id="1518.txt-10">
+      <text>stigmas 2.</text>
+      <structure id="o15977" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Grassy places at middle elevations. Taiwan [Japan].</distribution>
   <discussion>No specimens from China have been seen by the present authors.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

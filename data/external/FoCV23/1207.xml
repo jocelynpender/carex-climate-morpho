@@ -14,7 +14,33 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>显穗薹草 xian sui tai cao</variety_name>
   </TaxonIdentification>
-  <description>Terminal male spike rather long, surpassing adjacent female spike, lowermost female spike nearly basal. Utricles rather long beaked at apex.</description>
+  <description>
+    <statement id="1207.txt-0">
+      <text>Terminal male spike rather long, surpassing adjacent female spike, lowermost female spike nearly basal.</text>
+      <structure id="o6478" name="spike" constraint="terminal male">
+        <character name="character" value="length" modifier="rather" />
+      </structure>
+      <structure id="o6479" name="spike" constraint="female">
+        <character name="arrangement" value="adjacent" />
+      </structure>
+      <relation id="r1172" name="surpassing" from="o6478" to="o6479" negation="false" />
+      <structure id="o6480" name="spike" constraint="female">
+        <character name="feature" value="lowermost" />
+        <character name="position" value="basal" modifier="nearly" />
+      </structure>
+      <relation id="r1173" name="may_be_the_same" from="o6479" to="o6480" negation="false" />
+    </statement>
+    <statement id="1207.txt-1">
+      <text>Utricles rather long beaked at apex.</text>
+      <structure id="o6481" name="utricle">
+        <character name="character" value="length" modifier="rather" />
+        <character name="shape" value="beaked" constraint="at apex" constraintid="o6482" />
+      </structure>
+      <structure id="o6482" name="apex" />
+    </statement>
+  </description>
   <distribution>● S Anhui (Qimen).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -13,7 +13,145 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>日南薹草 ri nan tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, without stolons. Culms slightly loosely tufted, ca. 70 cm tall, stiff, triquetrous, scabrid on upper part or smooth, 1- or 2-leaved. Leaves ± stiff, blades 2.5–4 mm wide, flat, sheaths at base dusky brown, usually not split. Involucral bracts long sheathed, lower involucral bract blades leaflike. Spikes numerous, 1–3 borne in an involucral bract sheath, androgynous, cylindric, 1.5–3 cm, loosely many flowered; peduncle slightly exserted or included in involucral bract sheath. Female glumes brownish, ovate-oblong, ca. 3.5 mm, thinly 1-costate, apex acute but muticous. Utricles brown, suberect, subequaling or slightly longer than glume, broadly ovate or elliptic, compressed biconvex, 3.5–4 mm, membranous, glabrous except scabrous on margins, several veined, base abruptly contracted into a short stipe, apex gradually narrowed to a medium-sized beak, orifice 2-toothed. Nutlets tightly enveloped, orbicular-ovate, compressed biconvex, ca. 2 mm; style strict and short, base thickened; stigmas 2, ± long.</description>
+  <description>
+    <statement id="1579.txt-0">
+      <text>Rhizome short, without stolons.</text>
+      <structure id="o17577" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o17578" name="stolon" />
+      <relation id="r3371" name="without" from="o17577" to="o17578" negation="false" />
+    </statement>
+    <statement id="1579.txt-1">
+      <text>Culms slightly loosely tufted, ca. 70 cm tall, stiff, triquetrous, scabrid on upper part or smooth, 1- or 2-leaved.</text>
+      <structure id="o17579" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="slightly loosely" />
+        <character name="size" value="70" unit="cm" />
+        <character name="height" value="tall" />
+        <character name="external_texture" value="stiff" />
+        <character name="shape" value="triquetrous" />
+        <character name="relief" value="scabrid" constraint="on part" constraintid="o17580" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="architecture" value="1-or-2-leaved" />
+      </structure>
+      <structure id="o17580" name="part" constraint="upper" />
+    </statement>
+    <statement id="1579.txt-2">
+      <text>Leaves ± stiff, blades 2.5–4 mm wide, flat, sheaths at base dusky brown, usually not split.</text>
+      <structure id="o17581" name="leaf">
+        <character name="external_texture" value="stiff" modifier="more or less" />
+      </structure>
+      <structure id="o17582" name="blade">
+        <character char_type="range_value" name="width" from="2.5" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o17583" name="sheath" />
+      <structure id="o17584" name="base">
+        <character name="coloration" value="brown" modifier="dusky" />
+      </structure>
+      <relation id="r3372" name="at" from="o17583" to="o17584" negation="false" />
+    </statement>
+    <statement id="1579.txt-3">
+      <text>Involucral bracts long sheathed, lower involucral bract blades leaflike.</text>
+      <structure id="o17585" name="bract" constraint="involucral">
+        <character name="architecture_or_feature" value="sheathed" />
+      </structure>
+      <structure id="o17586" name="blade" constraint="lower involucral bract">
+        <character name="architecture" value="leaflike" />
+      </structure>
+    </statement>
+    <statement id="1579.txt-4">
+      <text>Spikes numerous, 1–3 borne in an involucral bract sheath, androgynous, cylindric, 1.5–3 cm, loosely many flowered;</text>
+      <structure id="o17587" name="spike">
+        <character name="count" value="numerous" />
+        <character char_type="range_value" name="count" from="1" to="3" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="cm" to="3" to_unit="cm" />
+        <character name="count" value="many" modifier="loosely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+      <structure id="o17588" name="sheath" constraint="involucral bract" />
+      <relation id="r3373" name="borne in" from="o17587" to="o17588" negation="false" />
+    </statement>
+    <statement id="1579.txt-5">
+      <text>peduncle slightly exserted or included in involucral bract sheath.</text>
+      <structure id="o17589" name="peduncle">
+        <character name="position" value="exserted" modifier="slightly" />
+        <character name="position" value="included" constraint="in bract sheath" constraintid="o17590" />
+      </structure>
+      <structure id="o17590" name="sheath" constraint="involucral bract" />
+    </statement>
+    <statement id="1579.txt-6">
+      <text>Female glumes brownish, ovate-oblong, ca. 3.5 mm, thinly 1-costate, apex acute but muticous.</text>
+      <structure id="o17591" name="glume" constraint="female">
+        <character name="coloration" value="brownish" />
+        <character name="shape" value="ovate-oblong" />
+        <character name="size" value="3.5" unit="mm" />
+        <character name="architecture" value="1-costate" modifier="thinly" />
+      </structure>
+      <structure id="o17592" name="apex">
+        <character name="shape" value="acute muticous" />
+      </structure>
+    </statement>
+    <statement id="1579.txt-7">
+      <text>Utricles brown, suberect, subequaling or slightly longer than glume, broadly ovate or elliptic, compressed biconvex, 3.5–4 mm, membranous, glabrous except scabrous on margins, several veined, base abruptly contracted into a short stipe, apex gradually narrowed to a medium-sized beak, orifice 2-toothed.</text>
+      <structure id="o17593" name="utricle">
+        <character name="coloration" value="brown" />
+        <character name="orientation" value="suberect" />
+        <character name="length" value="longer" modifier="slightly" constraint="than glume" constraintid="o17594" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="shape" value="elliptic" />
+        <character name="shape" value="compressed biconvex" />
+        <character char_type="range_value" name="size" from="3.5" from_unit="mm" to="4" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="external_texture" value="glabrous" />
+        <character name="count" value="several" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o17594" name="glume" />
+      <structure id="o17595" name="base">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into stipe" constraintid="o17596" />
+      </structure>
+      <structure id="o17596" name="stipe">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o17597" name="apex" />
+      <structure id="o17598" name="beak" />
+      <relation id="r3374" name="narrowed to" from="o17597" to="o17598" negation="false" modifier="gradually" />
+      <structure id="o17599" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1579.txt-8">
+      <text>Nutlets tightly enveloped, orbicular-ovate, compressed biconvex, ca. 2 mm;</text>
+      <structure id="o17600" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="orbicular-ovate" />
+        <character name="shape" value="compressed biconvex" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1579.txt-9">
+      <text>style strict and short, base thickened;</text>
+      <structure id="o17601" name="style">
+        <character name="course" value="strict" />
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o17602" name="base">
+        <character name="width" value="thickened" />
+      </structure>
+    </statement>
+    <statement id="1579.txt-10">
+      <text>stigmas 2, ± long.</text>
+      <structure id="o17603" name="stigma">
+        <character name="count" value="2" />
+        <character name="character" value="length" modifier="more or less" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forests on mountain slopes. Jiangsu, Taiwan, Zhejiang [Japan].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -32,7 +32,133 @@
     <variety_name>gracilenta</variety_name>
     <variety_authority>(Boott ex Strachey) P. C. Li.</variety_authority>
   </TaxonIdentification>
-  <description>Culms 15–25 cm tall, loosely tufted, scabrous below inflorescence. Leaves equaling to shortly overtopping culm, blades 3–5 mm wide, gradually tapering to acute apex; basal sheaths brownish and red-purple tinged, scarcely disintegrating into fibers. Spikes 3 or 4, approximate, oblong-elliptic, 10–15 × 4–5 mm; terminal spike gynaecandrous with short basal male part no more than 3 mm; lateral spikes female or with several male flowers at base. Female glumes dark purple-brown, ovate to ovate-oblong, ca. 2 × 1–1.5 mm, midrib stramineous, nearly as long as utricle, apex acute. Utricles oblong-obovate to obovate, rather conspicuously veined, base attenuate, apex contracted into a purple-tinged beak ca. 0.5 mm, orifice subtruncate. Nutlets rather tightly enveloped, obovate, trigonous, ca. 1.25 mm; stigmas 3. Fl. and fr. Jun.</description>
+  <description>
+    <statement id="1060.txt-0">
+      <text>Culms 15–25 cm tall, loosely tufted, scabrous below inflorescence.</text>
+      <structure id="o2045" name="culm">
+        <character char_type="range_value" name="size" from="15" from_unit="cm" to="25" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="external_texture_or_habit" value="tufted" modifier="loosely" />
+        <character name="external_texture_or_relief" value="scabrous" constraint="below inflorescence" constraintid="o2046" />
+      </structure>
+      <structure id="o2046" name="inflorescence" />
+    </statement>
+    <statement id="1060.txt-1">
+      <text>Leaves equaling to shortly overtopping culm, blades 3–5 mm wide, gradually tapering to acute apex;</text>
+      <structure id="o2047" name="leaf" />
+      <structure id="o2048" name="culm" />
+      <relation id="r439" name="equaling" from="o2047" to="o2048" negation="false" />
+      <structure id="o2049" name="blade">
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="5" to_unit="mm" />
+      </structure>
+      <structure id="o2050" name="apex">
+        <character char_type="range_value" name="shape" from="gradually tapering" to="acute" />
+        <character name="shape" value="tapering" modifier="gradually" />
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1060.txt-2">
+      <text>basal sheaths brownish and red-purple tinged, scarcely disintegrating into fibers.</text>
+      <structure id="o2051" name="sheath" constraint="basal">
+        <character name="coloration" value="tinged" modifier="brownish and red-purple" />
+        <character name="dehiscence" value="disintegrating" modifier="scarcely" constraint="into fibers" constraintid="o2052" />
+      </structure>
+      <structure id="o2052" name="fiber" />
+    </statement>
+    <statement id="1060.txt-3">
+      <text>Spikes 3 or 4, approximate, oblong-elliptic, 10–15 × 4–5 mm;</text>
+      <structure id="o2053" name="spike">
+        <character name="count" value="3" />
+        <character name="count" value="4" />
+        <character name="feature" value="approximate" />
+        <character name="arrangement_or_shape" value="oblong-elliptic" />
+        <character char_type="range_value" name="length" from="10" from_unit="mm" to="15" to_unit="mm" />
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="5" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1060.txt-4">
+      <text>terminal spike gynaecandrous with short basal male part no more than 3 mm;</text>
+      <structure id="o2054" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" constraint="with part" constraintid="o2055" />
+        <character name="size" value="3" unit="mm" modifier="more than" />
+      </structure>
+      <structure id="o2055" name="part" constraint="basal male">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1060.txt-5">
+      <text>lateral spikes female or with several male flowers at base.</text>
+      <structure id="o2056" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="reproduction" value="with several male flowers" />
+      </structure>
+      <structure id="o2057" name="flower" constraint="several male" />
+      <relation id="r440" name="with" from="o2056" to="o2057" negation="false" />
+      <structure id="o2058" name="base" />
+      <relation id="r441" name="at" from="o2057" to="o2058" negation="false" />
+    </statement>
+    <statement id="1060.txt-6">
+      <text>Female glumes dark purple-brown, ovate to ovate-oblong, ca. 2 × 1–1.5 mm, midrib stramineous, nearly as long as utricle, apex acute.</text>
+      <structure id="o2059" name="glume" constraint="female">
+        <character name="coloration" value="purple-brown" modifier="dark" />
+        <character char_type="range_value" name="shape" from="ovate" to="ovate-oblong" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="ovate-oblong" />
+        <character name="length" value="2" unit="mm" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="1.5" to_unit="mm" />
+      </structure>
+      <structure id="o2060" name="midrib">
+        <character name="coloration" value="stramineous" />
+      </structure>
+      <structure id="o2061" name="utricle" />
+      <relation id="r442" name="as-long-as" from="o2060" to="o2061" negation="false" modifier="nearly" />
+      <structure id="o2062" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1060.txt-7">
+      <text>Utricles oblong-obovate to obovate, rather conspicuously veined, base attenuate, apex contracted into a purple-tinged beak ca. 0.5 mm, orifice subtruncate.</text>
+      <structure id="o2063" name="utricle">
+        <character char_type="range_value" name="shape" from="oblong-obovate" to="obovate" />
+        <character name="shape" value="oblong-obovate" />
+        <character name="shape" value="obovate" />
+        <character name="architecture_or_feature" value="veined" modifier="rather conspicuously" />
+      </structure>
+      <structure id="o2064" name="base">
+        <character name="shape" value="attenuate" />
+      </structure>
+      <structure id="o2065" name="apex">
+        <character name="size" value="contracted" constraint="into beak" constraintid="o2066" />
+      </structure>
+      <structure id="o2066" name="beak">
+        <character name="coloration" value="purple-tinged" />
+        <character name="size" value="0.5" unit="mm" />
+      </structure>
+      <structure id="o2067" name="orifice">
+        <character name="shape" value="subtruncate" />
+      </structure>
+    </statement>
+    <statement id="1060.txt-8">
+      <text>Nutlets rather tightly enveloped, obovate, trigonous, ca. 1.25 mm;</text>
+      <structure id="o2068" name="nutlet">
+        <character name="feature" value="enveloped" modifier="rather tightly" />
+        <character name="shape" value="obovate" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="1.25" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1060.txt-9">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1060.txt-10">
+      <text>Fl. and fr. Jun.</text>
+      <structure id="o2069" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Subalpine meadows or forest margins; 2700–3600 m. SW and W Sichuan, NW Yunnan [Bhutan, India].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

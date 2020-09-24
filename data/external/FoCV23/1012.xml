@@ -20,7 +20,239 @@
     <variety_name>continua</variety_name>
     <variety_authority>(C. B. Clarke) Küken thal.</variety_authority>
   </TaxonIdentification>
-  <description>Rhizome with thick fibers. Culms tufted, 60–90 × ca. 0.3 cm, trigonous, glabrous. Leaves basal and cauline, longer than culms, flat, 6–8 mm wide, scabrid along margins and abaxially, glabrous adaxially; persistent sheaths dark brown, fibriform. Involucral bracts leafy, longer than inflorescence, long sheathed. Panicle compound, ca. 30 cm, 5–9-branched; inflorescence branches single, sometimes binate, ovate-triangular, 3–8 × 1.5–3 cm; peduncles of inflorescence branches tenuous, lowest one to 14 cm, upper ones gradually shorter, trigonous, glabrous; inflorescence axes sharply trigonous, densely hairy on edges; bractlets glumelike, ca. 1.5 mm, loosely hairy abaxially, with long scabrid awns. Spikes numerous, bisexual, androgynous, arising from cladoprophylls, patent, oblong-cylindric, 4–10 mm; male part of spike shorter than female part, oblong, densely 4–10-flowered; female part 3–9-flowered, slightly dense; male glumes pale brownish white with dense brown spots and short lines, lanceolate, 1.7–2.5 mm, membranous, with 1 midrib, upper margins hairy, apex acuminate, mucronate; female glumes pale brownish white with dense brown spots and short lines, ovate, 1.8–2.5 mm, membranous, glabrescent later, with 1 midrib, apex acute, awned or mucronate. Utricles pale brownish green with brown spots and short lines, elliptic, trigonous, 2.7–3 mm, membranous, upper part scabrid, with several raised veins adaxially, subsessile, apex attenuate into excurved long beak, orifice obliquely truncate. Nutlets elliptic, trigonous, ca. 1.7 mm, subsessile, apex not mucronate; style base slightly thickened; stigmas 3.</description>
+  <description>
+    <statement id="1012.txt-0">
+      <text>Rhizome with thick fibers.</text>
+      <structure id="o620" name="rhizome" />
+      <structure id="o621" name="fiber">
+        <character name="width" value="thick" />
+      </structure>
+      <relation id="r146" name="with" from="o620" to="o621" negation="false" />
+    </statement>
+    <statement id="1012.txt-1">
+      <text>Culms tufted, 60–90 × ca. 0.3 cm, trigonous, glabrous.</text>
+      <structure id="o622" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="length" from="60" from_unit="cm" to="90" to_unit="cm" />
+        <character name="width" value="0.3" unit="cm" />
+        <character name="shape" value="trigonous" />
+        <character name="external_texture" value="glabrous" />
+      </structure>
+    </statement>
+    <statement id="1012.txt-2">
+      <text>Leaves basal and cauline, longer than culms, flat, 6–8 mm wide, scabrid along margins and abaxially, glabrous adaxially;</text>
+      <structure id="o623" name="leaf">
+        <character name="position" value="basal" />
+        <character name="position" value="cauline" />
+        <character name="length" value="longer" constraint="than culms" constraintid="o624" />
+        <character name="prominence_or_shape" value="flat" />
+        <character char_type="range_value" name="width" from="6" from_unit="mm" to="8" to_unit="mm" />
+        <character name="relief" value="scabrid" constraint="along margins" constraintid="o625" />
+        <character name="external_texture" value="glabrous" modifier="adaxially" />
+      </structure>
+      <structure id="o624" name="culm" />
+      <structure id="o625" name="margin" />
+    </statement>
+    <statement id="1012.txt-3">
+      <text>persistent sheaths dark brown, fibriform.</text>
+      <structure id="o626" name="sheath" constraint="persistent">
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="feature" value="fibriform" />
+      </structure>
+    </statement>
+    <statement id="1012.txt-4">
+      <text>Involucral bracts leafy, longer than inflorescence, long sheathed.</text>
+      <structure id="o627" name="bract" constraint="involucral">
+        <character name="architecture" value="leafy" />
+        <character name="length" value="longer" constraint="than inflorescence" constraintid="o628" />
+        <character name="architecture_or_feature" value="sheathed" />
+      </structure>
+      <structure id="o628" name="inflorescence" />
+    </statement>
+    <statement id="1012.txt-5">
+      <text>Panicle compound, ca. 30 cm, 5–9-branched;</text>
+      <structure id="o629" name="panicle">
+        <character name="architecture" value="compound" />
+        <character name="size" value="30" unit="cm" />
+        <character name="architecture" value="5-9-branched" />
+      </structure>
+    </statement>
+    <statement id="1012.txt-6">
+      <text>inflorescence branches single, sometimes binate, ovate-triangular, 3–8 × 1.5–3 cm;</text>
+      <structure id="o630" name="branch" constraint="inflorescence">
+        <character name="count" value="single" />
+        <character name="count" value="binate" modifier="sometimes" />
+        <character name="shape" value="ovate-triangular" />
+        <character char_type="range_value" name="length" from="3" from_unit="cm" to="8" to_unit="cm" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="cm" to="3" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1012.txt-7">
+      <text>peduncles of inflorescence branches tenuous, lowest one to 14 cm, upper ones gradually shorter, trigonous, glabrous;</text>
+      <structure id="o631" name="peduncle">
+        <character name="feature" value="tenuous" />
+      </structure>
+      <structure id="o632" name="branch" constraint="inflorescence" />
+      <relation id="r147" name="part_of" from="o631" to="o632" negation="false" />
+      <structure id="o633" name="lowest">
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="14" to_unit="cm" />
+        <character name="position" value="upper" />
+        <character name="height_or_length" value="shorter" modifier="gradually" />
+        <character name="shape" value="trigonous" />
+        <character name="external_texture" value="glabrous" />
+      </structure>
+    </statement>
+    <statement id="1012.txt-8">
+      <text>inflorescence axes sharply trigonous, densely hairy on edges;</text>
+      <structure id="o634" name="axis" constraint="inflorescence">
+        <character name="shape" value="trigonous" modifier="sharply" />
+        <character name="external_texture" value="hairy" modifier="densely" constraint="on edges" constraintid="o635" />
+      </structure>
+      <structure id="o635" name="edge" />
+    </statement>
+    <statement id="1012.txt-9">
+      <text>bractlets glumelike, ca. 1.5 mm, loosely hairy abaxially, with long scabrid awns.</text>
+      <structure id="o636" name="bractlet">
+        <character name="feature" value="glumelike" />
+        <character name="size" value="1.5" unit="mm" />
+        <character name="external_texture" value="hairy" modifier="loosely;abaxially" />
+      </structure>
+      <structure id="o637" name="awn">
+        <character name="length" value="long" />
+        <character name="relief" value="scabrid" />
+      </structure>
+      <relation id="r148" name="with" from="o636" to="o637" negation="false" />
+    </statement>
+    <statement id="1012.txt-10">
+      <text>Spikes numerous, bisexual, androgynous, arising from cladoprophylls, patent, oblong-cylindric, 4–10 mm;</text>
+      <structure id="o639" name="cladoprophyll" />
+    </statement>
+    <statement id="1012.txt-11">
+      <text>male part of spike shorter than female part, oblong, densely 4–10-flowered;</text>
+      <structure id="o640" name="spike" />
+      <relation id="r149" name="may_be_the_same" from="o638" to="o640" negation="false" />
+    </statement>
+    <statement id="1012.txt-12">
+      <text>female part 3–9-flowered, slightly dense;</text>
+      <structure id="o638" name="spike">
+        <character name="count" value="numerous" />
+        <character name="reproduction" value="bisexual" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="orientation" value="arising" constraint="from cladoprophylls" constraintid="o639" />
+        <character name="orientation" value="patent" />
+        <character name="shape" value="oblong-cylindric" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="10" to_unit="mm" />
+        <character name="feature_or_reproduction" value="male" constraint="of spike" constraintid="o640" />
+        <character name="height_or_length" value="shorter than female part" />
+        <character name="shape" value="oblong" />
+        <character name="architecture" value="4-10-flowered" modifier="densely" />
+        <character name="reproduction" value="female" />
+        <character name="architecture" value="3-9-flowered" />
+        <character name="density" value="dense" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1012.txt-13">
+      <text>male glumes pale brownish white with dense brown spots and short lines, lanceolate, 1.7–2.5 mm, membranous, with 1 midrib, upper margins hairy, apex acuminate, mucronate;</text>
+      <structure id="o641" name="glume" constraint="male">
+        <character name="coloration" value="white" modifier="pale-c-brownish" constraint="with lines" constraintid="o642" />
+        <character name="shape" value="lanceolate" />
+        <character char_type="range_value" name="size" from="1.7" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+      </structure>
+      <structure id="o642" name="line">
+        <character name="density" value="dense" />
+        <character name="coloration" value="brown" />
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o643" name="midrib">
+        <character name="count" value="1" />
+      </structure>
+      <relation id="r150" name="with" from="o641" to="o643" negation="false" />
+      <structure id="o644" name="margin" constraint="upper">
+        <character name="external_texture" value="hairy" />
+      </structure>
+      <structure id="o645" name="apex">
+        <character name="shape" value="acuminate" />
+        <character name="shape" value="mucronate" />
+      </structure>
+    </statement>
+    <statement id="1012.txt-14">
+      <text>female glumes pale brownish white with dense brown spots and short lines, ovate, 1.8–2.5 mm, membranous, glabrescent later, with 1 midrib, apex acute, awned or mucronate.</text>
+      <structure id="o646" name="glume" constraint="female">
+        <character name="coloration" value="white" modifier="pale-c-brownish" constraint="with lines" constraintid="o647" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="1.8" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="external_texture" value="glabrescent" modifier="later" />
+      </structure>
+      <structure id="o647" name="line">
+        <character name="density" value="dense" />
+        <character name="coloration" value="brown" />
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o648" name="midrib">
+        <character name="count" value="1" />
+      </structure>
+      <relation id="r151" name="with" from="o646" to="o648" negation="false" />
+      <structure id="o649" name="apex">
+        <character name="shape" value="acute" />
+        <character name="shape" value="awned" />
+        <character name="shape" value="mucronate" />
+      </structure>
+    </statement>
+    <statement id="1012.txt-15">
+      <text>Utricles pale brownish green with brown spots and short lines, elliptic, trigonous, 2.7–3 mm, membranous, upper part scabrid, with several raised veins adaxially, subsessile, apex attenuate into excurved long beak, orifice obliquely truncate.</text>
+      <structure id="o650" name="utricle">
+        <character name="coloration" value="green with brown" modifier="pale-c-brownish" />
+        <character name="height_or_length" value="short" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="2.7" from_unit="mm" to="3" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="position" value="upper" />
+        <character name="relief" value="scabrid" />
+        <character name="architecture" value="subsessile" />
+      </structure>
+      <structure id="o651" name="vein" />
+      <relation id="r152" name="raised" from="o650" to="o651" negation="false" />
+      <structure id="o652" name="apex">
+        <character name="shape" value="attenuate" constraint="into beak" constraintid="o653" />
+      </structure>
+      <structure id="o653" name="beak">
+        <character name="feature" value="excurved" />
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o654" name="orifice">
+        <character name="shape" value="truncate" modifier="obliquely" />
+      </structure>
+    </statement>
+    <statement id="1012.txt-16">
+      <text>Nutlets elliptic, trigonous, ca. 1.7 mm, subsessile, apex not mucronate;</text>
+      <structure id="o655" name="nutlet">
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="1.7" unit="mm" />
+        <character name="architecture" value="subsessile" />
+      </structure>
+      <structure id="o656" name="apex">
+        <character name="shape" value="mucronate" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1012.txt-17">
+      <text>style base slightly thickened;</text>
+      <structure id="o657" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1012.txt-18">
+      <text>stigmas 3.</text>
+      <structure id="o658" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Among shrubs on slopes; ca. 1100 m. S Yunnan [India, Indonesia, Laos, Malaysia, Myanmar, Philippines, Thailand, Vietnam].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

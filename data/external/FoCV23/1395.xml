@@ -23,7 +23,31 @@
       <place_in_publication>10(4): 5. 1990.</place_in_publication>
     </place_of_publication>
   </TaxonIdentification>
-  <description>Leaves longer than culm, blades 2–3 mm wide. Nutlets trigonous, sometimes with 1 angle constricted at middle.</description>
+  <description>
+    <statement id="1395.txt-0">
+      <text>Leaves longer than culm, blades 2–3 mm wide.</text>
+      <structure id="o12119" name="leaf">
+        <character name="length" value="longer" constraint="than culm" constraintid="o12120" />
+      </structure>
+      <structure id="o12120" name="culm" />
+      <structure id="o12121" name="blade">
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1395.txt-1">
+      <text>Nutlets trigonous, sometimes with 1 angle constricted at middle.</text>
+      <structure id="o12122" name="nutlet">
+        <character name="shape" value="trigonous" />
+      </structure>
+      <structure id="o12123" name="angle">
+        <character name="count" value="1" />
+        <character name="size" value="constricted" modifier="at middle" />
+      </structure>
+      <relation id="r2271" name="with" from="o12122" to="o12123" negation="false" modifier="sometimes" />
+    </statement>
+  </description>
   <distribution>● Roadsides, slopes. Anhui.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -13,7 +13,175 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>圆锥薹草 yuan zhui tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome shortly creeping, indurate. Culms loosely tufted, 30–45[–90] cm tall, compressed trigonous, scabrous above, clothed with brown or dark brown bladeless sheaths at base. Leaves shorter than culm, blades linear, 2–3 mm wide, flat, margins scabrous, apex acuminate. Involucral bracts setaceous, shorter than inflorescence. Inflorescence spicate-paniculate, 2–3.5 cm; sometimes lowest spike ± branched; spikes androgynous, broadly ovate, 5–7 mm. Female glumes ferruginous-brown, broadly ovate, ca. 3 × 2 mm, 3-veined, margins pale hyaline, apex acuminate. Utricles ferruginous-brown, greenish above, subequaling glume, broadly ovate, plano-convex, ca. 3 × 2 mm, leathery, with 4 or 5 short veins at base abaxially, nerveless adaxially, base broadly subcordate, spongy, shortly stipitate, distal margins denticulate, apex gradually contracted into a serrulate-margined and narrowly winged beak ca. 1 mm. Nutlets tightly enveloped, obovate, plano-convex, ca. 1.4 × 1.2 mm, base broadly cuneate, shortly stipitate; style base slightly thickened; stigmas 2. Fl. and fr. Jul. 2n = 48, 50, 54, 60.</description>
+  <description>
+    <statement id="1640.txt-0">
+      <text>Rhizome shortly creeping, indurate.</text>
+      <structure id="o19134" name="rhizome">
+        <character name="habit" value="creeping" modifier="shortly" />
+        <character name="external_texture" value="indurate" />
+      </structure>
+    </statement>
+    <statement id="1640.txt-1">
+      <text>Culms loosely tufted, 30–45 [–90 ]cm tall, compressed trigonous, scabrous above, clothed with brown or dark brown bladeless sheaths at base.</text>
+      <structure id="o19135" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="loosely" />
+        <character char_type="range_value" name="atypical_size" from="45" to="90" from_unit="cm" to_unit="cm" from_inclusive="false" />
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="45" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="compressed trigonous" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o19136" name="sheath" constraint="bladeless">
+        <character name="coloration" value="brown" />
+        <character name="coloration" value="brown" modifier="dark" />
+      </structure>
+      <relation id="r3632" name="clothed with" from="o19135" to="o19136" negation="false" />
+      <structure id="o19137" name="base" />
+      <relation id="r3633" name="at" from="o19136" to="o19137" negation="false" />
+    </statement>
+    <statement id="1640.txt-2">
+      <text>Leaves shorter than culm, blades linear, 2–3 mm wide, flat, margins scabrous, apex acuminate.</text>
+      <structure id="o19138" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o19139" />
+      </structure>
+      <structure id="o19139" name="culm" />
+      <structure id="o19140" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o19141" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o19142" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1640.txt-3">
+      <text>Involucral bracts setaceous, shorter than inflorescence.</text>
+      <structure id="o19143" name="bract" constraint="involucral">
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o19144" />
+      </structure>
+      <structure id="o19144" name="inflorescence" />
+    </statement>
+    <statement id="1640.txt-4">
+      <text>Inflorescence spicate-paniculate, 2–3.5 cm;</text>
+      <structure id="o19145" name="inflorescence">
+        <character name="architecture" value="spicate-paniculate" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="3.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1640.txt-5">
+      <text>sometimes lowest spike ± branched;</text>
+      <structure id="o19146" name="spike">
+        <character name="feature" value="lowest" modifier="sometimes" />
+        <character name="architecture" value="branched" modifier="more or less" />
+      </structure>
+    </statement>
+    <statement id="1640.txt-6">
+      <text>spikes androgynous, broadly ovate, 5–7 mm.</text>
+      <structure id="o19147" name="spike">
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="7" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1640.txt-7">
+      <text>Female glumes ferruginous-brown, broadly ovate, ca. 3 × 2 mm, 3-veined, margins pale hyaline, apex acuminate.</text>
+      <structure id="o19148" name="glume" constraint="female">
+        <character name="coloration" value="ferruginous-brown" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="length" value="3" unit="mm" />
+        <character name="width" value="2" unit="mm" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o19149" name="margin">
+        <character name="coloration" value="hyaline" modifier="pale" />
+      </structure>
+      <structure id="o19150" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1640.txt-8">
+      <text>Utricles ferruginous-brown, greenish above, subequaling glume, broadly ovate, planoconvex, ca. 3 × 2 mm, leathery, with 4 or 5 short veins at base abaxially, nerveless adaxially, base broadly subcordate, spongy, shortly stipitate, distal margins denticulate, apex gradually contracted into a serrulate-margined and narrowly winged beak ca. 1 mm.</text>
+      <structure id="o19151" name="utricle">
+        <character name="coloration" value="ferruginous-brown" />
+        <character name="coloration" value="greenish" />
+      </structure>
+      <structure id="o19152" name="glume">
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="shape" value="planoconvex" />
+        <character name="length" value="3" unit="mm" />
+        <character name="width" value="2" unit="mm" />
+        <character name="external_texture_or_feature" value="leathery" />
+      </structure>
+      <structure id="o19153" name="vein">
+        <character name="count" value="4" />
+        <character name="count" value="5" />
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r3634" name="with" from="o19152" to="o19153" negation="false" />
+      <structure id="o19154" name="margin" constraint="distal">
+        <character name="structure" value="base" />
+        <character name="feature" value="nerveless" modifier="abaxially" />
+        <character name="structure" value="base" modifier="adaxially" />
+        <character name="shape" value="subcordate" modifier="broadly" />
+        <character name="internal_texture" value="spongy" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+        <character name="shape" value="denticulate" />
+      </structure>
+      <relation id="r3635" name="at" from="o19153" to="o19154" negation="false" />
+      <structure id="o19155" name="apex">
+        <character name="size" value="contracted" modifier="gradually" constraint="into beak" constraintid="o19156" />
+      </structure>
+      <structure id="o19156" name="beak">
+        <character name="feature" value="serrulate-margined" />
+        <character name="architecture" value="winged" modifier="narrowly" />
+        <character name="size" value="1" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1640.txt-9">
+      <text>Nutlets tightly enveloped, obovate, planoconvex, ca. 1.4 × 1.2 mm, base broadly cuneate, shortly stipitate;</text>
+      <structure id="o19157" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="obovate" />
+        <character name="shape" value="planoconvex" />
+        <character name="length" value="1.4" unit="mm" />
+        <character name="width" value="1.2" unit="mm" />
+      </structure>
+      <structure id="o19158" name="base">
+        <character name="arrangement_or_shape" value="cuneate" modifier="broadly" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1640.txt-10">
+      <text>style base slightly thickened;</text>
+      <structure id="o19159" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1640.txt-11">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1640.txt-12">
+      <text>Fl. and fr. Jul.</text>
+      <structure id="o19160" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+    <statement id="1640.txt-13">
+      <text>2n = 48, 50, 54, 60.</text>
+      <structure name="chromosome" id="o19161">
+        <character name="count" value="48" />
+        <character name="count" value="50" />
+        <character name="count" value="54" />
+        <character name="count" value="60" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Alpine lakes, marshes, boggy meadows. Nei Mongol [Russia (Far East, Siberia); C and SW Asia, C and N Europe, North America, Pacific islands (New Zealand)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -28,7 +28,47 @@
     <species_name>tsangensis</species_name>
     <species_authority>Franchet.</species_authority>
   </TaxonIdentification>
-  <description>Culms 8–15 cm tall. Leaves shorter than culm. Male spike 1, terminal, oblong-lanceolate, 6–8 mm; remaining spikes female, oblong, 8–10 mm. Utricles ca. 2 mm.</description>
+  <description>
+    <statement id="1095.txt-0">
+      <text>Culms 8–15 cm tall.</text>
+      <structure id="o3021" name="culm">
+        <character char_type="range_value" name="size" from="8" from_unit="cm" to="15" to_unit="cm" />
+        <character name="height" value="tall" />
+      </structure>
+    </statement>
+    <statement id="1095.txt-1">
+      <text>Leaves shorter than culm.</text>
+      <structure id="o3022" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o3023" />
+      </structure>
+      <structure id="o3023" name="culm" />
+    </statement>
+    <statement id="1095.txt-2">
+      <text>Male spike 1, terminal, oblong-lanceolate, 6–8 mm;</text>
+      <structure id="o3024" name="spike" constraint="male">
+        <character name="count" value="1" />
+        <character name="position" value="terminal" />
+        <character name="shape" value="oblong-lanceolate" />
+        <character char_type="range_value" name="size" from="6" from_unit="mm" to="8" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1095.txt-3">
+      <text>remaining spikes female, oblong, 8–10 mm.</text>
+      <structure id="o3025" name="spike" constraint="remaining">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="8" from_unit="mm" to="10" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1095.txt-4">
+      <text>Utricles ca. 2 mm.</text>
+      <structure id="o3026" name="utricle">
+        <character name="size" value="2" unit="mm" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forests on mountain slopes, wet places in grasslands; 2300–3000 m. Xizang, Yunnan [India, Kashmir, Pakistan].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

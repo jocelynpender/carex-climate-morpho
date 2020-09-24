@@ -14,7 +14,29 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>昌宁薹草 chang ning tai cao</variety_name>
   </TaxonIdentification>
-  <description>Lowest peduncle distant, slender, 5–11 cm. Utricles longer than female glumes. Fl. and fr. May.</description>
+  <description>
+    <statement id="1549.txt-0">
+      <text>Lowest peduncle distant, slender, 5–11 cm.</text>
+      <structure id="o16752" name="peduncle">
+        <character name="feature" value="lowest" />
+        <character name="arrangement" value="distant" />
+        <character name="size" value="slender" />
+        <character char_type="range_value" name="size" from="5" from_unit="cm" to="11" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1549.txt-1">
+      <text>Utricles longer than female glumes.</text>
+      <structure id="o16754" name="glume" constraint="female" />
+    </statement>
+    <statement id="1549.txt-2">
+      <text>Fl. and fr. May.</text>
+      <structure id="o16753" name="utricle">
+        <character name="length" value="longer" constraint="than female glumes" constraintid="o16754" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Streamsides; 2000–3000 m. W Yunnan (Changning).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

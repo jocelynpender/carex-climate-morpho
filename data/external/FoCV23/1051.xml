@@ -13,8 +13,149 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>刺囊薹草 ci nang tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, rarely obliquely ascending. Culms tufted, 15–80 cm tall, acutely trigonous, smooth below, scabrous above, clothed at base with purple sheaths. Leaves shorter than culm, blades linear, 2–5 mm wide, flat, margins scabrous, apex long acuminate. Basal 1 or 2 involucral bracts longer than inflorescence, sheathless. Spikes 3–6; terminal spike gynaecandrous, oblong, 1–1.5 cm; lateral spikes female, oblong, 8–12 mm, with short peduncles or subsessile. Female glumes dark purple, ovate or broadly ovate, 1.8–2 mm, apex slightly acute or obtuse. Utricles pale green, longer than glume, obovate-elliptic or broadly elliptic, trigonous, 2–2.5 mm, apex abruptly contracted into a very short beak, orifice emarginate. Nutlets castaneous, obovate or obovate-elliptic, 1.5–2 mm; style short; stigmas 3. Fl. and fr. Jun–Aug.</description>
+  <description>
+    <statement id="1051.txt-0">
+      <text>Rhizome short, rarely obliquely ascending.</text>
+      <structure id="o1767" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="orientation" value="ascending" modifier="rarely obliquely" />
+      </structure>
+    </statement>
+    <statement id="1051.txt-1">
+      <text>Culms tufted, 15–80 cm tall, acutely trigonous, smooth below, scabrous above, clothed at base with purple sheaths.</text>
+      <structure id="o1768" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="15" from_unit="cm" to="80" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o1769" name="base" />
+      <relation id="r390" name="clothed at" from="o1768" to="o1769" negation="false" />
+      <structure id="o1770" name="sheath">
+        <character name="coloration" value="purple" />
+      </structure>
+      <relation id="r391" name="with" from="o1769" to="o1770" negation="false" />
+    </statement>
+    <statement id="1051.txt-2">
+      <text>Leaves shorter than culm, blades linear, 2–5 mm wide, flat, margins scabrous, apex long acuminate.</text>
+      <structure id="o1771" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o1772" />
+      </structure>
+      <structure id="o1772" name="culm" />
+      <structure id="o1773" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="5" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o1774" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o1775" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1051.txt-3">
+      <text>Basal 1 or 2 involucral bracts longer than inflorescence, sheathless.</text>
+      <structure id="o1776" name="bract" constraint="involucral">
+        <character name="position" value="basal" />
+        <character name="count" value="1" />
+        <character name="count" value="2" />
+        <character name="length" value="longer" constraint="than inflorescence" constraintid="o1777" />
+        <character name="feature" value="sheathless" />
+      </structure>
+      <structure id="o1777" name="inflorescence" />
+    </statement>
+    <statement id="1051.txt-4">
+      <text>Spikes 3–6;</text>
+      <structure id="o1778" name="spike">
+        <character char_type="range_value" name="count" from="3" to="6" />
+      </structure>
+    </statement>
+    <statement id="1051.txt-5">
+      <text>terminal spike gynaecandrous, oblong, 1–1.5 cm;</text>
+      <structure id="o1779" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="1.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1051.txt-6">
+      <text>lateral spikes female, oblong, 8–12 mm, with short peduncles or subsessile.</text>
+      <structure id="o1780" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="8" from_unit="mm" to="12" to_unit="mm" />
+        <character name="architecture" value="subsessile" />
+      </structure>
+      <structure id="o1781" name="peduncle">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r392" name="with" from="o1780" to="o1781" negation="false" />
+    </statement>
+    <statement id="1051.txt-7">
+      <text>Female glumes dark purple, ovate or broadly ovate, 1.8–2 mm, apex slightly acute or obtuse.</text>
+      <structure id="o1782" name="glume" constraint="female">
+        <character name="coloration" value="purple" modifier="dark" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character char_type="range_value" name="size" from="1.8" from_unit="mm" to="2" to_unit="mm" />
+      </structure>
+      <structure id="o1783" name="apex">
+        <character name="shape" value="acute" modifier="slightly" />
+        <character name="shape" value="obtuse" />
+      </structure>
+    </statement>
+    <statement id="1051.txt-8">
+      <text>Utricles pale green, longer than glume, obovate-elliptic or broadly elliptic, trigonous, 2–2.5 mm, apex abruptly contracted into a very short beak, orifice emarginate.</text>
+      <structure id="o1784" name="utricle">
+        <character name="coloration" value="green" modifier="pale" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o1785" />
+        <character name="arrangement_or_shape" value="obovate-elliptic" />
+        <character name="arrangement_or_shape" value="elliptic" modifier="broadly" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="2.5" to_unit="mm" />
+      </structure>
+      <structure id="o1785" name="glume" />
+      <structure id="o1786" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o1787" />
+      </structure>
+      <structure id="o1787" name="beak">
+        <character name="height_or_length" value="short" modifier="very" />
+      </structure>
+      <structure id="o1788" name="orifice">
+        <character name="shape" value="emarginate" />
+      </structure>
+    </statement>
+    <statement id="1051.txt-9">
+      <text>Nutlets castaneous, obovate or obovate-elliptic, 1.5–2 mm;</text>
+      <structure id="o1789" name="nutlet">
+        <character name="coloration" value="castaneous" />
+        <character name="shape" value="obovate" />
+        <character name="shape" value="obovate-elliptic" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1051.txt-10">
+      <text>style short;</text>
+      <structure id="o1790" name="style">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1051.txt-11">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1051.txt-12">
+      <text>Fl. and fr. Jun–Aug.</text>
+      <structure id="o1791" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Shady and wet places in alpine coniferous forests, shallow water, meadows; 2700–4100 m. W Sichuan, SE Xizang, NW Yunnan [Bhutan, NE India, Kashmir, Nepal].</distribution>
   <discussion>Carex obscura var. obscura occurs in the W Himalayas, Nepal, and Pakistan.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -26,7 +26,107 @@
     <variety_name>pycnostachya</variety_name>
     <variety_authority>(Karelin &amp; Kirilov) Kükenthal.</variety_authority>
   </TaxonIdentification>
-  <description>Rhizome long creeping. Culms 10–50 cm tall, obtusely trigonous, stout. Leaves flat, blades linear, 4–6 mm wide, subfalcate, apex acuminate. Involucral bracts leaflike at base. Spicate inflorescence ovate, dense; spikes androgynous (sometimes male ones in middle), oblong, 6–12(–15) mm. Female glumes pale brown, 1-veined, apex acuminate. Utricles brown or olivaceous, longer than glume, ovate to ovate-elliptic, plano-convex, 3.2–4 mm, 5–8-veined, with veins evanescent, margins scarcely scabrous winged, apex gradually contracted into a beak. Stigmas 2. Fl. and fr. Jun–Jul.</description>
+  <description>
+    <statement id="1666.txt-0">
+      <text>Rhizome long creeping.</text>
+      <structure id="o19766" name="rhizome">
+        <character name="habit" value="creeping" />
+      </structure>
+    </statement>
+    <statement id="1666.txt-1">
+      <text>Culms 10–50 cm tall, obtusely trigonous, stout.</text>
+      <structure id="o19767" name="culm">
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="50" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character name="fragility" value="stout" />
+      </structure>
+    </statement>
+    <statement id="1666.txt-2">
+      <text>Leaves flat, blades linear, 4–6 mm wide, subfalcate, apex acuminate.</text>
+      <structure id="o19768" name="leaf">
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o19769" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="6" to_unit="mm" />
+        <character name="feature" value="subfalcate" />
+      </structure>
+      <structure id="o19770" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1666.txt-3">
+      <text>Involucral bracts leaflike at base.</text>
+      <structure id="o19771" name="bract" constraint="involucral">
+        <character name="architecture" value="leaflike" constraint="at base" constraintid="o19772" />
+      </structure>
+      <structure id="o19772" name="base" />
+    </statement>
+    <statement id="1666.txt-4">
+      <text>Spicate inflorescence ovate, dense;</text>
+      <structure id="o19773" name="inflorescence" constraint="spicate">
+        <character name="shape" value="ovate" />
+        <character name="density" value="dense" />
+      </structure>
+    </statement>
+    <statement id="1666.txt-5">
+      <text>spikes androgynous (sometimes male ones in middle ), oblong, 6–12 (–15 )mm.</text>
+      <structure id="o19774" name="spike">
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="feature_or_reproduction" value="male" modifier="sometimes;in middle" in_brackets="true" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="atypical_size" from="12" to="15" from_unit="mm" to_unit="mm" from_inclusive="false" />
+        <character char_type="range_value" name="size" from="6" from_unit="mm" to="12" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1666.txt-6">
+      <text>Female glumes pale brown, 1-veined, apex acuminate.</text>
+      <structure id="o19775" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o19776" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1666.txt-7">
+      <text>Utricles brown or olivaceous, longer than glume, ovate to ovate-elliptic, planoconvex, 3.2–4 mm, 5–8-veined, with veins evanescent, margins scarcely scabrous winged, apex gradually contracted into a beak.</text>
+      <structure id="o19777" name="utricle">
+        <character name="coloration" value="brown" />
+        <character name="coloration" value="olivaceous" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o19778" />
+        <character char_type="range_value" name="shape" from="ovate" to="ovate-elliptic" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="ovate-elliptic" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="size" from="3.2" from_unit="mm" to="4" to_unit="mm" />
+        <character name="architecture_or_feature" value="5-8-veined" />
+      </structure>
+      <structure id="o19778" name="glume" />
+      <structure id="o19779" name="vein" />
+      <relation id="r3727" name="with" from="o19777" to="o19779" negation="false" />
+      <structure id="o19780" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" modifier="scarcely" />
+        <character name="architecture" value="winged" />
+      </structure>
+      <structure id="o19781" name="apex">
+        <character name="size" value="contracted" modifier="gradually" constraint="into beak" constraintid="o19782" />
+      </structure>
+      <structure id="o19782" name="beak" />
+    </statement>
+    <statement id="1666.txt-8">
+      <text>Stigmas 2.</text>
+    </statement>
+    <statement id="1666.txt-9">
+      <text>Fl. and fr. Jun–Jul.</text>
+      <structure id="o19783" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Grassy slopes, alpine meadows; ca. 1800 m. Xinjiang [NW Mongolia, Russia (W Siberia); C Asia].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -13,7 +13,174 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>宝华山薹草 bao hua shan tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, ligneous. Culms 50–60 cm tall, rather slender, compressed triquetrous, smooth, clothed with reddish brown bladeless sheaths. Leaves shorter than culm, blades 3–4 mm wide, flat, scabrous on upper margins, sheathed, lower sheaths up to 6 cm, usually splitting. Lower involucral bracts leaflike, upper ones subulate, usually shorter than subtending spike; sheaths 1–3 cm. Spikes 3 or 4, solitary in an involucral bract sheath, remote; terminal spike male, cylindric, ca. 3 cm; lateral spikes female, shortly cylindric or cylindric, very loosely 4–6-flowered; peduncles slender, lowermost up to 6.5 cm, upper 1–2 cm. Female glumes white hyaline or sometimes yellowish, gray-green at middle, ovate, ca. 5 mm, membranous, 1-veined, apex acuminate. Utricles brown, suberect, longer than glume, obovate, trigonous, ca. 7 mm, papery, glabrous, several veined, base attenuate into a short stipe, apex contracted into a long beak, orifice obliquely truncate. Nutlets yellow, tightly enveloped, obovate, trigonous, ca. 3 mm; style base persistent, not thickened; stigmas 3. Fl. and fr. Mar–Apr.</description>
+  <description>
+    <statement id="1325.txt-0">
+      <text>Rhizome short, ligneous.</text>
+      <structure id="o9952" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="external_texture" value="ligneous" />
+      </structure>
+    </statement>
+    <statement id="1325.txt-1">
+      <text>Culms 50–60 cm tall, rather slender, compressed triquetrous, smooth, clothed with reddish brown bladeless sheaths.</text>
+      <structure id="o9953" name="culm">
+        <character char_type="range_value" name="size" from="50" from_unit="cm" to="60" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" modifier="rather" />
+        <character name="shape" value="compressed triquetrous" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o9954" name="sheath" constraint="bladeless">
+        <character name="coloration" value="brown" modifier="reddish" />
+      </structure>
+      <relation id="r1850" name="clothed with" from="o9953" to="o9954" negation="false" />
+    </statement>
+    <statement id="1325.txt-2">
+      <text>Leaves shorter than culm, blades 3–4 mm wide, flat, scabrous on upper margins, sheathed, lower sheaths up to 6 cm, usually splitting.</text>
+      <structure id="o9955" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o9956" />
+      </structure>
+      <structure id="o9956" name="culm" />
+      <structure id="o9957" name="blade">
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture_or_relief" value="scabrous" constraint="on margins" constraintid="o9958" />
+        <character name="architecture_or_feature" value="sheathed" />
+      </structure>
+      <structure id="o9958" name="margin" constraint="upper" />
+      <structure id="o9959" name="sheath" constraint="lower">
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="6" to_unit="cm" />
+        <character name="behaviour_or_dehiscence" value="splitting" modifier="usually" />
+      </structure>
+    </statement>
+    <statement id="1325.txt-3">
+      <text>Lower involucral bracts leaflike, upper ones subulate, usually shorter than subtending spike;</text>
+      <structure id="o9960" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="position" value="upper" />
+        <character name="shape" value="subulate" />
+        <character name="height_or_length" value="shorter" modifier="usually" constraint="than subtending spike" constraintid="o9961" />
+      </structure>
+      <structure id="o9961" name="spike" constraint="subtending" />
+    </statement>
+    <statement id="1325.txt-4">
+      <text>sheaths 1–3 cm.</text>
+      <structure id="o9962" name="sheath">
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="3" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1325.txt-5">
+      <text>Spikes 3 or 4, solitary in an involucral bract sheath, remote;</text>
+      <structure id="o9963" name="spike">
+        <character name="count" value="3" />
+        <character name="count" value="4" />
+        <character name="arrangement_or_habit" value="solitary" constraint="in bract sheath" constraintid="o9964" />
+        <character name="arrangement" value="remote" />
+      </structure>
+      <structure id="o9964" name="sheath" constraint="involucral bract" />
+    </statement>
+    <statement id="1325.txt-6">
+      <text>terminal spike male, cylindric, ca. 3 cm;</text>
+      <structure id="o9965" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="cylindric" />
+        <character name="size" value="3" unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1325.txt-7">
+      <text>lateral spikes female, shortly cylindric or cylindric, very loosely 4–6-flowered;</text>
+      <structure id="o9966" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="cylindric" modifier="shortly" />
+        <character name="shape" value="cylindric" />
+        <character name="architecture" value="4-6-flowered" modifier="very loosely" />
+      </structure>
+    </statement>
+    <statement id="1325.txt-8">
+      <text>peduncles slender, lowermost up to 6.5 cm, upper 1–2 cm.</text>
+      <structure id="o9967" name="peduncle">
+        <character name="size" value="slender" />
+        <character name="feature" value="lowermost" />
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="6.5" to_unit="cm" />
+        <character name="position" value="upper" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="2" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1325.txt-9">
+      <text>Female glumes white hyaline or sometimes yellowish, gray-green at middle, ovate, ca. 5 mm, membranous, 1-veined, apex acuminate.</text>
+      <structure id="o9968" name="glume" constraint="female">
+        <character name="coloration" value="hyaline" modifier="white" />
+        <character name="coloration" value="yellowish" modifier="sometimes" />
+        <character name="coloration" value="gray-green" modifier="at middle" />
+        <character name="shape" value="ovate" />
+        <character name="size" value="5" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o9969" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1325.txt-10">
+      <text>Utricles brown, suberect, longer than glume, obovate, trigonous, ca. 7 mm, papery, glabrous, several veined, base attenuate into a short stipe, apex contracted into a long beak, orifice obliquely truncate.</text>
+      <structure id="o9970" name="utricle">
+        <character name="coloration" value="brown" />
+        <character name="orientation" value="suberect" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o9971" />
+        <character name="shape" value="obovate" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="7" unit="mm" />
+        <character name="feature_or_internal_texture" value="papery" />
+        <character name="external_texture" value="glabrous" />
+        <character name="count" value="several" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o9971" name="glume" />
+      <structure id="o9972" name="base">
+        <character name="shape" value="attenuate" constraint="into stipe" constraintid="o9973" />
+      </structure>
+      <structure id="o9973" name="stipe">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o9974" name="apex">
+        <character name="size" value="contracted" constraint="into beak" constraintid="o9975" />
+      </structure>
+      <structure id="o9975" name="beak">
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o9976" name="orifice">
+        <character name="shape" value="truncate" modifier="obliquely" />
+      </structure>
+    </statement>
+    <statement id="1325.txt-11">
+      <text>Nutlets yellow, tightly enveloped, obovate, trigonous, ca. 3 mm;</text>
+      <structure id="o9977" name="nutlet">
+        <character name="coloration" value="yellow" />
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="obovate" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="3" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1325.txt-12">
+      <text>style base persistent, not thickened;</text>
+      <structure id="o9978" name="base" constraint="style">
+        <character name="duration" value="persistent" />
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1325.txt-13">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1325.txt-14">
+      <text>Fl. and fr. Mar–Apr.</text>
+      <structure id="o9979" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Ravines. Jiangsu (Baohua Shan).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

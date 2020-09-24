@@ -13,7 +13,142 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>小果囊薹草 xiao guo nang tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome with slender, rigid stolons. Culms 8–14 cm tall, slender, trigonous, slightly scabrous, clothed at base with sheaths disintegrating into reticulate fibers. Leaves shorter than culm, blades pale green, linear, ca. 1 mm wide, margins revolute. Involucral bracts reduced to shortly bladed, lowest one equaling inflorescence, shortly sheathing. Spikes 3, approximate, sessile; terminal spike gynaecandrous, subclavate, ca. 8 mm; lateral spikes female, oblong or ovate, densely many flowered but loosely flowered at base. Female glumes brown, ovate, margins narrowly white hyaline, 1-veined costa excurrent into a mucro at apex, apex acute. Utricles stramineous-ferruginous, longer than glume, ovate-elliptic, obtusely trigonous, obliquely patent, ca. 2 mm, membranous, faintly veined, base contracted, apex abruptly contracted into a smooth long beak, orifice 2-toothed; stigmas 3.</description>
+  <description>
+    <statement id="1262.txt-0">
+      <text>Rhizome with slender, rigid stolons.</text>
+      <structure id="o8030" name="rhizome" />
+      <structure id="o8031" name="stolon">
+        <character name="size" value="slender" />
+        <character name="internal_texture" value="rigid" />
+      </structure>
+      <relation id="r1471" name="with" from="o8030" to="o8031" negation="false" />
+    </statement>
+    <statement id="1262.txt-1">
+      <text>Culms 8–14 cm tall, slender, trigonous, slightly scabrous, clothed at base with sheaths disintegrating into reticulate fibers.</text>
+      <structure id="o8032" name="culm">
+        <character char_type="range_value" name="size" from="8" from_unit="cm" to="14" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="trigonous" />
+        <character name="external_texture_or_relief" value="scabrous" modifier="slightly" />
+      </structure>
+      <structure id="o8033" name="base" />
+      <relation id="r1472" name="clothed at" from="o8032" to="o8033" negation="false" />
+      <structure id="o8034" name="sheath">
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o8035" />
+      </structure>
+      <relation id="r1473" name="with" from="o8033" to="o8034" negation="false" />
+      <structure id="o8035" name="fiber">
+        <character name="architecture_or_pattern_or_relief" value="reticulate" />
+      </structure>
+    </statement>
+    <statement id="1262.txt-2">
+      <text>Leaves shorter than culm, blades pale green, linear, ca. 1 mm wide, margins revolute.</text>
+      <structure id="o8036" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o8037" />
+      </structure>
+      <structure id="o8037" name="culm" />
+      <structure id="o8038" name="blade">
+        <character name="coloration" value="green" modifier="pale" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character name="width" value="1" unit="mm" />
+      </structure>
+      <structure id="o8039" name="margin">
+        <character name="shape_or_vernation" value="revolute" />
+      </structure>
+    </statement>
+    <statement id="1262.txt-3">
+      <text>Involucral bracts reduced to shortly bladed, lowest one equaling inflorescence, shortly sheathing.</text>
+      <structure id="o8040" name="bract" constraint="involucral">
+        <character name="size" value="reduced" />
+        <character name="feature" value="lowest" />
+        <character name="architecture_or_feature_or_shape" value="sheathing" modifier="shortly" />
+      </structure>
+      <structure id="o8041" name="inflorescence" />
+      <relation id="r1474" name="equaling" from="o8040" to="o8041" negation="false" />
+    </statement>
+    <statement id="1262.txt-4">
+      <text>Spikes 3, approximate, sessile;</text>
+      <structure id="o8042" name="spike">
+        <character name="count" value="3" />
+        <character name="feature" value="approximate" />
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+    </statement>
+    <statement id="1262.txt-5">
+      <text>terminal spike gynaecandrous, subclavate, ca. 8 mm;</text>
+      <structure id="o8043" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+        <character name="feature" value="subclavate" />
+        <character name="size" value="8" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1262.txt-6">
+      <text>lateral spikes female, oblong or ovate, densely many flowered but loosely flowered at base.</text>
+      <structure id="o8044" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="ovate" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" modifier="loosely flowered" constraint="at base" constraintid="o8045" />
+      </structure>
+      <structure id="o8045" name="base" />
+    </statement>
+    <statement id="1262.txt-7">
+      <text>Female glumes brown, ovate, margins narrowly white hyaline, 1-veined costa excurrent into a mucro at apex, apex acute.</text>
+      <structure id="o8046" name="glume" constraint="female">
+        <character name="coloration" value="brown" />
+        <character name="shape" value="ovate" />
+      </structure>
+      <structure id="o8047" name="margin">
+        <character name="coloration" value="hyaline" modifier="narrowly;white" />
+        <character name="architecture_or_feature" value="1-veined" />
+        <character name="architecture" value="excurrent" constraint="into mucro" constraintid="o8049" />
+      </structure>
+      <structure id="o8048" name="costa" />
+      <structure id="o8049" name="mucro" />
+      <structure id="o8050" name="apex" />
+      <relation id="r1475" name="at" from="o8049" to="o8050" negation="false" />
+      <structure id="o8051" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+      <relation id="r1476" name="may_be_the_same" from="o8050" to="o8051" negation="false" />
+    </statement>
+    <statement id="1262.txt-8">
+      <text>Utricles stramineous-ferruginous, longer than glume, ovate-elliptic, obtusely trigonous, obliquely patent, ca. 2 mm, membranous, faintly veined, base contracted, apex abruptly contracted into a smooth long beak, orifice 2-toothed;</text>
+      <structure id="o8052" name="utricle">
+        <character name="length" value="longer" constraint="than glume" constraintid="o8053" />
+        <character name="arrangement_or_shape" value="ovate-elliptic" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character name="orientation" value="patent" modifier="obliquely" />
+        <character name="size" value="2" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="veined" modifier="faintly" />
+      </structure>
+      <structure id="o8053" name="glume" />
+      <structure id="o8054" name="base">
+        <character name="size" value="contracted" />
+      </structure>
+      <structure id="o8055" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o8056" />
+      </structure>
+      <structure id="o8056" name="beak">
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o8057" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1262.txt-9">
+      <text>stigmas 3.</text>
+      <structure id="o8058" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● About 3500 m. Sichuan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

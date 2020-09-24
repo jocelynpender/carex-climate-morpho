@@ -13,7 +13,191 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>亮果薹草 liang guo tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome rather slender, ligneous. Culms tufted, 25–70 cm tall, triquetrous, smooth, clothed with red-brown bladeless or shortly bladed sheaths at base. Leaves basal, shorter or longer than culm, blades 3–5 mm wide, with 2 distinct lateral veins, smooth, scabrous on upper margins; sheaths red-brown, splitting at membranous part. Involucral bracts leaflike, usually longer than subtending spike, sheathed, with liguliform or semiorbicular ligule at mouth of sheath. Spikes 5–8; terminal 1 or 2 spikes male, oblong or narrowly cylindric, 1–3 cm; remaining spikes androgynous, female part longer than male part, cylindric or lanceolate, (1.5–)3–6 cm, densely many flowered; peduncles slender, lowest peduncle 5–11 cm, upper ones rather short. Female glumes cinereous-green at middle, brownish on sides, ovate, ca. 2.5 mm (excluding length of arista), membranous, 3-veined, apex mucronate or aristate. Utricles yellowish green, brownish near base, much longer than glume, obliquely patent, elliptic or obovate-elliptic, obtusely trigonous or plano-convex, 6–7 mm, shiny, 7-veined abaxially, base cuneate, shortly stipitate, apex abruptly contracted into a long beak, spinulose on margins of beak. Nutlets pale yellow, rather tightly enveloped, obovate-elliptic, trigonous, ca. 2 mm, base shortly stipitate, apex mucronate; stigmas 3. Fl. and fr. Apr–May.</description>
+  <description>
+    <statement id="1307.txt-0">
+      <text>Rhizome rather slender, ligneous.</text>
+      <structure id="o9366" name="rhizome">
+        <character name="size" value="slender" modifier="rather" />
+        <character name="external_texture" value="ligneous" />
+      </structure>
+    </statement>
+    <statement id="1307.txt-1">
+      <text>Culms tufted, 25–70 cm tall, triquetrous, smooth, clothed with red-brown bladeless or shortly bladed sheaths at base.</text>
+      <structure id="o9367" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="25" from_unit="cm" to="70" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="triquetrous" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o9368" name="sheath">
+        <character name="coloration" value="red-brown" />
+      </structure>
+      <relation id="r1725" name="clothed with" from="o9367" to="o9368" negation="false" />
+      <structure id="o9369" name="base" />
+      <relation id="r1726" name="at" from="o9368" to="o9369" negation="false" />
+    </statement>
+    <statement id="1307.txt-2">
+      <text>Leaves basal, shorter or longer than culm, blades 3–5 mm wide, with 2 distinct lateral veins, smooth, scabrous on upper margins;</text>
+      <structure id="o9370" name="leaf">
+        <character name="position" value="basal" />
+      </structure>
+      <structure id="o9371" name="culm" />
+      <structure id="o9372" name="blade">
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="5" to_unit="mm" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="external_texture_or_relief" value="scabrous" constraint="on margins" constraintid="o9374" />
+      </structure>
+      <structure id="o9373" name="vein" constraint="lateral">
+        <character name="count" value="2" />
+        <character name="fusion" value="distinct" />
+      </structure>
+      <relation id="r1727" name="with" from="o9372" to="o9373" negation="false" />
+      <structure id="o9374" name="margin" constraint="upper" />
+    </statement>
+    <statement id="1307.txt-3">
+      <text>sheaths red-brown, splitting at membranous part.</text>
+      <structure id="o9375" name="sheath">
+        <character name="coloration" value="red-brown" />
+        <character name="behaviour_or_dehiscence" value="splitting" constraint="at part" constraintid="o9376" />
+      </structure>
+      <structure id="o9376" name="part" constraint="membranous" />
+    </statement>
+    <statement id="1307.txt-4">
+      <text>Involucral bracts leaflike, usually longer than subtending spike, sheathed, with liguliform or semiorbicular ligule at mouth of sheath.</text>
+      <structure id="o9377" name="bract" constraint="involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="length" value="longer" modifier="usually" constraint="than subtending spike" constraintid="o9378" />
+        <character name="architecture_or_feature" value="sheathed" />
+      </structure>
+      <structure id="o9378" name="spike" constraint="subtending" />
+      <structure id="o9379" name="ligule">
+        <character name="shape" value="liguliform" />
+        <character name="feature" value="semiorbicular" />
+      </structure>
+      <relation id="r1728" name="with" from="o9377" to="o9379" negation="false" />
+      <structure id="o9380" name="mouth" />
+      <relation id="r1729" name="at" from="o9379" to="o9380" negation="false" />
+      <structure id="o9381" name="sheath" />
+      <relation id="r1730" name="part_of" from="o9380" to="o9381" negation="false" />
+    </statement>
+    <statement id="1307.txt-5">
+      <text>Spikes 5–8;</text>
+      <structure id="o9382" name="spike">
+        <character char_type="range_value" name="count" from="5" to="8" />
+      </structure>
+    </statement>
+    <statement id="1307.txt-6">
+      <text>terminal 1 or 2 spikes male, oblong or narrowly cylindric, 1–3 cm;</text>
+      <structure id="o9383" name="terminal">
+        <character name="type" value="1 or 2 spikes" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="cylindric" modifier="narrowly" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="3" to_unit="cm" />
+      </structure>
+      <structure id="o9384" name="spike">
+        <character name="count" value="1" modifier="count list" />
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+    <statement id="1307.txt-7">
+      <text>remaining spikes androgynous, female part longer than male part, cylindric or lanceolate, (1 .5– )3–6 cm, densely many flowered;</text>
+      <structure id="o9385" name="spike" constraint="remaining">
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="reproduction" value="female" />
+        <character name="length" value="longer than male part" />
+        <character name="shape" value="cylindric" />
+        <character name="shape" value="lanceolate" />
+        <character char_type="range_value" name="atypical_size" from="1.5" to="3" from_unit="cm" to_unit="cm" to_inclusive="false" />
+        <character char_type="range_value" name="size" from="3" from_unit="cm" to="6" to_unit="cm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+    </statement>
+    <statement id="1307.txt-8">
+      <text>peduncles slender, lowest peduncle 5–11 cm, upper ones rather short.</text>
+      <structure id="o9386" name="peduncle">
+        <character name="size" value="slender" />
+      </structure>
+      <structure id="o9387" name="peduncle">
+        <character name="feature" value="lowest" />
+        <character char_type="range_value" name="size" from="5" from_unit="cm" to="11" to_unit="cm" />
+        <character name="position" value="upper" />
+        <character name="height_or_length" value="short" modifier="rather" />
+      </structure>
+      <relation id="r1731" name="may_be_the_same" from="o9386" to="o9387" negation="false" />
+    </statement>
+    <statement id="1307.txt-9">
+      <text>Female glumes cinereous-green at middle, brownish on sides, ovate, ca. 2.5 mm (excluding length of arista ), membranous, 3-veined, apex mucronate or aristate.</text>
+      <structure id="o9388" name="glume" constraint="female">
+        <character name="coloration" value="cinereous-green" modifier="at middle" />
+        <character name="coloration" value="brownish" constraint="on sides" constraintid="o9389" />
+        <character name="shape" value="ovate" />
+        <character name="size" value="2.5" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o9389" name="side" />
+      <structure id="o9390" name="arista" in_brackets="true" />
+      <relation id="r1732" name="excluding length of" from="o9388" to="o9390" negation="false" in_brackets="true" />
+      <structure id="o9391" name="apex">
+        <character name="shape" value="mucronate" />
+        <character name="shape" value="aristate" />
+      </structure>
+    </statement>
+    <statement id="1307.txt-10">
+      <text>Utricles yellowish green, brownish near base, much longer than glume, obliquely patent, elliptic or obovate-elliptic, obtusely trigonous or planoconvex, 6–7 mm, shiny, 7-veined abaxially, base cuneate, shortly stipitate, apex abruptly contracted into a long beak, spinulose on margins of beak.</text>
+      <structure id="o9392" name="utricle">
+        <character name="coloration" value="green" modifier="yellowish" />
+        <character name="coloration" value="brownish" />
+        <character char_type="range_value" name="base , much longer  glume , obliquely patent , elliptic  shapshape~list~obovate-elliptic~punct~obtusely~trigonous~~planoconvex ," from="6" from_unit="mm" to="7" to_unit="mm" />
+        <character name="reflectance" value="shiny" />
+        <character name="architecture_or_feature" value="7-veined" modifier="abaxially" />
+      </structure>
+      <structure id="o9393" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o9394" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o9395" />
+        <character name="architecture_or_shape" value="spinulose" constraint="on margins" constraintid="o9396" />
+      </structure>
+      <structure id="o9395" name="beak">
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o9396" name="margin" />
+      <structure id="o9397" name="beak" />
+      <relation id="r1733" name="part_of" from="o9396" to="o9397" negation="false" />
+      <relation id="r1734" name="may_be_the_same" from="o9395" to="o9397" negation="false" />
+    </statement>
+    <statement id="1307.txt-11">
+      <text>Nutlets pale yellow, rather tightly enveloped, obovate-elliptic, trigonous, ca. 2 mm, base shortly stipitate, apex mucronate;</text>
+      <structure id="o9398" name="nutlet">
+        <character name="coloration" value="yellow" modifier="pale" />
+        <character name="feature" value="enveloped" modifier="rather tightly" />
+        <character name="arrangement_or_shape" value="obovate-elliptic" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+      <structure id="o9399" name="apex">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+        <character name="shape" value="mucronate" />
+      </structure>
+      <relation id="r1735" name="base" from="o9398" to="o9399" negation="false" />
+    </statement>
+    <statement id="1307.txt-12">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1307.txt-13">
+      <text>Fl. and fr. Apr–May.</text>
+      <structure id="o9400" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Forests on mountain slopes, wet places in fields, ravines; 2000–2300 m. C and E Yunnan (Fumin, Kunming, Shizong).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

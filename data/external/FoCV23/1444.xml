@@ -16,7 +16,34 @@
     <subspecies_name>arisanensis</subspecies_name>
     <subspecies_authority>(Hayata) T. Koyama.</subspecies_authority>
   </TaxonIdentification>
-  <description>Leaves 4–8 mm wide. Involucral bracts sheathing 2–4 cm. Spikes 3 or 4, lowest with long peduncle.</description>
+  <description>
+    <statement id="1444.txt-0">
+      <text>Leaves 4–8 mm wide.</text>
+      <structure id="o13566" name="leaf">
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="8" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1444.txt-1">
+      <text>Involucral bracts sheathing 2–4 cm.</text>
+      <structure id="o13567" name="bract" constraint="involucral">
+        <character name="architecture_or_feature_or_shape" value="sheathing" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="4" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1444.txt-2">
+      <text>Spikes 3 or 4, lowest with long peduncle.</text>
+      <structure id="o13568" name="spike">
+        <character name="count" value="3" />
+        <character name="count" value="4" />
+        <character name="feature" value="lowest" constraint="with peduncle" constraintid="o13569" />
+      </structure>
+      <structure id="o13569" name="peduncle">
+        <character name="length" value="long" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forests; 900–1100 m. Guangxi, Hunan, Taiwan [Japan].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

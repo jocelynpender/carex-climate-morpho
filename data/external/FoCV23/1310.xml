@@ -13,7 +13,160 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>九仙山薹草 jiu xian shan tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome rather thick, ligneous, clothed with sheaths, sheaths usually disintegrating into fibers. Culms tufted, 30–70 cm tall, obtusely trigonous, smooth. Leaves basal, equaling or shorter than culm, blades (3–)5–7 mm wide, flat, scabrous on both surfaces and margins, sheathed. Lower involucral bracts leaflike, sheaths up to 3 cm, upper blades of involucral bracts setaceous, shortly sheathed, sheaths only 2–3 mm. Spikes 8–10 or more, usually 1–3 in an involucral bract sheath, lower spikes remote, upper spikes ± contiguous; terminal spike male, linear; lateral spikes female, cylindric, 3–6 cm, loosely many flowered. Female glumes deciduous earlier than utricles, pale, lanceolate-ovate, ca. 3 mm, membranous, 1-veined, hispid on vein, apex mucronate or aristate. Utricles yellowish green, longer than glume, horizontally patent at maturity, elliptic-ovate, plano-convex, ca. 6 mm, papery, shiny, 5-veined abaxially, base broadly cuneate, apex gradually narrowed to a long beak, orifice thinly membranous, shortly 2-toothed. Nutlets loosely enveloped, elliptic, trigonous, ca. 2 mm, base stipitate; stigmas 3. Fl. and fr. May–Jun.</description>
+  <description>
+    <statement id="1310.txt-0">
+      <text>Rhizome rather thick, ligneous, clothed with sheaths, sheaths usually disintegrating into fibers.</text>
+      <structure id="o9507" name="rhizome">
+        <character name="width" value="thick" modifier="rather" />
+        <character name="external_texture" value="ligneous" />
+      </structure>
+      <structure id="o9508" name="sheath" constraint="sheaths">
+        <character name="dehiscence" value="disintegrating" modifier="usually" constraint="into fibers" constraintid="o9509" />
+      </structure>
+      <relation id="r1756" name="clothed with" from="o9507" to="o9508" negation="false" />
+      <structure id="o9509" name="fiber" />
+    </statement>
+    <statement id="1310.txt-1">
+      <text>Culms tufted, 30–70 cm tall, obtusely trigonous, smooth.</text>
+      <structure id="o9510" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="70" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+    </statement>
+    <statement id="1310.txt-2">
+      <text>Leaves basal, equaling or shorter than culm, blades (3– )5–7 mm wide, flat, scabrous on both surfaces and margins, sheathed.</text>
+      <structure id="o9511" name="leaf">
+        <character name="position" value="basal" />
+        <character char_type="range_value" name="width" from="3" to="5" from_unit="mm" to_unit="mm" to_inclusive="false" modifier="or   shorter than culm, blades" />
+        <character char_type="range_value" name="width" from="5" from_unit="mm" to="7" to_unit="mm" modifier="or   shorter than culm, blades" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture_or_relief" value="scabrous" constraint="on margins" constraintid="o9512" />
+        <character name="architecture_or_feature" value="sheathed" />
+      </structure>
+      <structure id="o9512" name="margin" />
+    </statement>
+    <statement id="1310.txt-3">
+      <text>Lower involucral bracts leaflike, sheaths up to 3 cm, upper blades of involucral bracts setaceous, shortly sheathed, sheaths only 2–3 mm.</text>
+      <structure id="o9513" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+      </structure>
+      <structure id="o9514" name="sheath">
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="3" to_unit="cm" />
+      </structure>
+      <structure id="o9515" name="blade" constraint="upper">
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="architecture_or_feature" value="sheathed" modifier="shortly" />
+      </structure>
+      <structure id="o9516" name="bract" constraint="involucral" />
+      <relation id="r1757" name="part_of" from="o9515" to="o9516" negation="false" />
+      <structure id="o9517" name="sheath">
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="3" to_unit="mm" modifier="only" />
+      </structure>
+      <relation id="r1758" name="may_be_the_same" from="o9514" to="o9517" negation="false" />
+    </statement>
+    <statement id="1310.txt-4">
+      <text>Spikes 8–10 or more, usually 1–3 in an involucral bract sheath, lower spikes remote, upper spikes ± contiguous;</text>
+      <structure id="o9518" name="spike">
+        <character char_type="range_value" name="count" from="8" to="10" />
+        <character char_type="range_value" name="count" from="8" to="10" modifier="more" />
+        <character char_type="range_value" name="count" from="1" to="3" modifier="usually" constraint="in bract sheath" constraintid="o9519" />
+      </structure>
+      <structure id="o9519" name="sheath" constraint="involucral bract" />
+      <structure id="o9520" name="spike" constraint="lower">
+        <character name="arrangement" value="remote" />
+      </structure>
+      <structure id="o9521" name="spike" constraint="upper">
+        <character name="arrangement" value="contiguous" modifier="more or less" />
+      </structure>
+    </statement>
+    <statement id="1310.txt-5">
+      <text>terminal spike male, linear;</text>
+      <structure id="o9522" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="arrangement_or_shape" value="linear" />
+      </structure>
+    </statement>
+    <statement id="1310.txt-6">
+      <text>lateral spikes female, cylindric, 3–6 cm, loosely many flowered.</text>
+      <structure id="o9523" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="3" from_unit="cm" to="6" to_unit="cm" />
+        <character name="count" value="many" modifier="loosely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+    </statement>
+    <statement id="1310.txt-7">
+      <text>Female glumes deciduous earlier than utricles, pale, lanceolate-ovate, ca. 3 mm, membranous, 1-veined, hispid on vein, apex mucronate or aristate.</text>
+      <structure id="o9524" name="glume" constraint="female">
+        <character name="habit" value="deciduous" />
+        <character name="feature" value="earlier" constraint="than utricles" constraintid="o9525" />
+        <character name="coloration" value="pale" />
+        <character name="shape" value="lanceolate-ovate" />
+        <character name="size" value="3" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="1-veined" />
+        <character name="external_texture" value="hispid" constraint="on vein" constraintid="o9526" />
+      </structure>
+      <structure id="o9525" name="utricle" />
+      <structure id="o9526" name="vein" />
+      <structure id="o9527" name="apex">
+        <character name="shape" value="mucronate" />
+        <character name="shape" value="aristate" />
+      </structure>
+    </statement>
+    <statement id="1310.txt-8">
+      <text>Utricles yellowish green, longer than glume, horizontally patent at maturity, elliptic-ovate, planoconvex, ca. 6 mm, papery, shiny, 5-veined abaxially, base broadly cuneate, apex gradually narrowed to a long beak, orifice thinly membranous, shortly 2-toothed.</text>
+      <structure id="o9528" name="utricle">
+        <character name="coloration" value="green" modifier="yellowish" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o9529" />
+        <character name="orientation" value="patent" modifier="horizontally" />
+        <character name="maturity , elliptic-ovate , planoconvex ," value="6" unit="mm" />
+        <character name="feature_or_internal_texture" value="papery" />
+        <character name="reflectance" value="shiny" />
+        <character name="architecture_or_feature" value="5-veined" modifier="abaxially" />
+      </structure>
+      <structure id="o9529" name="glume" />
+      <structure id="o9530" name="base">
+        <character name="arrangement_or_shape" value="cuneate" modifier="broadly" />
+      </structure>
+      <structure id="o9531" name="apex" />
+      <structure id="o9532" name="beak">
+        <character name="length" value="long" />
+      </structure>
+      <relation id="r1759" name="narrowed to" from="o9531" to="o9532" negation="false" modifier="gradually" />
+      <structure id="o9533" name="orifice">
+        <character name="feature" value="membranous" modifier="thinly" />
+        <character name="shape" value="2-toothed" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1310.txt-9">
+      <text>Nutlets loosely enveloped, elliptic, trigonous, ca. 2 mm, base stipitate;</text>
+      <structure id="o9534" name="nutlet">
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+      <structure id="o9535" name="base">
+        <character name="architecture" value="stipitate" />
+      </structure>
+    </statement>
+    <statement id="1310.txt-10">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1310.txt-11">
+      <text>Fl. and fr. May–Jun.</text>
+      <structure id="o9536" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Wet places in forests, streamsides, grasslands. Fujian (Dehua, Shanghang), Zhejiang.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

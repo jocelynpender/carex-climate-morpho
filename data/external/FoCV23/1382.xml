@@ -18,7 +18,188 @@
     <species_name>taihokuensis</species_name>
     <species_authority>Hayata.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome short. Culms lateral, slender, 10–30 cm tall, trigonous, erect, smooth, clothed at base with 2–4 purplish or dark brown, bladeless or shortly bladed sheaths disintegrating into parallel fibers. Leaves surpassing culm, blades broadly or narrowly linear, 2.5–8 mm wide, flattish, soft or subrigid. Spikes 2–4, all or occasionally except lowest one subfastigiate; terminal spike male, pale brownish, linear, 5–10 mm, surpassed by next female spike, few or several flowered; lateral spikes female or rarely with a few male flowers at apex, suberect, oblong, 7–12 × ca. 5 mm, subloosely 3–7-flowered, sessile or subsessile. Female glumes pale, lanceolate to lanceolate-oblong, 3–4 mm, membranous, glaucous green 3-veined costa projecting beyond apex forming a short erect awn or cusp, apex subacute. Utricles light green, longer than glume, erect-patent, rhomboid or rhomboid-ovate, trigonous, 6–7 mm, papery, glabrous to sparsely hirsute, faintly several veined, base cuneate, shortly stipitate, apex truncate and narrowed to a slender beak ca. 2 mm, beak scabrous on edges, 2-toothed at orifice. Nutlets tightly enveloped, ovate or oblong-ovate, ca. 3 mm, trigonous with shallowly concave sides; style base slightly thickened; stigmas 3.</description>
+  <description>
+    <statement id="1382.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o11810" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1382.txt-1">
+      <text>Culms lateral, slender, 10–30 cm tall, trigonous, erect, smooth, clothed at base with 2–4 purplish or dark brown, bladeless or shortly bladed sheaths disintegrating into parallel fibers.</text>
+      <structure id="o11811" name="culm">
+        <character name="position" value="lateral" />
+        <character name="size" value="slender" />
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="30" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="orientation" value="erect" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o11812" name="base" />
+      <relation id="r2205" name="clothed at" from="o11811" to="o11812" negation="false" />
+      <structure id="o11813" name="sheath">
+        <character char_type="range_value" name="count" from="2" to="4" />
+        <character name="coloration" value="purplish" />
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o11814" />
+      </structure>
+      <relation id="r2206" name="with" from="o11812" to="o11813" negation="false" />
+      <structure id="o11814" name="fiber">
+        <character name="arrangement" value="parallel" />
+      </structure>
+    </statement>
+    <statement id="1382.txt-2">
+      <text>Leaves surpassing culm, blades broadly or narrowly linear, 2.5–8 mm wide, flattish, soft or subrigid.</text>
+      <structure id="o11815" name="leaf" />
+      <structure id="o11816" name="culm" />
+      <relation id="r2207" name="surpassing" from="o11815" to="o11816" negation="false" />
+      <structure id="o11817" name="blade">
+        <character name="arrangement_or_shape" value="linear" modifier="broadly~or~narrowly" />
+        <character char_type="range_value" name="width" from="2.5" from_unit="mm" to="8" to_unit="mm" />
+        <character name="external_texture" value="soft" />
+        <character name="feature" value="subrigid" />
+      </structure>
+    </statement>
+    <statement id="1382.txt-3">
+      <text>Spikes 2–4, all or occasionally except lowest one subfastigiate;</text>
+      <structure id="o11818" name="spike">
+        <character char_type="range_value" name="count" from="2" to="4" />
+        <character name="feature" value="lowest" />
+        <character name="feature" value="subfastigiate" />
+      </structure>
+    </statement>
+    <statement id="1382.txt-4">
+      <text>terminal spike male, pale brownish, linear, 5–10 mm, surpassed by next female spike, few or several flowered;</text>
+      <structure id="o11819" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="coloration" value="brownish" modifier="pale" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="10" to_unit="mm" />
+        <character name="count" value="few" />
+        <character name="count" value="several" />
+        <character name="architecture" value="flowered" />
+      </structure>
+      <structure id="o11820" name="spike" constraint="female" />
+      <relation id="r2208" name="surpassed by" from="o11819" to="o11820" negation="false" />
+    </statement>
+    <statement id="1382.txt-5">
+      <text>lateral spikes female or rarely with a few male flowers at apex, suberect, oblong, 7–12 × ca. 5 mm, subloosely 3–7-flowered, sessile or subsessile.</text>
+      <structure id="o11821" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="reproduction" value="rarely with a few male flowers" />
+        <character name="orientation" value="suberect" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="length" from="7" from_unit="mm" to="12" to_unit="mm" />
+        <character name="width" value="5" unit="mm" />
+        <character name="architecture" value="3-7-flowered" modifier="subloosely" />
+        <character name="architecture" value="sessile" />
+        <character name="architecture" value="subsessile" />
+      </structure>
+      <structure id="o11822" name="flower" constraint="male">
+        <character name="count" value="few" />
+      </structure>
+      <relation id="r2209" name="with" from="o11821" to="o11822" negation="false" modifier="rarely" />
+      <structure id="o11823" name="apex" />
+      <relation id="r2210" name="at" from="o11822" to="o11823" negation="false" />
+    </statement>
+    <statement id="1382.txt-6">
+      <text>Female glumes pale, lanceolate to lanceolate-oblong, 3–4 mm, membranous, glaucous green 3-veined costa projecting beyond apex forming a short erect awn or cusp, apex subacute.</text>
+      <structure id="o11824" name="glume" constraint="female">
+        <character name="coloration" value="pale" />
+        <character char_type="range_value" name="shape" from="lanceolate" to="lanceolate-oblong" />
+        <character name="shape" value="lanceolate" />
+        <character name="shape" value="lanceolate-oblong" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="external_texture" value="glaucous" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o11825" name="costa" />
+      <structure id="o11826" name="apex" />
+      <relation id="r2211" name="projecting beyond" from="o11824" to="o11826" negation="false" />
+      <structure id="o11827" name="awn">
+        <character name="height_or_length" value="short" />
+        <character name="orientation" value="erect" />
+      </structure>
+      <structure id="o11828" name="cusp">
+        <character name="height_or_length" value="short" />
+        <character name="orientation" value="erect" />
+      </structure>
+      <relation id="r2212" name="forming" from="o11824" to="o11827" negation="false" />
+      <relation id="r2213" name="forming" from="o11824" to="o11828" negation="false" />
+      <structure id="o11829" name="apex">
+        <character name="shape" value="subacute" />
+      </structure>
+      <relation id="r2214" name="may_be_the_same" from="o11826" to="o11829" negation="false" />
+    </statement>
+    <statement id="1382.txt-7">
+      <text>Utricles light green, longer than glume, erect-patent, rhomboid or rhomboid-ovate, trigonous, 6–7 mm, papery, glabrous to sparsely hirsute, faintly several veined, base cuneate, shortly stipitate, apex truncate and narrowed to a slender beak ca. 2 mm, beak scabrous on edges, 2-toothed at orifice.</text>
+      <structure id="o11830" name="utricle">
+        <character name="coloration" value="green" modifier="light" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o11831" />
+        <character name="orientation" value="erect-patent" />
+        <character name="shape" value="rhomboid" />
+        <character name="shape" value="rhomboid-ovate" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="6" from_unit="mm" to="7" to_unit="mm" />
+        <character name="feature_or_internal_texture" value="papery" />
+        <character char_type="range_value" name="external_texture" from="glabrous" to="sparsely hirsute" />
+        <character name="external_texture" value="glabrous" />
+        <character name="external_texture" value="hirsute" modifier="sparsely" />
+        <character name="count" value="several" modifier="faintly" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o11831" name="glume" />
+      <structure id="o11832" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o11833" name="apex">
+        <character name="shape" value="truncate" />
+      </structure>
+      <structure id="o11834" name="beak">
+        <character name="size" value="slender" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+      <relation id="r2215" name="narrowed to" from="o11833" to="o11834" negation="false" />
+      <structure id="o11835" name="beak">
+        <character name="external_texture_or_relief" value="scabrous" constraint="on edges" constraintid="o11836" />
+        <character name="shape" value="2-toothed" constraint="at orifice" constraintid="o11837" />
+      </structure>
+      <structure id="o11836" name="edge" />
+      <structure id="o11837" name="orifice" />
+      <relation id="r2216" name="may_be_the_same" from="o11834" to="o11835" negation="false" />
+    </statement>
+    <statement id="1382.txt-8">
+      <text>Nutlets tightly enveloped, ovate or oblong-ovate, ca. 3 mm, trigonous with shallowly concave sides;</text>
+      <structure id="o11838" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="oblong-ovate" />
+        <character name="size" value="3" unit="mm" />
+        <character name="shape" value="trigonous" constraint="with sides" constraintid="o11839" />
+      </structure>
+      <structure id="o11839" name="side">
+        <character name="shape" value="concave" modifier="shallowly" />
+      </structure>
+    </statement>
+    <statement id="1382.txt-9">
+      <text>style base slightly thickened;</text>
+      <structure id="o11840" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1382.txt-10">
+      <text>stigmas 3.</text>
+      <structure id="o11841" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Wet grasslands on mountain slopes. Taiwan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

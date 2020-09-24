@@ -20,7 +20,188 @@
     <variety_name>manshuriensis</variety_name>
     <variety_authority>Komarov.</variety_authority>
   </TaxonIdentification>
-  <description>Rhizome short, ligneous. Culms densely tufted, 15–25 cm tall, slightly compressed triquetrous, smooth on lower part, slightly scabrous on upper part, red-brown and bladeless sheathed at base, sheaths eventually disintegrating into fibers. Leaves equaling or shorter than culm, blades 1–2.5 mm wide, ± stiff, flat, loosely pubescent on adaxial surface, scabrous on margins, long and red-brown sheathed; sheaths usually split at membranous side, eventually blade at base usually volute. Involucral bracts scalelike, ovate, hyaline on margins, basal part closing around stem, aristate at base. Spikes 2 or 3, rather congregate at top of culm; terminal spike male, lanceolate or clavate, 0.8–1.5 cm, subsessile; lateral spikes female, ovate, 0.8–1.2 cm, densely 10- or more flowered, sessile. Female glumes ferruginous, oblong, ca. 4 mm, membranous, 1-veined, costa pale brown, apex emarginate, mucronate or shortly awned. Utricles yellowish green, ferruginous on upper part and beak, obliquely patent, equaling or slightly shorter than glume, oblong-obovate, compressed trigonous, 4–4.5 mm, loosely white villous, distinctly many veined, base gradually narrowed to a short stipe, apex gradually narrowed to a short beak, orifice obliquely truncate or emarginate. Nutlets brown, rather tightly enveloped, ovate or oblong-ovate, trigonous, ca. 2.5 mm, base shortly stipitate; style base not thickened; stigmas 3. Fl. and fr. May–Jul.</description>
+  <description>
+    <statement id="1079.txt-0">
+      <text>Rhizome short, ligneous.</text>
+      <structure id="o2436" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="external_texture" value="ligneous" />
+      </structure>
+    </statement>
+    <statement id="1079.txt-1">
+      <text>Culms densely tufted, 15–25 cm tall, slightly compressed triquetrous, smooth on lower part, slightly scabrous on upper part, red-brown and bladeless sheathed at base, sheaths eventually disintegrating into fibers.</text>
+      <structure id="o2437" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character char_type="range_value" name="size" from="15" from_unit="cm" to="25" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="compressed triquetrous" modifier="slightly" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" constraint="on part" constraintid="o2438" />
+        <character name="external_texture_or_relief" value="scabrous" modifier="slightly" constraint="on part" constraintid="o2439" />
+        <character name="coloration" value="red-brown" />
+        <character name="architecture_or_feature" value="sheathed" constraint="at base" constraintid="o2440" />
+      </structure>
+      <structure id="o2438" name="part" constraint="lower" />
+      <structure id="o2439" name="part" constraint="upper" />
+      <structure id="o2440" name="base" />
+      <structure id="o2441" name="sheath">
+        <character name="dehiscence" value="disintegrating" modifier="eventually" constraint="into fibers" constraintid="o2442" />
+      </structure>
+      <structure id="o2442" name="fiber" />
+    </statement>
+    <statement id="1079.txt-2">
+      <text>Leaves equaling or shorter than culm, blades 1–2.5 mm wide, ± stiff, flat, loosely pubescent on adaxial surface, scabrous on margins, long and red-brown sheathed;</text>
+      <structure id="o2443" name="leaf">
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="2.5" to_unit="mm" modifier="or   shorter than culm, blades" />
+        <character name="external_texture" value="stiff" modifier="more or less" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture_or_relief" value="scabrous" constraint="on margins" constraintid="o2445" />
+        <character name="coloration" value="red-brown" />
+        <character name="architecture_or_feature" value="sheathed" />
+      </structure>
+      <structure id="o2444" name="surface" constraint="adaxial" />
+      <relation id="r491" name="on" from="o2443" to="o2444" negation="false" />
+      <structure id="o2445" name="margin" />
+    </statement>
+    <statement id="1079.txt-3">
+      <text>sheaths usually split at membranous side, eventually blade at base usually volute.</text>
+      <structure id="o2446" name="sheath" />
+      <structure id="o2447" name="side" constraint="membranous" />
+      <relation id="r492" name="split at" from="o2446" to="o2447" negation="false" modifier="usually" />
+      <structure id="o2448" name="blade" />
+      <structure id="o2449" name="base" />
+      <relation id="r493" name="at" from="o2446" to="o2449" negation="false" />
+    </statement>
+    <statement id="1079.txt-4">
+      <text>Involucral bracts scalelike, ovate, hyaline on margins, basal part closing around stem, aristate at base.</text>
+      <structure id="o2450" name="bract" constraint="involucral">
+        <character name="architecture_or_shape" value="scalelike" />
+        <character name="shape" value="ovate" />
+        <character name="coloration" value="hyaline" constraint="on margins" constraintid="o2451" />
+        <character name="position" value="basal" />
+        <character name="behaviour" value="closing" constraint="around stem" constraintid="o2452" />
+        <character name="shape" value="aristate" constraint="at base" constraintid="o2453" />
+      </structure>
+      <structure id="o2451" name="margin" />
+      <structure id="o2452" name="stem" />
+      <structure id="o2453" name="base" />
+    </statement>
+    <statement id="1079.txt-5">
+      <text>Spikes 2 or 3, rather congregate at top of culm;</text>
+      <structure id="o2454" name="spike">
+        <character name="count" value="2" />
+        <character name="count" value="3" />
+        <character name="feature" value="congregate" modifier="rather" constraint="at top" constraintid="o2455" />
+      </structure>
+      <structure id="o2455" name="top" />
+      <structure id="o2456" name="culm" />
+      <relation id="r494" name="part_of" from="o2455" to="o2456" negation="false" />
+    </statement>
+    <statement id="1079.txt-6">
+      <text>terminal spike male, lanceolate or clavate, 0.8–1.5 cm, subsessile;</text>
+      <structure id="o2457" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="lanceolate" />
+        <character name="shape" value="clavate" />
+        <character char_type="range_value" name="size" from="0.8" from_unit="cm" to="1.5" to_unit="cm" />
+        <character name="architecture" value="subsessile" />
+      </structure>
+    </statement>
+    <statement id="1079.txt-7">
+      <text>lateral spikes female, ovate, 0.8–1.2 cm, densely 10- or more flowered, sessile.</text>
+      <structure id="o2458" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="0.8" from_unit="cm" to="1.2" to_unit="cm" />
+        <character name="architecture" value="flowered" />
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+    </statement>
+    <statement id="1079.txt-8">
+      <text>Female glumes ferruginous, oblong, ca. 4 mm, membranous, 1-veined, costa pale brown, apex emarginate, mucronate or shortly awned.</text>
+      <structure id="o2459" name="glume" constraint="female">
+        <character name="shape" value="oblong" />
+        <character name="size" value="4" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o2460" name="costa">
+        <character name="coloration" value="brown" modifier="pale" />
+      </structure>
+      <structure id="o2461" name="apex">
+        <character name="shape" value="emarginate" />
+        <character name="shape" value="mucronate" />
+        <character name="shape" value="awned" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1079.txt-9">
+      <text>Utricles yellowish green, ferruginous on upper part and beak, obliquely patent, equaling or slightly shorter than glume, oblong-obovate, compressed trigonous, 4–4.5 mm, loosely white villous, distinctly many veined, base gradually narrowed to a short stipe, apex gradually narrowed to a short beak, orifice obliquely truncate or emarginate.</text>
+      <structure id="o2462" name="utricle">
+        <character name="coloration" value="green" modifier="yellowish" />
+        <character name="orientation" value="patent" modifier="obliquely" />
+      </structure>
+      <structure id="o2463" name="beak">
+        <character name="position" value="upper" />
+      </structure>
+      <relation id="r495" name="on" from="o2462" to="o2463" negation="false" />
+      <structure id="o2464" name="base">
+        <character name="shape" value="oblong-obovate" />
+        <character name="shape" value="compressed" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="count" from="4" to="4.5" />
+        <character name="coloration" value="white" modifier="loosely" />
+        <character name="external_texture" value="villous" />
+        <character name="count" value="many" modifier="distinctly" />
+        <character name="architecture_or_feature" value="veined" />
+        <character name="height_or_length" value="shorter" modifier="slightly" />
+      </structure>
+      <relation id="r496" name="equaling" from="o2462" to="o2464" negation="false" />
+      <structure id="o2465" name="stipe">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r497" name="narrowed to" from="o2464" to="o2465" negation="false" modifier="gradually" />
+      <structure id="o2466" name="apex" />
+      <structure id="o2467" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r498" name="narrowed to" from="o2466" to="o2467" negation="false" modifier="gradually" />
+      <structure id="o2468" name="orifice">
+        <character name="shape" value="truncate" modifier="obliquely" />
+        <character name="shape" value="emarginate" />
+      </structure>
+      <relation id="r499" name="may_be_the_same" from="o2463" to="o2467" negation="false" />
+    </statement>
+    <statement id="1079.txt-10">
+      <text>Nutlets brown, rather tightly enveloped, ovate or oblong-ovate, trigonous, ca. 2.5 mm, base shortly stipitate;</text>
+      <structure id="o2469" name="nutlet">
+        <character name="coloration" value="brown" />
+        <character name="feature" value="enveloped" modifier="rather tightly" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="oblong-ovate" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2.5" unit="mm" />
+      </structure>
+      <structure id="o2470" name="base">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1079.txt-11">
+      <text>style base not thickened;</text>
+      <structure id="o2471" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1079.txt-12">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1079.txt-13">
+      <text>Fl. and fr. May–Jul.</text>
+      <structure id="o2472" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Lax forests and among shrubs on sunny mountain slopes, meadows. Heilongjiang, Nei Mongol [Korea, Russia (Far East, E Siberia)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

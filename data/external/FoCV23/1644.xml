@@ -13,7 +13,147 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>捷克薹草 jie ke tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms 40–70 cm tall, compressed trigonous, scabrous above. Leaves cauline, shorter than culm, blades pale green, linear, 3–7 mm wide, flat, margins serrate, apex acuminate, clothed with orange sheaths at base. Involucral bracts glumelike, lowest setaceous or leaflike, shorter than or equaling inflorescence. Inflorescence cylindric, ca. 5 cm, interrupted below. Female glumes pale orange-brown, ovate, ca. 3 mm, 1-veined costa excurrent into an awn. Utricles pale green or orange-brown or dark gray, longer than glume, ovate or ovate-lanceolate, ca. 5 mm, lustrous, smooth, without conspicuous veins on both faces, apex gradually attenuate into a serrate beak, orifice 2-toothed, orange-brown. Nutlets elliptic, ca. 2.5 × 2 mm, base shortly stipitate; style base slightly thickened; stigmas 2. Fl. and fr. Jul. 2n = 58, 62, 64.</description>
+  <description>
+    <statement id="1644.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o19232" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1644.txt-1">
+      <text>Culms 40–70 cm tall, compressed trigonous, scabrous above.</text>
+      <structure id="o19233" name="culm">
+        <character char_type="range_value" name="size" from="40" from_unit="cm" to="70" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="compressed trigonous" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1644.txt-2">
+      <text>Leaves cauline, shorter than culm, blades pale green, linear, 3–7 mm wide, flat, margins serrate, apex acuminate, clothed with orange sheaths at base.</text>
+      <structure id="o19234" name="leaf">
+        <character name="position" value="cauline" />
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o19235" />
+      </structure>
+      <structure id="o19235" name="culm" />
+      <structure id="o19236" name="blade">
+        <character name="coloration" value="green" modifier="pale" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="7" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o19237" name="margin">
+        <character name="shape" value="serrate" />
+      </structure>
+      <structure id="o19238" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+      <structure id="o19239" name="sheath">
+        <character name="coloration" value="orange" />
+      </structure>
+      <relation id="r3645" name="clothed with" from="o19238" to="o19239" negation="false" />
+      <structure id="o19240" name="base" />
+      <relation id="r3646" name="at" from="o19239" to="o19240" negation="false" />
+    </statement>
+    <statement id="1644.txt-3">
+      <text>Involucral bracts glumelike, lowest setaceous or leaflike, shorter than or equaling inflorescence.</text>
+      <structure id="o19241" name="bract" constraint="involucral">
+        <character name="feature" value="glumelike" />
+        <character name="feature" value="lowest" />
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="architecture" value="leaflike" />
+        <character name="height_or_length" value="shorter" constraint="than or equaling inflorescence" constraintid="o19242" />
+      </structure>
+      <structure id="o19242" name="inflorescence" />
+    </statement>
+    <statement id="1644.txt-4">
+      <text>Inflorescence cylindric, ca. 5 cm, interrupted below.</text>
+      <structure id="o19243" name="inflorescence">
+        <character name="shape" value="cylindric" />
+        <character name="size" value="5" unit="cm" />
+        <character name="architecture" value="interrupted" />
+      </structure>
+    </statement>
+    <statement id="1644.txt-5">
+      <text>Female glumes pale orange-brown, ovate, ca. 3 mm, 1-veined costa excurrent into an awn.</text>
+      <structure id="o19244" name="glume" constraint="female">
+        <character name="coloration" value="orange-brown" modifier="pale" />
+        <character name="shape" value="ovate" />
+        <character name="size" value="3" unit="mm" />
+        <character name="architecture_or_feature" value="1-veined" />
+        <character name="architecture" value="excurrent" constraint="into awn" constraintid="o19246" />
+      </structure>
+      <structure id="o19245" name="costa" />
+      <structure id="o19246" name="awn" />
+    </statement>
+    <statement id="1644.txt-6">
+      <text>Utricles pale green or orange-brown or dark gray, longer than glume, ovate or ovate-lanceolate, ca. 5 mm, lustrous, smooth, without conspicuous veins on both faces, apex gradually attenuate into a serrate beak, orifice 2-toothed, orange-brown.</text>
+      <structure id="o19247" name="utricle">
+        <character name="coloration" value="green" modifier="pale" />
+        <character name="coloration" value="orange-brown" />
+        <character name="coloration" value="gray" modifier="dark" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o19248" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character name="size" value="5" unit="mm" />
+        <character name="reflectance" value="lustrous" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o19248" name="glume" />
+      <structure id="o19249" name="vein">
+        <character name="prominence" value="conspicuous" />
+      </structure>
+      <relation id="r3647" name="without" from="o19247" to="o19249" negation="false" />
+      <structure id="o19250" name="face" />
+      <relation id="r3648" name="on" from="o19249" to="o19250" negation="false" />
+      <structure id="o19251" name="apex">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into beak" constraintid="o19252" />
+      </structure>
+      <structure id="o19252" name="beak">
+        <character name="shape" value="serrate" />
+      </structure>
+      <structure id="o19253" name="orifice">
+        <character name="shape" value="2-toothed" />
+        <character name="coloration" value="orange-brown" />
+      </structure>
+    </statement>
+    <statement id="1644.txt-7">
+      <text>Nutlets elliptic, ca. 2.5 × 2 mm, base shortly stipitate;</text>
+      <structure id="o19254" name="nutlet">
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="length" value="2.5" unit="mm" />
+        <character name="width" value="2" unit="mm" />
+      </structure>
+      <structure id="o19255" name="base">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1644.txt-8">
+      <text>style base slightly thickened;</text>
+      <structure id="o19256" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1644.txt-9">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1644.txt-10">
+      <text>Fl. and fr. Jul.</text>
+      <structure id="o19257" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+    <statement id="1644.txt-11">
+      <text>2n = 58, 62, 64.</text>
+      <structure name="chromosome" id="o19258">
+        <character name="count" value="58" />
+        <character name="count" value="62" />
+        <character name="count" value="64" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Ravines, forest margins, moist places; ca. 1800 m. Xinjiang [Russia (W Siberia); C Asia, Europe].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

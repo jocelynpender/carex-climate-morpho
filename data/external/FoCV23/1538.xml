@@ -28,7 +28,29 @@
     <species_name>stachydesma</species_name>
     <species_authority>Franchet.</species_authority>
   </TaxonIdentification>
-  <description>Involucral bracts longer than inflorescence. Utricles 3–4 mm. Stigmas ca. 2 × as long as utricle.</description>
+  <description>
+    <statement id="1538.txt-0">
+      <text>Involucral bracts longer than inflorescence.</text>
+      <structure id="o16465" name="bract" constraint="involucral">
+        <character name="length" value="longer" constraint="than inflorescence" constraintid="o16466" />
+      </structure>
+      <structure id="o16466" name="inflorescence" />
+    </statement>
+    <statement id="1538.txt-1">
+      <text>Utricles 3–4 mm.</text>
+      <structure id="o16467" name="utricle">
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="4" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1538.txt-2">
+      <text>Stigmas ca. 2 × as long as utricle.</text>
+      <structure id="o16468" name="stigma" />
+      <structure id="o16469" name="utricle" />
+      <relation id="r3132" name="2×as long as" from="o16468" to="o16469" negation="false" />
+    </statement>
+  </description>
   <distribution>● Rock crevices along valleys in forests; 1000–2800 m. Anhui, Gansu, Guangdong, Guangxi, Hubei, Jiangxi, Shaanxi, Sichuan, Xizang, Yunnan, Zhejiang.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

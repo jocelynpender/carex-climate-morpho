@@ -38,7 +38,154 @@
     <subspecies_name>altaica</subspecies_name>
     <subspecies_authority>(Gorodkov) T. V. Egorova.</subspecies_authority>
   </TaxonIdentification>
-  <description>Rhizome short, stout. Culms 15–30 cm tall, 1–1.5 mm thick, scabrous above, clothed at base with purple or black-purple sheaths disintegrating into parallel fibers. Leaves shorter than culm, blades linear, 3–4 mm wide, flat, margins scabrous, apex acuminate. Lower involucral bracts setaceous, shorter than inflorescence, sheathless, upper ones glumelike. Spikes 3 or 4, approximate; terminal spike male, clavate, 1–1.5 cm; lateral spikes female, ovate or oblong, 5–15 × 5–6 mm, densely many flowered, lowest with peduncle 2–5 mm, others subsessile. Female glumes black-purple, elliptic, 2.5–2.8 × ca. 1.1 mm, with faint midrib, apex acuminate. Utricles black-purple above, light brown below, longer than glume, elliptic to ovate, plano-convex, ca. 3 × 2.2 mm, densely minutely papillose, faintly veined, apex with short beak, orifice entire, without small teeth. Stigmas 2. Fl. and fr. Jun–Aug.</description>
+  <description>
+    <statement id="1509.txt-0">
+      <text>Rhizome short, stout.</text>
+      <structure id="o15729" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="fragility" value="stout" />
+      </structure>
+    </statement>
+    <statement id="1509.txt-1">
+      <text>Culms 15–30 cm tall, 1–1.5 mm thick, scabrous above, clothed at base with purple or black-purple sheaths disintegrating into parallel fibers.</text>
+      <structure id="o15730" name="culm">
+        <character char_type="range_value" name="size" from="15" from_unit="cm" to="30" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character char_type="range_value" name="size" from="1" from_unit="mm" to="1.5" to_unit="mm" />
+        <character name="width" value="thick" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o15731" name="base" />
+      <relation id="r3003" name="clothed at" from="o15730" to="o15731" negation="false" />
+      <structure id="o15732" name="sheath">
+        <character name="coloration" value="purple" />
+        <character name="coloration" value="black-purple" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o15733" />
+      </structure>
+      <relation id="r3004" name="with" from="o15731" to="o15732" negation="false" />
+      <structure id="o15733" name="fiber">
+        <character name="arrangement" value="parallel" />
+      </structure>
+    </statement>
+    <statement id="1509.txt-2">
+      <text>Leaves shorter than culm, blades linear, 3–4 mm wide, flat, margins scabrous, apex acuminate.</text>
+      <structure id="o15734" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o15735" />
+      </structure>
+      <structure id="o15735" name="culm" />
+      <structure id="o15736" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o15737" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o15738" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1509.txt-3">
+      <text>Lower involucral bracts setaceous, shorter than inflorescence, sheathless, upper ones glumelike.</text>
+      <structure id="o15739" name="bract" constraint="lower involucral">
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o15740" />
+        <character name="feature" value="sheathless" />
+        <character name="position" value="upper" />
+        <character name="feature" value="glumelike" />
+      </structure>
+      <structure id="o15740" name="inflorescence" />
+    </statement>
+    <statement id="1509.txt-4">
+      <text>Spikes 3 or 4, approximate;</text>
+      <structure id="o15741" name="spike">
+        <character name="count" value="3" />
+        <character name="count" value="4" />
+        <character name="feature" value="approximate" />
+      </structure>
+    </statement>
+    <statement id="1509.txt-5">
+      <text>terminal spike male, clavate, 1–1.5 cm;</text>
+      <structure id="o15742" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="clavate" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="1.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1509.txt-6">
+      <text>lateral spikes female, ovate or oblong, 5–15 × 5–6 mm, densely many flowered, lowest with peduncle 2–5 mm, others subsessile.</text>
+      <structure id="o15743" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="length" from="5" from_unit="mm" to="15" to_unit="mm" />
+        <character char_type="range_value" name="width" from="5" from_unit="mm" to="6" to_unit="mm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+        <character name="feature" value="lowest" constraint="with peduncle" constraintid="o15744" />
+        <character name="architecture" value="subsessile" />
+      </structure>
+      <structure id="o15744" name="peduncle">
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="5" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1509.txt-7">
+      <text>Female glumes black-purple, elliptic, 2.5–2.8 × ca. 1.1 mm, with faint midrib, apex acuminate.</text>
+      <structure id="o15745" name="glume" constraint="female">
+        <character name="coloration" value="black-purple" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character char_type="range_value" name="length" from="2.5" from_unit="mm" to="2.8" to_unit="mm" />
+        <character name="width" value="1.1" unit="mm" />
+      </structure>
+      <structure id="o15746" name="midrib">
+        <character name="feature" value="faint" />
+      </structure>
+      <relation id="r3005" name="with" from="o15745" to="o15746" negation="false" />
+      <structure id="o15747" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1509.txt-8">
+      <text>Utricles black-purple above, light brown below, longer than glume, elliptic to ovate, planoconvex, ca. 3 × 2.2 mm, densely minutely papillose, faintly veined, apex with short beak, orifice entire, without small teeth.</text>
+      <structure id="o15748" name="utricle">
+        <character name="coloration" value="black-purple" />
+        <character name="coloration" value="brown" modifier="light" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o15749" />
+        <character char_type="range_value" name="shape" from="elliptic" to="ovate" />
+        <character name="shape" value="elliptic" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="planoconvex" />
+        <character name="length" value="3" unit="mm" />
+        <character name="width" value="2.2" unit="mm" />
+        <character name="relief" value="papillose" modifier="densely minutely" />
+        <character name="architecture_or_feature" value="veined" modifier="faintly" />
+      </structure>
+      <structure id="o15749" name="glume" />
+      <structure id="o15750" name="apex" />
+      <structure id="o15751" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r3006" name="with" from="o15750" to="o15751" negation="false" />
+      <structure id="o15752" name="orifice">
+        <character name="shape" value="entire" />
+      </structure>
+      <structure id="o15753" name="tooth">
+        <character name="size" value="small" />
+      </structure>
+      <relation id="r3007" name="without" from="o15752" to="o15753" negation="false" />
+    </statement>
+    <statement id="1509.txt-9">
+      <text>Stigmas 2.</text>
+    </statement>
+    <statement id="1509.txt-10">
+      <text>Fl. and fr. Jun–Aug.</text>
+      <structure id="o15754" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Alpine grasslands, boggy valleys; 2000–2600 m. Xinjiang [Russia (Siberia)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

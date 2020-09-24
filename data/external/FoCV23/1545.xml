@@ -23,7 +23,168 @@
     <species_name>luctuosa</species_name>
     <species_authority>f. mucronata K. T. Fu.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome short. Culms 30–100 cm tall, acutely trigonous, erect, rather stiff, scabrous, clothed at base with dark brown sheaths disintegrating into reticulate fibers. Leaves shorter than culm, blades linear, 3–5 mm wide, margins scabrous. Lower involucral bracts leaflike, surpassing inflorescence, sheathless, upper setaceous, shorter than inflorescence, sheathless. Spikes 4–6; terminal spike male or gynaecandrous, narrowly cylindric, 3–3.5 cm; lateral spikes female, cylindric, 20–30 × 4–5 mm, densely many flowered, upper spikes approximate, sessile, lowest spike remote, with short peduncle. Female glumes dark reddish, oblong, 2.5–2.8 mm, pale yellow 3-veined costa forming a mucro at apex or apex obtuse. Utricles light brown-green, slightly shorter than or equaling glume, obovate, slightly biconvex, 2.3–2.8 mm, nerveless except for 2 marginal costas, apex abruptly contracted into a smooth short beak, orifice 2-toothed. Nutlets obovoid, slightly biconvex, ca. 1.6 mm; stigmas 2. Fl. and fr. Jul.</description>
+  <description>
+    <statement id="1545.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o16667" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1545.txt-1">
+      <text>Culms 30–100 cm tall, acutely trigonous, erect, rather stiff, scabrous, clothed at base with dark brown sheaths disintegrating into reticulate fibers.</text>
+      <structure id="o16668" name="culm">
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="100" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="orientation" value="erect" />
+        <character name="external_texture" value="stiff" modifier="rather" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o16669" name="base" />
+      <relation id="r3175" name="clothed at" from="o16668" to="o16669" negation="false" />
+      <structure id="o16670" name="sheath">
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o16671" />
+      </structure>
+      <relation id="r3176" name="with" from="o16669" to="o16670" negation="false" />
+      <structure id="o16671" name="fiber">
+        <character name="architecture_or_pattern_or_relief" value="reticulate" />
+      </structure>
+    </statement>
+    <statement id="1545.txt-2">
+      <text>Leaves shorter than culm, blades linear, 3–5 mm wide, margins scabrous.</text>
+      <structure id="o16672" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o16673" />
+      </structure>
+      <structure id="o16673" name="culm" />
+      <structure id="o16674" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="5" to_unit="mm" />
+      </structure>
+      <structure id="o16675" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1545.txt-3">
+      <text>Lower involucral bracts leaflike, surpassing inflorescence, sheathless, upper setaceous, shorter than inflorescence, sheathless.</text>
+      <structure id="o16676" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="feature" value="sheathless" />
+        <character name="position" value="upper" />
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o16678" />
+        <character name="feature" value="sheathless" />
+      </structure>
+      <structure id="o16677" name="inflorescence" />
+      <relation id="r3177" name="surpassing" from="o16676" to="o16677" negation="false" />
+      <structure id="o16678" name="inflorescence" />
+      <relation id="r3178" name="may_be_the_same" from="o16677" to="o16678" negation="false" />
+    </statement>
+    <statement id="1545.txt-4">
+      <text>Spikes 4–6;</text>
+      <structure id="o16679" name="spike">
+        <character char_type="range_value" name="count" from="4" to="6" />
+      </structure>
+    </statement>
+    <statement id="1545.txt-5">
+      <text>terminal spike male or gynaecandrous, narrowly cylindric, 3–3.5 cm;</text>
+      <structure id="o16680" name="spike" constraint="terminal">
+        <character name="feature" value="male" />
+        <character name="feature" value="gynaecandrous" />
+        <character name="shape" value="cylindric" modifier="narrowly" />
+        <character char_type="range_value" name="size" from="3" from_unit="cm" to="3.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1545.txt-6">
+      <text>lateral spikes female, cylindric, 20–30 × 4–5 mm, densely many flowered, upper spikes approximate, sessile, lowest spike remote, with short peduncle.</text>
+      <structure id="o16681" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="length" from="20" from_unit="mm" to="30" to_unit="mm" />
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="5" to_unit="mm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+      <structure id="o16682" name="spike" constraint="upper">
+        <character name="feature" value="approximate" />
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+      <structure id="o16683" name="spike">
+        <character name="feature" value="lowest" />
+        <character name="arrangement" value="remote" />
+      </structure>
+      <structure id="o16684" name="peduncle">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r3179" name="with" from="o16683" to="o16684" negation="false" />
+    </statement>
+    <statement id="1545.txt-7">
+      <text>Female glumes dark reddish, oblong, 2.5–2.8 mm, pale yellow 3-veined costa forming a mucro at apex or apex obtuse.</text>
+      <structure id="o16685" name="glume" constraint="female">
+        <character name="coloration" value="reddish" modifier="dark" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="2.8" to_unit="mm" />
+        <character name="coloration" value="yellow" modifier="pale" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o16686" name="costa" />
+      <structure id="o16687" name="mucro" />
+      <relation id="r3180" name="forming" from="o16685" to="o16687" negation="false" />
+      <structure id="o16688" name="apex">
+        <character name="shape" value="obtuse" />
+      </structure>
+      <structure id="o16689" name="apex">
+        <character name="shape" value="obtuse" />
+      </structure>
+      <relation id="r3181" name="at" from="o16687" to="o16688" negation="false" />
+      <relation id="r3182" name="at" from="o16687" to="o16689" negation="false" />
+      <relation id="r3183" name="may_be_the_same" from="o16688" to="o16689" negation="false" />
+    </statement>
+    <statement id="1545.txt-8">
+      <text>Utricles light brown-green, slightly shorter than or equaling glume, obovate, slightly biconvex, 2.3–2.8 mm, nerveless except for 2 marginal costas, apex abruptly contracted into a smooth short beak, orifice 2-toothed.</text>
+      <structure id="o16690" name="utricle">
+        <character name="coloration" value="brown-green" modifier="light" />
+        <character name="height_or_length" value="shorter" modifier="slightly" constraint="than or equaling glume" constraintid="o16691" />
+        <character name="shape" value="obovate" />
+        <character name="shape" value="biconvex" modifier="slightly" />
+        <character char_type="range_value" name="size" from="2.3" from_unit="mm" to="2.8" to_unit="mm" />
+        <character name="feature" value="nerveless" constraint="except-for costas" constraintid="o16692" />
+      </structure>
+      <structure id="o16691" name="glume" />
+      <structure id="o16692" name="costa" constraint="marginal">
+        <character name="count" value="2" />
+      </structure>
+      <structure id="o16693" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o16694" />
+      </structure>
+      <structure id="o16694" name="beak">
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o16695" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1545.txt-9">
+      <text>Nutlets obovoid, slightly biconvex, ca. 1.6 mm;</text>
+      <structure id="o16696" name="nutlet">
+        <character name="shape" value="obovoid" />
+        <character name="shape" value="biconvex" modifier="slightly" />
+        <character name="size" value="1.6" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1545.txt-10">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1545.txt-11">
+      <text>Fl. and fr. Jul.</text>
+      <structure id="o16697" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Watersides, wet places, slopes, roadsides, grasslands; 1000–2600 m. Gansu, Shaanxi, Sichuan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

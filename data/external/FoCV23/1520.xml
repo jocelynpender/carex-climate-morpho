@@ -31,8 +31,160 @@
     <species_name>prionocarpa</species_name>
     <species_authority>Franchet.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome with stout stolons. Culms 30–120 cm tall, stout, slightly smooth, clothed at base with reddish purple, lustrous, bladeless sheaths. Leaves shorter than culm, blades broadly linear, 5–10 mm wide, flat, margins slightly involute. Involucral bracts leaflike, lower 2 or 3 surpassing inflorescence. Spikes 5–7, remote; upper 2 or 3 spikes male, fusiform or clavate, 6–7 cm; remaining spikes female, usually with male flowers at apex, cylindric, 2–8 × 0.8–1.2 cm, many flowered, with peduncles up to ca. 10 cm, smooth, pendent. Female glumes dark brown-purple, lanceolate or oblong-lanceolate, pale 1-veined costa excurrent into a mucro. Utricles gray-green, becoming light brown, ca. 1/2 as long as glume, ovate, biconvex, ca. 3 mm, slender, 6–8-veined, base shortly stipitate, apex gradually attenuate into a beak, orifice truncate. Nutlets brown, tightly enveloped, elliptic; style base not thickened; stigmas 2.</description>
+  <description>
+    <statement id="1520.txt-0">
+      <text>Rhizome with stout stolons.</text>
+      <structure id="o16012" name="rhizome" />
+      <structure id="o16013" name="stolon">
+        <character name="fragility" value="stout" />
+      </structure>
+      <relation id="r3054" name="with" from="o16012" to="o16013" negation="false" />
+    </statement>
+    <statement id="1520.txt-1">
+      <text>Culms 30–120 cm tall, stout, slightly smooth, clothed at base with reddish purple, lustrous, bladeless sheaths.</text>
+      <structure id="o16014" name="culm">
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="120" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="fragility" value="stout" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" modifier="slightly" />
+      </structure>
+      <structure id="o16015" name="base" />
+      <relation id="r3055" name="clothed at" from="o16014" to="o16015" negation="false" />
+      <structure id="o16016" name="sheath" constraint="bladeless">
+        <character name="coloration" value="purple" modifier="reddish" />
+        <character name="reflectance" value="lustrous" />
+      </structure>
+      <relation id="r3056" name="with" from="o16015" to="o16016" negation="false" />
+    </statement>
+    <statement id="1520.txt-2">
+      <text>Leaves shorter than culm, blades broadly linear, 5–10 mm wide, flat, margins slightly involute.</text>
+      <structure id="o16017" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o16018" />
+      </structure>
+      <structure id="o16018" name="culm" />
+      <structure id="o16019" name="blade">
+        <character name="arrangement_or_shape" value="linear" modifier="broadly" />
+        <character char_type="range_value" name="width" from="5" from_unit="mm" to="10" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o16020" name="margin">
+        <character name="shape_or_vernation" value="involute" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1520.txt-3">
+      <text>Involucral bracts leaflike, lower 2 or 3 surpassing inflorescence.</text>
+      <structure id="o16021" name="bract" constraint="involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="position" value="lower" />
+        <character name="count" value="2" />
+        <character name="count" value="3" />
+      </structure>
+      <structure id="o16022" name="inflorescence" />
+      <relation id="r3057" name="surpassing" from="o16021" to="o16022" negation="false" />
+    </statement>
+    <statement id="1520.txt-4">
+      <text>Spikes 5–7, remote;</text>
+      <structure id="o16023" name="spike">
+        <character char_type="range_value" name="count" from="5" to="7" />
+        <character name="arrangement" value="remote" />
+      </structure>
+    </statement>
+    <statement id="1520.txt-5">
+      <text>upper 2 or 3 spikes male, fusiform or clavate, 6–7 cm;</text>
+      <structure id="o16024" name="upper">
+        <character name="type" value="2 or 3 spikes" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="fusiform" />
+        <character name="shape" value="clavate" />
+        <character char_type="range_value" name="size" from="6" from_unit="cm" to="7" to_unit="cm" />
+      </structure>
+      <structure id="o16025" name="spike">
+        <character name="count" value="2" modifier="count list" />
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+    <statement id="1520.txt-6">
+      <text>remaining spikes female, usually with male flowers at apex, cylindric, 2–8 × 0.8–1.2 cm, many flowered, with peduncles up to ca. 10 cm, smooth, pendent.</text>
+      <structure id="o16026" name="spike" constraint="remaining">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="length" from="2" from_unit="cm" to="8" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.8" from_unit="cm" to="1.2" to_unit="cm" />
+        <character name="count" value="many" />
+        <character name="architecture" value="flowered" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="orientation" value="pendent" />
+      </structure>
+      <structure id="o16027" name="flower" constraint="male" />
+      <relation id="r3058" name="with" from="o16026" to="o16027" negation="false" modifier="usually" />
+      <structure id="o16028" name="apex" />
+      <relation id="r3059" name="at" from="o16027" to="o16028" negation="false" />
+      <structure id="o16029" name="peduncle">
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="10" to_unit="cm" />
+      </structure>
+      <relation id="r3060" name="with" from="o16026" to="o16029" negation="false" />
+    </statement>
+    <statement id="1520.txt-7">
+      <text>Female glumes dark brown-purple, lanceolate or oblong-lanceolate, pale 1-veined costa excurrent into a mucro.</text>
+      <structure id="o16030" name="glume" constraint="female">
+        <character name="coloration" value="brown-purple" modifier="dark" />
+        <character name="shape" value="lanceolate" />
+        <character name="shape" value="oblong-lanceolate" />
+        <character name="coloration" value="pale" />
+        <character name="architecture_or_feature" value="1-veined" />
+        <character name="architecture" value="excurrent" constraint="into mucro" constraintid="o16032" />
+      </structure>
+      <structure id="o16031" name="costa" />
+      <structure id="o16032" name="mucro" />
+    </statement>
+    <statement id="1520.txt-8">
+      <text>Utricles gray-green, becoming light brown, ca. 1/2 as long as glume, ovate, biconvex, ca. 3 mm, slender, 6–8-veined, base shortly stipitate, apex gradually attenuate into a beak, orifice truncate.</text>
+      <structure id="o16033" name="utricle">
+        <character name="coloration" value="gray-green" />
+        <character name="coloration" value="brown" modifier="becoming;light" />
+        <character name="count" value="1/2" constraint="as-long-as glume" constraintid="o16034" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="biconvex" />
+        <character name="size" value="3" unit="mm" />
+        <character name="size" value="slender" />
+        <character name="architecture_or_feature" value="6-8-veined" />
+      </structure>
+      <structure id="o16034" name="glume" />
+      <structure id="o16035" name="base">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o16036" name="apex">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into beak" constraintid="o16037" />
+      </structure>
+      <structure id="o16037" name="beak" />
+      <structure id="o16038" name="orifice">
+        <character name="shape" value="truncate" />
+      </structure>
+    </statement>
+    <statement id="1520.txt-9">
+      <text>Nutlets brown, tightly enveloped, elliptic;</text>
+      <structure id="o16039" name="nutlet">
+        <character name="coloration" value="brown" />
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="arrangement_or_shape" value="elliptic" />
+      </structure>
+    </statement>
+    <statement id="1520.txt-10">
+      <text>style base not thickened;</text>
+      <structure id="o16040" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1520.txt-11">
+      <text>stigmas 2.</text>
+      <structure id="o16041" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Marshes, meadows, riversides [Japan, Russia (Far East); North America (Alaska)].</distribution>
   <discussion>No specimens from China have been seen by the present authors. Standley et al. (Fl. N. Amer. 23: 383–384. 2002) suggested that Asian populations are a different species from North American Carex lyngbyei and are appropriately given species status.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

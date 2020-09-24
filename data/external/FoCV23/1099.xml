@@ -13,7 +13,193 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>藏南薹草 zang nan tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, covered with brown scales not disintegrated into fibers. Culms 55–80 cm tall, smooth, sometimes 1-leaved at middle. Leaves 4–6, blades linear, slightly shorter than culm, 5–7 mm wide, herbaceous; sheaths long, uppermost up to 30 cm, brownish abaxially, bearing ca. 0.5 mm ferruginous ligule at mouth. Lower 2 involucral bracts bladed and overtopping inflorescence, shortly sheathing. Spikes 4–6, ± contiguous; terminal spike gynaecandrous, 2–5 cm, male part brownish or reddish brown, 2–3.5 cm × ca. 3 mm, female part up to 1/2 as long as spike, 6–8 mm wide; lateral spikes female, at times upper 1 or 2 bearing short male part, olive-brownish, 2.5–4 cm × 5–8 mm, densely many flowered, long pedunculate. Female glumes brownish, ovate, 2–3 × 1.2–1.5 mm, membranous, 3-veined costa excurrent beyond apex into an erect awn ca. 1.5 mm. Utricles glaucous green, longer than body of glume but surpassed by awn, obovate to broadly obovate, 2.8–3 × 1.5–2 mm, herbaceous, glabrous, strongly 2-costate and bearing 4 or 5 veins reaching halfway up utricle, base cuneate-attenuate, apex rounded-contracted into a very short beak, orifice scarcely 2-toothed. Nutlets loosely enveloped, obovate, 1.5–2 × 1–1.5 mm; style ca. 1.8 mm; stigmas 3, ca. 1.5 mm.</description>
+  <description>
+    <statement id="1099.txt-0">
+      <text>Rhizome short, covered with brown scales not disintegrated into fibers.</text>
+      <structure id="o3127" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o3128" name="scale">
+        <character name="coloration" value="brown" />
+      </structure>
+      <relation id="r634" name="covered with" from="o3127" to="o3128" negation="false" />
+      <structure id="o3129" name="fiber" />
+      <relation id="r635" name="disintegrated into" from="o3127" to="o3129" negation="true" />
+    </statement>
+    <statement id="1099.txt-1">
+      <text>Culms 55–80 cm tall, smooth, sometimes 1-leaved at middle.</text>
+      <structure id="o3130" name="culm">
+        <character char_type="range_value" name="size" from="55" from_unit="cm" to="80" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="architecture" value="1-leaved" modifier="sometimes;at middle" />
+      </structure>
+    </statement>
+    <statement id="1099.txt-2">
+      <text>Leaves 4–6, blades linear, slightly shorter than culm, 5–7 mm wide, herbaceous;</text>
+      <structure id="o3131" name="leaf">
+        <character char_type="range_value" name="count" from="4" to="6" />
+      </structure>
+      <structure id="o3132" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character name="height_or_length" value="shorter" modifier="slightly" constraint="than culm" constraintid="o3133" />
+        <character char_type="range_value" name="width" from="5" from_unit="mm" to="7" to_unit="mm" />
+        <character name="external_texture_or_feature_or_internal_texture" value="herbaceous" />
+      </structure>
+      <structure id="o3133" name="culm" />
+    </statement>
+    <statement id="1099.txt-3">
+      <text>sheaths long, uppermost up to 30 cm, brownish abaxially, bearing ca. 0.5 mm ferruginous ligule at mouth.</text>
+      <structure id="o3134" name="sheath">
+        <character name="position" value="uppermost" />
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="30" to_unit="cm" />
+        <character name="coloration" value="brownish" modifier="abaxially" />
+      </structure>
+      <structure id="o3135" name="mm">
+        <character name="count" value="0.5" />
+        <character name="type" value="ferruginous ligule" />
+      </structure>
+      <relation id="r636" name="bearing" from="o3134" to="o3135" negation="false" />
+      <structure id="o3136" name="ligule" />
+      <structure id="o3137" name="mouth" />
+      <relation id="r637" name="at" from="o3135" to="o3137" negation="false" />
+    </statement>
+    <statement id="1099.txt-4">
+      <text>Lower 2 involucral bracts bladed and overtopping inflorescence, shortly sheathing.</text>
+      <structure id="o3138" name="bract" constraint="involucral">
+        <character name="position" value="lower" />
+        <character name="count" value="2" />
+        <character name="architecture_or_feature_or_shape" value="sheathing" modifier="shortly" />
+      </structure>
+      <structure id="o3139" name="inflorescence" />
+      <relation id="r638" name="overtopping" from="o3138" to="o3139" negation="false" />
+    </statement>
+    <statement id="1099.txt-5">
+      <text>Spikes 4–6, ± contiguous;</text>
+      <structure id="o3140" name="spike">
+        <character char_type="range_value" name="count" from="4" to="6" />
+        <character name="arrangement" value="contiguous" modifier="more or less" />
+      </structure>
+    </statement>
+    <statement id="1099.txt-6">
+      <text>terminal spike gynaecandrous, 2–5 cm, male part brownish or reddish brown, 2–3.5 cm × ca. 3 mm, female part up to 1/2 as long as spike, 6–8 mm wide;</text>
+      <structure id="o3141" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="5" to_unit="cm" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="coloration" value="brownish" />
+        <character name="coloration" value="brown" modifier="reddish" />
+        <character char_type="range_value" name="length" from="2" from_unit="cm" to="3.5" to_unit="cm" />
+        <character name="width" value="3" unit="mm" />
+        <character name="reproduction" value="female" />
+        <character char_type="range_value" name="count" from="0" to="1/2" constraint="as-long-as spike" constraintid="o3142" />
+        <character char_type="range_value" name="width" from="6" from_unit="mm" to="8" to_unit="mm" />
+      </structure>
+      <structure id="o3142" name="spike" />
+    </statement>
+    <statement id="1099.txt-7">
+      <text>lateral spikes female, at times upper 1 or 2 bearing short male part, olive-brownish, 2.5–4 cm × 5–8 mm, densely many flowered, long pedunculate.</text>
+      <structure id="o3143" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="count" value="1" />
+        <character name="count" value="2" />
+        <character name="feature_or_reproduction" value="male" modifier="; part" />
+        <character name="coloration" value="olive-brownish" />
+        <character char_type="range_value" name="length" from="2.5" from_unit="cm" to="4" to_unit="cm" />
+        <character char_type="range_value" name="width" from="5" from_unit="mm" to="8" to_unit="mm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+        <character name="architecture" value="pedunculate" />
+      </structure>
+      <structure id="o3144" name="upper" />
+      <relation id="r639" name="at" from="o3143" to="o3144" negation="false" />
+    </statement>
+    <statement id="1099.txt-8">
+      <text>Female glumes brownish, ovate, 2–3 × 1.2–1.5 mm, membranous, 3-veined costa excurrent beyond apex into an erect awn ca. 1.5 mm.</text>
+      <structure id="o3145" name="glume" constraint="female">
+        <character name="coloration" value="brownish" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="length" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.2" from_unit="mm" to="1.5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="3-veined" />
+        <character name="architecture" value="excurrent" constraint="beyond apex" constraintid="o3147" />
+      </structure>
+      <structure id="o3146" name="costa" />
+      <structure id="o3147" name="apex" />
+      <structure id="o3148" name="awn">
+        <character name="orientation" value="erect" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+      <relation id="r640" name="into" from="o3147" to="o3148" negation="false" />
+    </statement>
+    <statement id="1099.txt-9">
+      <text>Utricles glaucous green, longer than body of glume but surpassed by awn, obovate to broadly obovate, 2.8–3 × 1.5–2 mm, herbaceous, glabrous, strongly 2-costate and bearing 4 or 5 veins reaching halfway up utricle, base cuneate-attenuate, apex rounded-contracted into a very short beak, orifice scarcely 2-toothed.</text>
+      <structure id="o3149" name="utricle">
+        <character name="external_texture" value="glaucous" />
+        <character name="coloration" value="green" />
+        <character name="length" value="longer" constraint="than body" constraintid="o3150" />
+        <character char_type="range_value" name="shape" from="obovate" to="broadly obovate" />
+        <character name="shape" value="obovate" />
+        <character name="shape" value="obovate" modifier="broadly" />
+        <character char_type="range_value" name="length" from="2.8" from_unit="mm" to="3" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+        <character name="external_texture_or_feature_or_internal_texture" value="herbaceous" />
+        <character name="external_texture" value="glabrous" />
+        <character name="architecture" value="2-costate" modifier="strongly" />
+      </structure>
+      <structure id="o3150" name="body" />
+      <structure id="o3151" name="glume" />
+      <relation id="r641" name="part_of" from="o3150" to="o3151" negation="false" />
+      <structure id="o3152" name="awn" />
+      <relation id="r642" name="surpassed by" from="o3149" to="o3152" negation="false" />
+      <structure id="o3153" name="vein">
+        <character name="count" value="4" />
+        <character name="count" value="5" />
+      </structure>
+      <relation id="r643" name="bearing" from="o3149" to="o3153" negation="false" />
+      <structure id="o3154" name="utricle">
+        <character name="position" value="halfway" />
+      </structure>
+      <relation id="r644" name="reaching" from="o3149" to="o3154" negation="false" />
+      <structure id="o3155" name="apex">
+        <character name="shape" value="cuneate-attenuate" />
+        <character name="size" value="rounded-contracted" constraint="into beak" constraintid="o3156" />
+      </structure>
+      <relation id="r645" name="base" from="o3149" to="o3155" negation="false" />
+      <structure id="o3156" name="beak">
+        <character name="height_or_length" value="short" modifier="very" />
+      </structure>
+      <structure id="o3157" name="orifice">
+        <character name="shape" value="2-toothed" modifier="scarcely" />
+      </structure>
+      <relation id="r646" name="may_be_the_same" from="o3149" to="o3154" negation="false" />
+    </statement>
+    <statement id="1099.txt-10">
+      <text>Nutlets loosely enveloped, obovate, 1.5–2 × 1–1.5 mm;</text>
+      <structure id="o3158" name="nutlet">
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="obovate" />
+        <character char_type="range_value" name="length" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="1.5" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1099.txt-11">
+      <text>style ca. 1.8 mm;</text>
+      <structure id="o3159" name="style">
+        <character name="size" value="1.8" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1099.txt-12">
+      <text>stigmas 3, ca. 1.5 mm.</text>
+      <structure id="o3160" name="stigma">
+        <character name="count" value="3" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Deciduous and coniferous forests; 2700–3100 m. S Xizang [Nepal].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

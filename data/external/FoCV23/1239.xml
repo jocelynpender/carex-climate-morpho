@@ -41,7 +41,206 @@
     <species_name>tonkinensis</species_name>
     <species_authority>Franchet.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome stout, woody. Culms central, 30–120 cm tall, ca. 2 mm thick near base, trigonous, with several nodes, clothed at base with shortly bladed or bladeless dark purple-red sheaths disintegrating into fibers. Leaves basal or cauline, some overtopping culm, blades broadly linear, 4–12 mm wide, stiff, flattish, leathery; cauline leaves rather long, sheathing, dark brown, membranous, pale greenish and black-brown veined abaxially. Lower involucral bracts leaflike, longer than inflorescence, long sheathing, upper involucral bracts glumelike. Inflorescence an interrupted panicle, 30–40 cm, with 3–6 partial panicles, partial panicles 2–5 cm, lower ones single or binate, upper ones binate or occasionally ternate, each bearing 3–7 sessile spikes, lower ones with long peduncles; spikes bisexual, androgynous, lanceolate or oblong-lanceolate, 1.5–3 cm, male part 1/3–1/2 length of spike. Female glumes pale or slightly brown, broadly ovate to oblong, 2.2–4.5 mm, membranous, 1-veined costa excurrent into a short awn 1–1.5 mm, apex acute to subobtuse. Utricles longer than glume, obovate-elliptic or ovate-fusiform, trigonous, 4.5–6 mm, herbaceous, hispidulous above, many veined, gradually tapering at both ends, beak conic, 1–2 mm, hispidulous or glabrescent, obliquely truncate at hardly 2-toothed orifice. Nutlets dark brown, tightly enveloped, obovate-elliptic, trigonous, 2.5–3 mm, faces concave; style erect, sparsely hispidulous, base slightly thickened; stigmas 3. Fl. and fr. Jul–Oct.</description>
+  <description>
+    <statement id="1239.txt-0">
+      <text>Rhizome stout, woody.</text>
+      <structure id="o7355" name="rhizome">
+        <character name="fragility" value="stout" />
+        <character name="internal_texture" value="woody" />
+      </structure>
+    </statement>
+    <statement id="1239.txt-1">
+      <text>Culms central, 30–120 cm tall, ca. 2 mm thick near base, trigonous, with several nodes, clothed at base with shortly bladed or bladeless dark purple-red sheaths disintegrating into fibers.</text>
+      <structure id="o7356" name="culm">
+        <character name="position" value="central" />
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="120" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="2" unit="mm" />
+        <character name="width" value="thick" constraint="near base" constraintid="o7357" />
+        <character name="shape" value="trigonous" />
+      </structure>
+      <structure id="o7357" name="base" />
+      <structure id="o7358" name="node" constraint="several" />
+      <relation id="r1338" name="with" from="o7356" to="o7358" negation="false" />
+      <structure id="o7359" name="base" />
+      <relation id="r1339" name="clothed at" from="o7356" to="o7359" negation="false" />
+      <structure id="o7360" name="sheath">
+        <character name="coloration" value="purple-red" modifier="shortly ;dark" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o7361" />
+      </structure>
+      <relation id="r1340" name="with" from="o7359" to="o7360" negation="false" />
+      <structure id="o7361" name="fiber" />
+      <relation id="r1341" name="may_be_the_same" from="o7357" to="o7359" negation="false" />
+    </statement>
+    <statement id="1239.txt-2">
+      <text>Leaves basal or cauline, some overtopping culm, blades broadly linear, 4–12 mm wide, stiff, flattish, leathery;</text>
+      <structure id="o7362" name="leaf">
+        <character name="position" value="basal" />
+        <character name="position" value="cauline" />
+      </structure>
+      <structure id="o7363" name="culm" />
+      <relation id="r1342" name="overtopping" from="o7362" to="o7363" negation="false" />
+      <structure id="o7364" name="blade">
+        <character name="arrangement_or_shape" value="linear" modifier="broadly" />
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="12" to_unit="mm" />
+        <character name="external_texture" value="stiff" />
+        <character name="external_texture_or_feature" value="leathery" />
+      </structure>
+    </statement>
+    <statement id="1239.txt-3">
+      <text>cauline leaves rather long, sheathing, dark brown, membranous, pale greenish and black-brown veined abaxially.</text>
+      <structure id="o7365" name="leaf" constraint="cauline">
+        <character name="character" value="length" modifier="rather" />
+        <character name="architecture_or_feature_or_shape" value="sheathing" />
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="feature" value="membranous" />
+        <character name="coloration" value="greenish and black-brown" modifier="pale" />
+        <character name="architecture_or_feature" value="veined" modifier="abaxially" />
+      </structure>
+    </statement>
+    <statement id="1239.txt-4">
+      <text>Lower involucral bracts leaflike, longer than inflorescence, long sheathing, upper involucral bracts glumelike.</text>
+      <structure id="o7366" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="length" value="longer" constraint="than inflorescence" constraintid="o7367" />
+        <character name="architecture_or_feature_or_shape" value="sheathing" />
+      </structure>
+      <structure id="o7367" name="inflorescence" />
+      <structure id="o7368" name="bract" constraint="upper involucral">
+        <character name="feature" value="glumelike" />
+      </structure>
+    </statement>
+    <statement id="1239.txt-5">
+      <text>Inflorescence an interrupted panicle, 30–40 cm, with 3–6 partial panicles, partial panicles 2–5 cm, lower ones single or binate, upper ones binate or occasionally ternate, each bearing 3–7 sessile spikes, lower ones with long peduncles;</text>
+      <structure id="o7369" name="inflorescence">
+        <character name="type" value="interrupted panicle" />
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="40" to_unit="cm" />
+      </structure>
+      <structure id="o7370" name="panicle">
+        <character name="architecture" value="interrupted" />
+      </structure>
+      <structure id="o7371" name="panicle" constraint="partial">
+        <character char_type="range_value" name="count" from="3" to="6" />
+      </structure>
+      <relation id="r1343" name="with" from="o7369" to="o7371" negation="false" />
+      <structure id="o7372" name="panicle" constraint="partial">
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="5" to_unit="cm" />
+        <character name="position" value="lower" />
+        <character name="count" value="single" />
+        <character name="count" value="binate" />
+        <character name="position" value="upper" />
+        <character name="count" value="binate" />
+        <character name="architecture_or_count" value="ternate" modifier="occasionally" />
+        <character name="position" value="lower" constraint="with peduncles" constraintid="o7374" />
+      </structure>
+      <structure id="o7373" name="spike">
+        <character char_type="range_value" name="count" from="3" to="7" />
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+      <relation id="r1344" name="bearing" from="o7372" to="o7373" negation="false" modifier="each" />
+      <structure id="o7374" name="peduncle">
+        <character name="length" value="long" />
+      </structure>
+      <relation id="r1345" name="may_be_the_same" from="o7371" to="o7372" negation="false" />
+    </statement>
+    <statement id="1239.txt-6">
+      <text>spikes bisexual, androgynous, lanceolate or oblong-lanceolate, 1.5–3 cm, male part 1/3–1/2 length of spike.</text>
+      <structure id="o7375" name="spike">
+        <character name="reproduction" value="bisexual" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="lanceolate" />
+        <character name="shape" value="oblong-lanceolate" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="cm" to="3" to_unit="cm" />
+        <character name="feature_or_reproduction" value="male" />
+        <character char_type="range_value" name="length" from="1/3" to="1/2" constraint="of spike" constraintid="o7376" />
+      </structure>
+      <structure id="o7376" name="spike" />
+      <relation id="r1346" name="may_be_the_same" from="o7375" to="o7376" negation="false" />
+    </statement>
+    <statement id="1239.txt-7">
+      <text>Female glumes pale or slightly brown, broadly ovate to oblong, 2.2–4.5 mm, membranous, 1-veined costa excurrent into a short awn 1–1.5 mm, apex acute to subobtuse.</text>
+      <structure id="o7377" name="glume" constraint="female">
+        <character name="coloration" value="pale" />
+        <character name="coloration" value="brown" modifier="slightly" />
+        <character char_type="range_value" name="shape" from="broadly ovate" to="oblong" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="2.2" from_unit="mm" to="4.5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="1-veined" />
+        <character name="architecture" value="excurrent" constraint="into awn" constraintid="o7379" />
+      </structure>
+      <structure id="o7378" name="costa" />
+      <structure id="o7379" name="awn">
+        <character name="height_or_length" value="short" />
+        <character char_type="range_value" name="size" from="1" from_unit="mm" to="1.5" to_unit="mm" />
+      </structure>
+      <structure id="o7380" name="apex">
+        <character char_type="range_value" name="shape" from="acute" to="subobtuse" />
+        <character name="shape" value="acute" />
+        <character name="shape" value="subobtuse" />
+      </structure>
+    </statement>
+    <statement id="1239.txt-8">
+      <text>Utricles longer than glume, obovate-elliptic or ovate-fusiform, trigonous, 4.5–6 mm, herbaceous, hispidulous above, many veined, gradually tapering at both ends, beak conic, 1–2 mm, hispidulous or glabrescent, obliquely truncate at hardly 2-toothed orifice.</text>
+      <structure id="o7381" name="utricle">
+        <character name="length" value="longer" constraint="than glume" constraintid="o7382" />
+        <character name="shape" value="obovate-elliptic" />
+        <character name="shape" value="ovate-fusiform" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="4.5" from_unit="mm" to="6" to_unit="mm" />
+        <character name="external_texture_or_feature_or_internal_texture" value="herbaceous" />
+        <character name="external_texture" value="hispidulous" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" />
+        <character name="shape" value="tapering" modifier="gradually" constraint="at ends" constraintid="o7383" />
+      </structure>
+      <structure id="o7382" name="glume" />
+      <structure id="o7383" name="end" />
+      <structure id="o7384" name="beak">
+        <character name="shape" value="conic" />
+        <character char_type="range_value" name="size" from="1" from_unit="mm" to="2" to_unit="mm" />
+        <character name="external_texture" value="hispidulous" />
+        <character name="external_texture" value="glabrescent" />
+        <character name="shape" value="truncate" modifier="obliquely" constraint="at orifice" constraintid="o7385" />
+      </structure>
+      <structure id="o7385" name="orifice">
+        <character name="shape" value="2-toothed" modifier="hardly" />
+      </structure>
+    </statement>
+    <statement id="1239.txt-9">
+      <text>Nutlets dark brown, tightly enveloped, obovate-elliptic, trigonous, 2.5–3 mm, faces concave;</text>
+      <structure id="o7386" name="nutlet">
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="arrangement_or_shape" value="obovate-elliptic" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character name="shape" value="concave" />
+      </structure>
+    </statement>
+    <statement id="1239.txt-10">
+      <text>style erect, sparsely hispidulous, base slightly thickened;</text>
+      <structure id="o7387" name="style">
+        <character name="orientation" value="erect" />
+        <character name="external_texture" value="hispidulous" modifier="sparsely" />
+      </structure>
+      <structure id="o7388" name="base">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1239.txt-11">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1239.txt-12">
+      <text>Fl. and fr. Jul–Oct.</text>
+      <structure id="o7389" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Shady and moist places in forests; 700–1800 m. Fujian, Guangdong, Guangxi, Guizhou, Hainan, Sichuan, Taiwan, Yunnan [Indonesia, Malaysia, Thailand, Vietnam].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

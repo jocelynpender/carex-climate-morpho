@@ -14,8 +14,134 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>尤尔都斯薹草 you er du si tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, with stolons. Culms 10–30 cm tall, erect to slightly curved, scabrous above, clothed at base with brownish red bladeless sheaths disintegrating into fibers. Leaves slightly shorter than or subequaling culm, blades linear, 2.5–3 mm wide, apex long acuminate. Spikes 3–6, disposed in an interrupted spicate inflorescence; terminal spike gynaecandrous, obovate to oblong, clavate, 1–2.5 × 0.6–0.8 cm; remaining spikes female, ovate to oblong, 0.8–1.5 × 0.6–0.8 cm; lowest peduncle ca. 0.8 cm. Female glumes dark ferruginous, lighter on midrib, ovate, margins white hyaline, apex obtuse or acute. Utricles yellowish, ferruginous above, shorter than glume, obovate, 2.5–3 mm, minutely granulose, faintly 3- or 4-veined on both surfaces, base cuneate, apex abruptly contracted into a very short, smooth, emarginate beak. Fl. and fr. Jun–Aug.</description>
+  <description>
+    <statement id="1054.txt-0">
+      <text>Rhizome short, with stolons.</text>
+      <structure id="o1842" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o1843" name="stolon" />
+      <relation id="r404" name="with" from="o1842" to="o1843" negation="false" />
+    </statement>
+    <statement id="1054.txt-1">
+      <text>Culms 10–30 cm tall, erect to slightly curved, scabrous above, clothed at base with brownish red bladeless sheaths disintegrating into fibers.</text>
+      <structure id="o1844" name="culm">
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="30" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character char_type="range_value" name="orientation" from="erect" to="slightly curved" />
+        <character name="orientation" value="erect" />
+        <character name="orientation" value="curved" modifier="slightly" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o1845" name="base" />
+      <relation id="r405" name="clothed at" from="o1844" to="o1845" negation="false" />
+      <structure id="o1846" name="sheath" constraint="bladeless">
+        <character name="coloration" value="red" modifier="brownish" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o1847" />
+      </structure>
+      <relation id="r406" name="with" from="o1845" to="o1846" negation="false" />
+      <structure id="o1847" name="fiber" />
+    </statement>
+    <statement id="1054.txt-2">
+      <text>Leaves slightly shorter than or subequaling culm, blades linear, 2.5–3 mm wide, apex long acuminate.</text>
+      <structure id="o1848" name="leaf">
+        <character name="height_or_length" value="shorter" modifier="slightly" constraint="than or subequaling culm" constraintid="o1849" />
+      </structure>
+      <structure id="o1849" name="culm" />
+      <structure id="o1850" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+      </structure>
+      <structure id="o1851" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1054.txt-3">
+      <text>Spikes 3–6, disposed in an interrupted spicate inflorescence;</text>
+      <structure id="o1852" name="spike">
+        <character char_type="range_value" name="count" from="3" to="6" />
+        <character name="arrangement" value="disposed" constraint="in inflorescence" constraintid="o1853" />
+      </structure>
+      <structure id="o1853" name="inflorescence" constraint="spicate">
+        <character name="architecture" value="interrupted" />
+      </structure>
+    </statement>
+    <statement id="1054.txt-4">
+      <text>terminal spike gynaecandrous, obovate to oblong, clavate, 1–2.5 × 0.6–0.8 cm;</text>
+      <structure id="o1854" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+        <character char_type="range_value" name="shape" from="obovate" to="oblong" />
+        <character name="shape" value="obovate" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="clavate" />
+        <character char_type="range_value" name="length" from="1" from_unit="cm" to="2.5" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.6" from_unit="cm" to="0.8" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1054.txt-5">
+      <text>remaining spikes female, ovate to oblong, 0.8–1.5 × 0.6–0.8 cm;</text>
+      <structure id="o1855" name="spike" constraint="remaining">
+        <character name="reproduction" value="female" />
+        <character char_type="range_value" name="shape" from="ovate" to="oblong" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="length" from="0.8" from_unit="cm" to="1.5" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.6" from_unit="cm" to="0.8" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1054.txt-6">
+      <text>lowest peduncle ca. 0.8 cm.</text>
+      <structure id="o1856" name="peduncle">
+        <character name="feature" value="lowest" />
+        <character name="size" value="0.8" unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1054.txt-7">
+      <text>Female glumes dark ferruginous, lighter on midrib, ovate, margins white hyaline, apex obtuse or acute.</text>
+      <structure id="o1857" name="glume" constraint="female">
+        <character name="coloration" value="dark" />
+        <character name="coloration" value="lighter" constraint="on midrib" constraintid="o1858" />
+        <character name="shape" value="ovate" />
+      </structure>
+      <structure id="o1858" name="midrib" />
+      <structure id="o1859" name="margin">
+        <character name="coloration" value="hyaline" modifier="white" />
+      </structure>
+      <structure id="o1860" name="apex">
+        <character name="shape" value="obtuse" />
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1054.txt-8">
+      <text>Utricles yellowish, ferruginous above, shorter than glume, obovate, 2.5–3 mm, minutely granulose, faintly 3- or 4-veined on both surfaces, base cuneate, apex abruptly contracted into a very short, smooth, emarginate beak.</text>
+      <structure id="o1862" name="glume" />
+      <structure id="o1863" name="surface" />
+      <structure id="o1864" name="apex">
+        <character name="arrangement_or_shape" value="cuneate" />
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o1865" />
+      </structure>
+      <relation id="r407" name="base" from="o1861" to="o1864" negation="false" />
+      <structure id="o1865" name="beak">
+        <character name="height_or_length" value="short" modifier="very" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="shape" value="emarginate" />
+      </structure>
+    </statement>
+    <statement id="1054.txt-9">
+      <text>Fl. and fr. Jun–Aug.</text>
+      <structure id="o1861" name="utricle">
+        <character name="coloration" value="yellowish" />
+        <character name="height_or_length" value="shorter" constraint="than glume" constraintid="o1862" />
+        <character name="shape" value="obovate" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character name="internal_texture" value="granulose" modifier="minutely" />
+        <character name="architecture_or_feature" value="3-or-4-veined" modifier="faintly" constraint="on surfaces" constraintid="o1863" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Meadows, riversides, sands, swampy grasslands, lakesides; 100–2100 m. Xinjiang [N Mongolia, Russia (E and W Siberia); C Asia].</distribution>
   <discussion>No specimens have been seen by the present authors.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

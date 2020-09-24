@@ -29,7 +29,26 @@
     <subspecies_name>pocilliformis</subspecies_name>
     <subspecies_authority>(Boott) T. Koyama.</subspecies_authority>
   </TaxonIdentification>
-  <description>Male glumes connate from base to above middle; filaments of stamens flat and connate.</description>
+  <description>
+    <statement id="1130.txt-0">
+      <text>Male glumes connate from base to above middle;</text>
+      <structure id="o4185" name="glume" constraint="male">
+        <character name="fusion" value="connate" constraint="from base" constraintid="o4186" />
+      </structure>
+      <structure id="o4186" name="base" constraint="to above middle" />
+    </statement>
+    <statement id="1130.txt-1">
+      <text>filaments of stamens flat and connate.</text>
+      <structure id="o4187" name="filament">
+        <character name="prominence_or_shape" value="flat" />
+        <character name="fusion" value="connate" />
+      </structure>
+      <structure id="o4188" name="stamen" />
+      <relation id="r873" name="part_of" from="o4187" to="o4188" negation="false" />
+    </statement>
+  </description>
   <distribution>Grasslands on mountain slopes, forests, wet places in field margins; 300–1100 m. Anhui, Fujian, Guangdong, Guangxi, Hunan, Jiangsu, Jiangxi, Sichuan, Taiwan, Zhejiang [Japan, Korea].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

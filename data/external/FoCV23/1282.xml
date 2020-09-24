@@ -14,8 +14,127 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>昆仑薹草 kun lun tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome horizontal. Culms (3–)7–16 cm tall, slender, erect, smooth, clothed at base with brown sheaths. Leaves equaling or slightly longer or shorter than culm, blades linear, plicate, filiform, ca. 1 mm wide, glabrous. Lower involucral bracts leaflike, shorter than inflorescence, sheathing, brown. Spikes (2 or)3(or 4), slightly distant; terminal spike male, 1–1.5 × ca. 0.3 cm; remaining spikes female, oblong, 0.8–1.5 × ca. 0.3 cm, sessile. Female glumes dark purple-brown, ovate, 4–5 mm, 1-veined, margins hyaline. Utricles purple above, green below, lanceolate, trigonous, 3.5–4 mm, nerveless, margins slightly scabrous, apex long beaked, orifice 2-toothed; stigmas 3. Fl. and fr. Jun–Aug.</description>
+  <description>
+    <statement id="1282.txt-0">
+      <text>Rhizome horizontal.</text>
+      <structure id="o8607" name="rhizome">
+        <character name="orientation" value="horizontal" />
+      </structure>
+    </statement>
+    <statement id="1282.txt-1">
+      <text>Culms (3– )7–16 cm tall, slender, erect, smooth, clothed at base with brown sheaths.</text>
+      <structure id="o8608" name="culm">
+        <character char_type="range_value" name="atypical_size" from="3" to="7" from_unit="cm" to_unit="cm" to_inclusive="false" />
+        <character char_type="range_value" name="size" from="7" from_unit="cm" to="16" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="orientation" value="erect" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o8609" name="base" />
+      <relation id="r1578" name="clothed at" from="o8608" to="o8609" negation="false" />
+      <structure id="o8610" name="sheath">
+        <character name="coloration" value="brown" />
+      </structure>
+      <relation id="r1579" name="with" from="o8609" to="o8610" negation="false" />
+    </statement>
+    <statement id="1282.txt-2">
+      <text>Leaves equaling or slightly longer or shorter than culm, blades linear, plicate, filiform, ca. 1 mm wide, glabrous.</text>
+      <structure id="o8611" name="leaf">
+        <character name="architecture_or_arrangement_or_shape_or_vernation" value="plicate" />
+        <character name="shape" value="filiform" />
+        <character name="width" value="1" unit="mm" />
+        <character name="external_texture" value="glabrous" />
+      </structure>
+      <structure id="o8612" name="blade" constraint="culm">
+        <character name="n" value="length" />
+        <character name="arrangement_or_shape" value="linear" />
+      </structure>
+      <relation id="r1580" name="equaling" from="o8611" to="o8612" negation="false" />
+    </statement>
+    <statement id="1282.txt-3">
+      <text>Lower involucral bracts leaflike, shorter than inflorescence, sheathing, brown.</text>
+      <structure id="o8613" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o8614" />
+        <character name="architecture_or_feature_or_shape" value="sheathing" />
+        <character name="coloration" value="brown" />
+      </structure>
+      <structure id="o8614" name="inflorescence" />
+    </statement>
+    <statement id="1282.txt-4">
+      <text>Spikes (2 or )3 (or 4 ), slightly distant;</text>
+      <structure id="o8615" name="spike">
+        <character name="count" value="2" in_brackets="true" />
+        <character name="count" value="2" in_brackets="true" />
+        <character name="count" value="3" />
+        <character name="count" value="4" in_brackets="true" />
+        <character name="arrangement" value="distant" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1282.txt-5">
+      <text>terminal spike male, 1–1.5 × ca. 0.3 cm;</text>
+      <structure id="o8616" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character char_type="range_value" name="length" from="1" from_unit="cm" to="1.5" to_unit="cm" />
+        <character name="width" value="0.3" unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1282.txt-6">
+      <text>remaining spikes female, oblong, 0.8–1.5 × ca. 0.3 cm, sessile.</text>
+      <structure id="o8617" name="spike" constraint="remaining">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="length" from="0.8" from_unit="cm" to="1.5" to_unit="cm" />
+        <character name="width" value="0.3" unit="cm" />
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+    </statement>
+    <statement id="1282.txt-7">
+      <text>Female glumes dark purple-brown, ovate, 4–5 mm, 1-veined, margins hyaline.</text>
+      <structure id="o8618" name="glume" constraint="female">
+        <character name="coloration" value="purple-brown" modifier="dark" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="5" to_unit="mm" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o8619" name="margin">
+        <character name="coloration" value="hyaline" />
+      </structure>
+    </statement>
+    <statement id="1282.txt-8">
+      <text>Utricles purple above, green below, lanceolate, trigonous, 3.5–4 mm, nerveless, margins slightly scabrous, apex long beaked, orifice 2-toothed;</text>
+      <structure id="o8620" name="utricle">
+        <character name="coloration" value="purple" />
+        <character name="coloration" value="green" />
+        <character name="shape" value="lanceolate" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="3.5" from_unit="mm" to="4" to_unit="mm" />
+        <character name="feature" value="nerveless" />
+      </structure>
+      <structure id="o8621" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" modifier="slightly" />
+      </structure>
+      <structure id="o8622" name="apex">
+        <character name="shape" value="beaked" />
+      </structure>
+      <structure id="o8623" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1282.txt-9">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1282.txt-10">
+      <text>Fl. and fr. Jun–Aug.</text>
+      <structure id="o8624" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Alpine meadows; 4000–4300 m. SE Xinjiang (Ruoqiang).</distribution>
   <discussion>This name was originally published by N. R. Cui (Fl. Xinjiang. 6: 435, 604. 1996, “kunlunsannsis”), where the type was indicated as having been collected in Ruoqiang Xian and deposited in three herbaria in Xinjiang (XJA, XJBI, XJNU). However, because no collector’s name, number, or date was cited, the requirements of Vienna Code Art. 37 were not satisfied and consequently the name was not validly published there. The name was validated by S. Y. Jin and Y. L. Chen by full and direct reference to N. R. Cui’s validating Latin description and indication of the holotype at XJNU.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

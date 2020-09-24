@@ -13,7 +13,129 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>针薹草 zhen tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, 10–20 cm tall, smooth, leafy in lower 1/4. Leaves shorter than culm, blades narrow, 0.5–1 mm wide, involute; basal sheaths pale brown. Inflorescence 1-spiked, terminal, androgynous, ovate to orbicular-ovate, 4–7 × 4–5 mm; male part not distinct, 3–5-flowered; most of spike female, 5–10-flowered. Female glumes pale brown laterally, broadly ovate, membranous, pale on 3-veined costa. Utricles patent at maturity, slightly longer than or equaling glume, broadly ovate, slightly swollen, trigonous, ca. 2 mm, not distinctly veined on both sides, base subcordate adaxially, apex nearly beakless, orifice truncate. Nutlet loosely enveloped, elliptic or obovate, trigonous, ca. 1.5 mm; style base not thickened, persistent; stigmas 3.</description>
+  <description>
+    <statement id="1611.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o18512" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1611.txt-1">
+      <text>Culms tufted, 10–20 cm tall, smooth, leafy in lower 1/4.</text>
+      <structure id="o18513" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="20" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="architecture" value="leafy" modifier="in lower 1/4" />
+      </structure>
+    </statement>
+    <statement id="1611.txt-2">
+      <text>Leaves shorter than culm, blades narrow, 0.5–1 mm wide, involute;</text>
+      <structure id="o18514" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o18515" />
+      </structure>
+      <structure id="o18515" name="culm" />
+      <structure id="o18516" name="blade">
+        <character name="width" value="narrow" />
+        <character char_type="range_value" name="width" from="0.5" from_unit="mm" to="1" to_unit="mm" />
+        <character name="shape_or_vernation" value="involute" />
+      </structure>
+    </statement>
+    <statement id="1611.txt-3">
+      <text>basal sheaths pale brown.</text>
+      <structure id="o18517" name="sheath" constraint="basal">
+        <character name="coloration" value="brown" modifier="pale" />
+      </structure>
+    </statement>
+    <statement id="1611.txt-4">
+      <text>Inflorescence 1-spiked, terminal, androgynous, ovate to orbicular-ovate, 4–7 × 4–5 mm;</text>
+    </statement>
+    <statement id="1611.txt-5">
+      <text>male part not distinct, 3–5-flowered;</text>
+    </statement>
+    <statement id="1611.txt-6">
+      <text>most of spike female, 5–10-flowered.</text>
+      <structure id="o18518" name="inflorescence">
+        <character name="position" value="terminal" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character char_type="range_value" name="shape" from="ovate" to="orbicular-ovate" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="orbicular-ovate" />
+        <character char_type="range_value" name="length" from="4" from_unit="mm" to="7" to_unit="mm" />
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="5" to_unit="mm" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="fusion" value="distinct" modifier="not" />
+        <character name="architecture" value="3-5-flowered" />
+        <character name="reproduction" value="female" />
+        <character name="architecture" value="5-10-flowered" />
+      </structure>
+      <structure id="o18519" name="spike" />
+      <relation id="r3535" name="part_of" from="o18518" to="o18519" negation="false" />
+    </statement>
+    <statement id="1611.txt-7">
+      <text>Female glumes pale brown laterally, broadly ovate, membranous, pale on 3-veined costa.</text>
+      <structure id="o18520" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="laterally;pale" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="feature" value="membranous" />
+        <character name="coloration" value="pale" constraint="on costa" constraintid="o18521" />
+      </structure>
+      <structure id="o18521" name="costa">
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+    </statement>
+    <statement id="1611.txt-8">
+      <text>Utricles patent at maturity, slightly longer than or equaling glume, broadly ovate, slightly swollen, trigonous, ca. 2 mm, not distinctly veined on both sides, base subcordate adaxially, apex nearly beakless, orifice truncate.</text>
+      <structure id="o18522" name="utricle">
+        <character name="orientation" value="patent" constraint="at glume" constraintid="o18523" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="shape" value="swollen" modifier="slightly" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+        <character name="architecture_or_feature" value="veined" modifier="not distinctly" constraint="on sides" constraintid="o18524" />
+      </structure>
+      <structure id="o18523" name="glume">
+        <character name="life_stage" value="maturity" />
+        <character name="length" value="longer" modifier="slightly" />
+      </structure>
+      <structure id="o18524" name="side" />
+      <structure id="o18525" name="base">
+        <character name="shape" value="subcordate" modifier="adaxially" />
+      </structure>
+      <structure id="o18526" name="apex">
+        <character name="architecture" value="beakless" modifier="nearly" />
+      </structure>
+      <structure id="o18527" name="orifice">
+        <character name="shape" value="truncate" />
+      </structure>
+    </statement>
+    <statement id="1611.txt-9">
+      <text>Nutlet loosely enveloped, elliptic or obovate, trigonous, ca. 1.5 mm;</text>
+      <structure id="o18528" name="nutlet">
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="elliptic" />
+        <character name="shape" value="obovate" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1611.txt-10">
+      <text>style base not thickened, persistent;</text>
+      <structure id="o18529" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+        <character name="duration" value="persistent" />
+      </structure>
+    </statement>
+    <statement id="1611.txt-11">
+      <text>stigmas 3.</text>
+      <structure id="o18530" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Carex meyeriana bogs in forest regions. Jilin [Russia (Far East, E Siberia)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

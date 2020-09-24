@@ -13,7 +13,195 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>蟋蟀薹草 xi shuai tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, 30–40 cm tall, slender, compressed trigonous, slightly scabrous above, clothed at base with purple-red or brown bladeless sheaths eventually disintegrating into parallel fibers. Leaves shorter than or subequaling culm, blades gray-green, linear, 2.5–4 mm wide, flat, papillose, margins scabrous. Lower 1 or 2 involucral bracts leaflike, surpassing inflorescence, sheathless, upper glumelike. Spikes 3–5, approximate, cylindric, 10–25 × ca. 0.5 mm, densely many flowered; terminal spike gynaecandrous or with male flowers at apex or base, female in middle; lateral spikes female, upper 2 or 3 sessile or subsessile, lower 1 or 2 with peduncles up to ca. 1.5 mm. Female glumes dark purple-black, oblong-elliptic, ca. 2.5 × 1.2–2 mm, with a light midrib, margins narrowly white hyaline, apex obtuse. Utricles light brown or light green, sometimes red or purple spotted above, longer than glume, suberect, elliptic or obovate-elliptic, plano-convex, (2–)2.5–3 mm, membranous, indistinctly veined, base shortly stipitate, apex abruptly contracted into a short cylindric reddish brown beak, orifice entire or slightly emarginate. Nutlets tightly enveloped, broadly obovate, 1.5–1.7 × ca. 1.3 mm, base very shortly stipitate; style base not thickened; stigmas 2. 2n = 84.</description>
+  <description>
+    <statement id="1502.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o15538" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1502.txt-1">
+      <text>Culms tufted, 30–40 cm tall, slender, compressed trigonous, slightly scabrous above, clothed at base with purple-red or brown bladeless sheaths eventually disintegrating into parallel fibers.</text>
+      <structure id="o15539" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="40" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="compressed trigonous" />
+        <character name="external_texture_or_relief" value="scabrous" modifier="slightly" />
+      </structure>
+      <structure id="o15540" name="base" />
+      <relation id="r2966" name="clothed at" from="o15539" to="o15540" negation="false" />
+      <structure id="o15541" name="sheath" constraint="bladeless">
+        <character name="coloration" value="purple-red" />
+        <character name="coloration" value="brown" />
+        <character name="dehiscence" value="disintegrating" modifier="eventually" constraint="into fibers" constraintid="o15542" />
+      </structure>
+      <relation id="r2967" name="with" from="o15540" to="o15541" negation="false" />
+      <structure id="o15542" name="fiber">
+        <character name="arrangement" value="parallel" />
+      </structure>
+    </statement>
+    <statement id="1502.txt-2">
+      <text>Leaves shorter than or subequaling culm, blades gray-green, linear, 2.5–4 mm wide, flat, papillose, margins scabrous.</text>
+      <structure id="o15543" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than or subequaling culm" constraintid="o15544" />
+      </structure>
+      <structure id="o15544" name="culm" />
+      <structure id="o15545" name="blade">
+        <character name="coloration" value="gray-green" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2.5" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="relief" value="papillose" />
+      </structure>
+      <structure id="o15546" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1502.txt-3">
+      <text>Lower 1 or 2 involucral bracts leaflike, surpassing inflorescence, sheathless, upper glumelike.</text>
+      <structure id="o15547" name="bract" constraint="involucral">
+        <character name="position" value="lower" />
+        <character name="count" value="1" />
+        <character name="count" value="2" />
+        <character name="architecture" value="leaflike" />
+        <character name="feature" value="sheathless" />
+        <character name="position" value="upper" />
+        <character name="feature" value="glumelike" />
+      </structure>
+      <structure id="o15548" name="inflorescence" />
+      <relation id="r2968" name="surpassing" from="o15547" to="o15548" negation="false" />
+    </statement>
+    <statement id="1502.txt-4">
+      <text>Spikes 3–5, approximate, cylindric, 10–25 × ca. 0.5 mm, densely many flowered;</text>
+      <structure id="o15549" name="spike">
+        <character char_type="range_value" name="count" from="3" to="5" />
+        <character name="feature" value="approximate" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="length" from="10" from_unit="mm" to="25" to_unit="mm" />
+        <character name="width" value="0.5" unit="mm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+    </statement>
+    <statement id="1502.txt-5">
+      <text>terminal spike gynaecandrous or with male flowers at apex or base, female in middle;</text>
+      <structure id="o15550" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+        <character name="feature" value="with male flowers" />
+        <character name="reproduction" value="female" modifier="in middle" />
+      </structure>
+      <structure id="o15551" name="flower" constraint="male" />
+      <relation id="r2969" name="with" from="o15550" to="o15551" negation="false" />
+      <structure id="o15552" name="apex" />
+      <structure id="o15553" name="base" />
+      <relation id="r2970" name="at" from="o15551" to="o15552" negation="false" />
+      <relation id="r2971" name="at" from="o15551" to="o15553" negation="false" />
+    </statement>
+    <statement id="1502.txt-6">
+      <text>lateral spikes female, upper 2 or 3 sessile or subsessile, lower 1 or 2 with peduncles up to ca. 1.5 mm.</text>
+      <structure id="o15554" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+      </structure>
+      <structure id="o15555" name="upper">
+        <character name="count" value="2" />
+        <character name="count" value="3" />
+        <character name="architecture" value="sessile" />
+        <character name="architecture" value="subsessile" />
+      </structure>
+      <structure id="o15556" name="lower">
+        <character name="count" value="1" />
+        <character name="count" value="2" constraint="with peduncles" constraintid="o15557" />
+      </structure>
+      <structure id="o15557" name="peduncle">
+        <character char_type="range_value" name="size" from="0" from_unit="mm" to="1.5" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1502.txt-7">
+      <text>Female glumes dark purple-black, oblong-elliptic, ca. 2.5 × 1.2–2 mm, with a light midrib, margins narrowly white hyaline, apex obtuse.</text>
+      <structure id="o15558" name="glume" constraint="female">
+        <character name="coloration" value="purple-black" modifier="dark" />
+        <character name="arrangement_or_shape" value="oblong-elliptic" />
+        <character name="length" value="2.5" unit="mm" />
+        <character char_type="range_value" name="width" from="1.2" from_unit="mm" to="2" to_unit="mm" />
+      </structure>
+      <structure id="o15559" name="midrib">
+        <character name="coloration" value="light" />
+      </structure>
+      <relation id="r2972" name="with" from="o15558" to="o15559" negation="false" />
+      <structure id="o15560" name="margin">
+        <character name="coloration" value="hyaline" modifier="narrowly;white" />
+      </structure>
+      <structure id="o15561" name="apex">
+        <character name="shape" value="obtuse" />
+      </structure>
+    </statement>
+    <statement id="1502.txt-8">
+      <text>Utricles light brown or light green, sometimes red or purple spotted above, longer than glume, suberect, elliptic or obovate-elliptic, planoconvex, (2– )2.5–3 mm, membranous, indistinctly veined, base shortly stipitate, apex abruptly contracted into a short cylindric reddish brown beak, orifice entire or slightly emarginate.</text>
+      <structure id="o15562" name="utricle">
+        <character name="coloration" value="brown" modifier="light" />
+        <character name="coloration" value="green" modifier="light" />
+        <character name="coloration" value="red" modifier="sometimes" />
+        <character name="coloration" value="purple" />
+        <character name="pattern" value="spotted" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o15563" />
+        <character name="orientation" value="suberect" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="arrangement_or_shape" value="obovate-elliptic" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="atypical_size" from="2" to="2.5" from_unit="mm" to_unit="mm" to_inclusive="false" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="veined" modifier="indistinctly" />
+      </structure>
+      <structure id="o15563" name="glume" />
+      <structure id="o15564" name="base">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o15565" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o15566" />
+      </structure>
+      <structure id="o15566" name="beak">
+        <character name="height_or_length" value="short" />
+        <character name="shape" value="cylindric" />
+        <character name="coloration" value="brown" modifier="reddish" />
+      </structure>
+      <structure id="o15567" name="orifice">
+        <character name="shape" value="entire" />
+        <character name="shape" value="emarginate" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1502.txt-9">
+      <text>Nutlets tightly enveloped, broadly obovate, 1.5–1.7 × ca. 1.3 mm, base very shortly stipitate;</text>
+      <structure id="o15568" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="obovate" modifier="broadly" />
+        <character char_type="range_value" name="length" from="1.5" from_unit="mm" to="1.7" to_unit="mm" />
+        <character name="width" value="1.3" unit="mm" />
+      </structure>
+      <structure id="o15569" name="base">
+        <character name="architecture" value="stipitate" modifier="very shortly" />
+      </structure>
+    </statement>
+    <statement id="1502.txt-10">
+      <text>style base not thickened;</text>
+      <structure id="o15570" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1502.txt-11">
+      <text>stigmas 2.2n = 84.</text>
+      <structure id="o15571" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+      <structure name="chromosome" id="o15572">
+        <character name="count" value="84" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Alpine frozen soil, wet places; 1700–2500 m. Jilin [Japan, Korea, Mongolia, Russia (Far East, E Siberia); North America (Alaska, NW Canada)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -18,7 +18,145 @@
     <species_name>diplasiocarpa</species_name>
     <species_authority>V. I. Kreczetowicz.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome long creeping, subterete, clothed with brown scales. Culms ca. 20 cm tall, slender, trigonous, slightly scabrous above, clothed with brown or pale brown sheaths at base. Leaves ± equaling culm, blades linear, 2–3 mm wide, flat, margins slightly scabrous, apex acuminate. Involucral bracts glumelike. Spicate inflorescence oblong, 1–2 cm, sometimes interrupted below; spikes androgynous or gynaecandrous, sometimes lower ones female, ovate. Female glumes pale or slightly ferruginous, green at middle, lanceolate, ca. 2.3 mm, margins white hyaline, apex acute. Utricles yellowish green, longer than glume, ovate, plano-convex, 3–4 mm, membranous, many veined abaxially, faintly 3–5-veined adaxially, base subrounded, shortly stipitate, upper margins narrowly serrulate winged, apex gradually attenuate into a long beak, orifice membranous, obliquely truncate, 2-toothed. Nutlets somewhat tightly enveloped, oblong, ca. 1.3 mm; stigmas 2. Fl. and fr. Jun–Jul.</description>
+  <description>
+    <statement id="1655.txt-0">
+      <text>Rhizome long creeping, subterete, clothed with brown scales.</text>
+      <structure id="o19517" name="rhizome">
+        <character name="habit" value="creeping" />
+        <character name="shape" value="subterete" />
+      </structure>
+      <structure id="o19518" name="scale">
+        <character name="coloration" value="brown" />
+      </structure>
+      <relation id="r3690" name="clothed with" from="o19517" to="o19518" negation="false" />
+    </statement>
+    <statement id="1655.txt-1">
+      <text>Culms ca. 20 cm tall, slender, trigonous, slightly scabrous above, clothed with brown or pale brown sheaths at base.</text>
+      <structure id="o19519" name="culm">
+        <character name="size" value="20" unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="trigonous" />
+        <character name="external_texture_or_relief" value="scabrous" modifier="slightly" />
+      </structure>
+      <structure id="o19520" name="sheath">
+        <character name="coloration" value="brown" />
+        <character name="coloration" value="brown" modifier="pale" />
+      </structure>
+      <relation id="r3691" name="clothed with" from="o19519" to="o19520" negation="false" />
+      <structure id="o19521" name="base" />
+      <relation id="r3692" name="at" from="o19520" to="o19521" negation="false" />
+    </statement>
+    <statement id="1655.txt-2">
+      <text>Leaves ± equaling culm, blades linear, 2–3 mm wide, flat, margins slightly scabrous, apex acuminate.</text>
+      <structure id="o19522" name="leaf" />
+      <structure id="o19523" name="culm" />
+      <relation id="r3693" name="equaling" from="o19522" to="o19523" negation="false" modifier="more or less" />
+      <structure id="o19524" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o19525" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" modifier="slightly" />
+      </structure>
+      <structure id="o19526" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1655.txt-3">
+      <text>Involucral bracts glumelike.</text>
+      <structure id="o19527" name="bract" constraint="involucral">
+        <character name="feature" value="glumelike" />
+      </structure>
+    </statement>
+    <statement id="1655.txt-4">
+      <text>Spicate inflorescence oblong, 1–2 cm, sometimes interrupted below;</text>
+      <structure id="o19528" name="inflorescence" constraint="spicate">
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="2" to_unit="cm" />
+        <character name="architecture" value="interrupted" modifier="sometimes" />
+      </structure>
+    </statement>
+    <statement id="1655.txt-5">
+      <text>spikes androgynous or gynaecandrous, sometimes lower ones female, ovate.</text>
+      <structure id="o19529" name="spike">
+        <character name="feature" value="androgynous" />
+        <character name="feature" value="gynaecandrous" />
+        <character name="position" value="lower" modifier="sometimes" />
+        <character name="reproduction" value="female" />
+        <character name="shape" value="ovate" />
+      </structure>
+    </statement>
+    <statement id="1655.txt-6">
+      <text>Female glumes pale or slightly ferruginous, green at middle, lanceolate, ca. 2.3 mm, margins white hyaline, apex acute.</text>
+      <structure id="o19530" name="glume" constraint="female">
+        <character name="coloration" value="pale" />
+        <character name="coloration" value="pale" modifier="slightly ferruginous" />
+        <character name="coloration" value="green" modifier="at middle" />
+        <character name="shape" value="lanceolate" />
+        <character name="size" value="2.3" unit="mm" />
+      </structure>
+      <structure id="o19531" name="margin">
+        <character name="coloration" value="hyaline" modifier="white" />
+      </structure>
+      <structure id="o19532" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1655.txt-7">
+      <text>Utricles yellowish green, longer than glume, ovate, planoconvex, 3–4 mm, membranous, many veined abaxially, faintly 3–5-veined adaxially, base subrounded, shortly stipitate, upper margins narrowly serrulate winged, apex gradually attenuate into a long beak, orifice membranous, obliquely truncate, 2-toothed.</text>
+      <structure id="o19533" name="utricle">
+        <character name="coloration" value="green" modifier="yellowish" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o19534" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" modifier="abaxially" />
+        <character name="architecture_or_feature" value="3-5-veined" modifier="faintly;adaxially" />
+        <character name="architecture" value="winged" />
+      </structure>
+      <structure id="o19534" name="glume" />
+      <structure id="o19535" name="margin" constraint="upper">
+        <character name="arrangement" value="subrounded" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+        <character name="shape" value="serrulate" modifier="narrowly" />
+      </structure>
+      <relation id="r3694" name="base" from="o19533" to="o19535" negation="false" />
+      <structure id="o19536" name="apex">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into beak" constraintid="o19537" />
+      </structure>
+      <structure id="o19537" name="beak">
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o19538" name="orifice">
+        <character name="feature" value="membranous" />
+        <character name="shape" value="truncate" modifier="obliquely" />
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1655.txt-8">
+      <text>Nutlets somewhat tightly enveloped, oblong, ca. 1.3 mm;</text>
+      <structure id="o19539" name="nutlet">
+        <character name="feature" value="enveloped" modifier="somewhat tightly" />
+        <character name="shape" value="oblong" />
+        <character name="size" value="1.3" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1655.txt-9">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1655.txt-10">
+      <text>Fl. and fr. Jun–Jul.</text>
+      <structure id="o19540" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forests. Heilongjiang, Jilin, Liaoning, Nei Mongol [Russia (Far East, E Siberia)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

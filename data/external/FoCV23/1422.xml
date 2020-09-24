@@ -13,7 +13,175 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>连城薹草 lian cheng tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, woody. Culms central, 2–10 cm tall, acutely trigonous, clothed at base with black-brown sheaths disintegrating into fibers. Leaves longer than or subequaling culm, blades linear, 1.5–2.5 mm wide, revolute. Involucral bracts shortly bladed, shorter than inflorescence, shortly sheathing. Spikes 2 or 3; terminal spike male, gray-brown, narrowly cylindric, ca. 10 × 2 mm, with short peduncle; lateral spikes female, oblong-cylindric, ca. 1.2 × 0.6 cm, lowest peduncle ca. 7 mm, upper ones rather short. Female glumes pale, ovate-lanceolate, 4–4.5 mm, green 3-veined costa excurrent into an awn. Utricles brown-green, longer than glume, ovate-elliptic, slightly inflated trigonous, 7–7.5 mm, thickly papery, glabrous, many veined, base cuneate, apex gradually narrowed into a long beak, orifice deeply 2-lobed with sharp teeth. Nutlets castaneous-brown, tightly enclosed, elliptic, ca. 5 mm, base shortly stipitate, apex abruptly contracted into a cylindric erect beak, beak expanding into an annulate orifice; style base thickened, conic; stigmas 3. Fl. and fr. Mar–Apr.</description>
+  <description>
+    <statement id="1422.txt-0">
+      <text>Rhizome short, woody.</text>
+      <structure id="o13013" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="internal_texture" value="woody" />
+      </structure>
+    </statement>
+    <statement id="1422.txt-1">
+      <text>Culms central, 2–10 cm tall, acutely trigonous, clothed at base with black-brown sheaths disintegrating into fibers.</text>
+      <structure id="o13014" name="culm">
+        <character name="position" value="central" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="10" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+      </structure>
+      <structure id="o13015" name="base" />
+      <relation id="r2462" name="clothed at" from="o13014" to="o13015" negation="false" />
+      <structure id="o13016" name="sheath">
+        <character name="coloration" value="black-brown" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o13017" />
+      </structure>
+      <relation id="r2463" name="with" from="o13015" to="o13016" negation="false" />
+      <structure id="o13017" name="fiber" />
+    </statement>
+    <statement id="1422.txt-2">
+      <text>Leaves longer than or subequaling culm, blades linear, 1.5–2.5 mm wide, revolute.</text>
+      <structure id="o13018" name="leaf">
+        <character name="length" value="longer" constraint="than or subequaling culm" constraintid="o13019" />
+      </structure>
+      <structure id="o13019" name="culm" />
+      <structure id="o13020" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="shape_or_vernation" value="revolute" />
+      </structure>
+    </statement>
+    <statement id="1422.txt-3">
+      <text>Involucral bracts shortly bladed, shorter than inflorescence, shortly sheathing.</text>
+      <structure id="o13021" name="bract" constraint="involucral">
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o13022" />
+        <character name="architecture_or_feature_or_shape" value="sheathing" modifier="shortly" />
+      </structure>
+      <structure id="o13022" name="inflorescence" />
+    </statement>
+    <statement id="1422.txt-4">
+      <text>Spikes 2 or 3;</text>
+      <structure id="o13023" name="spike">
+        <character name="count" value="2" />
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+    <statement id="1422.txt-5">
+      <text>terminal spike male, gray-brown, narrowly cylindric, ca. 10 × 2 mm, with short peduncle;</text>
+      <structure id="o13024" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="coloration" value="gray-brown" />
+        <character name="shape" value="cylindric" modifier="narrowly" />
+        <character name="length" value="10" unit="mm" />
+        <character name="width" value="2" unit="mm" />
+      </structure>
+      <structure id="o13025" name="peduncle">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r2464" name="with" from="o13024" to="o13025" negation="false" />
+    </statement>
+    <statement id="1422.txt-6">
+      <text>lateral spikes female, oblong-cylindric, ca. 1.2 × 0.6 cm, lowest peduncle ca. 7 mm, upper ones rather short.</text>
+      <structure id="o13026" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="oblong-cylindric" />
+        <character name="length" value="1.2" unit="cm" />
+        <character name="width" value="0.6" unit="cm" />
+      </structure>
+      <structure id="o13027" name="peduncle">
+        <character name="feature" value="lowest" />
+        <character name="size" value="7" unit="mm" />
+        <character name="position" value="upper" />
+        <character name="height_or_length" value="short" modifier="rather" />
+      </structure>
+    </statement>
+    <statement id="1422.txt-7">
+      <text>Female glumes pale, ovate-lanceolate, 4–4.5 mm, green 3-veined costa excurrent into an awn.</text>
+      <structure id="o13028" name="glume" constraint="female">
+        <character name="coloration" value="pale" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="4.5" to_unit="mm" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="3-veined" />
+        <character name="architecture" value="excurrent" constraint="into awn" constraintid="o13030" />
+      </structure>
+      <structure id="o13029" name="costa" />
+      <structure id="o13030" name="awn" />
+    </statement>
+    <statement id="1422.txt-8">
+      <text>Utricles brown-green, longer than glume, ovate-elliptic, slightly inflated trigonous, 7–7.5 mm, thickly papery, glabrous, many veined, base cuneate, apex gradually narrowed into a long beak, orifice deeply 2-lobed with sharp teeth.</text>
+      <structure id="o13031" name="utricle">
+        <character name="coloration" value="brown-green" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o13032" />
+        <character name="arrangement_or_shape" value="ovate-elliptic" />
+        <character name="shape" value="inflated trigonous" modifier="slightly" />
+        <character char_type="range_value" name="size" from="7" from_unit="mm" to="7.5" to_unit="mm" />
+        <character name="feature_or_internal_texture" value="papery" modifier="thickly" />
+        <character name="external_texture" value="glabrous" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o13032" name="glume" />
+      <structure id="o13033" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+      </structure>
+      <structure id="o13034" name="apex">
+        <character name="shape" value="narrowed" modifier="gradually" constraint="into beak" constraintid="o13035" />
+      </structure>
+      <structure id="o13035" name="beak">
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o13036" name="orifice">
+        <character name="shape" value="2-lobed" modifier="deeply" constraint="with teeth" constraintid="o13037" />
+      </structure>
+      <structure id="o13037" name="tooth">
+        <character name="shape" value="sharp" />
+      </structure>
+    </statement>
+    <statement id="1422.txt-9">
+      <text>Nutlets castaneous-brown, tightly enclosed, elliptic, ca. 5 mm, base shortly stipitate, apex abruptly contracted into a cylindric erect beak, beak expanding into an annulate orifice;</text>
+      <structure id="o13038" name="nutlet">
+        <character name="coloration" value="castaneous-brown" />
+        <character name="position" value="enclosed" modifier="tightly" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="size" value="5" unit="mm" />
+      </structure>
+      <structure id="o13039" name="base">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o13040" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o13041" />
+      </structure>
+      <structure id="o13041" name="beak">
+        <character name="shape" value="cylindric" />
+        <character name="orientation" value="erect" />
+      </structure>
+      <structure id="o13042" name="beak">
+        <character name="size" value="expanding" constraint="into orifice" constraintid="o13043" />
+      </structure>
+      <structure id="o13043" name="orifice">
+        <character name="architecture" value="annulate" />
+      </structure>
+      <relation id="r2465" name="may_be_the_same" from="o13041" to="o13042" negation="false" />
+    </statement>
+    <statement id="1422.txt-10">
+      <text>style base thickened, conic;</text>
+      <structure id="o13044" name="base" constraint="style">
+        <character name="width" value="thickened" />
+        <character name="shape" value="conic" />
+      </structure>
+    </statement>
+    <statement id="1422.txt-11">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1422.txt-12">
+      <text>Fl. and fr. Mar–Apr.</text>
+      <structure id="o13045" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Forests; ca. 700 m. W Fujian (Liancheng).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

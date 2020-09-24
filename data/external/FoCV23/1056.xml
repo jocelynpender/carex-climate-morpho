@@ -13,7 +13,149 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>甘肃薹草 gan su tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms 45–100 cm tall, acutely trigonous, firm, clothed at base with purple bladeless sheaths. Leaves shorter than culm, blades broadly linear, 5–7 mm wide, flat, margins scabrous. Involucral bracts sheathless, lowest bracts shortly bladed, shorter than inflorescence, scabrous on margins, upper ones setaceous. Spikes 4–6, approximate; terminal spike gynaecandrous; lateral spikes female with a few male flowers at base, densely many flowered, oblong-cylindric, 1.5–3.5 cm; lowest peduncle (ca. 2 mm) slender, pendulous. Female glumes dark purple, elliptic-lanceolate, 4–4.5 mm, margins narrowly white hyaline, apex acuminate. Utricles stramineous, subequaling glume, compressed, sometimes upper yellow-brown or purple punctate, nerveless, apex abruptly contracted into a short beak, orifice 2-toothed. Nutlets loosely enveloped, oblong or obovate-oblong, trigonous, ca. 2 mm; stigmas 3. Fl. and fr. Jul–Sep.</description>
+  <description>
+    <statement id="1056.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o1891" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1056.txt-1">
+      <text>Culms 45–100 cm tall, acutely trigonous, firm, clothed at base with purple bladeless sheaths.</text>
+      <structure id="o1892" name="culm">
+        <character char_type="range_value" name="size" from="45" from_unit="cm" to="100" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="internal_texture" value="firm" />
+      </structure>
+      <structure id="o1893" name="base" />
+      <relation id="r411" name="clothed at" from="o1892" to="o1893" negation="false" />
+      <structure id="o1894" name="sheath" constraint="bladeless">
+        <character name="coloration" value="purple" />
+      </structure>
+      <relation id="r412" name="with" from="o1893" to="o1894" negation="false" />
+    </statement>
+    <statement id="1056.txt-2">
+      <text>Leaves shorter than culm, blades broadly linear, 5–7 mm wide, flat, margins scabrous.</text>
+      <structure id="o1895" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o1896" />
+      </structure>
+      <structure id="o1896" name="culm" />
+      <structure id="o1897" name="blade">
+        <character name="arrangement_or_shape" value="linear" modifier="broadly" />
+        <character char_type="range_value" name="width" from="5" from_unit="mm" to="7" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o1898" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1056.txt-3">
+      <text>Involucral bracts sheathless, lowest bracts shortly bladed, shorter than inflorescence, scabrous on margins, upper ones setaceous.</text>
+      <structure id="o1899" name="bract" constraint="involucral">
+        <character name="feature" value="sheathless" />
+      </structure>
+      <structure id="o1900" name="bract">
+        <character name="feature" value="lowest" />
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o1901" />
+        <character name="external_texture_or_relief" value="scabrous" constraint="on margins" constraintid="o1902" />
+        <character name="position" value="upper" />
+        <character name="feature_or_shape" value="setaceous" />
+      </structure>
+      <structure id="o1901" name="inflorescence" />
+      <structure id="o1902" name="margin" />
+    </statement>
+    <statement id="1056.txt-4">
+      <text>Spikes 4–6, approximate;</text>
+      <structure id="o1903" name="spike">
+        <character char_type="range_value" name="count" from="4" to="6" />
+        <character name="feature" value="approximate" />
+      </structure>
+    </statement>
+    <statement id="1056.txt-5">
+      <text>terminal spike gynaecandrous;</text>
+      <structure id="o1904" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+      </structure>
+    </statement>
+    <statement id="1056.txt-6">
+      <text>lateral spikes female with a few male flowers at base, densely many flowered, oblong-cylindric, 1.5–3.5 cm;</text>
+      <structure id="o1905" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" constraint="with flowers" constraintid="o1906" />
+      </structure>
+      <structure id="o1906" name="flower" constraint="male">
+        <character name="count" value="few" />
+        <character char_type="range_value" name="base , densely many flowered , oblong-cylindric ," from="1.5" from_unit="cm" to="3.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1056.txt-7">
+      <text>lowest peduncle (ca .2 mm )slender, pendulous.</text>
+      <structure id="o1907" name="peduncle">
+        <character name="feature" value="lowest" />
+        <character name="size" value="2" unit="mm" in_brackets="true" />
+        <character name="size" value="slender" />
+        <character name="orientation" value="pendulous" />
+      </structure>
+    </statement>
+    <statement id="1056.txt-8">
+      <text>Female glumes dark purple, elliptic-lanceolate, 4–4.5 mm, margins narrowly white hyaline, apex acuminate.</text>
+      <structure id="o1908" name="glume" constraint="female">
+        <character name="coloration" value="purple" modifier="dark" />
+        <character name="shape" value="elliptic-lanceolate" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="4.5" to_unit="mm" />
+      </structure>
+      <structure id="o1909" name="margin">
+        <character name="coloration" value="hyaline" modifier="narrowly;white" />
+      </structure>
+      <structure id="o1910" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1056.txt-9">
+      <text>Utricles stramineous, subequaling glume, compressed, sometimes upper yellow-brown or purple punctate, nerveless, apex abruptly contracted into a short beak, orifice 2-toothed.</text>
+      <structure id="o1911" name="utricle">
+        <character name="coloration" value="stramineous" />
+      </structure>
+      <structure id="o1912" name="glume">
+        <character name="shape" value="compressed" />
+        <character name="coloration" value="yellow-brown" />
+        <character name="coloration" value="purple" />
+        <character name="pattern" value="punctate" />
+        <character name="feature" value="nerveless" />
+      </structure>
+      <structure id="o1913" name="upper" constraint="sometimes" />
+      <structure id="o1914" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o1915" />
+      </structure>
+      <structure id="o1915" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o1916" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1056.txt-10">
+      <text>Nutlets loosely enveloped, oblong or obovate-oblong, trigonous, ca. 2 mm;</text>
+      <structure id="o1917" name="nutlet">
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="obovate-oblong" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1056.txt-11">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1056.txt-12">
+      <text>Fl. and fr. Jul–Sep.</text>
+      <structure id="o1918" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Alpine meadows in thickets, lakesides, wet grasslands; 3400–4600 m. Gansu, Qinghai, Shaanxi, W Sichuan, E Xizang, NW Yunnan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

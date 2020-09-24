@@ -13,7 +13,158 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>类黑褐穗薹草 lei hei he sui tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, oblique. Culms 20–30 cm tall, trigonous, smooth, clothed at base with brown sheaths. Leaves ca. 1/2 length of culm, blades pale greenish, linear, 2–4 mm wide, flat, margins scabrous, apex acuminate. Lower involucral bracts reduced to shortly bladed or setaceous, longer or shorter than inflorescence, sheathing ca. 4 mm, purple, upper bracts glumelike. Spikes 2 or 3, entirely gynaecandrous, ovate or elliptic, 1–1.5 × 0.8–1.2 cm, with slender pendent peduncles. Female glumes dark purple-red, lanceolate, 5.5–6 × ca. 1.2 mm, 1-veined, upper margins narrowly white hyaline, apex long acuminate. Utricles stramineous at base, dark purple-brown above, shorter than glume, ovate-lanceolate, compressed trigonous, ca. 4 mm, membranous, glabrous, nerveless, base cuneate, apex gradually narrowed to a short beak, orifice smooth, white hyaline, emarginate. Nutlets pale brown, loosely enveloped, elliptic, obtusely trigonous, ca. 1.5 mm, base with a stipe ca. 0.5 mm; style enclosed in utricle, erect, base scabrous; stigmas 3. Fl. and fr. Jul–Aug.</description>
+  <description>
+    <statement id="1250.txt-0">
+      <text>Rhizome short, oblique.</text>
+      <structure id="o7676" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="orientation_or_shape" value="oblique" />
+      </structure>
+    </statement>
+    <statement id="1250.txt-1">
+      <text>Culms 20–30 cm tall, trigonous, smooth, clothed at base with brown sheaths.</text>
+      <structure id="o7677" name="culm">
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="30" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o7678" name="base" />
+      <relation id="r1406" name="clothed at" from="o7677" to="o7678" negation="false" />
+      <structure id="o7679" name="sheath">
+        <character name="coloration" value="brown" />
+      </structure>
+      <relation id="r1407" name="with" from="o7678" to="o7679" negation="false" />
+    </statement>
+    <statement id="1250.txt-2">
+      <text>Leaves ca. 1/2 length of culm, blades pale greenish, linear, 2–4 mm wide, flat, margins scabrous, apex acuminate.</text>
+      <structure id="o7680" name="leaf">
+        <character name="length" value="1/2" constraint="of culm" constraintid="o7681" />
+      </structure>
+      <structure id="o7681" name="culm" />
+      <structure id="o7682" name="blade">
+        <character name="coloration" value="greenish" modifier="pale" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o7683" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o7684" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1250.txt-3">
+      <text>Lower involucral bracts reduced to shortly bladed or setaceous, longer or shorter than inflorescence, sheathing ca. 4 mm, purple, upper bracts glumelike.</text>
+      <structure id="o7685" name="bract" constraint="lower involucral">
+        <character name="shortly bladed  setaceous , lengtlength~list~longer~~shorter  inflorescence , sheathing" value="4" unit="mm" />
+        <character name="coloration" value="purple" />
+      </structure>
+      <structure id="o7686" name="bract" constraint="upper">
+        <character name="feature" value="glumelike" />
+      </structure>
+    </statement>
+    <statement id="1250.txt-4">
+      <text>Spikes 2 or 3, entirely gynaecandrous, ovate or elliptic, 1–1.5 × 0.8–1.2 cm, with slender pendent peduncles.</text>
+      <structure id="o7687" name="spike">
+        <character name="count" value="2" />
+        <character name="count" value="3" />
+        <character name="feature" value="gynaecandrous" modifier="entirely" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="elliptic" />
+        <character char_type="range_value" name="length" from="1" from_unit="cm" to="1.5" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.8" from_unit="cm" to="1.2" to_unit="cm" />
+      </structure>
+      <structure id="o7688" name="peduncle">
+        <character name="size" value="slender" />
+        <character name="orientation" value="pendent" />
+      </structure>
+      <relation id="r1408" name="with" from="o7687" to="o7688" negation="false" />
+    </statement>
+    <statement id="1250.txt-5">
+      <text>Female glumes dark purple-red, lanceolate, 5.5–6 × ca. 1.2 mm, 1-veined, upper margins narrowly white hyaline, apex long acuminate.</text>
+      <structure id="o7689" name="glume" constraint="female">
+        <character name="coloration" value="purple-red" modifier="dark" />
+        <character name="shape" value="lanceolate" />
+        <character char_type="range_value" name="length" from="5.5" from_unit="mm" to="6" to_unit="mm" />
+        <character name="width" value="1.2" unit="mm" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o7690" name="margin" constraint="upper">
+        <character name="coloration" value="hyaline" modifier="narrowly;white" />
+      </structure>
+      <structure id="o7691" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1250.txt-6">
+      <text>Utricles stramineous at base, dark purple-brown above, shorter than glume, ovate-lanceolate, compressed trigonous, ca. 4 mm, membranous, glabrous, nerveless, base cuneate, apex gradually narrowed to a short beak, orifice smooth, white hyaline, emarginate.</text>
+      <structure id="o7692" name="utricle">
+        <character name="coloration" value="stramineous" constraint="at base" constraintid="o7693" />
+        <character name="coloration" value="purple-brown" modifier="dark" />
+        <character name="height_or_length" value="shorter" constraint="than glume" constraintid="o7694" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character name="shape" value="compressed trigonous" />
+        <character name="size" value="4" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="external_texture" value="glabrous" />
+        <character name="feature" value="nerveless" />
+      </structure>
+      <structure id="o7693" name="base" />
+      <structure id="o7694" name="glume" />
+      <structure id="o7695" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+      </structure>
+      <structure id="o7696" name="apex" />
+      <structure id="o7697" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r1409" name="narrowed to" from="o7696" to="o7697" negation="false" modifier="gradually" />
+      <structure id="o7698" name="orifice">
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="coloration" value="hyaline" modifier="white" />
+        <character name="shape" value="emarginate" />
+      </structure>
+      <relation id="r1410" name="may_be_the_same" from="o7693" to="o7695" negation="false" />
+    </statement>
+    <statement id="1250.txt-7">
+      <text>Nutlets pale brown, loosely enveloped, elliptic, obtusely trigonous, ca. 1.5 mm, base with a stipe ca. 0.5 mm;</text>
+      <structure id="o7699" name="nutlet">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+      <structure id="o7700" name="stipe">
+        <character name="size" value="0.5" unit="mm" />
+      </structure>
+      <relation id="r1411" name="base with" from="o7699" to="o7700" negation="false" />
+    </statement>
+    <statement id="1250.txt-8">
+      <text>style enclosed in utricle, erect, base scabrous;</text>
+      <structure id="o7701" name="style">
+        <character name="position" value="enclosed" constraint="in utricle" constraintid="o7702" />
+        <character name="orientation" value="erect" />
+      </structure>
+      <structure id="o7702" name="utricle" />
+      <structure id="o7703" name="base">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1250.txt-9">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1250.txt-10">
+      <text>Fl. and fr. Jul–Aug.</text>
+      <structure id="o7704" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Alpine meadows, alpine meadows in thickets; 1000–4700 m. Qinghai, Shaanxi, W Sichuan, Xizang.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

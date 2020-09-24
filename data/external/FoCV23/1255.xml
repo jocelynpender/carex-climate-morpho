@@ -13,7 +13,137 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>狭囊薹草 xia nang tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome creeping. Culms 20–75 cm tall, erect, acutely trigonous, slender, slightly pendent, clothed at base with brown sheaths. Leaves shorter than culm, blades linear, 3–4 mm wide, flat. Lower involucral bracts leaflike, shorter than inflorescence, long sheathing, upper ones glumelike. Spikes 4–7; upper 1–3 male or mixed with female flowers, sometimes gynaecandrous; remaining spikes female, oblong, 1.5–3 cm, densely many flowered, pendent, with slender peduncles 2–7 cm. Female glumes dark sanguineous, ovate or lanceolate, ca. 4 mm, midrib stramineous, apex acuminate. Utricles longer than glume, narrowly lanceolate, upper margins scabrous. Nutlets narrowly elliptic, base long stipitate; style base not thickened; stigmas 3. Fl. and fr. Jun–Jul.</description>
+  <description>
+    <statement id="1255.txt-0">
+      <text>Rhizome creeping.</text>
+      <structure id="o7820" name="rhizome">
+        <character name="habit" value="creeping" />
+      </structure>
+    </statement>
+    <statement id="1255.txt-1">
+      <text>Culms 20–75 cm tall, erect, acutely trigonous, slender, slightly pendent, clothed at base with brown sheaths.</text>
+      <structure id="o7821" name="culm">
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="75" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="orientation" value="erect" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="size" value="slender" />
+        <character name="orientation" value="pendent" modifier="slightly" />
+      </structure>
+      <structure id="o7822" name="base" />
+      <relation id="r1434" name="clothed at" from="o7821" to="o7822" negation="false" />
+      <structure id="o7823" name="sheath">
+        <character name="coloration" value="brown" />
+      </structure>
+      <relation id="r1435" name="with" from="o7822" to="o7823" negation="false" />
+    </statement>
+    <statement id="1255.txt-2">
+      <text>Leaves shorter than culm, blades linear, 3–4 mm wide, flat.</text>
+      <structure id="o7824" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o7825" />
+      </structure>
+      <structure id="o7825" name="culm" />
+      <structure id="o7826" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+    </statement>
+    <statement id="1255.txt-3">
+      <text>Lower involucral bracts leaflike, shorter than inflorescence, long sheathing, upper ones glumelike.</text>
+      <structure id="o7827" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o7828" />
+        <character name="architecture_or_feature_or_shape" value="sheathing" />
+        <character name="position" value="upper" />
+        <character name="feature" value="glumelike" />
+      </structure>
+      <structure id="o7828" name="inflorescence" />
+    </statement>
+    <statement id="1255.txt-4">
+      <text>Spikes 4–7;</text>
+    </statement>
+    <statement id="1255.txt-5">
+      <text>upper 1–3 male or mixed with female flowers, sometimes gynaecandrous;</text>
+      <structure id="o7829" name="spike">
+        <character char_type="range_value" name="count" from="4" to="7" />
+        <character name="position" value="upper" />
+        <character char_type="range_value" name="count" from="1" to="3" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="arrangement" value="mixed" constraint="with flowers" constraintid="o7830" />
+        <character name="feature" value="gynaecandrous" modifier="sometimes" />
+      </structure>
+      <structure id="o7830" name="flower" constraint="female" />
+    </statement>
+    <statement id="1255.txt-6">
+      <text>remaining spikes female, oblong, 1.5–3 cm, densely many flowered, pendent, with slender peduncles 2–7 cm.</text>
+      <structure id="o7831" name="spike" constraint="remaining">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="cm" to="3" to_unit="cm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+        <character name="orientation" value="pendent" />
+      </structure>
+      <structure id="o7832" name="peduncle">
+        <character name="size" value="slender" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="7" to_unit="cm" />
+      </structure>
+      <relation id="r1436" name="with" from="o7831" to="o7832" negation="false" />
+    </statement>
+    <statement id="1255.txt-7">
+      <text>Female glumes dark sanguineous, ovate or lanceolate, ca. 4 mm, midrib stramineous, apex acuminate.</text>
+      <structure id="o7833" name="glume" constraint="female">
+        <character name="coloration" value="dark" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="lanceolate" />
+        <character name="size" value="4" unit="mm" />
+      </structure>
+      <structure id="o7834" name="midrib">
+        <character name="coloration" value="stramineous" />
+      </structure>
+      <structure id="o7835" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1255.txt-8">
+      <text>Utricles longer than glume, narrowly lanceolate, upper margins scabrous.</text>
+      <structure id="o7836" name="utricle">
+        <character name="length" value="longer" constraint="than glume" constraintid="o7837" />
+        <character name="shape" value="lanceolate" modifier="narrowly" />
+      </structure>
+      <structure id="o7837" name="glume" />
+      <structure id="o7838" name="margin" constraint="upper">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1255.txt-9">
+      <text>Nutlets narrowly elliptic, base long stipitate;</text>
+      <structure id="o7839" name="nutlet">
+        <character name="arrangement_or_shape" value="elliptic" modifier="narrowly" />
+      </structure>
+      <structure id="o7840" name="base">
+        <character name="architecture" value="stipitate" />
+      </structure>
+    </statement>
+    <statement id="1255.txt-10">
+      <text>style base not thickened;</text>
+      <structure id="o7841" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1255.txt-11">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1255.txt-12">
+      <text>Fl. and fr. Jun–Jul.</text>
+      <structure id="o7842" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Picea forests, alpine meadows in thickets, grasslands; 3000–5600 m. W Sichuan, S Xizang (Yadong) [India (Sikkim), Kashmir, Nepal, Pakistan].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

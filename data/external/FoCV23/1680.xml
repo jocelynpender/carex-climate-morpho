@@ -32,7 +32,146 @@
     <variety_name>remotiformis</variety_name>
     <variety_authority>(Komarov) Akiyama.</variety_authority>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, 30–50 cm tall, slender, usually weak, slightly scabrous. Leaves shorter than culm, blades pale green, linear, 1–2 mm wide, flat, soft. Lower involucral bracts leaflike, surpassing inflorescence, upper involucral bracts setaceous or glumelike. Spikes 4–10, gynaecandrous, ovate, 4–6 × 4–5 mm, upper 3–5 spikes congested, remaining spikes remote. Female glumes light ferruginous, narrowly ovate, ca. 2.5 mm, green 1-veined, margins broadly white hyaline. Utricles green, yellow-green at maturity, longer than glume, lanceolate or ovate-lanceolate, ca. 3 mm, membranous, distinctly many veined on both faces, upper margins finely serrulate winged, apex gradually narrowed into a beak, beak rather deeply cleft abaxially, 2-toothed at orifice. Nutlets tightly enveloped, elliptic-ovate, plano-convex, ca. 1.5 mm, base shortly stipitate, apex subrounded; style base thickened; stigmas 2. Fl. and fr. Jun–Jul.</description>
+  <description>
+    <statement id="1680.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o20120" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1680.txt-1">
+      <text>Culms tufted, 30–50 cm tall, slender, usually weak, slightly scabrous.</text>
+      <structure id="o20121" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="50" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="fragility" value="weak" modifier="usually" />
+        <character name="external_texture_or_relief" value="scabrous" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1680.txt-2">
+      <text>Leaves shorter than culm, blades pale green, linear, 1–2 mm wide, flat, soft.</text>
+      <structure id="o20122" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o20123" />
+      </structure>
+      <structure id="o20123" name="culm" />
+      <structure id="o20124" name="blade">
+        <character name="coloration" value="green" modifier="pale" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="2" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture" value="soft" />
+      </structure>
+    </statement>
+    <statement id="1680.txt-3">
+      <text>Lower involucral bracts leaflike, surpassing inflorescence, upper involucral bracts setaceous or glumelike.</text>
+      <structure id="o20125" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="feature" value="setaceous" />
+        <character name="feature" value="glumelike" />
+      </structure>
+      <structure id="o20126" name="inflorescence" />
+      <structure id="o20127" name="bract" constraint="upper involucral" />
+      <relation id="r3773" name="surpassing" from="o20125" to="o20126" negation="false" />
+      <relation id="r3774" name="surpassing" from="o20125" to="o20127" negation="false" />
+    </statement>
+    <statement id="1680.txt-4">
+      <text>Spikes 4–10, gynaecandrous, ovate, 4–6 × 4–5 mm, upper 3–5 spikes congested, remaining spikes remote.</text>
+      <structure id="o20128" name="spike">
+        <character char_type="range_value" name="count" from="4" to="10" />
+        <character name="feature" value="gynaecandrous" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="length" from="4" from_unit="mm" to="6" to_unit="mm" />
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="5" to_unit="mm" />
+      </structure>
+      <structure id="o20129" name="spike">
+        <character name="position" value="upper" />
+        <character char_type="range_value" name="count" from="3" to="5" />
+        <character name="architecture_or_arrangement" value="congested" />
+      </structure>
+      <structure id="o20130" name="spike" constraint="remaining">
+        <character name="arrangement" value="remote" />
+      </structure>
+      <relation id="r3775" name="may_be_the_same" from="o20128" to="o20129" negation="false" />
+    </statement>
+    <statement id="1680.txt-5">
+      <text>Female glumes light ferruginous, narrowly ovate, ca. 2.5 mm, green 1-veined, margins broadly white hyaline.</text>
+      <structure id="o20131" name="glume" constraint="female">
+        <character name="coloration" value="light" />
+        <character name="shape" value="ovate" modifier="narrowly" />
+        <character name="size" value="2.5" unit="mm" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o20132" name="margin">
+        <character name="coloration" value="hyaline" modifier="broadly;white" />
+      </structure>
+    </statement>
+    <statement id="1680.txt-6">
+      <text>Utricles green, yellow-green at maturity, longer than glume, lanceolate or ovate-lanceolate, ca. 3 mm, membranous, distinctly many veined on both faces, upper margins finely serrulate winged, apex gradually narrowed into a beak, beak rather deeply cleft abaxially, 2-toothed at orifice.</text>
+      <structure id="o20133" name="utricle">
+        <character name="coloration" value="green" />
+        <character name="coloration" value="yellow-green" constraint="at glume" constraintid="o20134" />
+        <character name="shape" value="lanceolate" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character name="size" value="3" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="count" value="many" modifier="distinctly" />
+        <character name="architecture_or_feature" value="veined" constraint="on faces" constraintid="o20135" />
+      </structure>
+      <structure id="o20134" name="glume">
+        <character name="life_stage" value="maturity" />
+        <character name="length" value="longer" />
+      </structure>
+      <structure id="o20135" name="face" />
+      <structure id="o20136" name="margin" constraint="upper">
+        <character name="shape" value="serrulate" modifier="finely" />
+        <character name="architecture" value="winged" />
+      </structure>
+      <structure id="o20137" name="apex">
+        <character name="shape" value="narrowed" modifier="gradually" constraint="into beak" constraintid="o20138" />
+      </structure>
+      <structure id="o20138" name="beak" />
+      <structure id="o20139" name="beak">
+        <character name="shape" value="cleft" modifier="rather deeply;abaxially" />
+        <character name="shape" value="2-toothed" constraint="at orifice" constraintid="o20140" />
+      </structure>
+      <structure id="o20140" name="orifice" />
+      <relation id="r3776" name="may_be_the_same" from="o20138" to="o20139" negation="false" />
+    </statement>
+    <statement id="1680.txt-7">
+      <text>Nutlets tightly enveloped, elliptic-ovate, planoconvex, ca. 1.5 mm, base shortly stipitate, apex subrounded;</text>
+      <structure id="o20141" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="elliptic-ovate" />
+        <character name="shape" value="planoconvex" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+      <structure id="o20142" name="apex">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+        <character name="arrangement" value="subrounded" />
+      </structure>
+      <relation id="r3777" name="base" from="o20141" to="o20142" negation="false" />
+    </statement>
+    <statement id="1680.txt-8">
+      <text>style base thickened;</text>
+      <structure id="o20143" name="base" constraint="style">
+        <character name="width" value="thickened" />
+      </structure>
+    </statement>
+    <statement id="1680.txt-9">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1680.txt-10">
+      <text>Fl. and fr. Jun–Jul.</text>
+      <structure id="o20144" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Wet grasslands on slopes, meadows; 900–3700 m. Anhui, Gansu, Hebei, Heilongjiang, Henan, Jilin, Liaoning, Shaanxi, Shanxi, Sichuan, Yunnan [Japan, Korea, Russia (Far East)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

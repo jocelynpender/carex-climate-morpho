@@ -13,7 +13,148 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>二籽薹草 er zi tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome slender, creeping, branching. Culms 30–50 cm tall, acutely trigonous, weak, scabrous above. Leaves shorter than culm, blades bright green, linear, 1–1.5 mm wide, flat, soft. Involucral bracts setaceous at base, glumelike above. Spikes 2–5, androgynous, distant, globose, with 1 or 2 male flowers above and 2 or 3 female flowers below. Female glumes pale, ovate, 2–2.5 mm, 3-veined costa forming a short mucro. Utricles brown, slightly longer than glume, elliptic, biconvex, 2.5–3 × 1.3–1.5 mm, leathery, lustrous, many veined on both faces, base subrounded, spongy, shortly stipitate, apex abruptly contracted into a smooth beak up to 0.25 mm, orifice emarginate. Nutlets reddish brown, tightly enveloped, elliptic, biconvex, 1.5–1.8 mm, lustrous; style base not thickened; stigmas 2. Fl. and fr. Jun–Jul. 2n = 70.</description>
+  <description>
+    <statement id="1673.txt-0">
+      <text>Rhizome slender, creeping, branching.</text>
+      <structure id="o19938" name="rhizome">
+        <character name="size" value="slender" />
+        <character name="habit" value="creeping" />
+        <character name="architecture" value="branching" />
+      </structure>
+    </statement>
+    <statement id="1673.txt-1">
+      <text>Culms 30–50 cm tall, acutely trigonous, weak, scabrous above.</text>
+      <structure id="o19939" name="culm">
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="50" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="fragility" value="weak" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1673.txt-2">
+      <text>Leaves shorter than culm, blades bright green, linear, 1–1.5 mm wide, flat, soft.</text>
+      <structure id="o19940" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o19941" />
+      </structure>
+      <structure id="o19941" name="culm" />
+      <structure id="o19942" name="blade">
+        <character name="reflectance" value="bright" />
+        <character name="coloration" value="green" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="1.5" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture" value="soft" />
+      </structure>
+    </statement>
+    <statement id="1673.txt-3">
+      <text>Involucral bracts setaceous at base, glumelike above.</text>
+      <structure id="o19943" name="bract" constraint="involucral">
+        <character name="feature_or_shape" value="setaceous" constraint="at base" constraintid="o19944" />
+        <character name="feature" value="glumelike" />
+      </structure>
+      <structure id="o19944" name="base" />
+    </statement>
+    <statement id="1673.txt-4">
+      <text>Spikes 2–5, androgynous, distant, globose, with 1 or 2 male flowers above and 2 or 3 female flowers below.</text>
+      <structure id="o19945" name="spike">
+        <character char_type="range_value" name="count" from="2" to="5" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="arrangement" value="distant" />
+        <character name="shape" value="globose" />
+      </structure>
+      <structure id="o19946" name="flower" constraint="male">
+        <character name="count" value="1" />
+        <character name="count" value="2" />
+      </structure>
+      <relation id="r3746" name="with" from="o19945" to="o19946" negation="false" />
+      <structure id="o19947" name="flower" constraint="female">
+        <character name="count" value="2" />
+        <character name="count" value="3" />
+      </structure>
+      <relation id="r3747" name="above" from="o19946" to="o19947" negation="false" />
+    </statement>
+    <statement id="1673.txt-5">
+      <text>Female glumes pale, ovate, 2–2.5 mm, 3-veined costa forming a short mucro.</text>
+      <structure id="o19948" name="glume" constraint="female">
+        <character name="coloration" value="pale" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o19949" name="costa" />
+      <structure id="o19950" name="mucro">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r3748" name="forming" from="o19948" to="o19950" negation="false" />
+    </statement>
+    <statement id="1673.txt-6">
+      <text>Utricles brown, slightly longer than glume, elliptic, biconvex, 2.5–3 × 1.3–1.5 mm, leathery, lustrous, many veined on both faces, base subrounded, spongy, shortly stipitate, apex abruptly contracted into a smooth beak up to 0.25 mm, orifice emarginate.</text>
+      <structure id="o19951" name="utricle">
+        <character name="coloration" value="brown" />
+        <character name="length" value="longer" modifier="slightly" constraint="than glume" constraintid="o19952" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="biconvex" />
+        <character char_type="range_value" name="length" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.3" from_unit="mm" to="1.5" to_unit="mm" />
+        <character name="external_texture_or_feature" value="leathery" />
+        <character name="reflectance" value="lustrous" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" constraint="on faces" constraintid="o19953" />
+      </structure>
+      <structure id="o19952" name="glume" />
+      <structure id="o19953" name="face" />
+      <structure id="o19954" name="base">
+        <character name="arrangement" value="subrounded" />
+        <character name="internal_texture" value="spongy" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o19955" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o19956" />
+      </structure>
+      <structure id="o19956" name="beak">
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character char_type="range_value" name="size" from="0" from_unit="mm" to="0.25" to_unit="mm" />
+      </structure>
+      <structure id="o19957" name="orifice">
+        <character name="shape" value="emarginate" />
+      </structure>
+    </statement>
+    <statement id="1673.txt-7">
+      <text>Nutlets reddish brown, tightly enveloped, elliptic, biconvex, 1.5–1.8 mm, lustrous;</text>
+      <structure id="o19958" name="nutlet">
+        <character name="coloration" value="brown" modifier="reddish" />
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="biconvex" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="mm" to="1.8" to_unit="mm" />
+        <character name="reflectance" value="lustrous" />
+      </structure>
+    </statement>
+    <statement id="1673.txt-8">
+      <text>style base not thickened;</text>
+      <structure id="o19959" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1673.txt-9">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1673.txt-10">
+      <text>Fl. and fr. Jun–Jul.</text>
+      <structure id="o19960" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+    <statement id="1673.txt-11">
+      <text>2n = 70.</text>
+      <structure name="chromosome" id="o19961">
+        <character name="count" value="70" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Swamps, wet places in forests. Heilongjiang, Jilin, Nei Mongol [Russia (Far East, Siberia); N Europe (Scandinavia), North America].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

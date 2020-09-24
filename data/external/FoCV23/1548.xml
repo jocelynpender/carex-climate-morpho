@@ -16,7 +16,27 @@
     <variety_name>melinacra</variety_name>
     <variety_authority>(Franchet) Kükenthal.</variety_authority>
   </TaxonIdentification>
-  <description>Lowest peduncle 1.5–3.5 cm. Utricles shorter than or equaling female glumes. Fl. and fr. May.</description>
+  <description>
+    <statement id="1548.txt-0">
+      <text>Lowest peduncle 1.5–3.5 cm.</text>
+      <structure id="o16749" name="peduncle">
+        <character name="feature" value="lowest" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="cm" to="3.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1548.txt-1">
+      <text>Utricles shorter than or equaling female glumes.</text>
+      <structure id="o16751" name="glume" constraint="female" />
+    </statement>
+    <statement id="1548.txt-2">
+      <text>Fl. and fr. May.</text>
+      <structure id="o16750" name="utricle">
+        <character name="height_or_length" value="shorter" constraint="than or equaling female glumes" constraintid="o16751" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Moist grasslands along valleys; 2000–3500 m. SW Sichuan, NW Yunnan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

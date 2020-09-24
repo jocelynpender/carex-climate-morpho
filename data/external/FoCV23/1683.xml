@@ -30,7 +30,35 @@
     <variety_name>enervulosa</variety_name>
     <variety_authority>Kükenthal.</variety_authority>
   </TaxonIdentification>
-  <description>Leaves: membranous side of leaf sheaths at mouth projected forming a tonguelike appendage. Utricles nerveless. Fl. and fr. Jun–Aug.</description>
+  <description>
+    <statement id="1683.txt-0">
+      <text>Leaves:</text>
+    </statement>
+    <statement id="1683.txt-1">
+      <text>membranous side of leaf sheaths at mouth projected forming a tonguelike appendage.</text>
+      <structure id="o20182" name="leaf">
+        <character name="feature" value="membranous" constraint="of leaf sheaths" constraintid="o20183" />
+      </structure>
+      <structure id="o20183" name="sheath" constraint="leaf" />
+      <structure id="o20184" name="mouth" />
+      <relation id="r3786" name="at" from="o20183" to="o20184" negation="false" />
+      <structure id="o20185" name="appendage">
+        <character name="feature" value="tonguelike" />
+      </structure>
+      <relation id="r3787" name="projected" from="o20182" to="o20185" negation="false" />
+    </statement>
+    <statement id="1683.txt-2">
+      <text>Utricles nerveless.</text>
+    </statement>
+    <statement id="1683.txt-3">
+      <text>Fl. and fr. Jun–Aug.</text>
+      <structure id="o20186" name="utricle">
+        <character name="feature" value="nerveless" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Wet grasslands, swamps; 1600–3700 m. Gansu, Hubei, Shaanxi, Sichuan, Yunnan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

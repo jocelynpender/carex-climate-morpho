@@ -18,7 +18,153 @@
     <species_name>cernua</species_name>
     <species_authority>Boott.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, 35–80 cm tall, acutely trigonous, scabrous above, clothed at base with red-brown to blackish brown bladeless sheaths. Leaves shorter than or equaling culm, blades linear, 4–7 mm wide, flat, margins slightly revolute. Lower 2 involucral bracts leaflike, surpassing inflorescence, upper ones setaceous. Spikes 5 or 6, approximate; terminal spike gynaecandrous, 40–60 mm; lateral spikes female, upper 3 with male flowers at base, cylindric, 45–55 × 5–6 mm, with slender peduncles 1.5–6 cm, pendent. Female glumes pale, sparsely ferruginous flecked, obovate-oblong, 4–4.5 mm, membranous, green 3-veined costa excurrent into a scabrous awn ca. 2.2 mm at emarginate or truncate apex. Utricles red-brown, ferruginous flecked, longer than glume, elliptic or elliptic-lanceolate, ca. 3 mm, slightly compressed, densely papillose, base cuneate, apex abruptly contracted into a short beak, orifice entire; stigmas 2. Fl. and fr. Apr–Jun.</description>
+  <description>
+    <statement id="1564.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o17199" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1564.txt-1">
+      <text>Culms tufted, 35–80 cm tall, acutely trigonous, scabrous above, clothed at base with red-brown to blackish brown bladeless sheaths.</text>
+      <structure id="o17200" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="35" from_unit="cm" to="80" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o17201" name="base" />
+      <relation id="r3295" name="clothed at" from="o17200" to="o17201" negation="false" />
+      <structure id="o17202" name="sheath" constraint="bladeless">
+        <character char_type="range_value" name="coloration" from="red-brown" to="blackish brown" />
+        <character name="coloration" value="red-brown" />
+        <character name="coloration" value="brown" modifier="blackish" />
+      </structure>
+      <relation id="r3296" name="with" from="o17201" to="o17202" negation="false" />
+    </statement>
+    <statement id="1564.txt-2">
+      <text>Leaves shorter than or equaling culm, blades linear, 4–7 mm wide, flat, margins slightly revolute.</text>
+      <structure id="o17203" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than or equaling culm" constraintid="o17204" />
+      </structure>
+      <structure id="o17204" name="culm" />
+      <structure id="o17205" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="7" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o17206" name="margin">
+        <character name="shape_or_vernation" value="revolute" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1564.txt-3">
+      <text>Lower 2 involucral bracts leaflike, surpassing inflorescence, upper ones setaceous.</text>
+      <structure id="o17207" name="bract" constraint="involucral">
+        <character name="position" value="lower" />
+        <character name="count" value="2" />
+        <character name="architecture" value="leaflike" />
+        <character name="position" value="upper" />
+        <character name="feature_or_shape" value="setaceous" />
+      </structure>
+      <structure id="o17208" name="inflorescence" />
+      <relation id="r3297" name="surpassing" from="o17207" to="o17208" negation="false" />
+    </statement>
+    <statement id="1564.txt-4">
+      <text>Spikes 5 or 6, approximate;</text>
+      <structure id="o17209" name="spike">
+        <character name="count" value="5" />
+        <character name="count" value="6" />
+        <character name="feature" value="approximate" />
+      </structure>
+    </statement>
+    <statement id="1564.txt-5">
+      <text>terminal spike gynaecandrous, 40–60 mm;</text>
+      <structure id="o17210" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+        <character char_type="range_value" name="size" from="40" from_unit="mm" to="60" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1564.txt-6">
+      <text>lateral spikes female, upper 3 with male flowers at base, cylindric, 45–55 × 5–6 mm, with slender peduncles 1.5–6 cm, pendent.</text>
+      <structure id="o17211" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="position" value="upper" />
+        <character name="count" value="3" constraint="with flowers" constraintid="o17212" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="length" from="45" from_unit="mm" to="55" to_unit="mm" />
+        <character char_type="range_value" name="width" from="5" from_unit="mm" to="6" to_unit="mm" />
+        <character name="orientation" value="pendent" />
+      </structure>
+      <structure id="o17212" name="flower" constraint="male" />
+      <structure id="o17213" name="base" />
+      <relation id="r3298" name="at" from="o17212" to="o17213" negation="false" />
+      <structure id="o17214" name="peduncle">
+        <character name="size" value="slender" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="cm" to="6" to_unit="cm" />
+      </structure>
+      <relation id="r3299" name="with" from="o17211" to="o17214" negation="false" />
+    </statement>
+    <statement id="1564.txt-7">
+      <text>Female glumes pale, sparsely ferruginous flecked, obovate-oblong, 4–4.5 mm, membranous, green 3-veined costa excurrent into a scabrous awn ca. 2.2 mm at emarginate or truncate apex.</text>
+      <structure id="o17215" name="glume" constraint="female">
+        <character name="coloration" value="pale" />
+        <character name="feature" value="flecked" />
+        <character name="shape" value="obovate-oblong" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="4.5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="3-veined" />
+        <character name="architecture" value="excurrent" constraint="into awn" constraintid="o17217" />
+      </structure>
+      <structure id="o17216" name="costa" />
+      <structure id="o17217" name="awn">
+        <character name="external_texture_or_relief" value="scabrous" />
+        <character name="size" value="2.2" unit="mm" constraint="at apex" constraintid="o17218" />
+      </structure>
+      <structure id="o17218" name="apex">
+        <character name="shape" value="emarginate" />
+        <character name="shape" value="truncate" />
+      </structure>
+    </statement>
+    <statement id="1564.txt-8">
+      <text>Utricles red-brown, ferruginous flecked, longer than glume, elliptic or elliptic-lanceolate, ca. 3 mm, slightly compressed, densely papillose, base cuneate, apex abruptly contracted into a short beak, orifice entire;</text>
+      <structure id="o17219" name="utricle">
+        <character name="coloration" value="red-brown" />
+        <character name="feature" value="flecked" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o17220" />
+        <character name="shape" value="elliptic" />
+        <character name="shape" value="elliptic-lanceolate" />
+        <character name="size" value="3" unit="mm" />
+        <character name="shape" value="compressed" modifier="slightly" />
+        <character name="relief" value="papillose" modifier="densely" />
+      </structure>
+      <structure id="o17220" name="glume" />
+      <structure id="o17221" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+      </structure>
+      <structure id="o17222" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o17223" />
+      </structure>
+      <structure id="o17223" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o17224" name="orifice">
+        <character name="shape" value="entire" />
+      </structure>
+    </statement>
+    <statement id="1564.txt-9">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1564.txt-10">
+      <text>Fl. and fr. Apr–Jun.</text>
+      <structure id="o17225" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Moist soil of ditch sides and roadsides; 200–1300 m. Anhui, Gansu, Guangdong, Henan, Hubei, Jiangsu, Jiangxi, Liaoning, Shaanxi, Shandong, Sichuan, Zhejiang [India, Japan, Korea, Myanmar, Nepal, Sri Lanka, N Thailand, Vietnam].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -20,7 +20,150 @@
     <variety_name>moorcroftii</variety_name>
     <variety_authority>(Falconer ex Boott) Kükenthal.</variety_authority>
   </TaxonIdentification>
-  <description>Rhizome creeping, thick. Culms 7–20 cm tall, trigonous, firm, clothed at base with brown sheaths disintegrating into fibers. Leaves shorter than culm, blades linear, 2–4 mm wide, flat, leathery, margins scabrous. Involucral bracts setaceous, shorter than inflorescence, sheathless. Spikes 4 or 5, approximate, lowest spike ± distant, densely many flowered; terminal spike male, oblong or cylindric, 1–1.8 cm; lateral spikes female, ovate or oblong, 0.7–1.8 cm, sessile or lowest with rather short peduncle. Female glumes purple, ovate-lanceolate, 5–6 mm, margins broadly white hyaline, apex acuminate. Utricles yellow-green, purple above, equaling or slightly shorter than glume, elliptic-obovate, trigonous, leathery, faintly veined, apex abruptly contracted into a short beak, orifice 2-toothed. Nutlets obovate, trigonous, 2–2.3 mm; stigmas 3. Fl. and fr. Jul–Sep.</description>
+  <description>
+    <statement id="1049.txt-0">
+      <text>Rhizome creeping, thick.</text>
+      <structure id="o1681" name="rhizome">
+        <character name="habit" value="creeping" />
+        <character name="width" value="thick" />
+      </structure>
+    </statement>
+    <statement id="1049.txt-1">
+      <text>Culms 7–20 cm tall, trigonous, firm, clothed at base with brown sheaths disintegrating into fibers.</text>
+      <structure id="o1682" name="culm">
+        <character char_type="range_value" name="size" from="7" from_unit="cm" to="20" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="internal_texture" value="firm" />
+      </structure>
+      <structure id="o1683" name="base" />
+      <relation id="r379" name="clothed at" from="o1682" to="o1683" negation="false" />
+      <structure id="o1684" name="sheath">
+        <character name="coloration" value="brown" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o1685" />
+      </structure>
+      <relation id="r380" name="with" from="o1683" to="o1684" negation="false" />
+      <structure id="o1685" name="fiber" />
+    </statement>
+    <statement id="1049.txt-2">
+      <text>Leaves shorter than culm, blades linear, 2–4 mm wide, flat, leathery, margins scabrous.</text>
+      <structure id="o1686" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o1687" />
+      </structure>
+      <structure id="o1687" name="culm" />
+      <structure id="o1688" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture_or_feature" value="leathery" />
+      </structure>
+      <structure id="o1689" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1049.txt-3">
+      <text>Involucral bracts setaceous, shorter than inflorescence, sheathless.</text>
+      <structure id="o1690" name="bract" constraint="involucral">
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o1691" />
+        <character name="feature" value="sheathless" />
+      </structure>
+      <structure id="o1691" name="inflorescence" />
+    </statement>
+    <statement id="1049.txt-4">
+      <text>Spikes 4 or 5, approximate, lowest spike ± distant, densely many flowered;</text>
+      <structure id="o1692" name="spike">
+        <character name="count" value="4" />
+        <character name="count" value="5" />
+        <character name="feature" value="approximate" />
+      </structure>
+      <structure id="o1693" name="spike">
+        <character name="feature" value="lowest" />
+        <character name="arrangement" value="distant" modifier="more or less" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+      <relation id="r381" name="may_be_the_same" from="o1692" to="o1693" negation="false" />
+    </statement>
+    <statement id="1049.txt-5">
+      <text>terminal spike male, oblong or cylindric, 1–1.8 cm;</text>
+      <structure id="o1694" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="1.8" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1049.txt-6">
+      <text>lateral spikes female, ovate or oblong, 0.7–1.8 cm, sessile or lowest with rather short peduncle.</text>
+      <structure id="o1695" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="0.7" from_unit="cm" to="1.8" to_unit="cm" />
+        <character name="feature" value="sessile" />
+        <character name="feature" value="lowest" constraint="with peduncle" constraintid="o1696" />
+      </structure>
+      <structure id="o1696" name="peduncle">
+        <character name="height_or_length" value="short" modifier="rather" />
+      </structure>
+    </statement>
+    <statement id="1049.txt-7">
+      <text>Female glumes purple, ovate-lanceolate, 5–6 mm, margins broadly white hyaline, apex acuminate.</text>
+      <structure id="o1697" name="glume" constraint="female">
+        <character name="coloration" value="purple" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="6" to_unit="mm" />
+      </structure>
+      <structure id="o1698" name="margin">
+        <character name="coloration" value="hyaline" modifier="broadly;white" />
+      </structure>
+      <structure id="o1699" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1049.txt-8">
+      <text>Utricles yellow-green, purple above, equaling or slightly shorter than glume, elliptic-obovate, trigonous, leathery, faintly veined, apex abruptly contracted into a short beak, orifice 2-toothed.</text>
+      <structure id="o1700" name="utricle">
+        <character name="coloration" value="yellow-green" />
+        <character name="coloration" value="purple" />
+      </structure>
+      <structure id="o1701" name="apex">
+        <character name="shape" value="elliptic-obovate" />
+        <character name="shape" value="trigonous" />
+        <character name="external_texture_or_feature" value="leathery" />
+        <character name="architecture_or_feature" value="veined" modifier="faintly" />
+        <character name="height_or_length" value="shorter" modifier="slightly" />
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o1702" />
+      </structure>
+      <relation id="r382" name="equaling" from="o1700" to="o1701" negation="false" />
+      <structure id="o1702" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o1703" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1049.txt-9">
+      <text>Nutlets obovate, trigonous, 2–2.3 mm;</text>
+      <structure id="o1704" name="nutlet">
+        <character name="shape" value="obovate" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="2.3" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1049.txt-10">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1049.txt-11">
+      <text>Fl. and fr. Jul–Sep.</text>
+      <structure id="o1705" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Alpine meadows in thickets, grasslands, lakesides, plateaus; 3400–5700 m. Qinghai, W Sichuan, Xizang [NE India].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

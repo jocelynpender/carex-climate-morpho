@@ -13,7 +13,139 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>沙生薹草 sha sheng tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome creeping, thick. Culms 20–30 cm tall, trigonous, slightly rigid, clothed at base with purple-brown sheaths. Leaves shorter than culm, blades linear, 3–5 mm wide, flat, apex acuminate. Involucral bracts sheathless, lowest one with setaceous blade, remaining ones glumelike. Spikes 3–8, densely disposed in a head, androgynous except 1 or 2 bearing female flowers at base, oblong, 1.3–2.5 cm, subsessile. Female glumes dark purple, narrowly elliptic or oblong-lanceolate, 9–10 × 3.5–4 mm, 1-veined, margins broadly white hyaline, apex acuminate. Utricles pale brown, shorter than glume, elliptic or oblong-elliptic, compressed trigonous, (3–)4.5–5 mm, upper densely papillose, without conspicuous veins, contracted at both ends, beak short, orifice 2-toothed. Nutlets light brown, obovate-oblong or elliptic, trigonous, ca. 2.5 mm; stigmas 3. Fl. and fr. Sep.</description>
+  <description>
+    <statement id="1041.txt-0">
+      <text>Rhizome creeping, thick.</text>
+      <structure id="o1456" name="rhizome">
+        <character name="habit" value="creeping" />
+        <character name="width" value="thick" />
+      </structure>
+    </statement>
+    <statement id="1041.txt-1">
+      <text>Culms 20–30 cm tall, trigonous, slightly rigid, clothed at base with purple-brown sheaths.</text>
+      <structure id="o1457" name="culm">
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="30" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="internal_texture" value="rigid" modifier="slightly" />
+      </structure>
+      <structure id="o1458" name="base" />
+      <relation id="r329" name="clothed at" from="o1457" to="o1458" negation="false" />
+      <structure id="o1459" name="sheath">
+        <character name="coloration" value="purple-brown" />
+      </structure>
+      <relation id="r330" name="with" from="o1458" to="o1459" negation="false" />
+    </statement>
+    <statement id="1041.txt-2">
+      <text>Leaves shorter than culm, blades linear, 3–5 mm wide, flat, apex acuminate.</text>
+      <structure id="o1460" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o1461" />
+      </structure>
+      <structure id="o1461" name="culm" />
+      <structure id="o1462" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="5" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o1463" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1041.txt-3">
+      <text>Involucral bracts sheathless, lowest one with setaceous blade, remaining ones glumelike.</text>
+      <structure id="o1464" name="bract" constraint="involucral">
+        <character name="feature" value="sheathless" />
+        <character name="feature" value="lowest" constraint="with blade" constraintid="o1465" />
+        <character name="feature" value="glumelike" modifier="ones" />
+      </structure>
+      <structure id="o1465" name="blade">
+        <character name="feature_or_shape" value="setaceous" />
+      </structure>
+    </statement>
+    <statement id="1041.txt-4">
+      <text>Spikes 3–8, densely disposed in a head, androgynous except 1 or 2 bearing female flowers at base, oblong, 1.3–2.5 cm, subsessile.</text>
+      <structure id="o1466" name="spike">
+        <character char_type="range_value" name="count" from="3" to="8" />
+        <character name="arrangement" value="disposed" modifier="densely" constraint="in head" constraintid="o1467" />
+        <character name="feature_or_reproduction" value="androgynous" constraint="at base" constraintid="o1469" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="1.3" from_unit="cm" to="2.5" to_unit="cm" />
+        <character name="architecture" value="subsessile" />
+      </structure>
+      <structure id="o1467" name="head" />
+      <structure id="o1468" name="flower" constraint="female">
+        <character name="count" value="1" modifier="count list" />
+        <character name="count" value="2" />
+      </structure>
+      <structure id="o1469" name="base" />
+    </statement>
+    <statement id="1041.txt-5">
+      <text>Female glumes dark purple, narrowly elliptic or oblong-lanceolate, 9–10 × 3.5–4 mm, 1-veined, margins broadly white hyaline, apex acuminate.</text>
+      <structure id="o1470" name="glume" constraint="female">
+        <character name="coloration" value="purple" modifier="dark" />
+        <character name="shape" value="elliptic" modifier="narrowly" />
+        <character name="shape" value="oblong-lanceolate" />
+        <character char_type="range_value" name="length" from="9" from_unit="mm" to="10" to_unit="mm" />
+        <character char_type="range_value" name="width" from="3.5" from_unit="mm" to="4" to_unit="mm" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o1471" name="margin">
+        <character name="coloration" value="hyaline" modifier="broadly;white" />
+      </structure>
+      <structure id="o1472" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1041.txt-6">
+      <text>Utricles pale brown, shorter than glume, elliptic or oblong-elliptic, compressed trigonous, (3– )4.5–5 mm, upper densely papillose, without conspicuous veins, contracted at both ends, beak short, orifice 2-toothed.</text>
+      <structure id="o1473" name="utricle">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="height_or_length" value="shorter" constraint="than glume" constraintid="o1474" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="arrangement_or_shape" value="oblong-elliptic" />
+        <character name="shape" value="compressed trigonous" />
+        <character char_type="range_value" name="atypical_size" from="3" to="4.5" from_unit="mm" to_unit="mm" to_inclusive="false" />
+        <character char_type="range_value" name="size" from="4.5" from_unit="mm" to="5" to_unit="mm" />
+      </structure>
+      <structure id="o1474" name="glume" />
+      <structure id="o1475" name="upper">
+        <character name="relief" value="papillose" modifier="densely" />
+        <character name="size" value="contracted" constraint="at ends" constraintid="o1477" />
+      </structure>
+      <structure id="o1476" name="vein">
+        <character name="prominence" value="conspicuous" />
+      </structure>
+      <relation id="r331" name="without" from="o1475" to="o1476" negation="false" />
+      <structure id="o1477" name="end" />
+      <structure id="o1478" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o1479" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1041.txt-7">
+      <text>Nutlets light brown, obovate-oblong or elliptic, trigonous, ca. 2.5 mm;</text>
+      <structure id="o1480" name="nutlet">
+        <character name="coloration" value="brown" modifier="light" />
+        <character name="shape" value="obovate-oblong" />
+        <character name="shape" value="elliptic" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2.5" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1041.txt-8">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1041.txt-9">
+      <text>Fl. and fr. Sep.</text>
+      <structure id="o1481" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Grassy slopes, sandy soil; 4800–5400 m. Xizang, Yunnan [India (Sikkim)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

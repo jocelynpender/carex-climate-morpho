@@ -43,7 +43,130 @@
     <variety_name>macrogyna</variety_name>
     <variety_authority>Tang.</variety_authority>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, 20–40 cm tall, soft, slightly scabrid on angles, surrounded by pale brown basal leaf sheaths at base. Leaves shorter than culm, blades 1–1.5 mm wide, flat, soft. Inflorescence 1-spiked, terminal, androgynous, broadly ovate to spherical, 5–7 mm; male part not distinct, 2- or 3-flowered; most of spike female, usually 5- or 6-flowered. Female glumes pale brown laterally, broadly ovate, ca. 2 mm, membranous, pale on 3-veined costa. Utricles horizontally patent at maturity, ovate-oblong, obscurely trigonous, 2.5–3 mm, membranous, with distinct lateral veins especially abaxially, base subrounded, apex abruptly contracted into a short beak, orifice minutely 2-toothed. Nutlet tightly enclosed, obovate-oblong to elliptic, trigonous, ca. 2 mm; style base not thickened, persistent; stigmas 3.</description>
+  <description>
+    <statement id="1612.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o18531" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1612.txt-1">
+      <text>Culms tufted, 20–40 cm tall, soft, slightly scabrid on angles, surrounded by pale brown basal leaf sheaths at base.</text>
+      <structure id="o18532" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="40" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="external_texture" value="soft" />
+        <character name="relief" value="scabrid" modifier="slightly" constraint="on angles" constraintid="o18533" />
+      </structure>
+      <structure id="o18533" name="angle" />
+      <structure id="o18534" name="sheath" constraint="basal leaf">
+        <character name="coloration" value="brown" modifier="pale" />
+      </structure>
+      <relation id="r3536" name="surrounded by" from="o18532" to="o18534" negation="false" />
+      <structure id="o18535" name="base" />
+      <relation id="r3537" name="at" from="o18534" to="o18535" negation="false" />
+    </statement>
+    <statement id="1612.txt-2">
+      <text>Leaves shorter than culm, blades 1–1.5 mm wide, flat, soft.</text>
+      <structure id="o18536" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o18537" />
+      </structure>
+      <structure id="o18537" name="culm" />
+      <structure id="o18538" name="blade">
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="1.5" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture" value="soft" />
+      </structure>
+    </statement>
+    <statement id="1612.txt-3">
+      <text>Inflorescence 1-spiked, terminal, androgynous, broadly ovate to spherical, 5–7 mm;</text>
+    </statement>
+    <statement id="1612.txt-4">
+      <text>male part not distinct, 2- or 3-flowered;</text>
+    </statement>
+    <statement id="1612.txt-5">
+      <text>most of spike female, usually 5- or 6-flowered.</text>
+      <structure id="o18539" name="inflorescence">
+        <character name="position" value="terminal" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character char_type="range_value" name="shape" from="broadly ovate" to="spherical" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="shape" value="spherical" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="7" to_unit="mm" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="fusion" value="distinct" modifier="not" />
+        <character name="architecture" value="2-or-3-flowered" />
+        <character name="reproduction" value="female" />
+        <character name="architecture" value="5-or-6-flowered" modifier="usually" />
+      </structure>
+      <structure id="o18540" name="spike" />
+      <relation id="r3538" name="part_of" from="o18539" to="o18540" negation="false" />
+    </statement>
+    <statement id="1612.txt-6">
+      <text>Female glumes pale brown laterally, broadly ovate, ca. 2 mm, membranous, pale on 3-veined costa.</text>
+      <structure id="o18541" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="laterally;pale" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="size" value="2" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="coloration" value="pale" constraint="on costa" constraintid="o18542" />
+      </structure>
+      <structure id="o18542" name="costa">
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+    </statement>
+    <statement id="1612.txt-7">
+      <text>Utricles horizontally patent at maturity, ovate-oblong, obscurely trigonous, 2.5–3 mm, membranous, with distinct lateral veins especially abaxially, base subrounded, apex abruptly contracted into a short beak, orifice minutely 2-toothed.</text>
+      <structure id="o18543" name="utricle">
+        <character name="orientation" value="patent" modifier="horizontally" />
+        <character char_type="range_value" name="maturity , ovate-oblong , obscurely trigonous ," from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character name="feature" value="membranous" />
+      </structure>
+      <structure id="o18544" name="vein" constraint="lateral">
+        <character name="fusion" value="distinct" />
+      </structure>
+      <relation id="r3539" name="with" from="o18543" to="o18544" negation="false" />
+      <structure id="o18545" name="base">
+        <character name="arrangement" value="subrounded" />
+      </structure>
+      <structure id="o18546" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o18547" />
+      </structure>
+      <structure id="o18547" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o18548" name="orifice">
+        <character name="shape" value="2-toothed" modifier="minutely" />
+      </structure>
+    </statement>
+    <statement id="1612.txt-8">
+      <text>Nutlet tightly enclosed, obovate-oblong to elliptic, trigonous, ca. 2 mm;</text>
+      <structure id="o18549" name="nutlet">
+        <character name="position" value="enclosed" modifier="tightly" />
+        <character char_type="range_value" name="shape" from="obovate-oblong" to="elliptic" />
+        <character name="shape" value="obovate-oblong" />
+        <character name="shape" value="elliptic" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1612.txt-9">
+      <text>style base not thickened, persistent;</text>
+      <structure id="o18550" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+        <character name="duration" value="persistent" />
+      </structure>
+    </statement>
+    <statement id="1612.txt-10">
+      <text>stigmas 3.</text>
+      <structure id="o18551" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forests, wet grasslands, streambanks; 500–1600 m. Gansu, Hebei, Heilongjiang, Jilin, Liaoning, Shaanxi, Zhejiang [Japan, Korea, Russia (Far East)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -18,7 +18,193 @@
     <species_name>pachinensis</species_name>
     <species_authority>Hayata.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome short, without stolons. Culms densely tufted, 15–50 cm tall, triquetrous, smooth, clothed at base with sheaths splitting into fibers. Leaves slightly longer or sometimes slightly shorter than culm, blades 3–5 mm wide, flat, margins scabrous; sheaths usually splitting at membranous part. Lower involucral bracts leaflike, sheathed, upper blades setaceous, sheathless. Spikes 5–8; terminal spike gynaecandrous, rarely male, clavate-cylindric; lateral spikes female or sometimes with a few male flowers at base, usually 1 or 2 spikes exserted from an involucral bract sheath, cylindric, 2.5–4.5 cm, densely many flowered; peduncles slender, gradually shorter upward. Female glumes yellowish white, ovate-lanceolate, ca. 4.8 mm, membranous, 1-veined, apex mucronate. Utricles stramineous, longer than glume, suberect, elliptic, plano-convex, ca. 7 mm, membranous, red-brown punctate, slightly shiny, inconspicuously 5-veined, base abruptly contracted into a short stipe, apex gradually narrowed to a long beak, scabrous on margins of upper part and beak, orifice shallowly 2-toothed. Nutlets stramineous, very loosely enveloped, elliptic, trigonous, ca. 2 mm, base shortly stipitate; style slender; stigmas 3. Fr. Apr–May.</description>
+  <description>
+    <statement id="1313.txt-0">
+      <text>Rhizome short, without stolons.</text>
+      <structure id="o9597" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o9598" name="stolon" />
+      <relation id="r1773" name="without" from="o9597" to="o9598" negation="false" />
+    </statement>
+    <statement id="1313.txt-1">
+      <text>Culms densely tufted, 15–50 cm tall, triquetrous, smooth, clothed at base with sheaths splitting into fibers.</text>
+      <structure id="o9599" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character char_type="range_value" name="size" from="15" from_unit="cm" to="50" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="triquetrous" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o9600" name="base" />
+      <relation id="r1774" name="clothed at" from="o9599" to="o9600" negation="false" />
+      <structure id="o9601" name="sheath">
+        <character name="behaviour_or_dehiscence" value="splitting" constraint="into fibers" constraintid="o9602" />
+      </structure>
+      <relation id="r1775" name="with" from="o9600" to="o9601" negation="false" />
+      <structure id="o9602" name="fiber" />
+    </statement>
+    <statement id="1313.txt-2">
+      <text>Leaves slightly longer or sometimes slightly shorter than culm, blades 3–5 mm wide, flat, margins scabrous;</text>
+      <structure id="o9603" name="leaf">
+        <character name="length" value="longer" modifier="slightly" />
+        <character name="length" value="sometimes slightly height_or_lengtshorter constrainthan culm" />
+        <character name="height_or_length" value="shorter" modifier="sometimes slightly" constraint="than culm" constraintid="o9604" />
+      </structure>
+      <structure id="o9604" name="culm" />
+      <structure id="o9605" name="blade">
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="5" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o9606" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1313.txt-3">
+      <text>sheaths usually splitting at membranous part.</text>
+      <structure id="o9607" name="sheath">
+        <character name="behaviour_or_dehiscence" value="splitting" modifier="usually" constraint="at part" constraintid="o9608" />
+      </structure>
+      <structure id="o9608" name="part" constraint="membranous" />
+    </statement>
+    <statement id="1313.txt-4">
+      <text>Lower involucral bracts leaflike, sheathed, upper blades setaceous, sheathless.</text>
+      <structure id="o9609" name="bract" constraint="lower involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="architecture_or_feature" value="sheathed" />
+      </structure>
+      <structure id="o9610" name="blade" constraint="upper">
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="feature" value="sheathless" />
+      </structure>
+    </statement>
+    <statement id="1313.txt-5">
+      <text>Spikes 5–8;</text>
+      <structure id="o9611" name="spike">
+        <character char_type="range_value" name="count" from="5" to="8" />
+      </structure>
+    </statement>
+    <statement id="1313.txt-6">
+      <text>terminal spike gynaecandrous, rarely male, clavate-cylindric;</text>
+      <structure id="o9612" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+        <character name="feature_or_reproduction" value="male" modifier="rarely" />
+        <character name="shape" value="clavate-cylindric" />
+      </structure>
+    </statement>
+    <statement id="1313.txt-7">
+      <text>lateral spikes female or sometimes with a few male flowers at base, usually 1 or 2 spikes exserted from an involucral bract sheath, cylindric, 2.5–4.5 cm, densely many flowered;</text>
+      <structure id="o9613" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="reproduction" value="sometimes with a few male flowers" />
+        <character name="position" value="exserted" constraint="from bract sheath" constraintid="o9617" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="cm" to="4.5" to_unit="cm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+      <structure id="o9614" name="flower" constraint="male">
+        <character name="count" value="few" />
+      </structure>
+      <relation id="r1776" name="with" from="o9613" to="o9614" negation="false" modifier="sometimes" />
+      <structure id="o9615" name="base" />
+      <relation id="r1777" name="at" from="o9614" to="o9615" negation="false" />
+      <structure id="o9616" name="spike">
+        <character name="count" value="1" modifier="count list" />
+        <character name="count" value="2" />
+      </structure>
+      <structure id="o9617" name="sheath" constraint="involucral bract" />
+    </statement>
+    <statement id="1313.txt-8">
+      <text>peduncles slender, gradually shorter upward.</text>
+      <structure id="o9618" name="peduncle">
+        <character name="size" value="slender" />
+        <character name="height_or_length" value="shorter" modifier="gradually" />
+      </structure>
+    </statement>
+    <statement id="1313.txt-9">
+      <text>Female glumes yellowish white, ovate-lanceolate, ca. 4.8 mm, membranous, 1-veined, apex mucronate.</text>
+      <structure id="o9619" name="glume" constraint="female">
+        <character name="coloration" value="white" modifier="yellowish" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character name="size" value="4.8" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o9620" name="apex">
+        <character name="shape" value="mucronate" />
+      </structure>
+    </statement>
+    <statement id="1313.txt-10">
+      <text>Utricles stramineous, longer than glume, suberect, elliptic, planoconvex, ca. 7 mm, membranous, red-brown punctate, slightly shiny, inconspicuously 5-veined, base abruptly contracted into a short stipe, apex gradually narrowed to a long beak, scabrous on margins of upper part and beak, orifice shallowly 2-toothed.</text>
+      <structure id="o9621" name="utricle">
+        <character name="coloration" value="stramineous" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o9622" />
+        <character name="orientation" value="suberect" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="planoconvex" />
+        <character name="size" value="7" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="coloration" value="red-brown" />
+        <character name="pattern" value="punctate" />
+        <character name="reflectance" value="shiny" modifier="slightly" />
+        <character name="architecture_or_feature" value="5-veined" modifier="inconspicuously" />
+      </structure>
+      <structure id="o9622" name="glume" />
+      <structure id="o9623" name="base">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into stipe" constraintid="o9624" />
+      </structure>
+      <structure id="o9624" name="stipe">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o9625" name="apex">
+        <character name="external_texture_or_relief" value="scabrous" constraint="on margins" constraintid="o9627" />
+      </structure>
+      <structure id="o9626" name="beak">
+        <character name="length" value="long" />
+      </structure>
+      <relation id="r1778" name="narrowed to" from="o9625" to="o9626" negation="false" modifier="gradually" />
+      <structure id="o9627" name="margin" />
+      <structure id="o9628" name="beak">
+        <character name="position" value="upper" />
+      </structure>
+      <relation id="r1779" name="part_of" from="o9627" to="o9628" negation="false" />
+      <structure id="o9629" name="orifice">
+        <character name="shape" value="2-toothed" modifier="shallowly" />
+      </structure>
+      <relation id="r1780" name="may_be_the_same" from="o9626" to="o9628" negation="false" />
+    </statement>
+    <statement id="1313.txt-11">
+      <text>Nutlets stramineous, very loosely enveloped, elliptic, trigonous, ca. 2 mm, base shortly stipitate;</text>
+      <structure id="o9630" name="nutlet">
+        <character name="coloration" value="stramineous" />
+        <character name="feature" value="enveloped" modifier="very loosely" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+      <structure id="o9631" name="base">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1313.txt-12">
+      <text>style slender;</text>
+      <structure id="o9632" name="style">
+        <character name="size" value="slender" />
+      </structure>
+    </statement>
+    <statement id="1313.txt-13">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1313.txt-14">
+      <text>Fr. Apr–May.</text>
+      <structure id="o9633" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Fujian, Taiwan [Japan, Korea].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

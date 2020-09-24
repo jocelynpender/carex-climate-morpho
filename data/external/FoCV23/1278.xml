@@ -28,7 +28,35 @@
     <species_name>tagawana</species_name>
     <species_authority>T. Koyama.</species_authority>
   </TaxonIdentification>
-  <description>Leaves rather broad, 3–5 mm wide. Male spike up to 12 cm; female spikes up to 10 cm. Female glumes golden brown.</description>
+  <description>
+    <statement id="1278.txt-0">
+      <text>Leaves rather broad, 3–5 mm wide.</text>
+      <structure id="o8457" name="leaf">
+        <character name="character" value="width" modifier="rather" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="5" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1278.txt-1">
+      <text>Male spike up to 12 cm;</text>
+      <structure id="o8458" name="spike" constraint="male">
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="12" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1278.txt-2">
+      <text>female spikes up to 10 cm.</text>
+      <structure id="o8459" name="spike" constraint="female">
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="10" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1278.txt-3">
+      <text>Female glumes golden brown.</text>
+      <structure id="o8460" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="golden" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Poorly vegetated rocky or sandy slopes in montane regions. Taiwan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

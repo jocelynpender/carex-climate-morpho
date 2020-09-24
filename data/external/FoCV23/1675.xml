@@ -26,8 +26,207 @@
     <variety_name>longibracteata</variety_name>
     <variety_authority>Oliver.</variety_authority>
   </TaxonIdentification>
-  <description>Rhizome long creeping, clothed with dark brown fibrous remnants of old glumes. Culms 10–20 cm tall, 3–4 mm thick, erect, rigid, obtusely trigonous, subsmooth, clothed at base with dark brown sheaths disintegrating into parallel fibers. Leaves longer than culm, blades yellow-green, broadly linear, 3–8 mm wide, flat, ± curved, leathery, serrulate margined. Lowest involucral bracts narrowly leaflike. Plants dioecious, rarely monoecious; male inflorescence oblong, 4–5 × 1.2–1.3 cm; female inflorescence ovate to oblong, 4–6 × ca. 3 cm; spikes numerous, ovate, 10–15 mm. Female glumes yellow-green, ovate to narrowly ovate, 12–16 × 4–5 mm, leathery, many veined, margins broadly hyaline, broad costa excurrent into a long scabrous awn, apex acute, usually toothed. Utricles yellow-greenish, slightly shorter than or ± equaling glume, lanceolate or ovate-lanceolate, plano-convex, 10–15 × ca. 4 mm, leathery, lustrous, finely many veined on both faces, narrowly winged margins irregularly serrulate-scabrous on upper part, apex gradually tapering into a long weakly incurved beak, orifice 2-toothed. Nutlets olivaceous, loosely enveloped, oblong-obovate or oblong, compressed trigonous, base slightly cuneate, apex rounded; style sparsely pilose below, base slightly thickened; stigmas 2. Fl. and fr. Jun–Sep. 2n = 84.</description>
+  <description>
+    <statement id="1675.txt-0">
+      <text>Rhizome long creeping, clothed with dark brown fibrous remnants of old glumes.</text>
+      <structure id="o19974" name="rhizome">
+        <character name="habit" value="creeping" />
+      </structure>
+      <structure id="o19975" name="remnant">
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="internal_texture" value="fibrous" />
+      </structure>
+      <relation id="r3751" name="clothed with" from="o19974" to="o19975" negation="false" />
+      <structure id="o19976" name="glume">
+        <character name="life_stage" value="old" />
+      </structure>
+      <relation id="r3752" name="part_of" from="o19975" to="o19976" negation="false" />
+    </statement>
+    <statement id="1675.txt-1">
+      <text>Culms 10–20 cm tall, 3–4 mm thick, erect, rigid, obtusely trigonous, subsmooth, clothed at base with dark brown sheaths disintegrating into parallel fibers.</text>
+      <structure id="o19977" name="culm">
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="20" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="width" value="thick" />
+        <character name="orientation" value="erect" />
+        <character name="internal_texture" value="rigid" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character name="feature" value="subsmooth" />
+      </structure>
+      <structure id="o19978" name="base" />
+      <relation id="r3753" name="clothed at" from="o19977" to="o19978" negation="false" />
+      <structure id="o19979" name="sheath">
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o19980" />
+      </structure>
+      <relation id="r3754" name="with" from="o19978" to="o19979" negation="false" />
+      <structure id="o19980" name="fiber">
+        <character name="arrangement" value="parallel" />
+      </structure>
+    </statement>
+    <statement id="1675.txt-2">
+      <text>Leaves longer than culm, blades yellow-green, broadly linear, 3–8 mm wide, flat, ± curved, leathery, serrulate margined.</text>
+      <structure id="o19981" name="leaf">
+        <character name="length" value="longer" constraint="than culm" constraintid="o19982" />
+      </structure>
+      <structure id="o19982" name="culm" />
+      <structure id="o19983" name="blade">
+        <character name="coloration" value="yellow-green" />
+        <character name="arrangement_or_shape" value="linear" modifier="broadly" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="8" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="course_or_orientation" value="curved" modifier="more or less" />
+        <character name="external_texture_or_feature" value="leathery" />
+        <character name="shape" value="serrulate" />
+        <character name="feature" value="margined" />
+      </structure>
+    </statement>
+    <statement id="1675.txt-3">
+      <text>Lowest involucral bracts narrowly leaflike.</text>
+      <structure id="o19984" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="architecture" value="leaflike" modifier="narrowly" />
+      </structure>
+    </statement>
+    <statement id="1675.txt-4">
+      <text>Plants dioecious, rarely monoecious;</text>
+      <structure id="o19985" name="whole_organism">
+        <character name="reproduction" value="dioecious" />
+        <character name="reproduction" value="monoecious" modifier="rarely" />
+        <character name="life_style" value="plant" />
+      </structure>
+    </statement>
+    <statement id="1675.txt-5">
+      <text>male inflorescence oblong, 4–5 × 1.2–1.3 cm;</text>
+      <structure id="o19986" name="inflorescence" constraint="male">
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="length" from="4" from_unit="cm" to="5" to_unit="cm" />
+        <character char_type="range_value" name="width" from="1.2" from_unit="cm" to="1.3" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1675.txt-6">
+      <text>female inflorescence ovate to oblong, 4–6 × ca. 3 cm;</text>
+      <structure id="o19987" name="inflorescence" constraint="female">
+        <character char_type="range_value" name="shape" from="ovate" to="oblong" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="length" from="4" from_unit="cm" to="6" to_unit="cm" />
+        <character name="width" value="3" unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1675.txt-7">
+      <text>spikes numerous, ovate, 10–15 mm.</text>
+      <structure id="o19988" name="spike">
+        <character name="count" value="numerous" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="10" from_unit="mm" to="15" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1675.txt-8">
+      <text>Female glumes yellow-green, ovate to narrowly ovate, 12–16 × 4–5 mm, leathery, many veined, margins broadly hyaline, broad costa excurrent into a long scabrous awn, apex acute, usually toothed.</text>
+      <structure id="o19989" name="glume" constraint="female">
+        <character name="coloration" value="yellow-green" />
+        <character char_type="range_value" name="shape" from="ovate" to="narrowly ovate" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="ovate" modifier="narrowly" />
+        <character char_type="range_value" name="length" from="12" from_unit="mm" to="16" to_unit="mm" />
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="5" to_unit="mm" />
+        <character name="external_texture_or_feature" value="leathery" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o19990" name="margin">
+        <character name="coloration" value="hyaline" modifier="broadly" />
+      </structure>
+      <structure id="o19991" name="costa">
+        <character name="width" value="broad" />
+        <character name="architecture" value="excurrent" constraint="into awn" constraintid="o19992" />
+      </structure>
+      <structure id="o19992" name="awn">
+        <character name="length" value="long" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o19993" name="apex">
+        <character name="shape" value="acute" />
+        <character name="shape" value="toothed" modifier="usually" />
+      </structure>
+    </statement>
+    <statement id="1675.txt-9">
+      <text>Utricles yellow-greenish, slightly shorter than or ± equaling glume, lanceolate or ovate-lanceolate, planoconvex, 10–15 × ca. 4 mm, leathery, lustrous, finely many veined on both faces, narrowly winged margins irregularly serrulate-scabrous on upper part, apex gradually tapering into a long weakly incurved beak, orifice 2-toothed.</text>
+      <structure id="o19994" name="utricle">
+        <character name="coloration" value="yellow-greenish" />
+        <character name="height_or_length" value="shorter" modifier="slightly" constraint="than or more or less equaling glume" />
+        <character name="shape" value="lanceolate" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="length" from="10" from_unit="mm" to="15" to_unit="mm" />
+        <character name="width" value="4" unit="mm" />
+        <character name="external_texture_or_feature" value="leathery" />
+        <character name="reflectance" value="lustrous" />
+        <character name="count" value="many" modifier="finely" />
+        <character name="architecture_or_feature" value="veined" constraint="on faces" constraintid="o19995" />
+        <character name="external_texture_or_relief" value="serrulate-scabrous" modifier="irregularly" constraint="on part" constraintid="o19997" />
+      </structure>
+      <structure id="o19995" name="face" />
+      <structure id="o19996" name="margin">
+        <character name="architecture" value="winged" modifier="narrowly" />
+      </structure>
+      <structure id="o19997" name="part" constraint="upper" />
+      <structure id="o19998" name="apex">
+        <character name="shape" value="tapering" modifier="gradually" constraint="into beak" constraintid="o19999" />
+      </structure>
+      <structure id="o19999" name="beak">
+        <character name="length" value="long" />
+        <character name="orientation" value="incurved" modifier="weakly" />
+      </structure>
+      <structure id="o20000" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1675.txt-10">
+      <text>Nutlets olivaceous, loosely enveloped, oblong-obovate or oblong, compressed trigonous, base slightly cuneate, apex rounded;</text>
+      <structure id="o20001" name="nutlet">
+        <character name="coloration" value="olivaceous" />
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="oblong-obovate" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="compressed trigonous" />
+      </structure>
+      <structure id="o20002" name="apex">
+        <character name="arrangement_or_shape" value="cuneate" modifier="slightly" />
+        <character name="shape" value="rounded" />
+      </structure>
+      <relation id="r3755" name="base" from="o20001" to="o20002" negation="false" />
+    </statement>
+    <statement id="1675.txt-11">
+      <text>style sparsely pilose below, base slightly thickened;</text>
+      <structure id="o20003" name="style">
+        <character name="external_texture" value="pilose" modifier="sparsely;below" />
+      </structure>
+      <structure id="o20004" name="base">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1675.txt-12">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1675.txt-13">
+      <text>Fl. and fr. Jun–Sep.</text>
+      <structure id="o20005" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+    <statement id="1675.txt-14">
+      <text>2n = 84.</text>
+      <structure name="chromosome" id="o20006">
+        <character name="count" value="84" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Seashores, riversides, sandy lakeshores. Anhui, Hebei, Heilong-jiang, Jiangsu, Liaoning, Qinghai, Shandong, Taiwan, Zhejiang [Japan, Korea, Russia (Far East)].</distribution>
   <discussion>Carex macrocephala Willdenow ex Sprengel has been attributed to China (see Fl. N. Amer. 23: 309. 2002); its range includes coastal areas of NW North America and NE Asia (Japan, Russia). However, we have found no specimens from China, and the reports probably can be traced to an older usage of C. macrocephala, which included C. kobomugi.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

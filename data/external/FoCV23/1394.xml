@@ -9,7 +9,28 @@
   <TaxonIdentification Status="SYNONYM">
     <subspecies_name>弯柄薹草 ( 原亚种) wan bing tai cao (yuan ya zhong)</subspecies_name>
   </TaxonIdentification>
-  <description>Leaves longer than culm, blades 6–8 mm wide. Nutlets with apical beak curved.</description>
+  <description>
+    <statement id="1394.txt-0">
+      <text>Leaves longer than culm, blades 6–8 mm wide.</text>
+      <structure id="o12114" name="leaf">
+        <character name="length" value="longer" constraint="than culm" constraintid="o12115" />
+      </structure>
+      <structure id="o12115" name="culm" />
+      <structure id="o12116" name="blade">
+        <character char_type="range_value" name="width" from="6" from_unit="mm" to="8" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1394.txt-1">
+      <text>Nutlets with apical beak curved.</text>
+      <structure id="o12117" name="nutlet" />
+      <structure id="o12118" name="beak" constraint="apical">
+        <character name="course_or_orientation" value="curved" />
+      </structure>
+      <relation id="r2270" name="with" from="o12117" to="o12118" negation="false" />
+    </statement>
+  </description>
   <distribution>● Guangdong, Hubei (Badong).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

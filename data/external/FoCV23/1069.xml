@@ -13,7 +13,150 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>膨囊薹草 peng nang tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome stoloniferous. Culms 15–70 cm tall, slender, trigonous, clothed at base with purple-brown sheaths. Leaves nearly equaling culm, blades linear, 2–5 mm wide, flat, soft. Involucral bracts leaflike, longer than inflorescence. Spikes 3–5; terminal spike gynaecandrous, oblong, 5–8 mm; lateral spikes female, ovate or oblong, 5–9 mm; upper spikes with short peduncles or subsessile, lowest with peduncle 1–4 cm. Female glumes dark purple or dark brown, broadly ovate, ca. 1.2 mm, 1-veined, apex obtuse or subacute. Utricles yellowish green, longer than glume, obovate or obovate-elliptic, trigonous, 2–2.2 mm, inflated, veined, apex abruptly contracted into a short beak, orifice emarginate or truncate. Nutlets obovate, trigonous, 1.2–1.7 mm; style short; stigmas 3. Fl. and fr. Jul–Aug.</description>
+  <description>
+    <statement id="1069.txt-0">
+      <text>Rhizome stoloniferous.</text>
+      <structure id="o2189" name="rhizome">
+        <character name="architecture" value="stoloniferous" />
+      </structure>
+    </statement>
+    <statement id="1069.txt-1">
+      <text>Culms 15–70 cm tall, slender, trigonous, clothed at base with purple-brown sheaths.</text>
+      <structure id="o2190" name="culm">
+        <character char_type="range_value" name="size" from="15" from_unit="cm" to="70" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="trigonous" />
+      </structure>
+      <structure id="o2191" name="base" />
+      <relation id="r460" name="clothed at" from="o2190" to="o2191" negation="false" />
+      <structure id="o2192" name="sheath">
+        <character name="coloration" value="purple-brown" />
+      </structure>
+      <relation id="r461" name="with" from="o2191" to="o2192" negation="false" />
+    </statement>
+    <statement id="1069.txt-2">
+      <text>Leaves nearly equaling culm, blades linear, 2–5 mm wide, flat, soft.</text>
+      <structure id="o2193" name="leaf" />
+      <structure id="o2194" name="culm" />
+      <relation id="r462" name="equaling" from="o2193" to="o2194" negation="false" modifier="nearly" />
+      <structure id="o2195" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="5" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture" value="soft" />
+      </structure>
+    </statement>
+    <statement id="1069.txt-3">
+      <text>Involucral bracts leaflike, longer than inflorescence.</text>
+      <structure id="o2196" name="bract" constraint="involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="length" value="longer" constraint="than inflorescence" constraintid="o2197" />
+      </structure>
+      <structure id="o2197" name="inflorescence" />
+    </statement>
+    <statement id="1069.txt-4">
+      <text>Spikes 3–5;</text>
+      <structure id="o2198" name="spike">
+        <character char_type="range_value" name="count" from="3" to="5" />
+      </structure>
+    </statement>
+    <statement id="1069.txt-5">
+      <text>terminal spike gynaecandrous, oblong, 5–8 mm;</text>
+      <structure id="o2199" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="8" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1069.txt-6">
+      <text>lateral spikes female, ovate or oblong, 5–9 mm;</text>
+      <structure id="o2200" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="9" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1069.txt-7">
+      <text>upper spikes with short peduncles or subsessile, lowest with peduncle 1–4 cm.</text>
+      <structure id="o2201" name="spike" constraint="upper">
+        <character name="architecture" value="subsessile" />
+        <character name="feature" value="lowest" constraint="with peduncle" constraintid="o2203" />
+      </structure>
+      <structure id="o2202" name="peduncle">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r463" name="with" from="o2201" to="o2202" negation="false" />
+      <structure id="o2203" name="peduncle">
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="4" to_unit="cm" />
+      </structure>
+      <relation id="r464" name="may_be_the_same" from="o2202" to="o2203" negation="false" />
+    </statement>
+    <statement id="1069.txt-8">
+      <text>Female glumes dark purple or dark brown, broadly ovate, ca. 1.2 mm, 1-veined, apex obtuse or subacute.</text>
+      <structure id="o2204" name="glume" constraint="female">
+        <character name="coloration" value="purple" modifier="dark" />
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="size" value="1.2" unit="mm" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o2205" name="apex">
+        <character name="shape" value="obtuse" />
+        <character name="shape" value="subacute" />
+      </structure>
+    </statement>
+    <statement id="1069.txt-9">
+      <text>Utricles yellowish green, longer than glume, obovate or obovate-elliptic, trigonous, 2–2.2 mm, inflated, veined, apex abruptly contracted into a short beak, orifice emarginate or truncate.</text>
+      <structure id="o2206" name="utricle">
+        <character name="coloration" value="green" modifier="yellowish" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o2207" />
+        <character name="shape" value="obovate" />
+        <character name="shape" value="obovate-elliptic" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="2.2" to_unit="mm" />
+        <character name="shape" value="inflated" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o2207" name="glume" />
+      <structure id="o2208" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o2209" />
+      </structure>
+      <structure id="o2209" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o2210" name="orifice">
+        <character name="shape" value="emarginate" />
+        <character name="shape" value="truncate" />
+      </structure>
+    </statement>
+    <statement id="1069.txt-10">
+      <text>Nutlets obovate, trigonous, 1.2–1.7 mm;</text>
+      <structure id="o2211" name="nutlet">
+        <character name="shape" value="obovate" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="1.2" from_unit="mm" to="1.7" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1069.txt-11">
+      <text>style short;</text>
+      <structure id="o2212" name="style">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1069.txt-12">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1069.txt-13">
+      <text>Fl. and fr. Jul–Aug.</text>
+      <structure id="o2213" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Mountain slopes, grasslands, forests, riversides; 2800–4100 m. Gansu, Henan, Hubei, Qinghai, Shaanxi, Shanxi, W Sichuan, SE Xizang, NW Yunnan [Bhutan, India, Japan, Korea, Nepal].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

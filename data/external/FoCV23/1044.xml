@@ -13,7 +13,133 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>红原薹草 hong yuan tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, woody. Culms to 50 cm tall, trigonous, smooth, scabrous above, clothed at base with dark brown sheaths. Leaves shorter than culm, blades linear, 3–4 mm wide, flat, margins scabrous. Involucral bracts leafy, shorter than inflorescence, sheathless. Spikes 4, approximate; terminal spike male, long cylindric, 23–25 × 2–4 mm, with peduncle ca. 4 mm; lateral spikes female, cylindric, 1–2.5 × 0.5–0.6 cm, densely flowered, peduncles 1–2.7 cm. Female glumes dark brown, yellowish, or pale yellow, oblong, ca. 3.5 × 1.5 mm, 1-veined, apex obtuse. Utricles yellow-green, longer than glume, elliptic, compressed trigonous, ca. 4 × 2 mm, glabrous, 7–9-veined, constricted at both ends, beak short, orifice entire. Stigmas 3.</description>
+  <description>
+    <statement id="1044.txt-0">
+      <text>Rhizome short, woody.</text>
+      <structure id="o1542" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="internal_texture" value="woody" />
+      </structure>
+    </statement>
+    <statement id="1044.txt-1">
+      <text>Culms to 50 cm tall, trigonous, smooth, scabrous above, clothed at base with dark brown sheaths.</text>
+      <structure id="o1543" name="culm">
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="50" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o1544" name="base" />
+      <relation id="r346" name="clothed at" from="o1543" to="o1544" negation="false" />
+      <structure id="o1545" name="sheath">
+        <character name="coloration" value="brown" modifier="dark" />
+      </structure>
+      <relation id="r347" name="with" from="o1544" to="o1545" negation="false" />
+    </statement>
+    <statement id="1044.txt-2">
+      <text>Leaves shorter than culm, blades linear, 3–4 mm wide, flat, margins scabrous.</text>
+      <structure id="o1546" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o1547" />
+      </structure>
+      <structure id="o1547" name="culm" />
+      <structure id="o1548" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o1549" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1044.txt-3">
+      <text>Involucral bracts leafy, shorter than inflorescence, sheathless.</text>
+      <structure id="o1550" name="bract" constraint="involucral">
+        <character name="architecture" value="leafy" />
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o1551" />
+        <character name="feature" value="sheathless" />
+      </structure>
+      <structure id="o1551" name="inflorescence" />
+    </statement>
+    <statement id="1044.txt-4">
+      <text>Spikes 4, approximate;</text>
+      <structure id="o1552" name="spike">
+        <character name="count" value="4" />
+        <character name="feature" value="approximate" />
+      </structure>
+    </statement>
+    <statement id="1044.txt-5">
+      <text>terminal spike male, long cylindric, 23–25 × 2–4 mm, with peduncle ca. 4 mm;</text>
+      <structure id="o1553" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="length" from="23" from_unit="mm" to="25" to_unit="mm" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="4" to_unit="mm" />
+      </structure>
+      <structure id="o1554" name="peduncle">
+        <character name="size" value="4" unit="mm" />
+      </structure>
+      <relation id="r348" name="with" from="o1553" to="o1554" negation="false" />
+    </statement>
+    <statement id="1044.txt-6">
+      <text>lateral spikes female, cylindric, 1–2.5 × 0.5–0.6 cm, densely flowered, peduncles 1–2.7 cm.</text>
+      <structure id="o1555" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="length" from="1" from_unit="cm" to="2.5" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.5" from_unit="cm" to="0.6" to_unit="cm" />
+        <character name="architecture" value="flowered" modifier="densely" />
+      </structure>
+      <structure id="o1556" name="peduncle">
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="2.7" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1044.txt-7">
+      <text>Female glumes dark brown, yellowish, or pale yellow, oblong, ca. 3.5 × 1.5 mm, 1-veined, apex obtuse.</text>
+      <structure id="o1557" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="coloration" value="yellowish" />
+        <character name="coloration" value="yellow" modifier="pale" />
+        <character name="shape" value="oblong" />
+        <character name="length" value="3.5" unit="mm" />
+        <character name="width" value="1.5" unit="mm" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o1558" name="apex">
+        <character name="shape" value="obtuse" />
+      </structure>
+    </statement>
+    <statement id="1044.txt-8">
+      <text>Utricles yellow-green, longer than glume, elliptic, compressed trigonous, ca. 4 × 2 mm, glabrous, 7–9-veined, constricted at both ends, beak short, orifice entire.</text>
+      <structure id="o1559" name="utricle">
+        <character name="coloration" value="yellow-green" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o1560" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="compressed trigonous" />
+        <character name="length" value="4" unit="mm" />
+        <character name="width" value="2" unit="mm" />
+        <character name="external_texture" value="glabrous" />
+        <character name="architecture_or_feature" value="7-9-veined" />
+        <character name="size" value="constricted" constraint="at ends" constraintid="o1561" />
+      </structure>
+      <structure id="o1560" name="glume" />
+      <structure id="o1561" name="end" />
+      <structure id="o1562" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o1563" name="orifice">
+        <character name="shape" value="entire" />
+      </structure>
+    </statement>
+    <statement id="1044.txt-9">
+      <text>Stigmas 3.</text>
+      <structure id="o1564" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Ditch sides; ca. 3600 m. N Sichuan (Hongyuan).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -30,7 +30,34 @@
     <variety_name>wichurae</variety_name>
     <variety_authority>(Boeckeler) Kükenth al.</variety_authority>
   </TaxonIdentification>
-  <description>Leaves shorter than culm. Male spike 1–1.5 cm; female spikes ca. 2 cm, uppermost female spike approximate to male.</description>
+  <description>
+    <statement id="1397.txt-0">
+      <text>Leaves shorter than culm.</text>
+      <structure id="o12130" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o12131" />
+      </structure>
+      <structure id="o12131" name="culm" />
+    </statement>
+    <statement id="1397.txt-1">
+      <text>Male spike 1–1.5 cm;</text>
+      <structure id="o12132" name="spike" constraint="male">
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="1.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1397.txt-2">
+      <text>female spikes ca. 2 cm, uppermost female spike approximate to male.</text>
+      <structure id="o12133" name="spike" constraint="female">
+        <character name="size" value="2" unit="cm" />
+      </structure>
+      <structure id="o12134" name="spike" constraint="uppermost female">
+        <character char_type="range_value" name="feature" from="approximate" to="male" />
+        <character name="feature" value="approximate" />
+        <character name="feature" value="male" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Forested slopes, wet places, streamsides. Macao.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -23,7 +23,36 @@
       <place_in_publication>214. 1955.</place_in_publication>
     </place_of_publication>
   </TaxonIdentification>
-  <description>Leaves longer than culm, blades 3–5 mm wide. Utricles 7–8 mm. Nutlets with apical beak short and erect.</description>
+  <description>
+    <statement id="1396.txt-0">
+      <text>Leaves longer than culm, blades 3–5 mm wide.</text>
+      <structure id="o12124" name="leaf">
+        <character name="length" value="longer" constraint="than culm" constraintid="o12125" />
+      </structure>
+      <structure id="o12125" name="culm" />
+      <structure id="o12126" name="blade">
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="5" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1396.txt-1">
+      <text>Utricles 7–8 mm.</text>
+      <structure id="o12127" name="utricle">
+        <character char_type="range_value" name="size" from="7" from_unit="mm" to="8" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1396.txt-2">
+      <text>Nutlets with apical beak short and erect.</text>
+      <structure id="o12128" name="nutlet">
+        <character name="orientation" value="erect" />
+      </structure>
+      <structure id="o12129" name="beak" constraint="apical">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r2272" name="with" from="o12128" to="o12129" negation="false" />
+    </statement>
+  </description>
   <distribution>● Forests at high elevations. Taiwan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

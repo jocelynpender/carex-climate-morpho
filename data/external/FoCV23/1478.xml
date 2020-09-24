@@ -13,7 +13,185 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>密苞叶薹草 mi bao ye tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short and slightly thick, ligneous, without stolons. Culms 20–60 cm tall, rather stout, obtusely trigonous, clothed with reddish brown and bladeless sheaths at lower part. Leaves contiguously disposed, longer than culm, blades 8–15 mm wide, ± stiff, revolute on margins with distinctly transverse septate nodes between veins on abaxial surface, slightly long sheathed; sheaths ± overlapping, distinctly ligulate, reddish. Involucral bracts leaflike, congregated at top of culm, longer than inflorescence, rather shortly sheathed. Spikes 6–10, congregated at top of culm; terminal spike male, linear-cylindric, 1–2.5 cm, shortly pedunculate; lateral spikes female, sometimes with few male flowers at apex, narrowly cylindric, 2–3 cm, densely many flowered, pedunculate. Female glumes green at middle, pale laterally, very shortly ferruginous striate, broadly obovate, ca. 1.8 mm, membranous, 3-veined, apex acute, mucronate. Utricles grass-green, very shortly ferruginous striate, obliquely patent, longer than glume, broadly obovate, trigonous, 2.8–3.5 mm, membranous, densely white hispidulous, distinctly 2-veined laterally, base cuneate, apex abruptly contracted into a rather short beak, orifice shortly 2-toothed. Nutlets obovate, trigonous, ca. 2 mm, sessile; style base slightly thickened; stigmas 3. Fl. and fr. Jun–Sep.</description>
+  <description>
+    <statement id="1478.txt-0">
+      <text>Rhizome short and slightly thick, ligneous, without stolons.</text>
+      <structure id="o14642" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="width" value="thick" modifier="slightly" />
+        <character name="external_texture" value="ligneous" />
+      </structure>
+      <structure id="o14643" name="stolon" />
+      <relation id="r2783" name="without" from="o14642" to="o14643" negation="false" />
+    </statement>
+    <statement id="1478.txt-1">
+      <text>Culms 20–60 cm tall, rather stout, obtusely trigonous, clothed with reddish brown and bladeless sheaths at lower part.</text>
+      <structure id="o14644" name="culm">
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="60" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="fragility" value="stout" modifier="rather" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+      </structure>
+      <structure id="o14645" name="sheath" constraint="bladeless">
+        <character name="coloration" value="brown" modifier="reddish" />
+      </structure>
+      <relation id="r2784" name="clothed with" from="o14644" to="o14645" negation="false" />
+      <structure id="o14646" name="part" constraint="lower" />
+      <relation id="r2785" name="at" from="o14645" to="o14646" negation="false" />
+    </statement>
+    <statement id="1478.txt-2">
+      <text>Leaves contiguously disposed, longer than culm, blades 8–15 mm wide, ± stiff, revolute on margins with distinctly transverse septate nodes between veins on abaxial surface, slightly long sheathed;</text>
+      <structure id="o14647" name="leaf">
+        <character name="arrangement" value="disposed" modifier="contiguously" />
+        <character name="length" value="longer" constraint="than culm" constraintid="o14648" />
+      </structure>
+      <structure id="o14648" name="culm" />
+      <structure id="o14649" name="blade">
+        <character char_type="range_value" name="width" from="8" from_unit="mm" to="15" to_unit="mm" />
+        <character name="external_texture" value="stiff" modifier="more or less" />
+        <character name="shape_or_vernation" value="revolute" constraint="on margins" constraintid="o14650" />
+        <character name="character" value="length" modifier="slightly" />
+        <character name="architecture_or_feature" value="sheathed" />
+      </structure>
+      <structure id="o14650" name="margin" />
+      <structure id="o14651" name="node">
+        <character name="dehiscence_or_orientation" value="transverse" modifier="distinctly" />
+        <character name="architecture" value="septate" />
+      </structure>
+      <relation id="r2786" name="with" from="o14650" to="o14651" negation="false" />
+      <structure id="o14652" name="vein" />
+      <relation id="r2787" name="between" from="o14651" to="o14652" negation="false" />
+      <structure id="o14653" name="surface" constraint="abaxial" />
+      <relation id="r2788" name="on" from="o14652" to="o14653" negation="false" />
+    </statement>
+    <statement id="1478.txt-3">
+      <text>sheaths ± overlapping, distinctly ligulate, reddish.</text>
+      <structure id="o14654" name="sheath">
+        <character name="arrangement" value="overlapping" modifier="more or less" />
+        <character name="architecture" value="ligulate" modifier="distinctly" />
+        <character name="coloration" value="reddish" />
+      </structure>
+    </statement>
+    <statement id="1478.txt-4">
+      <text>Involucral bracts leaflike, congregated at top of culm, longer than inflorescence, rather shortly sheathed.</text>
+      <structure id="o14655" name="bract" constraint="involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="length" value="longer" constraint="than inflorescence" constraintid="o14658" />
+        <character name="architecture_or_feature" value="sheathed" modifier="rather shortly" />
+      </structure>
+      <structure id="o14656" name="top" />
+      <relation id="r2789" name="congregated at" from="o14655" to="o14656" negation="false" />
+      <structure id="o14657" name="culm" />
+      <relation id="r2790" name="part_of" from="o14656" to="o14657" negation="false" />
+      <structure id="o14658" name="inflorescence" />
+    </statement>
+    <statement id="1478.txt-5">
+      <text>Spikes 6–10, congregated at top of culm;</text>
+      <structure id="o14659" name="spike">
+        <character char_type="range_value" name="count" from="6" to="10" />
+      </structure>
+      <structure id="o14660" name="top" />
+      <relation id="r2791" name="congregated at" from="o14659" to="o14660" negation="false" />
+      <structure id="o14661" name="culm" />
+      <relation id="r2792" name="part_of" from="o14660" to="o14661" negation="false" />
+    </statement>
+    <statement id="1478.txt-6">
+      <text>terminal spike male, linear-cylindric, 1–2.5 cm, shortly pedunculate;</text>
+      <structure id="o14662" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="linear-cylindric" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="2.5" to_unit="cm" />
+        <character name="architecture" value="pedunculate" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1478.txt-7">
+      <text>lateral spikes female, sometimes with few male flowers at apex, narrowly cylindric, 2–3 cm, densely many flowered, pedunculate.</text>
+      <structure id="o14663" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="cylindric" modifier="narrowly" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="3" to_unit="cm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+        <character name="architecture" value="pedunculate" />
+      </structure>
+      <structure id="o14664" name="flower" constraint="male">
+        <character name="count" value="few" />
+      </structure>
+      <relation id="r2793" name="with" from="o14663" to="o14664" negation="false" modifier="sometimes" />
+      <structure id="o14665" name="apex" />
+      <relation id="r2794" name="at" from="o14664" to="o14665" negation="false" />
+    </statement>
+    <statement id="1478.txt-8">
+      <text>Female glumes green at middle, pale laterally, very shortly ferruginous striate, broadly obovate, ca. 1.8 mm, membranous, 3-veined, apex acute, mucronate.</text>
+      <structure id="o14666" name="glume" constraint="female">
+        <character name="coloration" value="green" modifier="at middle" />
+        <character name="coloration" value="pale" modifier="laterally" />
+        <character name="coloration_or_external_texture_or_relief" value="striate" />
+        <character name="shape" value="obovate" modifier="broadly" />
+        <character name="size" value="1.8" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o14667" name="apex">
+        <character name="shape" value="acute" />
+        <character name="shape" value="mucronate" />
+      </structure>
+    </statement>
+    <statement id="1478.txt-9">
+      <text>Utricles grass-green, very shortly ferruginous striate, obliquely patent, longer than glume, broadly obovate, trigonous, 2.8–3.5 mm, membranous, densely white hispidulous, distinctly 2-veined laterally, base cuneate, apex abruptly contracted into a rather short beak, orifice shortly 2-toothed.</text>
+      <structure id="o14668" name="utricle">
+        <character name="coloration" value="grass-green" />
+        <character name="coloration_or_external_texture_or_relief" value="striate" />
+        <character name="orientation" value="patent" modifier="obliquely" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o14669" />
+        <character name="shape" value="obovate" modifier="broadly" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="2.8" from_unit="mm" to="3.5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="coloration" value="white" modifier="densely" />
+        <character name="external_texture" value="hispidulous" />
+        <character name="architecture_or_feature" value="2-veined" modifier="distinctly;laterally" />
+      </structure>
+      <structure id="o14669" name="glume" />
+      <structure id="o14670" name="apex">
+        <character name="arrangement_or_shape" value="cuneate" />
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o14671" />
+      </structure>
+      <relation id="r2795" name="base" from="o14668" to="o14670" negation="false" />
+      <structure id="o14671" name="beak">
+        <character name="height_or_length" value="short" modifier="rather" />
+      </structure>
+      <structure id="o14672" name="orifice">
+        <character name="shape" value="2-toothed" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1478.txt-10">
+      <text>Nutlets obovate, trigonous, ca. 2 mm, sessile;</text>
+      <structure id="o14673" name="nutlet">
+        <character name="shape" value="obovate" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+    </statement>
+    <statement id="1478.txt-11">
+      <text>style base slightly thickened;</text>
+      <structure id="o14674" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1478.txt-12">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1478.txt-13">
+      <text>Fl. and fr. Jun–Sep.</text>
+      <structure id="o14675" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Damp places in forests, roadsides, valleys; 500–1000 m. Fujian [Japan].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

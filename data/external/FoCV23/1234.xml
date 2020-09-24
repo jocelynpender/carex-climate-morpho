@@ -23,7 +23,154 @@
       <other_info>not J. F. Gmelin (1791).</other_info>
     </place_of_publication>
   </TaxonIdentification>
-  <description>Rhizome short, woody. Culms densely tufted, 22–55 cm, roundly trigonous, smooth. Leaves cauline, almost equaling or longer than culm, blades linear, ca. 2 mm wide, flat, scabrous above, rigid, with brown-green sheaths, lowest sheath bladeless. Lowest involucral bract leaflike, longer than inflorescence. Spikes 4–7, androgynous or female, linear, 1–2 cm, 2–4 per node, with peduncles up to 6 cm (androgynous spikes usually on longer peduncles). Female glumes reddish brown, ovate-oblong, margins hyaline, 1-veined costa excurrent into a mucro ca. 0.6 mm. Utricles chestnut-brown, shiny, longer than glume, narrowly elliptic, obtusely trigonous, 3–3.5 mm, glabrous (except for few hairs on margins of beak), weakly veined, base gradually contracted, apex gradually narrowed into a beak of medium length, orifice 2-toothed, hyaline. Nutlets loosely enveloped, trigonous, ca. 1.5 mm; style base thickened; stigmas 3. Fl. and fr. Jul–Aug.</description>
+  <description>
+    <statement id="1234.txt-0">
+      <text>Rhizome short, woody.</text>
+      <structure id="o7195" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="internal_texture" value="woody" />
+      </structure>
+    </statement>
+    <statement id="1234.txt-1">
+      <text>Culms densely tufted, 22–55 cm, roundly trigonous, smooth.</text>
+      <structure id="o7196" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character char_type="range_value" name="size" from="22" from_unit="cm" to="55" to_unit="cm" />
+        <character name="shape" value="trigonous" modifier="roundly" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+    </statement>
+    <statement id="1234.txt-2">
+      <text>Leaves cauline, almost equaling or longer than culm, blades linear, ca. 2 mm wide, flat, scabrous above, rigid, with brown-green sheaths, lowest sheath bladeless.</text>
+      <structure id="o7197" name="leaf">
+        <character name="position" value="cauline" />
+        <character name="width" value="2" unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture_or_relief" value="scabrous" />
+        <character name="internal_texture" value="rigid" />
+      </structure>
+      <structure id="o7198" name="blade" constraint="culm">
+        <character name="length" value="longer" />
+        <character name="arrangement_or_shape" value="linear" />
+      </structure>
+      <relation id="r1296" name="equaling" from="o7197" to="o7198" negation="false" modifier="almost" />
+      <structure id="o7199" name="sheath">
+        <character name="coloration" value="brown-green" />
+      </structure>
+      <relation id="r1297" name="with" from="o7197" to="o7199" negation="false" />
+      <structure id="o7200" name="sheath">
+        <character name="feature" value="lowest" />
+      </structure>
+      <relation id="r1298" name="may_be_the_same" from="o7199" to="o7200" negation="false" />
+    </statement>
+    <statement id="1234.txt-3">
+      <text>Lowest involucral bract leaflike, longer than inflorescence.</text>
+      <structure id="o7201" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="architecture" value="leaflike" />
+        <character name="length" value="longer" constraint="than inflorescence" constraintid="o7202" />
+      </structure>
+      <structure id="o7202" name="inflorescence" />
+    </statement>
+    <statement id="1234.txt-4">
+      <text>Spikes 4–7, androgynous or female, linear, 1–2 cm, 2–4 per node, with peduncles up to 6 cm (androgynous spikes usually on longer peduncles ).</text>
+      <structure id="o7203" name="spike">
+        <character char_type="range_value" name="count" from="4" to="7" />
+        <character name="reproduction" value="androgynous" />
+        <character name="reproduction" value="female" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="2" to_unit="cm" />
+        <character char_type="range_value" name="count" from="2" to="4" constraint="per node" constraintid="o7204" />
+      </structure>
+      <structure id="o7204" name="node" />
+      <structure id="o7205" name="peduncle">
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="6" to_unit="cm" />
+      </structure>
+      <relation id="r1299" name="with" from="o7203" to="o7205" negation="false" />
+      <structure id="o7206" name="spike" in_brackets="true">
+        <character name="feature_or_reproduction" value="androgynous" in_brackets="true" />
+      </structure>
+      <structure id="o7207" name="peduncle" in_brackets="true">
+        <character name="length" value="longer" in_brackets="true" />
+      </structure>
+      <relation id="r1300" name="on" from="o7206" to="o7207" negation="false" modifier="usually" in_brackets="true" />
+      <relation id="r1301" name="may_be_the_same" from="o7203" to="o7206" negation="false" />
+      <relation id="r1302" name="may_be_the_same" from="o7205" to="o7207" negation="false" />
+    </statement>
+    <statement id="1234.txt-5">
+      <text>Female glumes reddish brown, ovate-oblong, margins hyaline, 1-veined costa excurrent into a mucro ca. 0.6 mm.</text>
+      <structure id="o7208" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="reddish" />
+        <character name="shape" value="ovate-oblong" />
+      </structure>
+      <structure id="o7209" name="margin">
+        <character name="coloration" value="hyaline" />
+        <character name="architecture_or_feature" value="1-veined" />
+        <character name="architecture" value="excurrent" constraint="into mucro" constraintid="o7211" />
+      </structure>
+      <structure id="o7210" name="costa" />
+      <structure id="o7211" name="mucro">
+        <character name="size" value="0.6" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1234.txt-6">
+      <text>Utricles chestnut-brown, shiny, longer than glume, narrowly elliptic, obtusely trigonous, 3–3.5 mm, glabrous (except for few hairs on margins of beak ), weakly veined, base gradually contracted, apex gradually narrowed into a beak of medium length, orifice 2-toothed, hyaline.</text>
+      <structure id="o7212" name="utricle">
+        <character name="coloration" value="chestnut-brown" />
+        <character name="reflectance" value="shiny" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o7213" />
+        <character name="arrangement_or_shape" value="elliptic" modifier="narrowly" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="3.5" to_unit="mm" />
+        <character name="external_texture" value="glabrous" constraint="except-for hairs" constraintid="o7214" />
+        <character name="architecture_or_feature" value="veined" modifier="weakly" />
+      </structure>
+      <structure id="o7213" name="glume" />
+      <structure id="o7214" name="hair" in_brackets="true">
+        <character name="count" value="few" in_brackets="true" />
+      </structure>
+      <structure id="o7215" name="margin" in_brackets="true" />
+      <relation id="r1303" name="on" from="o7214" to="o7215" negation="false" in_brackets="true" />
+      <structure id="o7216" name="beak" in_brackets="true" />
+      <relation id="r1304" name="part_of" from="o7215" to="o7216" negation="false" in_brackets="true" />
+      <structure id="o7217" name="base">
+        <character name="size" value="contracted" modifier="gradually" />
+      </structure>
+      <structure id="o7218" name="apex">
+        <character name="shape" value="narrowed" modifier="gradually" constraint="into beak" constraintid="o7219" />
+      </structure>
+      <structure id="o7219" name="beak" constraint="of medium length" />
+      <structure id="o7220" name="orifice">
+        <character name="shape" value="2-toothed" />
+        <character name="coloration" value="hyaline" />
+      </structure>
+    </statement>
+    <statement id="1234.txt-7">
+      <text>Nutlets loosely enveloped, trigonous, ca. 1.5 mm;</text>
+      <structure id="o7221" name="nutlet">
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1234.txt-8">
+      <text>style base thickened;</text>
+      <structure id="o7222" name="base" constraint="style">
+        <character name="width" value="thickened" />
+      </structure>
+    </statement>
+    <statement id="1234.txt-9">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1234.txt-10">
+      <text>Fl. and fr. Jul–Aug.</text>
+      <structure id="o7223" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Calcareous rocks in coniferous forests; ca. 2700 m. NW Yunnan (Zhongdian) [Bhutan, India (Sikkim), Nepal].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -22,7 +22,33 @@
     <variety_name>rochebrunii</variety_name>
     <variety_authority>(Franchet &amp; Savatier) C. B. Clarke.</variety_authority>
   </TaxonIdentification>
-  <description>Leaves: membranous side of leaf sheaths at mouth not projected forming a tonguelike appendage. Utricles veined on both faces.</description>
+  <description>
+    <statement id="1682.txt-0">
+      <text>Leaves:</text>
+    </statement>
+    <statement id="1682.txt-1">
+      <text>membranous side of leaf sheaths at mouth not projected forming a tonguelike appendage.</text>
+      <structure id="o20176" name="leaf">
+        <character name="feature" value="membranous" constraint="of leaf sheaths" constraintid="o20177" />
+      </structure>
+      <structure id="o20177" name="sheath" constraint="leaf" />
+      <structure id="o20178" name="mouth" />
+      <relation id="r3784" name="at" from="o20177" to="o20178" negation="false" />
+      <structure id="o20179" name="appendage">
+        <character name="feature" value="tonguelike" />
+      </structure>
+      <relation id="r3785" name="projected" from="o20176" to="o20179" negation="true" />
+    </statement>
+    <statement id="1682.txt-2">
+      <text>Utricles veined on both faces.</text>
+      <structure id="o20180" name="utricle">
+        <character name="architecture_or_feature" value="veined" constraint="on faces" constraintid="o20181" />
+      </structure>
+      <structure id="o20181" name="face" />
+    </statement>
+  </description>
   <distribution>Forests, wet grasslands. Anhui, Henan, Jiangsu, Zhejiang [Bhutan, India, Indonesia, Japan, Nepal, Sri Lanka].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

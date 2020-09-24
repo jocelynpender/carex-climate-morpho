@@ -13,7 +13,115 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>吉林薹草 ji lin tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, ca. 20 cm tall, smooth, surrounded at base by pale brown to brown leaf sheaths. Leaves shorter than culm, blades 0.5–0.8 mm wide, hairlike, soft. Inflorescence 1-spiked, terminal, androgynous, subspherical, ca. 5 mm; male part very indistinct, 2- or 3-flowered; most of spike female, 5–10-flowered. Female glumes pale brown laterally, ovate-oblong to oblong, ca. 2 mm, 1–3-veined. Utricles horizontally patent at maturity, slightly longer than glume, elliptic, obscurely trigonous, ca. 2 mm, abaxially distinctly veined, adaxially faintly veined, apex abruptly constricted into a short beak, orifice minutely 2-toothed. Nutlet tightly enclosed, oblong, trigonous, ca. 1.5 mm; style base not thickened; stigmas 3.</description>
+  <description>
+    <statement id="1613.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o18552" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1613.txt-1">
+      <text>Culms tufted, ca. 20 cm tall, smooth, surrounded at base by pale brown to brown leaf sheaths.</text>
+      <structure id="o18553" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character name="size" value="20" unit="cm" />
+        <character name="height" value="tall" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o18554" name="sheath" constraint="leaf">
+        <character char_type="range_value" name="coloration" from="pale brown" to="brown" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="coloration" value="brown" />
+      </structure>
+      <relation id="r3540" name="surrounded at base by" from="o18553" to="o18554" negation="false" />
+    </statement>
+    <statement id="1613.txt-2">
+      <text>Leaves shorter than culm, blades 0.5–0.8 mm wide, hairlike, soft.</text>
+      <structure id="o18555" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o18556" />
+      </structure>
+      <structure id="o18556" name="culm" />
+      <structure id="o18557" name="blade">
+        <character char_type="range_value" name="width" from="0.5" from_unit="mm" to="0.8" to_unit="mm" />
+        <character name="shape" value="hairlike" />
+        <character name="external_texture" value="soft" />
+      </structure>
+    </statement>
+    <statement id="1613.txt-3">
+      <text>Inflorescence 1-spiked, terminal, androgynous, subspherical, ca. 5 mm;</text>
+    </statement>
+    <statement id="1613.txt-4">
+      <text>male part very indistinct, 2- or 3-flowered;</text>
+    </statement>
+    <statement id="1613.txt-5">
+      <text>most of spike female, 5–10-flowered.</text>
+      <structure id="o18558" name="inflorescence">
+        <character name="position" value="terminal" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="subspherical" />
+        <character name="size" value="5" unit="mm" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="prominence" value="indistinct" modifier="very" />
+        <character name="architecture" value="2-or-3-flowered" />
+        <character name="reproduction" value="female" />
+        <character name="architecture" value="5-10-flowered" />
+      </structure>
+      <structure id="o18559" name="spike" />
+      <relation id="r3541" name="part_of" from="o18558" to="o18559" negation="false" />
+    </statement>
+    <statement id="1613.txt-6">
+      <text>Female glumes pale brown laterally, ovate-oblong to oblong, ca. 2 mm, 1–3-veined.</text>
+      <structure id="o18560" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="laterally;pale" />
+        <character char_type="range_value" name="shape" from="ovate-oblong" to="oblong" />
+        <character name="shape" value="ovate-oblong" />
+        <character name="shape" value="oblong" />
+        <character name="size" value="2" unit="mm" />
+        <character name="architecture_or_feature" value="1-3-veined" />
+      </structure>
+    </statement>
+    <statement id="1613.txt-7">
+      <text>Utricles horizontally patent at maturity, slightly longer than glume, elliptic, obscurely trigonous, ca. 2 mm, abaxially distinctly veined, adaxially faintly veined, apex abruptly constricted into a short beak, orifice minutely 2-toothed.</text>
+      <structure id="o18561" name="utricle">
+        <character name="orientation" value="patent" modifier="horizontally" />
+        <character name="maturity , slightly longer  glume , elliptic , obscurely trigonous ," value="2" unit="mm" />
+        <character name="architecture_or_feature" value="veined" modifier="abaxially distinctly" />
+        <character name="architecture_or_feature" value="veined" modifier="adaxially faintly" />
+      </structure>
+      <structure id="o18562" name="apex">
+        <character name="size" value="constricted" modifier="abruptly" constraint="into beak" constraintid="o18563" />
+      </structure>
+      <structure id="o18563" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o18564" name="orifice">
+        <character name="shape" value="2-toothed" modifier="minutely" />
+      </structure>
+    </statement>
+    <statement id="1613.txt-8">
+      <text>Nutlet tightly enclosed, oblong, trigonous, ca. 1.5 mm;</text>
+      <structure id="o18565" name="nutlet">
+        <character name="position" value="enclosed" modifier="tightly" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1613.txt-9">
+      <text>style base not thickened;</text>
+      <structure id="o18566" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1613.txt-10">
+      <text>stigmas 3.</text>
+      <structure id="o18567" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Broad-leaved and needle-leaved mixed forests. Heilongjiang, Jilin.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

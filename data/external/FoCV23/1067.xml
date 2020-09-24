@@ -20,7 +20,146 @@
     <variety_name>peiktusani</variety_name>
     <variety_authority>(Kom arov) Kükenthal.</variety_authority>
   </TaxonIdentification>
-  <description>Rhizome short. Culms 30–60 cm tall, trigonous, clothed at base with purple sheaths slightly disintegrating into fibers. Leaves longer than culm, blades gray-green, linear, 2–4.5 mm wide, flat, margins scabrous, apex acuminate. Involucral bracts leaflike, longer than inflorescence, sheathless. Spikes 3 or 4; terminal spikes gynaecandrous, 2–2.5 cm, cylindric, with peduncle 0.7–1 cm; lateral spikes female, 1.8–2.5 mm, oblong or long cylindric, lowest spike 2–3 cm, slightly pendulous. Female glumes pale ferruginous or greenish whitish, lanceolate or ovate-lanceolate, 3–4 mm, 3-veined. Utricles yellowish green, obliquely patent, equaling or slightly longer than glume, elliptic, trigonous, 3.5–4 mm, 5- or 6-veined, apex gradually narrowed into a short beak, orifice 2-toothed. Nutlets obovate or obovate-elliptic, trigonous, ca. 2 mm, base shortly stipitate; stigmas 3. Fl. and fr. Jun–Aug.</description>
+  <description>
+    <statement id="1067.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o2138" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1067.txt-1">
+      <text>Culms 30–60 cm tall, trigonous, clothed at base with purple sheaths slightly disintegrating into fibers.</text>
+      <structure id="o2139" name="culm">
+        <character char_type="range_value" name="size" from="30" from_unit="cm" to="60" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+      </structure>
+      <structure id="o2140" name="base" />
+      <relation id="r453" name="clothed at" from="o2139" to="o2140" negation="false" />
+      <structure id="o2141" name="sheath">
+        <character name="coloration" value="purple" />
+        <character name="dehiscence" value="disintegrating" modifier="slightly" constraint="into fibers" constraintid="o2142" />
+      </structure>
+      <relation id="r454" name="with" from="o2140" to="o2141" negation="false" />
+      <structure id="o2142" name="fiber" />
+    </statement>
+    <statement id="1067.txt-2">
+      <text>Leaves longer than culm, blades gray-green, linear, 2–4.5 mm wide, flat, margins scabrous, apex acuminate.</text>
+      <structure id="o2143" name="leaf">
+        <character name="length" value="longer" constraint="than culm" constraintid="o2144" />
+      </structure>
+      <structure id="o2144" name="culm" />
+      <structure id="o2145" name="blade">
+        <character name="coloration" value="gray-green" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="4.5" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o2146" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o2147" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1067.txt-3">
+      <text>Involucral bracts leaflike, longer than inflorescence, sheathless.</text>
+      <structure id="o2148" name="bract" constraint="involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="length" value="longer" constraint="than inflorescence" constraintid="o2149" />
+        <character name="feature" value="sheathless" />
+      </structure>
+      <structure id="o2149" name="inflorescence" />
+    </statement>
+    <statement id="1067.txt-4">
+      <text>Spikes 3 or 4;</text>
+      <structure id="o2150" name="spike">
+        <character name="count" value="3" />
+        <character name="count" value="4" />
+      </structure>
+    </statement>
+    <statement id="1067.txt-5">
+      <text>terminal spikes gynaecandrous, 2–2.5 cm, cylindric, with peduncle 0.7–1 cm;</text>
+      <structure id="o2151" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="2.5" to_unit="cm" />
+        <character name="shape" value="cylindric" />
+      </structure>
+      <structure id="o2152" name="peduncle">
+        <character char_type="range_value" name="size" from="0.7" from_unit="cm" to="1" to_unit="cm" />
+      </structure>
+      <relation id="r455" name="with" from="o2151" to="o2152" negation="false" />
+    </statement>
+    <statement id="1067.txt-6">
+      <text>lateral spikes female, 1.8–2.5 mm, oblong or long cylindric, lowest spike 2–3 cm, slightly pendulous.</text>
+      <structure id="o2153" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character char_type="range_value" name="size" from="1.8" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="long" modifier="cylindric" />
+      </structure>
+      <structure id="o2154" name="spike">
+        <character name="feature" value="lowest" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="3" to_unit="cm" />
+        <character name="orientation" value="pendulous" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1067.txt-7">
+      <text>Female glumes pale ferruginous or greenish whitish, lanceolate or ovate-lanceolate, 3–4 mm, 3-veined.</text>
+      <structure id="o2155" name="glume" constraint="female">
+        <character name="coloration" value="whitish" modifier="pale ferruginous or greenish" />
+        <character name="shape" value="lanceolate" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+    </statement>
+    <statement id="1067.txt-8">
+      <text>Utricles yellowish green, obliquely patent, equaling or slightly longer than glume, elliptic, trigonous, 3.5–4 mm, 5- or 6-veined, apex gradually narrowed into a short beak, orifice 2-toothed.</text>
+      <structure id="o2156" name="utricle">
+        <character name="coloration" value="green" modifier="yellowish" />
+        <character name="orientation" value="patent" modifier="obliquely" />
+      </structure>
+      <structure id="o2157" name="apex">
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="count" from="3.5" to="4" />
+        <character name="architecture_or_feature" value="5-or-6-veined" />
+        <character name="length" value="longer" modifier="slightly" />
+        <character name="shape" value="narrowed" modifier="gradually" constraint="into beak" constraintid="o2158" />
+      </structure>
+      <relation id="r456" name="equaling" from="o2156" to="o2157" negation="false" />
+      <structure id="o2158" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o2159" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1067.txt-9">
+      <text>Nutlets obovate or obovate-elliptic, trigonous, ca. 2 mm, base shortly stipitate;</text>
+      <structure id="o2160" name="nutlet">
+        <character name="shape" value="obovate" />
+        <character name="shape" value="obovate-elliptic" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+      <structure id="o2161" name="base">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1067.txt-10">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1067.txt-11">
+      <text>Fl. and fr. Jun–Aug.</text>
+      <structure id="o2162" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forests, riversides; 1000–1700 m. Hebei, Heilongjiang, Liaoning, Shandong, Shanxi [Korea, Russia (Far East)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -18,7 +18,155 @@
     <species_name>microglochin</species_name>
     <species_authority>(Wahlenberg) Sprengel.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome slender, elongate. Culms densely or loosely tufted, 5–20 cm tall, subterete, smooth. Leaves shorter than culm, blades involute, needlelike, hard, smooth. Inflorescence 1-spiked, terminal, androgynous, oblong, ca. 1 cm; male part very short, 5–7-flowered; female part longer than male part, 4–12-flowered. Female glumes dark brown to brown, caducous, elliptic-oblong, ca. 3 mm, 3-veined, margins hyaline, apex obtuse. Utricles pale brown, suberect first, reflexed at maturity, eventually with short bent stipe, longer than glume, lanceolate-acicular, subglobose in transverse section, 3.5–4.5 mm, smooth, papery, somewhat many veined, base spongy, apex gradually attenuate into a beak, orifice hyaline and subtruncate. Nutlet oblong, ca. 2 mm, with very short stipe embraced in spongy base of utricle; rachilla hard, pointed at apex, exserted part up to 2 mm; stigmas 3, exserted. Fl. and fr. May–Aug.</description>
+  <description>
+    <statement id="1600.txt-0">
+      <text>Rhizome slender, elongate.</text>
+      <structure id="o18293" name="rhizome">
+        <character name="size" value="slender" />
+        <character name="shape" value="elongate" />
+      </structure>
+    </statement>
+    <statement id="1600.txt-1">
+      <text>Culms densely or loosely tufted, 5–20 cm tall, subterete, smooth.</text>
+      <structure id="o18294" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely~or~loosely" />
+        <character char_type="range_value" name="size" from="5" from_unit="cm" to="20" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="subterete" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+    </statement>
+    <statement id="1600.txt-2">
+      <text>Leaves shorter than culm, blades involute, needlelike, hard, smooth.</text>
+      <structure id="o18295" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o18296" />
+      </structure>
+      <structure id="o18296" name="culm" />
+      <structure id="o18297" name="blade">
+        <character name="shape_or_vernation" value="involute" />
+        <character name="architecture_or_shape" value="needlelike" />
+        <character name="external_texture" value="hard" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+    </statement>
+    <statement id="1600.txt-3">
+      <text>Inflorescence 1-spiked, terminal, androgynous, oblong, ca. 1 cm;</text>
+    </statement>
+    <statement id="1600.txt-4">
+      <text>male part very short, 5–7-flowered;</text>
+    </statement>
+    <statement id="1600.txt-5">
+      <text>female part longer than male part, 4–12-flowered.</text>
+      <structure id="o18298" name="inflorescence">
+        <character name="position" value="terminal" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="oblong" />
+        <character name="size" value="1" unit="cm" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="height_or_length" value="short" modifier="very" />
+        <character name="architecture" value="5-7-flowered" />
+        <character name="reproduction" value="female" />
+        <character name="length" value="longer than male part" />
+        <character name="architecture" value="4-12-flowered" />
+      </structure>
+    </statement>
+    <statement id="1600.txt-6">
+      <text>Female glumes dark brown to brown, caducous, elliptic-oblong, ca. 3 mm, 3-veined, margins hyaline, apex obtuse.</text>
+      <structure id="o18299" name="glume" constraint="female">
+        <character char_type="range_value" name="coloration" from="dark brown" to="brown" />
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="coloration" value="brown" />
+        <character name="duration" value="caducous" />
+        <character name="shape" value="elliptic-oblong" />
+        <character name="size" value="3" unit="mm" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o18300" name="margin">
+        <character name="coloration" value="hyaline" />
+      </structure>
+      <structure id="o18301" name="apex">
+        <character name="shape" value="obtuse" />
+      </structure>
+    </statement>
+    <statement id="1600.txt-7">
+      <text>Utricles pale brown, suberect first, reflexed at maturity, eventually with short bent stipe, longer than glume, lanceolate-acicular, subglobose in transverse section, 3.5–4.5 mm, smooth, papery, somewhat many veined, base spongy, apex gradually attenuate into a beak, orifice hyaline and subtruncate.</text>
+      <structure id="o18302" name="utricle">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="orientation" value="suberect" />
+        <character name="orientation" value="reflexed" constraint="at eventually" constraintid="o18303" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o18305" />
+        <character name="shape" value="lanceolate-acicular" />
+        <character name="shape" value="subglobose" constraint="in section" constraintid="o18306" />
+        <character char_type="range_value" name="size" from="3.5" from_unit="mm" to="4.5" to_unit="mm" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="feature_or_internal_texture" value="papery" />
+        <character name="count" value="many" modifier="somewhat" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o18303" name="eventually">
+        <character name="life_stage" value="maturity" />
+      </structure>
+      <structure id="o18304" name="stipe">
+        <character name="height_or_length" value="short" />
+        <character name="shape" value="bent" />
+      </structure>
+      <relation id="r3496" name="with" from="o18303" to="o18304" negation="false" />
+      <structure id="o18305" name="glume" />
+      <structure id="o18306" name="section">
+        <character name="dehiscence_or_orientation" value="transverse" />
+      </structure>
+      <structure id="o18307" name="base">
+        <character name="internal_texture" value="spongy" />
+      </structure>
+      <structure id="o18308" name="apex">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into beak" constraintid="o18309" />
+      </structure>
+      <structure id="o18309" name="beak" />
+      <structure id="o18310" name="orifice">
+        <character name="coloration" value="hyaline" />
+        <character name="shape" value="subtruncate" />
+      </structure>
+    </statement>
+    <statement id="1600.txt-8">
+      <text>Nutlet oblong, ca. 2 mm, with very short stipe embraced in spongy base of utricle;</text>
+      <structure id="o18311" name="nutlet">
+        <character name="shape" value="oblong" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+      <structure id="o18312" name="stipe">
+        <character name="height_or_length" value="short" modifier="very" />
+      </structure>
+      <relation id="r3497" name="with" from="o18311" to="o18312" negation="false" />
+      <structure id="o18313" name="base">
+        <character name="internal_texture" value="spongy" />
+      </structure>
+      <relation id="r3498" name="embraced in" from="o18311" to="o18313" negation="false" />
+      <structure id="o18314" name="utricle" />
+      <relation id="r3499" name="part_of" from="o18313" to="o18314" negation="false" />
+    </statement>
+    <statement id="1600.txt-9">
+      <text>rachilla hard, pointed at apex, exserted part up to 2 mm;</text>
+      <structure id="o18315" name="rachilla">
+        <character name="external_texture" value="hard" />
+        <character name="shape" value="pointed" constraint="at apex" constraintid="o18316" />
+        <character name="position" value="exserted" />
+        <character char_type="range_value" name="size" from="0" from_unit="mm" to="2" to_unit="mm" />
+      </structure>
+      <structure id="o18316" name="apex" />
+    </statement>
+    <statement id="1600.txt-10">
+      <text>stigmas 3, exserted.</text>
+    </statement>
+    <statement id="1600.txt-11">
+      <text>Fl. and fr. May–Aug.</text>
+      <structure id="o18317" name="stigma">
+        <character name="count" value="3" />
+        <character name="position" value="exserted" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Lake margins, wet grassy places along riverbanks, alpine meadows; 3400–5100 m. Qinghai, Sichuan, Xinjiang, Xizang [Bhutan, India (Sikkim), Kashmir, Mongolia, Nepal, Russia; N Europe, N North America].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

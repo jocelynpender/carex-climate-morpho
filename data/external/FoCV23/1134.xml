@@ -20,7 +20,28 @@
     <subspecies_name>aristata</subspecies_name>
     <subspecies_authority>(Ohwi) T. Koyama.</subspecies_authority>
   </TaxonIdentification>
-  <description>Male spike oblong-linear, shorter than that of typical variety. Female glumes shortly awned at apex. Fl. and fr. Apr–May.</description>
+  <description>
+    <statement id="1134.txt-0">
+      <text>Male spike oblong-linear, shorter than that of typical variety.</text>
+      <structure id="o4253" name="spike" constraint="male">
+        <character name="arrangement_or_shape" value="oblong-linear" />
+      </structure>
+      <structure id="o4254" name="variety" />
+      <relation id="r880" name="part_of" from="o4253" to="o4254" negation="false" />
+    </statement>
+    <statement id="1134.txt-1">
+      <text>Female glumes shortly awned at apex.</text>
+      <structure id="o4256" name="apex" />
+    </statement>
+    <statement id="1134.txt-2">
+      <text>Fl. and fr. Apr–May.</text>
+      <structure id="o4255" name="glume" constraint="female">
+        <character name="shape" value="awned" modifier="shortly" constraint="at apex" constraintid="o4256" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Grasslands on mountain slopes; ca. 1600 m. Anhui, Hubei, Jiangsu, Sichuan, Taiwan, Zhejiang [Japan].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

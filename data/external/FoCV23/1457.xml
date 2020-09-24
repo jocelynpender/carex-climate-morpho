@@ -42,7 +42,35 @@
       <publication_title>nom. superfl.</publication_title>
     </place_of_publication>
   </TaxonIdentification>
-  <description>Leaf blades 5–10 mm wide. Female spikes 1.2–1.5 cm wide. Utricles stramineous, usually with brownish streaks. Fl. and fr. Jul–Aug.</description>
+  <description>
+    <statement id="1457.txt-0">
+      <text>Leaf blades 5–10 mm wide.</text>
+      <structure id="o13977" name="blade" constraint="leaf">
+        <character char_type="range_value" name="width" from="5" from_unit="mm" to="10" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1457.txt-1">
+      <text>Female spikes 1.2–1.5 cm wide.</text>
+      <structure id="o13978" name="spike" constraint="female">
+        <character char_type="range_value" name="width" from="1.2" from_unit="cm" to="1.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1457.txt-2">
+      <text>Utricles stramineous, usually with brownish streaks.</text>
+      <structure id="o13980" name="streak">
+        <character name="coloration" value="brownish" />
+      </structure>
+      <relation id="r2650" name="with" from="o13979" to="o13980" negation="false" modifier="usually" />
+    </statement>
+    <statement id="1457.txt-3">
+      <text>Fl. and fr. Jul–Aug.</text>
+      <structure id="o13979" name="utricle">
+        <character name="coloration" value="stramineous" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Alpine wetlands; 2400–3700 m. Gansu, N Sichuan, Xinjiang [Afghanistan, India (Sikkim), Kazakhstan, Russia].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

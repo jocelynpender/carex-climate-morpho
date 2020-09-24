@@ -18,7 +18,153 @@
     <species_name>jackiana</species_name>
     <species_authority>Boott f. oxyphylla (Franchet) Kükenthal.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome stoloniferous. Culms 20–40 cm tall, smooth. Leaves surpassing culm, blades linear, 2–4 mm wide, flat, margins scabrous, apex long acuminate. Involucral bracts leaflike, lower involucral bracts sheathing, upper involucral bracts shortly sheathing or not. Spikes 3–5, lowest spike distant, upper spikes approximate; terminal spike male, cylindric, subacute, ca. 2 cm, shortly pedunculate; lateral spikes female, often bearing several male flowers, oblong or cylindric, shortly pedunculate. Female glumes pale white, ovate-lanceolate or ovate, green 1-veined costa excurrent into an awn. Utricles green-brown, equaling glume, ovate-trigonous, ca. 3 mm, apex abruptly contracted into a short beak, orifice 2-toothed. Nutlets obovate or broadly ovate, ca. 1.2 mm, trigonous, faces concave with grains transparent on surfaces, apex rounded; style base not thickened; stigmas 3. Fl. and fr. May–Jun.</description>
+  <description>
+    <statement id="1391.txt-0">
+      <text>Rhizome stoloniferous.</text>
+      <structure id="o12021" name="rhizome">
+        <character name="architecture" value="stoloniferous" />
+      </structure>
+    </statement>
+    <statement id="1391.txt-1">
+      <text>Culms 20–40 cm tall, smooth.</text>
+      <structure id="o12022" name="culm">
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="40" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+    </statement>
+    <statement id="1391.txt-2">
+      <text>Leaves surpassing culm, blades linear, 2–4 mm wide, flat, margins scabrous, apex long acuminate.</text>
+      <structure id="o12023" name="leaf" />
+      <structure id="o12024" name="culm" />
+      <relation id="r2255" name="surpassing" from="o12023" to="o12024" negation="false" />
+      <structure id="o12025" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o12026" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o12027" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1391.txt-3">
+      <text>Involucral bracts leaflike, lower involucral bracts sheathing, upper involucral bracts shortly sheathing or not.</text>
+      <structure id="o12028" name="bract" constraint="involucral">
+        <character name="architecture" value="leaflike" />
+      </structure>
+      <structure id="o12029" name="bract" constraint="lower involucral">
+        <character name="architecture_or_feature_or_shape" value="sheathing" />
+      </structure>
+      <structure id="o12030" name="bract" constraint="upper involucral">
+        <character name="architecture_or_feature_or_shape" value="sheathing" modifier="shortly" />
+        <character name="architecture_or_feature_or_shape" value="sheathing" modifier="shortly;not" />
+      </structure>
+    </statement>
+    <statement id="1391.txt-4">
+      <text>Spikes 3–5, lowest spike distant, upper spikes approximate;</text>
+      <structure id="o12031" name="spike">
+        <character char_type="range_value" name="count" from="3" to="5" />
+      </structure>
+      <structure id="o12032" name="spike">
+        <character name="feature" value="lowest" />
+        <character name="arrangement" value="distant" />
+      </structure>
+      <structure id="o12033" name="spike" constraint="upper">
+        <character name="feature" value="approximate" />
+      </structure>
+      <relation id="r2256" name="may_be_the_same" from="o12031" to="o12032" negation="false" />
+    </statement>
+    <statement id="1391.txt-5">
+      <text>terminal spike male, cylindric, subacute, ca. 2 cm, shortly pedunculate;</text>
+      <structure id="o12034" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="cylindric" />
+        <character name="shape" value="subacute" />
+        <character name="size" value="2" unit="cm" />
+        <character name="architecture" value="pedunculate" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1391.txt-6">
+      <text>lateral spikes female, often bearing several male flowers, oblong or cylindric, shortly pedunculate.</text>
+      <structure id="o12035" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="cylindric" />
+        <character name="architecture" value="pedunculate" modifier="shortly" />
+      </structure>
+      <structure id="o12036" name="flower" constraint="several male" />
+      <relation id="r2257" name="bearing" from="o12035" to="o12036" negation="false" modifier="often" />
+    </statement>
+    <statement id="1391.txt-7">
+      <text>Female glumes pale white, ovate-lanceolate or ovate, green 1-veined costa excurrent into an awn.</text>
+      <structure id="o12037" name="glume" constraint="female">
+        <character name="coloration" value="white" modifier="pale" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character name="shape" value="ovate" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="1-veined" />
+        <character name="architecture" value="excurrent" constraint="into awn" constraintid="o12039" />
+      </structure>
+      <structure id="o12038" name="costa" />
+      <structure id="o12039" name="awn" />
+    </statement>
+    <statement id="1391.txt-8">
+      <text>Utricles green-brown, equaling glume, ovate-trigonous, ca. 3 mm, apex abruptly contracted into a short beak, orifice 2-toothed.</text>
+      <structure id="o12040" name="utricle">
+        <character name="coloration" value="green-brown" />
+        <character name="shape" value="ovate-trigonous" />
+        <character name="size" value="3" unit="mm" />
+      </structure>
+      <structure id="o12041" name="glume" />
+      <relation id="r2258" name="equaling" from="o12040" to="o12041" negation="false" />
+      <structure id="o12042" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o12043" />
+      </structure>
+      <structure id="o12043" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o12044" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1391.txt-9">
+      <text>Nutlets obovate or broadly ovate, ca. 1.2 mm, trigonous, faces concave with grains transparent on surfaces, apex rounded;</text>
+      <structure id="o12045" name="nutlet">
+        <character name="shape" value="obovate" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="size" value="1.2" unit="mm" />
+        <character name="shape" value="trigonous" />
+        <character name="shape" value="concave" constraint="with grains" constraintid="o12046" />
+      </structure>
+      <structure id="o12046" name="grain">
+        <character name="coloration" value="transparent" constraint="on surfaces" constraintid="o12047" />
+      </structure>
+      <structure id="o12047" name="surface" />
+      <structure id="o12048" name="apex">
+        <character name="shape" value="rounded" />
+      </structure>
+    </statement>
+    <statement id="1391.txt-10">
+      <text>style base not thickened;</text>
+      <structure id="o12049" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1391.txt-11">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1391.txt-12">
+      <text>Fl. and fr. May–Jun.</text>
+      <structure id="o12050" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Evergreen forests, forest margins; 1300–3000 m. SW Sichuan, NW Yunnan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

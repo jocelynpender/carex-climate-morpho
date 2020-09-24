@@ -26,8 +26,166 @@
     <variety_name>cupulifera</variety_name>
     <variety_authority>Hayata.</variety_authority>
   </TaxonIdentification>
-  <description>Plants densely tufted with short erect rhizome. Culms slender, 6–30 cm tall, ± recurved. Leaves shorter than to briefly overtopping culms, blades 2–5 mm wide; sheaths short, brownish, eventually disintegrating into brown fibers. Involucral bracts shortly sheathing (3–6 mm), lower 1 or 2 bladed and surpassing spikes. Spikes 2–4, subfastigiate or lowest spaced; terminal spike male, pale brownish, linear-oblong, several flowered; lateral spikes female, ovoid to oblong, 5–20 mm, laxly several flowered, subsessile or lower ones with short enclosed peduncle. Female glumes tinged with light brown, ovate, ca. 2 mm, costa ending in a short mucro at acute apex. Utricles much longer than glume, lanceolate-oblong, suberect, 3.5–4.5 mm, sparsely pubescent, slenderly many veined, base gradually narrowed to a shortly stipe, apex gradually attenuate into a short beak, orifice shallowly 2-lobed. Nutlets tightly enveloped, lanceolate-oblong, 2.5–3 mm, base shortly stipitate, apex annulate; style base dilated; stigmas 3.</description>
+  <description>
+    <statement id="1136.txt-0">
+      <text>Plants densely tufted with short erect rhizome.</text>
+      <structure id="o4285" name="whole_organism">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" constraint="with rhizome" constraintid="o4286" />
+        <character name="life_style" value="plant" />
+      </structure>
+      <structure id="o4286" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="orientation" value="erect" />
+      </structure>
+    </statement>
+    <statement id="1136.txt-1">
+      <text>Culms slender, 6–30 cm tall, ± recurved.</text>
+      <structure id="o4287" name="culm">
+        <character name="size" value="slender" />
+        <character char_type="range_value" name="size" from="6" from_unit="cm" to="30" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="orientation" value="recurved" modifier="more or less" />
+      </structure>
+    </statement>
+    <statement id="1136.txt-2">
+      <text>Leaves shorter than to briefly overtopping culms, blades 2–5 mm wide;</text>
+      <structure id="o4288" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than to briefly overtopping culms" constraintid="o4289" />
+      </structure>
+      <structure id="o4289" name="culm" />
+      <structure id="o4290" name="blade">
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="5" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1136.txt-3">
+      <text>sheaths short, brownish, eventually disintegrating into brown fibers.</text>
+      <structure id="o4291" name="sheath">
+        <character name="height_or_length" value="short" />
+        <character name="coloration" value="brownish" />
+        <character name="dehiscence" value="disintegrating" modifier="eventually" constraint="into fibers" constraintid="o4292" />
+      </structure>
+      <structure id="o4292" name="fiber">
+        <character name="coloration" value="brown" />
+      </structure>
+    </statement>
+    <statement id="1136.txt-4">
+      <text>Involucral bracts shortly sheathing (3–6 mm ), lower 1 or 2 bladed and surpassing spikes.</text>
+      <structure id="o4293" name="bract" constraint="involucral">
+        <character name="architecture_or_feature_or_shape" value="sheathing" modifier="shortly" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="6" to_unit="mm" in_brackets="true" />
+        <character name="position" value="lower" />
+        <character name="count" value="1" />
+        <character name="count" value="2" />
+      </structure>
+      <structure id="o4294" name="spike" />
+      <relation id="r883" name="surpassing" from="o4293" to="o4294" negation="false" />
+    </statement>
+    <statement id="1136.txt-5">
+      <text>Spikes 2–4, subfastigiate or lowest spaced;</text>
+      <structure id="o4295" name="spike">
+        <character char_type="range_value" name="count" from="2" to="4" />
+        <character name="feature" value="subfastigiate" />
+        <character name="feature" value="lowest" />
+        <character name="arrangement" value="spaced" />
+      </structure>
+    </statement>
+    <statement id="1136.txt-6">
+      <text>terminal spike male, pale brownish, linear-oblong, several flowered;</text>
+      <structure id="o4296" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="coloration" value="brownish" modifier="pale" />
+        <character name="shape" value="linear-oblong" />
+        <character name="count" value="several" />
+        <character name="architecture" value="flowered" />
+      </structure>
+    </statement>
+    <statement id="1136.txt-7">
+      <text>lateral spikes female, ovoid to oblong, 5–20 mm, laxly several flowered, subsessile or lower ones with short enclosed peduncle.</text>
+      <structure id="o4297" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character char_type="range_value" name="shape" from="ovoid" to="oblong" />
+        <character name="shape" value="ovoid" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="20" to_unit="mm" />
+        <character name="count" value="several" modifier="laxly" />
+        <character name="architecture" value="flowered" />
+        <character name="architecture" value="subsessile" />
+        <character name="position" value="lower" constraint="with peduncle" constraintid="o4298" />
+      </structure>
+      <structure id="o4298" name="peduncle" constraint="enclosed">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1136.txt-8">
+      <text>Female glumes tinged with light brown, ovate, ca. 2 mm, costa ending in a short mucro at acute apex.</text>
+      <structure id="o4299" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="tinged with light" />
+        <character name="shape" value="ovate" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+      <structure id="o4300" name="costa" />
+      <structure id="o4301" name="mucro">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r884" name="ending in" from="o4300" to="o4301" negation="false" />
+      <structure id="o4302" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+      <relation id="r885" name="at" from="o4301" to="o4302" negation="false" />
+    </statement>
+    <statement id="1136.txt-9">
+      <text>Utricles much longer than glume, lanceolate-oblong, suberect, 3.5–4.5 mm, sparsely pubescent, slenderly many veined, base gradually narrowed to a shortly stipe, apex gradually attenuate into a short beak, orifice shallowly 2-lobed.</text>
+      <structure id="o4303" name="utricle">
+        <character name="length" value="longer" modifier="much" constraint="than glume" constraintid="o4304" />
+        <character name="shape" value="lanceolate-oblong" />
+        <character name="orientation" value="suberect" />
+        <character char_type="range_value" name="size" from="3.5" from_unit="mm" to="4.5" to_unit="mm" />
+        <character name="count" value="many" modifier="slenderly" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o4304" name="glume" />
+      <structure id="o4305" name="base" />
+      <structure id="o4306" name="stipe" />
+      <relation id="r886" name="narrowed to" from="o4305" to="o4306" negation="false" modifier="gradually" />
+      <structure id="o4307" name="apex">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into beak" constraintid="o4308" />
+      </structure>
+      <structure id="o4308" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o4309" name="orifice">
+        <character name="shape" value="2-lobed" modifier="shallowly" />
+      </structure>
+    </statement>
+    <statement id="1136.txt-10">
+      <text>Nutlets tightly enveloped, lanceolate-oblong, 2.5–3 mm, base shortly stipitate, apex annulate;</text>
+      <structure id="o4310" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="lanceolate-oblong" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+      </structure>
+      <structure id="o4311" name="apex">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+        <character name="architecture" value="annulate" />
+      </structure>
+      <relation id="r887" name="base" from="o4310" to="o4311" negation="false" />
+    </statement>
+    <statement id="1136.txt-11">
+      <text>style base dilated;</text>
+      <structure id="o4312" name="base" constraint="style">
+        <character name="shape" value="dilated" />
+      </structure>
+    </statement>
+    <statement id="1136.txt-12">
+      <text>stigmas 3.</text>
+      <structure id="o4313" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Grassy openings of mountain forests. Taiwan.</distribution>
   <discussion>This is a good species that can be readily separated from the widespread Carex breviculmis not only by its slender lanceolate-oblong (vs. obovate) utricles but by its subleathery (vs. herbaceous) leaves.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -29,7 +29,28 @@
     <species_name>xuanchengensis</species_name>
     <species_authority>S. W. Su &amp; S. M. Xu.</species_authority>
   </TaxonIdentification>
-  <description>Male spike 1.5–2.5 cm, with peduncle 0.8–1.2 cm; female spike 10–20 × 2–3 mm, rather densely flowered.</description>
+  <description>
+    <statement id="1126.txt-0">
+      <text>Male spike 1.5–2.5 cm, with peduncle 0.8–1.2 cm;</text>
+      <structure id="o4094" name="spike" constraint="male">
+        <character char_type="range_value" name="size" from="1.5" from_unit="cm" to="2.5" to_unit="cm" />
+      </structure>
+      <structure id="o4095" name="peduncle">
+        <character char_type="range_value" name="size" from="0.8" from_unit="cm" to="1.2" to_unit="cm" />
+      </structure>
+      <relation id="r853" name="with" from="o4094" to="o4095" negation="false" />
+    </statement>
+    <statement id="1126.txt-1">
+      <text>female spike 10–20 × 2–3 mm, rather densely flowered.</text>
+      <structure id="o4096" name="spike" constraint="female">
+        <character char_type="range_value" name="length" from="10" from_unit="mm" to="20" to_unit="mm" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="architecture" value="flowered" modifier="rather densely" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Forests on mountain slopes, waysides. Anhui, Henan, Hunan, Jiangsu, Shaanxi, Sichuan, Zhejiang.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

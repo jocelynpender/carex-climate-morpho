@@ -13,7 +13,153 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>山丹薹草 shan dan tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, 25–40 cm tall, acutely trigonous, scabrous, clothed at base with blackish castaneous sheaths disintegrating into fibers. Leaves shorter than culms, blades linear, 2–3 mm wide, flat, margins scabrous. Involucral bracts setaceous, shorter than spike, sheathless. Spikes 4 or 5; terminal spike male, blackish brown, oblong, 1.5–1.8 cm, densely many flowered; lateral spikes female, oblong, 1–2 cm; lowest peduncle ca. 1 cm, upper spikes sessile. Female glumes blackish brown, oblong, ca. 3 × 1 mm, with light brown midrib, apex obtuse and rounded. Utricles light brown, longer than glume, plano-convex, 4–4.5 mm, base stipitate, apex abruptly contracted into a short beak, orifice truncate, entire. Nutlets loosely enveloped, oblong, base stipitate; stigmas 2. Fl. and fr. Aug–Sep.</description>
+  <description>
+    <statement id="1511.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o15813" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1511.txt-1">
+      <text>Culms tufted, 25–40 cm tall, acutely trigonous, scabrous, clothed at base with blackish castaneous sheaths disintegrating into fibers.</text>
+      <structure id="o15814" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="25" from_unit="cm" to="40" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o15815" name="base" />
+      <relation id="r3016" name="clothed at" from="o15814" to="o15815" negation="false" />
+      <structure id="o15816" name="sheath">
+        <character name="coloration" value="castaneous" modifier="blackish" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o15817" />
+      </structure>
+      <relation id="r3017" name="with" from="o15815" to="o15816" negation="false" />
+      <structure id="o15817" name="fiber" />
+    </statement>
+    <statement id="1511.txt-2">
+      <text>Leaves shorter than culms, blades linear, 2–3 mm wide, flat, margins scabrous.</text>
+      <structure id="o15818" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culms" constraintid="o15819" />
+      </structure>
+      <structure id="o15819" name="culm" />
+      <structure id="o15820" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o15821" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1511.txt-3">
+      <text>Involucral bracts setaceous, shorter than spike, sheathless.</text>
+      <structure id="o15822" name="bract" constraint="involucral">
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="height_or_length" value="shorter" constraint="than spike" constraintid="o15823" />
+        <character name="feature" value="sheathless" />
+      </structure>
+      <structure id="o15823" name="spike" />
+    </statement>
+    <statement id="1511.txt-4">
+      <text>Spikes 4 or 5;</text>
+      <structure id="o15824" name="spike">
+        <character name="count" value="4" />
+        <character name="count" value="5" />
+      </structure>
+    </statement>
+    <statement id="1511.txt-5">
+      <text>terminal spike male, blackish brown, oblong, 1.5–1.8 cm, densely many flowered;</text>
+      <structure id="o15825" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="coloration" value="brown" modifier="blackish" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="cm" to="1.8" to_unit="cm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+    </statement>
+    <statement id="1511.txt-6">
+      <text>lateral spikes female, oblong, 1–2 cm;</text>
+      <structure id="o15826" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="2" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1511.txt-7">
+      <text>lowest peduncle ca. 1 cm, upper spikes sessile.</text>
+      <structure id="o15827" name="peduncle">
+        <character name="feature" value="lowest" />
+        <character name="size" value="1" unit="cm" />
+      </structure>
+      <structure id="o15828" name="spike" constraint="upper">
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+    </statement>
+    <statement id="1511.txt-8">
+      <text>Female glumes blackish brown, oblong, ca. 3 × 1 mm, with light brown midrib, apex obtuse and rounded.</text>
+      <structure id="o15829" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="blackish" />
+        <character name="shape" value="oblong" />
+        <character name="length" value="3" unit="mm" />
+        <character name="width" value="1" unit="mm" />
+      </structure>
+      <structure id="o15830" name="midrib">
+        <character name="coloration" value="brown" modifier="light" />
+      </structure>
+      <relation id="r3018" name="with" from="o15829" to="o15830" negation="false" />
+      <structure id="o15831" name="apex">
+        <character name="shape" value="obtuse" />
+        <character name="shape" value="rounded" />
+      </structure>
+    </statement>
+    <statement id="1511.txt-9">
+      <text>Utricles light brown, longer than glume, planoconvex, 4–4.5 mm, base stipitate, apex abruptly contracted into a short beak, orifice truncate, entire.</text>
+      <structure id="o15832" name="utricle">
+        <character name="coloration" value="brown" modifier="light" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o15833" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="4.5" to_unit="mm" />
+      </structure>
+      <structure id="o15833" name="glume" />
+      <structure id="o15834" name="base">
+        <character name="architecture" value="stipitate" />
+      </structure>
+      <structure id="o15835" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o15836" />
+      </structure>
+      <structure id="o15836" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o15837" name="orifice">
+        <character name="shape" value="truncate" />
+        <character name="shape" value="entire" />
+      </structure>
+    </statement>
+    <statement id="1511.txt-10">
+      <text>Nutlets loosely enveloped, oblong, base stipitate;</text>
+      <structure id="o15838" name="nutlet">
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="oblong" />
+      </structure>
+      <structure id="o15839" name="base">
+        <character name="architecture" value="stipitate" />
+      </structure>
+    </statement>
+    <statement id="1511.txt-11">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1511.txt-12">
+      <text>Fl. and fr. Aug–Sep.</text>
+      <structure id="o15840" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Riversides along valleys; ca. 3100 m. Gansu (Shandan).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

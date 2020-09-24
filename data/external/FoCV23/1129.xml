@@ -9,7 +9,25 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>三穗薹草 ( 原变种) san sui tai cao (yuan bian zhong)</variety_name>
   </TaxonIdentification>
-  <description>Male glumes free; filaments of stamens threadlike, free.</description>
+  <description>
+    <statement id="1129.txt-0">
+      <text>Male glumes free;</text>
+      <structure id="o4133" name="glume" constraint="male">
+        <character name="fusion" value="free" />
+      </structure>
+    </statement>
+    <statement id="1129.txt-1">
+      <text>filaments of stamens threadlike, free.</text>
+      <structure id="o4134" name="filament">
+        <character name="shape" value="threadlike" />
+        <character name="fusion" value="free" />
+      </structure>
+      <structure id="o4135" name="stamen" />
+      <relation id="r857" name="part_of" from="o4134" to="o4135" negation="false" />
+    </statement>
+  </description>
   <distribution>Waysides on mountain slopes, wet places in forests. Anhui, Hainan, Hunan, Jiangsu, Zhejiang [Japan, Korea].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

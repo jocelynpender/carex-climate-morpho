@@ -13,7 +13,168 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>卵果薹草 luan guo tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, indurate. Culms tufted, 20–70 cm tall, erect, acutely trigonous, scabrous above, clothed with brown bladeless sheaths at base. Leaves shorter than or subequaling culm, blades linear, 2–4 mm wide, flat, soft, margins serrulate. Involucral bracts setaceous at base, other bracts glumelike. Spicate inflorescence cylindric, 2.5–6 cm; spikes 10–16(–20), gynaecandrous, pale green, ovate, 5–10 × 4–6 mm, densely flowered, upper spikes contiguous, lower ones distant. Female glumes pale brown, ovate, 2.2–2.8 mm, green 1-veined, apex acute. Utricles longer than glume, ovate or ovate-lanceolate, plano-convex, curved, 3.4–3.7 mm, membranous, spongy, 5–7-veined abaxially, 4- or 5-veined adaxially, base rounded, margins very narrowly scabrous winged, apex gradually narrowed into a ± long beak, orifice 2-toothed. Nutlets pale brown, loosely enveloped, oblong or oblong-ovate, slightly biconvex, ca. 1.5 mm, base cuneate, shortly stipitate; style base not thickened; stigmas 2. Fl. and fr. May–Jun. 2n = 68.</description>
+  <description>
+    <statement id="1688.txt-0">
+      <text>Rhizome short, indurate.</text>
+      <structure id="o20233" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="external_texture" value="indurate" />
+      </structure>
+    </statement>
+    <statement id="1688.txt-1">
+      <text>Culms tufted, 20–70 cm tall, erect, acutely trigonous, scabrous above, clothed with brown bladeless sheaths at base.</text>
+      <structure id="o20234" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="70" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="orientation" value="erect" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o20235" name="sheath" constraint="bladeless">
+        <character name="coloration" value="brown" />
+      </structure>
+      <relation id="r3797" name="clothed with" from="o20234" to="o20235" negation="false" />
+      <structure id="o20236" name="base" />
+      <relation id="r3798" name="at" from="o20235" to="o20236" negation="false" />
+    </statement>
+    <statement id="1688.txt-2">
+      <text>Leaves shorter than or subequaling culm, blades linear, 2–4 mm wide, flat, soft, margins serrulate.</text>
+      <structure id="o20237" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than or subequaling culm" constraintid="o20238" />
+      </structure>
+      <structure id="o20238" name="culm" />
+      <structure id="o20239" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture" value="soft" />
+      </structure>
+      <structure id="o20240" name="margin">
+        <character name="shape" value="serrulate" />
+      </structure>
+    </statement>
+    <statement id="1688.txt-3">
+      <text>Involucral bracts setaceous at base, other bracts glumelike.</text>
+      <structure id="o20241" name="bract" constraint="involucral">
+        <character name="feature_or_shape" value="setaceous" constraint="at base, bracts" constraintid="o20242  o20243" />
+      </structure>
+      <structure id="o20242" name="base">
+        <character name="feature" value="glumelike" />
+      </structure>
+      <structure id="o20243" name="bract">
+        <character name="feature" value="glumelike" />
+      </structure>
+    </statement>
+    <statement id="1688.txt-4">
+      <text>Spicate inflorescence cylindric, 2.5–6 cm;</text>
+      <structure id="o20244" name="inflorescence" constraint="spicate">
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="cm" to="6" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1688.txt-5">
+      <text>spikes 10–16 (–20 ), gynaecandrous, pale green, ovate, 5–10 × 4–6 mm, densely flowered, upper spikes contiguous, lower ones distant.</text>
+      <structure id="o20245" name="spike">
+        <character char_type="range_value" name="atypical_count" from="16" to="20" from_inclusive="false" />
+        <character char_type="range_value" name="count" from="10" to="16" />
+        <character name="feature" value="gynaecandrous" />
+        <character name="coloration" value="green" modifier="pale" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="length" from="5" from_unit="mm" to="10" to_unit="mm" />
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="6" to_unit="mm" />
+        <character name="architecture" value="flowered" modifier="densely" />
+      </structure>
+      <structure id="o20246" name="spike" constraint="upper">
+        <character name="arrangement" value="contiguous" />
+        <character name="position" value="lower" />
+        <character name="arrangement" value="distant" />
+      </structure>
+    </statement>
+    <statement id="1688.txt-6">
+      <text>Female glumes pale brown, ovate, 2.2–2.8 mm, green 1-veined, apex acute.</text>
+      <structure id="o20247" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="2.2" from_unit="mm" to="2.8" to_unit="mm" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o20248" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1688.txt-7">
+      <text>Utricles longer than glume, ovate or ovate-lanceolate, planoconvex, curved, 3.4–3.7 mm, membranous, spongy, 5–7-veined abaxially, 4- or 5-veined adaxially, base rounded, margins very narrowly scabrous winged, apex gradually narrowed into a ± long beak, orifice 2-toothed.</text>
+      <structure id="o20249" name="utricle">
+        <character name="length" value="longer" constraint="than glume" constraintid="o20250" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character name="shape" value="planoconvex" />
+        <character name="course_or_orientation" value="curved" />
+        <character char_type="range_value" name="size" from="3.4" from_unit="mm" to="3.7" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="internal_texture" value="spongy" />
+        <character name="architecture_or_feature" value="5-7-veined" modifier="abaxially" />
+        <character name="architecture_or_feature" value="4-or-5-veined" modifier="adaxially" />
+      </structure>
+      <structure id="o20250" name="glume" />
+      <structure id="o20251" name="base">
+        <character name="shape" value="rounded" />
+      </structure>
+      <structure id="o20252" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" modifier="very narrowly" />
+        <character name="architecture" value="winged" />
+      </structure>
+      <structure id="o20253" name="apex">
+        <character name="shape" value="narrowed" modifier="gradually" constraint="into beak" constraintid="o20254" />
+      </structure>
+      <structure id="o20254" name="beak">
+        <character name="length" value="long" modifier="more or less" />
+      </structure>
+      <structure id="o20255" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1688.txt-8">
+      <text>Nutlets pale brown, loosely enveloped, oblong or oblong-ovate, slightly biconvex, ca. 1.5 mm, base cuneate, shortly stipitate;</text>
+      <structure id="o20256" name="nutlet">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="oblong-ovate" />
+        <character name="shape" value="biconvex" modifier="slightly" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+      <structure id="o20257" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1688.txt-9">
+      <text>style base not thickened;</text>
+      <structure id="o20258" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1688.txt-10">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1688.txt-11">
+      <text>Fl. and fr. May–Jun.</text>
+      <structure id="o20259" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+    <statement id="1688.txt-12">
+      <text>2n = 68.</text>
+      <structure name="chromosome" id="o20260">
+        <character name="count" value="68" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Wet grassy places along streams. Anhui, Heilongjiang, Henan, Jiangsu, Jilin, Liaoning, Zhejiang [Japan, Korea, Russia (Far East)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

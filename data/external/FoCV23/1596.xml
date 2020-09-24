@@ -14,7 +14,28 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>短穗柄薹草 duan sui bing tai cao</variety_name>
   </TaxonIdentification>
-  <description>Culms 10–28 cm tall. Spikes without peduncle or with very short peduncle.</description>
+  <description>
+    <statement id="1596.txt-0">
+      <text>Culms 10–28 cm tall.</text>
+      <structure id="o18151" name="culm">
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="28" to_unit="cm" />
+        <character name="height" value="tall" />
+      </structure>
+    </statement>
+    <statement id="1596.txt-1">
+      <text>Spikes without peduncle or with very short peduncle.</text>
+      <structure id="o18152" name="spike" />
+      <structure id="o18153" name="peduncle" />
+      <relation id="r3464" name="without" from="o18152" to="o18153" negation="false" />
+      <structure id="o18154" name="peduncle">
+        <character name="height_or_length" value="short" modifier="very" />
+      </structure>
+      <relation id="r3465" name="with" from="o18152" to="o18154" negation="false" />
+      <relation id="r3466" name="may_be_the_same" from="o18153" to="o18154" negation="false" />
+    </statement>
+  </description>
   <distribution>● Dry places on mountain slopes; ca. 2600 m. Yunnan (Jingdong: Wuliang Shan).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

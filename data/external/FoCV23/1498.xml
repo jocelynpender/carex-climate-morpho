@@ -36,7 +36,41 @@
     <variety_name>akanensis</variety_name>
     <variety_authority>(Franchet) Kükenthal.</variety_authority>
   </TaxonIdentification>
-  <description>Culms up to 100 cm tall, stout. Leaf blades 5–8(–10) mm wide, usually laxly pubescent on abaxial surface. Utricles hispid on upper part and margins of beak. Fl. and fr. Jun–Jul.</description>
+  <description>
+    <statement id="1498.txt-0">
+      <text>Culms up to 100 cm tall, stout.</text>
+      <structure id="o15412" name="culm">
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="100" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="fragility" value="stout" />
+      </structure>
+    </statement>
+    <statement id="1498.txt-1">
+      <text>Leaf blades 5–8 (–10 )mm wide, usually laxly pubescent on abaxial surface.</text>
+      <structure id="o15413" name="blade" constraint="leaf">
+        <character char_type="range_value" name="width" from="8" to="10" from_unit="mm" to_unit="mm" from_inclusive="false" />
+        <character char_type="range_value" name="width" from="5" from_unit="mm" to="8" to_unit="mm" />
+      </structure>
+      <structure id="o15414" name="surface" constraint="abaxial" />
+      <relation id="r2945" name="on" from="o15413" to="o15414" negation="false" />
+    </statement>
+    <statement id="1498.txt-2">
+      <text>Utricles hispid on upper part and margins of beak.</text>
+      <structure id="o15416" name="margin">
+        <character name="position" value="upper" />
+      </structure>
+      <structure id="o15417" name="beak" />
+      <relation id="r2946" name="part_of" from="o15416" to="o15417" negation="false" />
+    </statement>
+    <statement id="1498.txt-3">
+      <text>Fl. and fr. Jun–Jul.</text>
+      <structure id="o15415" name="utricle">
+        <character name="external_texture" value="hispid" constraint="on margins" constraintid="o15416" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Wet places at lakesides or riversides, in swamps or meadows. Heilongjiang, Jilin, Nei Mongol [Japan, Korea, Russia (Far East)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

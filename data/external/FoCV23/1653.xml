@@ -13,7 +13,165 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>二柱薹草 er zhu tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome long creeping, subcylindric. Culms 10–60 cm tall, acutely trigonous, scabrous above, clothed with bladeless sheaths at base. Leaves shorter than culm, blades linear, 2–4 mm wide, flat, margins scabrous, apex acuminate. Involucral bracts glumelike. Spicate inflorescence cylindric or subconic, 2–5.5 × 0.7–1.5 cm, usually interrupted below; spikes 10–20, terminal and lower spikes female, middle and upper ones male or androgynous (or entirely female), ovate, 5–9 × 2–3 mm; female spikes broadly ovate, 7–10 × 5–7 mm. Female glumes pale ferruginous-brown, ovate-lanceolate or oblong-ovate, ca. 3.5 mm, margins white hyaline, apex acute. Utricles stramineous, longer than glume, broadly ovate, plano-convex, 3.5–4 × 1.8–2 mm, thinly membranous, spongy, slender, several veined on both faces, base rounded, upper margins serrulate winged, apex abruptly contracted into a beak, orifice 2-toothed. Nutlets yellow-brown, loosely enveloped, elliptic or oblong, plano-convex, 1.5–1.8 mm, base shortly stipitate; style base slightly thickened; stigmas 2. Fl. and fr. May–Jun.</description>
+  <description>
+    <statement id="1653.txt-0">
+      <text>Rhizome long creeping, subcylindric.</text>
+      <structure id="o19455" name="rhizome">
+        <character name="habit" value="creeping" />
+        <character name="shape" value="subcylindric" />
+      </structure>
+    </statement>
+    <statement id="1653.txt-1">
+      <text>Culms 10–60 cm tall, acutely trigonous, scabrous above, clothed with bladeless sheaths at base.</text>
+      <structure id="o19456" name="culm">
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="60" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o19457" name="sheath" constraint="bladeless" />
+      <relation id="r3683" name="clothed with" from="o19456" to="o19457" negation="false" />
+      <structure id="o19458" name="base" />
+      <relation id="r3684" name="at" from="o19457" to="o19458" negation="false" />
+    </statement>
+    <statement id="1653.txt-2">
+      <text>Leaves shorter than culm, blades linear, 2–4 mm wide, flat, margins scabrous, apex acuminate.</text>
+      <structure id="o19459" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o19460" />
+      </structure>
+      <structure id="o19460" name="culm" />
+      <structure id="o19461" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o19462" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o19463" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1653.txt-3">
+      <text>Involucral bracts glumelike.</text>
+      <structure id="o19464" name="bract" constraint="involucral">
+        <character name="feature" value="glumelike" />
+      </structure>
+    </statement>
+    <statement id="1653.txt-4">
+      <text>Spicate inflorescence cylindric or subconic, 2–5.5 × 0.7–1.5 cm, usually interrupted below;</text>
+      <structure id="o19465" name="inflorescence" constraint="spicate">
+        <character name="shape" value="cylindric" />
+        <character name="feature" value="subconic" />
+        <character char_type="range_value" name="length" from="2" from_unit="cm" to="5.5" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.7" from_unit="cm" to="1.5" to_unit="cm" />
+        <character name="architecture" value="interrupted" modifier="usually" />
+      </structure>
+    </statement>
+    <statement id="1653.txt-5">
+      <text>spikes 10–20, terminal and lower spikes female, middle and upper ones male or androgynous (or entirely female ), ovate, 5–9 × 2–3 mm;</text>
+      <structure id="o19466" name="spike">
+        <character char_type="range_value" name="count" from="10" to="20" />
+        <character name="position" value="terminal" />
+        <character name="reproduction" value="female" />
+        <character name="position" value="middle" />
+        <character name="position" value="upper" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="reproduction" value="female" modifier="entirely" in_brackets="true" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="length" from="5" from_unit="mm" to="9" to_unit="mm" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+      </structure>
+      <structure id="o19467" name="spike" constraint="lower" />
+    </statement>
+    <statement id="1653.txt-6">
+      <text>female spikes broadly ovate, 7–10 × 5–7 mm.</text>
+      <structure id="o19468" name="spike" constraint="female">
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character char_type="range_value" name="length" from="7" from_unit="mm" to="10" to_unit="mm" />
+        <character char_type="range_value" name="width" from="5" from_unit="mm" to="7" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1653.txt-7">
+      <text>Female glumes pale ferruginous-brown, ovate-lanceolate or oblong-ovate, ca. 3.5 mm, margins white hyaline, apex acute.</text>
+      <structure id="o19469" name="glume" constraint="female">
+        <character name="coloration" value="pale ferruginous-brown" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character name="shape" value="oblong-ovate" />
+        <character name="size" value="3.5" unit="mm" />
+      </structure>
+      <structure id="o19470" name="margin">
+        <character name="coloration" value="hyaline" modifier="white" />
+      </structure>
+      <structure id="o19471" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1653.txt-8">
+      <text>Utricles stramineous, longer than glume, broadly ovate, planoconvex, 3.5–4 × 1.8–2 mm, thinly membranous, spongy, slender, several veined on both faces, base rounded, upper margins serrulate winged, apex abruptly contracted into a beak, orifice 2-toothed.</text>
+      <structure id="o19472" name="utricle">
+        <character name="coloration" value="stramineous" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o19473" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="length" from="3.5" from_unit="mm" to="4" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.8" from_unit="mm" to="2" to_unit="mm" />
+        <character name="feature" value="membranous" modifier="thinly" />
+        <character name="internal_texture" value="spongy" />
+        <character name="size" value="slender" />
+        <character name="count" value="several" />
+        <character name="architecture_or_feature" value="veined" constraint="on faces" constraintid="o19474" />
+      </structure>
+      <structure id="o19473" name="glume" />
+      <structure id="o19474" name="face" />
+      <structure id="o19475" name="base">
+        <character name="shape" value="rounded" />
+      </structure>
+      <structure id="o19476" name="margin" constraint="upper">
+        <character name="shape" value="serrulate" />
+        <character name="architecture" value="winged" />
+      </structure>
+      <structure id="o19477" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o19478" />
+      </structure>
+      <structure id="o19478" name="beak" />
+      <structure id="o19479" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1653.txt-9">
+      <text>Nutlets yellow-brown, loosely enveloped, elliptic or oblong, planoconvex, 1.5–1.8 mm, base shortly stipitate;</text>
+      <structure id="o19480" name="nutlet">
+        <character name="coloration" value="yellow-brown" />
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="elliptic" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="mm" to="1.8" to_unit="mm" />
+      </structure>
+      <structure id="o19481" name="base">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1653.txt-10">
+      <text>style base slightly thickened;</text>
+      <structure id="o19482" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1653.txt-11">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1653.txt-12">
+      <text>Fl. and fr. May–Jun.</text>
+      <structure id="o19483" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Swamps, riverbanks, meadows; 100–700(–1700) m. Gansu, Hebei, Heilongjiang, Jilin, Liaoning, Nei Mongol, Shaanxi, Shandong, Shanxi, Xinjiang [Japan, Korea, Mongolia, Russia (Far East, E Siberia)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -13,7 +13,161 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>线茎薹草 xian jing tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome long, ligneous. Culms densely tufted, usually 1 or 2 borne in a leaf axil, 3–15 cm tall, subfiliform, rather soft, compressed triquetrous, smooth. Leaves equaling or longer than culm, flat, 1–5.5 mm wide, soft, glabrous, with dark brown persistent leaf sheaths. Involucral bracts sheathlike, blade setiform. Spikes 1–5, androgynous, remote, ovate or ovate-oblong, 2–5 mm, ca. 3.5 mm thick, densely many flowered; male part of spike shorter than or nearly equaling female part, slightly thin. Female glumes white or pale green, ovate, 1.2–1.5 mm, papery, 1-costate and laterally few veined, margins narrowly membranous, apex rounded or obtuse. Utricles pale green, longer than glume, ovate-elliptic, compressed trigonous, 2–2.5 mm, papery, loosely pubescent and ciliate, distinctly 2-veined laterally and thinly few veined, base cuneate, nearly estipitate, apex attenuate into an indistinct short beak, orifice obliquely truncate. Nutlets dark brown at maturity, ovate-oblong, trigonous, sides slightly concave, 1–1.5 mm, base cuneate, nearly estipitate, apex with a slightly recurved beak; style rather inflated, slightly compressed, densely brown granular-punctate; stigmas 3. Fl. and fr. May–Sep.</description>
+  <description>
+    <statement id="1153.txt-0">
+      <text>Rhizome long, ligneous.</text>
+      <structure id="o4839" name="rhizome">
+        <character name="external_texture" value="ligneous" />
+      </structure>
+    </statement>
+    <statement id="1153.txt-1">
+      <text>Culms densely tufted, usually 1 or 2 borne in a leaf axil, 3–15 cm tall, subfiliform, rather soft, compressed triquetrous, smooth.</text>
+      <structure id="o4840" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character name="count" value="1" modifier="usually" />
+        <character name="count" value="2" />
+        <character char_type="range_value" name="size" from="3" from_unit="cm" to="15" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="feature" value="subfiliform" />
+        <character name="external_texture" value="soft" modifier="rather" />
+        <character name="shape" value="compressed triquetrous" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o4841" name="axil" constraint="leaf" />
+      <relation id="r975" name="borne in" from="o4840" to="o4841" negation="false" />
+    </statement>
+    <statement id="1153.txt-2">
+      <text>Leaves equaling or longer than culm, flat, 1–5.5 mm wide, soft, glabrous, with dark brown persistent leaf sheaths.</text>
+      <structure id="o4842" name="leaf">
+        <character name="length" value="longer" constraint="than culm" constraintid="o4843" />
+        <character name="prominence_or_shape" value="flat" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="5.5" to_unit="mm" />
+        <character name="external_texture" value="soft" />
+        <character name="external_texture" value="glabrous" />
+      </structure>
+      <structure id="o4843" name="culm" />
+      <structure id="o4844" name="sheath" constraint="persistent leaf">
+        <character name="coloration" value="brown" modifier="dark" />
+      </structure>
+      <relation id="r976" name="with" from="o4842" to="o4844" negation="false" />
+    </statement>
+    <statement id="1153.txt-3">
+      <text>Involucral bracts sheathlike, blade setiform.</text>
+      <structure id="o4845" name="bract" constraint="involucral" />
+      <structure id="o4846" name="blade">
+        <character name="shape" value="setiform" />
+      </structure>
+    </statement>
+    <statement id="1153.txt-4">
+      <text>Spikes 1–5, androgynous, remote, ovate or ovate-oblong, 2–5 mm, ca. 3.5 mm thick, densely many flowered;</text>
+    </statement>
+    <statement id="1153.txt-5">
+      <text>male part of spike shorter than or nearly equaling female part, slightly thin.</text>
+      <structure id="o4847" name="spike">
+        <character char_type="range_value" name="count" from="1" to="5" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="arrangement" value="remote" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="ovate-oblong" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="5" to_unit="mm" />
+        <character name="size" value="3.5" unit="mm" />
+        <character name="width" value="thick" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+        <character name="feature_or_reproduction" value="male" constraint="of spike" constraintid="o4848" />
+        <character name="height_or_length" value="shorter than or nearly equaling female part" />
+        <character name="width" value="thin" modifier="slightly" />
+      </structure>
+      <structure id="o4848" name="spike" />
+      <relation id="r977" name="may_be_the_same" from="o4847" to="o4848" negation="false" />
+    </statement>
+    <statement id="1153.txt-6">
+      <text>Female glumes white or pale green, ovate, 1.2–1.5 mm, papery, 1-costate and laterally few veined, margins narrowly membranous, apex rounded or obtuse.</text>
+      <structure id="o4849" name="glume" constraint="female">
+        <character name="coloration" value="white" />
+        <character name="coloration" value="green" modifier="pale" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="1.2" from_unit="mm" to="1.5" to_unit="mm" />
+        <character name="feature_or_internal_texture" value="papery" />
+        <character name="architecture" value="1-costate" />
+        <character name="count" value="few" modifier="laterally" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o4850" name="margin">
+        <character name="feature" value="membranous" modifier="narrowly" />
+      </structure>
+      <structure id="o4851" name="apex">
+        <character name="shape" value="rounded" />
+        <character name="shape" value="obtuse" />
+      </structure>
+    </statement>
+    <statement id="1153.txt-7">
+      <text>Utricles pale green, longer than glume, ovate-elliptic, compressed trigonous, 2–2.5 mm, papery, loosely pubescent and ciliate, distinctly 2-veined laterally and thinly few veined, base cuneate, nearly estipitate, apex attenuate into an indistinct short beak, orifice obliquely truncate.</text>
+      <structure id="o4852" name="utricle">
+        <character name="coloration" value="green" modifier="pale" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o4853" />
+        <character name="arrangement_or_shape" value="ovate-elliptic" />
+        <character name="shape" value="compressed trigonous" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="feature_or_internal_texture" value="papery" />
+        <character name="architecture_or_shape" value="ciliate" />
+        <character name="architecture_or_feature" value="2-veined" modifier="distinctly;laterally" />
+        <character name="count" value="few" modifier="thinly" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o4853" name="glume" />
+      <structure id="o4854" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+        <character name="feature" value="estipitate" modifier="nearly" />
+      </structure>
+      <structure id="o4855" name="apex">
+        <character name="shape" value="attenuate" constraint="into beak" constraintid="o4856" />
+      </structure>
+      <structure id="o4856" name="beak">
+        <character name="prominence" value="indistinct" />
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o4857" name="orifice">
+        <character name="shape" value="truncate" modifier="obliquely" />
+      </structure>
+    </statement>
+    <statement id="1153.txt-8">
+      <text>Nutlets dark brown at maturity, ovate-oblong, trigonous, sides slightly concave, 1–1.5 mm, base cuneate, nearly estipitate, apex with a slightly recurved beak;</text>
+      <structure id="o4858" name="nutlet">
+        <character name="coloration" value="brown" modifier="dark" />
+        <character char_type="range_value" name="maturity , ovate-oblong , trigonous , sides slightly concave ," from="1" from_unit="mm" to="1.5" to_unit="mm" />
+      </structure>
+      <structure id="o4859" name="base">
+        <character name="arrangement_or_shape" value="cuneate" />
+        <character name="feature" value="estipitate" modifier="nearly" />
+      </structure>
+      <structure id="o4860" name="apex" />
+      <structure id="o4861" name="beak">
+        <character name="orientation" value="recurved" modifier="slightly" />
+      </structure>
+      <relation id="r978" name="with" from="o4860" to="o4861" negation="false" />
+    </statement>
+    <statement id="1153.txt-9">
+      <text>style rather inflated, slightly compressed, densely brown granular-punctate;</text>
+      <structure id="o4862" name="style">
+        <character name="shape" value="inflated" modifier="rather" />
+        <character name="shape" value="compressed" modifier="slightly" />
+        <character name="coloration" value="brown" modifier="densely" />
+        <character name="pattern" value="granular-punctate" />
+      </structure>
+    </statement>
+    <statement id="1153.txt-10">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1153.txt-11">
+      <text>Fl. and fr. May–Sep.</text>
+      <structure id="o4863" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● On wet rocks in forests, wet grasslands at riversides; 500–800 m. Hainan (Ding’an).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

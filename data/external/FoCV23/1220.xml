@@ -15,7 +15,32 @@
     <variety_name>variegata</variety_name>
     <variety_authority>Akiyama.</variety_authority>
   </TaxonIdentification>
-  <description>Leaf blade glabrous at margins, glabrous adaxially and sparsely pilose on veins abaxially. All spikes androgynous. Utricle glabrous.</description>
+  <description>
+    <statement id="1220.txt-0">
+      <text>Leaf blade glabrous at margins, glabrous adaxially and sparsely pilose on veins abaxially.</text>
+      <structure id="o6838" name="blade" constraint="leaf">
+        <character name="external_texture" value="glabrous" constraint="at margins" constraintid="o6839" />
+        <character name="external_texture" value="glabrous" modifier="adaxially" />
+        <character name="external_texture" value="pilose" modifier="sparsely" constraint="on veins" constraintid="o6840" />
+      </structure>
+      <structure id="o6839" name="margin" />
+      <structure id="o6840" name="vein" />
+    </statement>
+    <statement id="1220.txt-1">
+      <text>All spikes androgynous.</text>
+      <structure id="o6841" name="spike">
+        <character name="feature_or_reproduction" value="androgynous" />
+      </structure>
+    </statement>
+    <statement id="1220.txt-2">
+      <text>Utricle glabrous.</text>
+      <structure id="o6842" name="utricle">
+        <character name="external_texture" value="glabrous" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Needle-leaved and broad-leaved mixed forests and forest margins or broad-leaved forests; 1000–2000 m. Anhui, Hebei, Heilongjiang, Jiangxi, Jilin, Liaoning, Shaanxi, Shandong, Shanxi, Zhejiang [Japan, Korea, Russia (Far East)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

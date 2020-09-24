@@ -13,7 +13,161 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>北兴安薹草 bei xing an tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, obliquely ascending with curving stolons. Culms 40–50 cm tall, trigonous, smooth, rigid, clothed at base with bladed sheaths but sterile culm with purple-red bladeless sheaths. Leaves shorter than culm, blades gray-green, linear, 2–4 mm wide, margins revolute. Involucral bracts glumelike, lowest one setaceous, sheathless. Spikes 3–5; terminal spike male, clavate, 1–1.5 cm; remaining spikes female, oblong, 5–15 mm, lower spikes with peduncles 5–10 mm, upper sessile. Female glumes blackish purple-red, ovate, 2–2.2 × 1.8–2 mm, 1-veined, margins broadly white hyaline, apex rounded. Utricles purple-red punctate above, equaling glume, broadly obovate or suborbicular, plano-convex, 2–2.2 × 1.8–2 mm, membranous, densely minutely papillose, nerveless, base shortly stipitate, apex rounded, with very short beak, orifice emarginate. Nutlets gray-brown, tightly enveloped, broadly obovate, 1.5–1.8 × ca. 1.5 mm; style base not thickened; stigmas 2.</description>
+  <description>
+    <statement id="1507.txt-0">
+      <text>Rhizome short, obliquely ascending with curving stolons.</text>
+      <structure id="o15676" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="orientation" value="ascending" modifier="obliquely" constraint="with stolons" constraintid="o15677" />
+      </structure>
+      <structure id="o15677" name="stolon">
+        <character name="course_or_orientation" value="curving" />
+      </structure>
+    </statement>
+    <statement id="1507.txt-1">
+      <text>Culms 40–50 cm tall, trigonous, smooth, rigid, clothed at base with bladed sheaths but sterile culm with purple-red bladeless sheaths.</text>
+      <structure id="o15678" name="culm">
+        <character char_type="range_value" name="size" from="40" from_unit="cm" to="50" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="internal_texture" value="rigid" />
+      </structure>
+      <structure id="o15679" name="sheath">
+        <character name="type" value="sterile culm" />
+      </structure>
+      <relation id="r2993" name="clothed at base with" from="o15678" to="o15679" negation="false" />
+      <structure id="o15680" name="culm" constraint="sterile" />
+      <structure id="o15681" name="sheath" constraint="bladeless">
+        <character name="coloration" value="purple-red" />
+      </structure>
+      <relation id="r2994" name="with" from="o15679" to="o15681" negation="false" />
+    </statement>
+    <statement id="1507.txt-2">
+      <text>Leaves shorter than culm, blades gray-green, linear, 2–4 mm wide, margins revolute.</text>
+      <structure id="o15682" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o15683" />
+      </structure>
+      <structure id="o15683" name="culm" />
+      <structure id="o15684" name="blade">
+        <character name="coloration" value="gray-green" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="4" to_unit="mm" />
+      </structure>
+      <structure id="o15685" name="margin">
+        <character name="shape_or_vernation" value="revolute" />
+      </structure>
+    </statement>
+    <statement id="1507.txt-3">
+      <text>Involucral bracts glumelike, lowest one setaceous, sheathless.</text>
+      <structure id="o15686" name="bract" constraint="involucral">
+        <character name="feature" value="glumelike" />
+        <character name="feature" value="lowest" />
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="feature" value="sheathless" />
+      </structure>
+    </statement>
+    <statement id="1507.txt-4">
+      <text>Spikes 3–5;</text>
+      <structure id="o15687" name="spike">
+        <character char_type="range_value" name="count" from="3" to="5" />
+      </structure>
+    </statement>
+    <statement id="1507.txt-5">
+      <text>terminal spike male, clavate, 1–1.5 cm;</text>
+      <structure id="o15688" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="clavate" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="1.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1507.txt-6">
+      <text>remaining spikes female, oblong, 5–15 mm, lower spikes with peduncles 5–10 mm, upper sessile.</text>
+      <structure id="o15689" name="spike" constraint="remaining">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="15" to_unit="mm" />
+      </structure>
+      <structure id="o15690" name="spike" constraint="lower">
+        <character name="position" value="upper" />
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+      <structure id="o15691" name="peduncle">
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="10" to_unit="mm" />
+      </structure>
+      <relation id="r2995" name="with" from="o15690" to="o15691" negation="false" />
+    </statement>
+    <statement id="1507.txt-7">
+      <text>Female glumes blackish purple-red, ovate, 2–2.2 × 1.8–2 mm, 1-veined, margins broadly white hyaline, apex rounded.</text>
+      <structure id="o15692" name="glume" constraint="female">
+        <character name="coloration" value="purple-red" modifier="blackish" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="length" from="2" from_unit="mm" to="2.2" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.8" from_unit="mm" to="2" to_unit="mm" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o15693" name="margin">
+        <character name="coloration" value="hyaline" modifier="broadly;white" />
+      </structure>
+      <structure id="o15694" name="apex">
+        <character name="shape" value="rounded" />
+      </structure>
+    </statement>
+    <statement id="1507.txt-8">
+      <text>Utricles purple-red punctate above, equaling glume, broadly obovate or suborbicular, planoconvex, 2–2.2 × 1.8–2 mm, membranous, densely minutely papillose, nerveless, base shortly stipitate, apex rounded, with very short beak, orifice emarginate.</text>
+      <structure id="o15695" name="utricle">
+        <character name="coloration" value="purple-red" />
+        <character name="pattern" value="punctate" />
+        <character name="shape" value="obovate" modifier="broadly" />
+        <character name="shape" value="suborbicular" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="length" from="2" from_unit="mm" to="2.2" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.8" from_unit="mm" to="2" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="relief" value="papillose" modifier="densely minutely" />
+        <character name="feature" value="nerveless" />
+      </structure>
+      <structure id="o15696" name="glume" />
+      <relation id="r2996" name="equaling" from="o15695" to="o15696" negation="false" />
+      <structure id="o15697" name="base">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o15698" name="apex">
+        <character name="shape" value="rounded" />
+      </structure>
+      <structure id="o15699" name="beak">
+        <character name="height_or_length" value="short" modifier="very" />
+      </structure>
+      <relation id="r2997" name="with" from="o15698" to="o15699" negation="false" />
+      <structure id="o15700" name="orifice">
+        <character name="shape" value="emarginate" />
+      </structure>
+    </statement>
+    <statement id="1507.txt-9">
+      <text>Nutlets gray-brown, tightly enveloped, broadly obovate, 1.5–1.8 × ca. 1.5 mm;</text>
+      <structure id="o15701" name="nutlet">
+        <character name="coloration" value="gray-brown" />
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="obovate" modifier="broadly" />
+        <character char_type="range_value" name="length" from="1.5" from_unit="mm" to="1.8" to_unit="mm" />
+        <character name="width" value="1.5" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1507.txt-10">
+      <text>style base not thickened;</text>
+      <structure id="o15702" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1507.txt-11">
+      <text>stigmas 2.</text>
+      <structure id="o15703" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Slopes. Heilongjiang.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

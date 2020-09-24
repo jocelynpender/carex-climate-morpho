@@ -16,7 +16,31 @@
     <subspecies_name>caucasica</subspecies_name>
     <subspecies_authority>(Steven) Küken thal.</subspecies_authority>
   </TaxonIdentification>
-  <description>Leaf blades 4–8 mm wide. Utricles 3.5–4 mm, faintly 3–5-veined at base. Nutlets obovate, ca. 2.5 mm.</description>
+  <description>
+    <statement id="1073.txt-0">
+      <text>Leaf blades 4–8 mm wide.</text>
+      <structure id="o2333" name="blade" constraint="leaf">
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="8" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1073.txt-1">
+      <text>Utricles 3.5–4 mm, faintly 3–5-veined at base.</text>
+      <structure id="o2334" name="utricle">
+        <character char_type="range_value" name="size" from="3.5" from_unit="mm" to="4" to_unit="mm" />
+        <character name="architecture_or_feature" value="3-5-veined" modifier="faintly" constraint="at base" constraintid="o2335" />
+      </structure>
+      <structure id="o2335" name="base" />
+    </statement>
+    <statement id="1073.txt-2">
+      <text>Nutlets obovate, ca. 2.5 mm.</text>
+      <structure id="o2336" name="nutlet">
+        <character name="shape" value="obovate" />
+        <character name="size" value="2.5" unit="mm" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Meadows in valleys. Xinjiang [C Asia, SW Asia (Caucasus), Europe].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

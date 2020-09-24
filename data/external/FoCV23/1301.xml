@@ -9,7 +9,35 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>新多穗薹草 ( 原变种) xin duo sui tai cao (yuan bian zhong)</variety_name>
   </TaxonIdentification>
-  <description>Spikes numerous, 5–9 borne in an involucral bract sheath, sometimes ramose and disposed in a panicle. Utricles with ± long beak, nearly horizontally patent at maturity. Fl. and fr. Apr–May.</description>
+  <description>
+    <statement id="1301.txt-0">
+      <text>Spikes numerous, 5–9 borne in an involucral bract sheath, sometimes ramose and disposed in a panicle.</text>
+      <structure id="o9232" name="spike">
+        <character name="count" value="numerous" />
+        <character char_type="range_value" name="count" from="5" to="9" />
+        <character name="architecture" value="ramose" modifier="sometimes" />
+        <character name="arrangement" value="disposed" constraint="in panicle" constraintid="o9234" />
+      </structure>
+      <structure id="o9233" name="sheath" constraint="involucral bract" />
+      <relation id="r1699" name="borne in" from="o9232" to="o9233" negation="false" />
+      <structure id="o9234" name="panicle" />
+    </statement>
+    <statement id="1301.txt-1">
+      <text>Utricles with ± long beak, nearly horizontally patent at maturity.</text>
+      <structure id="o9236" name="beak">
+        <character name="length" value="long" modifier="more or less" />
+      </structure>
+      <relation id="r1700" name="with" from="o9235" to="o9236" negation="false" />
+    </statement>
+    <statement id="1301.txt-2">
+      <text>Fl. and fr. Apr–May.</text>
+      <structure id="o9235" name="utricle">
+        <character name="orientation" value="patent" modifier="nearly horizontally;at maturity" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Among rocks; ca. 2700 m. C Yunnan (Kunming).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -16,8 +16,42 @@
     <variety_name>drymophila</variety_name>
     <variety_authority>(Turczan inow ex Steudel) Maximowicz.</variety_authority>
   </TaxonIdentification>
-  <description>Culms 60–70 cm tall. Leaf blades 4–6 mm wide, glabrous or only pubescent on membranous part of sheaths. Utricles hispid on margins of beak. Fl. and fr. Jun–Aug.</description>
+  <description>
+    <statement id="1497.txt-0">
+      <text>Culms 60–70 cm tall.</text>
+      <structure id="o15405" name="culm">
+        <character char_type="range_value" name="size" from="60" from_unit="cm" to="70" to_unit="cm" />
+        <character name="height" value="tall" />
+      </structure>
+    </statement>
+    <statement id="1497.txt-1">
+      <text>Leaf blades 4–6 mm wide, glabrous or only pubescent on membranous part of sheaths.</text>
+      <structure id="o15406" name="blade" constraint="leaf">
+        <character char_type="range_value" name="width" from="4" from_unit="mm" to="6" to_unit="mm" />
+        <character name="external_texture" value="glabrous" />
+        <character name="external_texture" value="on membranous part" />
+      </structure>
+      <structure id="o15407" name="part" constraint="membranous" />
+      <relation id="r2942" name="on" from="o15406" to="o15407" negation="false" />
+      <structure id="o15408" name="sheath" />
+      <relation id="r2943" name="part_of" from="o15407" to="o15408" negation="false" />
+    </statement>
+    <statement id="1497.txt-2">
+      <text>Utricles hispid on margins of beak.</text>
+      <structure id="o15410" name="margin" />
+      <structure id="o15411" name="beak" />
+      <relation id="r2944" name="part_of" from="o15410" to="o15411" negation="false" />
+    </statement>
+    <statement id="1497.txt-3">
+      <text>Fl. and fr. Jun–Aug.</text>
+      <structure id="o15409" name="utricle">
+        <character name="external_texture" value="hispid" constraint="on margins" constraintid="o15410" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Wet grasslands in forest regions. Heilongjiang, Jilin, Nei Mongol [Korea, Mongolia, Russia (Far East, E Siberia)].</distribution>
   <discussion>The culms and leaves are used as animal feed.</discussion>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

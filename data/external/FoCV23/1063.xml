@@ -36,7 +36,32 @@
     <species_name>paishanensis</species_name>
     <species_authority>Nakai.</species_authority>
   </TaxonIdentification>
-  <description>Female glumes ovate, apex acute. Utricles sessile, apex abruptly contracted into a conic short beak.</description>
+  <description>
+    <statement id="1063.txt-0">
+      <text>Female glumes ovate, apex acute.</text>
+      <structure id="o2125" name="glume" constraint="female">
+        <character name="shape" value="ovate" />
+      </structure>
+      <structure id="o2126" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1063.txt-1">
+      <text>Utricles sessile, apex abruptly contracted into a conic short beak.</text>
+      <structure id="o2127" name="utricle">
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+      <structure id="o2128" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o2129" />
+      </structure>
+      <structure id="o2129" name="beak">
+        <character name="shape" value="conic" />
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Alpine frozen soil, thickets. Jilin, Taiwan [Bhutan, India, Japan, Korea, Russia; Europe].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -13,7 +13,127 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>柄囊薹草 bing nang tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, 5–8 cm tall, slender, smooth, leafy in lower 1/3. Cauline leaves shorter than culm; blades needlelike, ca. 0.5 mm wide, smooth; sheaths pale brown. Inflorescence 1-spiked, terminal, androgynous, oblong, 5–8 mm; male part 2-flowered, short, indistinct; female part 3- or 4-flowered. Female glumes dark brown laterally, green at middle, oblong-lanceolate, 3.5–4.2 mm, 3-veined, apex attenuate. Utricles green, slightly tinged with pale brown, erect, lanceolate-oblong, 4.5–5 mm (including stipe ca. 0.8 mm), membranous, not distinctly veined, apex gradually attenuate into a beak ca. 1.5 mm, orifice obliquely truncate, indistinctly toothed. Nutlet oblong, trigonous, ca. 2 mm; style base slightly thickened; stigmas 3.</description>
+  <description>
+    <statement id="1608.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o18443" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1608.txt-1">
+      <text>Culms tufted, 5–8 cm tall, slender, smooth, leafy in lower 1/3.</text>
+      <structure id="o18444" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="5" from_unit="cm" to="8" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="architecture" value="leafy" modifier="in lower 1/3" />
+      </structure>
+    </statement>
+    <statement id="1608.txt-2">
+      <text>Cauline leaves shorter than culm;</text>
+      <structure id="o18445" name="leaf" constraint="cauline">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o18446" />
+      </structure>
+      <structure id="o18446" name="culm" />
+    </statement>
+    <statement id="1608.txt-3">
+      <text>blades needlelike, ca. 0.5 mm wide, smooth;</text>
+      <structure id="o18447" name="blade">
+        <character name="architecture_or_shape" value="needlelike" />
+        <character name="width" value="0.5" unit="mm" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+    </statement>
+    <statement id="1608.txt-4">
+      <text>sheaths pale brown.</text>
+      <structure id="o18448" name="sheath">
+        <character name="coloration" value="brown" modifier="pale" />
+      </structure>
+    </statement>
+    <statement id="1608.txt-5">
+      <text>Inflorescence 1-spiked, terminal, androgynous, oblong, 5–8 mm;</text>
+    </statement>
+    <statement id="1608.txt-6">
+      <text>male part 2-flowered, short, indistinct;</text>
+    </statement>
+    <statement id="1608.txt-7">
+      <text>female part 3- or 4-flowered.</text>
+      <structure id="o18449" name="inflorescence">
+        <character name="position" value="terminal" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="8" to_unit="mm" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="architecture" value="2-flowered" />
+        <character name="height_or_length" value="short" />
+        <character name="prominence" value="indistinct" />
+        <character name="reproduction" value="female" />
+        <character name="architecture" value="3-or-4-flowered" />
+      </structure>
+    </statement>
+    <statement id="1608.txt-8">
+      <text>Female glumes dark brown laterally, green at middle, oblong-lanceolate, 3.5–4.2 mm, 3-veined, apex attenuate.</text>
+      <structure id="o18450" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="laterally;dark" />
+        <character name="coloration" value="green" modifier="at middle" />
+        <character name="shape" value="oblong-lanceolate" />
+        <character char_type="range_value" name="size" from="3.5" from_unit="mm" to="4.2" to_unit="mm" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o18451" name="apex">
+        <character name="shape" value="attenuate" />
+      </structure>
+    </statement>
+    <statement id="1608.txt-9">
+      <text>Utricles green, slightly tinged with pale brown, erect, lanceolate-oblong, 4.5–5 mm (including stipe ca .0 .8 mm ), membranous, not distinctly veined, apex gradually attenuate into a beak ca. 1.5 mm, orifice obliquely truncate, indistinctly toothed.</text>
+      <structure id="o18452" name="utricle">
+        <character name="coloration" value="green" />
+        <character name="coloration" value="brown" modifier="slightly;tinged with pale" />
+        <character name="orientation" value="erect" />
+        <character name="shape" value="lanceolate-oblong" />
+        <character char_type="range_value" name="size" from="4.5" from_unit="mm" to="5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="veined" modifier="not distinctly" />
+      </structure>
+      <structure id="o18453" name="stipe" in_brackets="true">
+        <character name="size" value="0.8" unit="mm" in_brackets="true" />
+      </structure>
+      <structure id="o18454" name="apex">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into beak" constraintid="o18455" />
+      </structure>
+      <structure id="o18455" name="beak">
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+      <structure id="o18456" name="orifice">
+        <character name="shape" value="truncate" modifier="obliquely" />
+        <character name="shape" value="toothed" modifier="indistinctly" />
+      </structure>
+    </statement>
+    <statement id="1608.txt-10">
+      <text>Nutlet oblong, trigonous, ca. 2 mm;</text>
+      <structure id="o18457" name="nutlet">
+        <character name="shape" value="oblong" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1608.txt-11">
+      <text>style base slightly thickened;</text>
+      <structure id="o18458" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1608.txt-12">
+      <text>stigmas 3.</text>
+      <structure id="o18459" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Alpine meadows; ca. 3600 m. Yunnan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

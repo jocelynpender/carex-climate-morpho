@@ -13,7 +13,159 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>寸草 cun cao</species_name>
   </TaxonIdentification>
-  <description>Plants with slender, long creeping rhizomes and bunches of shoots forming loose tufts. Culms 5–20 cm tall, slender, smooth, clothed at base with gray-brown sheaths disintegrating into fibers. Leaves shorter than culm, blades linear, 1–1.5 mm wide, involute, stiff, margins slightly scabrous. Involucral bracts glumelike. Inflorescence ovate or globose, 5–15 × ca. 5 mm; spikes 3–6, androgynous, ovate, dense, 4–6 mm. Female glumes ferruginous-brown, broadly ovate or elliptic, 3–3.2 mm, white hyaline on margins and apex, apex acute or obtuse. Utricles ferruginous or yellow-brown, shorter to slightly longer than glume, ovate, ovate-elliptic, or broadly ovate, plano-convex, 3–4.5 × ca. 2 mm, leathery, slightly lustrous at maturity, many veined on both faces, base subrounded, spongy, thickly stipitate, apex abruptly contracted into a short scabrous beak, orifice white hyaline, obliquely truncate, shallowly cleft abaxially. Nutlets slightly loosely enveloped, suborbicular or broadly elliptic, 1.5–2 × 1.5–1.7 mm; style base thickened; stigmas 2. Fl. and fr. Apr–Jun.</description>
+  <description>
+    <statement id="1661.txt-0">
+      <text>Plants with slender, long creeping rhizomes and bunches of shoots forming loose tufts.</text>
+      <structure id="o19698" name="whole_organism">
+        <character name="life_style" value="plant" />
+      </structure>
+      <structure id="o19699" name="rhizome" constraint="creeping">
+        <character name="size" value="slender" />
+        <character name="length" value="long" />
+      </structure>
+      <relation id="r3718" name="with" from="o19698" to="o19699" negation="false" />
+      <structure id="o19700" name="bunche" />
+      <structure id="o19701" name="shoot" />
+      <relation id="r3719" name="part_of" from="o19698" to="o19701" negation="false" />
+      <structure id="o19702" name="tuft">
+        <character name="architecture_or_fragility" value="loose" />
+      </structure>
+      <relation id="r3720" name="forming" from="o19698" to="o19702" negation="false" />
+    </statement>
+    <statement id="1661.txt-1">
+      <text>Culms 5–20 cm tall, slender, smooth, clothed at base with gray-brown sheaths disintegrating into fibers.</text>
+      <structure id="o19703" name="culm">
+        <character char_type="range_value" name="size" from="5" from_unit="cm" to="20" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o19704" name="base" />
+      <relation id="r3721" name="clothed at" from="o19703" to="o19704" negation="false" />
+      <structure id="o19705" name="sheath">
+        <character name="coloration" value="gray-brown" />
+        <character name="dehiscence" value="disintegrating" constraint="into fibers" constraintid="o19706" />
+      </structure>
+      <relation id="r3722" name="with" from="o19704" to="o19705" negation="false" />
+      <structure id="o19706" name="fiber" />
+    </statement>
+    <statement id="1661.txt-2">
+      <text>Leaves shorter than culm, blades linear, 1–1.5 mm wide, involute, stiff, margins slightly scabrous.</text>
+      <structure id="o19707" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o19708" />
+      </structure>
+      <structure id="o19708" name="culm" />
+      <structure id="o19709" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="1.5" to_unit="mm" />
+        <character name="shape_or_vernation" value="involute" />
+        <character name="external_texture" value="stiff" />
+      </structure>
+      <structure id="o19710" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1661.txt-3">
+      <text>Involucral bracts glumelike.</text>
+      <structure id="o19711" name="bract" constraint="involucral">
+        <character name="feature" value="glumelike" />
+      </structure>
+    </statement>
+    <statement id="1661.txt-4">
+      <text>Inflorescence ovate or globose, 5–15 × ca. 5 mm;</text>
+      <structure id="o19712" name="inflorescence">
+        <character name="shape" value="ovate" />
+        <character name="shape" value="globose" />
+        <character char_type="range_value" name="length" from="5" from_unit="mm" to="15" to_unit="mm" />
+        <character name="width" value="5" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1661.txt-5">
+      <text>spikes 3–6, androgynous, ovate, dense, 4–6 mm.</text>
+      <structure id="o19713" name="spike">
+        <character char_type="range_value" name="count" from="3" to="6" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="shape" value="ovate" />
+        <character name="density" value="dense" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="6" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1661.txt-6">
+      <text>Female glumes ferruginous-brown, broadly ovate or elliptic, 3–3.2 mm, white hyaline on margins and apex, apex acute or obtuse.</text>
+      <structure id="o19714" name="glume" constraint="female">
+        <character name="coloration" value="ferruginous-brown" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="shape" value="elliptic" />
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="3.2" to_unit="mm" />
+        <character name="coloration" value="hyaline" modifier="white" constraint="on margins, apex" constraintid="o19715  o19716" />
+      </structure>
+      <structure id="o19715" name="margin" />
+      <structure id="o19716" name="apex" />
+      <structure id="o19717" name="apex">
+        <character name="shape" value="acute" />
+        <character name="shape" value="obtuse" />
+      </structure>
+      <relation id="r3723" name="may_be_the_same" from="o19716" to="o19717" negation="false" />
+    </statement>
+    <statement id="1661.txt-7">
+      <text>Utricles ferruginous or yellow-brown, shorter to slightly longer than glume, ovate, ovate-elliptic, or broadly ovate, planoconvex, 3–4.5 × ca. 2 mm, leathery, slightly lustrous at maturity, many veined on both faces, base subrounded, spongy, thickly stipitate, apex abruptly contracted into a short scabrous beak, orifice white hyaline, obliquely truncate, shallowly cleft abaxially.</text>
+      <structure id="o19718" name="utricle">
+        <character name="coloration" value="yellow-brown" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="ovate-elliptic" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="shape" value="planoconvex" />
+        <character char_type="range_value" name="length" from="3" from_unit="mm" to="4.5" to_unit="mm" />
+        <character name="width" value="2" unit="mm" />
+        <character name="external_texture_or_feature" value="leathery" />
+        <character name="reflectance" value="lustrous" modifier="slightly;at maturity, many veined" constraint="on faces" constraintid="o19720" />
+      </structure>
+      <structure id="o19719" name="glume" />
+      <structure id="o19720" name="face" />
+      <structure id="o19721" name="base">
+        <character name="arrangement" value="subrounded" />
+        <character name="internal_texture" value="spongy" />
+        <character name="architecture" value="stipitate" modifier="thickly" />
+      </structure>
+      <structure id="o19722" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o19723" />
+      </structure>
+      <structure id="o19723" name="beak">
+        <character name="height_or_length" value="short" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o19724" name="orifice">
+        <character name="coloration" value="hyaline" modifier="white" />
+        <character name="shape" value="truncate" modifier="obliquely" />
+        <character name="shape" value="cleft" modifier="shallowly;abaxially" />
+      </structure>
+    </statement>
+    <statement id="1661.txt-8">
+      <text>Nutlets slightly loosely enveloped, suborbicular or broadly elliptic, 1.5–2 × 1.5–1.7 mm;</text>
+      <structure id="o19725" name="nutlet">
+        <character name="feature" value="enveloped" modifier="slightly loosely" />
+        <character name="shape" value="suborbicular" />
+        <character name="shape" value="elliptic" modifier="broadly" />
+        <character char_type="range_value" name="length" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="1.7" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1661.txt-9">
+      <text>style base thickened;</text>
+      <structure id="o19726" name="base" constraint="style">
+        <character name="width" value="thickened" />
+      </structure>
+    </statement>
+    <statement id="1661.txt-10">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1661.txt-11">
+      <text>Fl. and fr. Apr–Jun.</text>
+      <structure id="o19727" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Grasslands, slopes, wet places or rocky and sandy areas on riverbanks, roadsides, semidry regions, meadows; (below 100–)200–700 m. Gansu, Hebei, Heilongjiang, Henan, Jilin, Liaoning, Nei Mongol, Ningxia, Qinghai, Shaanxi, Shandong, Shanxi, Xinjiang, Xizang [Afghanistan, Kazakhstan, Korea, Kyrgyzstan, Mongolia, New Guinea, Pakistan, Russia (Far East, Siberia), Tajikistan, Turkmenistan, Uzbekistan; SW Asia, North America].</distribution>
   <key>
     <key_statement>
@@ -39,3 +191,5 @@
   </key>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

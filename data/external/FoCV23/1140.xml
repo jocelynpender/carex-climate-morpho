@@ -13,7 +13,171 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>绿囊薹草 lü nang tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, 20–45 cm tall, slender, obtusely trigonous. Basal sheaths dark brown, split into fibers. Leaves longer than culm, blades 1–2.5 mm wide, flat, margins scabrid. Lowest involucral bract leafy, longer than subtending spike, shortly sheathed, sheath 1–1.5 mm. Spikes 2 or 3; terminal spike male, clavate, 8–15 × 3–4 mm, with peduncle 5–9 mm; lateral spikes female, orbicular to ovate or oblong, 4–7 × 3–4 mm, densely flowered, with short peduncle 2–4 mm. Female glume pale brown, broadly elliptic or obovate-oblong, ca. 2.5 × 1.2 mm, membranous, green costa 1-veined, excurrent into a scabrid mucro. Utricle pale yellowish green, longer than glume, rhombic-elliptic or broadly ovate, obtusely trigonous, ca. 2.5 mm, puberulent, distinctly veined abaxially, faintly veined adaxially, base abruptly contracted into a very short stipe, apex abruptly contracted into a conic beak, orifice 2-toothed. Nutlet pale brown, tightly enveloped, ovate, trigonous, ca. 1.5 mm, apex discoid-annulate; stigmas 3. Fl. and fr. May–Jun.</description>
+  <description>
+    <statement id="1140.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o4408" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1140.txt-1">
+      <text>Culms tufted, 20–45 cm tall, slender, obtusely trigonous.</text>
+      <structure id="o4409" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="45" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+      </structure>
+    </statement>
+    <statement id="1140.txt-2">
+      <text>Basal sheaths dark brown, split into fibers.</text>
+      <structure id="o4410" name="sheath" constraint="basal">
+        <character name="coloration" value="brown" modifier="dark" />
+      </structure>
+      <structure id="o4411" name="fiber" />
+      <relation id="r904" name="split into" from="o4410" to="o4411" negation="false" />
+    </statement>
+    <statement id="1140.txt-3">
+      <text>Leaves longer than culm, blades 1–2.5 mm wide, flat, margins scabrid.</text>
+      <structure id="o4412" name="leaf">
+        <character name="length" value="longer" constraint="than culm" constraintid="o4413" />
+      </structure>
+      <structure id="o4413" name="culm" />
+      <structure id="o4414" name="blade">
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o4415" name="margin">
+        <character name="relief" value="scabrid" />
+      </structure>
+    </statement>
+    <statement id="1140.txt-4">
+      <text>Lowest involucral bract leafy, longer than subtending spike, shortly sheathed, sheath 1–1.5 mm.</text>
+      <structure id="o4416" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="architecture" value="leafy" />
+        <character name="length" value="longer" constraint="than subtending spike" constraintid="o4417" />
+        <character name="architecture_or_feature" value="sheathed" modifier="shortly" />
+      </structure>
+      <structure id="o4417" name="spike" constraint="subtending" />
+      <structure id="o4418" name="sheath">
+        <character char_type="range_value" name="size" from="1" from_unit="mm" to="1.5" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1140.txt-5">
+      <text>Spikes 2 or 3;</text>
+      <structure id="o4419" name="spike">
+        <character name="count" value="2" />
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+    <statement id="1140.txt-6">
+      <text>terminal spike male, clavate, 8–15 × 3–4 mm, with peduncle 5–9 mm;</text>
+      <structure id="o4420" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="clavate" />
+        <character char_type="range_value" name="length" from="8" from_unit="mm" to="15" to_unit="mm" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="4" to_unit="mm" />
+      </structure>
+      <structure id="o4421" name="peduncle">
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="9" to_unit="mm" />
+      </structure>
+      <relation id="r905" name="with" from="o4420" to="o4421" negation="false" />
+    </statement>
+    <statement id="1140.txt-7">
+      <text>lateral spikes female, orbicular to ovate or oblong, 4–7 × 3–4 mm, densely flowered, with short peduncle 2–4 mm.</text>
+      <structure id="o4422" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character char_type="range_value" name="shape" from="orbicular" to="ovate" />
+        <character char_type="range_value" name="shape" from="orbicular" to="oblong" />
+        <character name="shape" value="orbicular" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="length" from="4" from_unit="mm" to="7" to_unit="mm" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="architecture" value="flowered" modifier="densely" />
+      </structure>
+      <structure id="o4423" name="peduncle">
+        <character name="height_or_length" value="short" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="4" to_unit="mm" />
+      </structure>
+      <relation id="r906" name="with" from="o4422" to="o4423" negation="false" />
+    </statement>
+    <statement id="1140.txt-8">
+      <text>Female glume pale brown, broadly elliptic or obovate-oblong, ca. 2.5 × 1.2 mm, membranous, green costa 1-veined, excurrent into a scabrid mucro.</text>
+      <structure id="o4424" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="shape" value="elliptic" modifier="broadly" />
+        <character name="shape" value="obovate-oblong" />
+        <character name="length" value="2.5" unit="mm" />
+        <character name="width" value="1.2" unit="mm" />
+        <character name="feature" value="membranous" />
+      </structure>
+      <structure id="o4425" name="costa">
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="1-veined" />
+        <character name="architecture" value="excurrent" constraint="into mucro" constraintid="o4426" />
+      </structure>
+      <structure id="o4426" name="mucro">
+        <character name="relief" value="scabrid" />
+      </structure>
+    </statement>
+    <statement id="1140.txt-9">
+      <text>Utricle pale yellowish green, longer than glume, rhombic-elliptic or broadly ovate, obtusely trigonous, ca. 2.5 mm, puberulent, distinctly veined abaxially, faintly veined adaxially, base abruptly contracted into a very short stipe, apex abruptly contracted into a conic beak, orifice 2-toothed.</text>
+      <structure id="o4427" name="utricle">
+        <character name="coloration" value="green" modifier="pale-c-yellowish" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o4428" />
+        <character name="shape" value="rhombic-elliptic" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character name="size" value="2.5" unit="mm" />
+        <character name="external_texture" value="puberulent" />
+        <character name="architecture_or_feature" value="veined" modifier="distinctly;abaxially" />
+        <character name="architecture_or_feature" value="veined" modifier="faintly;adaxially" />
+      </structure>
+      <structure id="o4428" name="glume" />
+      <structure id="o4429" name="base">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into stipe" constraintid="o4430" />
+      </structure>
+      <structure id="o4430" name="stipe">
+        <character name="height_or_length" value="short" modifier="very" />
+      </structure>
+      <structure id="o4431" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o4432" />
+      </structure>
+      <structure id="o4432" name="beak">
+        <character name="shape" value="conic" />
+      </structure>
+      <structure id="o4433" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1140.txt-10">
+      <text>Nutlet pale brown, tightly enveloped, ovate, trigonous, ca. 1.5 mm, apex discoid-annulate;</text>
+      <structure id="o4434" name="nutlet">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+      <structure id="o4435" name="apex">
+        <character name="architecture" value="discoid-annulate" />
+      </structure>
+    </statement>
+    <statement id="1140.txt-11">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1140.txt-12">
+      <text>Fl. and fr. May–Jun.</text>
+      <structure id="o4436" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Meadows on mountain slopes, Pinus forests; 400–500 m. Heilongjiang, Jilin, Liaoning [Korea, Russia (Far East)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

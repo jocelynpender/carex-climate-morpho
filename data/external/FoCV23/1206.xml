@@ -9,7 +9,32 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>隐匿薹草 ( 原变种) yin ni tai cao (yuan bian zhong)</variety_name>
   </TaxonIdentification>
-  <description>Terminal male spike rather short, lower than adjacent female spike, lowermost female spike not basal. Utricles shortly beaked at apex.</description>
+  <description>
+    <statement id="1206.txt-0">
+      <text>Terminal male spike rather short, lower than adjacent female spike, lowermost female spike not basal.</text>
+      <structure id="o6473" name="spike" constraint="terminal male">
+        <character name="height_or_length" value="short" modifier="rather" />
+        <character name="position" value="lower" constraint="than adjacent female spike" constraintid="o6474" />
+      </structure>
+      <structure id="o6474" name="spike" constraint="female">
+        <character name="arrangement" value="adjacent" />
+      </structure>
+      <structure id="o6475" name="spike" constraint="female">
+        <character name="feature" value="lowermost" />
+        <character name="position" value="basal" modifier="not" />
+      </structure>
+      <relation id="r1171" name="may_be_the_same" from="o6474" to="o6475" negation="false" />
+    </statement>
+    <statement id="1206.txt-1">
+      <text>Utricles shortly beaked at apex.</text>
+      <structure id="o6476" name="utricle">
+        <character name="shape" value="beaked" modifier="shortly" constraint="at apex" constraintid="o6477" />
+      </structure>
+      <structure id="o6477" name="apex" />
+    </statement>
+  </description>
   <distribution>● Mountain slopes, forests, gully sides. Anhui (Langya Shan), Jiangsu.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

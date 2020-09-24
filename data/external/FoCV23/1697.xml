@@ -19,7 +19,141 @@
     <species_name>tripartita</species_name>
     <species_authority>Allioni.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome oblique. Culms loosely tufted, 8–20 cm tall, obtusely trigonous, smooth, slightly scabrous above, clothed at base with pale brown sheaths. Leaves shorter than culm, blades linear, 1–2 mm wide, flat or slightly involute. Involucral bracts glumelike. Spikes usually 3, upper 2 gynaecandrous, lower spikes female or gynaecandrous, terminal spike clavate, 0.8–1.2 cm, remaining spikes rather small, elliptic, rarely ovate, 4–8 mm. Female glumes brown, elliptic or ovate, with green midrib. Utricles yellow-brown below, dark brown above, longer than glume, ovate or obovate, plano-convex, ca. 3 × 1 mm, obscurely finely veined, base broadly cuneate, stipitate, apex gradually tapering into a smooth blackish beak, beak deeply cleft abaxially at orifice. Nutlets rather tightly enveloped, ovate-elliptic or elliptic; style base not thickened; stigmas 2. 2n = 64.</description>
+  <description>
+    <statement id="1697.txt-0">
+      <text>Rhizome oblique.</text>
+      <structure id="o20446" name="rhizome">
+        <character name="orientation_or_shape" value="oblique" />
+      </structure>
+    </statement>
+    <statement id="1697.txt-1">
+      <text>Culms loosely tufted, 8–20 cm tall, obtusely trigonous, smooth, slightly scabrous above, clothed at base with pale brown sheaths.</text>
+      <structure id="o20447" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="loosely" />
+        <character char_type="range_value" name="size" from="8" from_unit="cm" to="20" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="external_texture_or_relief" value="scabrous" modifier="slightly" />
+      </structure>
+      <structure id="o20448" name="base" />
+      <relation id="r3822" name="clothed at" from="o20447" to="o20448" negation="false" />
+      <structure id="o20449" name="sheath">
+        <character name="coloration" value="brown" modifier="pale" />
+      </structure>
+      <relation id="r3823" name="with" from="o20448" to="o20449" negation="false" />
+    </statement>
+    <statement id="1697.txt-2">
+      <text>Leaves shorter than culm, blades linear, 1–2 mm wide, flat or slightly involute.</text>
+      <structure id="o20450" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o20451" />
+      </structure>
+      <structure id="o20451" name="culm" />
+      <structure id="o20452" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="2" to_unit="mm" />
+        <character name="shape" value="flat" />
+        <character name="shape" value="involute" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1697.txt-3">
+      <text>Involucral bracts glumelike.</text>
+      <structure id="o20453" name="bract" constraint="involucral">
+        <character name="feature" value="glumelike" />
+      </structure>
+    </statement>
+    <statement id="1697.txt-4">
+      <text>Spikes usually 3, upper 2 gynaecandrous, lower spikes female or gynaecandrous, terminal spike clavate, 0.8–1.2 cm, remaining spikes rather small, elliptic, rarely ovate, 4–8 mm.</text>
+      <structure id="o20454" name="spike">
+        <character name="count" value="3" modifier="usually" />
+        <character name="position" value="upper" />
+        <character name="count" value="2" />
+        <character name="feature" value="gynaecandrous" />
+      </structure>
+      <structure id="o20455" name="spike" constraint="lower">
+        <character name="reproduction" value="female" />
+        <character name="feature" value="gynaecandrous" />
+      </structure>
+      <structure id="o20456" name="spike" constraint="terminal">
+        <character name="shape" value="clavate" />
+        <character char_type="range_value" name="size" from="0.8" from_unit="cm" to="1.2" to_unit="cm" />
+      </structure>
+      <structure id="o20457" name="spike" constraint="remaining">
+        <character name="size" value="small" modifier="rather" />
+        <character name="arrangement_or_shape" value="elliptic" />
+        <character name="shape" value="ovate" modifier="rarely" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="8" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1697.txt-5">
+      <text>Female glumes brown, elliptic or ovate, with green midrib.</text>
+      <structure id="o20458" name="glume" constraint="female">
+        <character name="coloration" value="brown" />
+        <character name="shape" value="elliptic" />
+        <character name="shape" value="ovate" />
+      </structure>
+      <structure id="o20459" name="midrib">
+        <character name="coloration" value="green" />
+      </structure>
+      <relation id="r3824" name="with" from="o20458" to="o20459" negation="false" />
+    </statement>
+    <statement id="1697.txt-6">
+      <text>Utricles yellow-brown below, dark brown above, longer than glume, ovate or obovate, planoconvex, ca. 3 × 1 mm, obscurely finely veined, base broadly cuneate, stipitate, apex gradually tapering into a smooth blackish beak, beak deeply cleft abaxially at orifice.</text>
+      <structure id="o20460" name="utricle">
+        <character name="coloration" value="yellow-brown" />
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o20461" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="obovate" />
+        <character name="shape" value="planoconvex" />
+        <character name="length" value="3" unit="mm" />
+        <character name="width" value="1" unit="mm" />
+        <character name="architecture_or_feature" value="veined" modifier="obscurely finely" />
+      </structure>
+      <structure id="o20461" name="glume" />
+      <structure id="o20462" name="base">
+        <character name="arrangement_or_shape" value="cuneate" modifier="broadly" />
+        <character name="architecture" value="stipitate" />
+      </structure>
+      <structure id="o20463" name="apex">
+        <character name="shape" value="tapering" modifier="gradually" constraint="into beak" constraintid="o20464" />
+      </structure>
+      <structure id="o20464" name="beak">
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="coloration" value="blackish" />
+      </structure>
+      <structure id="o20465" name="beak">
+        <character name="shape" value="cleft" modifier="deeply;abaxially" constraint="at orifice" constraintid="o20466" />
+      </structure>
+      <structure id="o20466" name="orifice" />
+      <relation id="r3825" name="may_be_the_same" from="o20464" to="o20465" negation="false" />
+    </statement>
+    <statement id="1697.txt-7">
+      <text>Nutlets rather tightly enveloped, ovate-elliptic or elliptic;</text>
+      <structure id="o20467" name="nutlet">
+        <character name="feature" value="enveloped" modifier="rather tightly" />
+        <character name="arrangement_or_shape" value="ovate-elliptic" />
+        <character name="arrangement_or_shape" value="elliptic" />
+      </structure>
+    </statement>
+    <statement id="1697.txt-8">
+      <text>style base not thickened;</text>
+      <structure id="o20468" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1697.txt-9">
+      <text>stigmas 2.2n = 64.</text>
+      <structure id="o20469" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+      <structure name="chromosome" id="o20470">
+        <character name="count" value="64" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Alpine frozen soil. S Jilin (Changbai Shan) [Japan, Korea, Russia (Far East, C Siberia); Europe].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

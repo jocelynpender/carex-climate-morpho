@@ -31,7 +31,98 @@
     <variety_name>gynocrates</variety_name>
     <variety_authority>(Worms kjöld ex Drejer) Ostenfeld.</variety_authority>
   </TaxonIdentification>
-  <description>Rhizome slender, creeping. Culms loosely tufted, 20–30 cm tall, smooth, leafy on lower 1/4. Basal leaf sheaths rusty brown, eventually pale brown, split into fibers. Blades shorter than culm, ca. 0.5 mm wide, smooth. Plants dioecious, male plant not seen; inflorescence 1-spiked, terminal; female spike brown, narrowly cylindric, 1.5–1.8 × ca. 0.2 cm. Female glumes rusty brown, broadly ovate, apex acute. Utricles nearly equaling to slightly longer than glume (ripe specimens not seen), 2–2.5 mm, slenderly veined on both surfaces, apex gradually attenuate into a short beak, orifice minutely 2-toothed; stigmas 2.</description>
+  <description>
+    <statement id="1623.txt-0">
+      <text>Rhizome slender, creeping.</text>
+      <structure id="o18753" name="rhizome">
+        <character name="size" value="slender" />
+        <character name="habit" value="creeping" />
+      </structure>
+    </statement>
+    <statement id="1623.txt-1">
+      <text>Culms loosely tufted, 20–30 cm tall, smooth, leafy on lower 1/4.</text>
+      <structure id="o18754" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="loosely" />
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="30" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+        <character name="architecture" value="leafy" modifier="on lower 1/4" />
+      </structure>
+    </statement>
+    <statement id="1623.txt-2">
+      <text>Basal leaf sheaths rusty brown, eventually pale brown, split into fibers.</text>
+      <structure id="o18755" name="sheath" constraint="basal leaf">
+        <character name="coloration" value="brown" modifier="rusty" />
+        <character name="coloration" value="brown" modifier="eventually;pale" />
+      </structure>
+      <structure id="o18756" name="fiber" />
+      <relation id="r3573" name="split into" from="o18755" to="o18756" negation="false" />
+    </statement>
+    <statement id="1623.txt-3">
+      <text>Blades shorter than culm, ca. 0.5 mm wide, smooth.</text>
+      <structure id="o18757" name="blade">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o18758" />
+        <character name="width" value="0.5" unit="mm" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o18758" name="culm" />
+    </statement>
+    <statement id="1623.txt-4">
+      <text>Plants dioecious, male plant not seen;</text>
+      <structure id="o18759" name="whole_organism">
+        <character name="reproduction" value="dioecious" />
+        <character name="life_style" value="plant" />
+        <character name="life_style" value="male plant" />
+      </structure>
+    </statement>
+    <statement id="1623.txt-5">
+      <text>inflorescence 1-spiked, terminal;</text>
+      <structure id="o18761" name="inflorescence">
+        <character name="position" value="terminal" />
+      </structure>
+    </statement>
+    <statement id="1623.txt-6">
+      <text>female spike brown, narrowly cylindric, 1.5–1.8 × ca. 0.2 cm.</text>
+      <structure id="o18762" name="spike" constraint="female">
+        <character name="coloration" value="brown" />
+        <character name="shape" value="cylindric" modifier="narrowly" />
+        <character char_type="range_value" name="length" from="1.5" from_unit="cm" to="1.8" to_unit="cm" />
+        <character name="width" value="0.2" unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1623.txt-7">
+      <text>Female glumes rusty brown, broadly ovate, apex acute.</text>
+      <structure id="o18763" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="rusty" />
+        <character name="shape" value="ovate" modifier="broadly" />
+      </structure>
+      <structure id="o18764" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1623.txt-8">
+      <text>Utricles nearly equaling to slightly longer than glume (ripe specimens not seen ), 2–2.5 mm, slenderly veined on both surfaces, apex gradually attenuate into a short beak, orifice minutely 2-toothed;</text>
+      <structure id="o18765" name="utricle" />
+      <structure id="o18766" name="apex">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into beak" constraintid="o18767" />
+      </structure>
+      <relation id="r3574" name="equaling to slightly         longer than glume -LRB-/-LRB- ripe specimens  seen -RRB-/-RRB- , 2-2.5 mm , slenderly veined   on" from="o18765" to="o18766" negation="true" modifier="nearly" />
+      <structure id="o18767" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o18768" name="orifice">
+        <character name="shape" value="2-toothed" modifier="minutely" />
+      </structure>
+    </statement>
+    <statement id="1623.txt-9">
+      <text>stigmas 2.</text>
+      <structure id="o18769" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Bogs in forests; ca. 900 m. Jilin [Japan, Russia (Far East, E Siberia); North America].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

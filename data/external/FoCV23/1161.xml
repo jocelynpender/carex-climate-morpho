@@ -14,7 +14,36 @@
   <TaxonIdentification Status="SYNONYM">
     <subspecies_name>翅茎翠 丽薹草 chi jing cui li tai cao</subspecies_name>
   </TaxonIdentification>
-  <description>Culms winged. Leaves shorter than culm, 1–1.6 cm wide. Spikes 2–7. Female glumes 3–4.4 mm.</description>
+  <description>
+    <statement id="1161.txt-0">
+      <text>Culms winged.</text>
+      <structure id="o5098" name="culm">
+        <character name="architecture" value="winged" />
+      </structure>
+    </statement>
+    <statement id="1161.txt-1">
+      <text>Leaves shorter than culm, 1–1.6 cm wide.</text>
+      <structure id="o5099" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o5100" />
+        <character char_type="range_value" name="width" from="1" from_unit="cm" to="1.6" to_unit="cm" />
+      </structure>
+      <structure id="o5100" name="culm" />
+    </statement>
+    <statement id="1161.txt-2">
+      <text>Spikes 2–7.</text>
+      <structure id="o5101" name="spike">
+        <character char_type="range_value" name="count" from="2" to="7" />
+      </structure>
+    </statement>
+    <statement id="1161.txt-3">
+      <text>Female glumes 3–4.4 mm.</text>
+      <structure id="o5102" name="glume" constraint="female">
+        <character char_type="range_value" name="size" from="3" from_unit="mm" to="4.4" to_unit="mm" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Dense evergreen broad-leaved forests; 2500–2900 m. W Yunnan (Gengma, Lincang) [Bhutan, NE India, Nepal].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

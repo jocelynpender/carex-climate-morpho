@@ -23,7 +23,168 @@
     <species_name>lolonum</species_name>
     <species_authority>Handel-Mazzetti.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome rather stout, usually elongate. Culms loosely tufted, 10–35 cm tall, rather soft, often flattened, smooth, with brown bladeless basal sheaths, old sheath not splitting into fibers. Basal leaf 1, cauline leaves shorter than culm, blades flat or involute, 1–1.2 mm wide, smooth. Inflorescence 1-spiked, terminal, androgynous (very rarely completely male); male part many flowered, longer than female part; female part 2–4(–6)-flowered. Female glumes dark brown to brown, caducous, oblong-lanceolate, 5–6.5 mm, 3-veined costa of 2 lowest glumes excurrent into a mucro or a short awn up to 7 mm in length, apex acute to slightly obtuse. Utricles suberect first, reflexed at maturity, lanceolate-rhombic, nearly half globose in transverse section, 6–8 mm (including ca. 1.5 mm spongy base), papery, many veined, apex gradually attenuate into a rather long beak, orifice adaxially obliquely truncate. Nutlet shortly cylindric, trigonous, 3.5–4.5 mm, with stipe ca. 1.5 mm and embraced in spongy base of utricle; rachilla soft, flat, slightly longer than nutlet, not exserted; stigmas 3. Fr. May–Aug.</description>
+  <description>
+    <statement id="1599.txt-0">
+      <text>Rhizome rather stout, usually elongate.</text>
+      <structure id="o18194" name="rhizome">
+        <character name="fragility" value="stout" modifier="rather" />
+        <character name="shape" value="elongate" modifier="usually" />
+      </structure>
+    </statement>
+    <statement id="1599.txt-1">
+      <text>Culms loosely tufted, 10–35 cm tall, rather soft, often flattened, smooth, with brown bladeless basal sheaths, old sheath not splitting into fibers.</text>
+      <structure id="o18195" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="loosely" />
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="35" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="external_texture" value="soft" modifier="rather" />
+        <character name="shape" value="flattened" modifier="often" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o18196" name="sheath" constraint="bladeless basal">
+        <character name="coloration" value="brown" />
+      </structure>
+      <relation id="r3472" name="with" from="o18195" to="o18196" negation="false" />
+      <structure id="o18197" name="sheath">
+        <character name="life_stage" value="old" />
+        <character name="behaviour_or_dehiscence" value="splitting" modifier="not" constraint="into fibers" constraintid="o18198" />
+      </structure>
+      <structure id="o18198" name="fiber" />
+    </statement>
+    <statement id="1599.txt-2">
+      <text>Basal leaf 1, cauline leaves shorter than culm, blades flat or involute, 1–1.2 mm wide, smooth.</text>
+      <structure id="o18199" name="leaf" constraint="basal">
+        <character name="count" value="1" />
+      </structure>
+      <structure id="o18200" name="leaf" constraint="cauline">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o18201" />
+      </structure>
+      <structure id="o18201" name="culm" />
+      <structure id="o18202" name="blade">
+        <character name="shape" value="flat" />
+        <character name="shape" value="involute" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="1.2" to_unit="mm" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+    </statement>
+    <statement id="1599.txt-3">
+      <text>Inflorescence 1-spiked, terminal, androgynous (very rarely completely male );</text>
+    </statement>
+    <statement id="1599.txt-4">
+      <text>male part many flowered, longer than female part;</text>
+    </statement>
+    <statement id="1599.txt-5">
+      <text>female part 2–4 (–6 )-flowered.</text>
+      <structure id="o18203" name="inflorescence">
+        <character name="position" value="terminal" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="feature_or_reproduction" value="male" modifier="very rarely completely" in_brackets="true" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="count" value="many" />
+        <character name="architecture" value="flowered" />
+        <character name="length" value="longer than female part" />
+        <character name="reproduction" value="female" />
+        <character name="architecture" value="2-4-6-flowered" />
+      </structure>
+    </statement>
+    <statement id="1599.txt-6">
+      <text>Female glumes dark brown to brown, caducous, oblong-lanceolate, 5–6.5 mm, 3-veined costa of 2 lowest glumes excurrent into a mucro or a short awn up to 7 mm in length, apex acute to slightly obtuse.</text>
+      <structure id="o18204" name="glume" constraint="female">
+        <character char_type="range_value" name="coloration" from="dark brown" to="brown" />
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="coloration" value="brown" />
+        <character name="duration" value="caducous" />
+        <character name="shape" value="oblong-lanceolate" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="6.5" to_unit="mm" />
+        <character name="architecture_or_feature" value="3-veined" constraint="of glumes" constraintid="o18206" />
+        <character char_type="range_value" name="size" from="0" from_unit="mm" to="7" to_unit="mm" modifier="in length" />
+      </structure>
+      <structure id="o18205" name="costa" />
+      <structure id="o18206" name="glume">
+        <character name="count" value="2" />
+        <character name="feature" value="lowest" />
+        <character name="architecture" value="excurrent" constraint="into mucro" constraintid="o18207" />
+      </structure>
+      <structure id="o18207" name="mucro">
+        <character name="type" value="short awn" />
+      </structure>
+      <structure id="o18208" name="awn">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o18209" name="apex">
+        <character char_type="range_value" name="shape" from="acute" to="slightly obtuse" />
+        <character name="shape" value="acute" />
+        <character name="shape" value="obtuse" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1599.txt-7">
+      <text>Utricles suberect first, reflexed at maturity, lanceolate-rhombic, nearly half globose in transverse section, 6–8 mm (including ca .1 .5 mm spongy base ), papery, many veined, apex gradually attenuate into a rather long beak, orifice adaxially obliquely truncate.</text>
+      <structure id="o18210" name="utricle">
+        <character name="orientation" value="suberect" />
+        <character name="orientation" value="reflexed" modifier="at maturity, lanceolate-rhombic, nearly half globose" constraint="in section" constraintid="o18211" />
+        <character char_type="range_value" name="size" from="6" from_unit="mm" to="8" to_unit="mm" />
+        <character name="feature_or_internal_texture" value="papery" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o18211" name="section">
+        <character name="dehiscence_or_orientation" value="transverse" />
+      </structure>
+      <structure id="o18212" name="base" in_brackets="true">
+        <character name="count" value="1.5" in_brackets="true" />
+        <character name="internal_texture" value="spongy" in_brackets="true" />
+      </structure>
+      <relation id="r3473" name="including" from="o18210" to="o18212" negation="false" in_brackets="true" />
+      <structure id="o18213" name="apex">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into beak" constraintid="o18214" />
+      </structure>
+      <structure id="o18214" name="beak">
+        <character name="length" value="long" modifier="rather" />
+      </structure>
+      <structure id="o18215" name="orifice">
+        <character name="shape" value="truncate" modifier="adaxially obliquely" />
+      </structure>
+    </statement>
+    <statement id="1599.txt-8">
+      <text>Nutlet shortly cylindric, trigonous, 3.5–4.5 mm, with stipe ca. 1.5 mm and embraced in spongy base of utricle;</text>
+      <structure id="o18216" name="nutlet">
+        <character name="shape" value="cylindric" modifier="shortly" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="3.5" from_unit="mm" to="4.5" to_unit="mm" />
+      </structure>
+      <structure id="o18217" name="stipe">
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+      <relation id="r3474" name="with" from="o18216" to="o18217" negation="false" />
+      <structure id="o18218" name="base">
+        <character name="internal_texture" value="spongy" />
+      </structure>
+      <relation id="r3475" name="embraced in" from="o18216" to="o18218" negation="false" />
+      <structure id="o18219" name="utricle" />
+      <relation id="r3476" name="part_of" from="o18218" to="o18219" negation="false" />
+    </statement>
+    <statement id="1599.txt-9">
+      <text>rachilla soft, flat, slightly longer than nutlet, not exserted;</text>
+      <structure id="o18220" name="rachilla">
+        <character name="external_texture" value="soft" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="length" value="longer" modifier="slightly" constraint="than nutlet" constraintid="o18221" />
+        <character name="position" value="exserted" modifier="not" />
+      </structure>
+      <structure id="o18221" name="nutlet" />
+    </statement>
+    <statement id="1599.txt-10">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1599.txt-11">
+      <text>Fr. May–Aug.</text>
+      <structure id="o18222" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Forest margins, mountain slopes, bogs, wet places along riverbanks; 2300–4400 m. Gansu, Qinghai, Shaanxi, Xizang, Yunnan [Bhutan, India (Sikkim), Nepal; C Asia].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

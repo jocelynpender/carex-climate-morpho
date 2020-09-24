@@ -31,7 +31,202 @@
     <variety_name>nakaii</variety_name>
     <variety_authority>Hayata.</variety_authority>
   </TaxonIdentification>
-  <description>Rhizome elongate and creeping. Culms loosely tufted, triangular, 7–20 × ca. 0.15 cm, glabrous, striate. Leaves shorter or longer than culms, flat, 1.5–7 mm wide, slightly stiff, glabrous; basal leaf sheaths blackish brown, fibriform. Involucral bracts linear, shorter than inflorescence, without sheaths. Inflorescence spicate, terminal, oblong-cylindric, 3–8 × 1–1.7 cm. Spikes numerous, androgynous, dense and patent, oblong, arising from cladoprophylls with a developed female flower inside, several basal ones sometimes branched; male part of spikelet tiny, 2–3 mm, with 4 or 5 flowers; female part with numerous and dense flowers; male glumes pale yellow or pale brown, lanceolate, 2.5–3 mm, membranous, apex acuminate; female glumes pale yellow or pale brown laterally, ovate, 2–2.5 mm, membranous, with 1 midrib, margins hyaline, apex acute. Utricles pale yellow-brown at maturity, patent, slightly longer than glumes, oblong-lanceolate, bluntly trigonous, 2.5–3 mm, membranous, with 2 raised lateral veins and several fine veins abaxially, nerveless and paler adaxially, base contracted abruptly into a short stipe, apex attenuate into a long beak, orifice obliquely truncate. Nutlet pale yellow at maturity, oblong, bluntly trigonous, ca. 1.5 mm, base attenuate, apex not apiculate; style base slightly thickened; stigmas 3.</description>
+  <description>
+    <statement id="989.txt-0">
+      <text>Rhizome elongate and creeping.</text>
+      <structure id="o45271" name="rhizome">
+        <character name="shape" value="elongate" />
+        <character name="habit" value="creeping" />
+      </structure>
+    </statement>
+    <statement id="989.txt-1">
+      <text>Culms loosely tufted, triangular, 7–20 × ca. 0.15 cm, glabrous, striate.</text>
+      <structure id="o45272" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="loosely" />
+        <character name="shape" value="triangular" />
+        <character char_type="range_value" name="length" from="7" from_unit="cm" to="20" to_unit="cm" />
+        <character name="width" value="0.15" unit="cm" />
+        <character name="external_texture" value="glabrous" />
+        <character name="coloration_or_external_texture_or_relief" value="striate" />
+      </structure>
+    </statement>
+    <statement id="989.txt-2">
+      <text>Leaves shorter or longer than culms, flat, 1.5–7 mm wide, slightly stiff, glabrous;</text>
+      <structure id="o45273" name="leaf">
+        <character name="prominence_or_shape" value="flat" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="7" to_unit="mm" />
+        <character name="external_texture" value="stiff" modifier="slightly" />
+        <character name="external_texture" value="glabrous" />
+      </structure>
+      <structure id="o45274" name="culm" />
+    </statement>
+    <statement id="989.txt-3">
+      <text>basal leaf sheaths blackish brown, fibriform.</text>
+      <structure id="o45275" name="sheath" constraint="basal leaf">
+        <character name="coloration" value="brown" modifier="blackish" />
+        <character name="feature" value="fibriform" />
+      </structure>
+    </statement>
+    <statement id="989.txt-4">
+      <text>Involucral bracts linear, shorter than inflorescence, without sheaths.</text>
+      <structure id="o45276" name="bract" constraint="involucral">
+        <character name="arrangement_or_shape" value="linear" />
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o45277" />
+      </structure>
+      <structure id="o45277" name="inflorescence" />
+      <structure id="o45278" name="sheath" />
+      <relation id="r9293" name="without" from="o45276" to="o45278" negation="false" />
+    </statement>
+    <statement id="989.txt-5">
+      <text>Inflorescence spicate, terminal, oblong-cylindric, 3–8 × 1–1.7 cm.</text>
+      <structure id="o45279" name="inflorescence">
+        <character name="architecture" value="spicate" />
+        <character name="position" value="terminal" />
+        <character name="shape" value="oblong-cylindric" />
+        <character char_type="range_value" name="length" from="3" from_unit="cm" to="8" to_unit="cm" />
+        <character char_type="range_value" name="width" from="1" from_unit="cm" to="1.7" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="989.txt-6">
+      <text>Spikes numerous, androgynous, dense and patent, oblong, arising from cladoprophylls with a developed female flower inside, several basal ones sometimes branched;</text>
+      <structure id="o45281" name="cladoprophyll" />
+      <structure id="o45282" name="inside" constraint="female flower">
+        <character name="development" value="developed" />
+      </structure>
+      <relation id="r9294" name="with" from="o45281" to="o45282" negation="false" />
+    </statement>
+    <statement id="989.txt-7">
+      <text>male part of spikelet tiny, 2–3 mm, with 4 or 5 flowers;</text>
+      <structure id="o45283" name="spikelet">
+        <character name="size" value="tiny" />
+      </structure>
+      <structure id="o45284" name="flower">
+        <character name="count" value="4" />
+        <character name="count" value="5" />
+      </structure>
+      <relation id="r9295" name="with" from="o45280" to="o45284" negation="false" />
+    </statement>
+    <statement id="989.txt-8">
+      <text>female part with numerous and dense flowers;</text>
+      <structure id="o45280" name="spike">
+        <character name="count" value="numerous" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="density" value="dense" />
+        <character name="orientation" value="patent" />
+        <character name="shape" value="oblong" />
+        <character name="orientation" value="arising" constraint="from cladoprophylls" constraintid="o45281" />
+        <character name="count" value="several" />
+        <character name="position" value="basal" />
+        <character name="architecture" value="branched" modifier="sometimes" />
+        <character name="feature_or_reproduction" value="male" constraint="of spikelet" constraintid="o45283" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="reproduction" value="female" constraint="with flowers" constraintid="o45285" />
+      </structure>
+      <structure id="o45285" name="flower">
+        <character name="count" value="numerous" />
+        <character name="density" value="dense" />
+      </structure>
+    </statement>
+    <statement id="989.txt-9">
+      <text>male glumes pale yellow or pale brown, lanceolate, 2.5–3 mm, membranous, apex acuminate;</text>
+      <structure id="o45286" name="glume" constraint="male">
+        <character name="coloration" value="yellow" modifier="pale" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="shape" value="lanceolate" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character name="feature" value="membranous" />
+      </structure>
+      <structure id="o45287" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="989.txt-10">
+      <text>female glumes pale yellow or pale brown laterally, ovate, 2–2.5 mm, membranous, with 1 midrib, margins hyaline, apex acute.</text>
+      <structure id="o45288" name="glume" constraint="female">
+        <character name="coloration" value="yellow" modifier="pale" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+      </structure>
+      <structure id="o45289" name="midrib">
+        <character name="count" value="1" />
+      </structure>
+      <relation id="r9296" name="with" from="o45288" to="o45289" negation="false" />
+      <structure id="o45290" name="margin">
+        <character name="coloration" value="hyaline" />
+      </structure>
+      <structure id="o45291" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="989.txt-11">
+      <text>Utricles pale yellow-brown at maturity, patent, slightly longer than glumes, oblong-lanceolate, bluntly trigonous, 2.5–3 mm, membranous, with 2 raised lateral veins and several fine veins abaxially, nerveless and paler adaxially, base contracted abruptly into a short stipe, apex attenuate into a long beak, orifice obliquely truncate.</text>
+      <structure id="o45292" name="utricle">
+        <character name="coloration" value="yellow-brown" modifier="pale" constraint="at glumes" constraintid="o45293" />
+        <character name="shape" value="oblong-lanceolate" />
+        <character name="shape" value="trigonous" modifier="bluntly" />
+        <character char_type="range_value" name="size" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="size" value="2" modifier="with" />
+        <character name="feature" value="nerveless" />
+        <character name="coloration" value="paler" modifier="adaxially" />
+      </structure>
+      <structure id="o45293" name="glume">
+        <character name="life_stage" value="maturity" />
+        <character name="orientation" value="patent" />
+        <character name="length" value="longer" modifier="slightly" />
+      </structure>
+      <structure id="o45294" name="vein" constraint="lateral" />
+      <relation id="r9297" name="raised" from="o45292" to="o45294" negation="false" />
+      <structure id="o45295" name="vein">
+        <character name="count" value="several" />
+        <character name="width" value="fine" />
+      </structure>
+      <structure id="o45296" name="base">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into stipe" constraintid="o45297" />
+      </structure>
+      <structure id="o45297" name="stipe">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o45298" name="apex">
+        <character name="shape" value="attenuate" constraint="into beak" constraintid="o45299" />
+      </structure>
+      <structure id="o45299" name="beak">
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o45300" name="orifice">
+        <character name="shape" value="truncate" modifier="obliquely" />
+      </structure>
+    </statement>
+    <statement id="989.txt-12">
+      <text>Nutlet pale yellow at maturity, oblong, bluntly trigonous, ca. 1.5 mm, base attenuate, apex not apiculate;</text>
+      <structure id="o45301" name="nutlet">
+        <character name="coloration" value="yellow" modifier="pale" />
+        <character name="maturity , oblong , bluntly trigonous ," value="1.5" unit="mm" />
+      </structure>
+      <structure id="o45302" name="base">
+        <character name="shape" value="attenuate" />
+      </structure>
+      <structure id="o45303" name="apex">
+        <character name="shape" value="apiculate" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="989.txt-13">
+      <text>style base slightly thickened;</text>
+      <structure id="o45304" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="989.txt-14">
+      <text>stigmas 3.</text>
+      <structure id="o45305" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Sandy places. Taiwan [Japan, Philippines, Vietnam].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

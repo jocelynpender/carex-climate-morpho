@@ -13,7 +13,146 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>延长薹草 yan chang tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms ca. 30 cm tall, slender, compressed, scabrous. Leaves shorter than culm, blades linear, 2–4 mm wide, flat, apex acuminate. Involucral bracts leaflike, shorter than inflorescence, sheathless. Spikes 5, disposed in fastigiate inflorescence; terminal spike male, narrowly cylindric, ca. 1.5 cm; lateral spikes usually female, but with several male flowers at apex, cylindric, 2–3 cm, erect, lower 2 slightly distant, densely many flowered, with short peduncles, upper 2 sessile. Female glumes dark brown or dark purple-blackish, oblong-ovate, with green midrib, margins narrowly white hyaline, apex rounded. Utricles longer than glume, oblong-fusiform, compressed, ca. 3.5 mm, densely minutely papillose, few and faintly veined, base attenuate, apex contracted into a short brown beak, orifice truncate. Stigmas 2. Fl. and fr. Jul.</description>
+  <description>
+    <statement id="1528.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o16174" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1528.txt-1">
+      <text>Culms ca. 30 cm tall, slender, compressed, scabrous.</text>
+      <structure id="o16175" name="culm">
+        <character name="size" value="30" unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="shape" value="compressed" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+    </statement>
+    <statement id="1528.txt-2">
+      <text>Leaves shorter than culm, blades linear, 2–4 mm wide, flat, apex acuminate.</text>
+      <structure id="o16176" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o16177" />
+      </structure>
+      <structure id="o16177" name="culm" />
+      <structure id="o16178" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o16179" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1528.txt-3">
+      <text>Involucral bracts leaflike, shorter than inflorescence, sheathless.</text>
+      <structure id="o16180" name="bract" constraint="involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="height_or_length" value="shorter" constraint="than inflorescence" constraintid="o16181" />
+        <character name="feature" value="sheathless" />
+      </structure>
+      <structure id="o16181" name="inflorescence" />
+    </statement>
+    <statement id="1528.txt-4">
+      <text>Spikes 5, disposed in fastigiate inflorescence;</text>
+      <structure id="o16182" name="spike">
+        <character name="count" value="5" />
+        <character name="arrangement" value="disposed" constraint="in inflorescence" constraintid="o16183" />
+      </structure>
+      <structure id="o16183" name="inflorescence">
+        <character name="arrangement" value="fastigiate" />
+      </structure>
+    </statement>
+    <statement id="1528.txt-5">
+      <text>terminal spike male, narrowly cylindric, ca. 1.5 cm;</text>
+      <structure id="o16184" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="shape" value="cylindric" modifier="narrowly" />
+        <character name="size" value="1.5" unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1528.txt-6">
+      <text>lateral spikes usually female, but with several male flowers at apex, cylindric, 2–3 cm, erect, lower 2 slightly distant, densely many flowered, with short peduncles, upper 2 sessile.</text>
+      <structure id="o16185" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" modifier="usually" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="3" to_unit="cm" />
+        <character name="orientation" value="erect" />
+        <character name="position" value="lower" />
+        <character name="count" value="2" />
+        <character name="arrangement" value="distant" modifier="slightly" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+        <character name="position" value="upper" />
+        <character name="count" value="2" />
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+      <structure id="o16186" name="flower" constraint="several male" />
+      <relation id="r3082" name="with" from="o16185" to="o16186" negation="false" />
+      <structure id="o16187" name="apex" />
+      <relation id="r3083" name="at" from="o16186" to="o16187" negation="false" />
+      <structure id="o16188" name="peduncle">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r3084" name="with" from="o16185" to="o16188" negation="false" />
+    </statement>
+    <statement id="1528.txt-7">
+      <text>Female glumes dark brown or dark purple-blackish, oblong-ovate, with green midrib, margins narrowly white hyaline, apex rounded.</text>
+      <structure id="o16189" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="coloration" value="purple-blackish" modifier="dark" />
+        <character name="shape" value="oblong-ovate" />
+      </structure>
+      <structure id="o16190" name="midrib">
+        <character name="coloration" value="green" />
+      </structure>
+      <relation id="r3085" name="with" from="o16189" to="o16190" negation="false" />
+      <structure id="o16191" name="margin">
+        <character name="coloration" value="hyaline" modifier="narrowly;white" />
+      </structure>
+      <structure id="o16192" name="apex">
+        <character name="shape" value="rounded" />
+      </structure>
+    </statement>
+    <statement id="1528.txt-8">
+      <text>Utricles longer than glume, oblong-fusiform, compressed, ca. 3.5 mm, densely minutely papillose, few and faintly veined, base attenuate, apex contracted into a short brown beak, orifice truncate.</text>
+      <structure id="o16193" name="utricle">
+        <character name="length" value="longer" constraint="than glume" constraintid="o16194" />
+        <character name="shape" value="oblong-fusiform" />
+        <character name="shape" value="compressed" />
+        <character name="size" value="3.5" unit="mm" />
+        <character name="relief" value="papillose" modifier="densely minutely" />
+        <character name="count" value="few" />
+        <character name="architecture_or_feature" value="veined" modifier="faintly" />
+      </structure>
+      <structure id="o16194" name="glume" />
+      <structure id="o16195" name="base">
+        <character name="shape" value="attenuate" />
+      </structure>
+      <structure id="o16196" name="apex">
+        <character name="size" value="contracted" constraint="into beak" constraintid="o16197" />
+      </structure>
+      <structure id="o16197" name="beak">
+        <character name="height_or_length" value="short" />
+        <character name="coloration" value="brown" />
+      </structure>
+      <structure id="o16198" name="orifice">
+        <character name="shape" value="truncate" />
+      </structure>
+    </statement>
+    <statement id="1528.txt-9">
+      <text>Stigmas 2.</text>
+    </statement>
+    <statement id="1528.txt-10">
+      <text>Fl. and fr. Jul.</text>
+      <structure id="o16199" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Moist grasslands; ca. 3600 m. NW Yunnan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

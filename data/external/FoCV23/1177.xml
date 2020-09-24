@@ -18,7 +18,200 @@
     <species_name>glandulifolia</species_name>
     <species_authority>Kükenthal.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome short. Culms densely tufted, lateral, 10–15 cm tall, slender, soft, slightly compressed, smooth, clothed with purple-red long sheaths and short blades at lower part. Leaves longer than or equaling culm, flat, blades 6–7 mm wide, smooth, some sheaths bladeless; persistent sheaths dark brown, usually disintegrating into fibers. Involucral bracts sheathlike, without distinct involucral bract blade, only lowermost one with awn-shaped blade. Spikes 4 or 5, remote, basal one radicicolous; terminal spike male, usually not taller or slightly taller than adjacent female spike, linear, ca. 1 cm, 1.5–2 mm thick; lateral spikes 3 or 4, female, linear-cylindric, 1–1.5 cm, loosely 4–6-flowered; peduncles erect, usually exserted from involucral bract sheath; rachis strict. Female glumes purplish brown laterally, green at middle, obovate-oblong, ca. 3.5 mm, membranous, 1-veined, without white hyaline margins, apex emarginate, mucronate. Utricles green, longer than glume, oblong, trigonous, ca. 5 mm, membranous, pubescent, distinctly 2-veined laterally, not thinly veined, base attenuate into a long stipe, apex contracted into a medium-sized to long and conic beak, orifice 2-lobed. Nutlets brown at maturity, oblong, trigonous, ca. 3 mm, base contracted into a long stipe, apex attenuate, beakless; style base slightly thickened; stigmas 3. Fl. and fr. Mar–May.</description>
+  <description>
+    <statement id="1177.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o5488" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1177.txt-1">
+      <text>Culms densely tufted, lateral, 10–15 cm tall, slender, soft, slightly compressed, smooth, clothed with purple-red long sheaths and short blades at lower part.</text>
+      <structure id="o5489" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character name="position" value="lateral" />
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="15" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="external_texture" value="soft" />
+        <character name="shape" value="compressed" modifier="slightly" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o5490" name="blade">
+        <character name="height_or_length" value="short" />
+        <character name="coloration" value="purple-red" />
+        <character name="length" value="long" />
+      </structure>
+      <relation id="r1055" name="clothed with" from="o5489" to="o5490" negation="false" />
+      <structure id="o5491" name="part" constraint="lower" />
+      <relation id="r1056" name="at" from="o5490" to="o5491" negation="false" />
+    </statement>
+    <statement id="1177.txt-2">
+      <text>Leaves longer than or equaling culm, flat, blades 6–7 mm wide, smooth, some sheaths bladeless;</text>
+      <structure id="o5492" name="leaf">
+        <character name="length" value="longer" constraint="than or equaling culm" constraintid="o5493" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o5493" name="culm" />
+      <structure id="o5494" name="blade">
+        <character char_type="range_value" name="width" from="6" from_unit="mm" to="7" to_unit="mm" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o5495" name="sheath" />
+    </statement>
+    <statement id="1177.txt-3">
+      <text>persistent sheaths dark brown, usually disintegrating into fibers.</text>
+      <structure id="o5496" name="sheath" constraint="persistent">
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="dehiscence" value="disintegrating" modifier="usually" constraint="into fibers" constraintid="o5497" />
+      </structure>
+      <structure id="o5497" name="fiber" />
+    </statement>
+    <statement id="1177.txt-4">
+      <text>Involucral bracts sheathlike, without distinct involucral bract blade, only lowermost one with awn-shaped blade.</text>
+      <structure id="o5498" name="bract" constraint="involucral">
+        <character name="feature" value="lowermost" modifier="only" constraint="with blade" constraintid="o5500" />
+      </structure>
+      <structure id="o5499" name="blade" constraint="involucral bract">
+        <character name="fusion" value="distinct" />
+      </structure>
+      <relation id="r1057" name="without" from="o5498" to="o5499" negation="false" />
+      <structure id="o5500" name="blade">
+        <character name="shape" value="awn-shaped" />
+      </structure>
+    </statement>
+    <statement id="1177.txt-5">
+      <text>Spikes 4 or 5, remote, basal one radicicolous;</text>
+      <structure id="o5501" name="spike">
+        <character name="count" value="4" />
+        <character name="count" value="5" />
+        <character name="arrangement" value="remote" />
+        <character name="position" value="basal" />
+        <character name="feature" value="radicicolous" />
+      </structure>
+    </statement>
+    <statement id="1177.txt-6">
+      <text>terminal spike male, usually not taller or slightly taller than adjacent female spike, linear, ca. 1 cm, 1.5–2 mm thick;</text>
+      <structure id="o5502" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character name="size" value="1" unit="cm" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+        <character name="width" value="thick" />
+      </structure>
+      <structure id="o5503" name="spike" constraint="female">
+        <character name="arrangement" value="adjacent" />
+      </structure>
+    </statement>
+    <statement id="1177.txt-7">
+      <text>lateral spikes 3 or 4, female, linear-cylindric, 1–1.5 cm, loosely 4–6-flowered;</text>
+      <structure id="o5504" name="spike" constraint="lateral">
+        <character name="count" value="3" />
+        <character name="count" value="4" />
+        <character name="reproduction" value="female" />
+        <character name="shape" value="linear-cylindric" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="1.5" to_unit="cm" />
+        <character name="architecture" value="4-6-flowered" modifier="loosely" />
+      </structure>
+    </statement>
+    <statement id="1177.txt-8">
+      <text>peduncles erect, usually exserted from involucral bract sheath;</text>
+      <structure id="o5505" name="peduncle">
+        <character name="orientation" value="erect" />
+        <character name="position" value="exserted" modifier="usually" constraint="from bract sheath" constraintid="o5506" />
+      </structure>
+      <structure id="o5506" name="sheath" constraint="involucral bract" />
+    </statement>
+    <statement id="1177.txt-9">
+      <text>rachis strict.</text>
+      <structure id="o5507" name="rachis">
+        <character name="course" value="strict" />
+      </structure>
+    </statement>
+    <statement id="1177.txt-10">
+      <text>Female glumes purplish brown laterally, green at middle, obovate-oblong, ca. 3.5 mm, membranous, 1-veined, without white hyaline margins, apex emarginate, mucronate.</text>
+      <structure id="o5508" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="laterally;purplish" />
+        <character name="coloration" value="green" modifier="at middle" />
+        <character name="shape" value="obovate-oblong" />
+        <character name="size" value="3.5" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o5509" name="margin">
+        <character name="coloration" value="hyaline" modifier="white" />
+      </structure>
+      <relation id="r1058" name="without" from="o5508" to="o5509" negation="false" />
+      <structure id="o5510" name="apex">
+        <character name="shape" value="emarginate" />
+        <character name="shape" value="mucronate" />
+      </structure>
+    </statement>
+    <statement id="1177.txt-11">
+      <text>Utricles green, longer than glume, oblong, trigonous, ca. 5 mm, membranous, pubescent, distinctly 2-veined laterally, not thinly veined, base attenuate into a long stipe, apex contracted into a medium-sized to long and conic beak, orifice 2-lobed.</text>
+      <structure id="o5511" name="utricle">
+        <character name="coloration" value="green" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o5512" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="5" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="architecture_or_feature" value="2-veined" modifier="distinctly;laterally" />
+        <character name="architecture_or_feature" value="veined" modifier="not thinly" />
+      </structure>
+      <structure id="o5512" name="glume" />
+      <structure id="o5513" name="base">
+        <character name="shape" value="attenuate" constraint="into stipe" constraintid="o5514" />
+      </structure>
+      <structure id="o5514" name="stipe">
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o5515" name="apex">
+        <character name="size" value="contracted" constraint="into medium-sized to beak" constraintid="o5516" />
+      </structure>
+      <structure id="o5516" name="beak">
+        <character name="length" value="long" />
+        <character name="shape" value="conic" />
+      </structure>
+      <structure id="o5517" name="orifice">
+        <character name="shape" value="2-lobed" />
+      </structure>
+    </statement>
+    <statement id="1177.txt-12">
+      <text>Nutlets brown at maturity, oblong, trigonous, ca. 3 mm, base contracted into a long stipe, apex attenuate, beakless;</text>
+      <structure id="o5518" name="nutlet">
+        <character name="coloration" value="brown" />
+        <character name="maturity , oblong , trigonous ," value="3" unit="mm" />
+      </structure>
+      <structure id="o5519" name="base">
+        <character name="size" value="contracted" constraint="into stipe" constraintid="o5520" />
+      </structure>
+      <structure id="o5520" name="stipe">
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o5521" name="apex">
+        <character name="shape" value="attenuate" />
+        <character name="architecture" value="beakless" />
+      </structure>
+    </statement>
+    <statement id="1177.txt-13">
+      <text>style base slightly thickened;</text>
+      <structure id="o5522" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1177.txt-14">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1177.txt-15">
+      <text>Fl. and fr. Mar–May.</text>
+      <structure id="o5523" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Lax forests on mountain slopes; 1500–2700 m. W Hubei, S Shaanxi (Qin Ling).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

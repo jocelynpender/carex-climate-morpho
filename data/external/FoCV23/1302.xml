@@ -14,7 +14,37 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>简序薹草 jian xu tai cao</variety_name>
   </TaxonIdentification>
-  <description>Spikes 10 or more, 1 to few borne in an involucral bract sheath, racemosely disposed. Utricles with rather long beak, obliquely patent at maturity. Fl. and fr. May.</description>
+  <description>
+    <statement id="1302.txt-0">
+      <text>Spikes 10 or more, 1 to few borne in an involucral bract sheath, racemosely disposed.</text>
+      <structure id="o9237" name="spike">
+        <character name="count" value="10" />
+        <character name="count" value="more" />
+        <character name="count" value="1" constraint="to borne" constraintid="o9238" />
+        <character name="arrangement" value="disposed" modifier="racemosely" />
+      </structure>
+      <structure id="o9238" name="borne">
+        <character name="count" value="few" />
+      </structure>
+      <structure id="o9239" name="sheath" constraint="involucral bract" />
+      <relation id="r1701" name="in" from="o9238" to="o9239" negation="false" />
+    </statement>
+    <statement id="1302.txt-1">
+      <text>Utricles with rather long beak, obliquely patent at maturity.</text>
+      <structure id="o9241" name="beak">
+        <character name="length" value="long" modifier="rather" />
+      </structure>
+      <relation id="r1702" name="with" from="o9240" to="o9241" negation="false" />
+    </statement>
+    <statement id="1302.txt-2">
+      <text>Fl. and fr. May.</text>
+      <structure id="o9240" name="utricle">
+        <character name="orientation" value="patent" modifier="obliquely;at maturity" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Ravines; 1300–2700 m. C Yunnan (Kunming).</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

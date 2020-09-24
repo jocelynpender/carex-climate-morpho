@@ -13,7 +13,147 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>川滇薹草 chuan dian tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, 60–90 cm tall, acutely trigonous, scabrous above, clothed at base with purple-brown sheaths often disintegrating into fibers. Leaves shorter than culm, blades linear, 2–4 mm wide, flat, margins scabrous, apex acuminate. Involucral bracts leaflike, lowest one longer than inflorescence. Spikes 4 or 5, approximate; terminal spike gynaecandrous, oblong-cylindric, 1.5–2 cm; lateral spikes female, oblong-cylindric, 2–2.5 cm; peduncle slender, lowest one 2–4 cm, rarely up to 15 cm, becoming shorter upward. Female glumes dark purple, lanceolate, 3.5–4.5 mm, 1-veined, apex acuminate. Utricles yellowish green, shorter or longer than glume, elliptic-lanceolate, trigonous, slightly inflated, 3.5–4 mm, veined, apex gradually narrowed to a short beak, orifice purple, emarginate. Nutlets loosely enveloped, oblong, trigonous, ca. 2 mm; stigmas 3. Fl. and fr. Jul–Aug.</description>
+  <description>
+    <statement id="1068.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o2163" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1068.txt-1">
+      <text>Culms tufted, 60–90 cm tall, acutely trigonous, scabrous above, clothed at base with purple-brown sheaths often disintegrating into fibers.</text>
+      <structure id="o2164" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="60" from_unit="cm" to="90" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o2165" name="base" />
+      <relation id="r457" name="clothed at" from="o2164" to="o2165" negation="false" />
+      <structure id="o2166" name="sheath">
+        <character name="coloration" value="purple-brown" />
+        <character name="dehiscence" value="disintegrating" modifier="often" constraint="into fibers" constraintid="o2167" />
+      </structure>
+      <relation id="r458" name="with" from="o2165" to="o2166" negation="false" />
+      <structure id="o2167" name="fiber" />
+    </statement>
+    <statement id="1068.txt-2">
+      <text>Leaves shorter than culm, blades linear, 2–4 mm wide, flat, margins scabrous, apex acuminate.</text>
+      <structure id="o2168" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o2169" />
+      </structure>
+      <structure id="o2169" name="culm" />
+      <structure id="o2170" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o2171" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o2172" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1068.txt-3">
+      <text>Involucral bracts leaflike, lowest one longer than inflorescence.</text>
+      <structure id="o2173" name="bract" constraint="involucral">
+        <character name="architecture" value="leaflike" />
+        <character name="feature" value="lowest" />
+        <character name="length" value="longer" constraint="than inflorescence" constraintid="o2174" />
+      </structure>
+      <structure id="o2174" name="inflorescence" />
+    </statement>
+    <statement id="1068.txt-4">
+      <text>Spikes 4 or 5, approximate;</text>
+      <structure id="o2175" name="spike">
+        <character name="count" value="4" />
+        <character name="count" value="5" />
+        <character name="feature" value="approximate" />
+      </structure>
+    </statement>
+    <statement id="1068.txt-5">
+      <text>terminal spike gynaecandrous, oblong-cylindric, 1.5–2 cm;</text>
+      <structure id="o2176" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+        <character name="shape" value="oblong-cylindric" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="cm" to="2" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1068.txt-6">
+      <text>lateral spikes female, oblong-cylindric, 2–2.5 cm;</text>
+      <structure id="o2177" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="oblong-cylindric" />
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="2.5" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1068.txt-7">
+      <text>peduncle slender, lowest one 2–4 cm, rarely up to 15 cm, becoming shorter upward.</text>
+      <structure id="o2178" name="peduncle">
+        <character name="size" value="slender" />
+      </structure>
+      <structure id="o2179" name="lowest">
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="4" to_unit="cm" />
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="15" to_unit="cm" modifier="rarely" />
+        <character name="height_or_length" value="shorter" modifier="becoming" />
+      </structure>
+    </statement>
+    <statement id="1068.txt-8">
+      <text>Female glumes dark purple, lanceolate, 3.5–4.5 mm, 1-veined, apex acuminate.</text>
+      <structure id="o2180" name="glume" constraint="female">
+        <character name="coloration" value="purple" modifier="dark" />
+        <character name="shape" value="lanceolate" />
+        <character char_type="range_value" name="size" from="3.5" from_unit="mm" to="4.5" to_unit="mm" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+      <structure id="o2181" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1068.txt-9">
+      <text>Utricles yellowish green, shorter or longer than glume, elliptic-lanceolate, trigonous, slightly inflated, 3.5–4 mm, veined, apex gradually narrowed to a short beak, orifice purple, emarginate.</text>
+      <structure id="o2182" name="utricle">
+        <character name="coloration" value="green" modifier="yellowish" />
+        <character name="shape" value="elliptic-lanceolate" />
+        <character name="shape" value="trigonous" />
+        <character name="shape" value="inflated" modifier="slightly" />
+        <character char_type="range_value" name="size" from="3.5" from_unit="mm" to="4" to_unit="mm" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o2183" name="glume" />
+      <structure id="o2184" name="apex" />
+      <structure id="o2185" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r459" name="narrowed to" from="o2184" to="o2185" negation="false" modifier="gradually" />
+      <structure id="o2186" name="orifice">
+        <character name="coloration" value="purple" />
+        <character name="shape" value="emarginate" />
+      </structure>
+    </statement>
+    <statement id="1068.txt-10">
+      <text>Nutlets loosely enveloped, oblong, trigonous, ca. 2 mm;</text>
+      <structure id="o2187" name="nutlet">
+        <character name="feature" value="enveloped" modifier="loosely" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1068.txt-11">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1068.txt-12">
+      <text>Fl. and fr. Jul–Aug.</text>
+      <structure id="o2188" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Thickets, grasslands, rocky slopes; 2900–4100 m. Sichuan, Xizang, Yunnan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

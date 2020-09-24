@@ -13,7 +13,177 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>近头状 薹草 jin tou zhuang tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome slender, woody. Culms loosely tufted, compressed trigonous, 20–30 cm tall; sub-basal sheaths of flowering culms with blades; blades of vegetative culms narrowly linear, 40–50 cm × 3–5 mm, herbaceous, glabrous, acuminate. Inflorescence with spikes at nodes above middle; lowermost bract with sheath nearly equaling blade, upper branches with shorter bracts and sheaths. Spikes androgynous, single or binate at node, subcapitate, 5–7 mm, male part ± equaling female part, with denser male flowers and 4–7 female flowers; peduncles 6–8 cm, well exserted. Male glumes reddish brown, ca. 1.5 mm, 1-veined; female glumes ovate-oblong, ca. 2.5 mm, laterally reddish punctate, 3-veined, apex rounded. Utricles brown, broadly elliptic, ca. 4 mm, many veined, apex attenuate into an erect beak 1.5–2 mm, orifice 2-toothed. Nutlet tightly enveloped, ovoid, trigonous, faces concave, ca. 2 mm; style base slightly thickened; stigmas 3. Fl. and fr. Apr–May.</description>
+  <description>
+    <statement id="1225.txt-0">
+      <text>Rhizome slender, woody.</text>
+      <structure id="o6943" name="rhizome">
+        <character name="size" value="slender" />
+        <character name="internal_texture" value="woody" />
+      </structure>
+    </statement>
+    <statement id="1225.txt-1">
+      <text>Culms loosely tufted, compressed trigonous, 20–30 cm tall;</text>
+      <structure id="o6944" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="loosely" />
+        <character name="shape" value="compressed trigonous" />
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="30" to_unit="cm" />
+        <character name="height" value="tall" />
+      </structure>
+    </statement>
+    <statement id="1225.txt-2">
+      <text>subbasal sheaths of flowering culms with blades;</text>
+      <structure id="o6945" name="sheath" constraint="subbasal" />
+      <structure id="o6946" name="culm" constraint="flowering" />
+      <relation id="r1238" name="part_of" from="o6945" to="o6946" negation="false" />
+      <structure id="o6947" name="blade" />
+      <relation id="r1239" name="with" from="o6945" to="o6947" negation="false" />
+    </statement>
+    <statement id="1225.txt-3">
+      <text>blades of vegetative culms narrowly linear, 40–50 cm × 3–5 mm, herbaceous, glabrous, acuminate.</text>
+      <structure id="o6948" name="blade">
+        <character name="arrangement_or_shape" value="linear" modifier="narrowly" />
+        <character char_type="range_value" name="length" from="40" from_unit="cm" to="50" to_unit="cm" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="5" to_unit="mm" />
+        <character name="external_texture_or_feature_or_internal_texture" value="herbaceous" />
+        <character name="external_texture" value="glabrous" />
+        <character name="shape" value="acuminate" />
+      </structure>
+      <structure id="o6949" name="culm">
+        <character name="reproduction" value="vegetative" />
+      </structure>
+      <relation id="r1240" name="part_of" from="o6948" to="o6949" negation="false" />
+    </statement>
+    <statement id="1225.txt-4">
+      <text>Inflorescence with spikes at nodes above middle;</text>
+      <structure id="o6950" name="inflorescence" />
+      <structure id="o6951" name="spike" />
+      <relation id="r1241" name="with" from="o6950" to="o6951" negation="false" />
+      <structure id="o6952" name="node" constraint="above middle" />
+      <relation id="r1242" name="at" from="o6951" to="o6952" negation="false" />
+    </statement>
+    <statement id="1225.txt-5">
+      <text>lowermost bract with sheath nearly equaling blade, upper branches with shorter bracts and sheaths.</text>
+      <structure id="o6953" name="bract">
+        <character name="feature" value="lowermost" />
+      </structure>
+      <structure id="o6954" name="sheath" />
+      <relation id="r1243" name="with" from="o6953" to="o6954" negation="false" />
+      <structure id="o6955" name="blade" />
+      <structure id="o6956" name="branch" constraint="upper" />
+      <relation id="r1244" name="equaling" from="o6953" to="o6955" negation="false" modifier="nearly" />
+      <relation id="r1245" name="equaling" from="o6953" to="o6956" negation="false" modifier="nearly" />
+      <structure id="o6957" name="bract">
+        <character name="height_or_length" value="shorter" />
+      </structure>
+      <structure id="o6958" name="sheath">
+        <character name="height_or_length" value="shorter" />
+      </structure>
+      <relation id="r1246" name="with" from="o6955" to="o6957" negation="false" />
+      <relation id="r1247" name="with" from="o6955" to="o6958" negation="false" />
+      <relation id="r1248" name="with" from="o6956" to="o6957" negation="false" />
+      <relation id="r1249" name="with" from="o6956" to="o6958" negation="false" />
+      <relation id="r1250" name="may_be_the_same" from="o6954" to="o6958" negation="false" />
+      <relation id="r1251" name="may_be_the_same" from="o6953" to="o6957" negation="false" />
+    </statement>
+    <statement id="1225.txt-6">
+      <text>Spikes androgynous, single or binate at node, subcapitate, 5–7 mm, male part ± equaling female part, with denser male flowers and 4–7 female flowers;</text>
+      <structure id="o6959" name="spike">
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="count" value="single" />
+        <character name="count" value="binate" constraint="at node" constraintid="o6960" />
+        <character name="architecture" value="subcapitate" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="7" to_unit="mm" />
+        <character name="feature_or_reproduction" value="male" />
+      </structure>
+      <structure id="o6960" name="node" />
+      <structure id="o6961" name="part" constraint="female" />
+      <relation id="r1252" name="equaling" from="o6959" to="o6961" negation="false" modifier="more or less" />
+      <structure id="o6962" name="flower" constraint="male">
+        <character name="feature" value="denser" />
+      </structure>
+      <structure id="o6963" name="flower" constraint="female">
+        <character char_type="range_value" name="count" from="4" to="7" />
+        <character name="feature" value="denser" />
+      </structure>
+      <relation id="r1253" name="with" from="o6959" to="o6962" negation="false" />
+      <relation id="r1254" name="with" from="o6959" to="o6963" negation="false" />
+    </statement>
+    <statement id="1225.txt-7">
+      <text>peduncles 6–8 cm, well exserted.</text>
+      <structure id="o6964" name="peduncle">
+        <character char_type="range_value" name="size" from="6" from_unit="cm" to="8" to_unit="cm" />
+        <character name="position" value="exserted" modifier="well" />
+      </structure>
+    </statement>
+    <statement id="1225.txt-8">
+      <text>Male glumes reddish brown, ca. 1.5 mm, 1-veined;</text>
+      <structure id="o6965" name="glume" constraint="male">
+        <character name="coloration" value="brown" modifier="reddish" />
+        <character name="size" value="1.5" unit="mm" />
+        <character name="architecture_or_feature" value="1-veined" />
+      </structure>
+    </statement>
+    <statement id="1225.txt-9">
+      <text>female glumes ovate-oblong, ca. 2.5 mm, laterally reddish punctate, 3-veined, apex rounded.</text>
+      <structure id="o6966" name="glume" constraint="female">
+        <character name="shape" value="ovate-oblong" />
+        <character name="size" value="2.5" unit="mm" />
+        <character name="coloration" value="reddish" modifier="laterally" />
+        <character name="pattern" value="punctate" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o6967" name="apex">
+        <character name="shape" value="rounded" />
+      </structure>
+    </statement>
+    <statement id="1225.txt-10">
+      <text>Utricles brown, broadly elliptic, ca. 4 mm, many veined, apex attenuate into an erect beak 1.5–2 mm, orifice 2-toothed.</text>
+      <structure id="o6968" name="utricle">
+        <character name="coloration" value="brown" />
+        <character name="arrangement_or_shape" value="elliptic" modifier="broadly" />
+        <character name="size" value="4" unit="mm" />
+        <character name="count" value="many" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o6969" name="apex">
+        <character name="shape" value="attenuate" constraint="into beak" constraintid="o6970" />
+      </structure>
+      <structure id="o6970" name="beak">
+        <character name="orientation" value="erect" />
+        <character char_type="range_value" name="size" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+      </structure>
+      <structure id="o6971" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1225.txt-11">
+      <text>Nutlet tightly enveloped, ovoid, trigonous, faces concave, ca. 2 mm;</text>
+      <structure id="o6972" name="nutlet">
+        <character name="feature" value="enveloped" modifier="tightly" />
+        <character name="shape" value="ovoid" />
+        <character name="shape" value="trigonous" />
+        <character name="shape" value="concave" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1225.txt-12">
+      <text>style base slightly thickened;</text>
+      <structure id="o6973" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1225.txt-13">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1225.txt-14">
+      <text>Fl. and fr. Apr–May.</text>
+      <structure id="o6974" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Forests. Zhejiang.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

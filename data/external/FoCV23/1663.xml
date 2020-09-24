@@ -35,7 +35,37 @@
     <subspecies_name>rigescens</subspecies_name>
     <subspecies_authority>(Franchet) S. Yun Liang.</subspecies_authority>
   </TaxonIdentification>
-  <description>Leaf blades flat. Inflorescence white. Female glumes usually longer than or equaling utricles, broadly white hyaline on margins and at apex, apex subobtuse.</description>
+  <description>
+    <statement id="1663.txt-0">
+      <text>Leaf blades flat.</text>
+      <structure id="o19731" name="blade" constraint="leaf">
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+    </statement>
+    <statement id="1663.txt-1">
+      <text>Inflorescence white.</text>
+      <structure id="o19732" name="inflorescence">
+        <character name="coloration" value="white" />
+      </structure>
+    </statement>
+    <statement id="1663.txt-2">
+      <text>Female glumes usually longer than or equaling utricles, broadly white hyaline on margins and at apex, apex subobtuse.</text>
+      <structure id="o19733" name="glume" constraint="female">
+        <character name="length" value="longer" modifier="usually" constraint="than or equaling utricles" constraintid="o19734" />
+        <character name="coloration" value="hyaline" modifier="broadly;white" constraint="on margins" constraintid="o19735" />
+      </structure>
+      <structure id="o19734" name="utricle" />
+      <structure id="o19735" name="margin" />
+      <structure id="o19736" name="apex" />
+      <relation id="r3724" name="at" from="o19733" to="o19736" negation="false" />
+      <structure id="o19737" name="apex">
+        <character name="shape" value="subobtuse" />
+      </structure>
+      <relation id="r3725" name="may_be_the_same" from="o19736" to="o19737" negation="false" />
+    </statement>
+  </description>
   <distribution>Slopes, semidry regions, meadows. Gansu, Hebei, Henan, Jilin, Liaoning, Nei Mongol, Ningxia, Qinghai, Shaanxi, Shandong, Shanxi [Russia (Far East)].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

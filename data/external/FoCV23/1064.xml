@@ -30,7 +30,35 @@
     <variety_name>sinensis</variety_name>
     <variety_authority>Kükenthal.</variety_authority>
   </TaxonIdentification>
-  <description>Female glumes lanceolate, apex long acuminate. Utricles shortly stipitate, apex abruptly contracted into a very short beak or beakless, orifice emarginate.</description>
+  <description>
+    <statement id="1064.txt-0">
+      <text>Female glumes lanceolate, apex long acuminate.</text>
+      <structure id="o2130" name="glume" constraint="female">
+        <character name="shape" value="lanceolate" />
+      </structure>
+      <structure id="o2131" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1064.txt-1">
+      <text>Utricles shortly stipitate, apex abruptly contracted into a very short beak or beakless, orifice emarginate.</text>
+      <structure id="o2132" name="utricle">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o2133" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o2134" />
+        <character name="architecture" value="beakless" />
+      </structure>
+      <structure id="o2134" name="beak">
+        <character name="height_or_length" value="short" modifier="very" />
+      </structure>
+      <structure id="o2135" name="orifice">
+        <character name="shape" value="emarginate" />
+      </structure>
+    </statement>
+  </description>
   <distribution>Alpine meadows; 3000–4800 m. W Sichuan, Taiwan, SE Xizang, NW Yunnan [India (Sikkim), Nepal].</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

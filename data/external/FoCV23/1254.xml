@@ -13,7 +13,157 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>双柱薹草 shuang zhu tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short, stoloniferous. Culms tufted, 8–13 cm tall, rigid, clothed at base with brown bladeless sheaths. Leaves shorter than culm, blades linear, 3–4 mm wide, flat, stiff. Involucral bracts reduced to shortly bladed, sheathless. Spikes 4 or 5, lowest one subradical; upper 1–3 spikes male; remaining spikes female, ovate, 1–1.5 × 0.6–0.7 cm, densely many flowered, with short peduncles. Female glumes brown, oblong, 4–6 mm, glabrous, margins white hyaline, green 1-veined costa excurrent into a mucro at apex. Utricles pale below, brown above, equaling glume, oblong, slightly compressed, papery, glabrous, faintly veined, base contracted and shortly stipitate, margins hispid, apex gradually attenuate into an obliquely truncate long beak, 2-toothed. Nutlets suborbicular, ca. 2 mm; style puberulent, base not thickened; stigmas 2. Fl. and fr. Jul–Sep.</description>
+  <description>
+    <statement id="1254.txt-0">
+      <text>Rhizome short, stoloniferous.</text>
+      <structure id="o7793" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="architecture" value="stoloniferous" />
+      </structure>
+    </statement>
+    <statement id="1254.txt-1">
+      <text>Culms tufted, 8–13 cm tall, rigid, clothed at base with brown bladeless sheaths.</text>
+      <structure id="o7794" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="8" from_unit="cm" to="13" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="internal_texture" value="rigid" />
+      </structure>
+      <structure id="o7795" name="base" />
+      <relation id="r1430" name="clothed at" from="o7794" to="o7795" negation="false" />
+      <structure id="o7796" name="sheath" constraint="bladeless">
+        <character name="coloration" value="brown" />
+      </structure>
+      <relation id="r1431" name="with" from="o7795" to="o7796" negation="false" />
+    </statement>
+    <statement id="1254.txt-2">
+      <text>Leaves shorter than culm, blades linear, 3–4 mm wide, flat, stiff.</text>
+      <structure id="o7797" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o7798" />
+      </structure>
+      <structure id="o7798" name="culm" />
+      <structure id="o7799" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="width" from="3" from_unit="mm" to="4" to_unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="external_texture" value="stiff" />
+      </structure>
+    </statement>
+    <statement id="1254.txt-3">
+      <text>Involucral bracts reduced to shortly bladed, sheathless.</text>
+      <structure id="o7800" name="bract" constraint="involucral">
+        <character name="size" value="reduced" />
+        <character name="feature" value="sheathless" />
+      </structure>
+    </statement>
+    <statement id="1254.txt-4">
+      <text>Spikes 4 or 5, lowest one subradical;</text>
+      <structure id="o7801" name="spike">
+        <character name="count" value="4" />
+        <character name="count" value="5" />
+        <character name="feature" value="lowest" />
+        <character name="feature" value="subradical" />
+      </structure>
+    </statement>
+    <statement id="1254.txt-5">
+      <text>upper 1–3 spikes male;</text>
+      <structure id="o7802" name="spike">
+        <character name="position" value="upper" />
+        <character char_type="range_value" name="count" from="1" to="3" />
+        <character name="feature_or_reproduction" value="male" />
+      </structure>
+    </statement>
+    <statement id="1254.txt-6">
+      <text>remaining spikes female, ovate, 1–1.5 × 0.6–0.7 cm, densely many flowered, with short peduncles.</text>
+      <structure id="o7803" name="spike" constraint="remaining">
+        <character name="reproduction" value="female" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="length" from="1" from_unit="cm" to="1.5" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.6" from_unit="cm" to="0.7" to_unit="cm" />
+        <character name="count" value="many" modifier="densely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+      <structure id="o7804" name="peduncle">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <relation id="r1432" name="with" from="o7803" to="o7804" negation="false" />
+    </statement>
+    <statement id="1254.txt-7">
+      <text>Female glumes brown, oblong, 4–6 mm, glabrous, margins white hyaline, green 1-veined costa excurrent into a mucro at apex.</text>
+      <structure id="o7805" name="glume" constraint="female">
+        <character name="coloration" value="brown" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="4" from_unit="mm" to="6" to_unit="mm" />
+        <character name="external_texture" value="glabrous" />
+      </structure>
+      <structure id="o7806" name="margin">
+        <character name="coloration" value="hyaline" modifier="white" />
+        <character name="coloration" value="green" />
+        <character name="architecture_or_feature" value="1-veined" />
+        <character name="architecture" value="excurrent" constraint="into mucro" constraintid="o7808" />
+      </structure>
+      <structure id="o7807" name="costa" />
+      <structure id="o7808" name="mucro" />
+      <structure id="o7809" name="apex" />
+      <relation id="r1433" name="at" from="o7808" to="o7809" negation="false" />
+    </statement>
+    <statement id="1254.txt-8">
+      <text>Utricles pale below, brown above, equaling glume, oblong, slightly compressed, papery, glabrous, faintly veined, base contracted and shortly stipitate, margins hispid, apex gradually attenuate into an obliquely truncate long beak, 2-toothed.</text>
+      <structure id="o7810" name="utricle">
+        <character name="coloration" value="pale" constraint="below glume" constraintid="o7811" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="compressed" modifier="slightly" />
+        <character name="feature_or_internal_texture" value="papery" />
+        <character name="external_texture" value="glabrous" />
+        <character name="architecture_or_feature" value="veined" modifier="faintly" />
+      </structure>
+      <structure id="o7811" name="glume">
+        <character name="coloration" value="brown" />
+      </structure>
+      <structure id="o7812" name="base">
+        <character name="size" value="contracted" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+      <structure id="o7813" name="margin">
+        <character name="external_texture" value="hispid" />
+      </structure>
+      <structure id="o7814" name="apex">
+        <character name="shape" value="attenuate" modifier="gradually" constraint="into beak" constraintid="o7815" />
+        <character name="shape" value="2-toothed" />
+      </structure>
+      <structure id="o7815" name="beak">
+        <character name="shape" value="truncate" modifier="obliquely" />
+        <character name="length" value="long" />
+      </structure>
+    </statement>
+    <statement id="1254.txt-9">
+      <text>Nutlets suborbicular, ca. 2 mm;</text>
+      <structure id="o7816" name="nutlet">
+        <character name="shape" value="suborbicular" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1254.txt-10">
+      <text>style puberulent, base not thickened;</text>
+      <structure id="o7817" name="style">
+        <character name="external_texture" value="puberulent" />
+      </structure>
+      <structure id="o7818" name="base">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1254.txt-11">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1254.txt-12">
+      <text>Fl. and fr. Jul–Sep.</text>
+      <structure id="o7819" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Alpine thickets and meadows; 3900–4100 m. Sichuan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -14,7 +14,23 @@
   <TaxonIdentification Status="SYNONYM">
     <variety_name>小藏薹草 xiao zang tai cao</variety_name>
   </TaxonIdentification>
-  <description>Leaf blades ca. 5 mm wide only. Lateral spikes 2–3 cm.</description>
+  <description>
+    <statement id="1404.txt-0">
+      <text>Leaf blades ca. 5 mm wide only.</text>
+      <structure id="o12347" name="blade" constraint="leaf">
+        <character name="size" value="5" unit="mm" />
+        <character name="character" value="width" modifier="only" />
+      </structure>
+    </statement>
+    <statement id="1404.txt-1">
+      <text>Lateral spikes 2–3 cm.</text>
+      <structure id="o12348" name="spike" constraint="lateral">
+        <character char_type="range_value" name="size" from="2" from_unit="cm" to="3" to_unit="cm" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Shaanxi.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

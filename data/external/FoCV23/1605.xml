@@ -13,7 +13,107 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>坚喙薹草 jian hui tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, 15–40 cm tall, slender, smooth, with leaves at base. Leaves shorter than culm, blades convolute, threadlike, rather hard, slightly smooth. Inflorescence 1-spiked, terminal, androgynous; male part linear, distinct; female part as long as male part, slightly loosely many flowered. Female glumes ovate-lanceolate, apex mucronate. Utricles olive-green, longer than glume, obliquely patent at maturity, ovate-elliptic, trigonous, ca. 3 mm, membranous, glabrous, base contracted, apex tapering to a beak ca. 1 mm, orifice 2-toothed. Nutlet brown-red, small, ovate, trigonous; stigmas 3.</description>
+  <description>
+    <statement id="1605.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o18380" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1605.txt-1">
+      <text>Culms tufted, 15–40 cm tall, slender, smooth, with leaves at base.</text>
+      <structure id="o18381" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="15" from_unit="cm" to="40" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o18382" name="leaf" />
+      <relation id="r3518" name="with" from="o18381" to="o18382" negation="false" />
+      <structure id="o18383" name="base" />
+      <relation id="r3519" name="at" from="o18382" to="o18383" negation="false" />
+    </statement>
+    <statement id="1605.txt-2">
+      <text>Leaves shorter than culm, blades convolute, threadlike, rather hard, slightly smooth.</text>
+      <structure id="o18384" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o18385" />
+      </structure>
+      <structure id="o18385" name="culm" />
+      <structure id="o18386" name="blade">
+        <character name="arrangement_or_shape" value="convolute" />
+        <character name="shape" value="threadlike" />
+        <character name="external_texture" value="hard" modifier="rather" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="1605.txt-3">
+      <text>Inflorescence 1-spiked, terminal, androgynous;</text>
+    </statement>
+    <statement id="1605.txt-4">
+      <text>male part linear, distinct;</text>
+    </statement>
+    <statement id="1605.txt-5">
+      <text>female part as long as male part, slightly loosely many flowered.</text>
+      <structure id="o18387" name="inflorescence">
+        <character name="position" value="terminal" />
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character name="fusion" value="distinct" />
+        <character name="reproduction" value="female" constraint="as-long-as part" constraintid="o18388" />
+        <character name="count" value="many" modifier="slightly loosely" />
+        <character name="architecture" value="flowered" />
+      </structure>
+      <structure id="o18388" name="part" constraint="male" />
+    </statement>
+    <statement id="1605.txt-6">
+      <text>Female glumes ovate-lanceolate, apex mucronate.</text>
+      <structure id="o18389" name="glume" constraint="female">
+        <character name="shape" value="ovate-lanceolate" />
+      </structure>
+      <structure id="o18390" name="apex">
+        <character name="shape" value="mucronate" />
+      </structure>
+    </statement>
+    <statement id="1605.txt-7">
+      <text>Utricles olive-green, longer than glume, obliquely patent at maturity, ovate-elliptic, trigonous, ca. 3 mm, membranous, glabrous, base contracted, apex tapering to a beak ca. 1 mm, orifice 2-toothed.</text>
+      <structure id="o18391" name="utricle">
+        <character name="coloration" value="olive-green" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o18392" />
+        <character name="orientation" value="patent" modifier="obliquely;at maturity, ovate-elliptic, trigonous, 3 mm, membranous, glabrous" />
+      </structure>
+      <structure id="o18392" name="glume" />
+      <structure id="o18393" name="base">
+        <character name="size" value="contracted" />
+      </structure>
+      <structure id="o18394" name="apex" />
+      <structure id="o18395" name="beak">
+        <character name="size" value="1" unit="mm" />
+      </structure>
+      <relation id="r3520" name="tapering to" from="o18394" to="o18395" negation="false" />
+      <structure id="o18396" name="orifice">
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1605.txt-8">
+      <text>Nutlet brown-red, small, ovate, trigonous;</text>
+      <structure id="o18397" name="nutlet">
+        <character name="coloration" value="brown-red" />
+        <character name="size" value="small" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="trigonous" />
+      </structure>
+    </statement>
+    <statement id="1605.txt-9">
+      <text>stigmas 3.</text>
+      <structure id="o18398" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Yunnan.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

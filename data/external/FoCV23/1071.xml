@@ -18,7 +18,144 @@
     <species_name>wenchenii</species_name>
     <species_authority>F. T. Wang &amp; Tang.</species_authority>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, 25–60 cm tall, trigonous, slender, smooth, clothed at base with purple-brown sheaths. Leaves shorter than culm, blades 2–3 mm wide, soft. Involucral bracts setaceous, sheathless. Spikes 2 or 3, approximate; terminal spike gynaecandrous, ovate or oblong, 5–10 mm; peduncles slender, lowest one 5–12 mm. Female glumes dark purple-red, ovate or ovate-lanceolate, 2–2.2 mm, 3-veined, margins narrowly white hyaline, apex acute or obtuse. Utricles yellowish green or pale brown, longer than glume, oblanceolate or narrowly elliptic, trigonous, 3–3.5 × ca. 1 mm, not inflated, veined, apex abruptly contracted into a short beak, orifice dark purple, 2-toothed. Nutlets oblong, trigonous, ca. 2 mm; style long, base not thickened; stigmas 3. Fl. and fr. Jul–Aug.</description>
+  <description>
+    <statement id="1071.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o2279" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1071.txt-1">
+      <text>Culms tufted, 25–60 cm tall, trigonous, slender, smooth, clothed at base with purple-brown sheaths.</text>
+      <structure id="o2280" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="25" from_unit="cm" to="60" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="slender" />
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o2281" name="base" />
+      <relation id="r477" name="clothed at" from="o2280" to="o2281" negation="false" />
+      <structure id="o2282" name="sheath">
+        <character name="coloration" value="purple-brown" />
+      </structure>
+      <relation id="r478" name="with" from="o2281" to="o2282" negation="false" />
+    </statement>
+    <statement id="1071.txt-2">
+      <text>Leaves shorter than culm, blades 2–3 mm wide, soft.</text>
+      <structure id="o2283" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o2284" />
+      </structure>
+      <structure id="o2284" name="culm" />
+      <structure id="o2285" name="blade">
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+        <character name="external_texture" value="soft" />
+      </structure>
+    </statement>
+    <statement id="1071.txt-3">
+      <text>Involucral bracts setaceous, sheathless.</text>
+      <structure id="o2286" name="bract" constraint="involucral">
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="feature" value="sheathless" />
+      </structure>
+    </statement>
+    <statement id="1071.txt-4">
+      <text>Spikes 2 or 3, approximate;</text>
+      <structure id="o2287" name="spike">
+        <character name="count" value="2" />
+        <character name="count" value="3" />
+        <character name="feature" value="approximate" />
+      </structure>
+    </statement>
+    <statement id="1071.txt-5">
+      <text>terminal spike gynaecandrous, ovate or oblong, 5–10 mm;</text>
+      <structure id="o2288" name="spike" constraint="terminal">
+        <character name="feature" value="gynaecandrous" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="10" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1071.txt-6">
+      <text>peduncles slender, lowest one 5–12 mm.</text>
+      <structure id="o2289" name="peduncle">
+        <character name="size" value="slender" />
+      </structure>
+      <structure id="o2290" name="lowest">
+        <character char_type="range_value" name="size" from="5" from_unit="mm" to="12" to_unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1071.txt-7">
+      <text>Female glumes dark purple-red, ovate or ovate-lanceolate, 2–2.2 mm, 3-veined, margins narrowly white hyaline, apex acute or obtuse.</text>
+      <structure id="o2291" name="glume" constraint="female">
+        <character name="coloration" value="purple-red" modifier="dark" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character char_type="range_value" name="size" from="2" from_unit="mm" to="2.2" to_unit="mm" />
+        <character name="architecture_or_feature" value="3-veined" />
+      </structure>
+      <structure id="o2292" name="margin">
+        <character name="coloration" value="hyaline" modifier="narrowly;white" />
+      </structure>
+      <structure id="o2293" name="apex">
+        <character name="shape" value="acute" />
+        <character name="shape" value="obtuse" />
+      </structure>
+    </statement>
+    <statement id="1071.txt-8">
+      <text>Utricles yellowish green or pale brown, longer than glume, oblanceolate or narrowly elliptic, trigonous, 3–3.5 × ca. 1 mm, not inflated, veined, apex abruptly contracted into a short beak, orifice dark purple, 2-toothed.</text>
+      <structure id="o2294" name="utricle">
+        <character name="coloration" value="green" modifier="yellowish" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="length" value="longer" constraint="than glume" constraintid="o2295" />
+        <character name="shape" value="oblanceolate" />
+        <character name="shape" value="elliptic" modifier="narrowly" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="length" from="3" from_unit="mm" to="3.5" to_unit="mm" />
+        <character name="width" value="1" unit="mm" />
+        <character name="shape" value="inflated" modifier="not" />
+        <character name="architecture_or_feature" value="veined" />
+      </structure>
+      <structure id="o2295" name="glume" />
+      <structure id="o2296" name="apex">
+        <character name="size" value="contracted" modifier="abruptly" constraint="into beak" constraintid="o2297" />
+      </structure>
+      <structure id="o2297" name="beak">
+        <character name="height_or_length" value="short" />
+      </structure>
+      <structure id="o2298" name="orifice">
+        <character name="coloration" value="purple" modifier="dark" />
+        <character name="shape" value="2-toothed" />
+      </structure>
+    </statement>
+    <statement id="1071.txt-9">
+      <text>Nutlets oblong, trigonous, ca. 2 mm;</text>
+      <structure id="o2299" name="nutlet">
+        <character name="shape" value="oblong" />
+        <character name="shape" value="trigonous" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="1071.txt-10">
+      <text>style long, base not thickened;</text>
+      <structure id="o2300" name="style" />
+      <structure id="o2301" name="base">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1071.txt-11">
+      <text>stigmas 3.</text>
+    </statement>
+    <statement id="1071.txt-12">
+      <text>Fl. and fr. Jul–Aug.</text>
+      <structure id="o2302" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Forests, wet places. Gansu, Hebei, Qinghai, Shanxi.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

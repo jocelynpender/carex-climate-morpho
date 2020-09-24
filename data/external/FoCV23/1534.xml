@@ -13,7 +13,144 @@
   <TaxonIdentification Status="SYNONYM">
     <species_name>玛曲薹草 ma qu tai cao</species_name>
   </TaxonIdentification>
-  <description>Rhizome short. Culms tufted, 20–35 cm tall, ca. 1 mm thick, slender, acutely trigonous, slightly scabrous, clothed at base with blackish brown sheaths. Leaves shorter than culm, blades linear, ca. 1.2 mm wide, flat, margins scabrous, apex acuminate. Basal involucral bract setaceous, brown, sheathless. Spikes 2 or 3; terminal spike male, red-brown, oblong, 1–1.2 cm; lateral spikes female, blackish brown, broadly ovate, ca. 7 mm, sessile. Female glumes blackish brown, broadly ovate, 3-veined medially, apex acute. Utricles light brown, subequaling glume, broadly elliptic, ca. 3 mm, glabrous, base shortly stipitate, apex ± beakless, truncate and entire. Nutlets enveloped, broadly obovate or obovate, biconvex, ca. 1.5 mm, base shortly stipitate; style base not thickened; stigmas 2. Fr. Jul.</description>
+  <description>
+    <statement id="1534.txt-0">
+      <text>Rhizome short.</text>
+      <structure id="o16388" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="1534.txt-1">
+      <text>Culms tufted, 20–35 cm tall, ca. 1 mm thick, slender, acutely trigonous, slightly scabrous, clothed at base with blackish brown sheaths.</text>
+      <structure id="o16389" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="35" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="1" unit="mm" />
+        <character name="width" value="thick" />
+        <character name="size" value="slender" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="external_texture_or_relief" value="scabrous" modifier="slightly" />
+      </structure>
+      <structure id="o16390" name="base" />
+      <relation id="r3120" name="clothed at" from="o16389" to="o16390" negation="false" />
+      <structure id="o16391" name="sheath">
+        <character name="coloration" value="brown" modifier="blackish" />
+      </structure>
+      <relation id="r3121" name="with" from="o16390" to="o16391" negation="false" />
+    </statement>
+    <statement id="1534.txt-2">
+      <text>Leaves shorter than culm, blades linear, ca. 1.2 mm wide, flat, margins scabrous, apex acuminate.</text>
+      <structure id="o16392" name="leaf">
+        <character name="height_or_length" value="shorter" constraint="than culm" constraintid="o16393" />
+      </structure>
+      <structure id="o16393" name="culm" />
+      <structure id="o16394" name="blade">
+        <character name="arrangement_or_shape" value="linear" />
+        <character name="width" value="1.2" unit="mm" />
+        <character name="prominence_or_shape" value="flat" />
+      </structure>
+      <structure id="o16395" name="margin">
+        <character name="external_texture_or_relief" value="scabrous" />
+      </structure>
+      <structure id="o16396" name="apex">
+        <character name="shape" value="acuminate" />
+      </structure>
+    </statement>
+    <statement id="1534.txt-3">
+      <text>Basal involucral bract setaceous, brown, sheathless.</text>
+      <structure id="o16397" name="bract" constraint="basal involucral">
+        <character name="feature_or_shape" value="setaceous" />
+        <character name="coloration" value="brown" />
+        <character name="feature" value="sheathless" />
+      </structure>
+    </statement>
+    <statement id="1534.txt-4">
+      <text>Spikes 2 or 3;</text>
+      <structure id="o16398" name="spike">
+        <character name="count" value="2" />
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+    <statement id="1534.txt-5">
+      <text>terminal spike male, red-brown, oblong, 1–1.2 cm;</text>
+      <structure id="o16399" name="spike" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="coloration" value="red-brown" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="size" from="1" from_unit="cm" to="1.2" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="1534.txt-6">
+      <text>lateral spikes female, blackish brown, broadly ovate, ca. 7 mm, sessile.</text>
+      <structure id="o16400" name="spike" constraint="lateral">
+        <character name="reproduction" value="female" />
+        <character name="coloration" value="brown" modifier="blackish" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="size" value="7" unit="mm" />
+        <character name="architecture_or_feature" value="sessile" />
+      </structure>
+    </statement>
+    <statement id="1534.txt-7">
+      <text>Female glumes blackish brown, broadly ovate, 3-veined medially, apex acute.</text>
+      <structure id="o16401" name="glume" constraint="female">
+        <character name="coloration" value="brown" modifier="blackish" />
+        <character name="shape" value="ovate" modifier="broadly" />
+        <character name="architecture_or_feature" value="3-veined" modifier="medially" />
+      </structure>
+      <structure id="o16402" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="1534.txt-8">
+      <text>Utricles light brown, subequaling glume, broadly elliptic, ca. 3 mm, glabrous, base shortly stipitate, apex ± beakless, truncate and entire.</text>
+      <structure id="o16403" name="utricle">
+        <character name="coloration" value="brown" modifier="light" />
+      </structure>
+      <structure id="o16404" name="glume">
+        <character name="arrangement_or_shape" value="elliptic" modifier="broadly" />
+        <character name="size" value="3" unit="mm" />
+        <character name="external_texture" value="glabrous" />
+        <character name="shape" value="truncate" />
+        <character name="shape" value="entire" />
+      </structure>
+      <structure id="o16405" name="apex">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+        <character name="architecture" value="beakless" modifier="more or less" />
+      </structure>
+      <relation id="r3122" name="base" from="o16404" to="o16405" negation="false" />
+    </statement>
+    <statement id="1534.txt-9">
+      <text>Nutlets enveloped, broadly obovate or obovate, biconvex, ca. 1.5 mm, base shortly stipitate;</text>
+      <structure id="o16406" name="nutlet">
+        <character name="feature" value="enveloped" />
+        <character name="shape" value="obovate" modifier="broadly" />
+        <character name="shape" value="obovate" />
+        <character name="shape" value="biconvex" />
+        <character name="size" value="1.5" unit="mm" />
+      </structure>
+      <structure id="o16407" name="base">
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="1534.txt-10">
+      <text>style base not thickened;</text>
+      <structure id="o16408" name="base" constraint="style">
+        <character name="width" value="thickened" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="1534.txt-11">
+      <text>stigmas 2.</text>
+    </statement>
+    <statement id="1534.txt-12">
+      <text>Fr. Jul.</text>
+      <structure id="o16409" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
   <distribution>● Alpine marshes; ca. 3500 m. Gansu.</distribution>
 </treatment>
 
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->
