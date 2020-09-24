@@ -7,7 +7,7 @@ source_url("https://raw.githubusercontent.com/jocelynpender/fna-query/master/R/s
 # For now, develop some utilitarian code in this repo
 source('query.R')
 
-carex_species_checklist <- ask_query_titles('[[Category:Carex]][[Taxon rank::species]]', 'data/carex_species.csv')
+carex_species_checklist <- ask_query_titles('[[Category:Carex]][[Taxon rank::species]]', '../data/carex_species.csv')
 
 carex_species_data <- list()
 for (carex_species in carex_species_checklist) {
@@ -18,4 +18,4 @@ for (carex_species in carex_species_checklist) {
 
 carex_species_data_frame <- bind_rows(carex_species_data)
 rownames(carex_species_data_frame) <- carex_species_checklist
-write.csv(carex_species_data_frame, file = "data/carex_species_data_frame.csv")
+write.csv(carex_species_data_frame, file = "../data/carex_species_data_frame.csv")

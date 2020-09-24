@@ -3,7 +3,7 @@ library(tidyverse)
 # TODO: figure out how to exclude data inherited from Carex
 
 # import the data frame as a tibble
-carex_species_data_frame <- read_csv(file = "data/carex_species_data_frame.csv", col_names = TRUE,
+carex_species_data_frame <- read_csv(file = "../data/carex_species_data_frame.csv", col_names = TRUE,
                                      col_types = NULL)
 carex_species_data_frame <- rename(carex_species_data_frame, species_name = X1)
 
@@ -66,3 +66,4 @@ fruit_width <- collapse_extract_properties("fruit_width", fruit_width_props)
 
 # TODO: use boxplots to identify outliers and manually verify data.
 # TODO: Compare the dataset derived here with my MSc dataset
+# TODO: Simplify this script
