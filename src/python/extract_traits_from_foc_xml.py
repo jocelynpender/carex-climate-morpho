@@ -32,10 +32,7 @@ def extract_structure_names(structure_all):
     structures_data_frame = pd.DataFrame([], columns=["property_name", "from", "to"])
     for structure_element in structure_all:
         structure = structure_element.attrib['name']
-        print(structure)
         characters_data_frame = extract_characters(structure_element, structure)
-        # print(characters_data_frame)
-        # print(characters_data_frame.empty)
         if characters_data_frame.empty is False:
             structures_data_frame = structures_data_frame.append(characters_data_frame, ignore_index=True)
     return structures_data_frame
@@ -45,10 +42,7 @@ def extract_characters(structure_element, structure):
     character_all = structure_element.findall('character')
     characters_list = []
     if character_all is not None:
-        print("I am here")
         for index, character_element in enumerate(character_all):
-            print(character_element.attrib)
-            print(index)
             property_name = structure + '_' + character_element.attrib['name']
             property_from = extract_from_to_attribs(character_element, 'from')
             property_to = extract_from_to_attribs(character_element, 'to')
@@ -63,10 +57,3 @@ def extract_from_to_attribs(character_element, from_or_to):
         if from_or_to + '_unit' in character_element.attrib:
             from_or_to_character_element = from_or_to_character_element + character_element.attrib[from_or_to + '_unit']
         return from_or_to_character_element
-
-
-file_name = "../../data/external/FoCV23/1001.xml"
-parsed_xml = parse(file_name)
-morphology = extract_morphology(parsed_xml)
-all_structures_data_frame = extract_structures(morphology)
-all_structures_data_frame.to_csv("first_run_property_data.csv")
