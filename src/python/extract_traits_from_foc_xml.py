@@ -1,5 +1,4 @@
 from lxml import etree
-import glob
 import pandas as pd
 
 
@@ -20,37 +19,34 @@ def extract_morphology(parsed_xml):
 
 
 def extract_structures(morphology):
-    rows = []
     all_statements = morphology.getchildren()
-    for index, statement in enumerate(all_statements):
-        # print(index)
+    structures_data_frame = pd.DataFrame([], columns=["property_name", "from", "to"])
+    for statement in all_statements:
         structure_all = statement.findall('structure')
-        # text_verbatim = statement.find('text').text
-        # print("* " + text_verbatim + " *")
-        rows.append(extract_structure_names(structure_all))
-        #print(extract_structure_names(structure_all))
-    #out_df = pd.DataFrame(rows)
-    #print(rows)
-    return rows
+        characters_data_frame = extract_structure_names(structure_all)
+        structures_data_frame = structures_data_frame.append(characters_data_frame, ignore_index=True)
+    return structures_data_frame
 
 
 def extract_structure_names(structure_all):
     for structure_element in structure_all:
         structure = structure_element.attrib['name']
-        character_all_data = extract_characters(structure_element, structure)
-        return(character_all_data)
+        characters_data_frame = extract_characters(structure_element, structure)
+        print(characters_data_frame)
+        return characters_data_frame
 
 
 def extract_characters(structure_element, structure):
     character_all = structure_element.findall('character')
-    character_all_data = []
-    for character_element in character_all:
+    characters_list = []
+    for index, character_element in enumerate(character_all):
         property_name = structure + '_' + character_element.attrib['name']
         property_from = extract_from_to_attribs(character_element, 'from')
         property_to = extract_from_to_attribs(character_element, 'to')
-        print([property_name, property_from, property_to])
-        character_all_data.append([property_name, property_from, property_to])
-    return character_all_data
+        characters_list.append([property_name, property_from, property_to])
+    characters_data_frame = pd.DataFrame(characters_list, columns=["property_name", "from", "to"])
+    # character_all_data = pd.Series([property_name, property_from, property_to]).transpose()
+    return characters_data_frame
 
 
 def extract_from_to_attribs(character_element, from_or_to):
@@ -61,4 +57,4 @@ def extract_from_to_attribs(character_element, from_or_to):
 file_name = "../../data/external/FoCV23/1001.xml"
 parsed_xml = parse(file_name)
 morphology = extract_morphology(parsed_xml)
-rows = extract_structures(morphology)
+structures_data_frame = extract_structures(morphology)
