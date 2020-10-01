@@ -27,32 +27,20 @@ for file_name in glob.glob(directory):
         all_structures_data_frame = all_structures_data_frame.assign(file_name=file_name)
         carex_traits_data_frame = carex_traits_data_frame.append(all_structures_data_frame)
 
-coded_property_name_df = pd.DataFrame({'coded_property_name': ['maximum_plant_height'] * 5
+# sum is used to unnest the reps, https://stackoverflow.com/questions/11860476/how-to-unnest-a-nested-list
+coded_property_name_df = pd.DataFrame({'coded_property_name': sum([['maximum_plant_height'] * 5,
+                                                                   ['maximum_leaf_width'] * 4,
+                                                                   ['maximum_inflorescence_length'] * 3,
+                                                                   ['maximum_inflorescence_width']], [])
                                        , 'property_name': ['culm_size', 'culm_height', 'culm_atypical_size',
-                                                           'culm_height_or_length', 'culm_length']})
+                                                           'culm_height_or_length', 'culm_length', 'blade_size',
+                                                           'blade_width', 'leaf_size', 'leaf_width',
+                                                           'inflorescence_height_or_length', 'inflorescence_length',
+                                                           'inflorescence_size', 'inflorescence_width']})
 
 coded_carex_traits_collapsed = collapse_traits(carex_traits_data_frame, coded_property_name_df)
 
-carex_traits_data_frame.to_csv("../../data/processed/carex_traits_data_frame.csv")
-coded_carex_traits_collapsed.to_csv("coded_carex_traits_collapsed.csv")
+# carex_traits_data_frame.to_csv("../../data/processed/foc/carex_traits_data_frame.csv")
+coded_carex_traits_collapsed.to_csv("../../data/foc/processed/coded_carex_traits_collapsed.csv")
 
-# Maximum plant height
-# culm_size, culm_height, culm_atypical_size, culm_height_or_length, culm_length
-
-# - Maximum leaf width
-# blade_size, blade_width, leaf_size, leaf_width
-
-# - Maximum inflorescence length
-# inflorescence_height_or_length, inflorescence_length, inflorescence_size
-
-# - Maximum inflorescence width
-# inflorescence_width, inflorescence_size?? (but already used in inflorescence length)
-
-# - Inflorescence complexity (max branch order)
-
-# - Maximum fruit length
-# Nothing??
-
-# - Maximum fruit width
-# Nothing??
 
