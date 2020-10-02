@@ -30,18 +30,18 @@ for file_name in glob.glob(directory):
 # sum is used to unnest the reps, https://stackoverflow.com/questions/11860476/how-to-unnest-a-nested-list
 collapse_property_coding = pd.DataFrame({'coded_property_name': sum([['maximum_plant_height'] * 5,
                                                                    ['maximum_leaf_width'] * 4,
-                                                                   ['maximum_inflorescence_length'] * 3,
-                                                                   ['maximum_inflorescence_width']], [])
+                                                                   ['maximum_inflorescence_length'] * 4,
+                                                                   ['maximum_inflorescence_width'] * 2], [])
                                        , 'property_name': ['culm_size', 'culm_height', 'culm_atypical_size',
                                                            'culm_height_or_length', 'culm_length', 'blade_size',
                                                            'blade_width', 'leaf_size', 'leaf_width',
-                                                           'inflorescence_height_or_length', 'inflorescence_length',
-                                                           'inflorescence_size', 'inflorescence_width']})
+                                                           'inflorescence_height_or_length', 'inflorescence_length', 'spike_length',
+                                                           'inflorescence_size', 'inflorescence_width', 'spike_width']})
 
 carex_traits_collapsed = collapse_traits(carex_traits_data_frame, collapse_property_coding)
 
 # trim semi-colons and nan
 carex_traits_collapsed.collapsed_data = carex_traits_collapsed.collapsed_data.apply(lambda x: x.replace(";nan", "").strip(";nan"))
 
-carex_traits_data_frame.to_csv("../../data/processed/foc/carex_traits_data_frame.csv")
-carex_traits_collapsed.to_csv("../../data/processed/foc/carex_traits_collapsed.csv")
+carex_traits_data_frame.to_csv("../../data/processed/foc/carex_traits_data_frame_spikes.csv")
+carex_traits_collapsed.to_csv("../../data/processed/foc/carex_traits_collapsed_spikes.csv")
