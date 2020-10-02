@@ -1,6 +1,6 @@
 
 
-def collapse_traits(carex_data_frame, coded_property_name_df, sep_from_to = ","):
+def collapse_traits(carex_data_frame, coded_property_name_df, sep_from_to = ",", sep_property_data=";"):
     """
     # Add column called 'coded_property_name' and create a function to group data together based on the coding
 
@@ -25,14 +25,11 @@ def collapse_traits(carex_data_frame, coded_property_name_df, sep_from_to = ",")
         lambda x: sep_from_to.join(x.dropna().astype(str)), axis=1) # collapse "from" and "to" using pandas groupby and
     # apply with join
 
-    coded_carex_collapsed = coded_carex_data_frame.groupby(['coded_property_name', 'species_name'])\
-        .apply(sum).reset_index() # paste all the data together per species and per new property name, including
-    # multiples, if they exist.
-    # TODO: how it is being pasted?
-
-    coded_carex_collapsed = coded_carex_collapsed[coded_carex_collapsed.level_2 == 'collapsed_data'] # filter the data
+    coded_carex_data_frame = coded_carex_data_frame[['coded_property_name', 'species_name', 'collapsed_data']] # filter the data
     # frame to only the collapsed data values
-    coded_carex_collapsed = coded_carex_collapsed.rename(columns={0: 'value'}).drop(['level_2'], axis=1) # drop everything
-    # except for the values we want
+
+    coded_carex_collapsed = coded_carex_data_frame.groupby(['species_name', 'coded_property_name'])\
+        ['collapsed_data'].apply(sep_property_data.join).reset_index() # paste all the data together per species and per new
+    # property name, including multiples, if they exist.
 
     return coded_carex_collapsed
