@@ -40,7 +40,8 @@ collapse_property_coding = pd.DataFrame({'coded_property_name': sum([['maximum_p
 
 carex_traits_collapsed = collapse_traits(carex_traits_data_frame, collapse_property_coding)
 
+# trim semi-colons and nan
+carex_traits_collapsed.collapsed_data = carex_traits_collapsed.collapsed_data.apply(lambda x: x.replace(";nan", "").strip(";nan"))
+
 # carex_traits_data_frame.to_csv("../../data/processed/foc/carex_traits_data_frame.csv")
 carex_traits_collapsed.to_csv("../../data/processed/foc/carex_traits_collapsed.csv")
-
-

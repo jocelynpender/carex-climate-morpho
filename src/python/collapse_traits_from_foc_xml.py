@@ -1,6 +1,6 @@
 
 
-def collapse_traits(carex_data_frame, coded_property_name_df, sep_from_to = ",", sep_property_data=";"):
+def collapse_traits(carex_data_frame, coded_property_name_df, sep_property_data=";", include_from = False, sep_from_to = ","):
     """
     # Add column called 'coded_property_name' and create a function to group data together based on the coding
 
@@ -11,6 +11,7 @@ def collapse_traits(carex_data_frame, coded_property_name_df, sep_from_to = ",",
     aggregate properties and property values by concatenating with join (values pasted together with a sep_value)
     so that properties are "re-coded" into new propery bins
 
+    :param include_from:
     :param sep_property_data:
     :param sep_from_to:
     :param carex_data_frame: Pandas dataframe containing columns "property_name", "from", "to", "species_name"
@@ -23,9 +24,12 @@ def collapse_traits(carex_data_frame, coded_property_name_df, sep_from_to = ",",
         join(coded_property_name_df.set_index('property_name')) # add coded_property name as a column in a new data
     # frame
 
-    coded_carex_data_frame['collapsed_data'] = coded_carex_data_frame.loc[:, ['from', 'to']].apply(
-        lambda x: sep_from_to.join(x.dropna().astype(str)), axis=1) # collapse "from" and "to" using pandas groupby and
-    # apply with join
+    if include_from:
+        coded_carex_data_frame['collapsed_data'] = coded_carex_data_frame.loc[:, ['from', 'to']].apply(
+            lambda x: sep_from_to.join(x.dropna().astype(str)), axis=1) # collapse "from" and "to" using pandas groupby and
+        # apply with join
+    else:
+        coded_carex_data_frame['collapsed_data'] = coded_carex_data_frame.to.astype(str)
 
     coded_carex_data_frame = coded_carex_data_frame[['coded_property_name', 'species_name', 'collapsed_data']] #
     # filter the data frame to only the collapsed data values
