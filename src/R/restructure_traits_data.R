@@ -1,16 +1,21 @@
 library(tidyverse)
+# solution to package issues with tidverse:
+# for tidyselect and tidyr:
+# install.packages("tidyr", type = "source")
+# restart r session to load the changes
 
 # TODO: figure out how to exclude data inherited from Carex
 
 # import the data frame as a tibble
-carex_species_data_frame <- read_csv(file = "../data/carex_species_data_frame.csv", col_names = TRUE,
+carex_species_data_frame <- read_csv(file = "../../data/interim/carex_species_data_frame.csv", col_names = TRUE,
                                      col_types = NULL)
 carex_species_data_frame <- rename(carex_species_data_frame, species_name = X1)
+# watch out for this error, a result of package mismatches: https://stackoverflow.com/questions/47755534/dplyr-rename-error-new-name-old-name-must-be-a-symbol-or-a-string-not-fo
 
 collapse_extract_properties <- function(variable_name, list_property_names) {
   # extract and collapse data corresponding to multiple properties
   variable_tibble <- carex_species_data_frame %>% unite(variable_name, 
-                                                        all_of(list_property_names), 
+                                                        tidyselect::all_of(list_property_names), 
                                                         na.rm = TRUE, remove = FALSE
   ) %>% select(species_name, variable_name)
   return(variable_tibble)
