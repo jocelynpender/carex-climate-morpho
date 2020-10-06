@@ -13,16 +13,16 @@ def parse(file_name):
     return parsed_xml
 
 
-def extract_morphology(parsed_xml):
-    morphology = parsed_xml.find('description')
+def extract_morphology(parsed_xml, morphology_node='description'):  # = description type="morphology"
+    morphology = parsed_xml.find(morphology_node)
     return morphology
 
 
-def extract_structures(morphology):
+def extract_structures(morphology, structure_node='structure'): # biological_entity type="structure"
     all_statements = morphology.getchildren()
     all_structures_data_frame = pd.DataFrame([], columns=["property_name", "from", "to"])
     for statement in all_statements:
-        structure_all = statement.findall('structure')
+        structure_all = statement.findall(structure_node)
         characters_data_frame = extract_structure_names(structure_all)
         all_structures_data_frame = all_structures_data_frame.append(characters_data_frame, ignore_index=True)
     return all_structures_data_frame
