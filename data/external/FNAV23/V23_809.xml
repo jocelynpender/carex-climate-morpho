@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">437</other_info_on_meta>
+    <other_info_on_meta type="mention_page">461</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">441</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="(O. Lang) Mackenzie in N. L. Britton et al." date="1935" rank="section">granulares</taxon_name>
+    <taxon_name authority="Naczi &amp; Cochrane" date="2002" rank="species">gholsonii</taxon_name>
+    <place_of_publication>
+      <publication_title>Novon</publication_title>
+      <place_in_publication>12: 524, fig. 6. 2002</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section granulares;species gholsonii</taxon_hierarchy>
+    <other_info_on_name type="fna_id">242357205</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Rhizomes short or inconspicuous.</text>
+      <biological_entity id="o25725" name="rhizome" name_original="rhizomes" src="d0_s0" type="structure">
+        <character is_modifier="false" name="height_or_length_or_size" src="d0_s0" value="short" value_original="short" />
+        <character is_modifier="false" name="prominence" src="d0_s0" value="inconspicuous" value_original="inconspicuous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Culms in tufts, 20–75 cm.</text>
+      <biological_entity id="o25726" name="culm" name_original="culms" src="d0_s1" type="structure">
+        <character char_type="range_value" from="20" from_unit="cm" name="some_measurement" notes="" src="d0_s1" to="75" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o25727" name="tuft" name_original="tufts" src="d0_s1" type="structure" />
+      <relation from="o25726" id="r3166" name="in" negation="false" src="d0_s1" to="o25727" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Leaves green, not glaucous, cauline blades 2–26 cm × 2.2–11.3 mm, membranous.</text>
+      <biological_entity id="o25728" name="leaf" name_original="leaves" src="d0_s2" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s2" value="green" value_original="green" />
+        <character is_modifier="false" modifier="not" name="pubescence" src="d0_s2" value="glaucous" value_original="glaucous" />
+      </biological_entity>
+      <biological_entity constraint="cauline" id="o25729" name="blade" name_original="blades" src="d0_s2" type="structure">
+        <character char_type="range_value" from="2" from_unit="cm" name="length" src="d0_s2" to="26" to_unit="cm" />
+        <character char_type="range_value" from="2.2" from_unit="mm" name="width" src="d0_s2" to="11.3" to_unit="mm" />
+        <character is_modifier="false" name="texture" src="d0_s2" value="membranous" value_original="membranous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Inflorescnecs: peduncle of terminal spike 0.1–1.6 (–14) cm;</text>
+      <biological_entity id="o25731" name="peduncle" name_original="peduncle" src="d0_s3" type="structure">
+        <character char_type="range_value" from="1.6" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d0_s3" to="14" to_unit="cm" />
+        <character char_type="range_value" from="0.1" from_unit="cm" name="some_measurement" src="d0_s3" to="1.6" to_unit="cm" />
+      </biological_entity>
+      <biological_entity constraint="terminal" id="o25732" name="spike" name_original="spike" src="d0_s3" type="structure" />
+      <relation from="o25731" id="r3167" name="part_of" negation="false" src="d0_s3" to="o25732" />
+    </statement>
+    <statement id="d0_s4">
+      <text>bracts from shorter than to overtopping terminal spike;</text>
+      <biological_entity id="o25734" name="bract" name_original="bracts" src="d0_s4" type="structure">
+        <character constraint="than to overtopping terminal spike" constraintid="o25735" is_modifier="false" name="height_or_length_or_size" src="d0_s4" value="shorter" value_original="shorter" />
+      </biological_entity>
+      <biological_entity constraint="terminal" id="o25735" name="spike" name_original="spike" src="d0_s4" type="structure" />
+    </statement>
+    <statement id="d0_s5">
+      <text>ligule of proximal bract 0.5–6.5 mm;</text>
+      <biological_entity id="o25737" name="ligule" name_original="ligule" src="d0_s5" type="structure" constraint="bract" constraint_original="bract; bract">
+        <character char_type="range_value" from="0.5" from_unit="mm" name="some_measurement" src="d0_s5" to="6.5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o25738" name="bract" name_original="bract" src="d0_s5" type="structure" />
+      <relation from="o25737" id="r3168" name="part_of" negation="false" src="d0_s5" to="o25738" />
+    </statement>
+    <statement id="d0_s6">
+      <text>longest bract blade (per plant) of distal lateral spike 1.6–4.6 (–7.1) cm.</text>
+      <biological_entity constraint="spike" id="o25740" name="blade" name_original="blade" src="d0_s6" type="structure" constraint_original="longest bract">
+        <character char_type="range_value" from="4.6" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d0_s6" to="7.1" to_unit="cm" />
+        <character char_type="range_value" from="1.6" from_unit="cm" name="some_measurement" src="d0_s6" to="4.6" to_unit="cm" />
+      </biological_entity>
+      <biological_entity constraint="distal lateral" id="o25741" name="spike" name_original="spike" src="d0_s6" type="structure" />
+      <relation from="o25740" id="r3169" name="part_of" negation="false" src="d0_s6" to="o25741" />
+    </statement>
+    <statement id="d0_s7">
+      <text>Proximal spikes usually arising from distal 1/2 of culms, 5–30 × 4.2–6.6 mm.</text>
+      <biological_entity constraint="proximal" id="o25742" name="spike" name_original="spikes" src="d0_s7" type="structure">
+        <character constraint="from distal 1/2" constraintid="o25743" is_modifier="false" modifier="usually" name="orientation" src="d0_s7" value="arising" value_original="arising" />
+        <character char_type="range_value" from="5" from_unit="mm" name="length" notes="" src="d0_s7" to="30" to_unit="mm" />
+        <character char_type="range_value" from="4.2" from_unit="mm" name="width" notes="" src="d0_s7" to="6.6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="o25743" name="1/2" name_original="1/2" src="d0_s7" type="structure" />
+      <biological_entity id="o25744" name="culm" name_original="culms" src="d0_s7" type="structure" />
+      <relation from="o25743" id="r3170" name="part_of" negation="false" src="d0_s7" to="o25744" />
+    </statement>
+    <statement id="d0_s8">
+      <text>Terminal spike overlapping and exceeding distal lateral spike, 0.9–3.4 (–4.1) cm.</text>
+      <biological_entity constraint="terminal" id="o25745" name="spike" name_original="spike" src="d0_s8" type="structure">
+        <character is_modifier="false" name="arrangement" src="d0_s8" value="overlapping" value_original="overlapping" />
+        <character char_type="range_value" from="3.4" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d0_s8" to="4.1" to_unit="cm" />
+        <character char_type="range_value" from="0.9" from_unit="cm" name="some_measurement" src="d0_s8" to="3.4" to_unit="cm" />
+      </biological_entity>
+      <biological_entity constraint="distal lateral" id="o25746" name="spike" name_original="spike" src="d0_s8" type="structure" />
+      <relation from="o25745" id="r3171" name="exceeding" negation="false" src="d0_s8" to="o25746" />
+    </statement>
+    <statement id="d0_s9">
+      <text>Pistillate scales ovate, 2–2.5 (–3.1) × 1.4–2.2 mm.</text>
+      <biological_entity id="o25747" name="scale" name_original="scales" src="d0_s9" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s9" value="pistillate" value_original="pistillate" />
+        <character is_modifier="false" name="shape" src="d0_s9" value="ovate" value_original="ovate" />
+        <character char_type="range_value" from="2.5" from_inclusive="false" from_unit="mm" name="atypical_length" src="d0_s9" to="3.1" to_unit="mm" />
+        <character char_type="range_value" from="2" from_unit="mm" name="length" src="d0_s9" to="2.5" to_unit="mm" />
+        <character char_type="range_value" from="1.4" from_unit="mm" name="width" src="d0_s9" to="2.2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>Staminate scales with apex acute, occasionally obtuse.</text>
+      <biological_entity id="o25748" name="scale" name_original="scales" src="d0_s10" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s10" value="staminate" value_original="staminate" />
+        <character is_modifier="false" modifier="occasionally" name="shape" notes="" src="d0_s10" value="obtuse" value_original="obtuse" />
+      </biological_entity>
+      <biological_entity id="o25749" name="apex" name_original="apex" src="d0_s10" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s10" value="acute" value_original="acute" />
+      </biological_entity>
+      <relation from="o25748" id="r3172" name="with" negation="false" src="d0_s10" to="o25749" />
+    </statement>
+    <statement id="d0_s11">
+      <text>Anthers 2.3–3.1 mm.</text>
+      <biological_entity id="o25750" name="anther" name_original="anthers" src="d0_s11" type="structure">
+        <character char_type="range_value" from="2.3" from_unit="mm" name="some_measurement" src="d0_s11" to="3.1" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s12">
+      <text>Perigynia olive to brownish green, ellipsoid, oblongellipsoid to rhombic-ellipsoid, or obliquely rhomboid, 2.8–4 × 1.3–2.1 mm, (1.6–) 1.9–3 times as long as thick;</text>
+      <biological_entity id="o25751" name="perigynium" name_original="perigynia" src="d0_s12" type="structure">
+        <character char_type="range_value" from="olive" name="coloration" src="d0_s12" to="brownish green" />
+        <character is_modifier="false" name="shape" src="d0_s12" value="ellipsoid" value_original="ellipsoid" />
+        <character char_type="range_value" from="oblongellipsoid-ellipsoid" name="shape" src="d0_s12" to="rhombic-ellipsoid" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s13">
+      <text>beak 0.1–0.3 (–0.5) mm, orifice nearly entire.</text>
+      <biological_entity id="o25752" name="beak" name_original="beak" src="d0_s13" type="structure">
+        <character char_type="range_value" from="0.3" from_inclusive="false" from_unit="mm" name="atypical_some_measurement" src="d0_s13" to="0.5" to_unit="mm" />
+        <character char_type="range_value" from="0.1" from_unit="mm" name="some_measurement" src="d0_s13" to="0.3" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o25753" name="orifice" name_original="orifice" src="d0_s13" type="structure">
+        <character is_modifier="false" modifier="nearly" name="architecture_or_shape" src="d0_s13" value="entire" value_original="entire" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s14">
+      <text>Achenes 1.9–2.5 (–2.7) × 1.2–1.6 mm. 2n = 36.</text>
+      <biological_entity id="o25754" name="achene" name_original="achenes" src="d0_s14" type="structure">
+        <character char_type="range_value" from="2.5" from_inclusive="false" from_unit="mm" name="atypical_length" src="d0_s14" to="2.7" to_unit="mm" />
+        <character char_type="range_value" from="1.9" from_unit="mm" name="length" src="d0_s14" to="2.5" to_unit="mm" />
+        <character char_type="range_value" from="1.2" from_unit="mm" name="width" src="d0_s14" to="1.6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o25755" name="chromosome" name_original="" src="d0_s14" type="structure">
+        <character name="quantity" src="d0_s14" value="36" value_original="36" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting late spring–early summer (late Mar–early Jun).</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="early summer" from="late spring" />
+        <character name="fruiting time" char_type="range_value" to="early Jun" from="late Mar" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Calcareous mucks and sandy loams along streams and on flood plains, swampy forests, hardwood hammocks, limestone glades, seeps, marshy ditches, grassy roadsides</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="mucks" modifier="calcareous" />
+        <character name="habitat" value="sandy loams" constraint="along streams" />
+        <character name="habitat" value="streams" />
+        <character name="habitat" value="flood plains" modifier="and on" />
+        <character name="habitat" value="swampy forests" />
+        <character name="habitat" value="hardwood hammocks" />
+        <character name="habitat" value="limestone glades" />
+        <character name="habitat" value="seeps" />
+        <character name="habitat" value="marshy ditches" />
+        <character name="habitat" value="grassy roadsides" />
+        <character name="habitat" value="calcareous" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–30 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="30" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ala., Fla., Ga., N.C., S.C.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>274.</number>
+  <discussion>Carex gholsonii is very similar to C. granularis (and to the Mexican and Central American C. atractodes F. J. Hermann and C. quichensis F. J. Hermann). The plants are less densely tufted than in C. granularis and produce more evident rhizomes. They have darker, green foliage, relatively short ligules and bracts, and pedunculate staminate spikes. The well-formed perigynia are broadly spindle-shaped with flattish sides and straight margins, cuneate toward the base and broadly tapered at the apex. In C. granularis, the perigynia are usually smaller, nearly or quite terete, convex-rounded toward the base, and short-tapering or rounded at the more abruptly beaked apex.</discussion>
+  
+</bio:treatment>

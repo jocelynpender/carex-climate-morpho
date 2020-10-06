@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">413</other_info_on_meta>
+    <other_info_on_meta type="mention_page">414</other_info_on_meta>
+    <other_info_on_meta type="mention_page">416</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">415</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Kükenthal in H. G. A. Engler" date="1910" rank="section">scitae</taxon_name>
+    <taxon_name authority="T. Holm" date="1904" rank="species">microchaeta</taxon_name>
+    <place_of_publication>
+      <publication_title>Amer. J. Sci.</publication_title>
+      <place_in_publication>167: 305. 1904</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section scitae;species microchaeta</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="fna_id">242357331</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms 5–35 cm.</text>
+      <biological_entity id="o15216" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character char_type="range_value" from="5" from_unit="cm" name="some_measurement" src="d0_s0" to="35" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves basal;</text>
+      <biological_entity id="o15217" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character is_modifier="false" name="position" src="d0_s1" value="basal" value_original="basal" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>proximal leaves with blades 5–6 mm wide.</text>
+      <biological_entity constraint="proximal" id="o15218" name="leaf" name_original="leaves" src="d0_s2" type="structure" />
+      <biological_entity id="o15219" name="blade" name_original="blades" src="d0_s2" type="structure">
+        <character char_type="range_value" from="5" from_unit="mm" name="width" src="d0_s2" to="6" to_unit="mm" />
+      </biological_entity>
+      <relation from="o15218" id="r1872" name="with" negation="false" src="d0_s2" to="o15219" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Inflorescences: spikes approximate, oblong to elongate, 8–25 × 3–8 mm;</text>
+      <biological_entity id="o15220" name="inflorescence" name_original="inflorescences" src="d0_s3" type="structure" />
+      <biological_entity id="o15221" name="spike" name_original="spikes" src="d0_s3" type="structure">
+        <character is_modifier="false" name="arrangement" src="d0_s3" value="approximate" value_original="approximate" />
+        <character char_type="range_value" from="oblong" name="shape" src="d0_s3" to="elongate" />
+        <character char_type="range_value" from="8" from_unit="mm" name="length" src="d0_s3" to="25" to_unit="mm" />
+        <character char_type="range_value" from="3" from_unit="mm" name="width" src="d0_s3" to="8" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>proximal spike separate, sometimes pendent and long-pedunculate;</text>
+      <biological_entity id="o15222" name="inflorescence" name_original="inflorescences" src="d0_s4" type="structure" />
+      <biological_entity constraint="proximal" id="o15223" name="spike" name_original="spike" src="d0_s4" type="structure">
+        <character is_modifier="false" name="arrangement" src="d0_s4" value="separate" value_original="separate" />
+        <character is_modifier="false" modifier="sometimes" name="orientation" src="d0_s4" value="pendent" value_original="pendent" />
+        <character is_modifier="false" name="architecture" src="d0_s4" value="long-pedunculate" value_original="long-pedunculate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>lateral spikes 2–4;</text>
+      <biological_entity id="o15224" name="inflorescence" name_original="inflorescences" src="d0_s5" type="structure" />
+      <biological_entity constraint="lateral" id="o15225" name="spike" name_original="spikes" src="d0_s5" type="structure">
+        <character char_type="range_value" from="2" name="quantity" src="d0_s5" to="4" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>distal spikes erect, short-pedunculate.</text>
+      <biological_entity id="o15226" name="inflorescence" name_original="inflorescences" src="d0_s6" type="structure" />
+      <biological_entity constraint="distal" id="o15227" name="spike" name_original="spikes" src="d0_s6" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s6" value="erect" value_original="erect" />
+        <character is_modifier="false" name="architecture" src="d0_s6" value="short-pedunculate" value_original="short-pedunculate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Pistillate scales dark-brown to black, ovate or lanceolate, equaling and as wide as perigynia, apex acute or mucronate.</text>
+      <biological_entity id="o15228" name="scale" name_original="scales" src="d0_s7" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s7" value="pistillate" value_original="pistillate" />
+        <character char_type="range_value" from="dark-brown" name="coloration" src="d0_s7" to="black" />
+        <character is_modifier="false" name="shape" src="d0_s7" value="ovate" value_original="ovate" />
+        <character is_modifier="false" name="shape" src="d0_s7" value="lanceolate" value_original="lanceolate" />
+        <character is_modifier="false" name="variability" src="d0_s7" value="equaling" value_original="equaling" />
+      </biological_entity>
+      <biological_entity id="o15229" name="perigynium" name_original="perigynia" src="d0_s7" type="structure" />
+      <biological_entity id="o15230" name="apex" name_original="apex" src="d0_s7" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s7" value="acute" value_original="acute" />
+        <character is_modifier="false" name="shape" src="d0_s7" value="mucronate" value_original="mucronate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Perigynia veinless, ovate, 3-5–4 × 1.5–2 mm, papillose;</text>
+      <biological_entity id="o15231" name="perigynium" name_original="perigynia" src="d0_s8" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s8" value="veinless" value_original="veinless" />
+        <character is_modifier="false" name="shape" src="d0_s8" value="ovate" value_original="ovate" />
+        <character char_type="range_value" from="3" from_unit="mm" name="length" src="d0_s8" to="5-4" to_unit="mm" />
+        <character char_type="range_value" from="1.5" from_unit="mm" name="width" src="d0_s8" to="2" to_unit="mm" />
+        <character is_modifier="false" name="relief" src="d0_s8" value="papillose" value_original="papillose" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>beak 0.3–0.5 mm, shallowly bidentate or truncate, sparsely papillose or smooth.</text>
+      <biological_entity id="o15232" name="beak" name_original="beak" src="d0_s9" type="structure">
+        <character char_type="range_value" from="0.3" from_unit="mm" name="some_measurement" src="d0_s9" to="0.5" to_unit="mm" />
+        <character is_modifier="false" modifier="shallowly" name="shape" src="d0_s9" value="bidentate" value_original="bidentate" />
+        <character is_modifier="false" name="shape" src="d0_s9" value="truncate" value_original="truncate" />
+        <character is_modifier="false" modifier="sparsely" name="relief" src="d0_s9" value="papillose" value_original="papillose" />
+        <character is_modifier="false" name="relief" src="d0_s9" value="smooth" value_original="smooth" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>B.C., N.W.T., Yukon; Alaska; Asia (Russian Far East).</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.W.T." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Yukon" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
+        <character name="distribution" value="Asia (Russian Far East)" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>230.</number>
+  <discussion>Subspecies 2 (2 in the flora).</discussion>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">Perigynia, including beak, reddish brown or purple; midvein of pistillate scales dark, same color as body, inconspicuous.</description>
+      <determination>230a Carex microchaeta subsp. microchaeta</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">Perigynia greenish yellow or yellow-brown, beak black; midvein of pistillate scales lighter color than body, conspicuous.</description>
+      <determination>230b Carex microchaeta subsp. nesophila</determination>
+    </key_statement>
+  </key>
+</bio:treatment>

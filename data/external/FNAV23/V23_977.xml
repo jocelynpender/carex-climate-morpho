@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">521</other_info_on_meta>
+    <other_info_on_meta type="mention_page">522</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">523</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="(Drejer) L. H. Bailey in J. M. Coulter" date="1885" rank="section">spirostachyae</taxon_name>
+    <taxon_name authority="M. Bieberstein" date="1808" rank="species">diluta</taxon_name>
+    <place_of_publication>
+      <publication_title>Fl. Taur.-Caucas.</publication_title>
+      <place_in_publication>2: 388. 1808</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section spirostachyae;species diluta</taxon_hierarchy>
+    <other_info_on_name type="special_status">I</other_info_on_name>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="fna_id">242101044</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms 15–55 cm.</text>
+      <biological_entity id="o20944" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character char_type="range_value" from="15" from_unit="cm" name="some_measurement" src="d0_s0" to="55" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves mostly basal;</text>
+      <biological_entity id="o20945" name="leaf" name_original="leaves" src="d0_s1" type="structure" />
+      <biological_entity id="o20946" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character is_modifier="true" modifier="mostly" name="position" src="d0_s1" value="basal" value_original="basal" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>basal sheaths pale to dark-brown;</text>
+      <biological_entity constraint="basal" id="o20947" name="sheath" name_original="sheaths" src="d0_s2" type="structure">
+        <character char_type="range_value" from="pale" name="coloration" src="d0_s2" to="dark-brown" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>blades of flowering-stems yellowish green, flat, shorter than stems, widest blades 3–4.6 mm wide, margins scabrous.</text>
+      <biological_entity id="o20948" name="blade" name_original="blades" src="d0_s3" type="structure" constraint="flowering-stem" constraint_original="flowering-stem; flowering-stem">
+        <character is_modifier="false" name="coloration" src="d0_s3" value="yellowish green" value_original="yellowish green" />
+        <character is_modifier="false" name="prominence_or_shape" src="d0_s3" value="flat" value_original="flat" />
+        <character constraint="than stems" constraintid="o20950" is_modifier="false" name="height_or_length_or_size" src="d0_s3" value="shorter" value_original="shorter" />
+      </biological_entity>
+      <biological_entity id="o20949" name="flowering-stem" name_original="flowering-stems" src="d0_s3" type="structure" />
+      <biological_entity id="o20950" name="stem" name_original="stems" src="d0_s3" type="structure" />
+      <biological_entity constraint="widest" id="o20951" name="blade" name_original="blades" src="d0_s3" type="structure">
+        <character char_type="range_value" from="3" from_unit="mm" name="width" src="d0_s3" to="4.6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o20952" name="margin" name_original="margins" src="d0_s3" type="structure">
+        <character is_modifier="false" name="pubescence_or_relief" src="d0_s3" value="scabrous" value_original="scabrous" />
+      </biological_entity>
+      <relation from="o20948" id="r2530" name="part_of" negation="false" src="d0_s3" to="o20949" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Inflorescences: longer peduncle of terminal spike 1–2 (–4) cm;</text>
+      <biological_entity id="o20953" name="inflorescence" name_original="inflorescences" src="d0_s4" type="structure" />
+      <biological_entity constraint="longer" id="o20954" name="peduncle" name_original="peduncle" src="d0_s4" type="structure">
+        <character char_type="range_value" from="2" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d0_s4" to="4" to_unit="cm" />
+        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s4" to="2" to_unit="cm" />
+      </biological_entity>
+      <biological_entity constraint="terminal" id="o20955" name="spike" name_original="spike" src="d0_s4" type="structure" />
+      <relation from="o20954" id="r2531" name="part_of" negation="false" src="d0_s4" to="o20955" />
+    </statement>
+    <statement id="d0_s5">
+      <text>proximal bract mostly equaling or no more than 1.5 times as long as inflorescence;</text>
+      <biological_entity id="o20956" name="inflorescence" name_original="inflorescences" src="d0_s5" type="structure" />
+      <biological_entity constraint="proximal" id="o20957" name="bract" name_original="bract" src="d0_s5" type="structure">
+        <character is_modifier="false" modifier="mostly" name="variability" src="d0_s5" value="equaling" value_original="equaling" />
+        <character is_modifier="false" name="quantity" src="d0_s5" value="no" value_original="no" />
+        <character constraint="inflorescence" constraintid="o20958" is_modifier="false" name="length" src="d0_s5" value="1.5+ times as long as inflorescence" />
+      </biological_entity>
+      <biological_entity id="o20958" name="inflorescence" name_original="inflorescence" src="d0_s5" type="structure" />
+    </statement>
+    <statement id="d0_s6">
+      <text>pistillate spikes (2–) 3–5, ascending, ovoid to short-cylindric;</text>
+      <biological_entity id="o20959" name="inflorescence" name_original="inflorescences" src="d0_s6" type="structure" />
+      <biological_entity id="o20960" name="spike" name_original="spikes" src="d0_s6" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s6" value="pistillate" value_original="pistillate" />
+        <character char_type="range_value" from="2" name="atypical_quantity" src="d0_s6" to="3" to_inclusive="false" />
+        <character char_type="range_value" from="3" name="quantity" src="d0_s6" to="5" />
+        <character is_modifier="false" name="orientation" src="d0_s6" value="ascending" value_original="ascending" />
+        <character char_type="range_value" from="ovoid" name="shape" src="d0_s6" to="short-cylindric" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>distal 1 or 2 pistillate spikes aggregated near staminate spike;</text>
+      <biological_entity id="o20961" name="inflorescence" name_original="inflorescences" src="d0_s7" type="structure" />
+      <biological_entity constraint="distal" id="o20962" name="inflorescence" name_original="inflorescences" src="d0_s7" type="structure">
+        <character name="quantity" src="d0_s7" unit="or pistillate" value="1" value_original="1" />
+        <character name="quantity" src="d0_s7" unit="or pistillate" value="2" value_original="2" />
+      </biological_entity>
+      <biological_entity id="o20963" name="spike" name_original="spikes" src="d0_s7" type="structure">
+        <character constraint="near spike" constraintid="o20964" is_modifier="false" name="arrangement" src="d0_s7" value="aggregated" value_original="aggregated" />
+      </biological_entity>
+      <biological_entity id="o20964" name="spike" name_original="spike" src="d0_s7" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s7" value="staminate" value_original="staminate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>the proximal widely separated, pedunculate;</text>
+      <biological_entity id="o20965" name="inflorescence" name_original="inflorescences" src="d0_s8" type="structure" />
+      <biological_entity constraint="proximal" id="o20966" name="inflorescence" name_original="inflorescences" src="d0_s8" type="structure">
+        <character is_modifier="false" modifier="widely" name="arrangement" src="d0_s8" value="separated" value_original="separated" />
+        <character is_modifier="false" name="architecture" src="d0_s8" value="pedunculate" value_original="pedunculate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>terminal staminate spike 8–25 (–30) × 2 mm.</text>
+      <biological_entity id="o20967" name="inflorescence" name_original="inflorescences" src="d0_s9" type="structure" />
+      <biological_entity constraint="terminal" id="o20968" name="spike" name_original="spike" src="d0_s9" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s9" value="staminate" value_original="staminate" />
+        <character char_type="range_value" from="25" from_inclusive="false" from_unit="mm" name="atypical_length" src="d0_s9" to="30" to_unit="mm" />
+        <character char_type="range_value" from="8" from_unit="mm" name="length" src="d0_s9" to="25" to_unit="mm" />
+        <character name="width" src="d0_s9" unit="mm" value="2" value_original="2" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>Pistillate scales brown to reddish-brown, with green or whitish midrib.</text>
+      <biological_entity id="o20969" name="scale" name_original="scales" src="d0_s10" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s10" value="pistillate" value_original="pistillate" />
+        <character char_type="range_value" from="brown" name="coloration" src="d0_s10" to="reddish-brown" />
+      </biological_entity>
+      <biological_entity id="o20970" name="midrib" name_original="midrib" src="d0_s10" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s10" value="green" value_original="green" />
+        <character is_modifier="true" name="coloration" src="d0_s10" value="whitish" value_original="whitish" />
+      </biological_entity>
+      <relation from="o20969" id="r2532" name="with" negation="false" src="d0_s10" to="o20970" />
+    </statement>
+    <statement id="d0_s11">
+      <text>Staminate scales brown, ovate-elliptic, margins scarious, apex obtuse or mucronate.</text>
+      <biological_entity id="o20971" name="scale" name_original="scales" src="d0_s11" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s11" value="staminate" value_original="staminate" />
+        <character is_modifier="false" name="coloration" src="d0_s11" value="brown" value_original="brown" />
+        <character is_modifier="false" name="shape" src="d0_s11" value="ovate-elliptic" value_original="ovate-elliptic" />
+      </biological_entity>
+      <biological_entity id="o20972" name="margin" name_original="margins" src="d0_s11" type="structure">
+        <character is_modifier="false" name="texture" src="d0_s11" value="scarious" value_original="scarious" />
+      </biological_entity>
+      <biological_entity id="o20973" name="apex" name_original="apex" src="d0_s11" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s11" value="obtuse" value_original="obtuse" />
+        <character is_modifier="false" name="shape" src="d0_s11" value="mucronate" value_original="mucronate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s12">
+      <text>Anthers 1.5–2.7 mm.</text>
+      <biological_entity id="o20974" name="anther" name_original="anthers" src="d0_s12" type="structure">
+        <character char_type="range_value" from="1.5" from_unit="mm" name="some_measurement" src="d0_s12" to="2.7" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s13">
+      <text>Perigynia yellowish green, 2.6–3.5 × 1–1.3 mm, apex gradually tapered;</text>
+      <biological_entity id="o20975" name="perigynium" name_original="perigynia" src="d0_s13" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s13" value="yellowish green" value_original="yellowish green" />
+        <character char_type="range_value" from="2.6" from_unit="mm" name="length" src="d0_s13" to="3.5" to_unit="mm" />
+        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s13" to="1.3" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o20976" name="apex" name_original="apex" src="d0_s13" type="structure">
+        <character is_modifier="false" modifier="gradually" name="shape" src="d0_s13" value="tapered" value_original="tapered" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s14">
+      <text>beak 0.4–0.7 mm, smooth.</text>
+      <biological_entity id="o20977" name="beak" name_original="beak" src="d0_s14" type="structure">
+        <character char_type="range_value" from="0.4" from_unit="mm" name="some_measurement" src="d0_s14" to="0.7" to_unit="mm" />
+        <character is_modifier="false" name="architecture_or_pubescence_or_relief" src="d0_s14" value="smooth" value_original="smooth" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting summer (Aug–early Sep).</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="summer" from="summer" constraint="Aug-early Sep" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Open, damp, saline meadows and bottomlands</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="saline meadows" modifier="open damp" />
+        <character name="habitat" value="bottomlands" />
+        <character name="habitat" value="damp" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>1300–1400 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="1400" to_unit="m" from="1300" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Introduced; Mont.; Eurasia.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Mont." establishment_means="introduced" />
+        <character name="distribution" value="Eurasia" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>410.</number>
+  <discussion>Carex diluta was discovered in Montana in 1995; it occurs there in relatively natural saline habitats. Its similarity to some Eurasian members of the C. diluta complex suggests that it is probably an introduction.</discussion>
+  <discussion>The taxonomy of Carex diluta and closely related taxa varies throughout Eurasia. A. O. Chater (1980) and T. V. Egorova (1999) applied a broad species concept, which is followed here. However, V. I. Kreczetowicz (1935) recognized four taxa in the complex: C. diluta (in the strict sense), C. karelinii Meinshausen, C. aspratilis V. I. Kreczetowicz, and C. czarwakensis Litvinov. Montana populations appear to correspond most closely to C. karelinii. Further comparisons of the Montana plants with Eurasian material are needed, and indeed, a further examination of this complex throughout its native range in Eurasia is warranted.</discussion>
+  
+</bio:treatment>

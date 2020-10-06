@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">336</other_info_on_meta>
+    <other_info_on_meta type="mention_page">365</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">364</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Kunth" date="1837" rank="section">ovales</taxon_name>
+    <taxon_name authority="Britton in N. L. Britton and A. Brown" date="1896" rank="species">cristatella</taxon_name>
+    <place_of_publication>
+      <publication_title>in N. L. Britton and A. Brown, Ill. Fl. N. U.S.</publication_title>
+      <place_in_publication>1: 357. 1896</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section ovales;species cristatella</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="fna_id">242357137</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="Schweinitz" date="unknown" rank="species">cristata</taxon_name>
+    <place_of_publication>
+      <publication_title>Ann. Lyceum Nat. Hist. New York</publication_title>
+      <place_in_publication>1: 66. 1824,</place_in_publication>
+      <other_info_on_pub>not Clairville 1811</other_info_on_pub>
+    </place_of_publication>
+    <taxon_hierarchy>genus Carex;species cristata;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants densely cespitose.</text>
+      <biological_entity id="o25984" name="whole_organism" name_original="" src="" type="structure">
+        <character is_modifier="false" modifier="densely" name="growth_form" src="d0_s0" value="cespitose" value_original="cespitose" />
+        <character name="growth_form" value="plant" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Culms 30–100 cm;</text>
+      <biological_entity id="o25985" name="culm" name_original="culms" src="d0_s1" type="structure">
+        <character char_type="range_value" from="30" from_unit="cm" name="some_measurement" src="d0_s1" to="100" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>vegetative culms with numerous leaves spaced evenly along distal 1/2.</text>
+      <biological_entity id="o25986" name="culm" name_original="culms" src="d0_s2" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s2" value="vegetative" value_original="vegetative" />
+      </biological_entity>
+      <biological_entity id="o25987" name="leaf" name_original="leaves" src="d0_s2" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s2" value="numerous" value_original="numerous" />
+        <character constraint="along distal 1/2" constraintid="o25988" is_modifier="false" name="arrangement" src="d0_s2" value="spaced" value_original="spaced" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="o25988" name="1/2" name_original="1/2" src="d0_s2" type="structure" />
+      <relation from="o25986" id="r3192" name="with" negation="false" src="d0_s2" to="o25987" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Leaves: sheaths adaxially green-veined nearly to collar, with V-shaped hyaline band extending 4–20 mm proximal to collar;</text>
+      <biological_entity id="o25989" name="leaf" name_original="leaves" src="d0_s3" type="structure" />
+      <biological_entity id="o25990" name="sheath" name_original="sheaths" src="d0_s3" type="structure">
+        <character constraint="to collar" constraintid="o25991" is_modifier="false" modifier="adaxially" name="architecture" src="d0_s3" value="green-veined" value_original="green-veined" />
+        <character constraint="to collar" constraintid="o25993" is_modifier="false" name="position" src="d0_s3" value="proximal" value_original="proximal" />
+      </biological_entity>
+      <biological_entity id="o25991" name="collar" name_original="collar" src="d0_s3" type="structure" />
+      <biological_entity id="o25992" name="band" name_original="band" src="d0_s3" type="structure">
+        <character is_modifier="true" name="shape" src="d0_s3" value="v--shaped" value_original="v--shaped" />
+        <character is_modifier="true" name="coloration" src="d0_s3" value="hyaline" value_original="hyaline" />
+      </biological_entity>
+      <biological_entity id="o25993" name="collar" name_original="collar" src="d0_s3" type="structure" />
+      <relation from="o25990" id="r3193" name="with" negation="false" src="d0_s3" to="o25992" />
+    </statement>
+    <statement id="d0_s4">
+      <text>somewhat loose, expanded near summit, ± wing-angled, adaxially firm, summits truncate to U-shaped, prolonged beyond collar;</text>
+      <biological_entity id="o25994" name="leaf" name_original="leaves" src="d0_s4" type="structure">
+        <character is_modifier="false" modifier="somewhat" name="architecture_or_fragility" src="d0_s4" value="loose" value_original="loose" />
+        <character constraint="near summit" constraintid="o25995" is_modifier="false" name="size" src="d0_s4" value="expanded" value_original="expanded" />
+        <character is_modifier="false" modifier="more or less" name="shape" notes="" src="d0_s4" value="wing-angled" value_original="wing-angled" />
+        <character is_modifier="false" modifier="adaxially" name="texture" src="d0_s4" value="firm" value_original="firm" />
+      </biological_entity>
+      <biological_entity id="o25995" name="summit" name_original="summit" src="d0_s4" type="structure" />
+      <biological_entity id="o25996" name="summit" name_original="summits" src="d0_s4" type="structure">
+        <character char_type="range_value" from="truncate" name="shape" src="d0_s4" to="u-shaped" />
+        <character constraint="beyond collar" constraintid="o25997" is_modifier="false" name="length" src="d0_s4" value="prolonged" value_original="prolonged" />
+      </biological_entity>
+      <biological_entity id="o25997" name="collar" name_original="collar" src="d0_s4" type="structure" />
+    </statement>
+    <statement id="d0_s5">
+      <text>distal ligules 4–10 mm;</text>
+      <biological_entity id="o25998" name="leaf" name_original="leaves" src="d0_s5" type="structure" />
+      <biological_entity constraint="distal" id="o25999" name="ligule" name_original="ligules" src="d0_s5" type="structure">
+        <character char_type="range_value" from="4" from_unit="mm" name="some_measurement" src="d0_s5" to="10" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>blades 4–6 per fertile culm, 13–40 cm × 3–7.5 mm.</text>
+      <biological_entity id="o26000" name="leaf" name_original="leaves" src="d0_s6" type="structure" />
+      <biological_entity id="o26001" name="blade" name_original="blades" src="d0_s6" type="structure">
+        <character char_type="range_value" constraint="per culm" constraintid="o26002" from="4" name="quantity" src="d0_s6" to="6" />
+        <character char_type="range_value" from="13" from_unit="cm" name="length" notes="" src="d0_s6" to="40" to_unit="cm" />
+        <character char_type="range_value" from="3" from_unit="mm" name="width" notes="" src="d0_s6" to="7.5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o26002" name="culm" name_original="culm" src="d0_s6" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s6" value="fertile" value_original="fertile" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Inflorescences dense or proximally open, brown, 2–4 (–4.5) cm × 8–15 mm;</text>
+      <biological_entity id="o26003" name="inflorescence" name_original="inflorescences" src="d0_s7" type="structure">
+        <character is_modifier="false" name="density" src="d0_s7" value="dense" value_original="dense" />
+        <character is_modifier="false" modifier="proximally" name="architecture" src="d0_s7" value="open" value_original="open" />
+        <character is_modifier="false" name="coloration" src="d0_s7" value="brown" value_original="brown" />
+        <character char_type="range_value" from="4" from_inclusive="false" from_unit="cm" name="atypical_length" src="d0_s7" to="4.5" to_unit="cm" />
+        <character char_type="range_value" from="2" from_unit="cm" name="length" src="d0_s7" to="4" to_unit="cm" />
+        <character char_type="range_value" from="8" from_unit="mm" name="width" src="d0_s7" to="15" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>proximal internode 2–6 mm;</text>
+      <biological_entity constraint="proximal" id="o26004" name="internode" name_original="internode" src="d0_s8" type="structure">
+        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s8" to="6" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>2d internode 2–4 mm;</text>
+      <biological_entity id="o26005" name="internode" name_original="internode" src="d0_s9" type="structure">
+        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s9" to="4" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>proximal bracts scalelike with bristle tip to 1 (–8) cm.</text>
+      <biological_entity constraint="proximal" id="o26006" name="bract" name_original="bracts" src="d0_s10" type="structure">
+        <character constraint="with bristle tip" constraintid="o26007" is_modifier="false" name="shape" src="d0_s10" value="scale-like" value_original="scalelike" />
+      </biological_entity>
+      <biological_entity constraint="bristle" id="o26007" name="tip" name_original="tip" src="d0_s10" type="structure">
+        <character char_type="range_value" from="1" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d0_s10" to="8" to_unit="cm" />
+        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s10" to="1" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>Spikes 6–15, usually widely spaced, globose, 4–8 × 4–8 mm, base rounded to tapered, apex rounded.</text>
+      <biological_entity id="o26008" name="spike" name_original="spikes" src="d0_s11" type="structure">
+        <character char_type="range_value" from="6" name="quantity" src="d0_s11" to="15" />
+        <character is_modifier="false" modifier="usually widely" name="arrangement" src="d0_s11" value="spaced" value_original="spaced" />
+        <character is_modifier="false" name="shape" src="d0_s11" value="globose" value_original="globose" />
+        <character char_type="range_value" from="4" from_unit="mm" name="length" src="d0_s11" to="8" to_unit="mm" />
+        <character char_type="range_value" from="4" from_unit="mm" name="width" src="d0_s11" to="8" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o26009" name="base" name_original="base" src="d0_s11" type="structure">
+        <character char_type="range_value" from="rounded" name="shape" src="d0_s11" to="tapered" />
+      </biological_entity>
+      <biological_entity id="o26010" name="apex" name_original="apex" src="d0_s11" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s11" value="rounded" value_original="rounded" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s12">
+      <text>Pistillate scales white-hyaline or pale-brown with green to brown midstripe not reaching tip, lanceolate, 1.6–2.3 mm, 1/2 length of and narrower than perigynia, hidden by perignyium beaks, apex acute or ultimate apex often rounded to retuse.</text>
+      <biological_entity id="o26011" name="scale" name_original="scales" src="d0_s12" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s12" value="pistillate" value_original="pistillate" />
+        <character is_modifier="false" name="coloration" src="d0_s12" value="white-hyaline" value_original="white-hyaline" />
+        <character constraint="with midstripe" constraintid="o26012" is_modifier="false" name="coloration" src="d0_s12" value="pale-brown" value_original="pale-brown" />
+        <character is_modifier="false" name="shape" src="d0_s12" value="lanceolate" value_original="lanceolate" />
+        <character char_type="range_value" from="1.6" from_unit="mm" name="some_measurement" src="d0_s12" to="2.3" to_unit="mm" />
+        <character name="quantity" src="d0_s12" value="1/2" value_original="1/2" />
+        <character constraint="by perignyium beaks" constraintid="o26016" is_modifier="false" name="prominence" notes="" src="d0_s12" value="hidden" value_original="hidden" />
+      </biological_entity>
+      <biological_entity id="o26012" name="midstripe" name_original="midstripe" src="d0_s12" type="structure">
+        <character char_type="range_value" from="green" is_modifier="true" name="coloration" src="d0_s12" to="brown" />
+      </biological_entity>
+      <biological_entity id="o26013" name="tip" name_original="tip" src="d0_s12" type="structure" />
+      <biological_entity id="o26015" name="perigynium" name_original="perigynia" src="d0_s12" type="structure">
+        <character is_modifier="true" name="width" src="d0_s12" value="narrower" value_original="narrower" />
+      </biological_entity>
+      <biological_entity id="o26014" name="perigynium" name_original="perigynia" src="d0_s12" type="structure">
+        <character is_modifier="true" name="width" src="d0_s12" value="narrower" value_original="narrower" />
+      </biological_entity>
+      <biological_entity constraint="perignyium" id="o26016" name="beak" name_original="beaks" src="d0_s12" type="structure" />
+      <biological_entity id="o26017" name="apex" name_original="apex" src="d0_s12" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s12" value="acute" value_original="acute" />
+      </biological_entity>
+      <biological_entity constraint="ultimate" id="o26018" name="apex" name_original="apex" src="d0_s12" type="structure">
+        <character char_type="range_value" from="rounded" name="shape" src="d0_s12" to="retuse" />
+      </biological_entity>
+      <relation from="o26012" id="r3194" name="reaching" negation="true" src="d0_s12" to="o26013" />
+    </statement>
+    <statement id="d0_s13">
+      <text>Perigynia spreading to ascending, with beak and distal body of perigynium spreading or recurrent at 80º angle or greater, pale green to pale-brown, conspicuously 3–6-veined abaxially, conspicuously 2–6-veined adaxially, ovate to elliptic, planoconvex, 2–3.5 times as long as wide, 2.7–4 × 1–1.7 mm, 0.3–0.4 mm thick, margin flat, including wing 0.1–0.2 mm wide, abruptly narrowed proximally, not extending to base;</text>
+      <biological_entity id="o26019" name="perigynium" name_original="perigynia" src="d0_s13" type="structure">
+        <character char_type="range_value" from="spreading" name="orientation" src="d0_s13" to="ascending" />
+      </biological_entity>
+      <biological_entity id="o26020" name="beak" name_original="beak" src="d0_s13" type="structure" />
+      <biological_entity constraint="distal" id="o26021" name="body" name_original="body" src="d0_s13" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s13" value="spreading" value_original="spreading" />
+        <character name="orientation" src="d0_s13" value="recurrent" value_original="recurrent" />
+        <character char_type="range_value" from="0.1" from_unit="mm" name="width" src="d0_s13" to="0.2" to_unit="mm" />
+        <character is_modifier="false" modifier="abruptly; proximally" name="shape" src="d0_s13" value="narrowed" value_original="narrowed" />
+      </biological_entity>
+      <biological_entity id="o26022" name="perigynium" name_original="perigynium" src="d0_s13" type="structure" />
+      <biological_entity id="o26023" name="angle" name_original="angle" src="d0_s13" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s13" value="80" value_original="80" />
+      </biological_entity>
+      <biological_entity id="o26024" name="margin" name_original="margin" src="d0_s13" type="structure">
+        <character is_modifier="true" name="size" src="d0_s13" value="greater" value_original="greater" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="3-6-veined" value_original="3-6-veined" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="2-6-veined" value_original="2-6-veined" />
+        <character is_modifier="true" name="shape" src="d0_s13" value="planoconvex" value_original="planoconvex" />
+        <character is_modifier="true" name="width" src="d0_s13" value="thick" value_original="thick" />
+        <character char_type="range_value" constraint="at " constraintid="o26026" from="pale green" name="coloration" src="d0_s13" to="pale-brown" />
+      </biological_entity>
+      <biological_entity id="o26025" name="angle" name_original="angle" src="d0_s13" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s13" value="80" value_original="80" />
+      </biological_entity>
+      <biological_entity id="o26026" name="margin" name_original="margin" src="d0_s13" type="structure">
+        <character is_modifier="true" name="size" src="d0_s13" value="greater" value_original="greater" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="3-6-veined" value_original="3-6-veined" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="2-6-veined" value_original="2-6-veined" />
+        <character is_modifier="true" name="shape" src="d0_s13" value="planoconvex" value_original="planoconvex" />
+        <character is_modifier="true" name="width" src="d0_s13" value="thick" value_original="thick" />
+      </biological_entity>
+      <biological_entity id="o26027" name="angle" name_original="angle" src="d0_s13" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s13" value="80" value_original="80" />
+      </biological_entity>
+      <biological_entity id="o26028" name="margin" name_original="margin" src="d0_s13" type="structure">
+        <character is_modifier="true" name="size" src="d0_s13" value="greater" value_original="greater" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="3-6-veined" value_original="3-6-veined" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="2-6-veined" value_original="2-6-veined" />
+        <character is_modifier="true" name="shape" src="d0_s13" value="planoconvex" value_original="planoconvex" />
+        <character is_modifier="true" name="width" src="d0_s13" value="thick" value_original="thick" />
+      </biological_entity>
+      <biological_entity id="o26029" name="angle" name_original="angle" src="d0_s13" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s13" value="80" value_original="80" />
+      </biological_entity>
+      <biological_entity id="o26030" name="margin" name_original="margin" src="d0_s13" type="structure">
+        <character is_modifier="true" name="size" src="d0_s13" value="greater" value_original="greater" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="3-6-veined" value_original="3-6-veined" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="2-6-veined" value_original="2-6-veined" />
+        <character is_modifier="true" name="shape" src="d0_s13" value="planoconvex" value_original="planoconvex" />
+        <character is_modifier="true" name="width" src="d0_s13" value="thick" value_original="thick" />
+        <character char_type="range_value" constraint="at " constraintid="o26032" from="ovate" name="shape" src="d0_s13" to="elliptic" />
+      </biological_entity>
+      <biological_entity id="o26031" name="angle" name_original="angle" src="d0_s13" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s13" value="80" value_original="80" />
+      </biological_entity>
+      <biological_entity id="o26032" name="margin" name_original="margin" src="d0_s13" type="structure">
+        <character is_modifier="true" name="size" src="d0_s13" value="greater" value_original="greater" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="3-6-veined" value_original="3-6-veined" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="2-6-veined" value_original="2-6-veined" />
+        <character is_modifier="true" name="shape" src="d0_s13" value="planoconvex" value_original="planoconvex" />
+        <character is_modifier="true" name="width" src="d0_s13" value="thick" value_original="thick" />
+        <character constraint="at " constraintid="o26034" is_modifier="false" name="l_w_ratio" src="d0_s13" value="2-3.5" value_original="2-3.5" />
+      </biological_entity>
+      <biological_entity id="o26033" name="angle" name_original="angle" src="d0_s13" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s13" value="80" value_original="80" />
+      </biological_entity>
+      <biological_entity id="o26034" name="margin" name_original="margin" src="d0_s13" type="structure">
+        <character is_modifier="true" name="size" src="d0_s13" value="greater" value_original="greater" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="3-6-veined" value_original="3-6-veined" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="2-6-veined" value_original="2-6-veined" />
+        <character is_modifier="true" name="shape" src="d0_s13" value="planoconvex" value_original="planoconvex" />
+        <character is_modifier="true" name="width" src="d0_s13" value="thick" value_original="thick" />
+        <character name="area" src="d0_s13" unit="mm" value="2.7-4×1-1.7" value_original="2.7-4×1-1.7" />
+        <character char_type="range_value" constraint="at " constraintid="o26036" from="0.3" from_unit="mm" name="area" src="d0_s13" to="0.4" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o26035" name="angle" name_original="angle" src="d0_s13" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s13" value="80" value_original="80" />
+      </biological_entity>
+      <biological_entity id="o26036" name="margin" name_original="margin" src="d0_s13" type="structure">
+        <character is_modifier="true" name="size" src="d0_s13" value="greater" value_original="greater" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="3-6-veined" value_original="3-6-veined" />
+        <character is_modifier="true" modifier="conspicuously" name="architecture" src="d0_s13" value="2-6-veined" value_original="2-6-veined" />
+        <character is_modifier="true" name="shape" src="d0_s13" value="planoconvex" value_original="planoconvex" />
+        <character is_modifier="true" name="width" src="d0_s13" value="thick" value_original="thick" />
+        <character is_modifier="false" name="prominence_or_shape" src="d0_s13" value="flat" value_original="flat" />
+      </biological_entity>
+      <biological_entity id="o26037" name="wing" name_original="wing" src="d0_s13" type="structure" />
+      <biological_entity id="o26038" name="base" name_original="base" src="d0_s13" type="structure" />
+      <relation from="o26019" id="r3195" name="with" negation="false" src="d0_s13" to="o26020" />
+      <relation from="o26021" id="r3196" name="part_of" negation="false" src="d0_s13" to="o26022" />
+      <relation from="o26021" id="r3197" name="at" negation="false" src="d0_s13" to="o26023" />
+      <relation from="o26021" id="r3198" name="at" negation="false" src="d0_s13" to="o26024" />
+      <relation from="o26026" id="r3199" name="at" negation="false" src="d0_s13" to="o26027" />
+      <relation from="o26026" id="r3200" name="at" negation="false" src="d0_s13" to="o26028" />
+      <relation from="o26028" id="r3201" name="at" negation="false" src="d0_s13" to="o26029" />
+      <relation from="o26028" id="r3202" name="at" negation="false" src="d0_s13" to="o26030" />
+      <relation from="o26021" id="r3203" name="including" negation="false" src="d0_s13" to="o26037" />
+      <relation from="o26021" id="r3204" name="extending to" negation="true" src="d0_s13" to="o26038" />
+    </statement>
+    <statement id="d0_s14">
+      <text>beak tip usually not colored, flat, ciliate-serrulate, distance from beak tip to achene 1.5–1.8 mm.</text>
+      <biological_entity constraint="beak" id="o26039" name="tip" name_original="tip" src="d0_s14" type="structure">
+        <character is_modifier="false" modifier="usually not" name="coloration" src="d0_s14" value="colored" value_original="colored" />
+        <character is_modifier="false" name="prominence_or_shape" src="d0_s14" value="flat" value_original="flat" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s14" value="ciliate-serrulate" value_original="ciliate-serrulate" />
+      </biological_entity>
+      <biological_entity constraint="beak" id="o26040" name="tip" name_original="tip" src="d0_s14" type="structure" />
+      <biological_entity id="o26041" name="achene" name_original="achene" src="d0_s14" type="structure">
+        <character char_type="range_value" from="1.5" from_unit="mm" name="some_measurement" src="d0_s14" to="1.8" to_unit="mm" />
+      </biological_entity>
+      <relation from="o26039" id="r3205" name="from" negation="false" src="d0_s14" to="o26040" />
+      <relation from="o26040" id="r3206" name="to" negation="false" src="d0_s14" to="o26041" />
+    </statement>
+    <statement id="d0_s15">
+      <text>Achenes oblongovate, 1.2–1.5 × 0.6–0.8 mm, 0.3–0.4 mm thick.</text>
+    </statement>
+    <statement id="d0_s16">
+      <text>2n = 70.</text>
+      <biological_entity id="o26042" name="achene" name_original="achenes" src="d0_s15" type="structure">
+        <character name="thickness" src="d0_s15" unit="mm" value="1.2-1.5×0.6-0.8" value_original="1.2-1.5×0.6-0.8" />
+        <character char_type="range_value" from="0.3" from_unit="mm" name="thickness" src="d0_s15" to="0.4" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o26043" name="chromosome" name_original="" src="d0_s16" type="structure">
+        <character name="quantity" src="d0_s16" value="70" value_original="70" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="summer" from="summer" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Moist to wet meadows, marshes, thickets, stream banks, ditches</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="moist to wet meadows" />
+        <character name="habitat" value="marshes" />
+        <character name="habitat" value="thickets" />
+        <character name="habitat" value="stream banks" />
+        <character name="habitat" value="ditches" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>20–400 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="400" to_unit="m" from="20" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Man., Ont., Que., Sask.; Conn., Del., D.C., Ill., Ind., Iowa, Kans., Ky., Mass., Mich., Minn., Mo., Nebr., N.H., N.J., N.Y., N.C., N.Dak., Ohio, Pa., S.Dak., Vt., Va., W.Va., Wis.; Europe (introduced).</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="Man." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Sask." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="D.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Nebr." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Dak." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.Dak." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
+        <character name="distribution" value="Europe ()" establishment_means="introduced" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>138.</number>
+  <other_name type="common_name">Carex accrêté</other_name>
+  <discussion>When mature, Carex cristatella is readily distinguished from most other species of sect. Ovales by the widely spreading perigynia and the globose spikes, but immature specimens are frequently mistaken for other species, especially C. bebbii.</discussion>
+  
+</bio:treatment>

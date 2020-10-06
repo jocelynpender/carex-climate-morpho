@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">466</other_info_on_meta>
+    <other_info_on_meta type="mention_page">487</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">490</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Reznicek" date="2001" rank="section">hirtifoliae</taxon_name>
+    <taxon_name authority="Mackenzie" date="1910" rank="species">hirtifolia</taxon_name>
+    <place_of_publication>
+      <publication_title>Bull. Torrey Bot. Club</publication_title>
+      <place_in_publication>37: 244. 1910</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section hirtifoliae;species hirtifolia</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="fna_id">242357238</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="Muhlenberg ex Willdenow" date="unknown" rank="species">pubescens</taxon_name>
+    <place_of_publication>
+      <publication_title>Sp. Pl.</publication_title>
+      <place_in_publication>4(1): 281. 1805,</place_in_publication>
+      <other_info_on_pub>not Poiret 1789</other_info_on_pub>
+    </place_of_publication>
+    <taxon_hierarchy>genus Carex;species pubescens;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms 25–60 cm, scabrous distally, pilose.</text>
+      <biological_entity id="o25944" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character char_type="range_value" from="25" from_unit="cm" name="some_measurement" src="d0_s0" to="60" to_unit="cm" />
+        <character is_modifier="false" modifier="distally" name="pubescence_or_relief" src="d0_s0" value="scabrous" value_original="scabrous" />
+        <character is_modifier="false" name="pubescence" src="d0_s0" value="pilose" value_original="pilose" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaf-blades to 4–8 mm wide.</text>
+      <biological_entity id="o25945" name="leaf-blade" name_original="leaf-blades" src="d0_s1" type="structure">
+        <character char_type="range_value" from="4" from_unit="mm" name="width" src="d0_s1" to="8" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Spikes: lateral spikes in distal 1/2 of stem, 5–17 (–22) × 4–6 mm;</text>
+      <biological_entity id="o25946" name="spike" name_original="spikes" src="d0_s2" type="structure" />
+      <biological_entity constraint="lateral" id="o25947" name="spike" name_original="spikes" src="d0_s2" type="structure">
+        <character char_type="range_value" from="17" from_inclusive="false" from_unit="mm" name="atypical_length" notes="" src="d0_s2" to="22" to_unit="mm" />
+        <character char_type="range_value" from="5" from_unit="mm" name="length" notes="" src="d0_s2" to="17" to_unit="mm" />
+        <character char_type="range_value" from="4" from_unit="mm" name="width" notes="" src="d0_s2" to="6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="o25948" name="1/2" name_original="1/2" src="d0_s2" type="structure" />
+      <biological_entity id="o25949" name="stem" name_original="stem" src="d0_s2" type="structure" />
+      <relation from="o25947" id="r3186" name="in" negation="false" src="d0_s2" to="o25948" />
+      <relation from="o25948" id="r3187" name="part_of" negation="false" src="d0_s2" to="o25949" />
+    </statement>
+    <statement id="d0_s3">
+      <text>terminal spikes 8–20 × 1.8–3 mm.</text>
+      <biological_entity id="o25950" name="spike" name_original="spikes" src="d0_s3" type="structure" />
+      <biological_entity constraint="terminal" id="o25951" name="spike" name_original="spikes" src="d0_s3" type="structure">
+        <character char_type="range_value" from="8" from_unit="mm" name="length" src="d0_s3" to="20" to_unit="mm" />
+        <character char_type="range_value" from="1.8" from_unit="mm" name="width" src="d0_s3" to="3" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Pistillate scales 3-veined, obovate-circular, 3–5 × 1.2–2.5 mm, apex acuminate, proximal scale almost as long as perigynia, with awn 0.5–2 mm.</text>
+      <biological_entity id="o25952" name="scale" name_original="scales" src="d0_s4" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s4" value="pistillate" value_original="pistillate" />
+        <character is_modifier="false" name="architecture" src="d0_s4" value="3-veined" value_original="3-veined" />
+        <character is_modifier="false" name="arrangement_or_shape" src="d0_s4" value="obovate-circular" value_original="obovate-circular" />
+        <character char_type="range_value" from="3" from_unit="mm" name="length" src="d0_s4" to="5" to_unit="mm" />
+        <character char_type="range_value" from="1.2" from_unit="mm" name="width" src="d0_s4" to="2.5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o25953" name="apex" name_original="apex" src="d0_s4" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s4" value="acuminate" value_original="acuminate" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o25954" name="scale" name_original="scale" src="d0_s4" type="structure" />
+      <biological_entity id="o25955" name="perigynium" name_original="perigynia" src="d0_s4" type="structure" />
+      <biological_entity id="o25956" name="awn" name_original="awn" src="d0_s4" type="structure">
+        <character char_type="range_value" from="0.5" from_unit="mm" name="some_measurement" src="d0_s4" to="2" to_unit="mm" />
+      </biological_entity>
+      <relation from="o25954" id="r3188" name="as long as" negation="false" src="d0_s4" to="o25955" />
+      <relation from="o25954" id="r3189" name="with" negation="false" src="d0_s4" to="o25956" />
+    </statement>
+    <statement id="d0_s5">
+      <text>Perigynia 3.5–5 × 1.5–1.8 mm.</text>
+      <biological_entity id="o25957" name="perigynium" name_original="perigynia" src="d0_s5" type="structure">
+        <character char_type="range_value" from="3.5" from_unit="mm" name="length" src="d0_s5" to="5" to_unit="mm" />
+        <character char_type="range_value" from="1.5" from_unit="mm" name="width" src="d0_s5" to="1.8" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>Achenes sessile, 2.5–2.8 × 1.2–1.5 mm. 2n = 50.</text>
+      <biological_entity id="o25958" name="achene" name_original="achenes" src="d0_s6" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s6" value="sessile" value_original="sessile" />
+        <character char_type="range_value" from="2.5" from_unit="mm" name="length" src="d0_s6" to="2.8" to_unit="mm" />
+        <character char_type="range_value" from="1.2" from_unit="mm" name="width" src="d0_s6" to="1.5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o25959" name="chromosome" name_original="" src="d0_s6" type="structure">
+        <character name="quantity" src="d0_s6" value="50" value_original="50" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting late spring–early summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="early summer" from="late spring" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Thickets, lowland forests, forested slopes</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="thickets" />
+        <character name="habitat" value="lowland forests" />
+        <character name="habitat" value="forested slopes" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–1000 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="1000" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>N.B., N.S., Ont., Que.; Conn., Del., D.C., Ill., Ind., Iowa, Kans., Ky., Maine, Md., Mass., Mich., Minn., Mo., N.H., N.J., Ohio, Pa., R.I., Tenn., Vt., Va., W.Va., Wis.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="D.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>353.</number>
+  <other_name type="common_name">Carex à feuilles poilues</other_name>
+  
+</bio:treatment>

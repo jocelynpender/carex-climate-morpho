@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">276</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="(Heuffel) H. Christ" date="1886" rank="section">vulpinae</taxon_name>
+    <taxon_name authority="Mackenzie" date="1914" rank="species">oklahomensis</taxon_name>
+    <place_of_publication>
+      <publication_title>Torreya</publication_title>
+      <place_in_publication>14: 126. 1914</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section vulpinae;species oklahomensis</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="fna_id">242357369</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="Muhlenberg ex Willdenow" date="unknown" rank="species">stipata</taxon_name>
+    <taxon_name authority="(Mackenzie) Gleason" date="unknown" rank="variety">oklahomensis</taxon_name>
+    <taxon_hierarchy>genus Carex;species stipata;variety oklahomensis;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants with basal sheaths of previous year not persistent.</text>
+      <biological_entity id="o3765" name="whole_organism" name_original="" src="" type="structure">
+        <character name="growth_form" value="plant" />
+      </biological_entity>
+      <biological_entity constraint="basal" id="o3766" name="sheath" name_original="sheaths" src="d0_s0" type="structure">
+        <character is_modifier="false" modifier="not" name="duration" src="d0_s0" value="persistent" value_original="persistent" />
+      </biological_entity>
+      <biological_entity constraint="previous" id="o3767" name="year" name_original="year" src="d0_s0" type="structure" />
+      <relation from="o3765" id="r457" name="with" negation="false" src="d0_s0" to="o3766" />
+      <relation from="o3766" id="r458" name="part_of" negation="false" src="d0_s0" to="o3767" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Culms not easily compressed, angles obtuse, to 80 cm × 2 mm, glabrous.</text>
+      <biological_entity id="o3768" name="culm" name_original="culms" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="not easily" name="shape" src="d0_s1" value="compressed" value_original="compressed" />
+      </biological_entity>
+      <biological_entity id="o3769" name="angle" name_original="angles" src="d0_s1" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s1" value="obtuse" value_original="obtuse" />
+        <character char_type="range_value" from="0" from_unit="cm" name="length" src="d0_s1" to="80" to_unit="cm" />
+        <character name="width" src="d0_s1" unit="mm" value="2" value_original="2" />
+        <character is_modifier="false" name="pubescence" src="d0_s1" value="glabrous" value_original="glabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Leaves: sheaths of proximal 2–3 leaves bladeless, fronts smooth, indistinctly linearly veined, forming tubular extension distal to sheath-blade junction, apex colorless, fragile, U-shaped, entire;</text>
+      <biological_entity id="o3770" name="leaf" name_original="leaves" src="d0_s2" type="structure" />
+      <biological_entity id="o3771" name="sheath" name_original="sheaths" src="d0_s2" type="structure" />
+      <biological_entity id="o3772" name="proximal" name_original="proximal" src="d0_s2" type="structure" />
+      <biological_entity constraint="sheath-blade" id="o3773" name="junction" name_original="junction" src="d0_s2" type="structure">
+        <character char_type="range_value" from="2" name="quantity" src="d0_s2" to="3" />
+      </biological_entity>
+      <biological_entity id="o3774" name="leaf" name_original="leaves" src="d0_s2" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s2" value="bladeless" value_original="bladeless" />
+      </biological_entity>
+      <biological_entity id="o3775" name="front" name_original="fronts" src="d0_s2" type="structure">
+        <character is_modifier="false" name="architecture_or_pubescence_or_relief" src="d0_s2" value="smooth" value_original="smooth" />
+        <character is_modifier="false" modifier="indistinctly linearly" name="architecture" src="d0_s2" value="veined" value_original="veined" />
+        <character constraint="to sheath-blade junction" constraintid="o3777" is_modifier="false" name="position_or_shape" src="d0_s2" value="distal" value_original="distal" />
+      </biological_entity>
+      <biological_entity id="o3776" name="extension" name_original="extension" src="d0_s2" type="structure">
+        <character is_modifier="true" name="shape" src="d0_s2" value="tubular" value_original="tubular" />
+      </biological_entity>
+      <biological_entity constraint="sheath-blade" id="o3777" name="junction" name_original="junction" src="d0_s2" type="structure" />
+      <biological_entity id="o3778" name="apex" name_original="apex" src="d0_s2" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s2" value="colorless" value_original="colorless" />
+        <character is_modifier="false" name="fragility" src="d0_s2" value="fragile" value_original="fragile" />
+        <character is_modifier="false" name="shape" src="d0_s2" value="u--shaped" value_original="u--shaped" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s2" value="entire" value_original="entire" />
+      </biological_entity>
+      <relation from="o3771" id="r459" name="part_of" negation="false" src="d0_s2" to="o3772" />
+      <relation from="o3771" id="r460" name="to" negation="false" src="d0_s2" to="o3773" />
+      <relation from="o3775" id="r461" name="forming" negation="false" src="d0_s2" to="o3776" />
+    </statement>
+    <statement id="d0_s3">
+      <text>ligules obtuse, 4 mm, free limb to 3 mm;</text>
+      <biological_entity id="o3779" name="leaf" name_original="leaves" src="d0_s3" type="structure" />
+      <biological_entity id="o3780" name="ligule" name_original="ligules" src="d0_s3" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s3" value="obtuse" value_original="obtuse" />
+        <character name="some_measurement" src="d0_s3" unit="mm" value="4" value_original="4" />
+      </biological_entity>
+      <biological_entity id="o3781" name="limb" name_original="limb" src="d0_s3" type="structure">
+        <character is_modifier="true" name="fusion" src="d0_s3" value="free" value_original="free" />
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s3" to="3" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>blades not epistomic, to 75 cm × 5 mm.</text>
+      <biological_entity id="o3782" name="leaf" name_original="leaves" src="d0_s4" type="structure" />
+      <biological_entity id="o3783" name="blade" name_original="blades" src="d0_s4" type="structure">
+        <character is_modifier="false" modifier="not" name="architecture" src="d0_s4" value="epistomic" value_original="epistomic" />
+        <character char_type="range_value" from="0" from_unit="cm" name="length" src="d0_s4" to="75" to_unit="cm" />
+        <character name="width" src="d0_s4" unit="mm" value="5" value_original="5" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Inflorescences densely spicate, elongate, with 15–20 distinguishable branches, 5–10 × 2.5 cm;</text>
+      <biological_entity id="o3784" name="inflorescence" name_original="inflorescences" src="d0_s5" type="structure">
+        <character is_modifier="false" modifier="densely" name="architecture" src="d0_s5" value="spicate" value_original="spicate" />
+        <character is_modifier="false" name="shape" src="d0_s5" value="elongate" value_original="elongate" />
+        <character char_type="range_value" from="5" from_unit="cm" name="length" notes="" src="d0_s5" to="10" to_unit="cm" />
+        <character name="width" notes="" src="d0_s5" unit="cm" value="2.5" value_original="2.5" />
+      </biological_entity>
+      <biological_entity id="o3785" name="branch" name_original="branches" src="d0_s5" type="structure">
+        <character char_type="range_value" from="15" is_modifier="true" name="quantity" src="d0_s5" to="20" />
+        <character is_modifier="true" name="prominence" src="d0_s5" value="distinguishable" value_original="distinguishable" />
+      </biological_entity>
+      <relation from="o3784" id="r462" name="with" negation="false" src="d0_s5" to="o3785" />
+    </statement>
+    <statement id="d0_s6">
+      <text>proximal internode to 10 mm.</text>
+      <biological_entity constraint="proximal" id="o3786" name="internode" name_original="internode" src="d0_s6" type="structure">
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s6" to="10" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Scales pale-brown with hyaline margins.</text>
+      <biological_entity id="o3787" name="scale" name_original="scales" src="d0_s7" type="structure">
+        <character constraint="with margins" constraintid="o3788" is_modifier="false" name="coloration" src="d0_s7" value="pale-brown" value_original="pale-brown" />
+      </biological_entity>
+      <biological_entity id="o3788" name="margin" name_original="margins" src="d0_s7" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s7" value="hyaline" value_original="hyaline" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Perigynia pale-brown with redbrown veins, 10–12-veined abaxially, 7-veined adaxially, to 5 × 1.7 mm, base distended proximally, cordate;</text>
+      <biological_entity id="o3789" name="perigynium" name_original="perigynia" src="d0_s8" type="structure">
+        <character constraint="with veins" constraintid="o3790" is_modifier="false" name="coloration" src="d0_s8" value="pale-brown" value_original="pale-brown" />
+        <character is_modifier="false" modifier="abaxially" name="architecture" notes="" src="d0_s8" value="10-12-veined" value_original="10-12-veined" />
+        <character is_modifier="false" modifier="adaxially" name="architecture" src="d0_s8" value="7-veined" value_original="7-veined" />
+        <character char_type="range_value" from="0" from_unit="mm" name="length" src="d0_s8" to="5" to_unit="mm" />
+        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d0_s8" to="1.7" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o3790" name="vein" name_original="veins" src="d0_s8" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s8" value="redbrown" value_original="redbrown" />
+      </biological_entity>
+      <biological_entity id="o3791" name="base" name_original="base" src="d0_s8" type="structure">
+        <character is_modifier="false" modifier="proximally" name="shape" src="d0_s8" value="distended" value_original="distended" />
+        <character is_modifier="false" name="shape" src="d0_s8" value="cordate" value_original="cordate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>stipe to 0.2 mm;</text>
+      <biological_entity id="o3792" name="stipe" name_original="stipe" src="d0_s9" type="structure">
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s9" to="0.2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>beak to 2.5 mm, serrulate.</text>
+      <biological_entity id="o3793" name="beak" name_original="beak" src="d0_s10" type="structure">
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s10" to="2.5" to_unit="mm" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s10" value="serrulate" value_original="serrulate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>Achenes broadly ovate, 1.7 × 1.5 mm;</text>
+      <biological_entity id="o3794" name="achene" name_original="achenes" src="d0_s11" type="structure">
+        <character is_modifier="false" modifier="broadly" name="shape" src="d0_s11" value="ovate" value_original="ovate" />
+        <character name="length" src="d0_s11" unit="mm" value="1.7" value_original="1.7" />
+        <character name="width" src="d0_s11" unit="mm" value="1.5" value_original="1.5" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s12">
+      <text>stalk to 0.15 mm;</text>
+      <biological_entity id="o3795" name="stalk" name_original="stalk" src="d0_s12" type="structure" />
+    </statement>
+    <statement id="d0_s13">
+      <text>persistent style base cylindric, 0.15 mm.</text>
+      <biological_entity constraint="style" id="o3796" name="base" name_original="base" src="d0_s13" type="structure">
+        <character is_modifier="true" name="duration" src="d0_s13" value="persistent" value_original="persistent" />
+        <character is_modifier="false" name="shape" src="d0_s13" value="cylindric" value_original="cylindric" />
+        <character name="some_measurement" src="d0_s13" unit="mm" value="0.15" value_original="0.15" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting May–Jun.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="Jun" from="May" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Seasonally saturated or inundated soils in wet meadows, marshes, alluvial bottomlands</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="soils" modifier="seasonally saturated or inundated" constraint="in wet meadows , marshes , alluvial bottomlands" />
+        <character name="habitat" value="wet meadows" />
+        <character name="habitat" value="marshes" />
+        <character name="habitat" value="alluvial bottomlands" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–1500 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="1500" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ark., Del., Kans., Ky., Ind., Ill., Md., Miss., Mo., Okla., N.C., Tenn., Tex., Va.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>5.</number>
+  <discussion>Although Carex oklahomensis resembles C. stipata in inflorescence and perigynium characteristics, C. oklahomensis is distinguished by its firm, obtuse-angled stems, bladeless basal sheaths, and tubular extension of the smooth sheath fronts.</discussion>
+  <discussion>Northern and eastern records of Carex oklahomensis are mostly recent and the species may be increasing its range.</discussion>
+  
+</bio:treatment>

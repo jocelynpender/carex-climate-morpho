@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">431</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="G. Don in J. C. Loudon" date="1830" rank="section">paniceae</taxon_name>
+    <taxon_name authority="Dewey" date="1842" rank="species">meadii</taxon_name>
+    <place_of_publication>
+      <publication_title>Amer. J. Sci. Arts</publication_title>
+      <place_in_publication>43: 90, plate Cc, fig. 94. 1842</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section paniceae;species meadii</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="fna_id">242357322</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="Schkuhr" date="unknown" rank="species">tetanica</taxon_name>
+    <taxon_name authority="(Dewey) L. H. Bailey" date="unknown" rank="variety">meadii</taxon_name>
+    <taxon_hierarchy>genus Carex;species tetanica;variety meadii;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants colonial, long-rhizomatous, vegetative shoots widely scattered and inconspicuous from deep rhizomes.</text>
+      <biological_entity id="o7951" name="whole_organism" name_original="" src="" type="structure">
+        <character is_modifier="false" name="growth_form" src="d0_s0" value="colonial" value_original="colonial" />
+        <character is_modifier="false" name="architecture" src="d0_s0" value="long-rhizomatous" value_original="long-rhizomatous" />
+        <character name="growth_form" value="plant" />
+      </biological_entity>
+      <biological_entity id="o7952" name="shoot" name_original="shoots" src="d0_s0" type="structure">
+        <character is_modifier="true" name="reproduction" src="d0_s0" value="vegetative" value_original="vegetative" />
+        <character is_modifier="false" modifier="widely" name="arrangement" src="d0_s0" value="scattered" value_original="scattered" />
+        <character constraint="from rhizomes" constraintid="o7953" is_modifier="false" name="prominence" src="d0_s0" value="inconspicuous" value_original="inconspicuous" />
+      </biological_entity>
+      <biological_entity id="o7953" name="rhizome" name_original="rhizomes" src="d0_s0" type="structure">
+        <character is_modifier="true" name="depth" src="d0_s0" value="deep" value_original="deep" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Culms 15–60 cm, usually scabrous distally.</text>
+      <biological_entity id="o7954" name="culm" name_original="culms" src="d0_s1" type="structure">
+        <character char_type="range_value" from="15" from_unit="cm" name="some_measurement" src="d0_s1" to="60" to_unit="cm" />
+        <character is_modifier="false" modifier="usually; distally" name="pubescence_or_relief" src="d0_s1" value="scabrous" value_original="scabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Leaves: proximal sheaths with blades, brownish, 1.5–5 mm diam.;</text>
+      <biological_entity id="o7955" name="leaf" name_original="leaves" src="d0_s2" type="structure" />
+      <biological_entity constraint="proximal" id="o7956" name="sheath" name_original="sheaths" src="d0_s2" type="structure">
+        <character is_modifier="false" name="coloration" notes="" src="d0_s2" value="brownish" value_original="brownish" />
+        <character char_type="range_value" from="1.5" from_unit="mm" name="diameter" src="d0_s2" to="5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o7957" name="blade" name_original="blades" src="d0_s2" type="structure" />
+      <relation from="o7956" id="r937" name="with" negation="false" src="d0_s2" to="o7957" />
+    </statement>
+    <statement id="d0_s3">
+      <text>ligules 0.4–3.6 mm, 0.4–1.2 times wider than long;</text>
+      <biological_entity id="o7958" name="leaf" name_original="leaves" src="d0_s3" type="structure" />
+      <biological_entity id="o7959" name="ligule" name_original="ligules" src="d0_s3" type="structure">
+        <character char_type="range_value" from="0.4" from_unit="mm" name="some_measurement" src="d0_s3" to="3.6" to_unit="mm" />
+        <character is_modifier="false" name="l_w_ratio" src="d0_s3" value="1/(0.4-1.2)" value_original="1/(0.4-1.2)" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>blades gray-green, flat, 7–15 cm × 2–5 (–7) mm, folded near bases, margins often revolute, herbaceous.</text>
+      <biological_entity id="o7960" name="leaf" name_original="leaves" src="d0_s4" type="structure" />
+      <biological_entity id="o7961" name="blade" name_original="blades" src="d0_s4" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s4" value="gray-green" value_original="gray-green" />
+        <character is_modifier="false" name="prominence_or_shape" src="d0_s4" value="flat" value_original="flat" />
+        <character char_type="range_value" from="7" from_unit="cm" name="length" src="d0_s4" to="15" to_unit="cm" />
+        <character char_type="range_value" from="5" from_inclusive="false" from_unit="mm" name="atypical_width" src="d0_s4" to="7" to_unit="mm" />
+        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s4" to="5" to_unit="mm" />
+        <character constraint="near bases" constraintid="o7962" is_modifier="false" name="architecture_or_shape" src="d0_s4" value="folded" value_original="folded" />
+      </biological_entity>
+      <biological_entity id="o7962" name="base" name_original="bases" src="d0_s4" type="structure" />
+      <biological_entity id="o7963" name="margin" name_original="margins" src="d0_s4" type="structure">
+        <character is_modifier="false" modifier="often" name="shape_or_vernation" src="d0_s4" value="revolute" value_original="revolute" />
+        <character is_modifier="false" name="growth_form_or_texture" src="d0_s4" value="herbaceous" value_original="herbaceous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Inflorescences 4–25 cm, 1–1.6 times as long as proximal bracts;</text>
+      <biological_entity id="o7964" name="inflorescence" name_original="inflorescences" src="d0_s5" type="structure">
+        <character char_type="range_value" from="4" from_unit="cm" name="some_measurement" src="d0_s5" to="25" to_unit="cm" />
+        <character constraint="bract" constraintid="o7965" is_modifier="false" name="length" src="d0_s5" value="1-1.6 times as long as proximal bracts" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o7965" name="bract" name_original="bracts" src="d0_s5" type="structure" />
+    </statement>
+    <statement id="d0_s6">
+      <text>proximal bract 2.5–20 cm, sheath 0.5–4 cm, blade 2–16 cm;</text>
+      <biological_entity constraint="proximal" id="o7966" name="bract" name_original="bract" src="d0_s6" type="structure">
+        <character char_type="range_value" from="2.5" from_unit="cm" name="some_measurement" src="d0_s6" to="20" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o7967" name="sheath" name_original="sheath" src="d0_s6" type="structure">
+        <character char_type="range_value" from="0.5" from_unit="cm" name="some_measurement" src="d0_s6" to="4" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o7968" name="blade" name_original="blade" src="d0_s6" type="structure">
+        <character char_type="range_value" from="2" from_unit="cm" name="some_measurement" src="d0_s6" to="16" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>pistillate spikes ovoid to cylindric, 6–37 × 3.5–8 mm;</text>
+      <biological_entity id="o7969" name="spike" name_original="spikes" src="d0_s7" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s7" value="pistillate" value_original="pistillate" />
+        <character char_type="range_value" from="ovoid" name="shape" src="d0_s7" to="cylindric" />
+        <character char_type="range_value" from="6" from_unit="mm" name="length" src="d0_s7" to="37" to_unit="mm" />
+        <character char_type="range_value" from="3.5" from_unit="mm" name="width" src="d0_s7" to="8" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>lateral spikes erect or ascending on stiff peduncles.</text>
+      <biological_entity constraint="lateral" id="o7970" name="spike" name_original="spikes" src="d0_s8" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s8" value="erect" value_original="erect" />
+        <character constraint="on peduncles" constraintid="o7971" is_modifier="false" name="orientation" src="d0_s8" value="ascending" value_original="ascending" />
+      </biological_entity>
+      <biological_entity id="o7971" name="peduncle" name_original="peduncles" src="d0_s8" type="structure">
+        <character is_modifier="true" name="fragility" src="d0_s8" value="stiff" value_original="stiff" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>Pistillate scales purple-tinged or brown, apex awned or obtuse.</text>
+      <biological_entity id="o7972" name="scale" name_original="scales" src="d0_s9" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s9" value="pistillate" value_original="pistillate" />
+        <character is_modifier="false" name="coloration" src="d0_s9" value="purple-tinged" value_original="purple-tinged" />
+        <character is_modifier="false" name="coloration" src="d0_s9" value="brown" value_original="brown" />
+      </biological_entity>
+      <biological_entity id="o7973" name="apex" name_original="apex" src="d0_s9" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s9" value="awned" value_original="awned" />
+        <character is_modifier="false" name="shape" src="d0_s9" value="obtuse" value_original="obtuse" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>Perigynia ascending to spreading, densely arranged, yellow-green to brown, 2.3–5 × 1.25–2.5 mm, minutely papillose;</text>
+      <biological_entity id="o7974" name="perigynium" name_original="perigynia" src="d0_s10" type="structure">
+        <character char_type="range_value" from="ascending" name="orientation" src="d0_s10" to="spreading" />
+        <character is_modifier="false" modifier="densely" name="arrangement" src="d0_s10" value="arranged" value_original="arranged" />
+        <character char_type="range_value" from="yellow-green" name="coloration" src="d0_s10" to="brown" />
+        <character char_type="range_value" from="2.3" from_unit="mm" name="length" src="d0_s10" to="5" to_unit="mm" />
+        <character char_type="range_value" from="1.25" from_unit="mm" name="width" src="d0_s10" to="2.5" to_unit="mm" />
+        <character is_modifier="false" modifier="minutely" name="relief" src="d0_s10" value="papillose" value_original="papillose" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>beak minute, bent.</text>
+      <biological_entity id="o7975" name="beak" name_original="beak" src="d0_s11" type="structure">
+        <character is_modifier="false" name="size" src="d0_s11" value="minute" value_original="minute" />
+        <character is_modifier="false" name="shape" src="d0_s11" value="bent" value_original="bent" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s12">
+      <text>Achenes light to dark-brown, 2.7–4 × 1.7–2.2 (–2.5) mm.</text>
+      <biological_entity id="o7976" name="achene" name_original="achenes" src="d0_s12" type="structure">
+        <character char_type="range_value" from="light" name="coloration" src="d0_s12" to="dark-brown" />
+        <character char_type="range_value" from="2.7" from_unit="mm" name="length" src="d0_s12" to="4" to_unit="mm" />
+        <character char_type="range_value" from="2.2" from_inclusive="false" from_unit="mm" name="atypical_width" src="d0_s12" to="2.5" to_unit="mm" />
+        <character char_type="range_value" from="1.7" from_unit="mm" name="width" src="d0_s12" to="2.2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting late spring–early summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="early summer" from="late spring" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Calcareous prairies, fens, cedar glades, open woodlands, moist depressions</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="calcareous prairies" />
+        <character name="habitat" value="fens" />
+        <character name="habitat" value="cedar glades" />
+        <character name="habitat" value="open woodlands" />
+        <character name="habitat" value="moist depressions" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>50–2400 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="2400" to_unit="m" from="50" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Man., Ont., Sask.; Ala., Ark., Ariz., Ga., Ill., Ind., Iowa, Kans., Ky., Mich., Minn., Miss., Mo., Nebr., N.J., N.C., N.Dak., Ohio, Okla., Pa., R.I., S.Dak., Tenn., Tex., Va., Wis.; Mexico.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="Man." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Sask." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ariz." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Nebr." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Dak." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.Dak." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
+        <character name="distribution" value="Mexico" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>257.</number>
+  <discussion>Separating Carex meadii and C. tetanica can be problematic, particularly in the Great Lakes region where they seem to integrade with each other. Carex meadii, the more wide-ranging taxon, can tolerate drier habitats. In addition to the characters in the key, C. meadii tends to be a coarser plant with more grayish green leaves, shorter peduncles (bearing the staminate and proximal pistillate spikes), and thicker spikes. The perigynia, including the proximal ones, are strongly aggregated and borne in more ranks within the spike. Also, the beaks of C. meadii may be more distinct and sharply curved.</discussion>
+  <discussion>Due to confusion with Carex meadii, the geographic range of C. tetanica is not fully known.</discussion>
+  
+</bio:treatment>

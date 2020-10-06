@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">255</other_info_on_meta>
+    <other_info_on_meta type="mention_page">418</other_info_on_meta>
+    <other_info_on_meta type="mention_page">428</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">417</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="(Heuffel) Meinshauser" date="1901" rank="section">limosae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1753" rank="species">limosa</taxon_name>
+    <place_of_publication>
+      <publication_title>Sp. Pl.</publication_title>
+      <place_in_publication>2: 977. 1753</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section limosae;species limosa</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="fna_id">200026598</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms usually aphyllopodic, without dead leaf remains at base, 20–60 cm.</text>
+      <biological_entity id="o26731" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character is_modifier="false" modifier="usually" name="architecture" src="d0_s0" value="aphyllopodic" value_original="aphyllopodic" />
+        <character char_type="range_value" from="20" from_unit="cm" name="some_measurement" src="d0_s0" to="60" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o26732" name="leaf" name_original="leaf" src="d0_s0" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s0" value="dead" value_original="dead" />
+      </biological_entity>
+      <biological_entity id="o26733" name="base" name_original="base" src="d0_s0" type="structure" />
+      <relation from="o26731" id="r3314" name="without" negation="false" src="d0_s0" to="o26732" />
+      <relation from="o26732" id="r3315" name="remains at" negation="false" src="d0_s0" to="o26733" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaf-blades 1–2.5 mm wide, margins involute, scabrid.</text>
+      <biological_entity id="o26734" name="leaf-blade" name_original="leaf-blades" src="d0_s1" type="structure">
+        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s1" to="2.5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o26735" name="margin" name_original="margins" src="d0_s1" type="structure">
+        <character is_modifier="false" name="shape_or_vernation" src="d0_s1" value="involute" value_original="involute" />
+        <character is_modifier="false" name="pubescence_or_relief" src="d0_s1" value="scabrid" value_original="scabrid" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Inflorescences: proximal bracts 2–6 cm, shorter than inflorescences;</text>
+      <biological_entity id="o26736" name="inflorescence" name_original="inflorescences" src="d0_s2" type="structure" />
+      <biological_entity constraint="proximal" id="o26737" name="bract" name_original="bracts" src="d0_s2" type="structure">
+        <character char_type="range_value" from="2" from_unit="cm" name="some_measurement" src="d0_s2" to="6" to_unit="cm" />
+        <character constraint="than inflorescences" constraintid="o26738" is_modifier="false" name="height_or_length_or_size" src="d0_s2" value="shorter" value_original="shorter" />
+      </biological_entity>
+      <biological_entity id="o26738" name="inflorescence" name_original="inflorescences" src="d0_s2" type="structure" />
+    </statement>
+    <statement id="d0_s3">
+      <text>lateral spikes sometimes androgynous, 6–20 × 4–8 mm, with 8–30 perigynia;</text>
+      <biological_entity id="o26739" name="inflorescence" name_original="inflorescences" src="d0_s3" type="structure" />
+      <biological_entity constraint="lateral" id="o26740" name="spike" name_original="spikes" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="sometimes" name="reproduction" src="d0_s3" value="androgynous" value_original="androgynous" />
+        <character char_type="range_value" from="6" from_unit="mm" name="length" src="d0_s3" to="20" to_unit="mm" />
+        <character char_type="range_value" from="4" from_unit="mm" name="width" src="d0_s3" to="8" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o26741" name="perigynium" name_original="perigynia" src="d0_s3" type="structure">
+        <character char_type="range_value" from="8" is_modifier="true" name="quantity" src="d0_s3" to="30" />
+      </biological_entity>
+      <relation from="o26740" id="r3316" name="with" negation="false" src="d0_s3" to="o26741" />
+    </statement>
+    <statement id="d0_s4">
+      <text>terminal spikes 7–35 × 1.5–2.5 (–3) mm.</text>
+      <biological_entity id="o26742" name="inflorescence" name_original="inflorescences" src="d0_s4" type="structure" />
+      <biological_entity constraint="terminal" id="o26743" name="spike" name_original="spikes" src="d0_s4" type="structure">
+        <character char_type="range_value" from="7" from_unit="mm" name="length" src="d0_s4" to="35" to_unit="mm" />
+        <character char_type="range_value" from="2.5" from_inclusive="false" from_unit="mm" name="atypical_width" src="d0_s4" to="3" to_unit="mm" />
+        <character char_type="range_value" from="1.5" from_unit="mm" name="width" src="d0_s4" to="2.5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Pistillate scales ovate to ovate-circular, 3–5.5 × 2–3.4 mm, wider and as long as or slightly longer than perigynia, apex obtuse to subacute, sometimes mucronate.</text>
+      <biological_entity id="o26744" name="scale" name_original="scales" src="d0_s5" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s5" value="pistillate" value_original="pistillate" />
+        <character char_type="range_value" from="ovate" name="shape" src="d0_s5" to="ovate-circular" />
+        <character char_type="range_value" from="3" from_unit="mm" name="length" src="d0_s5" to="5.5" to_unit="mm" />
+        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s5" to="3.4" to_unit="mm" />
+        <character is_modifier="false" name="width" src="d0_s5" value="wider" value_original="wider" />
+      </biological_entity>
+      <biological_entity id="o26746" name="perigynium" name_original="perigynia" src="d0_s5" type="structure">
+        <character is_modifier="true" modifier="slightly" name="length_or_size" src="d0_s5" value="longer" value_original="longer" />
+      </biological_entity>
+      <biological_entity id="o26745" name="perigynium" name_original="perigynia" src="d0_s5" type="structure">
+        <character is_modifier="true" modifier="slightly" name="length_or_size" src="d0_s5" value="longer" value_original="longer" />
+      </biological_entity>
+      <biological_entity id="o26747" name="apex" name_original="apex" src="d0_s5" type="structure">
+        <character char_type="range_value" from="obtuse" name="shape" src="d0_s5" to="subacute" />
+        <character is_modifier="false" modifier="sometimes" name="shape" src="d0_s5" value="mucronate" value_original="mucronate" />
+      </biological_entity>
+      <relation from="o26744" id="r3317" name="as long as" negation="false" src="d0_s5" to="o26746" />
+    </statement>
+    <statement id="d0_s6">
+      <text>Staminate scales obovate, 3–4.5 × 1.4–1.6 mm, apex obtuse, sometimes mucronate.</text>
+      <biological_entity id="o26748" name="scale" name_original="scales" src="d0_s6" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s6" value="staminate" value_original="staminate" />
+        <character is_modifier="false" name="shape" src="d0_s6" value="obovate" value_original="obovate" />
+        <character char_type="range_value" from="3" from_unit="mm" name="length" src="d0_s6" to="4.5" to_unit="mm" />
+        <character char_type="range_value" from="1.4" from_unit="mm" name="width" src="d0_s6" to="1.6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o26749" name="apex" name_original="apex" src="d0_s6" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s6" value="obtuse" value_original="obtuse" />
+        <character is_modifier="false" modifier="sometimes" name="shape" src="d0_s6" value="mucronate" value_original="mucronate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Anthers 2–3 mm.</text>
+      <biological_entity id="o26750" name="anther" name_original="anthers" src="d0_s7" type="structure">
+        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s7" to="3" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Perigynia 2.5–4 × 1.8–2.6 mm, apex rounded;</text>
+      <biological_entity id="o26751" name="perigynium" name_original="perigynia" src="d0_s8" type="structure">
+        <character char_type="range_value" from="2.5" from_unit="mm" name="length" src="d0_s8" to="4" to_unit="mm" />
+        <character char_type="range_value" from="1.8" from_unit="mm" name="width" src="d0_s8" to="2.6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o26752" name="apex" name_original="apex" src="d0_s8" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s8" value="rounded" value_original="rounded" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>beak 0.1–0.5 mm.</text>
+      <biological_entity id="o26753" name="beak" name_original="beak" src="d0_s9" type="structure">
+        <character char_type="range_value" from="0.1" from_unit="mm" name="some_measurement" src="d0_s9" to="0.5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="summer" from="summer" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Sphagnum bogs, wet meadows, shores</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="sphagnum bogs" />
+        <character name="habitat" value="wet meadows" />
+        <character name="habitat" value="shores" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–2000 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="2000" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Alta., B.C., Man., N.B., Nfld. and Labr., N.W.T., N.S., Ont., P.E.I., Que., Sask., Yukon; Alaska, Calif., Conn., Del., Ind., Iowa, Maine, Mass., Mich., Minn., Mont., Nebr., Nev., N.H., N.J., N.Y., N.Dak., Ohio, Oreg., Pa., Utah, Vt., Wash., Wis.; Eurasia.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="Alta." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Man." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Nfld. and Labr." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.W.T." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="P.E.I." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Sask." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Yukon" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Nebr." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Nev." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Dak." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Utah" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
+        <character name="distribution" value="Eurasia" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>233.</number>
+  <other_name type="common_name">Carex des bourbiers</other_name>
+  
+</bio:treatment>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">308</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Kükenthal in H. G. A. Engler" date="1909" rank="section">macrocephalae</taxon_name>
+    <taxon_name authority="Willdenow ex Sprengel" date="1826" rank="species">macrocephala</taxon_name>
+    <place_of_publication>
+      <publication_title>Syst. Veg.</publication_title>
+      <place_in_publication>3: 808. 1826</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section macrocephalae;species macrocephala</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="fna_id">242357313</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="J. Presl &amp; C. Presl" date="unknown" rank="species">anthericoides</taxon_name>
+    <taxon_hierarchy>genus Carex;species anthericoides;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms sharply angled, at least 1 angle serrulate distally, 10–35 cm.</text>
+      <biological_entity id="o28580" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character is_modifier="false" modifier="sharply" name="shape" src="d0_s0" value="angled" value_original="angled" />
+        <character modifier="at least" name="quantity" src="d0_s0" value="1" value_original="1" />
+      </biological_entity>
+      <biological_entity id="o28581" name="angle" name_original="angle" src="d0_s0" type="structure">
+        <character is_modifier="false" modifier="distally" name="architecture_or_shape" src="d0_s0" value="serrulate" value_original="serrulate" />
+        <character char_type="range_value" from="10" from_unit="cm" name="some_measurement" src="d0_s0" to="35" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Inflorescences with pistillate heads 2.5–5 cm wide;</text>
+      <biological_entity id="o28582" name="inflorescence" name_original="inflorescences" src="d0_s1" type="structure" />
+      <biological_entity id="o28583" name="head" name_original="heads" src="d0_s1" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s1" value="pistillate" value_original="pistillate" />
+        <character char_type="range_value" from="2.5" from_unit="cm" name="width" src="d0_s1" to="5" to_unit="cm" />
+      </biological_entity>
+      <relation from="o28582" id="r3527" name="with" negation="false" src="d0_s1" to="o28583" />
+    </statement>
+    <statement id="d0_s2">
+      <text>proximal spikes ascending-spreading to spreading.</text>
+      <biological_entity constraint="proximal" id="o28584" name="spike" name_original="spikes" src="d0_s2" type="structure">
+        <character char_type="range_value" from="ascending-spreading" name="orientation" src="d0_s2" to="spreading" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Pistillate scales reddish to brown with green or gold center, sometimes with distal margins white or pale gold, 0.1–0.3 (–0.5) mm wide, apex short-tapered with awn to 1.2–4 mm.</text>
+      <biological_entity id="o28585" name="scale" name_original="scales" src="d0_s3" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s3" value="pistillate" value_original="pistillate" />
+        <character char_type="range_value" constraint="with center" constraintid="o28586" from="reddish" name="coloration" src="d0_s3" to="brown" />
+      </biological_entity>
+      <biological_entity id="o28586" name="center" name_original="center" src="d0_s3" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s3" value="green" value_original="green" />
+        <character is_modifier="true" name="coloration" src="d0_s3" value="gold" value_original="gold" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="o28587" name="margin" name_original="margins" src="d0_s3" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s3" value="white" value_original="white" />
+        <character is_modifier="false" name="coloration" src="d0_s3" value="pale gold" value_original="pale gold" />
+        <character char_type="range_value" from="0.3" from_inclusive="false" from_unit="mm" name="width" notes="alterIDs:o28587" src="d0_s3" to="0.5" to_unit="mm" />
+        <character char_type="range_value" from="0.1" from_unit="mm" name="width" notes="alterIDs:o28587" src="d0_s3" to="0.3" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o28588" name="apex" name_original="apex" src="d0_s3" type="structure">
+        <character constraint="with awn" constraintid="o28589" is_modifier="false" name="shape" src="d0_s3" value="short-tapered" value_original="short-tapered" />
+      </biological_entity>
+      <biological_entity id="o28589" name="awn" name_original="awn" src="d0_s3" type="structure">
+        <character char_type="range_value" from="1.2" from_unit="mm" name="some_measurement" src="d0_s3" to="4" to_unit="mm" />
+      </biological_entity>
+      <relation from="o28585" id="r3528" modifier="sometimes" name="with" negation="false" src="d0_s3" to="o28587" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Anthers 2.5–5 mm.</text>
+      <biological_entity id="o28590" name="anther" name_original="anthers" src="d0_s4" type="structure">
+        <character char_type="range_value" from="2.5" from_unit="mm" name="some_measurement" src="d0_s4" to="5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Perigynia ascending to ascending-spreading, sometimes spreading, with deeply erose wings 0.7–1.7 mm wide, base cordate;</text>
+      <biological_entity id="o28591" name="perigynium" name_original="perigynia" src="d0_s5" type="structure">
+        <character char_type="range_value" from="ascending" name="orientation" src="d0_s5" to="ascending-spreading" />
+        <character is_modifier="false" modifier="sometimes" name="orientation" src="d0_s5" value="spreading" value_original="spreading" />
+      </biological_entity>
+      <biological_entity id="o28592" name="wing" name_original="wings" src="d0_s5" type="structure">
+        <character is_modifier="true" modifier="deeply" name="architecture_or_relief" src="d0_s5" value="erose" value_original="erose" />
+        <character char_type="range_value" from="0.7" from_unit="mm" name="width" src="d0_s5" to="1.7" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o28593" name="base" name_original="base" src="d0_s5" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s5" value="cordate" value_original="cordate" />
+      </biological_entity>
+      <relation from="o28591" id="r3529" name="with" negation="false" src="d0_s5" to="o28592" />
+    </statement>
+    <statement id="d0_s6">
+      <text>beak ± straight, 6.5–9 mm from apex to achene, apex notched 0.7–1.5 mm adaxially.</text>
+      <biological_entity id="o28594" name="beak" name_original="beak" src="d0_s6" type="structure">
+        <character is_modifier="false" modifier="more or less" name="course" src="d0_s6" value="straight" value_original="straight" />
+        <character char_type="range_value" constraint="from apex" constraintid="o28595" from="6.5" from_unit="mm" name="location" src="d0_s6" to="9" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o28595" name="apex" name_original="apex" src="d0_s6" type="structure" />
+      <biological_entity id="o28596" name="achene" name_original="achene" src="d0_s6" type="structure" />
+      <biological_entity id="o28597" name="apex" name_original="apex" src="d0_s6" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s6" value="notched" value_original="notched" />
+        <character char_type="range_value" from="0.7" from_unit="mm" modifier="adaxially" name="some_measurement" src="d0_s6" to="1.5" to_unit="mm" />
+      </biological_entity>
+      <relation from="o28595" id="r3530" name="to" negation="false" src="d0_s6" to="o28596" />
+    </statement>
+    <statement id="d0_s7">
+      <text>Achenes 3–4.5 × 2.3–3 mm. 2n = 74, 78.</text>
+      <biological_entity id="o28598" name="achene" name_original="achenes" src="d0_s7" type="structure">
+        <character char_type="range_value" from="3" from_unit="mm" name="length" src="d0_s7" to="4.5" to_unit="mm" />
+        <character char_type="range_value" from="2.3" from_unit="mm" name="width" src="d0_s7" to="3" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o28599" name="chromosome" name_original="" src="d0_s7" type="structure">
+        <character name="quantity" src="d0_s7" value="74" value_original="74" />
+        <character name="quantity" src="d0_s7" value="78" value_original="78" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting spring–summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="summer" from="spring" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Sandy beaches along seacoasts, sounds, bays, and inlets, especially on dunes</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="sandy beaches" constraint="along seacoasts , sounds , bays , and inlets" />
+        <character name="habitat" value="seacoasts" />
+        <character name="habitat" value="sounds" />
+        <character name="habitat" value="bays" />
+        <character name="habitat" value="inlets" />
+        <character name="habitat" value="dunes" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="0" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>B.C.; Alaska, Oreg., Wash.; Asia [Japan, Russian Far East (Kamchatka) to n China].</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
+        <character name="distribution" value="Asia [Japan" establishment_means="native" />
+        <character name="distribution" value="Russian Far East (Kamchatka) to n China]" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>61.</number>
+  
+</bio:treatment>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">308</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Kükenthal in H. G. A. Engler" date="1909" rank="section">macrocephalae</taxon_name>
+    <taxon_name authority="Ohwi" date="unknown" rank="species">kobomugi</taxon_name>
+    <place_of_publication>
+      <publication_title>Mem. Coll. Sci. Kyoto Imp. Univ. Ser. B, Biol.</publication_title>
+      <place_in_publication>5(3): 21930</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section macrocephalae;species kobomugi</taxon_hierarchy>
+    <other_info_on_name type="special_status">I</other_info_on_name>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="fna_id">200026589</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="Willdenow ex Sprengel" date="unknown" rank="species">macrocephala</taxon_name>
+    <taxon_name authority="(Ohwi) Miyabe &amp; Kudô" date="unknown" rank="variety">kobomugi</taxon_name>
+    <taxon_hierarchy>genus Carex;species macrocephala;variety kobomugi;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms bluntly angled, smooth or slightly serrulate on 1 angle distally, 10–30 cm.</text>
+      <biological_entity id="o31633" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character is_modifier="false" modifier="bluntly" name="shape" src="d0_s0" value="angled" value_original="angled" />
+        <character is_modifier="false" name="architecture" src="d0_s0" value="smooth" value_original="smooth" />
+        <character constraint="on angle" constraintid="o31634" is_modifier="false" modifier="slightly" name="architecture" src="d0_s0" value="serrulate" value_original="serrulate" />
+        <character char_type="range_value" from="10" from_unit="cm" name="some_measurement" notes="" src="d0_s0" to="30" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o31634" name="angle" name_original="angle" src="d0_s0" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s0" value="1" value_original="1" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Inflorescences with pistillate heads 2–4 cm wide;</text>
+      <biological_entity id="o31635" name="inflorescence" name_original="inflorescences" src="d0_s1" type="structure" />
+      <biological_entity id="o31636" name="head" name_original="heads" src="d0_s1" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s1" value="pistillate" value_original="pistillate" />
+        <character char_type="range_value" from="2" from_unit="cm" name="width" src="d0_s1" to="4" to_unit="cm" />
+      </biological_entity>
+      <relation from="o31635" id="r3921" name="with" negation="false" src="d0_s1" to="o31636" />
+    </statement>
+    <statement id="d0_s2">
+      <text>proximal spikes appressed to ascending.</text>
+      <biological_entity constraint="proximal" id="o31637" name="spike" name_original="spikes" src="d0_s2" type="structure">
+        <character char_type="range_value" from="appressed" name="orientation" src="d0_s2" to="ascending" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Pistillate scales green or gold with distal margins white or pale gold, 0.7–1 mm wide, apex long or short-tapered with awn to 6–12 mm.</text>
+      <biological_entity id="o31638" name="scale" name_original="scales" src="d0_s3" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s3" value="pistillate" value_original="pistillate" />
+        <character is_modifier="false" name="coloration" src="d0_s3" value="green" value_original="green" />
+        <character constraint="with distal margins" constraintid="o31639" is_modifier="false" name="coloration" src="d0_s3" value="gold" value_original="gold" />
+        <character char_type="range_value" from="0.7" from_unit="mm" name="width" notes="" src="d0_s3" to="1" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="o31639" name="margin" name_original="margins" src="d0_s3" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s3" value="white" value_original="white" />
+        <character is_modifier="false" name="coloration" src="d0_s3" value="pale gold" value_original="pale gold" />
+      </biological_entity>
+      <biological_entity id="o31640" name="apex" name_original="apex" src="d0_s3" type="structure">
+        <character is_modifier="false" name="length_or_size" src="d0_s3" value="long" value_original="long" />
+        <character constraint="with awn" constraintid="o31641" is_modifier="false" name="shape" src="d0_s3" value="short-tapered" value_original="short-tapered" />
+      </biological_entity>
+      <biological_entity id="o31641" name="awn" name_original="awn" src="d0_s3" type="structure">
+        <character char_type="range_value" from="6" from_unit="mm" name="some_measurement" src="d0_s3" to="12" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Anthers 4–6.5 mm.</text>
+      <biological_entity id="o31642" name="anther" name_original="anthers" src="d0_s4" type="structure">
+        <character char_type="range_value" from="4" from_unit="mm" name="some_measurement" src="d0_s4" to="6.5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Perigynia appressed-ascending to ascending, with shallowly erose wing 0.4–0.6 mm wide, base acute;</text>
+      <biological_entity id="o31643" name="perigynium" name_original="perigynia" src="d0_s5" type="structure">
+        <character char_type="range_value" from="appressed-ascending" name="orientation" src="d0_s5" to="ascending" />
+      </biological_entity>
+      <biological_entity id="o31644" name="wing" name_original="wing" src="d0_s5" type="structure">
+        <character is_modifier="true" modifier="shallowly" name="architecture_or_relief" src="d0_s5" value="erose" value_original="erose" />
+        <character char_type="range_value" from="0.4" from_unit="mm" name="width" src="d0_s5" to="0.6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o31645" name="base" name_original="base" src="d0_s5" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s5" value="acute" value_original="acute" />
+      </biological_entity>
+      <relation from="o31643" id="r3922" name="with" negation="false" src="d0_s5" to="o31644" />
+    </statement>
+    <statement id="d0_s6">
+      <text>beak ± falcate, 3–5 mm from apex to achene, apex notched 0.4–0.6 mm adaxially.</text>
+      <biological_entity id="o31646" name="beak" name_original="beak" src="d0_s6" type="structure">
+        <character is_modifier="false" modifier="more or less" name="shape" src="d0_s6" value="falcate" value_original="falcate" />
+        <character char_type="range_value" constraint="from apex" constraintid="o31647" from="3" from_unit="mm" name="location" src="d0_s6" to="5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o31647" name="apex" name_original="apex" src="d0_s6" type="structure" />
+      <biological_entity id="o31648" name="achene" name_original="achene" src="d0_s6" type="structure" />
+      <biological_entity id="o31649" name="apex" name_original="apex" src="d0_s6" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s6" value="notched" value_original="notched" />
+        <character char_type="range_value" from="0.4" from_unit="mm" modifier="adaxially" name="some_measurement" src="d0_s6" to="0.6" to_unit="mm" />
+      </biological_entity>
+      <relation from="o31647" id="r3923" name="to" negation="false" src="d0_s6" to="o31648" />
+    </statement>
+    <statement id="d0_s7">
+      <text>Achenes 4–7 × 1.5–2.5 mm.</text>
+      <biological_entity id="o31650" name="achene" name_original="achenes" src="d0_s7" type="structure">
+        <character char_type="range_value" from="4" from_unit="mm" name="length" src="d0_s7" to="7" to_unit="mm" />
+        <character char_type="range_value" from="1.5" from_unit="mm" name="width" src="d0_s7" to="2.5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting spring–summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="summer" from="spring" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Sandy beaches along seacoasts, sounds, bays, and inlets</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="sandy beaches" constraint="along seacoasts , sounds , bays , and inlets" />
+        <character name="habitat" value="seacoasts" />
+        <character name="habitat" value="sounds" />
+        <character name="habitat" value="bays" />
+        <character name="habitat" value="inlets" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="0" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Introduced; Del., Md., N.J., N.Y., N.C., Oreg., R.I., Va.; native e Asia.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="introduced" />
+        <character name="distribution" value="native e Asia" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>60.</number>
+  <other_name type="common_name">Sea Isle Japanese sedge</other_name>
+  <discussion>Before Carex kobomugi was formally recognized it was included in C. macrocephala Willdenow ex Sprengel. Carex kobomugi was collected during the early 1900s from ballast and sand near Portland, Oregon, but recent collections are not known; the habitat there may no longer exist. Clones of C. kobomugi have been registered by the U.S. Soil Conservation Service and the New Jersey Agricultural Experiment Station for long-term stabilization of coastal sand dunes. Its introduced range will likely expand.</discussion>
+  
+</bio:treatment>

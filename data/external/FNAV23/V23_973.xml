@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">519</other_info_on_meta>
+    <other_info_on_meta type="mention_page">521</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">520</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="(L. H. Bailey) Mackenzie in N. L. Britton et al." date="1935" rank="section">shortianae</taxon_name>
+    <taxon_name authority="Dewey" date="1836" rank="species">shortiana</taxon_name>
+    <place_of_publication>
+      <publication_title>Amer. J. Sci. Arts</publication_title>
+      <place_in_publication>30: 60, plate Aa, fig. 87. 1836</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section shortianae;species shortiana</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="fna_id">242357539</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms in medium to large-sized clumps, 30–90 cm.</text>
+      <biological_entity id="o11652" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character char_type="range_value" from="30" from_unit="cm" name="some_measurement" notes="" src="d0_s0" to="90" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o11653" name="clump" name_original="clumps" src="d0_s0" type="structure">
+        <character char_type="range_value" from="medium" is_modifier="true" name="size" src="d0_s0" to="large-sized" />
+      </biological_entity>
+      <relation from="o11652" id="r1433" name="in" negation="false" src="d0_s0" to="o11653" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves cauline, usually overtopping culms;</text>
+      <biological_entity id="o11654" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character is_modifier="false" name="position" src="d0_s1" value="cauline" value_original="cauline" />
+      </biological_entity>
+      <biological_entity id="o11655" name="culm" name_original="culms" src="d0_s1" type="structure" />
+      <relation from="o11654" id="r1434" modifier="usually" name="overtopping" negation="false" src="d0_s1" to="o11655" />
+    </statement>
+    <statement id="d0_s2">
+      <text>blades 10–40 (–50) cm × 4–9 mm.</text>
+      <biological_entity id="o11656" name="blade" name_original="blades" src="d0_s2" type="structure">
+        <character char_type="range_value" from="40" from_inclusive="false" from_unit="cm" name="atypical_length" src="d0_s2" to="50" to_unit="cm" />
+        <character char_type="range_value" from="10" from_unit="cm" name="length" src="d0_s2" to="40" to_unit="cm" />
+        <character char_type="range_value" from="4" from_unit="mm" name="width" src="d0_s2" to="9" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Inflorescences with proximal spikes ± strongly separate on slender peduncles, others approximate and short-pedunculate or subsessile, narrowly oblong to cylindric, 1–4 cm × 3.5–5.6 mm;</text>
+      <biological_entity id="o11657" name="inflorescence" name_original="inflorescences" src="d0_s3" type="structure" />
+      <biological_entity constraint="proximal" id="o11658" name="spike" name_original="spikes" src="d0_s3" type="structure">
+        <character constraint="on slender peduncles" constraintid="o11659" is_modifier="false" modifier="more or less strongly" name="arrangement" src="d0_s3" value="separate" value_original="separate" />
+      </biological_entity>
+      <biological_entity constraint="slender" id="o11659" name="peduncle" name_original="peduncles" src="d0_s3" type="structure" />
+      <biological_entity id="o11660" name="other" name_original="others" src="d0_s3" type="structure">
+        <character is_modifier="false" name="arrangement" src="d0_s3" value="approximate" value_original="approximate" />
+        <character is_modifier="false" name="architecture" src="d0_s3" value="short-pedunculate" value_original="short-pedunculate" />
+        <character is_modifier="false" name="architecture" src="d0_s3" value="subsessile" value_original="subsessile" />
+        <character char_type="range_value" from="narrowly oblong" name="shape" src="d0_s3" to="cylindric" />
+        <character char_type="range_value" from="1" from_unit="cm" name="length" src="d0_s3" to="4" to_unit="cm" />
+        <character char_type="range_value" from="3.5" from_unit="mm" name="width" src="d0_s3" to="5.6" to_unit="mm" />
+      </biological_entity>
+      <relation from="o11657" id="r1435" name="with" negation="false" src="d0_s3" to="o11658" />
+    </statement>
+    <statement id="d0_s4">
+      <text>lateral spikes, if gynecandrous, with ca. 30–140 pistillate flowers distally and (0–) 1–10 staminate flowers proximally;</text>
+      <biological_entity constraint="lateral" id="o11661" name="spike" name_original="spikes" src="d0_s4" type="structure">
+        <character is_modifier="false" name="reproduction" src="d0_s4" value="gynecandrous" value_original="gynecandrous" />
+      </biological_entity>
+      <biological_entity id="o11662" name="flower" name_original="flowers" src="d0_s4" type="structure">
+        <character char_type="range_value" from="30" is_modifier="true" name="quantity" src="d0_s4" to="140" />
+        <character is_modifier="true" name="architecture" src="d0_s4" value="pistillate" value_original="pistillate" />
+        <character char_type="range_value" from="0" name="atypical_quantity" src="d0_s4" to="1" to_inclusive="false" />
+        <character char_type="range_value" from="1" name="quantity" src="d0_s4" to="10" />
+      </biological_entity>
+      <biological_entity id="o11663" name="flower" name_original="flowers" src="d0_s4" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s4" value="staminate" value_original="staminate" />
+      </biological_entity>
+      <relation from="o11661" id="r1436" name="with" negation="false" src="d0_s4" to="o11662" />
+    </statement>
+    <statement id="d0_s5">
+      <text>terminal spikes staminate proximally, 1/2–3/4 pistillate distally.</text>
+      <biological_entity constraint="terminal" id="o11664" name="spike" name_original="spikes" src="d0_s5" type="structure">
+        <character is_modifier="false" modifier="proximally" name="architecture" src="d0_s5" value="staminate" value_original="staminate" />
+        <character char_type="range_value" from="1/2" name="quantity" src="d0_s5" to="3/4" />
+        <character is_modifier="false" modifier="distally" name="architecture" src="d0_s5" value="pistillate" value_original="pistillate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>Pistillate scales ovate, 1.5–3.2 mm, mostly not quite as long as perigynia.</text>
+      <biological_entity id="o11665" name="scale" name_original="scales" src="d0_s6" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s6" value="pistillate" value_original="pistillate" />
+        <character is_modifier="false" name="shape" src="d0_s6" value="ovate" value_original="ovate" />
+        <character char_type="range_value" from="1.5" from_unit="mm" name="some_measurement" src="d0_s6" to="3.2" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o11666" name="perigynium" name_original="perigynia" src="d0_s6" type="structure" />
+      <relation from="o11665" id="r1437" modifier="mostly not; not quite; quite" name="as long as" negation="false" src="d0_s6" to="o11666" />
+    </statement>
+    <statement id="d0_s7">
+      <text>Perigynia olive green to brown, very broadly compressed-obovoid, sharply edged, 2–2.6 × 1.8–2.4 mm;</text>
+      <biological_entity id="o11667" name="perigynium" name_original="perigynia" src="d0_s7" type="structure">
+        <character char_type="range_value" from="olive green" name="coloration" src="d0_s7" to="brown" />
+        <character is_modifier="false" modifier="very broadly" name="shape" src="d0_s7" value="compressed-obovoid" value_original="compressed-obovoid" />
+        <character is_modifier="false" modifier="sharply" name="architecture" src="d0_s7" value="edged" value_original="edged" />
+        <character char_type="range_value" from="2" from_unit="mm" name="length" src="d0_s7" to="2.6" to_unit="mm" />
+        <character char_type="range_value" from="1.8" from_unit="mm" name="width" src="d0_s7" to="2.4" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>beak often projecting out at 90° angle.</text>
+      <biological_entity id="o11668" name="beak" name_original="beak" src="d0_s8" type="structure">
+        <character constraint="at angle" constraintid="o11669" is_modifier="false" modifier="often" name="orientation" src="d0_s8" value="projecting" value_original="projecting" />
+      </biological_entity>
+      <biological_entity id="o11669" name="angle" name_original="angle" src="d0_s8" type="structure">
+        <character is_modifier="true" name="quantity" src="d0_s8" value="90" value_original="90" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>Achenes widely oblong-obovoid, 1.5–1.8 × 1–1.3 mm, apex short-apiculate.</text>
+      <biological_entity id="o11670" name="achene" name_original="achenes" src="d0_s9" type="structure">
+        <character is_modifier="false" modifier="widely" name="shape" src="d0_s9" value="oblong-obovoid" value_original="oblong-obovoid" />
+        <character char_type="range_value" from="1.5" from_unit="mm" name="length" src="d0_s9" to="1.8" to_unit="mm" />
+        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s9" to="1.3" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o11671" name="apex" name_original="apex" src="d0_s9" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s9" value="short-apiculate" value_original="short-apiculate" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting late spring–summer (May–late Jul).</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="summer" from="late spring" />
+        <character name="fruiting time" char_type="range_value" to="late Jul" from="May" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Rich woods at bases of slopes, more commonly swampy woods and thickets, wet, open grounds such as spring-fed meadows, prairie swales, pond margins, low depressions, streams, and ditches, particularly characteristic of bottomlands, often in calcareous soils</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="rich woods" constraint="at bases of slopes" />
+        <character name="habitat" value="bases" constraint="of slopes" />
+        <character name="habitat" value="slopes" />
+        <character name="habitat" value="swampy woods" modifier="more commonly" />
+        <character name="habitat" value="thickets" />
+        <character name="habitat" value="wet" />
+        <character name="habitat" value="open grounds" />
+        <character name="habitat" value="spring-fed meadows" />
+        <character name="habitat" value="prairie swales" />
+        <character name="habitat" value="pond margins" />
+        <character name="habitat" value="low depressions" />
+        <character name="habitat" value="streams" />
+        <character name="habitat" value="ditches" modifier="and" />
+        <character name="habitat" value="bottomlands" modifier="particularly characteristic of" />
+        <character name="habitat" value="calcareous soils" modifier="often in" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>10–500 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="500" to_unit="m" from="10" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ont.; Ark., D.C., Ill., Ind., Iowa, Kans., Ky., Md., Mo., Ohio, Okla., Pa., Tenn., Va., W.Va.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="D.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>407.</number>
+  <discussion>Confined to the interior of eastern North America, Carex shortiana is common west of the Allegheny Mountains, especially throughout the Ohio River Valley. It is notable among tristigmatic carices in having all the spikes gynecandrous, the lateral ones conspicuously repeating the pattern of the terminal spike.</discussion>
+  <discussion>Carex shortiana rarely hybridizes with either C. squarrosa or C. typhina in the Midwest and produces the sterile hybrid C. ×deamii F. J. Hermann. The spikes of the hybrid are subcylindric as in C. shortiana but thicker (7–8 mm instead of 3.5–5.6 mm), and the perigynia resemble those of C. squarrosa but with their bodies more compressed and beaks intermediate in length (1–1.5 mm). Plants of that hybrid are known from Indiana (F. J. Hermann 1938, 1940b), Missouri (J. A. Steyermark 1958, 1963; G. Yatskievych and J. Turner 1990; G. Yatskievych 1999+), Illinois (W. J. Hess and P. Shildneck 1982), and Kentucky (supporting specimens in PH). The second parent has been hypothesized to be C. typhina, but all evidence strongly suggests C. squarrosa (D. K. Evans, unpubl. data), although either may occur at stations from which C. ×deamii is known.</discussion>
+  
+</bio:treatment>

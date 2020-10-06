@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">473</other_info_on_meta>
+    <other_info_on_meta type="mention_page">475</other_info_on_meta>
+    <other_info_on_meta type="mention_page">477</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">476</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Tuckerman ex Meinshausen" date="1901" rank="section">chlorostachyae</taxon_name>
+    <taxon_name authority="Boeckeler" date="1886" rank="species">krausei</taxon_name>
+    <place_of_publication>
+      <publication_title>Bot. Jahrb. Syst.</publication_title>
+      <place_in_publication>7: 279. 1886</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section chlorostachyae;species krausei</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="fna_id">242357267</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="Linnaeus" date="unknown" rank="species">capillaris</taxon_name>
+    <taxon_name authority="(Boeckler) Böcher" date="unknown" rank="subspecies">krausei</taxon_name>
+    <taxon_hierarchy>genus Carex;species capillaris;subspecies krausei;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms to 15 (–35) cm.</text>
+      <biological_entity id="o14042" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character char_type="range_value" from="15" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d0_s0" to="35" to_unit="cm" />
+        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s0" to="15" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaf-blades flat or folded, 2–8 cm × 1–2 mm.</text>
+      <biological_entity id="o14043" name="leaf-blade" name_original="leaf-blades" src="d0_s1" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s1" value="flat" value_original="flat" />
+        <character is_modifier="false" name="shape" src="d0_s1" value="folded" value_original="folded" />
+        <character char_type="range_value" from="2" from_unit="cm" name="length" src="d0_s1" to="8" to_unit="cm" />
+        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s1" to="2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Terminal spike gynecandrous, 7–10 mm, 1.3–1.5 mm wide in the staminate portion, level with or overtopped by some lateral spikes.</text>
+      <biological_entity constraint="terminal" id="o14044" name="spike" name_original="spike" src="d0_s2" type="structure">
+        <character is_modifier="false" name="reproduction" src="d0_s2" value="gynecandrous" value_original="gynecandrous" />
+        <character char_type="range_value" from="7" from_unit="mm" name="some_measurement" src="d0_s2" to="10" to_unit="mm" />
+        <character char_type="range_value" constraint="in portion" constraintid="o14045" from="1.3" from_unit="mm" name="width" src="d0_s2" to="1.5" to_unit="mm" />
+        <character is_modifier="false" name="position_relational" notes="" src="d0_s2" value="level" value_original="level" />
+      </biological_entity>
+      <biological_entity id="o14045" name="portion" name_original="portion" src="d0_s2" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s2" value="staminate" value_original="staminate" />
+      </biological_entity>
+      <biological_entity constraint="lateral" id="o14046" name="spike" name_original="spikes" src="d0_s2" type="structure" />
+      <relation from="o14044" id="r1726" name="overtopped by some" negation="false" src="d0_s2" to="o14046" />
+    </statement>
+    <statement id="d0_s3">
+      <text>Lateral spikes 4–10, 10–20-flowered, 6–10 × 2–3 mm, the proximal usually drooping.</text>
+      <biological_entity constraint="lateral" id="o14047" name="spike" name_original="spikes" src="d0_s3" type="structure">
+        <character char_type="range_value" from="4" name="quantity" src="d0_s3" to="10" />
+        <character is_modifier="false" name="architecture" src="d0_s3" value="10-20-flowered" value_original="10-20-flowered" />
+        <character char_type="range_value" from="6" from_unit="mm" name="length" src="d0_s3" to="10" to_unit="mm" />
+        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s3" to="3" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="proximal lateral" id="o14048" name="spike" name_original="spikes" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="usually" name="orientation" src="d0_s3" value="drooping" value_original="drooping" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Pistillate scales brown with paler margins, often with paler midvein, obovate to obovate-circular, 1.6–2.1 × 1.2–1.6 mm, apex obtuse, mucronate.</text>
+      <biological_entity id="o14049" name="scale" name_original="scales" src="d0_s4" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s4" value="pistillate" value_original="pistillate" />
+        <character constraint="with margins" constraintid="o14050" is_modifier="false" name="coloration" src="d0_s4" value="brown" value_original="brown" />
+        <character char_type="range_value" from="obovate" name="shape" notes="" src="d0_s4" to="obovate-circular" />
+        <character char_type="range_value" from="1.6" from_unit="mm" name="length" src="d0_s4" to="2.1" to_unit="mm" />
+        <character char_type="range_value" from="1.2" from_unit="mm" name="width" src="d0_s4" to="1.6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o14050" name="margin" name_original="margins" src="d0_s4" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s4" value="paler" value_original="paler" />
+      </biological_entity>
+      <biological_entity id="o14051" name="midvein" name_original="midvein" src="d0_s4" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s4" value="paler" value_original="paler" />
+      </biological_entity>
+      <biological_entity id="o14052" name="apex" name_original="apex" src="d0_s4" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s4" value="obtuse" value_original="obtuse" />
+        <character is_modifier="false" name="shape" src="d0_s4" value="mucronate" value_original="mucronate" />
+      </biological_entity>
+      <relation from="o14049" id="r1727" modifier="often" name="with" negation="false" src="d0_s4" to="o14051" />
+    </statement>
+    <statement id="d0_s5">
+      <text>Staminate scales brown with paler margins, oblongovate 2–2.8 × 1–1.2 mm, apex obtuse.</text>
+      <biological_entity id="o14053" name="scale" name_original="scales" src="d0_s5" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s5" value="staminate" value_original="staminate" />
+        <character constraint="with margins" constraintid="o14054" is_modifier="false" name="coloration" src="d0_s5" value="brown" value_original="brown" />
+        <character char_type="range_value" from="2" from_unit="mm" name="length" notes="" src="d0_s5" to="2.8" to_unit="mm" />
+        <character char_type="range_value" from="1" from_unit="mm" name="width" notes="" src="d0_s5" to="1.2" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o14054" name="margin" name_original="margins" src="d0_s5" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s5" value="paler" value_original="paler" />
+      </biological_entity>
+      <biological_entity id="o14055" name="apex" name_original="apex" src="d0_s5" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s5" value="obtuse" value_original="obtuse" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>Perigynia veinless, except for 2 marginal veins, lanceolate to ovatelanceolate, 1.5–3.3 × 0.7–1 mm;</text>
+      <biological_entity id="o14056" name="perigynium" name_original="perigynia" src="d0_s6" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s6" value="veinless" value_original="veinless" />
+        <character name="quantity" src="d0_s6" value="2" value_original="2" />
+        <character char_type="range_value" from="lanceolate" name="shape" notes="" src="d0_s6" to="ovatelanceolate" />
+        <character char_type="range_value" from="1.5" from_unit="mm" name="length" src="d0_s6" to="3.3" to_unit="mm" />
+        <character char_type="range_value" from="0.7" from_unit="mm" name="width" src="d0_s6" to="1" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="marginal" id="o14057" name="vein" name_original="veins" src="d0_s6" type="structure" />
+    </statement>
+    <statement id="d0_s7">
+      <text>beak 0.3–0.7 mm, margins entire or serrulate.</text>
+      <biological_entity id="o14058" name="beak" name_original="beak" src="d0_s7" type="structure">
+        <character char_type="range_value" from="0.3" from_unit="mm" name="some_measurement" src="d0_s7" to="0.7" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o14059" name="margin" name_original="margins" src="d0_s7" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s7" value="entire" value_original="entire" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s7" value="serrulate" value_original="serrulate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Achenes obovoid, 1.1–1.4 × 0.6–0.9 mm. 2n = 36.</text>
+      <biological_entity id="o14060" name="achene" name_original="achenes" src="d0_s8" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s8" value="obovoid" value_original="obovoid" />
+        <character char_type="range_value" from="1.1" from_unit="mm" name="length" src="d0_s8" to="1.4" to_unit="mm" />
+        <character char_type="range_value" from="0.6" from_unit="mm" name="width" src="d0_s8" to="0.9" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o14061" name="chromosome" name_original="" src="d0_s8" type="structure">
+        <character name="quantity" src="d0_s8" value="36" value_original="36" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="summer" from="summer" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Dry to moist, calcareous tundra, shores, meadows</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="dry to moist" />
+        <character name="habitat" value="calcareous tundra" />
+        <character name="habitat" value="shores" />
+        <character name="habitat" value="meadows" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–500 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="500" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Greenland; N.W.T., Que., Yukon; Alaska; n Eurasia.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="Greenland" establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.W.T." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Yukon" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
+        <character name="distribution" value="n Eurasia" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>328.</number>
+  <other_name type="common_name">Carex de Krause</other_name>
+  <discussion>Records of Carex krausei from the Rocky Mountains are probably referable to C. capillaris, which may rarely have a gynecandrous terminal spike.</discussion>
+  <discussion>Typical plants from the western part of the range have perigynia 2.2–3.3 mm with a smooth beak. Plants from the east, which have been recognized as Carex karusei subsp. porsildiana (Polunin) Á. Löve &amp; D. Löve, have perigynia 1.3–1.8 mm and, sometimes, a serrulate beak.</discussion>
+  <discussion>Plants from the east and west coasts of Greenland, which are more robust than typical Carex krausei and usually have a serrulate perigynium beak, have been described as C. boecheriana Á. Löve, D. Löve, &amp; Raymond [C. capillaris subsp. robustior (Drejer ex Lange) Böcher]. The chromosome number 2n = 56 has been recorded for these plants (Á. Löve et al. 1957).</discussion>
+  <discussion>The status of Carex krausei is far from clear, and many authors have treated it as a variant of C. capillaris. None of the morphologic characteristics by which they are distinguished appear to be reliable, and the relationship between chromosome number and morphology is based on examination of relatively few populations. This relationship is further confounded by C. boecheriana, which is morphologically similar to C. krausei, but cytologically closest to C. capillaris. There is no evidence of an ecologic difference between C. capillaris and C. krausei; across its range, C. krausei is sympatric with C. capillaris.</discussion>
+  
+</bio:treatment>

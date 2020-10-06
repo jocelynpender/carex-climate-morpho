@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">420</other_info_on_meta>
+    <other_info_on_meta type="mention_page">421</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">422</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Reznicek" date="2001" rank="section">glaucescentes</taxon_name>
+    <taxon_name authority="L. H. Bailey" date="unknown" rank="species">joorii</taxon_name>
+    <place_of_publication>
+      <publication_title>Proc. Amer. Acad. Arts</publication_title>
+      <place_in_publication>22: 72. 1887</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section glaucescentes;species joorii</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="fna_id">242357264</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms to 125 cm.</text>
+      <biological_entity id="o29397" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s0" to="125" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves: sheaths glaucous, fronts indistinctly veined, veins not persisting, apex thin, truncate or irregularly convex;</text>
+      <biological_entity id="o29398" name="leaf" name_original="leaves" src="d0_s1" type="structure" />
+      <biological_entity id="o29399" name="sheath" name_original="sheaths" src="d0_s1" type="structure">
+        <character is_modifier="false" name="pubescence" src="d0_s1" value="glaucous" value_original="glaucous" />
+      </biological_entity>
+      <biological_entity id="o29400" name="front" name_original="fronts" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="indistinctly" name="architecture" src="d0_s1" value="veined" value_original="veined" />
+      </biological_entity>
+      <biological_entity id="o29401" name="vein" name_original="veins" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="not" name="duration" src="d0_s1" value="persisting" value_original="persisting" />
+      </biological_entity>
+      <biological_entity id="o29402" name="apex" name_original="apex" src="d0_s1" type="structure">
+        <character is_modifier="false" name="width" src="d0_s1" value="thin" value_original="thin" />
+        <character is_modifier="false" name="shape" src="d0_s1" value="truncate" value_original="truncate" />
+        <character is_modifier="false" modifier="irregularly" name="shape" src="d0_s1" value="convex" value_original="convex" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>blades 120 cm × 7–10 mm, glabrous.</text>
+      <biological_entity id="o29403" name="leaf" name_original="leaves" src="d0_s2" type="structure" />
+      <biological_entity id="o29404" name="blade" name_original="blades" src="d0_s2" type="structure">
+        <character name="length" src="d0_s2" unit="cm" value="120" value_original="120" />
+        <character char_type="range_value" from="7" from_unit="mm" name="width" src="d0_s2" to="10" to_unit="mm" />
+        <character is_modifier="false" name="pubescence" src="d0_s2" value="glabrous" value_original="glabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Inflorescences with 5–7 spikes, 30 cm;</text>
+      <biological_entity id="o29405" name="inflorescence" name_original="inflorescences" src="d0_s3" type="structure">
+        <character name="some_measurement" notes="" src="d0_s3" unit="cm" value="30" value_original="30" />
+      </biological_entity>
+      <biological_entity id="o29406" name="spike" name_original="spikes" src="d0_s3" type="structure">
+        <character char_type="range_value" from="5" is_modifier="true" name="quantity" src="d0_s3" to="7" />
+      </biological_entity>
+      <relation from="o29405" id="r3637" name="with" negation="false" src="d0_s3" to="o29406" />
+    </statement>
+    <statement id="d0_s4">
+      <text>peduncle of lateral spikes to 6 cm;</text>
+      <biological_entity id="o29407" name="peduncle" name_original="peduncle" src="d0_s4" type="structure" constraint="spike" constraint_original="spike; spike">
+        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s4" to="6" to_unit="cm" />
+      </biological_entity>
+      <biological_entity constraint="lateral" id="o29408" name="spike" name_original="spikes" src="d0_s4" type="structure" />
+      <relation from="o29407" id="r3638" name="part_of" negation="false" src="d0_s4" to="o29408" />
+    </statement>
+    <statement id="d0_s5">
+      <text>proximal bracts equaling inflorescences, 3–6 mm wide;</text>
+      <biological_entity constraint="proximal" id="o29409" name="bract" name_original="bracts" src="d0_s5" type="structure">
+        <character char_type="range_value" from="3" from_unit="mm" name="width" notes="" src="d0_s5" to="6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o29410" name="inflorescence" name_original="inflorescences" src="d0_s5" type="structure">
+        <character is_modifier="true" name="variability" src="d0_s5" value="equaling" value_original="equaling" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>lateral spikes divergent, 3–6 cm × 6–8 mm.</text>
+      <biological_entity constraint="lateral" id="o29411" name="spike" name_original="spikes" src="d0_s6" type="structure">
+        <character is_modifier="false" name="arrangement" src="d0_s6" value="divergent" value_original="divergent" />
+        <character char_type="range_value" from="3" from_unit="cm" name="length" src="d0_s6" to="6" to_unit="cm" />
+        <character char_type="range_value" from="6" from_unit="mm" name="width" src="d0_s6" to="8" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Pistillate scales shorter and narrower than perigynia, apex acute, awn to 3 mm.</text>
+      <biological_entity id="o29412" name="scale" name_original="scales" src="d0_s7" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s7" value="pistillate" value_original="pistillate" />
+        <character is_modifier="false" name="height_or_length_or_size" src="d0_s7" value="shorter" value_original="shorter" />
+        <character constraint="than perigynia" constraintid="o29413" is_modifier="false" name="width" src="d0_s7" value="shorter and narrower" value_original="shorter and narrower" />
+      </biological_entity>
+      <biological_entity id="o29413" name="perigynium" name_original="perigynia" src="d0_s7" type="structure" />
+      <biological_entity id="o29414" name="apex" name_original="apex" src="d0_s7" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s7" value="acute" value_original="acute" />
+      </biological_entity>
+      <biological_entity id="o29415" name="awn" name_original="awn" src="d0_s7" type="structure">
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s7" to="3" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Perigynia strongly divergent, redbrown, angles veined, faces prominently 6–8-veined, sessile, widely elliptic or somewhat obovate, 3.5–4.5 × 2.8–3.2 mm, base rounded, apex ± truncate proximal to beak, densely papillose with low, oblong or, rarely, minute, rounded papillae, not markedly glaucous;</text>
+      <biological_entity id="o29416" name="perigynium" name_original="perigynia" src="d0_s8" type="structure">
+        <character is_modifier="false" modifier="strongly" name="arrangement" src="d0_s8" value="divergent" value_original="divergent" />
+        <character is_modifier="false" name="coloration" src="d0_s8" value="redbrown" value_original="redbrown" />
+      </biological_entity>
+      <biological_entity id="o29417" name="angle" name_original="angles" src="d0_s8" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s8" value="veined" value_original="veined" />
+      </biological_entity>
+      <biological_entity id="o29418" name="face" name_original="faces" src="d0_s8" type="structure">
+        <character is_modifier="false" modifier="prominently" name="architecture" src="d0_s8" value="6-8-veined" value_original="6-8-veined" />
+        <character is_modifier="false" name="architecture" src="d0_s8" value="sessile" value_original="sessile" />
+        <character is_modifier="false" modifier="widely" name="arrangement_or_shape" src="d0_s8" value="elliptic" value_original="elliptic" />
+        <character is_modifier="false" modifier="somewhat; somewhat" name="shape" src="d0_s8" value="obovate" value_original="obovate" />
+        <character char_type="range_value" from="3.5" from_unit="mm" name="length" src="d0_s8" to="4.5" to_unit="mm" />
+        <character char_type="range_value" from="2.8" from_unit="mm" name="width" src="d0_s8" to="3.2" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o29419" name="base" name_original="base" src="d0_s8" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s8" value="rounded" value_original="rounded" />
+      </biological_entity>
+      <biological_entity id="o29420" name="apex" name_original="apex" src="d0_s8" type="structure">
+        <character is_modifier="false" modifier="more or less" name="architecture_or_shape" src="d0_s8" value="truncate" value_original="truncate" />
+        <character constraint="to beak" constraintid="o29421" is_modifier="false" name="position" src="d0_s8" value="proximal" value_original="proximal" />
+        <character constraint="with low" constraintid="o29422" is_modifier="false" modifier="densely" name="relief" notes="" src="d0_s8" value="papillose" value_original="papillose" />
+        <character is_modifier="false" name="shape" notes="" src="d0_s8" value="oblong" value_original="oblong" />
+        <character name="shape" src="d0_s8" value="," value_original="," />
+        <character is_modifier="false" name="size" src="d0_s8" value="minute" value_original="minute" />
+      </biological_entity>
+      <biological_entity id="o29421" name="beak" name_original="beak" src="d0_s8" type="structure" />
+      <biological_entity id="o29422" name="low" name_original="low" src="d0_s8" type="structure" />
+      <biological_entity id="o29423" name="papilla" name_original="papillae" src="d0_s8" type="structure">
+        <character is_modifier="true" name="shape" src="d0_s8" value="rounded" value_original="rounded" />
+        <character is_modifier="false" modifier="not markedly" name="pubescence" src="d0_s8" value="glaucous" value_original="glaucous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>beak 0.3–0.5 mm, entire or minutely bidentate, teeth to 0.1 mm.</text>
+      <biological_entity id="o29424" name="beak" name_original="beak" src="d0_s9" type="structure">
+        <character char_type="range_value" from="0.3" from_unit="mm" name="some_measurement" src="d0_s9" to="0.5" to_unit="mm" />
+        <character is_modifier="false" name="shape" src="d0_s9" value="entire" value_original="entire" />
+        <character is_modifier="false" modifier="minutely" name="shape" src="d0_s9" value="bidentate" value_original="bidentate" />
+      </biological_entity>
+      <biological_entity id="o29425" name="tooth" name_original="teeth" src="d0_s9" type="structure">
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s9" to="0.1" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>Achenes rhomboid, 2.5–3 × 2.5–3 mm, base conspicuously broadened.</text>
+      <biological_entity id="o29426" name="achene" name_original="achenes" src="d0_s10" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s10" value="rhomboid" value_original="rhomboid" />
+        <character char_type="range_value" from="2.5" from_unit="mm" name="length" src="d0_s10" to="3" to_unit="mm" />
+        <character char_type="range_value" from="2.5" from_unit="mm" name="width" src="d0_s10" to="3" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o29427" name="base" name_original="base" src="d0_s10" type="structure">
+        <character is_modifier="false" modifier="conspicuously" name="width" src="d0_s10" value="broadened" value_original="broadened" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting Aug–Sep.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="Sep" from="Aug" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Seasonally saturated or inundated soils in moist, swampy, or bottomland woods, or stream banks</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="saturated" modifier="seasonally" constraint="in moist , swampy , or bottomland woods , or stream banks" />
+        <character name="habitat" value="inundated soils" constraint="in moist , swampy , or bottomland woods , or stream banks" />
+        <character name="habitat" value="moist" />
+        <character name="habitat" value="bottomland woods" modifier="swampy" />
+        <character name="habitat" value="stream banks" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–800 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="800" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ala., Ark., Fla., Ga., Ky., La., Md., Miss., Mo., N.C., S.C., Tenn., Tex., Va.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>241.</number>
+  <other_name type="past_name">joori</other_name>
+  <discussion>Carex joorii is more robust than C. glaucescens and can be distinguished from C. glaucesens and C. verrucosa by the acute apex of the scale body, the strongly veined, squarrose perigynia with low, flattened papillae, and the broadened base of the achene. Occasional specimens have been observed with papillae characteristic of C. glaucescens; such specimens may result from hybridization.</discussion>
+  
+</bio:treatment>

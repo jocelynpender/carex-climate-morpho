@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">550</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">549</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Kükenthal in H. G. A. Engler" date="1909" rank="section">pictae</taxon_name>
+    <taxon_name authority="Steudel" date="1855" rank="species">picta</taxon_name>
+    <place_of_publication>
+      <publication_title>Syn. Pl. Glumac.</publication_title>
+      <place_in_publication>2: 184. 1855</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section pictae;species picta</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="fna_id">242357404</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms 12–35 cm.</text>
+      <biological_entity id="o25709" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character char_type="range_value" from="12" from_unit="cm" name="some_measurement" src="d0_s0" to="35" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Proximal leaf-blades green, 25–40 cm × 2–4.5 mm, smooth abaxially, scabrid adaxially.</text>
+      <biological_entity constraint="proximal" id="o25710" name="leaf-blade" name_original="leaf-blades" src="d0_s1" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s1" value="green" value_original="green" />
+        <character char_type="range_value" from="25" from_unit="cm" name="length" src="d0_s1" to="40" to_unit="cm" />
+        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s1" to="4.5" to_unit="mm" />
+        <character is_modifier="false" modifier="abaxially" name="architecture_or_pubescence_or_relief" src="d0_s1" value="smooth" value_original="smooth" />
+        <character is_modifier="false" modifier="adaxially" name="pubescence_or_relief" src="d0_s1" value="scabrid" value_original="scabrid" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Inflorescences with staminate and pistillate flowers on different plants;</text>
+      <biological_entity id="o25711" name="inflorescence" name_original="inflorescences" src="d0_s2" type="structure" />
+      <biological_entity id="o25712" name="flower" name_original="flowers" src="d0_s2" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s2" value="staminate" value_original="staminate" />
+        <character is_modifier="true" name="architecture" src="d0_s2" value="pistillate" value_original="pistillate" />
+      </biological_entity>
+      <biological_entity id="o25713" name="plant" name_original="plants" src="d0_s2" type="structure" />
+      <relation from="o25711" id="r3164" name="with" negation="false" src="d0_s2" to="o25712" />
+      <relation from="o25712" id="r3165" name="on" negation="false" src="d0_s2" to="o25713" />
+    </statement>
+    <statement id="d0_s3">
+      <text>spike 1, unisexual;</text>
+      <biological_entity id="o25714" name="spike" name_original="spike" src="d0_s3" type="structure">
+        <character name="quantity" src="d0_s3" value="1" value_original="1" />
+        <character is_modifier="false" name="reproduction" src="d0_s3" value="unisexual" value_original="unisexual" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>pistillate spikes 30–80 × 2.5–6 mm;</text>
+      <biological_entity id="o25715" name="spike" name_original="spikes" src="d0_s4" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s4" value="pistillate" value_original="pistillate" />
+        <character char_type="range_value" from="30" from_unit="mm" name="length" src="d0_s4" to="80" to_unit="mm" />
+        <character char_type="range_value" from="2.5" from_unit="mm" name="width" src="d0_s4" to="6" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>staminate spikes 20–50 × 4–6 mm.</text>
+      <biological_entity id="o25716" name="spike" name_original="spikes" src="d0_s5" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s5" value="staminate" value_original="staminate" />
+        <character char_type="range_value" from="20" from_unit="mm" name="length" src="d0_s5" to="50" to_unit="mm" />
+        <character char_type="range_value" from="4" from_unit="mm" name="width" src="d0_s5" to="6" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>Pistillate scales obovate-oblong, 5.5–6.5 × 2.3–2.8 mm, proximal ones cuspidate, distal ones acuminate, awned.</text>
+      <biological_entity id="o25717" name="scale" name_original="scales" src="d0_s6" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s6" value="pistillate" value_original="pistillate" />
+        <character is_modifier="false" name="shape" src="d0_s6" value="obovate-oblong" value_original="obovate-oblong" />
+        <character char_type="range_value" from="5.5" from_unit="mm" name="length" src="d0_s6" to="6.5" to_unit="mm" />
+        <character char_type="range_value" from="2.3" from_unit="mm" name="width" src="d0_s6" to="2.8" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o25718" name="scale" name_original="scales" src="d0_s6" type="structure">
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s6" value="cuspidate" value_original="cuspidate" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="o25719" name="scale" name_original="scales" src="d0_s6" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s6" value="acuminate" value_original="acuminate" />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s6" value="awned" value_original="awned" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Staminate scales obovate-oblong, 6–7 × 1.2–3 mm, apex acuminate to cuspidate.</text>
+      <biological_entity id="o25720" name="scale" name_original="scales" src="d0_s7" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s7" value="staminate" value_original="staminate" />
+        <character is_modifier="false" name="shape" src="d0_s7" value="obovate-oblong" value_original="obovate-oblong" />
+        <character char_type="range_value" from="6" from_unit="mm" name="length" src="d0_s7" to="7" to_unit="mm" />
+        <character char_type="range_value" from="1.2" from_unit="mm" name="width" src="d0_s7" to="3" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o25721" name="apex" name_original="apex" src="d0_s7" type="structure">
+        <character char_type="range_value" from="acuminate" name="shape" src="d0_s7" to="cuspidate" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Perigynia yellow-green, 3.5–5.5 × 1.3–1.7 mm, apex acute, sparsely pubescent towards black apex, beakless.</text>
+      <biological_entity id="o25722" name="perigynium" name_original="perigynia" src="d0_s8" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s8" value="yellow-green" value_original="yellow-green" />
+        <character char_type="range_value" from="3.5" from_unit="mm" name="length" src="d0_s8" to="5.5" to_unit="mm" />
+        <character char_type="range_value" from="1.3" from_unit="mm" name="width" src="d0_s8" to="1.7" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o25723" name="apex" name_original="apex" src="d0_s8" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s8" value="acute" value_original="acute" />
+        <character constraint="towards apex" constraintid="o25724" is_modifier="false" modifier="sparsely" name="pubescence" src="d0_s8" value="pubescent" value_original="pubescent" />
+        <character is_modifier="false" name="architecture" notes="" src="d0_s8" value="beakless" value_original="beakless" />
+      </biological_entity>
+      <biological_entity id="o25724" name="apex" name_original="apex" src="d0_s8" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s8" value="black" value_original="black" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting spring.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="spring" from="spring" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Forests and forest openings</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="forests" />
+        <character name="habitat" value="forest openings" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>100–500 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="500" to_unit="m" from="100" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ala., Ind., Ky., La., Miss., Tenn.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>447.</number>
+  
+</bio:treatment>

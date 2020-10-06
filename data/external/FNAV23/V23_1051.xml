@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">553</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">554</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Kükenthal in H. G. A. Engler" date="1909" rank="section">mitratae</taxon_name>
+    <taxon_name authority="Latourrette" date="1785" rank="species">caryophyllea</taxon_name>
+    <place_of_publication>
+      <publication_title>Chlor. Lugd.,</publication_title>
+      <place_in_publication>27. 1785</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section mitratae;species caryophyllea</taxon_hierarchy>
+    <other_info_on_name type="special_status">I</other_info_on_name>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="fna_id">242357107</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="Jacquin" date="unknown" rank="species">praecox</taxon_name>
+    <place_of_publication>
+      <place_in_publication>1778</place_in_publication>
+      <other_info_on_pub>not Schreber 1771</other_info_on_pub>
+    </place_of_publication>
+    <taxon_hierarchy>genus Carex;species praecox;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms trigonous, angles obtuse, 4–35 cm, scabrous distally.</text>
+      <biological_entity id="o4811" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s0" value="trigonous" value_original="trigonous" />
+      </biological_entity>
+      <biological_entity id="o4812" name="angle" name_original="angles" src="d0_s0" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s0" value="obtuse" value_original="obtuse" />
+        <character char_type="range_value" from="4" from_unit="cm" name="some_measurement" src="d0_s0" to="35" to_unit="cm" />
+        <character is_modifier="false" modifier="distally" name="pubescence_or_relief" src="d0_s0" value="scabrous" value_original="scabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves basal;</text>
+      <biological_entity id="o4813" name="leaf" name_original="leaves" src="d0_s1" type="structure">
+        <character is_modifier="false" name="position" src="d0_s1" value="basal" value_original="basal" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>sheath fronts with apex concave to V-shaped, glabrous;</text>
+      <biological_entity constraint="sheath" id="o4814" name="front" name_original="fronts" src="d0_s2" type="structure">
+        <character is_modifier="false" name="pubescence" notes="" src="d0_s2" value="glabrous" value_original="glabrous" />
+      </biological_entity>
+      <biological_entity id="o4815" name="apex" name_original="apex" src="d0_s2" type="structure">
+        <character char_type="range_value" from="concave" name="shape" src="d0_s2" to="v-shaped" />
+      </biological_entity>
+      <relation from="o4814" id="r579" name="with" negation="false" src="d0_s2" to="o4815" />
+    </statement>
+    <statement id="d0_s3">
+      <text>blades 7–25 cm × 1.5–3 mm, shorter than culm.</text>
+      <biological_entity id="o4816" name="blade" name_original="blades" src="d0_s3" type="structure">
+        <character char_type="range_value" from="7" from_unit="cm" name="length" src="d0_s3" to="25" to_unit="cm" />
+        <character char_type="range_value" from="1.5" from_unit="mm" name="width" src="d0_s3" to="3" to_unit="mm" />
+        <character constraint="than culm" constraintid="o4817" is_modifier="false" name="height_or_length_or_size" src="d0_s3" value="shorter" value_original="shorter" />
+      </biological_entity>
+      <biological_entity id="o4817" name="culm" name_original="culm" src="d0_s3" type="structure" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Inflorescences 2–4 cm;</text>
+      <biological_entity id="o4818" name="inflorescence" name_original="inflorescences" src="d0_s4" type="structure">
+        <character char_type="range_value" from="2" from_unit="cm" name="some_measurement" src="d0_s4" to="4" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>proximal bracts to 5 × 1 mm;</text>
+      <biological_entity constraint="proximal" id="o4819" name="bract" name_original="bracts" src="d0_s5" type="structure">
+        <character char_type="range_value" from="0" from_unit="mm" name="length" src="d0_s5" to="5" to_unit="mm" />
+        <character char_type="range_value" from="0" from_unit="mm" name="width" src="d0_s5" to="1" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s6">
+      <text>spikes crowded;</text>
+      <biological_entity id="o4820" name="spike" name_original="spikes" src="d0_s6" type="structure">
+        <character is_modifier="false" name="arrangement" src="d0_s6" value="crowded" value_original="crowded" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>lateral spikes 0.5–1.5 cm × 4–5 mm;</text>
+      <biological_entity constraint="lateral" id="o4821" name="spike" name_original="spikes" src="d0_s7" type="structure">
+        <character char_type="range_value" from="0.5" from_unit="cm" name="length" src="d0_s7" to="1.5" to_unit="cm" />
+        <character char_type="range_value" from="4" from_unit="mm" name="width" src="d0_s7" to="5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>terminal spikes 1–2 cm × 4 mm.</text>
+      <biological_entity constraint="terminal" id="o4822" name="spike" name_original="spikes" src="d0_s8" type="structure">
+        <character char_type="range_value" from="1" from_unit="cm" name="length" src="d0_s8" to="2" to_unit="cm" />
+        <character name="width" src="d0_s8" unit="mm" value="4" value_original="4" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>Scales brown with yellowbrown midrib, 3-veined, equaling perigynia, apex acuminate to retuse, with scabrous awn to 2 mm.</text>
+      <biological_entity id="o4823" name="scale" name_original="scales" src="d0_s9" type="structure">
+        <character constraint="with midrib" constraintid="o4824" is_modifier="false" name="coloration" src="d0_s9" value="brown" value_original="brown" />
+        <character is_modifier="false" name="architecture" notes="" src="d0_s9" value="3-veined" value_original="3-veined" />
+      </biological_entity>
+      <biological_entity id="o4824" name="midrib" name_original="midrib" src="d0_s9" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s9" value="yellowbrown" value_original="yellowbrown" />
+      </biological_entity>
+      <biological_entity id="o4825" name="perigynium" name_original="perigynia" src="d0_s9" type="structure">
+        <character is_modifier="true" name="variability" src="d0_s9" value="equaling" value_original="equaling" />
+      </biological_entity>
+      <biological_entity id="o4826" name="apex" name_original="apex" src="d0_s9" type="structure">
+        <character char_type="range_value" from="acuminate" name="shape" src="d0_s9" to="retuse" />
+      </biological_entity>
+      <biological_entity id="o4827" name="awn" name_original="awn" src="d0_s9" type="structure">
+        <character is_modifier="true" name="pubescence_or_relief" src="d0_s9" value="scabrous" value_original="scabrous" />
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s9" to="2" to_unit="mm" />
+      </biological_entity>
+      <relation from="o4826" id="r580" name="with" negation="false" src="d0_s9" to="o4827" />
+    </statement>
+    <statement id="d0_s10">
+      <text>Anthers 2–3 mm.</text>
+      <biological_entity id="o4828" name="anther" name_original="anthers" src="d0_s10" type="structure">
+        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s10" to="3" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>Perigynia yellowbrown, often redbrown at apex, sides convex, 2.5–2.8 × 1.5 mm, hairs purple-brown (hair-base bulbous);</text>
+      <biological_entity id="o4829" name="perigynium" name_original="perigynia" src="d0_s11" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s11" value="yellowbrown" value_original="yellowbrown" />
+        <character constraint="at apex" constraintid="o4830" is_modifier="false" modifier="often" name="coloration" src="d0_s11" value="redbrown" value_original="redbrown" />
+      </biological_entity>
+      <biological_entity id="o4830" name="apex" name_original="apex" src="d0_s11" type="structure" />
+      <biological_entity id="o4831" name="side" name_original="sides" src="d0_s11" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s11" value="convex" value_original="convex" />
+        <character char_type="range_value" from="2.5" from_unit="mm" name="length" src="d0_s11" to="2.8" to_unit="mm" />
+        <character name="width" src="d0_s11" unit="mm" value="1.5" value_original="1.5" />
+      </biological_entity>
+      <biological_entity id="o4832" name="hair" name_original="hairs" src="d0_s11" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s11" value="purple-brown" value_original="purple-brown" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s12">
+      <text>beak redbrown, conic, thickened.</text>
+      <biological_entity id="o4833" name="beak" name_original="beak" src="d0_s12" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s12" value="redbrown" value_original="redbrown" />
+        <character is_modifier="false" name="shape" src="d0_s12" value="conic" value_original="conic" />
+        <character is_modifier="false" name="size_or_width" src="d0_s12" value="thickened" value_original="thickened" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s13">
+      <text>Achenes brown, sessile, mitrate, obovoid, 2–2.2 mm. 2n = 58, 62, 64, 66, 68 (Europe, Japan).</text>
+      <biological_entity id="o4834" name="achene" name_original="achenes" src="d0_s13" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s13" value="brown" value_original="brown" />
+        <character is_modifier="false" name="architecture" src="d0_s13" value="sessile" value_original="sessile" />
+        <character is_modifier="false" name="shape" src="d0_s13" value="mitrate" value_original="mitrate" />
+        <character is_modifier="false" name="shape" src="d0_s13" value="obovoid" value_original="obovoid" />
+        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s13" to="2.2" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o4835" name="chromosome" name_original="" src="d0_s13" type="structure">
+        <character name="quantity" src="d0_s13" value="58" value_original="58" />
+        <character name="quantity" src="d0_s13" value="62" value_original="62" />
+        <character name="quantity" src="d0_s13" value="64" value_original="64" />
+        <character name="quantity" src="d0_s13" value="66" value_original="66" />
+        <character name="quantity" src="d0_s13" value="68" value_original="68" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting Jun.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="Jun" from="Jun" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Dry pastures, graveyards</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="dry pastures" />
+        <character name="habitat" value="graveyards" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–100 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="100" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Introduced; D.C., Maine, Mass.; Eurasia.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="D.C." establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="introduced" />
+        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="introduced" />
+        <character name="distribution" value="Eurasia" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>451.</number>
+  <discussion>Carex caryophyllea is widely distributed in Eurasia and was first recorded in North America in 1826. Carex caryophyllea may escape notice because it somewhat resembles C. pensylvanica in size, habit, scale color, perigynia pubescence, and flowering time. Carex caryophyllea is distinguished by awned scales, perigynia with thick conical beaks, mitrate achenes, and enlarged persistent style bases.</discussion>
+  
+</bio:treatment>

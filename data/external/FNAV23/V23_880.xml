@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">477</other_info_on_meta>
+    <other_info_on_meta type="mention_page">480</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">479</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Dumortier" date="1827" rank="section">aulocystis</taxon_name>
+    <taxon_name authority="L. H. Bailey" date="1889" rank="species">albida</taxon_name>
+    <place_of_publication>
+      <publication_title>Mem. Torrey Bot. Club</publication_title>
+      <place_in_publication>1: 9. 1889</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section aulocystis;species albida</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="special_status">C</other_info_on_name>
+    <other_info_on_name type="fna_id">242357028</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="Stacey" date="unknown" rank="species">sonomensis</taxon_name>
+    <taxon_hierarchy>genus Carex;species sonomensis;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants densely to loosely cespitose;</text>
+      <biological_entity id="o8085" name="whole_organism" name_original="" src="" type="structure">
+        <character is_modifier="false" modifier="densely to loosely" name="growth_form" src="d0_s0" value="cespitose" value_original="cespitose" />
+        <character name="growth_form" value="plant" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>rhizomes thick, short.</text>
+      <biological_entity id="o8086" name="rhizome" name_original="rhizomes" src="d0_s1" type="structure">
+        <character is_modifier="false" name="width" src="d0_s1" value="thick" value_original="thick" />
+        <character is_modifier="false" name="height_or_length_or_size" src="d0_s1" value="short" value_original="short" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Culms to 60 cm.</text>
+      <biological_entity id="o8087" name="culm" name_original="culms" src="d0_s2" type="structure">
+        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s2" to="60" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Leaves: blades 3–6 mm wide.</text>
+      <biological_entity id="o8088" name="leaf" name_original="leaves" src="d0_s3" type="structure" />
+      <biological_entity id="o8089" name="blade" name_original="blades" src="d0_s3" type="structure">
+        <character char_type="range_value" from="3" from_unit="mm" name="width" src="d0_s3" to="6" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Inflorescences longer than 15 cm, proximal internodes 100–250 mm;</text>
+      <biological_entity id="o8090" name="inflorescence" name_original="inflorescences" src="d0_s4" type="structure">
+        <character modifier="longer than" name="some_measurement" src="d0_s4" unit="cm" value="15" value_original="15" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o8091" name="internode" name_original="internodes" src="d0_s4" type="structure">
+        <character char_type="range_value" from="100" from_unit="mm" name="some_measurement" src="d0_s4" to="250" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>peduncles of proximal spikes commonly exserted less than 1 cm;</text>
+      <biological_entity id="o8092" name="peduncle" name_original="peduncles" src="d0_s5" type="structure" constraint="spike" constraint_original="spike; spike">
+        <character is_modifier="false" modifier="commonly" name="position" src="d0_s5" value="exserted" value_original="exserted" />
+        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s5" to="1" to_unit="cm" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o8093" name="spike" name_original="spikes" src="d0_s5" type="structure" />
+      <relation from="o8092" id="r956" name="part_of" negation="false" src="d0_s5" to="o8093" />
+    </statement>
+    <statement id="d0_s6">
+      <text>proximal bracts with blade 40–125 mm, sheaths cylindric, 11–75 mm, mouth not purple-banded, 1.3–2.1 mm wide.</text>
+      <biological_entity constraint="proximal" id="o8094" name="bract" name_original="bracts" src="d0_s6" type="structure" />
+      <biological_entity id="o8095" name="blade" name_original="blade" src="d0_s6" type="structure">
+        <character char_type="range_value" from="40" from_unit="mm" name="some_measurement" src="d0_s6" to="125" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o8096" name="sheath" name_original="sheaths" src="d0_s6" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s6" value="cylindric" value_original="cylindric" />
+        <character char_type="range_value" from="11" from_unit="mm" name="some_measurement" src="d0_s6" to="75" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o8097" name="mouth" name_original="mouth" src="d0_s6" type="structure">
+        <character is_modifier="false" modifier="not" name="coloration" src="d0_s6" value="purple-banded" value_original="purple-banded" />
+        <character char_type="range_value" from="1.3" from_unit="mm" name="width" src="d0_s6" to="2.1" to_unit="mm" />
+      </biological_entity>
+      <relation from="o8094" id="r957" name="with" negation="false" src="d0_s6" to="o8095" />
+    </statement>
+    <statement id="d0_s7">
+      <text>Spikes 5–7;</text>
+      <biological_entity id="o8098" name="spike" name_original="spikes" src="d0_s7" type="structure">
+        <character char_type="range_value" from="5" name="quantity" src="d0_s7" to="7" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>lateral spikes androgynous or pistillate, the proximal spikes erect to pendent, 9–20 × 5–8 mm;</text>
+      <biological_entity constraint="lateral" id="o8099" name="spike" name_original="spikes" src="d0_s8" type="structure">
+        <character is_modifier="false" name="reproduction" src="d0_s8" value="androgynous" value_original="androgynous" />
+        <character is_modifier="false" name="architecture" src="d0_s8" value="pistillate" value_original="pistillate" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o8100" name="spike" name_original="spikes" src="d0_s8" type="structure">
+        <character char_type="range_value" from="erect" name="orientation" src="d0_s8" to="pendent" />
+        <character char_type="range_value" from="9" from_unit="mm" name="length" src="d0_s8" to="20" to_unit="mm" />
+        <character char_type="range_value" from="5" from_unit="mm" name="width" src="d0_s8" to="8" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>terminal spike staminate or androgynous, ± erect, 9–19 × 2.5–4.5 mm.</text>
+      <biological_entity constraint="terminal" id="o8101" name="spike" name_original="spike" src="d0_s9" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s9" value="staminate" value_original="staminate" />
+        <character is_modifier="false" name="reproduction" src="d0_s9" value="androgynous" value_original="androgynous" />
+        <character is_modifier="false" modifier="more or less" name="orientation" src="d0_s9" value="erect" value_original="erect" />
+        <character char_type="range_value" from="9" from_unit="mm" name="length" src="d0_s9" to="19" to_unit="mm" />
+        <character char_type="range_value" from="2.5" from_unit="mm" name="width" src="d0_s9" to="4.5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>Pistillate scales usually scarious with green to gold midvein, obovate to ovate, 2–4 × 1.2–2 mm, apex obtuse to acuminate or, sometimes, awned.</text>
+      <biological_entity id="o8102" name="scale" name_original="scales" src="d0_s10" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s10" value="pistillate" value_original="pistillate" />
+        <character constraint="with midvein" constraintid="o8103" is_modifier="false" modifier="usually" name="texture" src="d0_s10" value="scarious" value_original="scarious" />
+        <character char_type="range_value" from="obovate" name="shape" notes="" src="d0_s10" to="ovate" />
+        <character char_type="range_value" from="2" from_unit="mm" name="length" src="d0_s10" to="4" to_unit="mm" />
+        <character char_type="range_value" from="1.2" from_unit="mm" name="width" src="d0_s10" to="2" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o8103" name="midvein" name_original="midvein" src="d0_s10" type="structure">
+        <character char_type="range_value" from="green" is_modifier="true" name="coloration" src="d0_s10" to="gold" />
+      </biological_entity>
+      <biological_entity id="o8104" name="apex" name_original="apex" src="d0_s10" type="structure">
+        <character char_type="range_value" from="obtuse" name="shape" src="d0_s10" to="acuminate" />
+        <character name="shape" src="d0_s10" value="," value_original="," />
+        <character is_modifier="false" name="architecture_or_shape" src="d0_s10" value="awned" value_original="awned" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>Staminate scales gold with pale midvein with broad scarious margins, usually obovate, 2.8–4.3 × 1–2.4 mm, apex acute to short-awned.</text>
+      <biological_entity id="o8105" name="scale" name_original="scales" src="d0_s11" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s11" value="staminate" value_original="staminate" />
+        <character constraint="with midvein" constraintid="o8106" is_modifier="false" name="coloration" src="d0_s11" value="gold" value_original="gold" />
+        <character is_modifier="false" modifier="usually" name="shape" notes="" src="d0_s11" value="obovate" value_original="obovate" />
+        <character char_type="range_value" from="2.8" from_unit="mm" name="length" src="d0_s11" to="4.3" to_unit="mm" />
+        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s11" to="2.4" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o8106" name="midvein" name_original="midvein" src="d0_s11" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s11" value="pale" value_original="pale" />
+      </biological_entity>
+      <biological_entity id="o8107" name="margin" name_original="margins" src="d0_s11" type="structure">
+        <character is_modifier="true" name="width" src="d0_s11" value="broad" value_original="broad" />
+        <character is_modifier="true" name="texture" src="d0_s11" value="scarious" value_original="scarious" />
+      </biological_entity>
+      <biological_entity id="o8108" name="apex" name_original="apex" src="d0_s11" type="structure">
+        <character char_type="range_value" from="acute" name="shape" src="d0_s11" to="short-awned" />
+      </biological_entity>
+      <relation from="o8106" id="r958" name="with" negation="false" src="d0_s11" to="o8107" />
+    </statement>
+    <statement id="d0_s12">
+      <text>Anthers 1.4–2.2 mm.</text>
+      <biological_entity id="o8109" name="anther" name_original="anthers" src="d0_s12" type="structure">
+        <character char_type="range_value" from="1.4" from_unit="mm" name="some_measurement" src="d0_s12" to="2.2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s13">
+      <text>Perigynia spreading, green to gold, 11–16-veined, ovate to obovate, 3.1–4.5 × 1–1.6 mm, margins often ciliate distally, glabrous;</text>
+      <biological_entity id="o8110" name="perigynium" name_original="perigynia" src="d0_s13" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s13" value="spreading" value_original="spreading" />
+        <character char_type="range_value" from="green" name="coloration" src="d0_s13" to="gold" />
+        <character is_modifier="false" name="architecture" src="d0_s13" value="11-16-veined" value_original="11-16-veined" />
+        <character char_type="range_value" from="ovate" name="shape" src="d0_s13" to="obovate" />
+        <character char_type="range_value" from="3.1" from_unit="mm" name="length" src="d0_s13" to="4.5" to_unit="mm" />
+        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s13" to="1.6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o8111" name="margin" name_original="margins" src="d0_s13" type="structure">
+        <character is_modifier="false" modifier="often; distally" name="architecture_or_pubescence_or_shape" src="d0_s13" value="ciliate" value_original="ciliate" />
+        <character is_modifier="false" name="pubescence" src="d0_s13" value="glabrous" value_original="glabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s14">
+      <text>beak distinct, 0.6–1.2 mm, apex white, ciliate, distance from beak tip to achene apex less than 1.4 mm.</text>
+      <biological_entity id="o8112" name="beak" name_original="beak" src="d0_s14" type="structure">
+        <character is_modifier="false" name="fusion" src="d0_s14" value="distinct" value_original="distinct" />
+        <character char_type="range_value" from="0.6" from_unit="mm" name="some_measurement" src="d0_s14" to="1.2" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o8113" name="apex" name_original="apex" src="d0_s14" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s14" value="white" value_original="white" />
+        <character is_modifier="false" name="architecture_or_pubescence_or_shape" src="d0_s14" value="ciliate" value_original="ciliate" />
+      </biological_entity>
+      <biological_entity constraint="beak" id="o8114" name="tip" name_original="tip" src="d0_s14" type="structure" />
+      <biological_entity constraint="achene" id="o8115" name="apex" name_original="apex" src="d0_s14" type="structure">
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s14" to="1.4" to_unit="mm" />
+      </biological_entity>
+      <relation from="o8113" id="r959" name="from" negation="false" src="d0_s14" to="o8114" />
+      <relation from="o8114" id="r960" name="to" negation="false" src="d0_s14" to="o8115" />
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting late spring–early summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="early summer" from="late spring" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Sphagnum bogs</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="sphagnum bogs" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>less than 90 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="90" to_unit="m" from="90" from_unit="m" constraint="less than " />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Calif.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>331.</number>
+  <other_name type="common_name">White sedge</other_name>
+  <discussion type="conservation">Of conservation concern.</discussion>
+  <discussion>Carex albida is similar to C. lemmonii and is now known from only one station in Sonoma County.</discussion>
+  
+</bio:treatment>

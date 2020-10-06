@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">417</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">418</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="(Heuffel) Meinshauser" date="1901" rank="section">limosae</taxon_name>
+    <taxon_name authority="Schweinitz &amp; Torrey" date="1825" rank="species">barrattii</taxon_name>
+    <place_of_publication>
+      <publication_title>Ann. Lyceum Nat. Hist. New York</publication_title>
+      <place_in_publication>1: 361. 1825</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section limosae;species barrattii</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="fna_id">242357071</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms aphyllopodic, without dead leaf remains at base, 20–90 cm.</text>
+      <biological_entity id="o29656" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s0" value="aphyllopodic" value_original="aphyllopodic" />
+        <character char_type="range_value" from="20" from_unit="cm" name="some_measurement" src="d0_s0" to="90" to_unit="cm" />
+      </biological_entity>
+      <biological_entity id="o29657" name="leaf" name_original="leaf" src="d0_s0" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s0" value="dead" value_original="dead" />
+      </biological_entity>
+      <biological_entity id="o29658" name="base" name_original="base" src="d0_s0" type="structure" />
+      <relation from="o29656" id="r3666" name="without" negation="false" src="d0_s0" to="o29657" />
+      <relation from="o29657" id="r3667" name="remains at" negation="false" src="d0_s0" to="o29658" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaf-blades 2–5 mm wide, margins revolute, scabrid at tip.</text>
+      <biological_entity id="o29659" name="leaf-blade" name_original="leaf-blades" src="d0_s1" type="structure">
+        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s1" to="5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o29660" name="margin" name_original="margins" src="d0_s1" type="structure">
+        <character is_modifier="false" name="shape_or_vernation" src="d0_s1" value="revolute" value_original="revolute" />
+        <character constraint="at tip" constraintid="o29661" is_modifier="false" name="pubescence_or_relief" src="d0_s1" value="scabrid" value_original="scabrid" />
+      </biological_entity>
+      <biological_entity id="o29661" name="tip" name_original="tip" src="d0_s1" type="structure" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Inflorescences: proximal bracts 2–7 cm, shorter than inflorescences;</text>
+      <biological_entity id="o29662" name="inflorescence" name_original="inflorescences" src="d0_s2" type="structure" />
+      <biological_entity constraint="proximal" id="o29663" name="bract" name_original="bracts" src="d0_s2" type="structure">
+        <character char_type="range_value" from="2" from_unit="cm" name="some_measurement" src="d0_s2" to="7" to_unit="cm" />
+        <character constraint="than inflorescences" constraintid="o29664" is_modifier="false" name="height_or_length_or_size" src="d0_s2" value="shorter" value_original="shorter" />
+      </biological_entity>
+      <biological_entity id="o29664" name="inflorescence" name_original="inflorescences" src="d0_s2" type="structure" />
+    </statement>
+    <statement id="d0_s3">
+      <text>lateral spikes usually androgynous, (10–) 25–50 × 3.5–6 mm, with 20–80 perigynia;</text>
+      <biological_entity id="o29665" name="inflorescence" name_original="inflorescences" src="d0_s3" type="structure" />
+      <biological_entity constraint="lateral" id="o29666" name="spike" name_original="spikes" src="d0_s3" type="structure">
+        <character is_modifier="false" modifier="usually" name="reproduction" src="d0_s3" value="androgynous" value_original="androgynous" />
+        <character char_type="range_value" from="10" from_unit="mm" name="atypical_length" src="d0_s3" to="25" to_inclusive="false" to_unit="mm" />
+        <character char_type="range_value" from="25" from_unit="mm" name="length" src="d0_s3" to="50" to_unit="mm" />
+        <character char_type="range_value" from="3.5" from_unit="mm" name="width" src="d0_s3" to="6" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o29667" name="perigynium" name_original="perigynia" src="d0_s3" type="structure">
+        <character char_type="range_value" from="20" is_modifier="true" name="quantity" src="d0_s3" to="80" />
+      </biological_entity>
+      <relation from="o29666" id="r3668" name="with" negation="false" src="d0_s3" to="o29667" />
+    </statement>
+    <statement id="d0_s4">
+      <text>terminal spikes 20–50 × 2.5–5 mm.</text>
+      <biological_entity id="o29668" name="inflorescence" name_original="inflorescences" src="d0_s4" type="structure" />
+      <biological_entity constraint="terminal" id="o29669" name="spike" name_original="spikes" src="d0_s4" type="structure">
+        <character char_type="range_value" from="20" from_unit="mm" name="length" src="d0_s4" to="50" to_unit="mm" />
+        <character char_type="range_value" from="2.5" from_unit="mm" name="width" src="d0_s4" to="5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Pistillate scales ovate, 2.4–4 × 1.3–1.8 mm, shorter and as wide as or slightly narrower than perigynia, apex obtuse to acute.</text>
+      <biological_entity id="o29670" name="scale" name_original="scales" src="d0_s5" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s5" value="pistillate" value_original="pistillate" />
+        <character is_modifier="false" name="shape" src="d0_s5" value="ovate" value_original="ovate" />
+        <character char_type="range_value" from="2.4" from_unit="mm" name="length" src="d0_s5" to="4" to_unit="mm" />
+        <character char_type="range_value" from="1.3" from_unit="mm" name="width" src="d0_s5" to="1.8" to_unit="mm" />
+        <character is_modifier="false" name="height_or_length_or_size" src="d0_s5" value="shorter" value_original="shorter" />
+      </biological_entity>
+      <biological_entity id="o29672" name="perigynium" name_original="perigynia" src="d0_s5" type="structure">
+        <character is_modifier="true" modifier="slightly" name="width" src="d0_s5" value="narrower" value_original="narrower" />
+      </biological_entity>
+      <biological_entity id="o29671" name="perigynium" name_original="perigynia" src="d0_s5" type="structure">
+        <character is_modifier="true" modifier="slightly" name="width" src="d0_s5" value="narrower" value_original="narrower" />
+      </biological_entity>
+      <biological_entity id="o29673" name="apex" name_original="apex" src="d0_s5" type="structure">
+        <character char_type="range_value" from="obtuse" name="shape" src="d0_s5" to="acute" />
+      </biological_entity>
+      <relation from="o29670" id="r3669" name="as wide as" negation="false" src="d0_s5" to="o29672" />
+    </statement>
+    <statement id="d0_s6">
+      <text>Staminate scales oblong-obovate, 3.7–4.5 × 1.2–2 mm, apex obtuse.</text>
+      <biological_entity id="o29674" name="scale" name_original="scales" src="d0_s6" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s6" value="staminate" value_original="staminate" />
+        <character is_modifier="false" name="shape" src="d0_s6" value="oblong-obovate" value_original="oblong-obovate" />
+        <character char_type="range_value" from="3.7" from_unit="mm" name="length" src="d0_s6" to="4.5" to_unit="mm" />
+        <character char_type="range_value" from="1.2" from_unit="mm" name="width" src="d0_s6" to="2" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o29675" name="apex" name_original="apex" src="d0_s6" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s6" value="obtuse" value_original="obtuse" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>Anthers 2.6–2.9 mm.</text>
+      <biological_entity id="o29676" name="anther" name_original="anthers" src="d0_s7" type="structure">
+        <character char_type="range_value" from="2.6" from_unit="mm" name="some_measurement" src="d0_s7" to="2.9" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Perigynia 2.5–3.5 × 1.2–2 mm, apex rounded;</text>
+      <biological_entity id="o29677" name="perigynium" name_original="perigynia" src="d0_s8" type="structure">
+        <character char_type="range_value" from="2.5" from_unit="mm" name="length" src="d0_s8" to="3.5" to_unit="mm" />
+        <character char_type="range_value" from="1.2" from_unit="mm" name="width" src="d0_s8" to="2" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o29678" name="apex" name_original="apex" src="d0_s8" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s8" value="rounded" value_original="rounded" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>beak 0.1–0.5 mm.</text>
+      <biological_entity id="o29679" name="beak" name_original="beak" src="d0_s9" type="structure">
+        <character char_type="range_value" from="0.1" from_unit="mm" name="some_measurement" src="d0_s9" to="0.5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting late spring–early summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="early summer" from="late spring" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Bogs, swamps, wet woods, primarily on acidic substrata</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="bogs" />
+        <character name="habitat" value="swamps" />
+        <character name="habitat" value="wet woods" />
+        <character name="habitat" value="acidic substrata" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–500 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="500" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ala., Conn., Del., Md., N.J., N.Y., N.C., Pa., S.C., Tenn., Va.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>236.</number>
+  <discussion>Carex barrattii is in the Center for Plant Conservation’s National Collection of Endangered Plants.</discussion>
+  
+</bio:treatment>

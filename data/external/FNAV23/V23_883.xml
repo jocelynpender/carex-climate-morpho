@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">477</other_info_on_meta>
+    <other_info_on_meta type="mention_page">479</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">480</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Dumortier" date="1827" rank="section">aulocystis</taxon_name>
+    <taxon_name authority="W. Boott in S. Watson" date="unknown" rank="species">luzulifolia</taxon_name>
+    <place_of_publication>
+      <publication_title>in S. Watson, Bot. California</publication_title>
+      <place_in_publication>2: 250. 1880</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section aulocystis;species luzulifolia</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="fna_id">242357306</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="C. B. Clarke" date="unknown" rank="species">pseudojaponica</taxon_name>
+    <taxon_hierarchy>genus Carex;species pseudojaponica;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants densely or loosely cespitose;</text>
+      <biological_entity id="o2095" name="whole_organism" name_original="" src="" type="structure">
+        <character is_modifier="false" modifier="loosely" name="growth_form" src="d0_s0" value="cespitose" value_original="cespitose" />
+        <character name="growth_form" value="plant" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>rhizomes short, thick.</text>
+      <biological_entity id="o2096" name="rhizome" name_original="rhizomes" src="d0_s1" type="structure">
+        <character is_modifier="false" name="height_or_length_or_size" src="d0_s1" value="short" value_original="short" />
+        <character is_modifier="false" name="width" src="d0_s1" value="thick" value_original="thick" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Culms to 100 cm.</text>
+      <biological_entity id="o2097" name="culm" name_original="culms" src="d0_s2" type="structure">
+        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s2" to="100" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Leaves: blades 5–20 mm wide.</text>
+      <biological_entity id="o2098" name="leaf" name_original="leaves" src="d0_s3" type="structure" />
+      <biological_entity id="o2099" name="blade" name_original="blades" src="d0_s3" type="structure">
+        <character char_type="range_value" from="5" from_unit="mm" name="width" src="d0_s3" to="20" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Inflorescences with 4–6 spikes;</text>
+      <biological_entity id="o2100" name="inflorescence" name_original="inflorescences" src="d0_s4" type="structure" />
+      <biological_entity id="o2101" name="spike" name_original="spikes" src="d0_s4" type="structure">
+        <character char_type="range_value" from="4" is_modifier="true" name="quantity" src="d0_s4" to="6" />
+      </biological_entity>
+      <relation from="o2100" id="r259" name="with" negation="false" src="d0_s4" to="o2101" />
+    </statement>
+    <statement id="d0_s5">
+      <text>peduncles of proximal spikes exserted more than 1 cm;</text>
+      <biological_entity id="o2102" name="peduncle" name_original="peduncles" src="d0_s5" type="structure" constraint="spike" constraint_original="spike; spike">
+        <character is_modifier="false" name="position" src="d0_s5" value="exserted" value_original="exserted" />
+        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s5" upper_restricted="false" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o2103" name="spike" name_original="spikes" src="d0_s5" type="structure" />
+      <relation from="o2102" id="r260" name="part_of" negation="false" src="d0_s5" to="o2103" />
+    </statement>
+    <statement id="d0_s6">
+      <text>proximal bracts with blade (13–) 17–35 (–55) mm, sheaths conspicuously expanded to mouth, 21–35 (–42) mm, mouth with wide purple band, usually shallowly U-shaped, greater than 2 mm wide.</text>
+      <biological_entity constraint="proximal" id="o2104" name="bract" name_original="bracts" src="d0_s6" type="structure" />
+      <biological_entity id="o2105" name="blade" name_original="blade" src="d0_s6" type="structure">
+        <character char_type="range_value" from="13" from_unit="mm" name="atypical_some_measurement" src="d0_s6" to="17" to_inclusive="false" to_unit="mm" />
+        <character char_type="range_value" from="35" from_inclusive="false" from_unit="mm" name="atypical_some_measurement" src="d0_s6" to="55" to_unit="mm" />
+        <character char_type="range_value" from="17" from_unit="mm" name="some_measurement" src="d0_s6" to="35" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o2106" name="sheath" name_original="sheaths" src="d0_s6" type="structure">
+        <character constraint="to mouth" constraintid="o2107" is_modifier="false" modifier="conspicuously" name="size" src="d0_s6" value="expanded" value_original="expanded" />
+        <character char_type="range_value" from="35" from_inclusive="false" from_unit="mm" name="atypical_some_measurement" notes="" src="d0_s6" to="42" to_unit="mm" />
+        <character char_type="range_value" from="21" from_unit="mm" name="some_measurement" notes="" src="d0_s6" to="35" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o2107" name="mouth" name_original="mouth" src="d0_s6" type="structure" />
+      <biological_entity id="o2108" name="mouth" name_original="mouth" src="d0_s6" type="structure">
+        <character is_modifier="false" modifier="usually shallowly" name="shape" notes="" src="d0_s6" value="u--shaped" value_original="u--shaped" />
+        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s6" upper_restricted="false" />
+      </biological_entity>
+      <biological_entity id="o2109" name="band" name_original="band" src="d0_s6" type="structure">
+        <character is_modifier="true" name="width" src="d0_s6" value="wide" value_original="wide" />
+        <character is_modifier="true" name="coloration_or_density" src="d0_s6" value="purple" value_original="purple" />
+      </biological_entity>
+      <relation from="o2104" id="r261" name="with" negation="false" src="d0_s6" to="o2105" />
+      <relation from="o2108" id="r262" name="with" negation="false" src="d0_s6" to="o2109" />
+    </statement>
+    <statement id="d0_s7">
+      <text>Lateral spikes pistillate, purple to dark-brown, pendent, (17–) 19–30 × 6-9 mm.</text>
+      <biological_entity constraint="lateral" id="o2110" name="spike" name_original="spikes" src="d0_s7" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s7" value="pistillate" value_original="pistillate" />
+        <character char_type="range_value" from="purple" name="coloration" src="d0_s7" to="dark-brown" />
+        <character is_modifier="false" name="orientation" src="d0_s7" value="pendent" value_original="pendent" />
+        <character char_type="range_value" from="17" from_unit="mm" name="atypical_length" src="d0_s7" to="19" to_inclusive="false" to_unit="mm" />
+        <character char_type="range_value" from="19" from_unit="mm" name="length" src="d0_s7" to="30" to_unit="mm" />
+        <character char_type="range_value" from="6" from_unit="mm" name="width" src="d0_s7" to="9" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Terminal spike staminate, ± erect or, occasionally, pendent, 9–19 × 4.5–9 mm.</text>
+      <biological_entity constraint="terminal" id="o2111" name="spike" name_original="spike" src="d0_s8" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s8" value="staminate" value_original="staminate" />
+        <character is_modifier="false" modifier="more or less" name="orientation" src="d0_s8" value="erect" value_original="erect" />
+        <character name="orientation" src="d0_s8" value="," value_original="," />
+        <character is_modifier="false" name="orientation" src="d0_s8" value="pendent" value_original="pendent" />
+        <character char_type="range_value" from="9" from_unit="mm" name="length" src="d0_s8" to="19" to_unit="mm" />
+        <character char_type="range_value" from="4.5" from_unit="mm" name="width" src="d0_s8" to="9" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>Pistillate scales glossy dark purple with narrow hyaline margins,often gold adaxially, usually ovate, apex obtuse to long-tapered (rarely ciliate-awned), glabrous.</text>
+      <biological_entity id="o2112" name="scale" name_original="scales" src="d0_s9" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s9" value="pistillate" value_original="pistillate" />
+        <character is_modifier="false" name="reflectance" src="d0_s9" value="glossy" value_original="glossy" />
+        <character constraint="with margins" constraintid="o2113" is_modifier="false" name="coloration" src="d0_s9" value="dark purple" value_original="dark purple" />
+        <character is_modifier="false" modifier="often; adaxially" name="coloration" notes="" src="d0_s9" value="gold" value_original="gold" />
+        <character is_modifier="false" modifier="usually" name="shape" src="d0_s9" value="ovate" value_original="ovate" />
+      </biological_entity>
+      <biological_entity id="o2113" name="margin" name_original="margins" src="d0_s9" type="structure">
+        <character is_modifier="true" name="size_or_width" src="d0_s9" value="narrow" value_original="narrow" />
+        <character is_modifier="true" name="coloration" src="d0_s9" value="hyaline" value_original="hyaline" />
+      </biological_entity>
+      <biological_entity id="o2114" name="apex" name_original="apex" src="d0_s9" type="structure">
+        <character char_type="range_value" from="obtuse" name="shape" src="d0_s9" to="long-tapered" />
+        <character is_modifier="false" name="pubescence" src="d0_s9" value="glabrous" value_original="glabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>Staminate scales dark reddish purple with pale midvein and narrow, scarious margins, ovate to elliptic, 3.2–4.1 × 1–2 mm, apex usually obtuse, occasionally short-awned.</text>
+      <biological_entity id="o2115" name="scale" name_original="scales" src="d0_s10" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s10" value="staminate" value_original="staminate" />
+        <character is_modifier="false" name="coloration" src="d0_s10" value="dark reddish" value_original="dark reddish" />
+        <character constraint="with margins" constraintid="o2117" is_modifier="false" name="coloration_or_density" src="d0_s10" value="purple" value_original="purple" />
+        <character char_type="range_value" from="ovate" name="shape" notes="" src="d0_s10" to="elliptic" />
+        <character char_type="range_value" from="3.2" from_unit="mm" name="length" src="d0_s10" to="4.1" to_unit="mm" />
+        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s10" to="2" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o2116" name="midvein" name_original="midvein" src="d0_s10" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s10" value="pale" value_original="pale" />
+      </biological_entity>
+      <biological_entity id="o2117" name="margin" name_original="margins" src="d0_s10" type="structure">
+        <character is_modifier="true" name="size_or_width" src="d0_s10" value="narrow" value_original="narrow" />
+        <character is_modifier="true" name="texture" src="d0_s10" value="scarious" value_original="scarious" />
+      </biological_entity>
+      <biological_entity id="o2118" name="apex" name_original="apex" src="d0_s10" type="structure">
+        <character is_modifier="false" modifier="usually" name="shape" src="d0_s10" value="obtuse" value_original="obtuse" />
+        <character is_modifier="false" modifier="occasionally" name="architecture_or_shape" src="d0_s10" value="short-awned" value_original="short-awned" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s11">
+      <text>Anthers (1.8–) 2.4–4 mm.</text>
+      <biological_entity id="o2119" name="anther" name_original="anthers" src="d0_s11" type="structure">
+        <character char_type="range_value" from="1.8" from_unit="mm" name="atypical_some_measurement" src="d0_s11" to="2.4" to_inclusive="false" to_unit="mm" />
+        <character char_type="range_value" from="2.4" from_unit="mm" name="some_measurement" src="d0_s11" to="4" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s12">
+      <text>Perigynia ascending, dark purple, veins indistinct, elliptic or ovate to broadly ovate, 4–5.3 × 1.7–2.5 mm, with flat margins more than 1/2 mature achene width, glabrous;</text>
+      <biological_entity id="o2120" name="perigynium" name_original="perigynia" src="d0_s12" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s12" value="ascending" value_original="ascending" />
+        <character is_modifier="false" name="coloration" src="d0_s12" value="dark purple" value_original="dark purple" />
+      </biological_entity>
+      <biological_entity id="o2121" name="vein" name_original="veins" src="d0_s12" type="structure">
+        <character is_modifier="false" name="prominence" src="d0_s12" value="indistinct" value_original="indistinct" />
+        <character char_type="range_value" from="ovate" name="shape" src="d0_s12" to="broadly ovate" />
+        <character char_type="range_value" from="4" from_unit="mm" name="length" src="d0_s12" to="5.3" to_unit="mm" />
+        <character char_type="range_value" from="1.7" from_unit="mm" name="width" src="d0_s12" to="2.5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o2122" name="margin" name_original="margins" src="d0_s12" type="structure">
+        <character is_modifier="true" name="prominence_or_shape" src="d0_s12" value="flat" value_original="flat" />
+        <character name="quantity" src="d0_s12" value="1" value_original="1" />
+        <character name="quantity" src="d0_s12" value="/2" value_original="/2" />
+      </biological_entity>
+      <biological_entity id="o2123" name="achene" name_original="achene" src="d0_s12" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s12" value="mature" value_original="mature" />
+        <character is_modifier="false" name="width" src="d0_s12" value="glabrous" value_original="glabrous" />
+      </biological_entity>
+      <relation from="o2121" id="r263" name="with" negation="false" src="d0_s12" to="o2122" />
+    </statement>
+    <statement id="d0_s13">
+      <text>beak 1–2 mm, apex dark purple to blackish, glabrous, distance from beak tip to achene apex greater than 2 mm.</text>
+      <biological_entity id="o2124" name="beak" name_original="beak" src="d0_s13" type="structure">
+        <character char_type="range_value" from="1" from_unit="mm" name="some_measurement" src="d0_s13" to="2" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o2125" name="apex" name_original="apex" src="d0_s13" type="structure">
+        <character char_type="range_value" from="dark purple" name="coloration" src="d0_s13" to="blackish" />
+        <character is_modifier="false" name="pubescence" src="d0_s13" value="glabrous" value_original="glabrous" />
+      </biological_entity>
+      <biological_entity constraint="beak" id="o2126" name="tip" name_original="tip" src="d0_s13" type="structure" />
+      <biological_entity constraint="achene" id="o2127" name="apex" name_original="apex" src="d0_s13" type="structure">
+        <character char_type="range_value" from="2" from_unit="mm" name="some_measurement" src="d0_s13" upper_restricted="false" />
+      </biological_entity>
+      <relation from="o2125" id="r264" name="from" negation="false" src="d0_s13" to="o2126" />
+      <relation from="o2126" id="r265" name="to" negation="false" src="d0_s13" to="o2127" />
+    </statement>
+    <statement id="d0_s14">
+      <text>Achenes obovoid, 1.5–2.2 × 0.85–1.2 mm.</text>
+      <biological_entity id="o2128" name="achene" name_original="achenes" src="d0_s14" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s14" value="obovoid" value_original="obovoid" />
+        <character char_type="range_value" from="1.5" from_unit="mm" name="length" src="d0_s14" to="2.2" to_unit="mm" />
+        <character char_type="range_value" from="0.85" from_unit="mm" name="width" src="d0_s14" to="1.2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="summer" from="summer" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Wet meadows</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="wet meadows" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>2100–2800 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="2800" to_unit="m" from="2100" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Calif., Idaho, Mont.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Idaho" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mont." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>334.</number>
+  <other_name type="past_name">luzulaefolia</other_name>
+  
+</bio:treatment>
