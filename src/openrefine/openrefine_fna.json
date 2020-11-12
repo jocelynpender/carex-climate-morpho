@@ -1,0 +1,106 @@
+[
+  {
+    "op": "core/multivalued-cell-split",
+    "description": "Split multi-valued cells in column collapsed_data",
+    "columnName": "collapsed_data",
+    "keyColumnName": "Column",
+    "separator": ";",
+    "mode": "plain"
+  },
+  {
+    "op": "core/fill-down",
+    "description": "Fill down cells in column species_name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "species_name"
+  },
+  {
+    "op": "core/fill-down",
+    "description": "Fill down cells in column coded_property_name",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "coded_property_name"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column data_no_unit at index 4 based on column collapsed_data using expression grel:chomp(value, \"mm\")",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "data_no_unit",
+    "columnInsertIndex": 4,
+    "baseColumnName": "collapsed_data",
+    "expression": "grel:chomp(value, \"mm\")",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column cm_data_no_unit at index 5 based on column data_no_unit using expression grel:if(endsWith(value,\"cm\"), chomp(value,\"cm\"), null)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "cm_data_no_unit",
+    "columnInsertIndex": 5,
+    "baseColumnName": "data_no_unit",
+    "expression": "grel:if(endsWith(value,\"cm\"), chomp(value,\"cm\"), null)",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column cm_data_no_unit using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "cm_data_no_unit",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column cm_data_no_unit using expression grel:value*10",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "cm_data_no_unit",
+    "expression": "grel:value*10",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column mm_data_no_unit at index 5 based on column data_no_unit using expression grel:if(endsWith(value,\"cm\"),null,value)",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "newColumnName": "mm_data_no_unit",
+    "columnInsertIndex": 5,
+    "baseColumnName": "data_no_unit",
+    "expression": "grel:if(endsWith(value,\"cm\"),null,value)",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column mm_data_no_unit using expression value.toNumber()",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "mm_data_no_unit",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  }
+]
