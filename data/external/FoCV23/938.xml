@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treatment>
+  <number>1.</number>
+  <TaxonIdentification Status="ACCEPTED">
+    <genus_name>Kobresia</genus_name>
+    <species_name>gammiei</species_name>
+    <species_authority>C. B. Clarke</species_authority>
+    <place_of_publication>
+      <publication_title>Bull. Misc. Inform. Kew, Addit. Ser.</publication_title>
+      <place_in_publication>8: 68. 1908</place_in_publication>
+    </place_of_publication>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <species_name>根茎嵩草 gen jing song cao</species_name>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <genus_name>Kobresia</genus_name>
+    <species_name>williamsii</species_name>
+    <species_authority>T. Koyama.</species_authority>
+  </TaxonIdentification>
+  <description>
+    <statement id="938.txt-0">
+      <text>Rhizomes elongated, stoloniferous.</text>
+      <structure id="o43549" name="rhizome">
+        <character name="length" value="elongated" />
+        <character name="architecture" value="stoloniferous" />
+      </structure>
+    </statement>
+    <statement id="938.txt-1">
+      <text>Basal sheaths few, pale reddish brown, dull, retaining dried leaf blades.</text>
+      <structure id="o43550" name="sheath" constraint="basal">
+        <character name="count" value="few" />
+        <character name="coloration" value="brown" modifier="pale-c-reddish" />
+        <character name="reflectance" value="dull" />
+      </structure>
+      <structure id="o43551" name="blade" constraint="leaf">
+        <character name="condition" value="dried" />
+      </structure>
+      <relation id="r8895" name="retaining" from="o43550" to="o43551" negation="false" />
+    </statement>
+    <statement id="938.txt-2">
+      <text>Culms loosely tufted, trigonous to subterete, 7–58 cm tall, slender, 1–1.5 mm in diam.</text>
+      <structure id="o43552" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="loosely" />
+        <character char_type="range_value" name="shape" from="trigonous" to="subterete" />
+        <character name="shape" value="trigonous" />
+        <character name="shape" value="subterete" />
+        <character char_type="range_value" name="size" from="7" from_unit="cm" to="58" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="slender" />
+        <character char_type="range_value" name="size" from="1" from_unit="mm" to="1.5" to_unit="mm" modifier="in diam" />
+      </structure>
+    </statement>
+    <statement id="938.txt-3">
+      <text>Leaves basal or subbasal, shorter than culms;</text>
+      <structure id="o43553" name="leaf">
+        <character name="position" value="basal" />
+        <character name="position" value="subbasal" />
+        <character name="height_or_length" value="shorter" constraint="than culms" constraintid="o43554" />
+      </structure>
+      <structure id="o43554" name="culm" />
+    </statement>
+    <statement id="938.txt-4">
+      <text>blade flat, 1.5–4.5 (–5 )mm wide, midrib distinct abaxially.</text>
+      <structure id="o43555" name="blade">
+        <character name="prominence_or_shape" value="flat" />
+        <character char_type="range_value" name="width" from="4.5" to="5" from_unit="mm" to_unit="mm" from_inclusive="false" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="4.5" to_unit="mm" />
+      </structure>
+      <structure id="o43556" name="midrib">
+        <character name="fusion" value="distinct" modifier="abaxially" />
+      </structure>
+    </statement>
+    <statement id="938.txt-5">
+      <text>Inflorescence loosely or densely paniculate, reddish brown with green, club-shaped, 2.6–8 × 0.5–1.2 cm;</text>
+      <structure id="o43557" name="inflorescence">
+        <character name="architecture" value="paniculate" modifier="loosely~or~densely" />
+        <character name="coloration" value="brown with green" modifier="reddish" />
+        <character name="shape" value="club-shaped" />
+        <character char_type="range_value" name="length" from="2.6" from_unit="cm" to="8" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.5" from_unit="cm" to="1.2" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="938.txt-6">
+      <text>lowest involucral bract leafy or glumelike with long arista, shorter than or exceeding inflorescence.</text>
+      <structure id="o43558" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="architecture" value="leafy" />
+        <character name="feature" value="glumelike" constraint="with arista" constraintid="o43559" />
+        <character name="height_or_length" value="shorter" constraint="than or exceeding inflorescence" constraintid="o43560" />
+      </structure>
+      <structure id="o43559" name="arista">
+        <character name="length" value="long" />
+      </structure>
+      <structure id="o43560" name="inflorescence" />
+    </statement>
+    <statement id="938.txt-7">
+      <text>Lowest spikelets of inflorescence branches bisexual with 1 basal female flower and 1 distal male flower, middle ones unisexual with only 1 female flower, apical ones male;</text>
+      <structure id="o43561" name="spikelet">
+        <character name="feature" value="lowest" />
+        <character name="reproduction" value="bisexual" constraint="with flower, flower" constraintid="o43563  o43564" />
+        <character name="position" value="middle" />
+        <character name="reproduction" value="unisexual" constraint="with flower" constraintid="o43565" />
+        <character name="position" value="apical" />
+        <character name="feature_or_reproduction" value="male" />
+      </structure>
+      <structure id="o43562" name="branch" constraint="inflorescence" />
+      <relation id="r8896" name="part_of" from="o43561" to="o43562" negation="false" />
+      <structure id="o43563" name="flower" constraint="basal female">
+        <character name="count" value="1" />
+      </structure>
+      <structure id="o43564" name="flower" constraint="distal male">
+        <character name="count" value="1" />
+        <character name="count" value="1" />
+      </structure>
+      <structure id="o43565" name="flower" constraint="female">
+        <character name="count" value="1" modifier="only" />
+      </structure>
+    </statement>
+    <statement id="938.txt-8">
+      <text>glumes reddish brown, with green midvein, elliptic to oblong, (3 .5– )5.5–8.5 × 3.2–4 mm, midvein broad, margin broadly hyaline, apex subacute to rounded-truncate.</text>
+      <structure id="o43566" name="glume">
+        <character name="coloration" value="brown" modifier="reddish" />
+        <character char_type="range_value" name="shape" from="elliptic" to="oblong" />
+        <character name="shape" value="elliptic" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="atypical_length" from="3.5" to="5.5" from_unit="mm" to_unit="mm" to_inclusive="false" />
+        <character char_type="range_value" name="length" from="5.5" from_unit="mm" to="8.5" to_unit="mm" />
+        <character char_type="range_value" name="width" from="3.2" from_unit="mm" to="4" to_unit="mm" />
+      </structure>
+      <structure id="o43567" name="midvein">
+        <character name="coloration" value="green" />
+      </structure>
+      <relation id="r8897" name="with" from="o43566" to="o43567" negation="false" />
+      <structure id="o43568" name="midvein" />
+      <structure id="o43569" name="margin">
+        <character name="coloration" value="hyaline" modifier="broadly" />
+      </structure>
+      <structure id="o43570" name="apex">
+        <character char_type="range_value" name="shape" from="subacute" to="rounded-truncate" />
+        <character name="shape" value="subacute" />
+        <character name="shape" value="rounded-truncate" />
+      </structure>
+      <relation id="r8898" name="may_be_the_same" from="o43567" to="o43568" negation="false" />
+    </statement>
+    <statement id="938.txt-9">
+      <text>Prophylls pale green, partly brown, utriculiform, lanceolate, (5 .6– )7–10.3 × 1–2 mm, membranous, 2-keeled, keels smooth, apex attenuate into a beak.</text>
+      <structure id="o43571" name="prophyll">
+        <character name="coloration" value="green" modifier="pale" />
+        <character name="coloration" value="brown" modifier="partly" />
+        <character name="shape" value="lanceolate" />
+        <character char_type="range_value" name="atypical_length" from="5.6" to="7" from_unit="mm" to_unit="mm" to_inclusive="false" />
+        <character char_type="range_value" name="length" from="7" from_unit="mm" to="10.3" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="2" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="shape" value="2-keeled" />
+      </structure>
+      <structure id="o43572" name="keel">
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o43573" name="apex">
+        <character name="shape" value="attenuate" constraint="into beak" constraintid="o43574" />
+      </structure>
+      <structure id="o43574" name="beak" />
+    </statement>
+    <statement id="938.txt-10">
+      <text>Nutlets yellowish green, obovoid, trigonous, 3.3–4 × 1.5–2 mm, not beaked.</text>
+      <structure id="o43575" name="nutlet">
+        <character name="coloration" value="green" modifier="yellowish" />
+        <character name="shape" value="obovoid" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="length" from="3.3" from_unit="mm" to="4" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+        <character name="shape" value="beaked" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="938.txt-11">
+      <text>Rachilla in unisexual spikelets, shorter than or subequaling nutlet, flat, prominent, sometimes with a sterile male glume at apex.</text>
+      <structure id="o43576" name="rachilla">
+        <character name="height_or_length" value="shorter" constraint="than or subequaling nutlet" constraintid="o43578" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="prominence" value="prominent" />
+      </structure>
+      <structure id="o43577" name="spikelet" constraint="unisexual" />
+      <relation id="r8899" name="in" from="o43576" to="o43577" negation="false" />
+      <structure id="o43578" name="nutlet" />
+      <structure id="o43579" name="glume" constraint="sterile male" />
+      <relation id="r8900" name="with" from="o43576" to="o43579" negation="false" modifier="sometimes" />
+      <structure id="o43580" name="apex" />
+      <relation id="r8901" name="at" from="o43579" to="o43580" negation="false" />
+    </statement>
+    <statement id="938.txt-12">
+      <text>Stigmas 3, base of style disklike.</text>
+      <structure id="o43581" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+      <structure id="o43583" name="style" />
+      <relation id="r8902" name="part_of" from="o43582" to="o43583" negation="false" />
+    </statement>
+    <statement id="938.txt-13">
+      <text>Fl. and fr. May–Aug.</text>
+      <structure id="o43582" name="base">
+        <character name="feature" value="disklike" />
+      </structure>
+    </statement>
+  </description>
+  <distribution>Grassy slopes, damp slopes in Abies forests, streamsides, cliffs; 3700–4400 m. Xizang [Bhutan, India (Sikkim), Nepal].</distribution>
+</treatment>
+
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

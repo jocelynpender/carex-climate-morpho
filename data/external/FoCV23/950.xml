@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treatment>
+  <number>13.</number>
+  <TaxonIdentification Status="ACCEPTED">
+    <genus_name>Kobresia</genus_name>
+    <species_name>royleana</species_name>
+    <species_authority>(Nees) Boeckeler</species_authority>
+    <place_of_publication>
+      <publication_title>Linnaea</publication_title>
+      <place_in_publication>39: 8. 1875</place_in_publication>
+    </place_of_publication>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <species_name>喜马拉雅嵩草 xi ma la ya song cao</species_name>
+  </TaxonIdentification>
+  <description>
+    <statement id="950.txt-0">
+      <text>Rhizomes short, thick, woody.</text>
+      <structure id="o44013" name="rhizome">
+        <character name="height_or_length" value="short" />
+        <character name="width" value="thick" />
+        <character name="internal_texture" value="woody" />
+      </structure>
+    </statement>
+    <statement id="950.txt-1">
+      <text>Basal sheaths prominent, brown or reddish brown, dull, not fibrillose, retaining dried leaf blades.</text>
+      <structure id="o44014" name="sheath" constraint="basal">
+        <character name="prominence" value="prominent" />
+        <character name="coloration" value="brown" />
+        <character name="coloration" value="brown" modifier="reddish" />
+        <character name="reflectance" value="dull" />
+        <character name="feature" value="fibrillose" modifier="not" />
+      </structure>
+      <structure id="o44015" name="blade" constraint="leaf">
+        <character name="condition" value="dried" />
+      </structure>
+      <relation id="r9008" name="retaining" from="o44014" to="o44015" negation="false" />
+    </statement>
+    <statement id="950.txt-2">
+      <text>Culms densely tufted, rigid, acutely trigonous, or subterete in lower part, (2– )6–75 cm tall, 1–2.5 mm in diam.</text>
+      <structure id="o44016" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character name="internal_texture" value="rigid" />
+        <character name="shape" value="trigonous" modifier="acutely" />
+        <character name="shape" value="subterete" constraint="in part" constraintid="o44017" />
+        <character char_type="range_value" name="atypical_size" from="2" to="6" from_unit="cm" to_unit="cm" to_inclusive="false" />
+        <character char_type="range_value" name="size" from="6" from_unit="cm" to="75" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character char_type="range_value" name="size" from="1" from_unit="mm" to="2.5" to_unit="mm" modifier="in diam" />
+      </structure>
+      <structure id="o44017" name="part" constraint="lower" />
+    </statement>
+    <statement id="950.txt-3">
+      <text>Leaves basal, shorter than culms;</text>
+      <structure id="o44018" name="leaf">
+        <character name="position" value="basal" />
+        <character name="height_or_length" value="shorter" constraint="than culms" constraintid="o44019" />
+      </structure>
+      <structure id="o44019" name="culm" />
+    </statement>
+    <statement id="950.txt-4">
+      <text>blade flat, 2–4 mm wide, midrib distinct abaxially.</text>
+      <structure id="o44020" name="blade">
+        <character name="prominence_or_shape" value="flat" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="4" to_unit="mm" />
+      </structure>
+      <structure id="o44021" name="midrib">
+        <character name="fusion" value="distinct" modifier="abaxially" />
+      </structure>
+    </statement>
+    <statement id="950.txt-5">
+      <text>Inflorescence a dense or slightly loose panicle, brown, 1–3.5 × 0.6–1.2 cm;</text>
+      <structure id="o44022" name="inflorescence">
+        <character name="density" value="dense" />
+        <character name="density" value="slightly loose panicle" />
+        <character name="coloration" value="brown" />
+        <character char_type="range_value" name="length" from="1" from_unit="cm" to="3.5" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.6" from_unit="cm" to="1.2" to_unit="cm" />
+      </structure>
+      <structure id="o44023" name="panicle">
+        <character name="architecture_or_fragility" value="loose" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="950.txt-6">
+      <text>inflorescence branches simple, obliquely ascending, decreasing in length toward apex;</text>
+      <structure id="o44024" name="branch" constraint="inflorescence">
+        <character name="architecture" value="simple" />
+        <character name="orientation" value="ascending" modifier="obliquely" />
+        <character name="count_or_size" value="decreasing" modifier="in length" constraint="toward apex" constraintid="o44025" />
+      </structure>
+      <structure id="o44025" name="apex" />
+    </statement>
+    <statement id="950.txt-7">
+      <text>lowest involucral bract glumelike, apex aristate.</text>
+      <structure id="o44026" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="feature" value="glumelike" />
+      </structure>
+      <structure id="o44027" name="apex">
+        <character name="shape" value="aristate" />
+      </structure>
+    </statement>
+    <statement id="950.txt-8">
+      <text>Terminal spikelets of inflorescence branches male, lower ones bisexual or unisexual.</text>
+      <structure id="o44028" name="spikelet" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="position" value="lower" />
+        <character name="reproduction" value="bisexual" />
+        <character name="reproduction" value="unisexual" />
+      </structure>
+      <structure id="o44029" name="branch" constraint="inflorescence" />
+      <relation id="r9009" name="part_of" from="o44028" to="o44029" negation="false" />
+    </statement>
+    <statement id="950.txt-9">
+      <text>Bisexual spikelets with 1 basal female flower and 2 or 3 (–6 )distal male flowers.</text>
+      <structure id="o44030" name="spikelet" constraint="bisexual" />
+      <structure id="o44031" name="flower" constraint="basal female">
+        <character name="count" value="1" />
+      </structure>
+      <structure id="o44032" name="flower" constraint="distal male">
+        <character name="count" value="2" />
+        <character char_type="range_value" name="atypical_count" from="3" to="6" from_inclusive="false" />
+        <character name="count" value="3" />
+        <character name="count" value="1" />
+      </structure>
+      <relation id="r9010" name="with" from="o44030" to="o44031" negation="false" />
+      <relation id="r9011" name="with" from="o44030" to="o44032" negation="false" />
+    </statement>
+    <statement id="950.txt-10">
+      <text>Glumes brown, with green midvein, ovate-oblong, 2.6–5.1 × 1.7–3.5 mm, margin hyaline or not, apex acute or aristate.</text>
+      <structure id="o44033" name="glume">
+        <character name="coloration" value="brown" />
+        <character name="shape" value="ovate-oblong" />
+        <character char_type="range_value" name="length" from="2.6" from_unit="mm" to="5.1" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.7" from_unit="mm" to="3.5" to_unit="mm" />
+      </structure>
+      <structure id="o44034" name="midvein">
+        <character name="coloration" value="green" />
+      </structure>
+      <relation id="r9012" name="with" from="o44033" to="o44034" negation="false" />
+      <structure id="o44035" name="margin">
+        <character name="coloration" value="hyaline" />
+      </structure>
+    </statement>
+    <statement id="950.txt-11">
+      <text>Prophylls pale brown, oblong or oblong-lanceolate, 2.7–5 mm, membranous, 2-keeled, keels scabrid, margins open to base.</text>
+      <structure id="o44036" name="prophyll">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="oblong-lanceolate" />
+        <character char_type="range_value" name="size" from="2.7" from_unit="mm" to="5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="shape" value="2-keeled" />
+      </structure>
+      <structure id="o44037" name="keel">
+        <character name="relief" value="scabrid" />
+      </structure>
+      <structure id="o44038" name="margin" />
+      <structure id="o44039" name="base" />
+      <relation id="r9013" name="open to" from="o44038" to="o44039" negation="false" />
+    </statement>
+    <statement id="950.txt-12">
+      <text>Nutlets narrowly oblong, trigonous, 1.7–4 mm, beak to 1 mm, very shortly stipitate.</text>
+      <structure id="o44040" name="nutlet">
+        <character name="shape" value="oblong" modifier="narrowly" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="1.7" from_unit="mm" to="4" to_unit="mm" />
+      </structure>
+      <structure id="o44041" name="beak">
+        <character char_type="range_value" name="size" from="0" from_unit="mm" to="1" to_unit="mm" />
+        <character name="architecture" value="stipitate" modifier="very shortly" />
+      </structure>
+    </statement>
+    <statement id="950.txt-13">
+      <text>Sterile rachilla sometimes present in female spikelets, to 1/3 as long as nutlet.</text>
+      <structure id="o44042" name="rachilla" constraint="sterile">
+        <character char_type="range_value" name="count" from="0" to="1/3" constraint="as-long-as nutlet" constraintid="o44044" />
+      </structure>
+      <structure id="o44043" name="spikelet" constraint="female" />
+      <relation id="r9014" name="present in" from="o44042" to="o44043" negation="false" modifier="sometimes" />
+      <structure id="o44044" name="nutlet" />
+    </statement>
+    <statement id="950.txt-14">
+      <text>Stigmas 3.</text>
+    </statement>
+    <statement id="950.txt-15">
+      <text>Fl. and fr. May–Sep.</text>
+      <structure id="o44045" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
+  <distribution>Moist habitats, among scrub; 700–5200 m. Gansu, Qinghai, Sichuan, Xinjiang, Xizang, Yunnan [Afghanistan, India (Himachal Pradesh, Uttarakhand), Kashmir, Kyrgyzstan, Nepal, Pakistan, Tajikistan].</distribution>
+  <key>
+    <key_statement>
+      <statement_id>1a.</statement_id>
+      <statement>Spikelets bisexual; cul ms rigid, acutely trigonous, or subterete in lower part, 5–35 cm tall, 1.5–2.5 mm in diam.; leaf blade 2–4 mm wide</statement>
+      <determination>13a. subsp. royleana</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>1b.</statement_id>
+      <statement>Spikelets unisexual; culms trigonous, or subterete in lower part, 30 –75 cm tall, slender, 1–1.5(–1.8) mm in diam.; leaf blade 1.5–2(–2.5) mm wide</statement>
+      <determination>13b. subsp. minshanica</determination>
+    </key_statement>
+  </key>
+</treatment>
+
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

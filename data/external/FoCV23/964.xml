@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treatment>
+  <number>25.</number>
+  <TaxonIdentification Status="ACCEPTED">
+    <genus_name>Kobresia</genus_name>
+    <species_name>setschwanensis</species_name>
+    <species_authority>Handel-Mazzetti</species_authority>
+    <place_of_publication>
+      <publication_title>Symb. Sin.</publication_title>
+      <place_in_publication>7: 1254. 1936</place_in_publication>
+    </place_of_publication>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <species_name>四川嵩草 si chuan song cao</species_name>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <genus_name>Kobresia</genus_name>
+    <species_name>handel-mazzettii</species_name>
+    <species_authority>K. V. Ivan ova</species_authority>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <genus_name>K.</genus_name>
+    <species_name>longearistita</species_name>
+    <species_authority>P. C. Li</species_authority>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <genus_name>K.</genus_name>
+    <species_name>pinetorum</species_name>
+    <species_authority>F. T. Wang &amp; Tang ex P. C. Li.</species_authority>
+  </TaxonIdentification>
+  <description>
+    <statement id="964.txt-0">
+      <text>Rhizomes short.</text>
+      <structure id="o44439" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="964.txt-1">
+      <text>Basal sheaths prominent and persistent, pale brown, dull or slightly shiny, not fibrillose, not retaining dried leaf blades.</text>
+      <structure id="o44440" name="sheath" constraint="basal">
+        <character name="prominence" value="prominent" />
+        <character name="duration" value="persistent" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="reflectance" value="dull" />
+        <character name="reflectance" value="shiny" modifier="slightly" />
+        <character name="feature" value="fibrillose" modifier="not" />
+      </structure>
+      <structure id="o44441" name="blade" constraint="leaf">
+        <character name="condition" value="dried" />
+      </structure>
+      <relation id="r9094" name="retaining" from="o44440" to="o44441" negation="true" />
+    </statement>
+    <statement id="964.txt-2">
+      <text>Culms densely tufted, stiffly erect, obtusely trigonous, 5–20 (–40 )cm, slender, 0.7–1.3 mm in diam.</text>
+      <structure id="o44442" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character name="orientation" value="erect" modifier="stiffly" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character char_type="range_value" name="atypical_size" from="20" to="40" from_unit="cm" to_unit="cm" from_inclusive="false" />
+        <character char_type="range_value" name="size" from="5" from_unit="cm" to="20" to_unit="cm" />
+        <character name="size" value="slender" />
+        <character char_type="range_value" name="size" from="0.7" from_unit="mm" to="1.3" to_unit="mm" modifier="in diam" />
+      </structure>
+    </statement>
+    <statement id="964.txt-3">
+      <text>Leaves basal, shorter than culms;</text>
+      <structure id="o44443" name="leaf">
+        <character name="position" value="basal" />
+        <character name="height_or_length" value="shorter" constraint="than culms" constraintid="o44444" />
+      </structure>
+      <structure id="o44444" name="culm" />
+    </statement>
+    <statement id="964.txt-4">
+      <text>blade folded or margin involute, stiff, 1–2 mm wide, midrib not distinct abaxially.</text>
+      <structure id="o44445" name="blade">
+        <character name="architecture_or_shape" value="folded" />
+        <character name="architecture_or_shape" value="margin" />
+        <character name="shape_or_vernation" value="involute" />
+        <character name="external_texture" value="stiff" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="2" to_unit="mm" />
+      </structure>
+      <structure id="o44446" name="margin" />
+      <structure id="o44447" name="midrib">
+        <character name="fusion" value="distinct" modifier="not;abaxially" />
+      </structure>
+    </statement>
+    <statement id="964.txt-5">
+      <text>Inflorescence usually a dense spike (occasionally with 1 or 2 branches at base ), greenish brown, cylindric, 1–3.5 × 0.3–0.6 cm;</text>
+      <structure id="o44448" name="inflorescence">
+        <character name="type" value="dense spike" modifier="usually" />
+        <character name="coloration" value="brown" modifier="greenish" />
+        <character name="shape" value="cylindric" />
+        <character char_type="range_value" name="length" from="1" from_unit="cm" to="3.5" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.3" from_unit="cm" to="0.6" to_unit="cm" />
+      </structure>
+      <structure id="o44449" name="spike">
+        <character name="density" value="dense" modifier="usually" />
+      </structure>
+      <structure id="o44450" name="branch" in_brackets="true">
+        <character name="count" value="1" in_brackets="true" />
+        <character name="count" value="2" in_brackets="true" />
+      </structure>
+      <relation id="r9095" name="with" from="o44448" to="o44450" negation="false" modifier="occasionally" in_brackets="true" />
+      <structure id="o44451" name="base" in_brackets="true" />
+      <relation id="r9096" name="at" from="o44450" to="o44451" negation="false" in_brackets="true" />
+    </statement>
+    <statement id="964.txt-6">
+      <text>lowest involucral bract glumelike, apex long or shortly aristate;</text>
+      <structure id="o44452" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="feature" value="glumelike" />
+      </structure>
+      <structure id="o44453" name="apex">
+        <character name="shape" value="aristate" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="964.txt-7">
+      <text>terminal few spikelets male, lower ones bisexual with 1 female and 2–5 male flowers.</text>
+      <structure id="o44454" name="spikelet">
+        <character name="position" value="terminal" />
+        <character name="count" value="few" />
+        <character name="feature_or_reproduction" value="male" />
+        <character name="position" value="lower" />
+        <character name="reproduction" value="bisexual" constraint="with flowers" constraintid="o44455" />
+      </structure>
+      <structure id="o44455" name="flower" constraint="male">
+        <character name="count" value="1" />
+        <character name="reproduction" value="female" />
+        <character char_type="range_value" name="count" from="2" to="5" />
+      </structure>
+    </statement>
+    <statement id="964.txt-8">
+      <text>Glumes brown, with yellowish green to green midvein, oblong-ovate to oblong-lanceolate, 3–4.5 × 1.5–2.5 mm, papery, midvein broad, margin usually narrowly hyaline, apex usually subacute, sometimes shortly aristate.</text>
+      <structure id="o44456" name="glume">
+        <character name="coloration" value="brown" />
+        <character char_type="range_value" name="shape" from="oblong-ovate" to="oblong-lanceolate" />
+        <character name="shape" value="oblong-ovate" />
+        <character name="shape" value="oblong-lanceolate" />
+        <character char_type="range_value" name="length" from="3" from_unit="mm" to="4.5" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="2.5" to_unit="mm" />
+        <character name="feature_or_internal_texture" value="papery" />
+      </structure>
+      <structure id="o44457" name="midvein">
+        <character char_type="range_value" name="coloration" from="yellowish green" to="green" />
+        <character name="coloration" value="green" modifier="yellowish" />
+        <character name="coloration" value="green" />
+      </structure>
+      <relation id="r9097" name="with" from="o44456" to="o44457" negation="false" />
+      <structure id="o44458" name="midvein" />
+      <structure id="o44459" name="margin">
+        <character name="coloration" value="hyaline" modifier="usually narrowly" />
+      </structure>
+      <structure id="o44460" name="apex">
+        <character name="shape" value="subacute" modifier="usually" />
+        <character name="shape" value="aristate" modifier="sometimes shortly" />
+      </structure>
+      <relation id="r9098" name="may_be_the_same" from="o44457" to="o44458" negation="false" />
+    </statement>
+    <statement id="964.txt-9">
+      <text>Prophylls yellowish brown, oblong, 2–4.5 × 1–1.6 mm, membranous, 2-keeled, keels smooth or slightly scabrid, sometimes veined between keels, margins free nearly to base, apex rounded or acute.</text>
+      <structure id="o44461" name="prophyll">
+        <character name="coloration" value="brown" modifier="yellowish" />
+        <character name="shape" value="oblong" />
+        <character char_type="range_value" name="length" from="2" from_unit="mm" to="4.5" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="1.6" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="shape" value="2-keeled" />
+      </structure>
+      <structure id="o44462" name="keel">
+        <character name="relief" value="smooth" />
+        <character name="relief" value="scabrid" modifier="slightly" />
+        <character name="architecture_or_feature" value="veined" modifier="sometimes" constraint="between keels" constraintid="o44463" />
+      </structure>
+      <structure id="o44463" name="keel" />
+      <structure id="o44464" name="margin" />
+      <structure id="o44465" name="base" />
+      <relation id="r9099" name="free nearly to" from="o44464" to="o44465" negation="false" />
+      <structure id="o44466" name="apex">
+        <character name="shape" value="rounded" />
+        <character name="shape" value="acute" />
+      </structure>
+      <relation id="r9100" name="may_be_the_same" from="o44462" to="o44463" negation="false" />
+    </statement>
+    <statement id="964.txt-10">
+      <text>Nutlets yellowish, narrowly obovoid, compressed trigonous, 2.1–3 × 1–1.3 mm, not beaked, subsessile.</text>
+      <structure id="o44467" name="nutlet">
+        <character name="coloration" value="yellowish" />
+        <character name="shape" value="obovoid" modifier="narrowly" />
+        <character name="shape" value="compressed trigonous" />
+        <character char_type="range_value" name="length" from="2.1" from_unit="mm" to="3" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="1.3" to_unit="mm" />
+        <character name="shape" value="beaked" modifier="not" />
+        <character name="architecture" value="subsessile" />
+      </structure>
+    </statement>
+    <statement id="964.txt-11">
+      <text>Stigmas 3.</text>
+    </statement>
+    <statement id="964.txt-12">
+      <text>Fl. and fr. May–Sep.</text>
+      <structure id="o44468" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
+  <distribution>● Grassy slopes, alpine meadows, swampy meadows and marshes by lakes, dry limestone slopes, forest (including Pinus) understories, Quercus scrub; 2300–4300 m. Gansu, Qinghai, Sichuan, Xizang, Yunnan.</distribution>
+  <discussion>This is a slender version of Kobresia schoenoides with narrower spikes—linking that species with K. capillifolia and K. tibetica, together forming a complex that requires further work.</discussion>
+  <discussion>Plants with slender culms, filiform leaves, and small spikes from Pinus forests (i.e., dry habitats) in NW Yunnan were described as Kobresia pinetorum; but specimens with equally small spikes have been seen from wet habitats, and forms from Pinus forests with robust culms and larger spikes are also known: all of these seem best referred to a variable K. setschwanensis.</discussion>
+</treatment>
+
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

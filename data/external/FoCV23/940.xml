@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treatment>
+  <number>3.</number>
+  <TaxonIdentification Status="ACCEPTED">
+    <genus_name>Kobresia</genus_name>
+    <species_name>curticeps</species_name>
+    <species_authority>(C. B. Clarke) Kükenthal</species_authority>
+    <place_of_publication>
+      <publication_title>in Engler, Pflanzenr.</publication_title>
+      <place_in_publication>38(IV. 20): 47. 1909</place_in_publication>
+    </place_of_publication>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <species_name>短梗嵩草 duan geng song cao</species_name>
+  </TaxonIdentification>
+  <TaxonIdentification Status="BASIONYM">
+    <genus_name>Carex</genus_name>
+    <species_name>curticeps</species_name>
+    <species_authority>C. B. Clarke</species_authority>
+    <place_of_publication>
+      <publication_title>in J. D. Hooker, Fl. Brit. India</publication_title>
+      <place_in_publication>6: 729. 1894.</place_in_publication>
+    </place_of_publication>
+  </TaxonIdentification>
+  <description>
+    <statement id="940.txt-0">
+      <text>Rhizomes short.</text>
+      <structure id="o43650" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="940.txt-1">
+      <text>Basal sheaths stout, pale brown, dull, retaining dried leaf blades, sometimes decaying to fibers.</text>
+      <structure id="o43651" name="sheath" constraint="basal">
+        <character name="fragility" value="stout" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="reflectance" value="dull" />
+      </structure>
+      <structure id="o43652" name="blade" constraint="leaf">
+        <character name="condition" value="dried" />
+      </structure>
+      <relation id="r8920" name="retaining" from="o43651" to="o43652" negation="false" />
+      <structure id="o43653" name="fiber" />
+      <relation id="r8921" name="decaying to" from="o43651" to="o43653" negation="false" modifier="sometimes" />
+    </statement>
+    <statement id="940.txt-2">
+      <text>Culms tufted, erect, rigid, trigonous, 22–95 cm tall, 1.1–2.2 mm in diam.</text>
+      <structure id="o43654" name="culm">
+        <character name="external_texture_or_habit" value="tufted" />
+        <character name="orientation" value="erect" />
+        <character name="internal_texture" value="rigid" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="22" from_unit="cm" to="95" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character char_type="range_value" name="size" from="1.1" from_unit="mm" to="2.2" to_unit="mm" modifier="in diam" />
+      </structure>
+    </statement>
+    <statement id="940.txt-3">
+      <text>Leaves borne on lower half and subequaling culm;</text>
+      <structure id="o43655" name="leaf" />
+      <structure id="o43656" name="culm">
+        <character name="position" value="lower" />
+      </structure>
+      <relation id="r8922" name="borne on" from="o43655" to="o43656" negation="false" />
+    </statement>
+    <statement id="940.txt-4">
+      <text>blade flat, (3 .7– )5–7.5 mm wide, midrib distinct abaxially.</text>
+      <structure id="o43657" name="blade">
+        <character name="prominence_or_shape" value="flat" />
+        <character char_type="range_value" name="width" from="3.7" to="5" from_unit="mm" to_unit="mm" to_inclusive="false" />
+        <character char_type="range_value" name="width" from="5" from_unit="mm" to="7.5" to_unit="mm" />
+      </structure>
+      <structure id="o43658" name="midrib">
+        <character name="fusion" value="distinct" modifier="abaxially" />
+      </structure>
+    </statement>
+    <statement id="940.txt-5">
+      <text>Inflorescence densely paniculate, brown, narrow, 6.5–9.5 × 0.8–2.3 cm;</text>
+      <structure id="o43659" name="inflorescence">
+        <character name="architecture" value="paniculate" modifier="densely" />
+        <character name="coloration" value="brown" />
+        <character name="width" value="narrow" />
+        <character char_type="range_value" name="length" from="6.5" from_unit="cm" to="9.5" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.8" from_unit="cm" to="2.3" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="940.txt-6">
+      <text>lowest involucral bract erect, leaflike, sometimes exceeding inflorescence;</text>
+      <structure id="o43660" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="orientation" value="erect" />
+        <character name="architecture" value="leaflike" />
+      </structure>
+      <structure id="o43661" name="inflorescence" />
+      <relation id="r8923" name="exceeding" from="o43660" to="o43661" negation="false" modifier="sometimes" />
+    </statement>
+    <statement id="940.txt-7">
+      <text>branches usually androgynous in upper part of inflorescence, those in lower part usually female, sometimes whole inflorescence composed of primarily female spikelets;</text>
+      <structure id="o43662" name="branch">
+        <character name="feature_or_reproduction" value="androgynous" modifier="usually" constraint="in part" constraintid="o43663" />
+      </structure>
+      <structure id="o43663" name="part" constraint="upper" />
+      <structure id="o43664" name="inflorescence" />
+      <relation id="r8924" name="part_of" from="o43663" to="o43664" negation="false" />
+      <structure id="o43665" name="part" constraint="lower">
+        <character name="reproduction" value="female" modifier="usually" />
+      </structure>
+      <relation id="r8925" name="in" from="o43662" to="o43665" negation="false" />
+      <structure id="o43666" name="inflorescence" />
+      <structure id="o43667" name="spikelet" constraint="female" />
+      <relation id="r8926" name="composed of" from="o43662" to="o43667" negation="false" />
+      <relation id="r8927" name="may_be_the_same" from="o43664" to="o43666" negation="false" />
+    </statement>
+    <statement id="940.txt-8">
+      <text>spikelets unisexual.</text>
+      <structure id="o43668" name="spikelet">
+        <character name="reproduction" value="unisexual" />
+      </structure>
+    </statement>
+    <statement id="940.txt-9">
+      <text>Lower inflorescence branches linear, stiffly appressed (lowest to 6 cm ), androgynous or female, sometimes again branched, bearing spikelets to base.</text>
+      <structure id="o43669" name="branch" constraint="lower inflorescence">
+        <character name="arrangement_or_shape" value="linear" />
+        <character name="orientation" value="appressed" modifier="stiffly" />
+        <character name="feature" value="lowest" in_brackets="true" />
+        <character char_type="range_value" name="size" from="0" from_unit="cm" to="6" to_unit="cm" in_brackets="true" />
+        <character name="reproduction" value="androgynous" />
+        <character name="reproduction" value="female" />
+        <character name="architecture" value="branched" modifier="sometimes again" />
+      </structure>
+      <structure id="o43670" name="spikelet" />
+      <relation id="r8928" name="bearing" from="o43669" to="o43670" negation="false" />
+      <structure id="o43671" name="base" />
+      <relation id="r8929" name="to" from="o43670" to="o43671" negation="false" />
+    </statement>
+    <statement id="940.txt-10">
+      <text>Female glumes cream or brown, with green midvein, narrowly ovate or oblong, encircling branch, 5.5–10 × 2–3 mm, midvein broad, 3–5-ribbed, apex aristate.</text>
+      <structure id="o43672" name="glume" constraint="female">
+        <character name="coloration" value="cream" />
+        <character name="coloration" value="brown" />
+        <character name="shape" value="ovate" modifier="narrowly" />
+        <character name="shape" value="oblong" />
+      </structure>
+      <structure id="o43673" name="midvein">
+        <character name="coloration" value="green" />
+      </structure>
+      <relation id="r8930" name="with" from="o43672" to="o43673" negation="false" />
+      <structure id="o43674" name="branch">
+        <character name="feature" value="encircling" />
+        <character char_type="range_value" name="length" from="5.5" from_unit="mm" to="10" to_unit="mm" />
+        <character char_type="range_value" name="width" from="2" from_unit="mm" to="3" to_unit="mm" />
+      </structure>
+      <structure id="o43675" name="midvein">
+        <character name="architecture_or_shape" value="3-5-ribbed" />
+      </structure>
+      <structure id="o43676" name="apex">
+        <character name="shape" value="aristate" />
+      </structure>
+      <relation id="r8931" name="may_be_the_same" from="o43673" to="o43675" negation="false" />
+    </statement>
+    <statement id="940.txt-11">
+      <text>Prophylls utriculiform, linear-lanceolate, (6– )8–11.3 × 1–1.6 mm, 2-keeled, keels minutely scabrid, herbaceous and strongly ca. 4-veined between keels, usually minutely hispid near margins above, margins fused from base to just below apex.</text>
+      <structure id="o43677" name="prophyll">
+        <character name="shape" value="linear-lanceolate" />
+        <character char_type="range_value" name="atypical_length" from="6" to="8" from_unit="mm" to_unit="mm" to_inclusive="false" />
+        <character char_type="range_value" name="length" from="8" from_unit="mm" to="11.3" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="1.6" to_unit="mm" />
+        <character name="shape" value="2-keeled" />
+      </structure>
+      <structure id="o43678" name="keel">
+        <character name="relief" value="scabrid" modifier="minutely" />
+        <character name="external_texture_or_feature_or_internal_texture" value="herbaceous" />
+        <character name="architecture_or_feature" value="4-veined" modifier="strongly" constraint="between keels" constraintid="o43679" />
+        <character name="external_texture" value="hispid" modifier="usually minutely" constraint="near margins" constraintid="o43680" />
+      </structure>
+      <structure id="o43679" name="keel" />
+      <structure id="o43680" name="margin" />
+      <structure id="o43681" name="margin">
+        <character name="fusion" value="fused" constraint="from base" constraintid="o43682" />
+      </structure>
+      <structure id="o43682" name="base" />
+      <structure id="o43683" name="apex" />
+      <relation id="r8932" name="to" from="o43682" to="o43683" negation="false" />
+      <relation id="r8933" name="may_be_the_same" from="o43678" to="o43679" negation="false" />
+      <relation id="r8934" name="may_be_the_same" from="o43680" to="o43681" negation="false" />
+    </statement>
+    <statement id="940.txt-12">
+      <text>Nutlets cream or pale brown, very narrowly ellipsoid, trigonous, 5.5–6.5 × 1.3–1.7 mm, shortly stipitate.</text>
+      <structure id="o43684" name="nutlet">
+        <character name="coloration" value="cream" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="shape" value="ellipsoid" modifier="very narrowly" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="length" from="5.5" from_unit="mm" to="6.5" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.3" from_unit="mm" to="1.7" to_unit="mm" />
+        <character name="architecture" value="stipitate" modifier="shortly" />
+      </structure>
+    </statement>
+    <statement id="940.txt-13">
+      <text>Rachilla in female spikelets less than 1/2 length of nutlet.</text>
+      <structure id="o43685" name="rachilla">
+        <character name="size" value="1/2" modifier="less than" constraint="length;of nutlet" constraintid="o43687" />
+      </structure>
+      <structure id="o43686" name="spikelet" constraint="female" />
+      <relation id="r8935" name="in" from="o43685" to="o43686" negation="false" />
+      <structure id="o43687" name="nutlet" />
+    </statement>
+    <statement id="940.txt-14">
+      <text>Stigmas 3.</text>
+    </statement>
+    <statement id="940.txt-15">
+      <text>Fl. and fr. Jun–Oct.</text>
+      <structure id="o43688" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
+  <distribution>Open stony or sandy slopes in damp conifer (including Abies) forests [in Bhutan]; 2700–4100 m. S Xizang (Yadong) [Bhutan, India (Sikkim, West Bengal), Nepal].</distribution>
+</treatment>
+
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

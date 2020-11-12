@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treatment>
+  <number>44.</number>
+  <TaxonIdentification Status="ACCEPTED">
+    <genus_name>Kobresia</genus_name>
+    <species_name>karakorumensis</species_name>
+    <species_authority>Dickoré</species_authority>
+    <place_of_publication>
+      <publication_title>Stapfia</publication_title>
+      <place_in_publication>39: 77. 1995</place_in_publication>
+    </place_of_publication>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <species_name>喀拉昆仑嵩草 ka la kun lun song cao</species_name>
+  </TaxonIdentification>
+  <description>
+    <statement id="985.txt-0">
+      <text>Rhizomes short.</text>
+      <structure id="o45187" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="985.txt-1">
+      <text>Basal sheaths pale brown to brown, dull, retaining dried leaf blades.</text>
+      <structure id="o45188" name="sheath" constraint="basal">
+        <character char_type="range_value" name="coloration" from="pale brown" to="brown" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="coloration" value="brown" />
+        <character name="reflectance" value="dull" />
+      </structure>
+      <structure id="o45189" name="blade" constraint="leaf">
+        <character name="condition" value="dried" />
+      </structure>
+      <relation id="r9269" name="retaining" from="o45188" to="o45189" negation="false" />
+    </statement>
+    <statement id="985.txt-2">
+      <text>Culms densely tufted, dwarf, erect and rigid, subterete in lower part, trigonous above, (2– )3–15 (–20 )cm tall, 0.5–0.7 mm in diam.</text>
+      <structure id="o45190" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character name="height" value="dwarf" />
+        <character name="orientation" value="erect" />
+        <character name="internal_texture" value="rigid" />
+        <character name="shape" value="subterete" constraint="in part" constraintid="o45191" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="atypical_size" from="2" to="3" from_unit="cm" to_unit="cm" to_inclusive="false" />
+        <character char_type="range_value" name="atypical_size" from="15" to="20" from_unit="cm" to_unit="cm" from_inclusive="false" />
+        <character char_type="range_value" name="size" from="3" from_unit="cm" to="15" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character char_type="range_value" name="size" from="0.5" from_unit="mm" to="0.7" to_unit="mm" modifier="in diam" />
+      </structure>
+      <structure id="o45191" name="part" constraint="lower" />
+    </statement>
+    <statement id="985.txt-3">
+      <text>Leaves basal, usually shorter than culms;</text>
+      <structure id="o45192" name="leaf">
+        <character name="position" value="basal" />
+        <character name="height_or_length" value="shorter" modifier="usually" constraint="than culms" constraintid="o45193" />
+      </structure>
+      <structure id="o45193" name="culm" />
+    </statement>
+    <statement id="985.txt-4">
+      <text>blade V-shaped in section, recurved, 1–2.5 mm wide, midrib not distinct abaxially.</text>
+      <structure id="o45194" name="blade">
+        <character name="shape" value="v-shaped" constraint="in section" constraintid="o45195" />
+        <character name="orientation" value="recurved" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="2.5" to_unit="mm" />
+      </structure>
+      <structure id="o45195" name="section" />
+      <structure id="o45196" name="midrib">
+        <character name="fusion" value="distinct" modifier="not;abaxially" />
+      </structure>
+    </statement>
+    <statement id="985.txt-5">
+      <text>Inflorescence spicate (rarely compound ), brown or dark brown, densely and broadly cylindric, 0.5–1.2 × 0.2–0.4 cm;</text>
+      <structure id="o45197" name="inflorescence">
+        <character name="architecture" value="spicate" />
+        <character name="architecture" value="compound" modifier="rarely" in_brackets="true" />
+        <character name="coloration" value="brown" />
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="shape" value="cylindric" modifier="densely broadly" />
+        <character char_type="range_value" name="length" from="0.5" from_unit="cm" to="1.2" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.2" from_unit="cm" to="0.4" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="985.txt-6">
+      <text>lowest involucral bract glumelike.</text>
+      <structure id="o45198" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="feature" value="glumelike" />
+      </structure>
+    </statement>
+    <statement id="985.txt-7">
+      <text>Terminal spikelets of inflorescence male, lower ones bisexual with 1 basal female flower and (1 or )2 (or 3 )distal male flowers.</text>
+      <structure id="o45199" name="spikelet" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character name="position" value="lower" />
+        <character name="reproduction" value="bisexual" constraint="with flower" constraintid="o45201" />
+        <character name="count" value="1" in_brackets="true" />
+        <character name="count" value="1" in_brackets="true" />
+        <character name="count" value="2" />
+        <character name="count" value="3" in_brackets="true" />
+      </structure>
+      <structure id="o45200" name="inflorescence" />
+      <relation id="r9270" name="part_of" from="o45199" to="o45200" negation="false" />
+      <structure id="o45201" name="flower" constraint="basal female">
+        <character name="count" value="1" />
+      </structure>
+      <structure id="o45202" name="flower" constraint="distal male" />
+    </statement>
+    <statement id="985.txt-8">
+      <text>Glumes brown or dark brown, with pale midvein, ovate, 2.5–3 × ca. 2 mm, midvein narrow, margin very narrowly or not hyaline, apex obtuse.</text>
+      <structure id="o45203" name="glume">
+        <character name="coloration" value="brown" />
+        <character name="coloration" value="brown" modifier="dark" />
+        <character name="shape" value="ovate" />
+        <character char_type="range_value" name="length" from="2.5" from_unit="mm" to="3" to_unit="mm" />
+        <character name="width" value="2" unit="mm" />
+      </structure>
+      <structure id="o45204" name="midvein">
+        <character name="coloration" value="pale" />
+      </structure>
+      <relation id="r9271" name="with" from="o45203" to="o45204" negation="false" />
+      <structure id="o45205" name="midvein">
+        <character name="width" value="narrow" />
+      </structure>
+      <structure id="o45206" name="margin">
+        <character name="coloration" value="hyaline" modifier="very narrowly not" />
+      </structure>
+      <structure id="o45207" name="apex">
+        <character name="shape" value="obtuse" />
+      </structure>
+      <relation id="r9272" name="may_be_the_same" from="o45204" to="o45205" negation="false" />
+    </statement>
+    <statement id="985.txt-9">
+      <text>Prophylls pale brown at upper part, narrowly elliptic, ca. 3.3 × 0.9 mm, membranous, glabrous, hyaline at base, obscurely 2-keeled, margins connate in lower 1/4 (–1/2 ).</text>
+      <structure id="o45208" name="prophyll">
+        <character name="coloration" value="brown" modifier="pale" constraint="at part" constraintid="o45209" />
+        <character name="arrangement_or_shape" value="elliptic" modifier="narrowly" />
+        <character name="length" value="3.3" unit="mm" />
+        <character name="width" value="0.9" unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="external_texture" value="glabrous" />
+        <character name="coloration" value="hyaline" constraint="at base" constraintid="o45210" />
+        <character name="shape" value="2-keeled" modifier="obscurely" />
+      </structure>
+      <structure id="o45209" name="part" constraint="upper" />
+      <structure id="o45210" name="base" />
+      <structure id="o45211" name="margin">
+        <character name="fusion" value="connate" constraint="in -1/2" />
+      </structure>
+    </statement>
+    <statement id="985.txt-10">
+      <text>Nutlets brown or pale brown, oblong-elliptic, flattened, body ca. 1.5 × 0.9 mm, stipe ca. 0.5 mm, very shortly beaked.</text>
+      <structure id="o45212" name="nutlet">
+        <character name="coloration" value="brown" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="arrangement_or_shape" value="oblong-elliptic" />
+        <character name="shape" value="flattened" />
+      </structure>
+      <structure id="o45213" name="body">
+        <character name="length" value="1.5" unit="mm" />
+        <character name="width" value="0.9" unit="mm" />
+      </structure>
+      <structure id="o45214" name="stipe">
+        <character name="size" value="0.5" unit="mm" />
+        <character name="shape" value="beaked" modifier="very shortly" />
+      </structure>
+    </statement>
+    <statement id="985.txt-11">
+      <text>Stigmas 2.</text>
+    </statement>
+    <statement id="985.txt-12">
+      <text>Fl. and fr. Jul–Sep.</text>
+      <structure id="o45215" name="stigma">
+        <character name="count" value="2" />
+      </structure>
+    </statement>
+  </description>
+  <distribution>High alpine turf; (3100–)3800–5000 m. Xinjiang, Xizang [Afghanistan, India (Himachal Pradesh), Kashmir, ?Nepal, Pakistan, Tajikistan].</distribution>
+  <discussion>This is, perhaps, a western form of Kobresia pusilla, but it is also close to K. myosuroides subsp. bistaminata.</discussion>
+</treatment>
+
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treatment>
+  <number>8.</number>
+  <TaxonIdentification Status="ACCEPTED">
+    <genus_name>Kobresia</genus_name>
+    <species_name>kuekenthaliana</species_name>
+    <species_authority>Handel-Mazzetti</species_authority>
+    <place_of_publication>
+      <publication_title>Anz. Akad. Wiss. Wien, Math.-Naturwiss. Kl.</publication_title>
+      <place_in_publication>57: 290. 1920</place_in_publication>
+    </place_of_publication>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <species_name>宁远嵩草 ning yuan song cao</species_name>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <genus_name>Schoenoxiphium</genus_name>
+    <species_name>kuekenthalianum</species_name>
+    <species_authority>(Handel-Mazzetti) K. V. Ivanova.</species_authority>
+  </TaxonIdentification>
+  <description>
+    <statement id="945.txt-0">
+      <text>Rhizomes shortly and obliquely elongate, bearing pale brown scales (bladeless sheaths ).</text>
+      <structure id="o43819" name="rhizome">
+        <character name="shape" value="elongate" modifier="shortly obliquely" />
+      </structure>
+      <structure id="o43820" name="scale" alter_name="bladeless sheaths" in_bracket="true">
+        <character name="coloration" value="brown" modifier="pale" organ_constraint="bladeless sheaths" />
+      </structure>
+    </statement>
+    <statement id="945.txt-1">
+      <text>Basal sheaths persistent, brown, not retaining dried leaves.</text>
+      <structure id="o43821" name="sheath" constraint="basal">
+        <character name="duration" value="persistent" />
+        <character name="coloration" value="brown" />
+      </structure>
+      <structure id="o43822" name="leaf">
+        <character name="condition" value="dried" />
+      </structure>
+      <relation id="r8964" name="retaining" from="o43821" to="o43822" negation="true" />
+    </statement>
+    <statement id="945.txt-2">
+      <text>Culms densely tufted, erect, obtusely trigonous, 25–40 cm, slender, ca. 1 mm in diam.</text>
+      <structure id="o43823" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character name="orientation" value="erect" />
+        <character name="shape" value="trigonous" modifier="obtusely" />
+        <character char_type="range_value" name="size" from="25" from_unit="cm" to="40" to_unit="cm" />
+        <character name="size" value="slender" />
+        <character name="size" value="1" unit="mm" modifier="in diam" />
+      </structure>
+    </statement>
+    <statement id="945.txt-3">
+      <text>Leaves basal, longer than culms;</text>
+      <structure id="o43824" name="leaf">
+        <character name="position" value="basal" />
+        <character name="length" value="longer" constraint="than culms" constraintid="o43825" />
+      </structure>
+      <structure id="o43825" name="culm" />
+    </statement>
+    <statement id="945.txt-4">
+      <text>sheaths with reddish brown, membranous margins;</text>
+      <structure id="o43826" name="sheath" />
+      <structure id="o43827" name="margin" constraint="membranous">
+        <character name="coloration" value="brown" modifier="reddish" />
+      </structure>
+      <relation id="r8965" name="with" from="o43826" to="o43827" negation="false" />
+    </statement>
+    <statement id="945.txt-5">
+      <text>blade flat or folded, 1.5–2.5 mm wide, midrib distinct abaxially.</text>
+      <structure id="o43828" name="blade">
+        <character name="shape" value="flat" />
+        <character name="shape" value="folded" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="2.5" to_unit="mm" />
+      </structure>
+      <structure id="o43829" name="midrib">
+        <character name="fusion" value="distinct" modifier="abaxially" />
+      </structure>
+    </statement>
+    <statement id="945.txt-6">
+      <text>Inflorescence densely paniculate, pale brown, linear-lanceolate, 2.6–4 × 0.6–0.8 cm;</text>
+      <structure id="o43830" name="inflorescence">
+        <character name="architecture" value="paniculate" modifier="densely" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="shape" value="linear-lanceolate" />
+        <character char_type="range_value" name="length" from="2.6" from_unit="cm" to="4" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.6" from_unit="cm" to="0.8" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="945.txt-7">
+      <text>branches ± equal in length, slightly spreading;</text>
+      <structure id="o43831" name="branch">
+        <character name="variability" value="equal" modifier="more or less;in length" />
+        <character name="orientation" value="spreading" modifier="slightly" />
+      </structure>
+    </statement>
+    <statement id="945.txt-8">
+      <text>lowest involucral bract glumelike, apex aristate.</text>
+      <structure id="o43832" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="feature" value="glumelike" />
+      </structure>
+      <structure id="o43833" name="apex">
+        <character name="shape" value="aristate" />
+      </structure>
+    </statement>
+    <statement id="945.txt-9">
+      <text>Inflorescence branches androgynous, with 1 (perhaps sometimes more )basal female spikelet, and ca. 6 upper and terminal male flowers.</text>
+      <structure id="o43834" name="branch" constraint="inflorescence">
+        <character name="feature_or_reproduction" value="androgynous" />
+        <character name="count" value="6" />
+        <character name="position" value="upper" />
+      </structure>
+      <structure id="o43835" name="spikelet" constraint="basal female">
+        <character name="count" value="1" />
+      </structure>
+      <relation id="r8966" name="with" from="o43834" to="o43835" negation="false" />
+      <structure id="o43836" name="flower" constraint="terminal male" />
+    </statement>
+    <statement id="945.txt-10">
+      <text>Glumes pale brown or brown, with yellowish brown midvein, ovate or ovate-oblong, 4.5–5.5 × 1.5–2 mm, membranous, midvein narrow, margin hyaline, apex acute or mucronate.</text>
+      <structure id="o43837" name="glume">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="coloration" value="brown" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="ovate-oblong" />
+        <character char_type="range_value" name="length" from="4.5" from_unit="mm" to="5.5" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+        <character name="feature" value="membranous" />
+      </structure>
+      <structure id="o43838" name="midvein">
+        <character name="coloration" value="brown" modifier="yellowish" />
+      </structure>
+      <relation id="r8967" name="with" from="o43837" to="o43838" negation="false" />
+      <structure id="o43839" name="midvein">
+        <character name="width" value="narrow" />
+      </structure>
+      <structure id="o43840" name="margin">
+        <character name="coloration" value="hyaline" />
+      </structure>
+      <structure id="o43841" name="apex">
+        <character name="shape" value="acute" />
+        <character name="shape" value="mucronate" />
+      </structure>
+      <relation id="r8968" name="may_be_the_same" from="o43838" to="o43839" negation="false" />
+    </statement>
+    <statement id="945.txt-11">
+      <text>Prophylls yellowish brown, oblong or oblong-elliptic, 4.3–5 × 1–1.5 mm, membranous, 2-keeled, keels smooth, margins free from apex almost to base, apex rounded or slightly 2-toothed.</text>
+      <structure id="o43842" name="prophyll">
+        <character name="coloration" value="brown" modifier="yellowish" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="oblong-elliptic" />
+        <character char_type="range_value" name="length" from="4.3" from_unit="mm" to="5" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1" from_unit="mm" to="1.5" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="shape" value="2-keeled" />
+      </structure>
+      <structure id="o43843" name="keel">
+        <character name="architecture_or_external_texture_or_relief" value="smooth" />
+      </structure>
+      <structure id="o43844" name="margin">
+        <character name="fusion" value="free" constraint="from apex" constraintid="o43845" />
+      </structure>
+      <structure id="o43845" name="apex" />
+      <structure id="o43846" name="base" />
+      <relation id="r8969" name="almost to" from="o43845" to="o43846" negation="false" />
+      <structure id="o43847" name="apex">
+        <character name="shape" value="rounded" />
+        <character name="shape" value="2-toothed" modifier="slightly" />
+      </structure>
+      <relation id="r8970" name="may_be_the_same" from="o43845" to="o43847" negation="false" />
+    </statement>
+    <statement id="945.txt-12">
+      <text>Immature nutlets yellowish, oblong-obovoid, ca. 3 × 1 mm.</text>
+      <structure id="o43848" name="nutlet" constraint="immature">
+        <character name="coloration" value="yellowish" />
+        <character name="shape" value="oblong-obovoid" />
+        <character name="length" value="3" unit="mm" />
+        <character name="width" value="1" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="945.txt-13">
+      <text>Rachilla sometimes present in female spikelets, very short.</text>
+      <structure id="o43849" name="rachilla">
+        <character name="height_or_length" value="short" modifier="very" />
+      </structure>
+      <structure id="o43850" name="spikelet" constraint="female" />
+      <relation id="r8971" name="present in" from="o43849" to="o43850" negation="false" modifier="sometimes" />
+    </statement>
+    <statement id="945.txt-14">
+      <text>Stigmas 3.</text>
+    </statement>
+    <statement id="945.txt-15">
+      <text>Fl. and fr. Apr.</text>
+      <structure id="o43851" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+  </description>
+  <distribution>● Sandy ground; ca. 2700 m. S Sichuan (Xichang).</distribution>
+  <discussion>This taxon is known only from the immature type specimen; further collections are required to assess its status, in particular its relationship with Kobresia royleana subsp. minshanica.</discussion>
+</treatment>
+
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

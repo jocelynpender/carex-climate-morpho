@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treatment>
+  <number>10.</number>
+  <TaxonIdentification Status="ACCEPTED">
+    <genus_name>Kobresia</genus_name>
+    <species_name>tunicata</species_name>
+    <species_authority>Handel-Mazzetti</species_authority>
+    <place_of_publication>
+      <publication_title>Symb. Sin.</publication_title>
+      <place_in_publication>7: 1254. 1936</place_in_publication>
+    </place_of_publication>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <species_name>玉龙嵩草 yu long song cao</species_name>
+  </TaxonIdentification>
+  <description>
+    <statement id="947.txt-0">
+      <text>Rhizomes short.</text>
+      <structure id="o43883" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="947.txt-1">
+      <text>Basal sheaths prominent and persistent, brown, not shiny, not retaining dried leaf blades.</text>
+      <structure id="o43884" name="sheath" constraint="basal">
+        <character name="prominence" value="prominent" />
+        <character name="duration" value="persistent" />
+        <character name="coloration" value="brown" />
+        <character name="reflectance" value="shiny" modifier="not" />
+      </structure>
+      <structure id="o43885" name="blade" constraint="leaf">
+        <character name="condition" value="dried" />
+      </structure>
+      <relation id="r8976" name="retaining" from="o43884" to="o43885" negation="true" />
+    </statement>
+    <statement id="947.txt-2">
+      <text>Culms densely tufted, erect and rigid, trigonous, 20–25 cm tall, ca. 1.5 mm in diam.</text>
+      <structure id="o43886" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character name="orientation" value="erect" />
+        <character name="internal_texture" value="rigid" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="size" from="20" from_unit="cm" to="25" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character name="size" value="1.5" unit="mm" modifier="in diam" />
+      </structure>
+    </statement>
+    <statement id="947.txt-3">
+      <text>Leaves basal, longer than culms;</text>
+      <structure id="o43887" name="leaf">
+        <character name="position" value="basal" />
+        <character name="length" value="longer" constraint="than culms" constraintid="o43888" />
+      </structure>
+      <structure id="o43888" name="culm" />
+    </statement>
+    <statement id="947.txt-4">
+      <text>blade flat or folded, 1.5–3 mm wide, midrib distinct abaxially.</text>
+      <structure id="o43889" name="blade">
+        <character name="shape" value="flat" />
+        <character name="shape" value="folded" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="3" to_unit="mm" />
+      </structure>
+      <structure id="o43890" name="midrib">
+        <character name="fusion" value="distinct" modifier="abaxially" />
+      </structure>
+    </statement>
+    <statement id="947.txt-5">
+      <text>Inflorescence loosely paniculate, brown, lanceolate, ca. 5 cm × 7 mm;</text>
+      <structure id="o43891" name="inflorescence">
+        <character name="architecture" value="paniculate" modifier="loosely" />
+        <character name="coloration" value="brown" />
+        <character name="shape" value="lanceolate" />
+        <character name="length" value="5" unit="cm" />
+        <character name="width" value="7" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="947.txt-6">
+      <text>lowest involucral bract glumelike, blunt;</text>
+      <structure id="o43892" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="feature" value="glumelike" />
+        <character name="shape" value="blunt" />
+      </structure>
+    </statement>
+    <statement id="947.txt-7">
+      <text>inflorescence branches linear, androgynous;</text>
+      <structure id="o43893" name="branch" constraint="inflorescence">
+        <character name="arrangement_or_shape" value="linear" />
+        <character name="feature_or_reproduction" value="androgynous" />
+      </structure>
+    </statement>
+    <statement id="947.txt-8">
+      <text>spikelets unisexual, terminal spikelets male (up to 3 ), lower ones (up to 9 )female.</text>
+      <structure id="o43894" name="spikelet">
+        <character name="reproduction" value="unisexual" />
+      </structure>
+      <structure id="o43895" name="spikelet" constraint="terminal">
+        <character name="feature_or_reproduction" value="male" />
+        <character char_type="range_value" name="atypical_count" from="0" to="3" />
+        <character name="position" value="lower" />
+        <character char_type="range_value" name="atypical_count" from="0" to="9" />
+        <character name="reproduction" value="female" />
+      </structure>
+    </statement>
+    <statement id="947.txt-9">
+      <text>Female glumes brown, with green midvein, ovate-lanceolate or oblong-ovate, 5–5.5 × 1.5–2 mm, midvein narrow, margin hyaline, apex subacute or obtuse.</text>
+      <structure id="o43896" name="glume" constraint="female">
+        <character name="coloration" value="brown" />
+        <character name="shape" value="ovate-lanceolate" />
+        <character name="shape" value="oblong-ovate" />
+        <character char_type="range_value" name="length" from="5" from_unit="mm" to="5.5" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+      </structure>
+      <structure id="o43897" name="midvein">
+        <character name="coloration" value="green" />
+      </structure>
+      <relation id="r8977" name="with" from="o43896" to="o43897" negation="false" />
+      <structure id="o43898" name="midvein">
+        <character name="width" value="narrow" />
+      </structure>
+      <structure id="o43899" name="margin">
+        <character name="coloration" value="hyaline" />
+      </structure>
+      <structure id="o43900" name="apex">
+        <character name="shape" value="subacute" />
+        <character name="shape" value="obtuse" />
+      </structure>
+      <relation id="r8978" name="may_be_the_same" from="o43897" to="o43898" negation="false" />
+    </statement>
+    <statement id="947.txt-10">
+      <text>Prophylls pale brown, linear-lanceolate, 5.2–6 × ca. 1 mm, papery, apex hyaline, 2-keeled, keels scabrid, margins free to base, overlapping.</text>
+      <structure id="o43901" name="prophyll">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="shape" value="linear-lanceolate" />
+        <character char_type="range_value" name="length" from="5.2" from_unit="mm" to="6" to_unit="mm" />
+        <character name="width" value="1" unit="mm" />
+        <character name="feature_or_internal_texture" value="papery" />
+      </structure>
+      <structure id="o43902" name="apex">
+        <character name="coloration" value="hyaline" />
+        <character name="shape" value="2-keeled" />
+      </structure>
+      <structure id="o43903" name="keel">
+        <character name="relief" value="scabrid" />
+      </structure>
+      <structure id="o43904" name="margin">
+        <character name="arrangement" value="overlapping" />
+      </structure>
+      <structure id="o43905" name="base" />
+      <relation id="r8979" name="free to" from="o43904" to="o43905" negation="false" />
+    </statement>
+    <statement id="947.txt-11">
+      <text>Immature nutlets narrowly elliptic, obscurely trigonous, ca. 4 mm (including stipe )× 0.8 mm, stipitate, crowned with stout beaklike style base, beak ca. 1 mm.</text>
+      <structure id="o43906" name="nutlet" constraint="immature">
+        <character name="arrangement_or_shape" value="elliptic" modifier="narrowly" />
+        <character name="shape" value="trigonous" modifier="obscurely" />
+        <character name="length" value="4" unit="mm" />
+        <character name="width" value="0.8" unit="mm" />
+        <character name="architecture" value="stipitate" />
+        <character name="feature" value="crowned" constraint="with style base" constraintid="o43907" />
+      </structure>
+      <structure id="o43907" name="base" constraint="style">
+        <character name="fragility" value="stout" />
+        <character name="shape" value="beaklike" />
+      </structure>
+      <structure id="o43908" name="beak">
+        <character name="size" value="1" unit="mm" />
+      </structure>
+    </statement>
+    <statement id="947.txt-12">
+      <text>Stigmas 3.</text>
+      <structure id="o43909" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+    <statement id="947.txt-13">
+      <text>Sterile rachilla of female spikelets flat, ca. 2 mm, sometimes with vestigial glume at apex.</text>
+      <structure id="o43911" name="spikelet" constraint="female" />
+      <relation id="r8980" name="part_of" from="o43910" to="o43911" negation="false" />
+      <structure id="o43912" name="glume" constraint="vestigial" />
+      <relation id="r8981" name="with" from="o43910" to="o43912" negation="false" modifier="sometimes" />
+      <structure id="o43913" name="apex" />
+      <relation id="r8982" name="at" from="o43912" to="o43913" negation="false" />
+    </statement>
+    <statement id="947.txt-14">
+      <text>Fl. and fr. May–Sep.</text>
+      <structure id="o43910" name="rachilla" constraint="sterile">
+        <character name="prominence_or_shape" value="flat" />
+        <character name="size" value="2" unit="mm" />
+      </structure>
+    </statement>
+  </description>
+  <distribution>● Alpine grasslands, marshes at edges of pools; 3300–4300 m. Sichuan, Yunnan.</distribution>
+  <references>
+    <reference>Both Kükenthal and Ivanova (in schedis, 1939, 1941) referred the type specimen of Kobresia tunicata (Handel-Mazzetti 3525, WU) to K. kansuensis, of which it may only be a less-robust form with unisexual spikelets. It is also possible that it is a form of K. graminifolia with a branched inflorescence, but further collections are required.</reference>
+  </references>
+</treatment>
+
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->

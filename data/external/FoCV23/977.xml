@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<treatment>
+  <number>36.</number>
+  <TaxonIdentification Status="ACCEPTED">
+    <genus_name>Kobresia</genus_name>
+    <species_name>littledalei</species_name>
+    <species_authority>C. B. Clarke</species_authority>
+    <place_of_publication>
+      <publication_title>Bull. Misc. Inform. Kew, Addit. Ser.</publication_title>
+      <place_in_publication>8: 67. 1908</place_in_publication>
+    </place_of_publication>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <species_name>康藏嵩草 kang zang song cao</species_name>
+  </TaxonIdentification>
+  <TaxonIdentification Status="SYNONYM">
+    <genus_name>Kobresia</genus_name>
+    <species_name>tibetica</species_name>
+    <species_authority>Maximowicz</species_authority>
+    <subspecies_name>littledalei</subspecies_name>
+    <subspecies_authority>(C. B. Clarke) P. C. Li.</subspecies_authority>
+  </TaxonIdentification>
+  <description>
+    <statement id="977.txt-0">
+      <text>Rhizomes short.</text>
+      <structure id="o44861" name="rhizome">
+        <character name="height_or_length" value="short" />
+      </structure>
+    </statement>
+    <statement id="977.txt-1">
+      <text>Basal sheaths prominent and persistent, very pale brown, dull, not fibrillose, not retaining dried leaf blades.</text>
+      <structure id="o44862" name="sheath" constraint="basal">
+        <character name="prominence" value="prominent" />
+        <character name="duration" value="persistent" />
+        <character name="coloration" value="brown" modifier="very;pale" />
+        <character name="reflectance" value="dull" />
+        <character name="feature" value="fibrillose" modifier="not" />
+      </structure>
+      <structure id="o44863" name="blade" constraint="leaf">
+        <character name="condition" value="dried" />
+      </structure>
+      <relation id="r9185" name="retaining" from="o44862" to="o44863" negation="true" />
+    </statement>
+    <statement id="977.txt-2">
+      <text>Culms densely tufted, erect, rigid, subterete, 10–25 cm tall, 1–2 mm in diam.</text>
+      <structure id="o44864" name="culm">
+        <character name="external_texture_or_habit" value="tufted" modifier="densely" />
+        <character name="orientation" value="erect" />
+        <character name="internal_texture" value="rigid" />
+        <character name="shape" value="subterete" />
+        <character char_type="range_value" name="size" from="10" from_unit="cm" to="25" to_unit="cm" />
+        <character name="height" value="tall" />
+        <character char_type="range_value" name="size" from="1" from_unit="mm" to="2" to_unit="mm" modifier="in diam" />
+      </structure>
+    </statement>
+    <statement id="977.txt-3">
+      <text>Leaves basal, shorter than or ± equaling culms;</text>
+      <structure id="o44865" name="leaf">
+        <character name="position" value="basal" />
+        <character name="height_or_length" value="shorter" constraint="than or more or less equaling culms" />
+      </structure>
+    </statement>
+    <statement id="977.txt-4">
+      <text>blade stiffly erect, filiform, ca. 1 mm wide, margin involute.</text>
+      <structure id="o44866" name="blade">
+        <character name="orientation" value="erect" modifier="stiffly" />
+        <character name="shape" value="filiform" />
+        <character name="width" value="1" unit="mm" />
+      </structure>
+      <structure id="o44867" name="margin">
+        <character name="shape_or_vernation" value="involute" />
+      </structure>
+    </statement>
+    <statement id="977.txt-5">
+      <text>Inflorescence spicate, usually unisexual;</text>
+      <structure id="o44868" name="inflorescence">
+        <character name="architecture" value="spicate" />
+        <character name="reproduction" value="unisexual" modifier="usually" />
+      </structure>
+    </statement>
+    <statement id="977.txt-6">
+      <text>all spikelets 1-flowered.</text>
+      <structure id="o44869" name="spikelet">
+        <character name="architecture" value="1-flowered" />
+      </structure>
+    </statement>
+    <statement id="977.txt-7">
+      <text>Male spikes linear or linear-oblong, 1.7–3 × 0.4–0.5 cm, occasionally with a few female spikelets at base;</text>
+      <structure id="o44870" name="spike" constraint="male">
+        <character name="shape" value="linear" />
+        <character name="shape" value="linear-oblong" />
+        <character char_type="range_value" name="length" from="1.7" from_unit="cm" to="3" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.4" from_unit="cm" to="0.5" to_unit="cm" />
+      </structure>
+      <structure id="o44871" name="spikelet" constraint="female">
+        <character name="count" value="few" />
+      </structure>
+      <relation id="r9186" name="with" from="o44870" to="o44871" negation="false" modifier="occasionally" />
+      <structure id="o44872" name="base" />
+      <relation id="r9187" name="at" from="o44871" to="o44872" negation="false" />
+    </statement>
+    <statement id="977.txt-8">
+      <text>male glumes yellowish brown to brown, with pale green midvein, lanceolate, margin broadly hyaline, apex obtuse.</text>
+      <structure id="o44873" name="glume" constraint="male">
+        <character char_type="range_value" name="coloration" from="yellowish brown" to="brown" />
+        <character name="coloration" value="brown" modifier="yellowish" />
+        <character name="coloration" value="brown" />
+        <character name="shape" value="lanceolate" />
+      </structure>
+      <structure id="o44874" name="midvein">
+        <character name="coloration" value="green" modifier="pale" />
+      </structure>
+      <relation id="r9188" name="with" from="o44873" to="o44874" negation="false" />
+      <structure id="o44875" name="margin">
+        <character name="coloration" value="hyaline" modifier="broadly" />
+      </structure>
+      <structure id="o44876" name="apex">
+        <character name="shape" value="obtuse" />
+      </structure>
+    </statement>
+    <statement id="977.txt-9">
+      <text>Female spikes slightly lax, pale brown, linear, 1.5–4 × 0.2–0.3 cm;</text>
+      <structure id="o44877" name="spike" constraint="female">
+        <character name="architecture_or_arrangement" value="lax" modifier="slightly" />
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="arrangement_or_shape" value="linear" />
+        <character char_type="range_value" name="length" from="1.5" from_unit="cm" to="4" to_unit="cm" />
+        <character char_type="range_value" name="width" from="0.2" from_unit="cm" to="0.3" to_unit="cm" />
+      </structure>
+    </statement>
+    <statement id="977.txt-10">
+      <text>lowest involucral bract glumelike, apex aristate or not;</text>
+      <structure id="o44878" name="bract" constraint="involucral">
+        <character name="feature" value="lowest" />
+        <character name="feature" value="glumelike" />
+      </structure>
+      <structure id="o44879" name="apex">
+        <character name="shape" value="aristate" />
+        <character name="shape" value="aristate" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="977.txt-11">
+      <text>female glumes brown or yellowish brown laterally, with pale green midvein, ovate to lanceolate, 4–6 × 1.5–2 mm, margin narrowly hyaline, apex acute.</text>
+      <structure id="o44880" name="glume" constraint="female">
+        <character name="coloration" value="brown" />
+        <character name="coloration" value="brown" modifier="yellowish" />
+        <character char_type="range_value" name="shape" from="ovate" to="lanceolate" />
+        <character name="shape" value="ovate" />
+        <character name="shape" value="lanceolate" />
+        <character char_type="range_value" name="length" from="4" from_unit="mm" to="6" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.5" from_unit="mm" to="2" to_unit="mm" />
+      </structure>
+      <structure id="o44881" name="midvein">
+        <character name="coloration" value="green" modifier="pale" />
+      </structure>
+      <relation id="r9189" name="with" from="o44880" to="o44881" negation="false" />
+      <structure id="o44882" name="margin">
+        <character name="coloration" value="hyaline" modifier="narrowly" />
+      </structure>
+      <structure id="o44883" name="apex">
+        <character name="shape" value="acute" />
+      </structure>
+    </statement>
+    <statement id="977.txt-12">
+      <text>Prophylls pale brown or brown, utriculiform, oblong or lanceolate, 3.5–5 × 1.2–1.3 mm, membranous, 2-keeled, keels ciliate, margins fused to middle part or to apex, apex rounded.</text>
+      <structure id="o44884" name="prophyll">
+        <character name="coloration" value="brown" modifier="pale" />
+        <character name="coloration" value="brown" />
+        <character name="shape" value="oblong" />
+        <character name="shape" value="lanceolate" />
+        <character char_type="range_value" name="length" from="3.5" from_unit="mm" to="5" to_unit="mm" />
+        <character char_type="range_value" name="width" from="1.2" from_unit="mm" to="1.3" to_unit="mm" />
+        <character name="feature" value="membranous" />
+        <character name="shape" value="2-keeled" />
+      </structure>
+      <structure id="o44885" name="keel">
+        <character name="architecture_or_shape" value="ciliate" />
+      </structure>
+      <structure id="o44886" name="margin" />
+      <structure id="o44887" name="part" constraint="middle" />
+      <relation id="r9190" name="fused to" from="o44886" to="o44887" negation="false" />
+      <structure id="o44888" name="apex" />
+      <relation id="r9191" name="to" from="o44886" to="o44888" negation="false" />
+      <structure id="o44889" name="apex">
+        <character name="shape" value="rounded" />
+      </structure>
+      <relation id="r9192" name="may_be_the_same" from="o44888" to="o44889" negation="false" />
+    </statement>
+    <statement id="977.txt-13">
+      <text>Nutlets oblong, trigonous, 2–2.7 × ca. 1 mm, not stipitate, not beaked.</text>
+      <structure id="o44890" name="nutlet">
+        <character name="shape" value="oblong" />
+        <character name="shape" value="trigonous" />
+        <character char_type="range_value" name="length" from="2" from_unit="mm" to="2.7" to_unit="mm" />
+        <character name="width" value="1" unit="mm" />
+        <character name="architecture" value="stipitate" modifier="not" />
+        <character name="shape" value="beaked" modifier="not" />
+      </structure>
+    </statement>
+    <statement id="977.txt-14">
+      <text>Stigmas 3.</text>
+      <structure id="o44891" name="stigma">
+        <character name="count" value="3" />
+      </structure>
+    </statement>
+    <statement id="977.txt-15">
+      <text>Sterile rachilla of female spikelets linear, flat, ca. 1/2 as long as nutlet or slightly longer.</text>
+      <structure id="o44893" name="spikelet" constraint="female" />
+      <relation id="r9193" name="part_of" from="o44892" to="o44893" negation="false" />
+      <structure id="o44894" name="nutlet" />
+    </statement>
+    <statement id="977.txt-16">
+      <text>Fl. and fr. May–Sep.</text>
+      <structure id="o44892" name="rachilla" constraint="sterile">
+        <character name="arrangement_or_shape" value="linear" />
+        <character name="prominence_or_shape" value="flat" />
+        <character name="count" value="1/2" constraint="as-long-as nutlet" constraintid="o44894" />
+        <character name="length" value="longer" modifier="slightly" />
+      </structure>
+    </statement>
+  </description>
+  <distribution>● Grassy slopes, alpine meadows, alpine shrubby meadows, rocky and sandy grassy slopes; 4300–5300 m. ?Qinghai, Sichuan, Xizang.</distribution>
+</treatment>
+
+<!--produced by $Id: VolumeFinalizer.java 1518 2013-04-24 18:04:34Z hong1.cui@gmail.com $
+-->
