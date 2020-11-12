@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Kunth" date="1837" rank="section">ovales</taxon_name>
+    <taxon_name authority="Dewey" date="1824" rank="species">tenera</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="variety">tenera</taxon_name>
+    <taxon_hierarchy>family cyperaceae;genus carex;section ovales;species tenera;variety tenera</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="fna_id">242357579</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Leaf-sheaths papillose (30X), sometimes sparsely so.</text>
+      <biological_entity id="o5902" name="sheath" name_original="leaf-sheaths" src="d0_s0" type="structure">
+        <character is_modifier="false" name="relief" src="d0_s0" value="papillose" value_original="papillose" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Perigynium beak ascending or loosely spreading, 2.8–4 mm, exceeding pistillate scales 0–0.8 mm. 2n = 52, 54, 56.</text>
+      <biological_entity constraint="perigynium" id="o5903" name="beak" name_original="beak" src="d0_s1" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s1" value="ascending" value_original="ascending" />
+        <character is_modifier="false" modifier="loosely" name="orientation" src="d0_s1" value="spreading" value_original="spreading" />
+        <character char_type="range_value" from="2.8" from_unit="mm" name="some_measurement" src="d0_s1" to="4" to_unit="mm" />
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s1" to="0.8" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o5904" name="scale" name_original="scales" src="d0_s1" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s1" value="pistillate" value_original="pistillate" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o5905" name="chromosome" name_original="" src="d0_s1" type="structure">
+        <character name="quantity" src="d0_s1" value="52" value_original="52" />
+        <character name="quantity" src="d0_s1" value="54" value_original="54" />
+        <character name="quantity" src="d0_s1" value="56" value_original="56" />
+      </biological_entity>
+      <relation from="o5903" id="r706" name="exceeding" negation="false" src="d0_s1" to="o5904" />
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting late spring–early summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="early summer" from="late spring" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Dry to moist, open forests and meadows</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="dry to moist" />
+        <character name="habitat" value="dry to open forests" />
+        <character name="habitat" value="meadows" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–1000 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="1000" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Alta., B.C., Man., N.B., N.S., Ont., Que., Sask.; Conn., D.C., Ill., Ind., Iowa, Kans., Ky., Maine, Md., Mass., Mich., Minn., Mo., Mont., Nebr., N.H., N.J., N.Y., N.C., N.Dak., Ohio, Oreg., Pa., R.I., S.Dak., Vt., Va., W.Va., Wis., Wyo.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="Alta." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Man." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Sask." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="D.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Nebr." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Dak." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.Dak." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wyo." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>152a.</number>
+  <other_name type="common_name">Carex tendre</other_name>
+  <discussion>The name Carex straminea has been incorrectly applied at times to C. tenera var. tenera.</discussion>
+  
+</bio:treatment>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">198</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Persoon" date="1805" rank="genus">dulichium</taxon_name>
+    <taxon_name authority="(Linnaeus) Britton" date="1894" rank="species">arundinaceum</taxon_name>
+    <taxon_name authority="Lepage" date="1958" rank="variety">boreale</taxon_name>
+    <place_of_publication>
+      <publication_title>Naturaliste Canad.</publication_title>
+      <place_in_publication>85: 100, fig. 1. 1958</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus dulichium;species arundinaceum;variety boreale</taxon_hierarchy>
+    <other_info_on_name type="fna_id">242357728</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Rhizomes 1–2 mm thick.</text>
+      <biological_entity id="o15233" name="rhizome" name_original="rhizomes" src="d0_s0" type="structure">
+        <character char_type="range_value" from="1" from_unit="mm" name="thickness" src="d0_s0" to="2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Culms 10–30 (–40) cm × 1–2 (–3) mm.</text>
+      <biological_entity id="o15234" name="culm" name_original="culms" src="d0_s1" type="structure">
+        <character char_type="range_value" from="30" from_inclusive="false" from_unit="cm" name="atypical_length" src="d0_s1" to="40" to_unit="cm" />
+        <character char_type="range_value" from="10" from_unit="cm" name="length" src="d0_s1" to="30" to_unit="cm" />
+        <character char_type="range_value" from="2" from_inclusive="false" from_unit="mm" name="atypical_width" src="d0_s1" to="3" to_unit="mm" />
+        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s1" to="2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Leaf-blades 1–3 mm wide.</text>
+      <biological_entity id="o15235" name="leaf-blade" name_original="leaf-blades" src="d0_s2" type="structure">
+        <character char_type="range_value" from="1" from_unit="mm" name="width" src="d0_s2" to="3" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Spikes 6–17 per culm.</text>
+      <biological_entity id="o15236" name="spike" name_original="spikes" src="d0_s3" type="structure">
+        <character char_type="range_value" constraint="per culm" constraintid="o15237" from="6" name="quantity" src="d0_s3" to="17" />
+      </biological_entity>
+      <biological_entity id="o15237" name="culm" name_original="culm" src="d0_s3" type="structure" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Spikelets 1–7 per spike.</text>
+      <biological_entity id="o15238" name="spikelet" name_original="spikelets" src="d0_s4" type="structure">
+        <character char_type="range_value" constraint="per spike" constraintid="o15239" from="1" name="quantity" src="d0_s4" to="7" />
+      </biological_entity>
+      <biological_entity id="o15239" name="spike" name_original="spike" src="d0_s4" type="structure" />
+    </statement>
+    <statement id="d0_s5">
+      <text>Anthers (1.5–) 1.8–2.6 (–2.8) mm.</text>
+      <biological_entity id="o15240" name="anther" name_original="anthers" src="d0_s5" type="structure">
+        <character char_type="range_value" from="1.5" from_unit="mm" name="atypical_some_measurement" src="d0_s5" to="1.8" to_inclusive="false" to_unit="mm" />
+        <character char_type="range_value" from="2.6" from_inclusive="false" from_unit="mm" name="atypical_some_measurement" src="d0_s5" to="2.8" to_unit="mm" />
+        <character char_type="range_value" from="1.8" from_unit="mm" name="some_measurement" src="d0_s5" to="2.6" to_unit="mm" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting summer–fall.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="fall" from="summer" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Stream shorelines</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="stream shorelines" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–100 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="100" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Que.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>1b.</number>
+  <other_name type="common_name">Duliche boréal</other_name>
+  
+</bio:treatment>

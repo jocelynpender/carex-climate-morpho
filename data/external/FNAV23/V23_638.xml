@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Kunth" date="1837" rank="section">ovales</taxon_name>
+    <taxon_name authority="Wahlenberg" date="1803" rank="species">tribuloides</taxon_name>
+    <taxon_name authority="Clokey" date="1919" rank="variety">sangamonensis</taxon_name>
+    <place_of_publication>
+      <publication_title>Rhodora</publication_title>
+      <place_in_publication>21: 84. 1919</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section ovales;species tribuloides;variety sangamonensis</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="fna_id">242357596</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Leaf-blades (2–) 3–4.5 mm wide at widest.</text>
+      <biological_entity id="o13330" name="leaf-blade" name_original="leaf-blades" src="d0_s0" type="structure">
+        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s0" to="3" to_inclusive="false" to_unit="mm" />
+        <character char_type="range_value" constraint="at widest" from="3" from_unit="mm" name="width" src="d0_s0" to="4.5" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Perigynia ovate-elliptic, 3–4 × 1.1–1.7 mm, 2.2–2.8 (–3) times as long as wide, margin flat, including wing 0.2–0.5 mm wide.</text>
+      <biological_entity id="o13331" name="perigynium" name_original="perigynia" src="d0_s1" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s1" value="ovate-elliptic" value_original="ovate-elliptic" />
+        <character char_type="range_value" from="3" from_unit="mm" name="length" src="d0_s1" to="4" to_unit="mm" />
+        <character char_type="range_value" from="1.1" from_unit="mm" name="width" src="d0_s1" to="1.7" to_unit="mm" />
+        <character is_modifier="false" name="l_w_ratio" src="d0_s1" value="2.2-2.8(-3)" value_original="2.2-2.8(-3)" />
+      </biological_entity>
+      <biological_entity id="o13332" name="margin" name_original="margin" src="d0_s1" type="structure">
+        <character is_modifier="false" name="prominence_or_shape" src="d0_s1" value="flat" value_original="flat" />
+        <character char_type="range_value" from="0.2" from_unit="mm" name="width" src="d0_s1" to="0.5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o13333" name="wing" name_original="wing" src="d0_s1" type="structure" />
+      <relation from="o13332" id="r1644" name="including" negation="false" src="d0_s1" to="o13333" />
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting early–mid summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="mid summer" from="early" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Open floodplain forests, moist to wet grasslands, ditches, stream banks, wet thickets</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="floodplain forests" modifier="open" />
+        <character name="habitat" value="wet grasslands" />
+        <character name="habitat" value="ditches" />
+        <character name="habitat" value="stream banks" />
+        <character name="habitat" value="moist to wet grasslands" />
+        <character name="habitat" value="wet thickets" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>20–600 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="600" to_unit="m" from="20" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ala., Ark., Ga., Ill., Ind., Kans., Ky., La., Miss., Mo., Ohio, Okla., S.C., Tenn., Tex.; Mexico (Veracruz).</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Kans." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Okla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
+        <character name="distribution" value="Mexico (Veracruz)" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>136b.</number>
+  
+</bio:treatment>

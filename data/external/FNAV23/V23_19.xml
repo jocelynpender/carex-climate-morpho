@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">10</other_info_on_meta>
+    <other_info_on_meta type="mention_page">15</other_info_on_meta>
+    <other_info_on_meta type="mention_page">19</other_info_on_meta>
+    <other_info_on_meta type="mention_page">21</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">20</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">scirpus</taxon_name>
+    <taxon_name authority="Fernald" date="1900" rank="species">pedicellatus</taxon_name>
+    <place_of_publication>
+      <publication_title>Rhodora</publication_title>
+      <place_in_publication>2: 16. 1900</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus scirpus;species pedicellatus</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="fna_id">242357971</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Scirpus</taxon_name>
+    <taxon_name authority="(Linnaeus) Kunth" date="unknown" rank="species">cyperinus</taxon_name>
+    <taxon_name authority="(Fernald) Schuyler" date="unknown" rank="variety">pedicellatus</taxon_name>
+    <taxon_hierarchy>genus Scirpus;species cyperinus;variety pedicellatus;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants aggregated in dense tussocks;</text>
+      <biological_entity id="o16447" name="whole_organism" name_original="" src="" type="structure">
+        <character constraint="in tussocks" constraintid="o16448" is_modifier="false" name="arrangement" src="d0_s0" value="aggregated" value_original="aggregated" />
+        <character name="growth_form" value="plant" />
+      </biological_entity>
+      <biological_entity id="o16448" name="tussock" name_original="tussocks" src="d0_s0" type="structure">
+        <character is_modifier="true" name="density" src="d0_s0" value="dense" value_original="dense" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>rhizomes branching, short, tough, fibrous.</text>
+      <biological_entity id="o16449" name="rhizome" name_original="rhizomes" src="d0_s1" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s1" value="branching" value_original="branching" />
+        <character is_modifier="false" name="height_or_length_or_size" src="d0_s1" value="short" value_original="short" />
+        <character is_modifier="false" name="fragility" src="d0_s1" value="tough" value_original="tough" />
+        <character is_modifier="false" name="texture" src="d0_s1" value="fibrous" value_original="fibrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Culms: fertile ones upright or nearly so;</text>
+      <biological_entity id="o16450" name="culm" name_original="culms" src="d0_s2" type="structure">
+        <character is_modifier="false" name="reproduction" src="d0_s2" value="fertile" value_original="fertile" />
+        <character is_modifier="false" name="orientation" src="d0_s2" value="upright" value_original="upright" />
+        <character name="orientation" src="d0_s2" value="nearly" value_original="nearly" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>nodes without axillary bulblets.</text>
+      <biological_entity id="o16451" name="culm" name_original="culms" src="d0_s3" type="structure" />
+      <biological_entity id="o16452" name="node" name_original="nodes" src="d0_s3" type="structure" />
+      <biological_entity constraint="axillary" id="o16453" name="bulblet" name_original="bulblets" src="d0_s3" type="structure" />
+      <relation from="o16452" id="r2008" name="without" negation="false" src="d0_s3" to="o16453" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Leaves ca. 8 per culm;</text>
+      <biological_entity id="o16454" name="leaf" name_original="leaves" src="d0_s4" type="structure">
+        <character constraint="per culm" constraintid="o16455" name="quantity" src="d0_s4" value="8" value_original="8" />
+      </biological_entity>
+      <biological_entity id="o16455" name="culm" name_original="culm" src="d0_s4" type="structure" />
+    </statement>
+    <statement id="d0_s5">
+      <text>sheaths of proximal leaves green or brownish;</text>
+      <biological_entity id="o16456" name="sheath" name_original="sheaths" src="d0_s5" type="structure" constraint="leaf" constraint_original="leaf; leaf">
+        <character is_modifier="false" name="coloration" src="d0_s5" value="green" value_original="green" />
+        <character is_modifier="false" name="coloration" src="d0_s5" value="brownish" value_original="brownish" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o16457" name="leaf" name_original="leaves" src="d0_s5" type="structure" />
+      <relation from="o16456" id="r2009" name="part_of" negation="false" src="d0_s5" to="o16457" />
+    </statement>
+    <statement id="d0_s6">
+      <text>proximal sheaths and blades with septa few-to-many, consipuous or inconspicuous;</text>
+      <biological_entity constraint="proximal" id="o16458" name="sheath" name_original="sheaths" src="d0_s6" type="structure">
+        <character is_modifier="false" name="prominence" notes="" src="d0_s6" value="inconspicuous" value_original="inconspicuous" />
+      </biological_entity>
+      <biological_entity constraint="proximal" id="o16459" name="blade" name_original="blades" src="d0_s6" type="structure">
+        <character is_modifier="false" name="prominence" notes="" src="d0_s6" value="inconspicuous" value_original="inconspicuous" />
+      </biological_entity>
+      <biological_entity id="o16460" name="septum" name_original="septa" src="d0_s6" type="structure">
+        <character char_type="range_value" from="few" name="quantity" src="d0_s6" to="many" />
+      </biological_entity>
+      <relation from="o16458" id="r2010" name="with" negation="false" src="d0_s6" to="o16460" />
+      <relation from="o16459" id="r2011" name="with" negation="false" src="d0_s6" to="o16460" />
+    </statement>
+    <statement id="d0_s7">
+      <text>blades 42–77 cm × 5–9 mm.</text>
+      <biological_entity id="o16461" name="blade" name_original="blades" src="d0_s7" type="structure">
+        <character char_type="range_value" from="42" from_unit="cm" name="length" src="d0_s7" to="77" to_unit="cm" />
+        <character char_type="range_value" from="5" from_unit="mm" name="width" src="d0_s7" to="9" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s8">
+      <text>Inflorescences terminal;</text>
+      <biological_entity id="o16462" name="inflorescence" name_original="inflorescences" src="d0_s8" type="structure">
+        <character is_modifier="false" name="position_or_structure_subtype" src="d0_s8" value="terminal" value_original="terminal" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>rays ascending, scabrous throughout or main branches smooth proximally, rays rarely with axillary bulblets;</text>
+      <biological_entity id="o16463" name="ray" name_original="rays" src="d0_s9" type="structure">
+        <character is_modifier="false" name="orientation" src="d0_s9" value="ascending" value_original="ascending" />
+        <character is_modifier="false" modifier="throughout" name="pubescence_or_relief" src="d0_s9" value="scabrous" value_original="scabrous" />
+      </biological_entity>
+      <biological_entity constraint="main" id="o16464" name="branch" name_original="branches" src="d0_s9" type="structure">
+        <character is_modifier="false" modifier="proximally" name="architecture_or_pubescence_or_relief" src="d0_s9" value="smooth" value_original="smooth" />
+      </biological_entity>
+      <biological_entity id="o16465" name="ray" name_original="rays" src="d0_s9" type="structure" />
+      <biological_entity constraint="axillary" id="o16466" name="bulblet" name_original="bulblets" src="d0_s9" type="structure" />
+      <relation from="o16465" id="r2012" name="with" negation="false" src="d0_s9" to="o16466" />
+    </statement>
+    <statement id="d0_s10">
+      <text>bases of involucral-bracts green, brown, or blackish, not glutinous.</text>
+      <biological_entity id="o16467" name="base" name_original="bases" src="d0_s10" type="structure" constraint="involucral-bract" constraint_original="involucral-bract; involucral-bract">
+        <character is_modifier="false" name="coloration" src="d0_s10" value="green" value_original="green" />
+        <character is_modifier="false" name="coloration" src="d0_s10" value="brown" value_original="brown" />
+        <character is_modifier="false" name="coloration" src="d0_s10" value="blackish" value_original="blackish" />
+        <character is_modifier="false" name="coloration" src="d0_s10" value="brown" value_original="brown" />
+        <character is_modifier="false" name="coloration" src="d0_s10" value="blackish" value_original="blackish" />
+        <character is_modifier="false" modifier="not" name="coating" src="d0_s10" value="glutinous" value_original="glutinous" />
+      </biological_entity>
+      <biological_entity id="o16468" name="involucral-bract" name_original="involucral-bracts" src="d0_s10" type="structure" />
+      <relation from="o16467" id="r2013" name="part_of" negation="false" src="d0_s10" to="o16468" />
+    </statement>
+    <statement id="d0_s11">
+      <text>Spikelets in open cymes, central spikelet of each cyme sessile, others usually pedicellate, spikelets ovoid, 3–9 × 2–3 mm;</text>
+      <biological_entity id="o16469" name="spikelet" name_original="spikelets" src="d0_s11" type="structure" />
+      <biological_entity id="o16470" name="cyme" name_original="cymes" src="d0_s11" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s11" value="open" value_original="open" />
+      </biological_entity>
+      <biological_entity constraint="central" id="o16471" name="spikelet" name_original="spikelet" src="d0_s11" type="structure">
+        <character is_modifier="false" name="architecture" src="d0_s11" value="sessile" value_original="sessile" />
+      </biological_entity>
+      <biological_entity id="o16472" name="cyme" name_original="cyme" src="d0_s11" type="structure" />
+      <biological_entity id="o16473" name="other" name_original="others" src="d0_s11" type="structure">
+        <character is_modifier="false" modifier="usually" name="architecture" src="d0_s11" value="pedicellate" value_original="pedicellate" />
+      </biological_entity>
+      <biological_entity id="o16474" name="spikelet" name_original="spikelets" src="d0_s11" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s11" value="ovoid" value_original="ovoid" />
+        <character char_type="range_value" from="3" from_unit="mm" name="length" src="d0_s11" to="9" to_unit="mm" />
+        <character char_type="range_value" from="2" from_unit="mm" name="width" src="d0_s11" to="3" to_unit="mm" />
+      </biological_entity>
+      <relation from="o16469" id="r2014" name="in" negation="false" src="d0_s11" to="o16470" />
+      <relation from="o16471" id="r2015" name="part_of" negation="false" src="d0_s11" to="o16472" />
+    </statement>
+    <statement id="d0_s12">
+      <text>scales usually pale-brown, black pigment absent (or sometimes a little beside distal midrib), oblongelliptic, 1.4–1.8 mm, rounded or weakly mucronate, mucro (if present) to 0.1 mm.</text>
+      <biological_entity id="o16475" name="scale" name_original="scales" src="d0_s12" type="structure">
+        <character is_modifier="false" modifier="usually" name="coloration" src="d0_s12" value="pale-brown" value_original="pale-brown" />
+        <character is_modifier="false" name="coloration" src="d0_s12" value="black pigment" value_original="black pigment" />
+        <character is_modifier="false" name="presence" src="d0_s12" value="absent" value_original="absent" />
+        <character is_modifier="false" name="shape" src="d0_s12" value="oblongelliptic" value_original="oblongelliptic" />
+        <character char_type="range_value" from="1.4" from_unit="mm" name="some_measurement" src="d0_s12" to="1.8" to_unit="mm" />
+        <character is_modifier="false" name="shape" src="d0_s12" value="rounded" value_original="rounded" />
+        <character is_modifier="false" modifier="weakly" name="shape" src="d0_s12" value="mucronate" value_original="mucronate" />
+      </biological_entity>
+      <biological_entity id="o16476" name="mucro" name_original="mucro" src="d0_s12" type="structure">
+        <character char_type="range_value" from="0" from_unit="mm" name="some_measurement" src="d0_s12" to="0.1" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s13">
+      <text>Flowers: perianth bristles persistent, 6, slender, contorted, much longer than achene, smooth, projecting beyond scales, mature inflorescence appearing woolly;</text>
+      <biological_entity id="o16477" name="flower" name_original="flowers" src="d0_s13" type="structure" />
+      <biological_entity constraint="perianth" id="o16478" name="bristle" name_original="bristles" src="d0_s13" type="structure">
+        <character is_modifier="false" name="duration" src="d0_s13" value="persistent" value_original="persistent" />
+        <character name="quantity" src="d0_s13" value="6" value_original="6" />
+        <character is_modifier="false" name="size" src="d0_s13" value="slender" value_original="slender" />
+        <character is_modifier="false" name="arrangement_or_shape" src="d0_s13" value="contorted" value_original="contorted" />
+        <character constraint="than achene" constraintid="o16479" is_modifier="false" name="length_or_size" src="d0_s13" value="much longer" value_original="much longer" />
+        <character is_modifier="false" name="architecture_or_pubescence_or_relief" src="d0_s13" value="smooth" value_original="smooth" />
+        <character constraint="beyond scales" constraintid="o16480" is_modifier="false" name="orientation" src="d0_s13" value="projecting" value_original="projecting" />
+      </biological_entity>
+      <biological_entity id="o16479" name="achene" name_original="achene" src="d0_s13" type="structure" />
+      <biological_entity id="o16480" name="scale" name_original="scales" src="d0_s13" type="structure" />
+      <biological_entity id="o16481" name="inflorescence" name_original="inflorescence" src="d0_s13" type="structure">
+        <character is_modifier="true" name="life_cycle" src="d0_s13" value="mature" value_original="mature" />
+        <character is_modifier="false" name="pubescence" src="d0_s13" value="woolly" value_original="woolly" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s14">
+      <text>styles 3-fid.</text>
+      <biological_entity id="o16482" name="flower" name_original="flowers" src="d0_s14" type="structure" />
+      <biological_entity id="o16483" name="style" name_original="styles" src="d0_s14" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s14" value="3-fid" value_original="3-fid" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s15">
+      <text>Achenes whitish, elliptic or obovate in outline, plumply trigonous or planoconvex, 0.7–0.9  0.4–0.5 mm. 2n = 68.</text>
+      <biological_entity id="o16484" name="achene" name_original="achenes" src="d0_s15" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s15" value="whitish" value_original="whitish" />
+        <character is_modifier="false" name="shape" src="d0_s15" value="elliptic" value_original="elliptic" />
+        <character constraint="in outline" constraintid="o16485" is_modifier="false" name="shape" src="d0_s15" value="obovate" value_original="obovate" />
+        <character is_modifier="false" modifier="plumply" name="shape" src="d0_s15" value="trigonous" value_original="trigonous" />
+        <character is_modifier="false" name="shape" src="d0_s15" value="planoconvex" value_original="planoconvex" />
+        <character char_type="range_value" from="0.7" name="quantity" src="d0_s15" to="0.9" />
+        <character char_type="range_value" from="0.4" from_unit="mm" name="some_measurement" src="d0_s15" to="0.5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o16485" name="outline" name_original="outline" src="d0_s15" type="structure" />
+      <biological_entity constraint="2n" id="o16486" name="chromosome" name_original="" src="d0_s15" type="structure">
+        <character name="quantity" src="d0_s15" value="68" value_original="68" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting summer (mid or late Jul).</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="summer" from="summer" constraint="mid-late Jul" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Usually in lowland marshes in stream valleys, edges of bogs, boggy meadows, and wet sandy shorelines</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="lowland marshes" modifier="usually in" constraint="in stream valleys , edges of bogs , boggy meadows , and wet sandy shorelines" />
+        <character name="habitat" value="stream valleys" />
+        <character name="habitat" value="edges" constraint="of bogs , boggy meadows , and wet sandy shorelines" />
+        <character name="habitat" value="bogs" />
+        <character name="habitat" value="boggy meadows" />
+        <character name="habitat" value="wet sandy shorelines" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–500 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="500" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>N.B., N.S., Ont., Que.; Conn., Ill., Ind., Iowa, Maine, Mass., Mich., Minn., Mo., N.H., N.J., N.Y., Ohio, Pa., R.I., Vt., Wis.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>17.</number>
+  <other_name type="common_name">Scirpe pédicellé</other_name>
+  <discussion>Scirpus pedicellatus often hybridizes with S. cyperinus and forms hybrid swarms.</discussion>
+  
+</bio:treatment>

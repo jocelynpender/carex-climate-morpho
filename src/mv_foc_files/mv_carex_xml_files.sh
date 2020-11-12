@@ -4,6 +4,6 @@ cat /Users/jocelynpender/carex-climate-morpho/data/interim/FoCV23_treatment_list
 
 
 #fna
-cd /Users/jocelynpender/fna/fna-fine-grained-xml/V23/
+cd /Users/jocelynpender/fc/fna/fna-data/fna-fine-grained-xml/V23/
 cat /Users/jocelynpender/carex-climate-morpho/data/interim/FNAV23_treatment_list.txt | xargs -J % cp % /Users/jocelynpender/carex-climate-morpho/data/external/FNAV23
 

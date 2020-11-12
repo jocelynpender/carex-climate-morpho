@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Tuckerman ex Kükenthal in H. G. A. Engler" date="1909" rank="section">careyanae</taxon_name>
+    <taxon_name authority="Schweinitz" date="1824" rank="species">laxiculmis</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="variety">laxiculmis</taxon_name>
+    <taxon_hierarchy>family cyperaceae;genus carex;section careyanae;species laxiculmis;variety laxiculmis</taxon_hierarchy>
+    <other_info_on_name type="fna_id">242357280</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Leaves usually glaucous;</text>
+      <biological_entity id="o27290" name="leaf" name_original="leaves" src="d0_s0" type="structure">
+        <character is_modifier="false" modifier="usually" name="pubescence" src="d0_s0" value="glaucous" value_original="glaucous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>widest blade 6.4–11.8 mm wide.</text>
+      <biological_entity constraint="widest" id="o27291" name="blade" name_original="blade" src="d0_s1" type="structure">
+        <character char_type="range_value" from="6.4" from_unit="mm" name="width" src="d0_s1" to="11.8" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Longest staminate spike (10–) 12–25 mm. 2n = 44, 46.</text>
+      <biological_entity constraint="longest" id="o27292" name="spike" name_original="spike" src="d0_s2" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s2" value="staminate" value_original="staminate" />
+        <character char_type="range_value" from="10" from_unit="mm" name="atypical_some_measurement" src="d0_s2" to="12" to_inclusive="false" to_unit="mm" />
+        <character char_type="range_value" from="12" from_unit="mm" name="some_measurement" src="d0_s2" to="25" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o27293" name="chromosome" name_original="" src="d0_s2" type="structure">
+        <character name="quantity" src="d0_s2" value="44" value_original="44" />
+        <character name="quantity" src="d0_s2" value="46" value_original="46" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting spring–early summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="early summer" from="spring" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Low, wet, deciduous or mixed deciduous-evergreen forests, along edges of springs, seeps, and streams, usually clay soils</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="low" />
+        <character name="habitat" value="wet" />
+        <character name="habitat" value="deciduous" />
+        <character name="habitat" value="mixed deciduous-evergreen forests" constraint="along edges of springs , seeps , and streams" />
+        <character name="habitat" value="edges" constraint="of springs , seeps , and streams" />
+        <character name="habitat" value="springs" />
+        <character name="habitat" value="seeps" />
+        <character name="habitat" value="streams" />
+        <character name="habitat" value="clay soils" modifier="usually" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–1000 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="1000" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Ont.; Ala., Ark., Conn., Del., D.C., Ga., Ill., Ind., Iowa, Ky., Maine, Md., Mass., Mich., Mo., N.H., N.J., N.Y., N.C., Ohio, Pa., R.I., S.C., Tenn., Vt., Va., W.Va., Wis.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="D.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Iowa" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>281a.</number>
+  <other_name type="common_name">Carex à tiges faibles</other_name>
+  
+</bio:treatment>

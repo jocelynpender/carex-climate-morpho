@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">541</other_info_on_meta>
+    <other_info_on_meta type="mention_page">543</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">544</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Dumortier" date="1827" rank="section">acrocystis</taxon_name>
+    <taxon_name authority="L. H. Bailey" date="1886" rank="species">inops</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="subspecies">inops</taxon_name>
+    <taxon_hierarchy>family cyperaceae;genus carex;section acrocystis;species inops;subspecies inops</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="fna_id">242357257</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="Lamarck" date="unknown" rank="species">pensylvanica</taxon_name>
+    <taxon_name authority="L. H. Bailey" date="unknown" rank="variety">verspertina</taxon_name>
+    <taxon_hierarchy>genus Carex;species pensylvanica;variety verspertina;</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="T. Holm" date="unknown" rank="species">verecunda</taxon_name>
+    <taxon_hierarchy>genus Carex;species verecunda;</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="(L. H. Bailey) Howell" date="unknown" rank="species">vespertina</taxon_name>
+    <taxon_hierarchy>genus Carex;species vespertina;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Staminate spike peduncles (3–) 4–20 mm. proximal cauline pistillate spikes short-pedunculate, ovoid to short-cylindric.</text>
+      <biological_entity constraint="spike" id="o22455" name="peduncle" name_original="peduncles" src="d0_s0" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s0" value="staminate" value_original="staminate" />
+        <character char_type="range_value" from="3" from_unit="mm" name="atypical_some_measurement" src="d0_s0" to="4" to_inclusive="false" to_unit="mm" />
+        <character char_type="range_value" from="4" from_unit="mm" name="some_measurement" src="d0_s0" to="20" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="proximal cauline" id="o22456" name="spike" name_original="spikes" src="d0_s0" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s0" value="pistillate" value_original="pistillate" />
+        <character is_modifier="false" name="architecture" src="d0_s0" value="short-pedunculate" value_original="short-pedunculate" />
+        <character char_type="range_value" from="ovoid" name="shape" src="d0_s0" to="short-cylindric" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting late Apr–late Jul.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="late Jul" from="late Apr" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Rocky, sandy, and loamy soils of open pine woodlands, open slopes, near mountain streams</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="loamy soils" modifier="rocky sandy and" constraint="of open pine woodlands , open slopes ," />
+        <character name="habitat" value="open pine woodlands" />
+        <character name="habitat" value="open slopes" />
+        <character name="habitat" value="mountain streams" />
+        <character name="habitat" value="rocky" />
+        <character name="habitat" value="sandy" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>500–2600 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="2600" to_unit="m" from="500" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>B.C.; Calif., Oreg., Wash.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>438a.</number>
+  
+</bio:treatment>

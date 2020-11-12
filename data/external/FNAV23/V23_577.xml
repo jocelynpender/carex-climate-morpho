@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">323</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">325</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="(Tuckerman ex Mackenzie) Mackenzie in N. L. Britton et al." date="1931" rank="section">deweyanae</taxon_name>
+    <taxon_name authority="Schkuhr ex Willdenow" date="1805" rank="species">bromoides</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="subspecies">bromoides</taxon_name>
+    <taxon_hierarchy>family cyperaceae;genus carex;section deweyanae;species bromoides;subspecies bromoides</taxon_hierarchy>
+    <other_info_on_name type="fna_id">242357089</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants densely to loosely cespitose.</text>
+      <biological_entity id="o7107" name="whole_organism" name_original="" src="" type="structure">
+        <character is_modifier="false" modifier="densely to loosely" name="growth_form" src="d0_s0" value="cespitose" value_original="cespitose" />
+        <character name="growth_form" value="plant" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Rhizomes short to long, internodes 0.2–20 mm.</text>
+      <biological_entity id="o7108" name="rhizome" name_original="rhizomes" src="d0_s1" type="structure">
+        <character is_modifier="false" name="size_or_length" src="d0_s1" value="short to long" value_original="short to long" />
+      </biological_entity>
+      <biological_entity id="o7109" name="internode" name_original="internodes" src="d0_s1" type="structure">
+        <character char_type="range_value" from="0.2" from_unit="mm" name="some_measurement" src="d0_s1" to="20" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Culms 0.5–1 (–1.1) mm wide.</text>
+      <biological_entity id="o7110" name="culm" name_original="culms" src="d0_s2" type="structure">
+        <character char_type="range_value" from="1" from_inclusive="false" from_unit="mm" name="width" src="d0_s2" to="1.1" to_unit="mm" />
+        <character char_type="range_value" from="0.5" from_unit="mm" name="width" src="d0_s2" to="1" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Widest leaf-blades 1.3–2.9 (–3.1) mm wide.</text>
+      <biological_entity constraint="widest" id="o7111" name="leaf-blade" name_original="leaf-blades" src="d0_s3" type="structure">
+        <character char_type="range_value" from="2.9" from_inclusive="false" from_unit="mm" name="width" src="d0_s3" to="3.1" to_unit="mm" />
+        <character char_type="range_value" from="1.3" from_unit="mm" name="width" src="d0_s3" to="2.9" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s4">
+      <text>Longest inflorescences (33–) 40–63 (–71) mm.</text>
+      <biological_entity constraint="longest" id="o7112" name="inflorescence" name_original="inflorescences" src="d0_s4" type="structure">
+        <character char_type="range_value" from="33" from_unit="mm" name="atypical_some_measurement" src="d0_s4" to="40" to_inclusive="false" to_unit="mm" />
+        <character char_type="range_value" from="63" from_inclusive="false" from_unit="mm" name="atypical_some_measurement" src="d0_s4" to="71" to_unit="mm" />
+        <character char_type="range_value" from="40" from_unit="mm" name="some_measurement" src="d0_s4" to="63" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Perigynium beak 0.3–0.42 times as long as perigynium.</text>
+      <biological_entity id="o7114" name="perigynium" name_original="perigynium" src="d0_s5" type="structure" />
+    </statement>
+    <statement id="d0_s6">
+      <text>2n = 64, 66, 68.</text>
+      <biological_entity constraint="perigynium" id="o7113" name="beak" name_original="beak" src="d0_s5" type="structure">
+        <character constraint="perigynium" constraintid="o7114" is_modifier="false" name="length" src="d0_s5" value="0.3-0.42 times as long as perigynium" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o7115" name="chromosome" name_original="" src="d0_s6" type="structure">
+        <character name="quantity" src="d0_s6" value="64" value_original="64" />
+        <character name="quantity" src="d0_s6" value="66" value_original="66" />
+        <character name="quantity" src="d0_s6" value="68" value_original="68" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting spring–early summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="early summer" from="spring" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Forested flood plains, wet hardwood forests, hardwood swamps, occasionally wet meadows, marsh edges</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="forested flood plains" />
+        <character name="habitat" value="wet hardwood forests" />
+        <character name="habitat" value="hardwood swamps" />
+        <character name="habitat" value="wet meadows" modifier="occasionally" />
+        <character name="habitat" value="marsh edges" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–500(–1100) m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="500" to_unit="m" from="0" from_unit="m" />
+        <character name="elevation" char_type="atypical_range" to="1100" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>N.B., N.S., Ont., Que.; Ala., Ark., Conn., D.C., Del., Fla., Ga., Ill., Ind., Ky., La., Maine, Md., Mass., Mich., Minn., Miss., Mo., N.H., N.J., N.Y., N.C., Ohio, Pa., R.I., S.C., Tenn., Tex., Vt., Va., W.Va., Wis.; c Mexico.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="N.B." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.S." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ala." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ark." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Conn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="D.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Del." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Fla." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ga." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ill." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ind." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ky." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="La." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Maine" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Md." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mass." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mich." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Minn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Miss." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.H." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.J." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.Y." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="N.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Ohio" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Pa." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="R.I." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="S.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tenn." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Tex." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Vt." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="W.Va." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wis." establishment_means="native" />
+        <character name="distribution" value="c Mexico" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>87a.</number>
+  
+</bio:treatment>

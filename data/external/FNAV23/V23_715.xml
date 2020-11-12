@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">397</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">399</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Dumortier" date="1827" rank="section">phacocystis</taxon_name>
+    <taxon_name authority="T. Holm" date="1902" rank="species">scopulorum</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="variety">scopulorum</taxon_name>
+    <taxon_hierarchy>family cyperaceae;genus carex;section phacocystis;species scopulorum;variety scopulorum</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="fna_id">242357462</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="T. Holm" date="unknown" rank="species">chimaphila</taxon_name>
+    <taxon_hierarchy>genus Carex;species chimaphila;</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="Boott" date="unknown" rank="species">scopulorum</taxon_name>
+    <taxon_name authority="L. H. Bailey" date="unknown" rank="variety">subconcoloroides</taxon_name>
+    <taxon_hierarchy>genus Carex;species scopulorum;variety subconcoloroides;</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="species">tolmiei</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="variety">subsessilis</taxon_name>
+    <taxon_hierarchy>genus Carex;species tolmiei;variety subsessilis;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms 11–40 cm, glabrous on angles.</text>
+      <biological_entity id="o6639" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character char_type="range_value" from="11" from_unit="cm" name="some_measurement" src="d0_s0" to="40" to_unit="cm" />
+        <character constraint="on angles" constraintid="o6640" is_modifier="false" name="pubescence" src="d0_s0" value="glabrous" value_original="glabrous" />
+      </biological_entity>
+      <biological_entity id="o6640" name="angle" name_original="angles" src="d0_s0" type="structure" />
+    </statement>
+    <statement id="d0_s1">
+      <text>Leaves: proximal sheaths brown, fronts with pale-brown spots, veinless, with blades, glabrous;</text>
+      <biological_entity id="o6641" name="leaf" name_original="leaves" src="d0_s1" type="structure" />
+      <biological_entity constraint="proximal" id="o6642" name="sheath" name_original="sheaths" src="d0_s1" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s1" value="brown" value_original="brown" />
+      </biological_entity>
+      <biological_entity id="o6643" name="front" name_original="fronts" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="with pale-brown spots" name="architecture" src="d0_s1" value="veinless" value_original="veinless" />
+        <character is_modifier="false" name="pubescence" notes="" src="d0_s1" value="glabrous" value_original="glabrous" />
+      </biological_entity>
+      <biological_entity id="o6644" name="blade" name_original="blades" src="d0_s1" type="structure" />
+      <relation from="o6643" id="r793" name="with" negation="false" src="d0_s1" to="o6644" />
+    </statement>
+    <statement id="d0_s2">
+      <text>leaf-blades 3–6 mm wide.</text>
+      <biological_entity id="o6645" name="leaf" name_original="leaves" src="d0_s2" type="structure" />
+      <biological_entity id="o6646" name="leaf-blade" name_original="leaf-blades" src="d0_s2" type="structure">
+        <character char_type="range_value" from="3" from_unit="mm" name="width" src="d0_s2" to="6" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Perigynia obovoid.</text>
+      <biological_entity id="o6647" name="perigynium" name_original="perigynia" src="d0_s3" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s3" value="obovoid" value_original="obovoid" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting Aug–Sep.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="Sep" from="Aug" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Wet subalpine and alpine meadows</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="wet subalpine" />
+        <character name="habitat" value="alpine meadows" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>3000–4500 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="4500" to_unit="m" from="3000" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Colo., Wyo.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="United States" value="Colo." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wyo." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>198a.</number>
+  <discussion>A common sedge of the southern Rocky Mountains, Carex scopulorum var. scopulorum is distinguished from var. bracteosa by the glabrous stems and sheaths, and by the broader more obovoid perigynia.</discussion>
+  
+</bio:treatment>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">479</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">481</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="Dumortier" date="1827" rank="section">aulocystis</taxon_name>
+    <taxon_name authority="Olney" date="1868" rank="species">luzulina</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="variety">luzulina</taxon_name>
+    <taxon_hierarchy>family cyperaceae;genus carex;section aulocystis;species luzulina;variety luzulina</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="special_status">E</other_info_on_name>
+    <other_info_on_name type="fna_id">242357309</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Spikes dense.</text>
+      <biological_entity id="o31054" name="spike" name_original="spikes" src="d0_s0" type="structure">
+        <character is_modifier="false" name="density" src="d0_s0" value="dense" value_original="dense" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Pistillate scales usually reddish-brown with paler midvein more than 0.2 mm wide and extending to tip, apex usually obtuse.</text>
+      <biological_entity id="o31055" name="scale" name_original="scales" src="d0_s1" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s1" value="pistillate" value_original="pistillate" />
+        <character constraint="with midvein" constraintid="o31056" is_modifier="false" modifier="usually" name="coloration" src="d0_s1" value="reddish-brown" value_original="reddish-brown" />
+      </biological_entity>
+      <biological_entity id="o31056" name="midvein" name_original="midvein" src="d0_s1" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s1" value="paler" value_original="paler" />
+        <character char_type="range_value" from="0.2" from_unit="mm" name="width" src="d0_s1" upper_restricted="false" />
+      </biological_entity>
+      <biological_entity id="o31057" name="tip" name_original="tip" src="d0_s1" type="structure" />
+      <biological_entity id="o31058" name="apex" name_original="apex" src="d0_s1" type="structure">
+        <character is_modifier="false" modifier="usually" name="shape" src="d0_s1" value="obtuse" value_original="obtuse" />
+      </biological_entity>
+      <relation from="o31055" id="r3843" name="extending to" negation="false" src="d0_s1" to="o31057" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Perigynia ± spreading, green or gold with redbrown or purple blotches.</text>
+      <biological_entity id="o31059" name="perigynium" name_original="perigynia" src="d0_s2" type="structure">
+        <character is_modifier="false" modifier="more or less" name="orientation" src="d0_s2" value="spreading" value_original="spreading" />
+        <character is_modifier="false" name="coloration" src="d0_s2" value="green" value_original="green" />
+        <character is_modifier="false" name="coloration" src="d0_s2" value="gold with redbrown or gold with purple blotches" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="summer" from="summer" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Wet meadows, bogs</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="wet meadows" />
+        <character name="habitat" value="bogs" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>below 2400 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="2400" to_unit="m" from="any" from_unit="m" constraint="below " />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>B.C.; Calif., Idaho, Mont., Oreg., Wash., Wyo.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Calif." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Idaho" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Oreg." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wash." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wyo." establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>335a.</number>
+  
+</bio:treatment>

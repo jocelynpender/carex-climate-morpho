@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">22</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">26</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">eriophorum</taxon_name>
+    <taxon_name authority="Chamisso" date="1831" rank="species">callitrix</taxon_name>
+    <place_of_publication>
+      <publication_title>Mém. Acad. Imp. Sci. St.-Pétersbourg Divers Savans</publication_title>
+      <place_in_publication>1: 203, plate 2. 1831</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus eriophorum;species callitrix</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="fna_id">242357815</other_info_on_name>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants cespitose.</text>
+      <biological_entity id="o328" name="whole_organism" name_original="" src="" type="structure">
+        <character is_modifier="false" name="growth_form" src="d0_s0" value="cespitose" value_original="cespitose" />
+        <character name="growth_form" value="plant" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Culms 5–20 (–50) cm, smooth or rough distally.</text>
+      <biological_entity id="o329" name="culm" name_original="culms" src="d0_s1" type="structure">
+        <character char_type="range_value" from="20" from_inclusive="false" from_unit="cm" name="atypical_some_measurement" src="d0_s1" to="50" to_unit="cm" />
+        <character char_type="range_value" from="5" from_unit="cm" name="some_measurement" src="d0_s1" to="20" to_unit="cm" />
+        <character is_modifier="false" name="architecture_or_pubescence_or_relief" src="d0_s1" value="smooth" value_original="smooth" />
+        <character is_modifier="false" modifier="distally" name="pubescence_or_relief" src="d0_s1" value="rough" value_original="rough" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>Leaves: cauline leaves 0–1, distal leaf usually proximal to mid culm, bladeless or with short blade;</text>
+      <biological_entity id="o330" name="leaf" name_original="leaves" src="d0_s2" type="structure" />
+      <biological_entity constraint="cauline" id="o331" name="leaf" name_original="leaves" src="d0_s2" type="structure">
+        <character char_type="range_value" from="0" name="quantity" src="d0_s2" to="1" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="o332" name="leaf" name_original="leaf" src="d0_s2" type="structure">
+        <character char_type="range_value" from="usually proximal" name="position" src="d0_s2" to="mid" />
+        <character is_modifier="false" name="architecture" notes="" src="d0_s2" value="bladeless" value_original="bladeless" />
+        <character is_modifier="false" name="architecture" src="d0_s2" value="with short blade" value_original="with short blade" />
+      </biological_entity>
+      <biological_entity id="o333" name="culm" name_original="culm" src="d0_s2" type="structure" />
+      <biological_entity id="o334" name="blade" name_original="blade" src="d0_s2" type="structure">
+        <character is_modifier="true" name="height_or_length_or_size" src="d0_s2" value="short" value_original="short" />
+      </biological_entity>
+      <relation from="o332" id="r46" name="with" negation="false" src="d0_s2" to="o334" />
+    </statement>
+    <statement id="d0_s3">
+      <text>blade forming angle with sheath, filiform or trigonous-channeled, 0.4–1.2 mm wide.</text>
+      <biological_entity id="o335" name="leaf" name_original="leaves" src="d0_s3" type="structure" />
+      <biological_entity id="o336" name="blade" name_original="blade" src="d0_s3" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s3" value="filiform" value_original="filiform" />
+        <character is_modifier="false" name="shape" src="d0_s3" value="trigonous-channeled" value_original="trigonous-channeled" />
+        <character char_type="range_value" from="0.4" from_unit="mm" name="width" src="d0_s3" to="1.2" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o337" name="angle" name_original="angle" src="d0_s3" type="structure" />
+      <biological_entity id="o338" name="sheath" name_original="sheath" src="d0_s3" type="structure" />
+      <relation from="o336" id="r47" name="forming" negation="false" src="d0_s3" to="o337" />
+      <relation from="o336" id="r48" name="with" negation="false" src="d0_s3" to="o338" />
+    </statement>
+    <statement id="d0_s4">
+      <text>Inflorescences: involucral-bracts absent or present as short blade on distal leaf.</text>
+      <biological_entity id="o339" name="inflorescence" name_original="inflorescences" src="d0_s4" type="structure" />
+      <biological_entity id="o340" name="involucral-bract" name_original="involucral-bracts" src="d0_s4" type="structure">
+        <character is_modifier="false" name="presence" src="d0_s4" value="absent" value_original="absent" />
+        <character constraint="as blade" constraintid="o341" is_modifier="false" name="presence" src="d0_s4" value="absent" value_original="absent" />
+      </biological_entity>
+      <biological_entity id="o341" name="blade" name_original="blade" src="d0_s4" type="structure">
+        <character is_modifier="true" name="height_or_length_or_size" src="d0_s4" value="short" value_original="short" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="o342" name="leaf" name_original="leaf" src="d0_s4" type="structure" />
+      <relation from="o341" id="r49" name="on" negation="false" src="d0_s4" to="o342" />
+    </statement>
+    <statement id="d0_s5">
+      <text>Spikelets solitary, erect, globose in fruit, 10–20 mm in flower, 15–30 mm in fruit;</text>
+      <biological_entity id="o343" name="spikelet" name_original="spikelets" src="d0_s5" type="structure">
+        <character is_modifier="false" name="architecture_or_arrangement_or_growth_form" src="d0_s5" value="solitary" value_original="solitary" />
+        <character is_modifier="false" name="orientation" src="d0_s5" value="erect" value_original="erect" />
+        <character constraint="in fruit" constraintid="o344" is_modifier="false" name="shape" src="d0_s5" value="globose" value_original="globose" />
+        <character char_type="range_value" constraint="in flower" constraintid="o345" from="10" from_unit="mm" name="some_measurement" notes="" src="d0_s5" to="20" to_unit="mm" />
+        <character char_type="range_value" constraint="in fruit" constraintid="o346" from="15" from_unit="mm" name="some_measurement" notes="" src="d0_s5" to="30" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o344" name="fruit" name_original="fruit" src="d0_s5" type="structure" />
+      <biological_entity id="o345" name="flower" name_original="flower" src="d0_s5" type="structure" />
+      <biological_entity id="o346" name="fruit" name_original="fruit" src="d0_s5" type="structure" />
+    </statement>
+    <statement id="d0_s6">
+      <text>scales pale blackish brown, margins and tip hyaline, ovatelanceolate, thin;</text>
+      <biological_entity id="o347" name="scale" name_original="scales" src="d0_s6" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s6" value="hyaline" value_original="hyaline" />
+        <character is_modifier="false" name="shape" src="d0_s6" value="ovatelanceolate" value_original="ovatelanceolate" />
+        <character is_modifier="false" name="width" src="d0_s6" value="thin" value_original="thin" />
+      </biological_entity>
+      <biological_entity id="o348" name="margin" name_original="margins" src="d0_s6" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s6" value="pale blackish" value_original="pale blackish" />
+        <character is_modifier="true" name="coloration" src="d0_s6" value="brown" value_original="brown" />
+        <character is_modifier="false" name="coloration" src="d0_s6" value="hyaline" value_original="hyaline" />
+        <character is_modifier="false" name="shape" src="d0_s6" value="ovatelanceolate" value_original="ovatelanceolate" />
+        <character is_modifier="false" name="width" src="d0_s6" value="thin" value_original="thin" />
+      </biological_entity>
+      <biological_entity id="o349" name="tip" name_original="tip" src="d0_s6" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s6" value="pale blackish" value_original="pale blackish" />
+        <character is_modifier="true" name="coloration" src="d0_s6" value="brown" value_original="brown" />
+        <character is_modifier="false" name="coloration" src="d0_s6" value="hyaline" value_original="hyaline" />
+        <character is_modifier="false" name="shape" src="d0_s6" value="ovatelanceolate" value_original="ovatelanceolate" />
+        <character is_modifier="false" name="width" src="d0_s6" value="thin" value_original="thin" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>proximal empty scales mostly 10–15, appressed to ascending, ovate, 5–8 mm, ribs ± to margins, midrib not reaching tip, apex acute.</text>
+      <biological_entity constraint="proximal" id="o350" name="scale" name_original="scale" src="d0_s7" type="structure" />
+      <biological_entity id="o351" name="scale" name_original="scales" src="d0_s7" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s7" value="empty" value_original="empty" />
+        <character char_type="range_value" from="10" name="quantity" src="d0_s7" to="15" />
+        <character char_type="range_value" from="appressed" name="orientation" src="d0_s7" to="ascending" />
+        <character is_modifier="false" name="shape" src="d0_s7" value="ovate" value_original="ovate" />
+        <character char_type="range_value" from="5" from_unit="mm" name="some_measurement" src="d0_s7" to="8" to_unit="mm" />
+      </biological_entity>
+      <biological_entity id="o352" name="rib" name_original="ribs" src="d0_s7" type="structure" />
+      <biological_entity id="o353" name="margin" name_original="margins" src="d0_s7" type="structure" />
+      <biological_entity id="o354" name="midrib" name_original="midrib" src="d0_s7" type="structure" />
+      <biological_entity id="o355" name="tip" name_original="tip" src="d0_s7" type="structure" />
+      <biological_entity id="o356" name="apex" name_original="apex" src="d0_s7" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s7" value="acute" value_original="acute" />
+      </biological_entity>
+      <relation from="o352" id="r50" name="to" negation="false" src="d0_s7" to="o353" />
+      <relation from="o354" id="r51" name="reaching" negation="true" src="d0_s7" to="o355" />
+    </statement>
+    <statement id="d0_s8">
+      <text>Flowers: perianth bristles white to very pale-brown;</text>
+      <biological_entity id="o357" name="flower" name_original="flowers" src="d0_s8" type="structure" />
+      <biological_entity constraint="perianth" id="o358" name="bristle" name_original="bristles" src="d0_s8" type="structure">
+        <character is_modifier="false" name="coloration" src="d0_s8" value="white to very" value_original="white to very" />
+        <character is_modifier="false" modifier="very" name="coloration" src="d0_s8" value="pale-brown" value_original="pale-brown" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>anthers 0.6–1.2 mm.</text>
+      <biological_entity id="o359" name="flower" name_original="flowers" src="d0_s9" type="structure" />
+      <biological_entity id="o360" name="anther" name_original="anthers" src="d0_s9" type="structure">
+        <character char_type="range_value" from="0.6" from_unit="mm" name="some_measurement" src="d0_s9" to="1.2" to_unit="mm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s10">
+      <text>Achenes ellipsoidobovoid, 1.8–2.1 mm. 2n = 60.</text>
+      <biological_entity id="o361" name="achene" name_original="achenes" src="d0_s10" type="structure">
+        <character char_type="range_value" from="1.8" from_unit="mm" name="some_measurement" src="d0_s10" to="2.1" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o362" name="chromosome" name_original="" src="d0_s10" type="structure">
+        <character name="quantity" src="d0_s10" value="60" value_original="60" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="summer" from="summer" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Tundra, calcareous bogs, wet places</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="tundra" />
+        <character name="habitat" value="calcareous bogs" />
+        <character name="habitat" value="wet places" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–2600 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="2600" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Greenland; Alta., B.C., Man., Nfld. and Labr., N.W.T., Nunavut, Ont., Que., Sask., Yukon; Alaska, Mont., Wyo.; Eurasia.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="Greenland" establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Alta." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="B.C." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Man." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Nfld. and Labr." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.W.T." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Nunavut" establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Ont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Sask." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Yukon" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Mont." establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Wyo." establishment_means="native" />
+        <character name="distribution" value="Eurasia" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>9.</number>
+  <other_name type="common_name">Linaigrette àbelle crinière</other_name>
+  <discussion>Two varieties, Eriophorum callitrix var. moravium Raymond and E. callitrix var. pallidus Hultén, have been described based on the pale brown or yellow scales. They are of very local distribution and could be of hybrid origin.</discussion>
+  
+</bio:treatment>

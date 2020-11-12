@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>A. A. Reznicek</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">carex</taxon_name>
+    <taxon_name authority="(Tuckerman ex L. H. Bailey) Kükenthal in H. G. A. Engler" date="1909" rank="section">Foetidae</taxon_name>
+    <place_of_publication>
+      <publication_title>in H. G. A. Engler, Pflanzenr.</publication_title>
+      <place_in_publication>20[IV,38]: 114. 1909</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus carex;section Foetidae</taxon_hierarchy>
+    <other_info_on_name type="fna_id">302695</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Carex</taxon_name>
+    <taxon_name authority="Tuckerman ex L. H. Bailey" date="unknown" rank="unranked">Foetidae</taxon_name>
+    <place_of_publication>
+      <publication_title>in J. M. Coulter, Man. Bot. Rocky Mt.,</publication_title>
+      <place_in_publication>390. 1885</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Carex;unranked Foetidae;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Plants colonial or loosely cespitose, short-rhizomatous.</text>
+      <biological_entity id="o15150" name="whole_organism" name_original="" src="" type="structure">
+        <character is_modifier="false" name="growth_form" src="d0_s0" value="colonial" value_original="colonial" />
+        <character is_modifier="false" modifier="loosely" name="growth_form" src="d0_s0" value="cespitose" value_original="cespitose" />
+        <character is_modifier="false" name="architecture" src="d0_s0" value="short-rhizomatous" value_original="short-rhizomatous" />
+        <character name="growth_form" value="plant" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Culms brown at base.</text>
+      <biological_entity id="o15151" name="culm" name_original="culms" src="d0_s1" type="structure">
+        <character constraint="at base" constraintid="o15152" is_modifier="false" name="coloration" src="d0_s1" value="brown" value_original="brown" />
+      </biological_entity>
+      <biological_entity id="o15152" name="base" name_original="base" src="d0_s1" type="structure" />
+    </statement>
+    <statement id="d0_s2">
+      <text>Leaves: basal sheaths sometimes fibrous;</text>
+      <biological_entity id="o15153" name="leaf" name_original="leaves" src="d0_s2" type="structure" />
+      <biological_entity constraint="basal" id="o15154" name="sheath" name_original="sheaths" src="d0_s2" type="structure">
+        <character is_modifier="false" modifier="sometimes" name="texture" src="d0_s2" value="fibrous" value_original="fibrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>sheath fronts membranous, distal leaves with at least narrow hyaline or white-hyaline band extending 1/2 length of sheath;</text>
+      <biological_entity id="o15155" name="leaf" name_original="leaves" src="d0_s3" type="structure" />
+      <biological_entity constraint="sheath" id="o15156" name="front" name_original="fronts" src="d0_s3" type="structure">
+        <character is_modifier="false" name="texture" src="d0_s3" value="membranous" value_original="membranous" />
+      </biological_entity>
+      <biological_entity constraint="distal" id="o15157" name="leaf" name_original="leaves" src="d0_s3" type="structure" />
+      <biological_entity id="o15158" name="band" name_original="band" src="d0_s3" type="structure">
+        <character is_modifier="true" modifier="at-least" name="coloration" src="d0_s3" value="narrow" value_original="narrow" />
+        <character is_modifier="true" name="coloration" src="d0_s3" value="hyaline" value_original="hyaline" />
+        <character is_modifier="true" name="coloration" src="d0_s3" value="white-hyaline" value_original="white-hyaline" />
+      </biological_entity>
+      <relation from="o15157" id="r1864" name="with" negation="false" src="d0_s3" to="o15158" />
+    </statement>
+    <statement id="d0_s4">
+      <text>blades V-shaped in cross-section when young, sometimes involute, glabrous.</text>
+      <biological_entity id="o15159" name="leaf" name_original="leaves" src="d0_s4" type="structure" />
+      <biological_entity id="o15160" name="blade" name_original="blades" src="d0_s4" type="structure">
+        <character constraint="in cross-section" constraintid="o15161" is_modifier="false" name="shape" src="d0_s4" value="v--shaped" value_original="v--shaped" />
+      </biological_entity>
+      <biological_entity id="o15161" name="cross-section" name_original="cross-section" src="d0_s4" type="structure">
+        <character is_modifier="false" modifier="when young; sometimes" name="shape_or_vernation" src="d0_s4" value="involute" value_original="involute" />
+        <character is_modifier="false" name="pubescence" src="d0_s4" value="glabrous" value_original="glabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s5">
+      <text>Inflorescences racemose, with (1–) 3–20 spikes, globose to ovoid-globose;</text>
+      <biological_entity id="o15162" name="inflorescence" name_original="inflorescences" src="d0_s5" type="structure">
+        <character is_modifier="false" name="arrangement" src="d0_s5" value="racemose" value_original="racemose" />
+        <character char_type="range_value" from="globose" name="shape" notes="" src="d0_s5" to="ovoid-globose" />
+      </biological_entity>
+      <biological_entity id="o15163" name="spike" name_original="spikes" src="d0_s5" type="structure">
+        <character char_type="range_value" from="1" is_modifier="true" name="atypical_quantity" src="d0_s5" to="3" to_inclusive="false" />
+        <character char_type="range_value" from="3" is_modifier="true" name="quantity" src="d0_s5" to="20" />
+      </biological_entity>
+      <relation from="o15162" id="r1865" name="with" negation="false" src="d0_s5" to="o15163" />
+    </statement>
+    <statement id="d0_s6">
+      <text>bracts absent or scalelike, sheathless;</text>
+      <biological_entity id="o15164" name="bract" name_original="bracts" src="d0_s6" type="structure">
+        <character is_modifier="false" name="presence" src="d0_s6" value="absent" value_original="absent" />
+        <character is_modifier="false" name="shape" src="d0_s6" value="scale-like" value_original="scalelike" />
+        <character is_modifier="false" name="architecture" src="d0_s6" value="sheathless" value_original="sheathless" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s7">
+      <text>lateral spikes androgynous, often very condensed and individually indistinct, sessile, without prophylls;</text>
+      <biological_entity constraint="lateral" id="o15165" name="spike" name_original="spikes" src="d0_s7" type="structure">
+        <character is_modifier="false" name="reproduction" src="d0_s7" value="androgynous" value_original="androgynous" />
+        <character is_modifier="false" modifier="often very" name="architecture" src="d0_s7" value="condensed" value_original="condensed" />
+        <character is_modifier="false" modifier="individually" name="prominence" src="d0_s7" value="indistinct" value_original="indistinct" />
+        <character is_modifier="false" name="architecture" src="d0_s7" value="sessile" value_original="sessile" />
+      </biological_entity>
+      <biological_entity id="o15166" name="prophyll" name_original="prophylls" src="d0_s7" type="structure" />
+      <relation from="o15165" id="r1866" name="without" negation="false" src="d0_s7" to="o15166" />
+    </statement>
+    <statement id="d0_s8">
+      <text>terminal spike androgynous.</text>
+      <biological_entity constraint="terminal" id="o15167" name="spike" name_original="spike" src="d0_s8" type="structure">
+        <character is_modifier="false" name="reproduction" src="d0_s8" value="androgynous" value_original="androgynous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s9">
+      <text>Proximal pistillate scales with apex subobtuse, acute or shortly awned.</text>
+      <biological_entity constraint="proximal" id="o15168" name="scale" name_original="scales" src="d0_s9" type="structure">
+        <character is_modifier="true" name="architecture" src="d0_s9" value="pistillate" value_original="pistillate" />
+        <character is_modifier="false" name="shape" src="d0_s9" value="acute" value_original="acute" />
+        <character is_modifier="false" modifier="shortly" name="shape" src="d0_s9" value="awned" value_original="awned" />
+      </biological_entity>
+      <biological_entity id="o15169" name="apex" name_original="apex" src="d0_s9" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s9" value="subobtuse" value_original="subobtuse" />
+      </biological_entity>
+      <relation from="o15168" id="r1867" name="with" negation="false" src="d0_s9" to="o15169" />
+    </statement>
+    <statement id="d0_s10">
+      <text>Perigynia erect to spreading, faces veined or veinless, sessile to stipitate, ovate to narrowly ovate, planoconvex in cross-section, base rounded, margins acutely angled, apex tapering to beak, glabrous;</text>
+      <biological_entity id="o15170" name="perigynium" name_original="perigynia" src="d0_s10" type="structure">
+        <character char_type="range_value" from="erect" name="orientation" src="d0_s10" to="spreading" />
+      </biological_entity>
+      <biological_entity id="o15171" name="face" name_original="faces" src="d0_s10" type="structure">
+        <character char_type="range_value" from="veinless sessile" name="architecture" src="d0_s10" to="stipitate" />
+        <character char_type="range_value" from="veinless sessile" name="architecture" src="d0_s10" to="stipitate" />
+        <character char_type="range_value" from="ovate" name="shape" src="d0_s10" to="narrowly ovate" />
+        <character constraint="in cross-section" constraintid="o15172" is_modifier="false" name="shape" src="d0_s10" value="planoconvex" value_original="planoconvex" />
+      </biological_entity>
+      <biological_entity id="o15172" name="cross-section" name_original="cross-section" src="d0_s10" type="structure" />
+      <biological_entity id="o15173" name="base" name_original="base" src="d0_s10" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s10" value="rounded" value_original="rounded" />
+      </biological_entity>
+      <biological_entity id="o15174" name="margin" name_original="margins" src="d0_s10" type="structure">
+        <character is_modifier="false" modifier="acutely" name="shape" src="d0_s10" value="angled" value_original="angled" />
+      </biological_entity>
+      <biological_entity id="o15175" name="apex" name_original="apex" src="d0_s10" type="structure">
+        <character constraint="to beak" constraintid="o15176" is_modifier="false" name="shape" src="d0_s10" value="tapering" value_original="tapering" />
+        <character is_modifier="false" name="pubescence" notes="" src="d0_s10" value="glabrous" value_original="glabrous" />
+      </biological_entity>
+      <biological_entity id="o15176" name="beak" name_original="beak" src="d0_s10" type="structure" />
+    </statement>
+    <statement id="d0_s11">
+      <text>beak 0.5–1.5 mm, with abaxial suture, margins often serrulate, apex obliquely cleft or slightly bidentate.</text>
+      <biological_entity id="o15177" name="beak" name_original="beak" src="d0_s11" type="structure">
+        <character char_type="range_value" from="0.5" from_unit="mm" name="some_measurement" src="d0_s11" to="1.5" to_unit="mm" />
+      </biological_entity>
+      <biological_entity constraint="abaxial" id="o15178" name="suture" name_original="suture" src="d0_s11" type="structure" />
+      <biological_entity id="o15179" name="margin" name_original="margins" src="d0_s11" type="structure">
+        <character is_modifier="false" modifier="often" name="architecture_or_shape" src="d0_s11" value="serrulate" value_original="serrulate" />
+      </biological_entity>
+      <biological_entity id="o15180" name="apex" name_original="apex" src="d0_s11" type="structure">
+        <character is_modifier="false" modifier="obliquely" name="shape" src="d0_s11" value="cleft" value_original="cleft" />
+        <character is_modifier="false" modifier="slightly" name="shape" src="d0_s11" value="bidentate" value_original="bidentate" />
+      </biological_entity>
+      <relation from="o15177" id="r1868" name="with" negation="false" src="d0_s11" to="o15178" />
+    </statement>
+    <statement id="d0_s12">
+      <text>Stigmas 2.</text>
+      <biological_entity id="o15181" name="stigma" name_original="stigmas" src="d0_s12" type="structure">
+        <character name="quantity" src="d0_s12" value="2" value_original="2" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s13">
+      <text>Achenes biconvex, smaller than bodies of perigynia;</text>
+      <biological_entity id="o15182" name="achene" name_original="achenes" src="d0_s13" type="structure">
+        <character is_modifier="false" name="shape" src="d0_s13" value="biconvex" value_original="biconvex" />
+        <character constraint="than bodies" constraintid="o15183" is_modifier="false" name="size" src="d0_s13" value="smaller" value_original="smaller" />
+      </biological_entity>
+      <biological_entity id="o15183" name="body" name_original="bodies" src="d0_s13" type="structure" />
+      <biological_entity id="o15184" name="perigynium" name_original="perigynia" src="d0_s13" type="structure" />
+      <relation from="o15183" id="r1869" name="part_of" negation="false" src="d0_s13" to="o15184" />
+    </statement>
+    <statement id="d0_s14">
+      <text>style deciduous.</text>
+      <biological_entity id="o15185" name="style" name_original="style" src="d0_s14" type="structure">
+        <character is_modifier="false" name="duration" src="d0_s14" value="deciduous" value_original="deciduous" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>North America, South America, Eurasia.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="North America" establishment_means="native" />
+        <character name="distribution" value="South America" establishment_means="native" />
+        <character name="distribution" value="Eurasia" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>261.</number>
+  <discussion>Species 10 or 11 (4 in the flora).</discussion>
+  <discussion>Perigynium venation, shape, and inflation, and stipe presence are difficult to assess in specimens of Carex sect. Foetidae that are not fully mature.</discussion>
+  <key>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">Leaves flat, shorter than the erect culms, the widest (including dead remains of last years leaves) (1.5–)2–3.5(–4) mm wide; perigynia not inflated, ± equaling pistillate scales at maturity; beak well defined, 0.9–1.5 mm; anthers 1.5–2.8 mm.</description>
+      <determination>65 Carex vernacula</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>1</statement_id>
+      <description type="morphology">Leaves strongly folded to involute, often equaling the usually curved culms, the widest 0.5–2.2(–2.5) mm wide; perigynia either inflated or exceeding pistillate scales or both; beak sometimes poorly defined, 0.5–1.1 mm; anthers 0.9–2 mm.</description>
+      <next_statement_id>2</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">Perigynia strongly inflated, ± equaling pistillate scales, delicate and membranous; stipe absent or broad, to 0.2 mm; spikes ca. 8–15.</description>
+      <determination>64 Carex perglobosa</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>2</statement_id>
+      <description type="morphology">Perigynia somewhat inflated or not, exceeding pistillate scales, papery or leathery; stipe usually conspicuous, 0.2–0.7 mm; spikes (1–)3–7.</description>
+      <next_statement_id>3</next_statement_id>
+    </key_statement>
+    <key_statement>
+      <statement_id>3</statement_id>
+      <description type="morphology">Perigynia finely veined to nearly veinless abaxially, essentially veinless adaxially, ovate to broadly ovate, (1.4–)1.6–2.3(–2.7) mm wide; pistillate scales with usually broad whitish hyaline margins, broadly ovate to orbicular, apex obtuse to ± acute; arctic and subarctic lowlands, largely coastal.</description>
+      <determination>62 Carex maritima</determination>
+    </key_statement>
+    <key_statement>
+      <statement_id>3</statement_id>
+      <description type="morphology">Perigynia finely veined on both faces, elliptic, 1–1.5(–1.6) mm wide; pistillate scales with very narrow hyaline margins (except sometimes the lowest), ovate, apex acute to acuminate; alpine zone of the Rocky Mountains from Alaska to Colorado, Sierra Nevada.</description>
+      <determination>63 Carex incurviformis</determination>
+    </key_statement>
+  </key>
+</bio:treatment>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bio:treatment xmlns:bio="http://www.github.com/biosemantics" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.github.com/biosemantics https://raw.githubusercontent.com/biosemantics/schemas/master/semanticMarkupOutput.xsd">
+  <meta>
+    <source>
+      <author>unknown</author>
+      <date>unknown</date>
+    </source>
+    <processed_by>
+      <processor>
+        <date>2020/06/26 16:19:49</date>
+        <software type="Semantic Markup" version="0.1.196-SNAPSHOT">CharaParser</software>
+        <operator />
+        <resource type="OTO Glossary" version="0.19">Plant</resource>
+      </processor>
+    </processed_by>
+    <other_info_on_meta type="volume">23</other_info_on_meta>
+    <other_info_on_meta type="mention_page">23</other_info_on_meta>
+    <other_info_on_meta type="treatment_page">24</other_info_on_meta>
+  </meta>
+  <taxon_identification status="ACCEPTED">
+    <taxon_name authority="Jussieu" date="unknown" rank="family">cyperaceae</taxon_name>
+    <taxon_name authority="Linnaeus" date="1754" rank="genus">eriophorum</taxon_name>
+    <taxon_name authority="Honckeny" date="1782" rank="species">angustifolium</taxon_name>
+    <taxon_name authority="(Th. Fries) Hultén" date="1962" rank="subspecies">triste</taxon_name>
+    <place_of_publication>
+      <publication_title>Kongl. Svenska Vetensk. Akad. Handl., ser.</publication_title>
+      <place_in_publication>4, 8(5): 58. 1962</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>family cyperaceae;genus eriophorum;species angustifolium;subspecies triste</taxon_hierarchy>
+    <other_info_on_name type="special_status">F</other_info_on_name>
+    <other_info_on_name type="fna_id">242357813</other_info_on_name>
+  </taxon_identification>
+  <taxon_identification status="BASIONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Eriophorum</taxon_name>
+    <taxon_name authority="(Th. Fries) Hadac &amp; Á. Löve" date="unknown" rank="species">angustifolium</taxon_name>
+    <taxon_name authority="Th. Fries" date="unknown" rank="variety">triste</taxon_name>
+    <place_of_publication>
+      <publication_title>Förh. Öfvers. Kongl. Svenska Vetensk.-Akad. Förh.</publication_title>
+      <place_in_publication>26: 135. 1869</place_in_publication>
+    </place_of_publication>
+    <taxon_hierarchy>genus Eriophorum;species angustifolium;variety triste;</taxon_hierarchy>
+  </taxon_identification>
+  <taxon_identification status="SYNONYM">
+    <taxon_name authority="unknown" date="unknown" rank="genus">Eriophorum</taxon_name>
+    <taxon_name authority="unknown" date="unknown" rank="species">triste</taxon_name>
+    <taxon_hierarchy>genus Eriophorum;species triste;</taxon_hierarchy>
+  </taxon_identification>
+  <description type="morphology">
+    <statement id="d0_s0">
+      <text>Culms to 30 cm.</text>
+      <biological_entity id="o15831" name="culm" name_original="culms" src="d0_s0" type="structure">
+        <character char_type="range_value" from="0" from_unit="cm" name="some_measurement" src="d0_s0" to="30" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s1">
+      <text>Inflorescences: larger involucral-bracts 1–3 cm;</text>
+      <biological_entity id="o15832" name="inflorescence" name_original="inflorescences" src="d0_s1" type="structure" />
+      <biological_entity constraint="larger" id="o15833" name="involucral-bract" name_original="involucral-bracts" src="d0_s1" type="structure">
+        <character char_type="range_value" from="1" from_unit="cm" name="some_measurement" src="d0_s1" to="3" to_unit="cm" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s2">
+      <text>peduncles 5–20 mm, usually scabrous all around.</text>
+      <biological_entity id="o15834" name="inflorescence" name_original="inflorescences" src="d0_s2" type="structure" />
+      <biological_entity id="o15835" name="peduncle" name_original="peduncles" src="d0_s2" type="structure">
+        <character char_type="range_value" from="5" from_unit="mm" name="some_measurement" src="d0_s2" to="20" to_unit="mm" />
+        <character is_modifier="false" modifier="usually; around" name="pubescence_or_relief" src="d0_s2" value="scabrous" value_original="scabrous" />
+      </biological_entity>
+    </statement>
+    <statement id="d0_s3">
+      <text>Scales gray to black, usually with pale margins.</text>
+      <biological_entity id="o15837" name="margin" name_original="margins" src="d0_s3" type="structure">
+        <character is_modifier="true" name="coloration" src="d0_s3" value="pale" value_original="pale" />
+      </biological_entity>
+      <relation from="o15836" id="r1935" modifier="usually" name="with" negation="false" src="d0_s3" to="o15837" />
+    </statement>
+    <statement id="d0_s4">
+      <text>2n = 60.</text>
+      <biological_entity id="o15836" name="scale" name_original="scales" src="d0_s3" type="structure">
+        <character char_type="range_value" from="gray" name="coloration" src="d0_s3" to="black" />
+      </biological_entity>
+      <biological_entity constraint="2n" id="o15838" name="chromosome" name_original="" src="d0_s4" type="structure">
+        <character name="quantity" src="d0_s4" value="60" value_original="60" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="phenology">
+    <statement id="phenology_0">
+      <text>Fruiting summer.</text>
+      <biological_entity id="phen_o0" name="whole_organism" name_original="" type="structure">
+        <character name="fruiting time" char_type="range_value" to="summer" from="summer" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="habitat">
+    <statement id="habitat_0">
+      <text>Tundra, snowbeds, meadows</text>
+      <biological_entity id="hab_o0" name="whole_organism" name_original="" type="structure">
+        <character name="habitat" value="tundra" />
+        <character name="habitat" value="snowbeds" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="elevation">
+    <statement id="elevation_0">
+      <text>0–500 m</text>
+      <biological_entity id="elev_o0" name="whole_organism" name_original="" type="structure">
+        <character name="elevation" char_type="range_value" to="500" to_unit="m" from="0" from_unit="m" />
+      </biological_entity>
+    </statement>
+  </description>
+  <description type="distribution">
+    <statement id="distribution_0">
+      <text>Greenland; N.W.T., Nunavut, Que., Yukon; Alaska; Eurasia.</text>
+      <biological_entity id="dis_o0" name="whole_organism" name_original="" type="structure">
+        <character name="distribution" value="Greenland" establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="N.W.T." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Nunavut" establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Que." establishment_means="native" />
+        <character name="distribution" geographical_constraint="Canada" value="Yukon" establishment_means="native" />
+        <character name="distribution" geographical_constraint="United States" value="Alaska" establishment_means="native" />
+        <character name="distribution" value="Eurasia" establishment_means="native" />
+      </biological_entity>
+    </statement>
+  </description>
+  <number>3b.</number>
+  <other_name type="common_name">Linaigrette triste</other_name>
+  <discussion>Intermediates between the two subspecies of Eriophorum angustifolium occur in the low arctic and high boreal regions of Canada and Alaska. The names Eriophorum komarovii Vassiliev and E. angustifolium subsp. scabriusculum Hultén have been applied to such plants.</discussion>
+  
+</bio:treatment>
