@@ -29,7 +29,7 @@ for file_name in glob.glob(directory):
 
 collapse_property_coding = pd.read_csv("../../data/interim/fna_recode_property_names.csv")
 
-carex_traits_collapsed = collapse_traits(carex_traits_data_frame, collapse_property_coding)
+carex_traits_collapsed = collapse_traits(carex_traits_data_frame, collapse_property_coding, include_from = True)
 
 # trim semi-colons and nan
 carex_traits_collapsed.collapsed_data = carex_traits_collapsed.collapsed_data.apply(lambda x: x.replace(";nan", "").strip(";nan"))
