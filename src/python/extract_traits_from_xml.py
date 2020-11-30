@@ -18,24 +18,12 @@ def extract_morphology(parsed_xml, morphology_node='description'):  # = descript
     return morphology
 
 
-def extract_structures(morphology, structure_node='structure'): # biological_entity type="structure"
-    all_statements = morphology.getchildren()
-    all_structures_data_frame = pd.DataFrame([], columns=["property_name", "from", "to"])
-    for statement in all_statements:
-        structure_all = statement.findall(structure_node)
-        characters_data_frame = extract_structure_names(structure_all)
-        all_structures_data_frame = all_structures_data_frame.append(characters_data_frame, ignore_index=True)
-    return all_structures_data_frame
-
-
-def extract_structure_names(structure_all):
-    structures_data_frame = pd.DataFrame([], columns=["property_name", "from", "to"])
-    for structure_element in structure_all:
-        structure = structure_element.attrib['name']
-        characters_data_frame = extract_characters(structure_element, structure)
-        if characters_data_frame.empty is False:
-            structures_data_frame = structures_data_frame.append(characters_data_frame, ignore_index=True)
-    return structures_data_frame
+def extract_from_to_attribs(character_element, from_or_to):
+    if from_or_to in character_element.attrib:
+        from_or_to_character_element = character_element.attrib[from_or_to]
+        if from_or_to + '_unit' in character_element.attrib:
+            from_or_to_character_element = from_or_to_character_element + character_element.attrib[from_or_to + '_unit']
+        return from_or_to_character_element
 
 
 def extract_characters(structure_element, structure):
@@ -51,9 +39,21 @@ def extract_characters(structure_element, structure):
         return characters_data_frame
 
 
-def extract_from_to_attribs(character_element, from_or_to):
-    if from_or_to in character_element.attrib:
-        from_or_to_character_element = character_element.attrib[from_or_to]
-        if from_or_to + '_unit' in character_element.attrib:
-            from_or_to_character_element = from_or_to_character_element + character_element.attrib[from_or_to + '_unit']
-        return from_or_to_character_element
+def extract_structure_names(structure_all):
+    structures_data_frame = pd.DataFrame([], columns=["property_name", "from", "to"])
+    for structure_element in structure_all:
+        structure = structure_element.attrib['name']
+        characters_data_frame = extract_characters(structure_element, structure)
+        if characters_data_frame.empty is False:
+            structures_data_frame = structures_data_frame.append(characters_data_frame, ignore_index=True)
+    return structures_data_frame
+
+
+def extract_structures(morphology, structure_node='structure'): # biological_entity type="structure"
+    all_statements = morphology.getchildren()
+    all_structures_data_frame = pd.DataFrame([], columns=["property_name", "from", "to"])
+    for statement in all_statements:
+        structure_all = statement.findall(structure_node)
+        characters_data_frame = extract_structure_names(structure_all)
+        all_structures_data_frame = all_structures_data_frame.append(characters_data_frame, ignore_index=True)
+    return all_structures_data_frame
