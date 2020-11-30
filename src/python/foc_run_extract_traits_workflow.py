@@ -27,16 +27,7 @@ for file_name in glob.glob(directory):
         all_structures_data_frame = all_structures_data_frame.assign(file_name=file_name)
         carex_traits_data_frame = carex_traits_data_frame.append(all_structures_data_frame)
 
-# sum is used to unnest the reps, https://stackoverflow.com/questions/11860476/how-to-unnest-a-nested-list
-collapse_property_coding = pd.DataFrame({'coded_property_name': sum([['maximum_plant_height'] * 5,
-                                                                   ['maximum_leaf_width'] * 4,
-                                                                   ['maximum_inflorescence_length'] * 4,
-                                                                   ['maximum_inflorescence_width'] * 2], [])
-                                       , 'property_name': ['culm_size', 'culm_height', 'culm_atypical_size',
-                                                           'culm_height_or_length', 'culm_length', 'blade_size',
-                                                           'blade_width', 'leaf_size', 'leaf_width',
-                                                           'inflorescence_height_or_length', 'inflorescence_length', 'spike_length',
-                                                           'inflorescence_size', 'inflorescence_width', 'spike_width']})
+collapse_property_coding = pd.read_csv("../../data/interim/foc_recode_property_names.csv")
 
 carex_traits_collapsed = collapse_traits(carex_traits_data_frame, collapse_property_coding)
 
