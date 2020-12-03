@@ -6,7 +6,7 @@ from src.python.extract_traits_from_xml import parse, extract_morphology, extrac
 
 # file_name = "../../data/external/FoCV23/1001.xml"
 directory = "../../data/external/FNAV23/*.xml"
-carex_traits_data_frame = pd.DataFrame([], columns=['property_name', 'from', 'to', 'species_name', 'file_name'])
+traits_data_frame = pd.DataFrame([], columns=['property_name', 'from', 'to', 'species_name', 'file_name'])
 
 
 def format_taxon_id(parsed_xml):
@@ -25,14 +25,14 @@ for file_name in glob.glob(directory):
         all_structures_data_frame = extract_structures(morphology, structure_node='biological_entity[@type=\"structure\"]')
         all_structures_data_frame = all_structures_data_frame.assign(species_name=species_name)
         all_structures_data_frame = all_structures_data_frame.assign(file_name=file_name)
-        carex_traits_data_frame = carex_traits_data_frame.append(all_structures_data_frame)
+        traits_data_frame = traits_data_frame.append(all_structures_data_frame)
 
 collapse_property_coding = pd.read_csv("../../data/interim/fna_recode_property_names.csv")
 
-carex_traits_collapsed = collapse_traits(carex_traits_data_frame, collapse_property_coding, include_from = True)
+traits_collapsed = collapse_traits(traits_data_frame, collapse_property_coding, include_from = True)
 
 # trim semi-colons and nan
-carex_traits_collapsed.collapsed_data = carex_traits_collapsed.collapsed_data.apply(lambda x: x.replace(";nan", "").strip(";nan"))
+traits_collapsed.collapsed_data = traits_collapsed.collapsed_data.apply(lambda x: x.replace(";nan", "").strip(";nan"))
 
-carex_traits_data_frame.to_csv("../../data/processed/fna/fna_carex_traits_data_frame.csv")
-carex_traits_collapsed.to_csv("../../data/processed/fna/fna_carex_traits_collapsed.csv")
+traits_data_frame.to_csv("../../data/processed/fna/fna_traits_data_frame.csv")
+traits_collapsed.to_csv("../../data/processed/fna/fna_traits_collapsed.csv")
