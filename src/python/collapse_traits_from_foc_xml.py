@@ -1,6 +1,6 @@
 
 
-def collapse_traits(carex_data_frame, coded_property_name_df, sep_property_data=";", include_from = False, sep_from_to = ","):
+def collapse_traits(carex_data_frame, coded_property_name_df, sep_property_data=";", include_from = False):
     """
     # Add column called 'coded_property_name' and create a function to group data together based on the coding
 
@@ -25,17 +25,32 @@ def collapse_traits(carex_data_frame, coded_property_name_df, sep_property_data=
     # frame
 
     if include_from:
-        coded_carex_data_frame['collapsed_data'] = coded_carex_data_frame.loc[:, ['from', 'to']].apply(
-            lambda x: sep_from_to.join(x.dropna().astype(str)), axis=1) # collapse "from" and "to" using pandas groupby and
-        # apply with join
+        coded_carex_data_frame['collapsed_data_minimum'] = coded_carex_data_frame['from'].astype(str)
+        coded_carex_data_frame['collapsed_data_maximum'] = coded_carex_data_frame.to.astype(str)
+        collapsed_data_cols = ['collapsed_data_minimum', 'collapsed_data_maximum']
     else:
         coded_carex_data_frame['collapsed_data'] = coded_carex_data_frame.to.astype(str)
+        collapsed_data_cols = ['collapsed_data']
 
-    coded_carex_data_frame = coded_carex_data_frame[['coded_property_name', 'species_name', 'collapsed_data']] #
-    # filter the data frame to only the collapsed data values
+    collapsed_data_cols.extend(['coded_property_name', 'species_name'])
+    coded_carex_data_frame = coded_carex_data_frame[collapsed_data_cols] # filter the data frame to only the collapsed data values
 
-    coded_carex_collapsed = coded_carex_data_frame.groupby(['species_name', 'coded_property_name'])\
-        ['collapsed_data'].apply(sep_property_data.join).reset_index() # paste all the data together per species and
-    # per new property name, including multiples, if they exist.
+    if include_from:
+        coded_carex_maximum = coded_carex_data_frame[coded_carex_data_frame.collapsed_data_maximum != "nan"] \
+            [['species_name', 'coded_property_name', 'collapsed_data_maximum']] # remove string 'nan' values
+        coded_carex_maximum = coded_carex_maximum.groupby(['species_name', 'coded_property_name']) \
+            ['collapsed_data_maximum'].apply(sep_property_data.join).reset_index()
+        coded_carex_minimum = coded_carex_data_frame[coded_carex_data_frame.collapsed_data_minimum != "nan"] \
+            [['species_name', 'coded_property_name', 'collapsed_data_minimum']]  # remove string 'nan' values
+        coded_carex_minimum = coded_carex_minimum.groupby(['species_name', 'coded_property_name']) \
+            ['collapsed_data_minimum'].apply(sep_property_data.join).reset_index()
+        coded_carex_collapsed = coded_carex_maximum.merge(coded_carex_minimum, how='outer')
+    else:
+
+        # https://stackoverflow.com/questions/59022050/using-pandas-groupby-to-collapse-rows-into-a-single-row
+        coded_carex_collapsed = coded_carex_data_frame.groupby(['species_name', 'coded_property_name'])\
+            ['collapsed_data'].apply(sep_property_data.join).reset_index() # paste all the data together per species and
+        # per new property name, including multiples, if they exist.
+
 
     return coded_carex_collapsed
