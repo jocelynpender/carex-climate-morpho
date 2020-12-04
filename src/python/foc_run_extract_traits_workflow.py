@@ -34,5 +34,5 @@ traits_collapsed = collapse_traits(traits_data_frame, collapse_property_coding, 
 # trim semi-colons and nan
 traits_collapsed = traits_collapsed.apply(lambda x: x.replace(";nan", ""), axis=1)
 
-traits_data_frame.to_csv("../../data/processed/foc/carex_traits_data_frame_spikes.csv")
-traits_collapsed.to_csv("../../data/processed/foc/carex_traits_collapsed_spikes.csv")
+traits_data_frame.to_csv("../../data/processed/foc/foc_traits_data_frame.csv")
+traits_collapsed.to_csv("../../data/processed/foc/foc_traits_collapsed.csv")

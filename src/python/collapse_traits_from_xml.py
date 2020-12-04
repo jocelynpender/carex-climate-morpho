@@ -30,8 +30,15 @@ def collapse_traits(property_data_frame, coded_property_name_df, sep_property_da
         coded_data_frame['collapsed_data'] = coded_data_frame.to.astype(str)
         collapsed_data_cols = ['collapsed_data']
 
-    collapsed_data_cols.extend(['coded_property_name', 'species_name'])
+    coded_data_frame['collapsed_data_value'] = coded_data_frame.value.astype(str)
+
+    collapsed_data_cols.extend(['coded_property_name', 'species_name', 'collapsed_data_value'])
     coded_data_frame = coded_data_frame[collapsed_data_cols]  # filter the data frame to only the collapsed data values
+
+    coded_value = coded_data_frame[coded_data_frame.collapsed_data_value != "nan"] \
+        [['species_name', 'coded_property_name', 'collapsed_data_value']]  # remove string 'nan' values
+    coded_value = coded_value.groupby(['species_name', 'coded_property_name']) \
+        ['collapsed_data_value'].apply(sep_property_data.join).reset_index()
 
     if include_from:
         coded_maximum = coded_data_frame[coded_data_frame.collapsed_data_maximum != "nan"] \
@@ -42,13 +49,14 @@ def collapse_traits(property_data_frame, coded_property_name_df, sep_property_da
             [['species_name', 'coded_property_name', 'collapsed_data_minimum']]  # remove string 'nan' values
         coded_minimum = coded_minimum.groupby(['species_name', 'coded_property_name']) \
             ['collapsed_data_minimum'].apply(sep_property_data.join).reset_index()
-        coded_collapsed = coded_maximum.merge(coded_minimum, how='outer')
+        coded_collapsed = coded_minimum.merge(coded_maximum, how='outer')
     else:
 
         # https://stackoverflow.com/questions/59022050/using-pandas-groupby-to-collapse-rows-into-a-single-row
         coded_collapsed = coded_data_frame.groupby(['species_name', 'coded_property_name']) \
-            ['collapsed_data'].apply \
-            (sep_property_data.join).reset_index()  # paste all the data together per species and
+            ['collapsed_data'].apply(sep_property_data.join).reset_index()  # paste all the data together per species and
         # per new property name, including multiples, if they exist.
+
+    coded_collapsed = coded_collapsed.merge(coded_value, how='outer')
 
     return coded_collapsed

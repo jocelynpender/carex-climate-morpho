@@ -34,13 +34,17 @@ def extract_characters(structure_element, structure):
             property_name = structure + '_' + character_element.attrib['name']
             property_from = extract_from_to_attribs(character_element, 'from')
             property_to = extract_from_to_attribs(character_element, 'to')
-            characters_list.append([property_name, property_from, property_to])
-        characters_data_frame = pd.DataFrame(characters_list, columns=["property_name", "from", "to"])
+            if property_from is None: # Need more than just the quantitative characters now,
+                property_value = character_element.attrib['value'] # looking for branching values
+            else:
+                property_value = None
+            characters_list.append([property_name, property_from, property_to, property_value])
+        characters_data_frame = pd.DataFrame(characters_list, columns=["property_name", "from", "to", "value"])
         return characters_data_frame
 
 
 def extract_structure_names(structure_all):
-    structures_data_frame = pd.DataFrame([], columns=["property_name", "from", "to"])
+    structures_data_frame = pd.DataFrame([], columns=["property_name", "from", "to", "value"])
     for structure_element in structure_all:
         structure = structure_element.attrib['name']
         characters_data_frame = extract_characters(structure_element, structure)
@@ -51,7 +55,7 @@ def extract_structure_names(structure_all):
 
 def extract_structures(morphology, structure_node='structure'): # biological_entity type="structure"
     all_statements = morphology.getchildren()
-    all_structures_data_frame = pd.DataFrame([], columns=["property_name", "from", "to"])
+    all_structures_data_frame = pd.DataFrame([], columns=["property_name", "from", "to", "value"])
     for statement in all_statements:
         structure_all = statement.findall(structure_node)
         characters_data_frame = extract_structure_names(structure_all)
