@@ -1,7 +1,7 @@
 import glob
 import pandas as pd
 
-from src.python.collapse_traits_from_foc_xml import collapse_traits
+from src.python.collapse_traits_from_xml import collapse_traits
 from src.python.extract_traits_from_xml import parse, extract_morphology, extract_structures
 
 # file_name = "../../data/external/FoCV23/1001.xml"
