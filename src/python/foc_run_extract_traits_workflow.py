@@ -3,6 +3,7 @@ import pandas as pd
 
 from src.python.property_coding_filter import add_property_coding_column, filter_data_frame
 from src.python.extract_traits_from_xml import parse, extract_morphology, extract_structures
+from src.python.exclude_property_values import exclude_values
 
 # file_name = "../../data/external/FoCV23/1001.xml"
 directory = "../../data/external/FoCV23/*.xml"
@@ -35,5 +36,8 @@ traits_data_frame_with_coding = filter_data_frame(traits_data_frame_with_coding)
 # trim semi-colons and nan
 traits_data_frame_with_coding = traits_data_frame_with_coding.apply(lambda x: x.replace(";nan", ""), axis=1)
 
+# exclude relative measurements
+test_traits_data_frame_with_coding = exclude_values(traits_data_frame_with_coding, values_to_exclude=['shorter', 'longer', 'lower', 'wider'])
+
 traits_data_frame.to_csv("../../data/processed/foc/foc_traits_data_frame.csv")
-traits_data_frame_with_coding.to_csv("../../data/processed/foc/foc_traits_data_frame_with_coding.csv")
+test_traits_data_frame_with_coding.to_csv("../../data/processed/foc/foc_traits_data_frame_with_coding.csv")
