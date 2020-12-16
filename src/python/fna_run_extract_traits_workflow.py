@@ -1,8 +1,10 @@
 import glob
 import pandas as pd
 
-from src.python.collapse_traits_from_xml import collapse_traits
+
+from src.python.property_coding_filter import add_property_coding_column, filter_data_frame
 from src.python.extract_traits_from_xml import parse, extract_morphology, extract_structures
+from src.python.exclude_property_values import exclude_values
 
 # file_name = "../../data/external/FoCV23/1001.xml"
 directory = "../../data/external/FNAV23/*.xml"
@@ -27,12 +29,16 @@ for file_name in glob.glob(directory):
         all_structures_data_frame = all_structures_data_frame.assign(file_name=file_name)
         traits_data_frame = traits_data_frame.append(all_structures_data_frame)
 
-collapse_property_coding = pd.read_csv("../../data/interim/fna_recode_property_names.csv")
+property_coding = pd.read_csv("../../data/interim/fna_recode_property_names.csv")
 
-traits_collapsed = collapse_traits(traits_data_frame, collapse_property_coding, include_from=True)
+traits_data_frame_with_coding = add_property_coding_column(traits_data_frame, property_coding)
+traits_data_frame_with_coding = filter_data_frame(traits_data_frame_with_coding)
 
 # trim semi-colons and nan
-traits_collapsed = traits_collapsed.apply(lambda x: x.replace(";nan", ""), axis=1)
+traits_data_frame_with_coding = traits_data_frame_with_coding.apply(lambda x: x.replace(";nan", ""), axis=1)
+
+# exclude relative measurements
+traits_data_frame_with_coding = exclude_values(traits_data_frame_with_coding, values_to_exclude=['shorter', 'longer', 'lower', 'wider'])
 
 traits_data_frame.to_csv("../../data/processed/fna/fna_traits_data_frame.csv")
-traits_collapsed.to_csv("../../data/processed/fna/fna_traits_collapsed.csv")
+traits_data_frame_with_coding.to_csv("../../data/processed/fna/fna_traits_data_frame_with_coding.csv")
