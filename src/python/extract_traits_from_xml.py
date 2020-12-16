@@ -7,6 +7,8 @@ import pandas as pd
 # containing the data
 
 
+extract_traits_into_cols = ["property_name", "property_constraint", "from", "to", "value"]
+
 def parse(file_name):
     parser = etree.XMLParser(remove_blank_text=True)
     parsed_xml = etree.parse(file_name, parser)
@@ -27,6 +29,10 @@ def extract_from_to_attribs(character_element, from_or_to):
 
 
 def extract_characters(structure_element, structure):
+    if 'constraint' in structure_element.attrib:
+        constraint = structure_element.attrib['constraint']
+    else:
+        constraint = ''
     character_all = structure_element.findall('character')
     characters_list = []
     if character_all is not None:
@@ -34,17 +40,17 @@ def extract_characters(structure_element, structure):
             property_name = structure + '_' + character_element.attrib['name']
             property_from = extract_from_to_attribs(character_element, 'from')
             property_to = extract_from_to_attribs(character_element, 'to')
-            if property_from is None: # Need more than just the quantitative characters now,
-                property_value = character_element.attrib['value'] # looking for branching values
+            if property_from is None:  # Need more than just the quantitative characters now,
+                property_value = character_element.attrib['value']  # looking for branching values
             else:
                 property_value = None
-            characters_list.append([property_name, property_from, property_to, property_value])
-        characters_data_frame = pd.DataFrame(characters_list, columns=["property_name", "from", "to", "value"])
+            characters_list.append([property_name, constraint, property_from, property_to, property_value])
+        characters_data_frame = pd.DataFrame(characters_list, columns=extract_traits_into_cols)
         return characters_data_frame
 
 
 def extract_structure_names(structure_all):
-    structures_data_frame = pd.DataFrame([], columns=["property_name", "from", "to", "value"])
+    structures_data_frame = pd.DataFrame([], columns=extract_traits_into_cols)
     for structure_element in structure_all:
         structure = structure_element.attrib['name']
         characters_data_frame = extract_characters(structure_element, structure)
@@ -53,9 +59,9 @@ def extract_structure_names(structure_all):
     return structures_data_frame
 
 
-def extract_structures(morphology, structure_node='structure'): # biological_entity type="structure"
+def extract_structures(morphology, structure_node='structure'):  # biological_entity type="structure"
     all_statements = morphology.getchildren()
-    all_structures_data_frame = pd.DataFrame([], columns=["property_name", "from", "to", "value"])
+    all_structures_data_frame = pd.DataFrame([], columns=extract_traits_into_cols)
     for statement in all_statements:
         structure_all = statement.findall(structure_node)
         characters_data_frame = extract_structure_names(structure_all)

@@ -6,7 +6,7 @@ from src.python.extract_traits_from_xml import parse, extract_morphology, extrac
 
 # file_name = "../../data/external/FoCV23/1001.xml"
 directory = "../../data/external/FoCV23/*.xml"
-traits_data_frame = pd.DataFrame([], columns=['property_name', 'from', 'to', 'species_name', 'file_name'])
+traits_data_frame = pd.DataFrame([], columns=['property_name', 'property_constraint', 'from', 'to', 'species_name', 'file_name'])
 
 
 def format_taxon_id(parsed_xml):
