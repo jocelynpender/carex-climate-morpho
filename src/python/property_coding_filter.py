@@ -16,6 +16,6 @@ def add_property_coding_column(traits_data_frame, property_coding):
 def filter_data_frame(traits_data_frame):
     traits_data_frame = traits_data_frame[traits_data_frame.coded_property_name.notnull()]
     traits_data_frame = traits_data_frame[['species_name', 'coded_property_name', 'property_constraint', 'from',
-                                           'to', 'value']].reset_index()
+                                           'to', 'value', 'atypical']].reset_index()
     return traits_data_frame
 

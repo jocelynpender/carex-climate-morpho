@@ -7,7 +7,7 @@ import pandas as pd
 # containing the data
 
 
-extract_traits_into_cols = ["property_name", "property_constraint", "from", "to", "value"]
+extract_traits_into_cols = ["property_name", "property_constraint", "from", "to", "value", "atypical"]
 
 def parse(file_name):
     parser = etree.XMLParser(remove_blank_text=True)
@@ -44,7 +44,16 @@ def extract_characters(structure_element, structure):
                 property_value = character_element.attrib['value']  # looking for branching values
             else:
                 property_value = None
-            characters_list.append([property_name, constraint, property_from, property_to, property_value])
+
+            # add designation if the data is atypical
+            if 'to_inclusive' in character_element.attrib:
+                atypical = 'atypical'
+            elif 'from_inclusive' in character_element.attrib:
+                atypical = 'atypical'
+            else:
+                atypical = ''
+
+            characters_list.append([property_name, constraint, property_from, property_to, property_value, atypical])
         characters_data_frame = pd.DataFrame(characters_list, columns=extract_traits_into_cols)
         return characters_data_frame
 
