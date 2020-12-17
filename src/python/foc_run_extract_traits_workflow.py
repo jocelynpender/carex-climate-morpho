@@ -14,7 +14,10 @@ def format_taxon_id(parsed_xml):
     taxon_id = parsed_xml.find('TaxonIdentification[@Status=\"ACCEPTED\"]')
     genus = taxon_id.find('genus_name')
     species = taxon_id.find('species_name')
-    return genus.text + '_' + species.text
+    subspecies = taxon_id.find('subspecies_name')
+    variety = taxon_id.find('variety_name')
+    return genus.text + '_' + species.text + ("_subsp_ " + subspecies.text if subspecies is not None else "") +\
+           ("_var_" + variety.text if variety is not None else "")
 
 
 for file_name in glob.glob(directory):
