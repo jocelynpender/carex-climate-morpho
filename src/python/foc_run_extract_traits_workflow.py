@@ -37,7 +37,8 @@ traits_data_frame_with_coding = filter_data_frame(traits_data_frame_with_coding)
 traits_data_frame_with_coding = traits_data_frame_with_coding.apply(lambda x: x.replace(";nan", ""), axis=1)
 
 # exclude relative measurements
-traits_data_frame_with_coding = exclude_values(traits_data_frame_with_coding, values_to_exclude=['shorter', 'longer', 'lower', 'wider'])
+traits_data_frame_with_coding = exclude_values(traits_data_frame_with_coding,
+                                               values_to_exclude=['shorter', 'longer', 'lower', 'wider', 'longest', 'widest'])
 
 traits_data_frame.to_csv("../../data/processed/foc/foc_traits_data_frame.csv")
 traits_data_frame_with_coding.to_csv("../../data/processed/foc/foc_traits_data_frame_with_coding.csv")
