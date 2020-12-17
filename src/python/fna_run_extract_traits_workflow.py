@@ -6,7 +6,7 @@ from src.python.property_coding_filter import add_property_coding_column, filter
 from src.python.extract_traits_from_xml import parse, extract_morphology, extract_structures
 from src.python.exclude_property_values import exclude_values
 
-# file_name = "../../data/external/FoCV23/1001.xml"
+# file_name = "../../data/external/FNAV23/V23_559.xml"
 directory = "../../data/external/FNAV23/*.xml"
 traits_data_frame = pd.DataFrame([], columns=['property_name', 'from', 'to', 'species_name', 'file_name'])
 
@@ -15,7 +15,10 @@ def format_taxon_id(parsed_xml):
     taxon_id = parsed_xml.find('taxon_identification[@status=\"ACCEPTED\"]')
     genus = taxon_id.find('taxon_name[@rank=\"genus\"]')
     species = taxon_id.find('taxon_name[@rank=\"species\"]')
-    return genus.text + '_' + species.text
+    subspecies = taxon_id.find('taxon_name[@rank=\"subspecies\"]')
+    variety = taxon_id.find('taxon_name[@rank=\"variety\"]')
+    return genus.text + '_' + species.text + ("_subsp_ " + subspecies.text if subspecies is not None else "") +\
+           ("_var_" + variety.text if variety is not None else "")
 
 
 for file_name in glob.glob(directory):
