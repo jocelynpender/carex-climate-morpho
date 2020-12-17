@@ -37,6 +37,10 @@ property_coding = pd.read_csv("../../data/interim/fna_recode_property_names.csv"
 traits_data_frame_with_coding = add_property_coding_column(traits_data_frame, property_coding)
 traits_data_frame_with_coding = filter_data_frame(traits_data_frame_with_coding)
 
+# add a flag column to indicate whether multiple measurements exist
+#multiple_values_flag = traits_data_frame_with_coding.groupby(['species_name', 'coded_property_name', 'property_constraint']).count()
+#test = pd.concat([traits_data_frame_with_coding, multiple_values_flag])
+
 # trim semi-colons and nan
 traits_data_frame_with_coding = traits_data_frame_with_coding.apply(lambda x: x.replace(";nan", ""), axis=1)
 
