@@ -12,6 +12,11 @@ traits_data_frame = pd.DataFrame([], columns=['property_name', 'from', 'to', 'sp
 
 
 def format_taxon_id(parsed_xml):
+    """
+    reformatting taxon name to a human readable form for a dataframe
+    :param parsed_xml: etree parsed file
+    :return: species_name extracted from the taxon_identification node e.g., "dulichium_arundinaceum_var_arundinaceum"
+    """
     taxon_id = parsed_xml.find('taxon_identification[@status=\"ACCEPTED\"]')
     genus = taxon_id.find('taxon_name[@rank=\"genus\"]')
     species = taxon_id.find('taxon_name[@rank=\"species\"]')
@@ -32,7 +37,7 @@ for file_name in glob.glob(directory):
         all_structures_data_frame = all_structures_data_frame.assign(file_name=file_name)
         traits_data_frame = traits_data_frame.append(all_structures_data_frame)
 
-property_coding = pd.read_csv("../../data/interim/fna_recode_property_names.csv")
+property_coding = pd.read_csv("../../data/interim/fna_recode_property_names.csv") # aggregate properties into manually defined bins
 
 traits_data_frame_with_coding = add_property_coding_column(traits_data_frame, property_coding)
 traits_data_frame_with_coding = filter_data_frame(traits_data_frame_with_coding)
